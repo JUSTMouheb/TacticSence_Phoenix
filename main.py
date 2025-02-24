@@ -9,10 +9,7 @@ from fake_useragent import UserAgent
 import concurrent.futures
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-import numpy as np
+import datetime
 
 
 @dataclass
@@ -56,8 +53,10 @@ class FootballScraper:
     def __init__(self):
         self.user_agent = UserAgent()
         self.setup_logging()
-        self.api_key = "9fdd4bb6a8482b6f0b7408291e811537"  # Replace with your API key
-        self.base_url = "https://v3.football.api-sports.io"
+        self.api_key_football = "9fdd4bb6a8482b6f0b7408291e811537"  # Football API key
+        self.api_key_sofascore = "3038f8b59b71db2e5e300d49097d8a124f78b3d5baa261c25dde3e06adcd0872"  # Replace with your SofaScore API key
+        self.base_url_football = "https://v3.football.api-sports.io"
+        self.base_url_sofascore = "https://api.sofascore.com/api/v1"
         self.session = None
         self.african_leagues = self.load_league_config()
 
@@ -73,7 +72,6 @@ class FootballScraper:
 
     async def create_session(self):
         self.session = aiohttp.ClientSession(headers={
-            'x-apisports-key': self.api_key,
             'User-Agent': self.user_agent.random
         })
 
@@ -89,12 +87,45 @@ class FootballScraper:
             'tunisia': {'id': 173, 'name': 'Tunisian Ligue Professionnelle 1'},
             'algeria': {'id': 174, 'name': 'Algerian Ligue Professionnelle 1'},
             'nigeria': {'id': 306, 'name': 'Nigeria Professional Football League'},
-            # Add more African leagues as needed
+            'ghana': {'id': 376, 'name': 'Ghana Premier League'},
+            'senegal': {'id': 377, 'name': 'Senegal Premier League'},
+            'ivory_coast': {'id': 378, 'name': 'Ivory Coast Ligue 1'},
+            'cameroon': {'id': 379, 'name': 'Cameroon Elite One'},
+            # Add more leagues as needed
         }
 
-    async def fetch_data(self, url: str) -> Optional[Dict]:
+    def get_current_season(self) -> int:
+        # Determine the current season based on the current year
+        current_year = datetime.datetime.now().year
+        current_month = datetime.datetime.now().month
+
+        # Assume the season starts in August and ends in May
+        if current_month >= 8:  # August or later
+            return current_year
+        else:  # January to July
+            return current_year - 1
+
+    async def get_latest_season_from_api(self, league_id: int) -> Optional[int]:
+        # Fetch available seasons for the league from the API
+        url = f"{self.base_url_football}/leagues?id={league_id}"
+        headers = {'x-apisports-key': self.api_key_football}
+        data = await self.fetch_data(url, headers)
+
+        if not data or not data.get('response'):
+            return None
+
         try:
-            async with self.session.get(url) as response:
+            # Get the latest season from the API response
+            seasons = data['response'][0]['seasons']
+            latest_season = max(season['year'] for season in seasons)
+            return latest_season
+        except Exception as e:
+            self.logger.error(f"Error fetching latest season for league {league_id}: {str(e)}")
+            return None
+
+    async def fetch_data(self, url: str, headers: Optional[Dict] = None) -> Optional[Dict]:
+        try:
+            async with self.session.get(url, headers=headers) as response:
                 if response.status == 200:
                     return await response.json()
                 elif response.status == 429:
@@ -108,9 +139,10 @@ class FootballScraper:
             self.logger.error(f"Error fetching data: {str(e)}")
             return None
 
-    async def get_player_details(self, player_id: int) -> Optional[Player]:
-        url = f"{self.base_url}/players?id={player_id}&season=2023"
-        data = await self.fetch_data(url)
+    async def get_player_details_football(self, player_id: int, season: int) -> Optional[Player]:
+        url = f"{self.base_url_football}/players?id={player_id}&season={season}"
+        headers = {'x-apisports-key': self.api_key_football}
+        data = await self.fetch_data(url, headers)
 
         if not data or not data.get('response'):
             return None
@@ -137,12 +169,19 @@ class FootballScraper:
             self.logger.error(f"Error processing player {player_id}: {str(e)}")
             return None
 
-    async def scrape_league(self, league_id: int) -> List[Player]:
-        url = f"{self.base_url}/players?league={league_id}&season=2023"
-        data = await self.fetch_data(url)
+    async def scrape_league_football(self, league_id: int) -> List[Player]:
+        # Fetch the latest season for the league
+        latest_season = await self.get_latest_season_from_api(league_id)
+        if not latest_season:
+            self.logger.warning(f"No season data found for league {league_id}")
+            return []
+
+        url = f"{self.base_url_football}/players?league={league_id}&season={latest_season}"
+        headers = {'x-apisports-key': self.api_key_football}
+        data = await self.fetch_data(url, headers)
 
         if not data or not data.get('response'):
-            self.logger.warning(f"No data found for league {league_id}")
+            self.logger.warning(f"No data found for league {league_id} in season {latest_season}")
             return []
 
         players = []
@@ -150,12 +189,12 @@ class FootballScraper:
 
         for player_data in data['response']:
             player_id = player_data['player']['id']
-            tasks.append(self.get_player_details(player_id))
+            tasks.append(self.get_player_details_football(player_id, latest_season))
 
         results = await asyncio.gather(*tasks, return_exceptions=True)
         players = [r for r in results if isinstance(r, Player)]
 
-        self.logger.info(f"Scraped {len(players)} players from league {league_id}")
+        self.logger.info(f"Scraped {len(players)} players from league {league_id} (season {latest_season})")
         return players
 
     def scrape_transfermarkt(self) -> List[Player]:
@@ -241,7 +280,7 @@ class FootballScraper:
             # Scrape API-Football data for African leagues
             all_players = []
             tasks = [
-                self.scrape_league(league['id'])
+                self.scrape_league_football(league['id'])
                 for league in self.african_leagues.values()
             ]
             results = await asyncio.gather(*tasks)
