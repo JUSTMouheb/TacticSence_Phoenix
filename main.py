@@ -10,7 +10,7 @@ import concurrent.futures
 import requests
 from bs4 import BeautifulSoup
 import datetime
-
+import re
 
 @dataclass
 class Player:
@@ -85,28 +85,24 @@ class FootballScraper:
             'egypt': {'id': 308, 'name': 'Egyptian Premier League'},
             'morocco': {'id': 233, 'name': 'Botola Pro'},
             'tunisia': {'id': 173, 'name': 'Tunisian Ligue Professionnelle 1'},
+            'tunisia_ligue_2': {'id': 174, 'name': 'Tunisian Ligue 2'},  # Ensure this ID is correct
             'algeria': {'id': 174, 'name': 'Algerian Ligue Professionnelle 1'},
             'nigeria': {'id': 306, 'name': 'Nigeria Professional Football League'},
             'ghana': {'id': 376, 'name': 'Ghana Premier League'},
             'senegal': {'id': 377, 'name': 'Senegal Premier League'},
             'ivory_coast': {'id': 378, 'name': 'Ivory Coast Ligue 1'},
             'cameroon': {'id': 379, 'name': 'Cameroon Elite One'},
-            # Add more leagues as needed
         }
 
     def get_current_season(self) -> int:
-        # Determine the current season based on the current year
         current_year = datetime.datetime.now().year
         current_month = datetime.datetime.now().month
-
-        # Assume the season starts in August and ends in May
         if current_month >= 8:  # August or later
             return current_year
         else:  # January to July
             return current_year - 1
 
     async def get_latest_season_from_api(self, league_id: int) -> Optional[int]:
-        # Fetch available seasons for the league from the API
         url = f"{self.base_url_football}/leagues?id={league_id}"
         headers = {'x-apisports-key': self.api_key_football}
         data = await self.fetch_data(url, headers)
@@ -115,7 +111,6 @@ class FootballScraper:
             return None
 
         try:
-            # Get the latest season from the API response
             seasons = data['response'][0]['seasons']
             latest_season = max(season['year'] for season in seasons)
             return latest_season
@@ -123,21 +118,23 @@ class FootballScraper:
             self.logger.error(f"Error fetching latest season for league {league_id}: {str(e)}")
             return None
 
-    async def fetch_data(self, url: str, headers: Optional[Dict] = None) -> Optional[Dict]:
-        try:
-            async with self.session.get(url, headers=headers) as response:
-                if response.status == 200:
-                    return await response.json()
-                elif response.status == 429:
-                    self.logger.warning("Rate limit hit. Waiting before retry...")
-                    await asyncio.sleep(60)
+    async def fetch_data(self, url: str, headers: Optional[Dict] = None, retries: int = 3) -> Optional[Dict]:
+        for attempt in range(retries):
+            try:
+                async with self.session.get(url, headers=headers) as response:
+                    if response.status == 200:
+                        return await response.json()
+                    elif response.status == 429:
+                        self.logger.warning("Rate limit hit. Waiting before retry...")
+                        await asyncio.sleep(60 * (attempt + 1))
+                    else:
+                        self.logger.warning(f"Request failed with status {response.status}")
+                        return None
+            except Exception as e:
+                self.logger.error(f"Error fetching data: {str(e)}")
+                if attempt == retries - 1:
                     return None
-                else:
-                    self.logger.warning(f"Request failed with status {response.status}")
-                    return None
-        except Exception as e:
-            self.logger.error(f"Error fetching data: {str(e)}")
-            return None
+                await asyncio.sleep(10 * (attempt + 1))
 
     async def get_player_details_football(self, player_id: int, season: int) -> Optional[Player]:
         url = f"{self.base_url_football}/players?id={player_id}&season={season}"
@@ -170,7 +167,6 @@ class FootballScraper:
             return None
 
     async def scrape_league_football(self, league_id: int) -> List[Player]:
-        # Fetch the latest season for the league
         latest_season = await self.get_latest_season_from_api(league_id)
         if not latest_season:
             self.logger.warning(f"No season data found for league {league_id}")
@@ -245,17 +241,128 @@ class FootballScraper:
                 continue
 
             try:
+                # Extract player name (handle cases where name is nested in <a> or <span> tags)
+                name_cell = cols[1]
+                player_name = name_cell.get_text(strip=True)  # Default to cell text
+
+                # If the name is nested in an <a> tag, use that instead
+                if name_cell.find("a"):
+                    player_name = name_cell.find("a").get_text(strip=True)
+
+                # Extract position
+                position = cols[2].get_text(strip=True)
+
+                # Extract nationality
+                nationality = cols[4].img["title"] if cols[4].img else "N/A"
+
+                # Extract club
+                club = cols[5].img["title"] if cols[5].img else "N/A"
+
+                # Extract market value
+                market_value = cols[6].get_text(strip=True)
+
+                # Add the player to the list
                 players.append(Player(
-                    full_name=cols[1].get_text(strip=True),
-                    position=cols[2].get_text(strip=True),
-                    nationality=cols[4].img["title"] if cols[4].img else "N/A",
-                    club=cols[5].img["title"] if cols[5].img else "N/A",
-                    market_value=cols[6].get_text(strip=True)
+                    full_name=player_name,
+                    position=position,
+                    nationality=nationality,
+                    club=club,
+                    market_value=market_value
                 ))
             except Exception as e:
                 self.logger.warning(f"Skipped a row due to error: {e}")
 
         return players
+
+    def scrape_wikipedia_squad(self, url: str) -> List[Player]:
+        response = requests.get(url)
+        if response.status_code != 200:
+            self.logger.error(f"Failed to fetch {url}: {response.status_code}")
+            return []
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        players = []
+
+        # Find all squad tables (they usually have the class "wikitable")
+        tables = soup.find_all("table", class_="wikitable")
+        if not tables:
+            self.logger.warning("No squad tables found on the page.")
+            return []
+
+        # Iterate through each table
+        for table in tables:
+            # Find all rows in the table
+            rows = table.find_all("tr")
+            for row in rows[1:]:  # Skip the header row
+                cols = row.find_all("td")
+                if len(cols) < 4:  # Ensure there are enough columns
+                    continue
+
+                try:
+                    # Extract player name (handle cases where name is nested in <a> or <span> tags)
+                    name_cell = cols[0]
+                    player_name = None
+
+                    # Look for the name in an <a> tag first
+                    if name_cell.find("a"):
+                        player_name = name_cell.find("a").get_text(strip=True)
+                    else:
+                        # If no <a> tag, search for the name in other nested elements
+                        for element in name_cell.find_all():
+                            if element.get_text(strip=True):
+                                player_name = element.get_text(strip=True)
+                                break
+
+                    # If no name is found, try to extract the name directly from the cell text
+                    if not player_name:
+                        player_name = name_cell.get_text(strip=True)
+
+                    # If the name is still empty, skip this row
+                    if not player_name:
+                        self.logger.warning(f"Skipped a row due to missing name: {row}")
+                        continue
+
+                    # Extract position
+                    position = cols[1].get_text(strip=True)
+
+                    # Extract and clean date of birth
+                    raw_dob = cols[2].get_text(strip=True)
+                    date_of_birth = self.clean_date_of_birth(raw_dob)
+
+                    # Extract club
+                    club = cols[3].get_text(strip=True)
+
+                    # Add the player to the list
+                    players.append(Player(
+                        full_name=player_name,
+                        position=position,
+                        date_of_birth=date_of_birth,
+                        club=club
+                    ))
+                except Exception as e:
+                    self.logger.warning(f"Skipped a row due to error: {e}")
+
+        return players
+
+    def clean_date_of_birth(self, dob: str) -> Optional[str]:
+        """
+        Clean the date of birth string to extract only the date in YYYY-MM-DD format.
+        Example: "(2008-06-06)6 June 2008 (aged 14)" -> "2008-06-06"
+        """
+        match = re.search(r"\((\d{4}-\d{2}-\d{2})\)", dob)
+        if match:
+            return match.group(1)
+        return None
+
+    def scrape_wikipedia(self) -> List[Player]:
+        afcon_u20_url = "https://en.wikipedia.org/wiki/2023_Africa_U-20_Cup_of_Nations_squads"
+        afcon_u17_url = "https://en.wikipedia.org/wiki/2023_Africa_U-17_Cup_of_Nations_squads"
+
+        self.logger.info("Scraping Wikipedia for AFCON U20 and U17 player data...")
+        u20_players = self.scrape_wikipedia_squad(afcon_u20_url)
+        u17_players = self.scrape_wikipedia_squad(afcon_u17_url)
+
+        return u20_players + u17_players
 
     def save_players(self, players: List[Player], filename: str):
         if not players:
@@ -291,11 +398,15 @@ class FootballScraper:
             transfermarkt_players = self.scrape_transfermarkt()
             all_players.extend(transfermarkt_players)
 
+            # Scrape Wikipedia data for AFCON U20 and U17
+            wikipedia_players = self.scrape_wikipedia()
+            all_players.extend(wikipedia_players)
+
             # Remove duplicates
             unique_players = list({(p.full_name, p.club): p for p in all_players}.values())
 
             self.logger.info(f"Total players scraped: {len(unique_players)}")
-            self.save_players(unique_players, 'african_players.csv')
+            self.save_players(unique_players, 'african_playerslast.csv')
 
         finally:
             await self.close_session()
