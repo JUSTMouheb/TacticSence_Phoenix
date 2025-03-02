@@ -1,0 +1,587 @@
+agency_id,agency_name,services_offered,top_clients,region,contact_email,phone_number
+1,Stellar Group,"Player representation, contract negotiation, legal advisory","Gareth Bale, Jack Grealish","United Kingdom, Europe, Africa",info@stellargroup.co.uk,+44 20 7898 1234
+2,CAA Sports,"Player transfers, sponsorship deals, media rights","Cristiano Ronaldo, Paul Pogba",Global,contact@caa.com,+1 310 888 1234
+3,ROGON Sport Management,"Career development, club negotiations, legal advisory","Roberto Firmino, Julian Draxler","Germany, Africa",info@rogon.de,+49 621 1789 4567
+4,Base Soccer Agency,"Player transfers, sponsorship deals, contract negotiations","Kyle Walker, James Maddison","United Kingdom, Africa",info@basesoccer.com,+44 20 7499 1111
+5,Sport Invest Africa,"Football management, scouting, media representation","Patson Daka, Sadio Mané","South Africa, Zambia, Senegal",contact@sportinvestafrica.com,+27 11 456 7890
+6,Mino Raiola Sports Agency,"Contract negotiations, club transfers, legal advisory","Erling Haaland, Gianluigi Donnarumma","Italy, Europe, Africa",info@raiolaagency.com,+39 02 1234 5678
+7,Sports Entertainment Group (SEG),"Career planning, sponsorships, financial advisory","Memphis Depay, Daley Blind","Netherlands, Africa",info@seginternational.com,+31 20 345 6789
+8,Prospect Sports Management,"Club negotiations, talent scouting, branding","Alex Iwobi, Samuel Chukwueze","Nigeria, Ghana, Africa",support@prospectsm.com,+234 1 2345 6789
+9,Pro Eleven Management,"Player transfers, contract deals, branding","Rafael Leão, João Félix","Portugal, Africa",info@proeleven.com,+351 21 345 6789
+10,Sports Nation Talent Group,"Sponsorship management, media relations, athlete marketing","Mohamed Salah, Kalidou Koulibaly","Egypt, North Africa",info@sportnationtalent.com,+20 2 9876 5432
+11,Elite Sports Agency,"Talent scouting, financial management, player branding","Achraf Hakimi, Youssef En-Nesyri","Morocco, Africa",contact@elitesports.ma,+212 5 6789 0123
+12,Lian Sports Agency,"Player representation, branding, sponsorships","Sergej Milinković-Savić, Luka Jović","Serbia, Europe, Africa",info@liansports.com,+381 11 4567 8900
+13,Football Business Agency,"Athlete marketing, legal advisory, career development","Victor Osimhen, Pierre-Emerick Aubameyang","France, Africa",contact@footballbusiness.com,+33 1 234 5678
+14,SPOCS Sports Consultants,"Scouting, player transfers, legal advisory","Sebastien Haller, Andre Onana","Ivory Coast, Cameroon, Africa",info@spocs.com,+225 21 345 6789
+15,MSM Sports,"Talent scouting, player branding, contract negotiations","Wilfried Zaha, Jean-Philippe Gbamin","Ivory Coast, France, Africa",contact@msmsports.com,+33 1 456 7890
+16,DW Sports Management,"Career development, legal representation, media management","Alexandre Lacazette, Nabil Fekir","France, Africa",info@dwsports.fr,+33 1 234 5678
+17,Elite Sports Agency Ghana,"Scouting, contract negotiations, sponsorship management","Thomas Partey, Jordan Ayew","Ghana, Africa",support@elitesportsghana.com,+233 30 456 7890
+18,Sunset Sports Management,"Football recruitment, agent services, legal advisory","Odion Ighalo, Kenneth Omeruo","Nigeria, Africa",info@sunsetsports.com,+234 809 456 7890
+19,NVA Sports & Entertainment,"Player marketing, endorsements, media training","Eric Bailly, Sofiane Boufal","Côte d'Ivoire, Morocco, Africa",contact@nvasports.com,+212 6 7890 1234
+20,Prosport Management Africa,"Club negotiations, scouting, career management","Percy Tau, Keagan Dolly","South Africa, Zimbabwe, Africa",info@prosportafrica.com,+27 11 345 6789
+21,Roc Nation Sports,"Brand partnerships, player promotions, media management","Romelu Lukaku, Kevin De Bruyne","Global, including Africa",info@rocnationsports.com,+1 212 567 8900
+22,African Talents Management,"Football scouting, club deals, sponsorships","Victor Osimhen, Samuel Chukwueze","Nigeria, Ghana, Africa",contact@africantalents.com,+234 1 234 5678
+23,Legendary Sports Group,"Endorsement deals, player promotions, contract advisory","Mohamed Elneny, Trezeguet","Egypt, Africa",info@legendarysports.com,+20 2 678 9012
+24,Prime Agency Sports,"Club negotiations, brand sponsorships, career management","Patson Daka, Yves Bissouma","Zambia, Mali, Africa",info@primeagencysports.com,+260 21 789 0123
+25,Baysports Agency,"Player branding, legal representation, financial planning","Bongani Zungu, Khama Billiat","South Africa, Zimbabwe, Africa",contact@baysports.com,+27 12 345 6789
+26,MVP Sports Group,"Sponsorship management, PR services, contract negotiations","Raheem Sterling, Leroy Sané","United Kingdom, Europe, Africa",info@mvpsports.com,+44 203 567 8901
+27,Gold Sports Agency,"Talent scouting, sponsorship deals, financial planning","Wilfried Ndidi, Taiwo Awoniyi","Nigeria, Africa",contact@goldsports.com,+234 802 345 6789
+28,First Eleven Management,"Contract negotiations, club transfers, brand endorsements","Mahmoud Trezeguet, Romain Saïss","Egypt, Morocco, Africa",info@firsteleven.com,+20 1 567 8902
+29,Global Soccer Management,"Football scouting, agent representation, sponsorship acquisition","Seko Fofana, Youcef Atal","Ivory Coast, Algeria, Africa",support@globalsoccer.com,+225 30 456 7890
+30,NextGen Sports Agency,"Talent development, financial advisory, contract negotiations","Samuel Chukwueze, Ismaila Sarr","Senegal, Nigeria, Africa",info@nextgensports.com,+221 77 890 1234
+31,Evolution Sports Management,"Athlete branding, marketing, contract advisory","Achraf Hakimi, Sofyan Amrabat","Morocco, Africa",contact@evolutionsports.com,+212 5 6789 4321
+32,Premier Football Agency,"Sponsorship deals, club negotiations, scouting reports","Franck Kessié, Edmond Tapsoba","Burkina Faso, Ivory Coast, Africa",info@premierfa.com,+226 20 987 6543
+33,Apex Sports Consulting,"Media rights, player promotions, financial advisory","André-Frank Zambo Anguissa, Mohammed Kudus","Ghana, Cameroon, Africa",support@apexsports.com,+233 24 345 6789
+34,Champion Sports Agency,"Contract negotiations, club scouting, sponsorship acquisition","Sadio Mané, Yves Bissouma","Senegal, Mali, Africa",info@championsports.com,+221 78 456 7890
+35,Elite Players Agency,"Player transfers, legal representation, financial planning","Victor Osimhen, Chancel Mbemba","Nigeria, DR Congo, Africa",contact@eliteplayers.com,+234 1 2345 6789
+36,One Goal Sports Management,"Scouting, club negotiations, media relations","Patson Daka, Tino Kadewere","Zambia, Zimbabwe, Africa",info@onegoal.com,+260 21 6789 4321
+37,True Talent Sports,"Branding, contract advisory, financial management","Naby Keita, Boulaye Dia","Guinea, Senegal, Africa",contact@truetalentsports.com,+224 30 7890 1234
+38,Peak Performance Agency,"Sponsorship deals, club scouting, talent development","Karl Toko Ekambi, Edson Álvarez","Cameroon, Africa",info@peakperformance.com,+237 75 6789 3210
+39,PowerPlay Sports Agency,"Player endorsements, sponsorship management, career planning","Hamari Traoré, Moussa Djenepo","Mali, Africa",support@powerplaysports.com,+223 65 7890 1234
+40,Tactical Talent Agency,"Football analytics, scouting, contract negotiations","Brahim Diaz, Amadou Onana","Belgium, Spain, Africa",info@tacticaltalent.com,+32 2 6789 4321
+27,Gold Sports Agency,"Talent scouting, sponsorship deals, financial planning","Wilfried Ndidi, Taiwo Awoniyi","Nigeria, Africa",contact@goldsports.com,+234 802 345 6789
+28,First Eleven Management,"Contract negotiations, club transfers, brand endorsements","Mahmoud Trezeguet, Romain Saïss","Egypt, Morocco, Africa",info@firsteleven.com,+20 1 567 8902
+29,Global Soccer Management,"Football scouting, agent representation, sponsorship acquisition","Seko Fofana, Youcef Atal","Ivory Coast, Algeria, Africa",support@globalsoccer.com,+225 30 456 7890
+30,NextGen Sports Agency,"Talent development, financial advisory, contract negotiations","Samuel Chukwueze, Ismaila Sarr","Senegal, Nigeria, Africa",info@nextgensports.com,+221 77 890 1234
+31,Evolution Sports Management,"Athlete branding, marketing, contract advisory","Achraf Hakimi, Sofyan Amrabat","Morocco, Africa",contact@evolutionsports.com,+212 5 6789 4321
+32,Premier Football Agency,"Sponsorship deals, club negotiations, scouting reports","Franck Kessié, Edmond Tapsoba","Burkina Faso, Ivory Coast, Africa",info@premierfa.com,+226 20 987 6543
+33,Apex Sports Consulting,"Media rights, player promotions, financial advisory","André-Frank Zambo Anguissa, Mohammed Kudus","Ghana, Cameroon, Africa",support@apexsports.com,+233 24 345 6789
+34,Champion Sports Agency,"Contract negotiations, club scouting, sponsorship acquisition","Sadio Mané, Yves Bissouma","Senegal, Mali, Africa",info@championsports.com,+221 78 456 7890
+35,Elite Players Agency,"Player transfers, legal representation, financial planning","Victor Osimhen, Chancel Mbemba","Nigeria, DR Congo, Africa",contact@eliteplayers.com,+234 1 2345 6789
+36,One Goal Sports Management,"Scouting, club negotiations, media relations","Patson Daka, Tino Kadewere","Zambia, Zimbabwe, Africa",info@onegoal.com,+260 21 6789 4321
+37,True Talent Sports,"Branding, contract advisory, financial management","Naby Keita, Boulaye Dia","Guinea, Senegal, Africa",contact@truetalentsports.com,+224 30 7890 1234
+38,Peak Performance Agency,"Sponsorship deals, club scouting, talent development","Karl Toko Ekambi, Edson Álvarez","Cameroon, Africa",info@peakperformance.com,+237 75 6789 3210
+39,PowerPlay Sports Agency,"Player endorsements, sponsorship management, career planning","Hamari Traoré, Moussa Djenepo","Mali, Africa",support@powerplaysports.com,+223 65 7890 1234
+40,Tactical Talent Agency,"Football analytics, scouting, contract negotiations","Brahim Diaz, Amadou Onana","Belgium, Spain, Africa",info@tacticaltalent.com,+32 2 6789 4321
+41,Prime Sports Management,"Contract negotiations, media management, sponsorship acquisition","Riyad Mahrez, Islam Slimani","Algeria, North Africa",info@primesports.com,+213 21 6789 1234
+42,Dynamic Sports Group,"Talent scouting, club partnerships, player marketing","Jean Michaël Seri, Eric Maxim Choupo-Moting","Cameroon, Ivory Coast, Africa",contact@dynamicsports.com,+237 99 8765 4321
+43,Limitless Sports Agency,"Football recruitment, sponsorship negotiations, legal advisory","Emmanuel Dennis, Wilfried Singo","Nigeria, Ivory Coast, Africa",info@limitlesssports.com,+234 809 567 2345
+44,International Football Consultants,"Player representation, contract advisory, PR & media handling","Jonathan Bamba, Cédric Bakambu","France, DR Congo, Africa",support@ifcfootball.com,+33 1 9876 5432
+45,Victory Sports Management,"Sponsorship acquisitions, financial planning, branding","Pape Matar Sarr, Habib Diallo","Senegal, Africa",info@victorysports.com,+221 75 2345 6789
+46,Summit Global Sports,"Football analytics, scouting, sponsorship management","Mohamed Camara, Yves Bissouma","Mali, Africa",contact@summitglobalsports.com,+223 65 7890 4321
+47,One Touch Sports,"Career management, club negotiations, brand development","Patson Daka, Bongani Zungu","Zambia, South Africa, Africa",info@onetouchsports.com,+260 21 7890 5678
+48,African Elite Management,"Talent scouting, sponsorship marketing, club negotiations","Moses Simon, Chidozie Awaziem","Nigeria, Africa",support@africanelite.com,+234 1 6789 4321
+49,Titan Sports Agency,"Club scouting, branding, financial management","Victor Boniface, El Bilal Touré","Ghana, Mali, Africa",contact@titansports.com,+233 20 4567 7890
+50,Next Level Sports Management,"Football contracts, media representation, sponsorships","Moussa Diaby, Cheick Doucouré","France, Mali, Africa",info@nextlevelsports.com,+33 1 2345 6789
+51,Top Talent Sports Management,"Scouting, player representation, sponsorship management","Saïd Benrahma, Ismaël Bennacer","Algeria, Africa",info@toptalentsports.com,+213 21 2345 6789
+52,Victory International Sports,"Career advisory, financial planning, club negotiations","Boubacar Kamara, Maxwel Cornet","Ivory Coast, Senegal, France",contact@victorysports.com,+225 20 6789 4321
+53,Future Stars Agency,"Youth scouting, contract negotiations, career development","Mohamed Bayo, Sekou Koita","Guinea, Mali, Africa",info@futurestarsagency.com,+224 30 5678 9012
+54,First Wave Sports,"Player branding, PR management, sponsorship acquisition","Kamaldeen Sulemana, Lassina Traoré","Burkina Faso, Ghana, Africa",support@firstwavesports.com,+233 24 345 6789
+55,Elite Level Sports Management,"Club partnerships, financial advisory, scouting","Hamed Traoré, Jean Onana","Ivory Coast, Cameroon, Africa",info@elitelevelsports.com,+225 30 6789 1234
+56,Prestige Football Agency,"Career mentorship, media handling, contract advisory","Eberechi Eze, Faitout Maouassa","Nigeria, DR Congo, Africa",contact@prestigefootball.com,+234 80 5678 4321
+57,Game Changers Sports Agency,"Talent development, marketing, sponsorship negotiations","Taiwo Awoniyi, Terem Moffi","Nigeria, France, Africa",info@gamechangers.com,+234 70 3456 7890
+58,Platinum Sports Management,"Football analytics, branding, club negotiations","Dango Ouattara, Mohamed Simakan","Burkina Faso, France, Africa",support@platinumsports.com,+226 20 6789 4321
+59,Legends of the Game Agency,"Player mentoring, sponsorship deals, financial advising","Boulaye Dia, Moses Simon","Senegal, Nigeria, Africa",contact@legendsagency.com,+221 78 3456 7890
+60,Infinity Sports Group,"Talent representation, media handling, legal advisory","Ismail Jakobs, Bouna Sarr","Senegal, Mali, Africa",info@infinitysports.com,+223 75 2345 6789
+51,Top Talent Sports Management,"Scouting, player representation, sponsorship management","Saïd Benrahma, Ismaël Bennacer","Algeria, Africa",info@toptalentsports.com,+213 21 2345 6789
+52,Victory International Sports,"Career advisory, financial planning, club negotiations","Boubacar Kamara, Maxwel Cornet","Ivory Coast, Senegal, France",contact@victorysports.com,+225 20 6789 4321
+53,Future Stars Agency,"Youth scouting, contract negotiations, career development","Mohamed Bayo, Sekou Koita","Guinea, Mali, Africa",info@futurestarsagency.com,+224 30 5678 9012
+54,First Wave Sports,"Player branding, PR management, sponsorship acquisition","Kamaldeen Sulemana, Lassina Traoré","Burkina Faso, Ghana, Africa",support@firstwavesports.com,+233 24 345 6789
+55,Elite Level Sports Management,"Club partnerships, financial advisory, scouting","Hamed Traoré, Jean Onana","Ivory Coast, Cameroon, Africa",info@elitelevelsports.com,+225 30 6789 1234
+56,Prestige Football Agency,"Career mentorship, media handling, contract advisory","Eberechi Eze, Faitout Maouassa","Nigeria, DR Congo, Africa",contact@prestigefootball.com,+234 80 5678 4321
+57,Game Changers Sports Agency,"Talent development, marketing, sponsorship negotiations","Taiwo Awoniyi, Terem Moffi","Nigeria, France, Africa",info@gamechangers.com,+234 70 3456 7890
+58,Platinum Sports Management,"Football analytics, branding, club negotiations","Dango Ouattara, Mohamed Simakan","Burkina Faso, France, Africa",support@platinumsports.com,+226 20 6789 4321
+59,Legends of the Game Agency,"Player mentoring, sponsorship deals, financial advising","Boulaye Dia, Moses Simon","Senegal, Nigeria, Africa",contact@legendsagency.com,+221 78 3456 7890
+60,Infinity Sports Group,"Talent representation, media handling, legal advisory","Ismail Jakobs, Bouna Sarr","Senegal, Mali, Africa",info@infinitysports.com,+223 75 2345 6789
+61,Elite Stars Sports Agency,"Contract negotiation, scouting, marketing","Frank Onyeka, Samuel Chukwueze","Nigeria, Africa",info@elitestarsports.com,+234 802 345 6789
+62,Next Pro Management,"Career management, club partnerships, PR strategy","Mady Camara, Abdou Diallo","Senegal, Guinea, Africa",contact@nextpromgmt.com,+221 76 7890 1234
+63,Global Talent Sports,"Sponsorships, endorsements, financial advisory","Ibrahim Sangaré, Nicolas Pépé","Ivory Coast, Africa",info@globaltalentsports.com,+225 70 2345 6789
+64,Prime Football Agency,"Youth scouting, agent representation, brand development","Simon Adingra, Jean-Clair Todibo","France, Ivory Coast, Africa",support@primefootball.com,+33 1 7890 3456
+65,Universal Sports Management,"Club negotiations, legal consulting, talent branding","Wilfried Zaha, Jeremie Boga","Ivory Coast, Ghana, Africa",info@universalsports.com,+225 99 8765 4321
+66,Champion Athletes Agency,"Endorsements, sponsorship management, financial planning","Zaidu Sanusi, Moses Nyeman","Nigeria, Liberia, Africa",contact@championathletes.com,+234 70 3456 7890
+67,Apex Sports Representation,"Player marketing, contract advisory, youth development","Randal Kolo Muani, Chidera Ejuke","France, Nigeria, Africa",info@apexsports.com,+33 6 6789 1234
+68,Continental Sports Agency,"Football scouting, career advisory, commercial partnerships","Habib Maïga, Eliesse Ben Seghir","Morocco, Mali, Africa",support@continentalsports.com,+212 5 2345 6789
+69,First Class Sports Management,"Brand endorsements, sponsorship negotiation, PR campaigns","Amine Gouiri, Sekou Mara","Algeria, France, Africa",info@firstclasssports.com,+213 6 6789 2345
+70,Striker Sports Agency,"Club transfers, contract negotiations, player PR","Andy Delort, Adam Ounas","Algeria, Tunisia, Africa",contact@strikersports.com,+216 71 7890 2345
+71,Invictus Talent Management,"Sponsorships, financial planning, global representation","Ousmane Diomande, Abdoulaye Doucouré","Ivory Coast, Mali, Africa",support@invictustalent.com,+225 50 5678 1234
+72,ProScout Management,"Talent discovery, media handling, sponsorship deals","Noah Fadiga, Cheick Keita","Senegal, Guinea, Africa",info@proscoutmgmt.com,+221 30 2345 6789
+73,Goal Achievers Sports,"Athlete branding, contract negotiations, investment planning","Kelvin Yeboah, Issa Kaboré","Ghana, Burkina Faso, Africa",contact@goalachievers.com,+233 55 6789 1234
+74,Superior Athletes Agency,"Club deals, sponsorship activations, performance analysis","Bilal Boutobba, Hannibal Mejbri","Tunisia, Algeria, Africa",info@superiorathletes.com,+216 58 7890 3456
+75,Supreme Sports Network,"Football analytics, PR consulting, career development","Mohammed Kudus, Ismail Gharbi","Ghana, Mali, Africa",support@supremesports.com,+233 44 5678 1234
+76,Pinnacle Sports Management,"Sponsorship deals, club negotiations, player analytics","Tariq Lamptey, Calvin Bassey","Ghana, Nigeria, UK",info@pinnaclesports.com,+233 55 2345 6789
+77,Dominance Football Agency,"Scouting, contract negotiation, brand development","Mohammed Salisu, Axel Tuanzebe","Ghana, DR Congo, UK",contact@dominancefootball.com,+233 20 6789 4321
+78,Vanguard Sports Representation,"Player recruitment, sponsorship acquisition, financial advising","Odilon Kossounou, Jérémie Frimpong","Ivory Coast, Netherlands, Belgium",info@vanguardsports.com,+225 90 2345 6789
+79,Aspire Football Management,"Talent scouting, PR management, club consulting","Nicolas Jackson, Abdessamad Ezzalzouli","Morocco, Senegal, Spain",support@aspirefootball.com,+212 6 7890 3456
+80,Summit Athletes Agency,"Career planning, sponsorship management, tactical analysis","Noha Lemina, Iliman Ndiaye","France, Senegal, UK",info@summitathletes.com,+33 6 6789 1234
+81,Titanium Sports Consulting,"Club deals, media handling, legal representation","Sekou Sylla, Edmond Tapsoba","Burkina Faso, Netherlands, Germany",contact@titaniumsports.com,+226 50 5678 1234
+82,Prime Football Talent,"Youth development, scouting, performance analytics","Bradley Barcola, Oumar Solet","France, Mali, Togo",info@primefootballtalent.com,+33 1 6789 2345
+83,Momentum Sports Management,"Sponsorships, financial consulting, football analytics","Aïssa Laïdouni, Wily Semedo","Tunisia, Algeria, Portugal",contact@momentumsports.com,+216 55 7890 3456
+84,Powerhouse Football Agency,"Endorsements, club recruitment, tactical planning","Ellyes Skhiri, Joris Kayembe","Tunisia, DR Congo, Belgium",info@powerhousefootball.com,+216 71 2345 6789
+85,Black Star Football Management,"Sponsorship negotiations, branding, talent representation","Issahaku Abdul Fatawu, Osman Bukari","Ghana, Austria, Serbia",support@blackstarfootball.com,+233 44 5678 1234
+86,Continental Sports Elite,"Contract structuring, media relations, talent scouting","Lamine Camara, Bamba Dieng","Senegal, France, Africa",info@continentalsportselite.com,+221 78 7890 3456
+87,FIFA Connect Sports Agency,"Global player marketing, financial advising, legal consulting","Adem Zorgane, Ahmed Touba","Algeria, Belgium, France",contact@fifaconnectsports.com,+213 21 5678 2345
+88,Eagle Vision Talent Agency,"Scouting, club placements, player branding","Saïdou Sow, Bafodé Diakité","Guinea, France, Africa",info@eaglevisiontalent.com,+224 50 2345 6789
+89,Masterclass Sports Management,"Youth training programs, sponsorship acquisition, legal advisory","Naby Keïta, Amadou Haidara","Mali, Guinea, Africa",support@masterclasssports.com,+223 70 5678 1234
+90,Invincible Sports Agency,"Tactical analytics, brand development, sponsorships","Mohamed Amoura, Abdelkahar Kadri","Algeria, France, Africa",info@invinciblesports.com,+213 99 6789 1234
+91,Olympic Sports Management,"Contract negotiations, sponsorships, career management","Sekou Koita, Edmond Tapsoba","Burkina Faso, Mali, Germany",info@olympicsports.com,+226 55 2345 6789
+92,Victory Path Sports Agency,"Talent scouting, endorsement deals, club partnerships","Youssouf Fofana, Boubacar Traoré","Mali, France, Africa",contact@victorypathsports.com,+223 70 7890 3456
+93,Legendary Athletes Representation,"Brand partnerships, career strategy, club transfers","Aliou Badara Baldé, Habib Diallo","Senegal, France, Belgium",info@legendaryathletes.com,+221 77 6789 2345
+94,Pioneer Football Agency,"Club negotiations, talent promotions, sports marketing","Lassana Coulibaly, Ismael Bennacer","Mali, Algeria, Italy",support@pioneerfootball.com,+223 50 2345 6789
+95,Champion Sports Advisory,"Player branding, investment planning, sponsorship deals","Mohamed Elneny, Akram Tawfik","Egypt, Tunisia, UAE",info@championsports.com,+20 12 6789 3456
+96,Pan-African Talent Management,"International club recruitment, youth development, PR","Zakaria Aboukhlal, Chancel Mbemba","Morocco, DR Congo, Portugal",contact@panafricantalent.com,+212 6 7890 1234
+97,New Horizon Sports Agency,"Sponsorships, tactical analysis, financial advising","Eric Bailly, Yves Bissouma","Ivory Coast, Mali, UK",info@newhorizonsports.com,+225 99 5678 2345
+98,Pro Africa Football Agency,"Athlete representation, strategic branding, career guidance","Yannick Bolasie, Cedric Bakambu","DR Congo, France, Spain",support@proafricafootball.com,+243 81 3456 7890
+99,Summit Sports Elite,"Legal consulting, player PR, sponsorship negotiations","Amadou Diawara, Ismail Jakobs","Guinea, Senegal, Germany",info@summitsportselite.com,+224 30 6789 2345
+100,Infinity Football Management,"Youth scouting, club transfers, endorsement management","Jean-Philippe Gbamin, El Bilal Touré","Ivory Coast, Mali, UK",contact@infinityfootball.com,+225 78 5678 1234
+101,Next Gen Sports Agency,"Strategic career planning, financial consulting, sponsorship acquisition","Bouna Sarr, Mohamed Ali Cho","Senegal, France, Spain",info@nextgensports.com,+221 60 6789 1234
+102,Elite Africa Football Agency,"Marketing, PR, branding, athlete development","Anis Ben Slimane, Karim Konaté","Tunisia, Ivory Coast, Austria",contact@eliteafricafootball.com,+216 50 2345 6789
+103,Legacy Sports Group,"Sponsorships, talent management, legal consulting","Joseph Paintsil, Samuel Kalu","Ghana, Nigeria, Belgium",info@legacysports.com,+233 77 5678 1234
+104,Game Changers Football Agency,"Tactical development, financial consulting, scouting reports","Pape Matar Sarr, Yacine Adli","Senegal, Algeria, France",support@gamechangersfootball.com,+221 70 7890 2345
+105,African Stars Management,"Youth academies, club placements, sponsorships","Hamed Traoré, Lamine Camara","Ivory Coast, Mali, France",info@africanstars.com,+225 55 6789 2345
+106,Pan-African Sports Group,"Athlete representation, contract negotiation, talent scouting","Wilfried Zaha, Franck Kessié","Ivory Coast, Ghana, France",contact@pan-africansports.com,+225 20 789 5678
+107,NextGen Football Agency,"Professional development, sponsorship deals, PR management","Victor Osimhen, Samuel Chukwueze","Nigeria, Italy, Spain",info@nextgenfootball.com,+234 812 345 6789
+108,Prime Athletes Management,"Sports branding, club placements, performance analytics","Achraf Hakimi, Ismael Bennacer","Morocco, Algeria, France",info@primeathletes.com,+212 661 789 234
+109,African Football Hub,"Player career planning, scouting, youth development programs","Sadio Mané, Naby Keïta","Senegal, Mali, Germany",contact@africanfootballhub.com,+221 77 567 8901
+110,Champion Sports Agency,"Legal advisory, sponsorship acquisition, club transfers","Thomas Partey, Kamaldeen Sulemana","Ghana, England, Belgium",info@championsports.com,+233 24 345 6789
+111,Rise Africa Sports,"Contract management, club negotiation, player branding","Pierre-Emerick Aubameyang, Andre Ayew","Gabon, Ghana, France",riseafrica@football.com,+241 06 678 4321
+112,Top Scorers Management,"Player scouting, contract optimization, sponsorship partnerships","Mohamed Salah, Riyad Mahrez","Egypt, Algeria, UK",topscorers@management.com,+20 100 456 7890
+113,ProSport Management,"Football career consultancy, legal representation, transfers","Idrissa Gueye, Kalidou Koulibaly","Senegal, France, Italy",info@prosportmng.com,+221 76 987 6543
+114,Future Champions Agency,"Youth talent scouting, sponsorship deals, player marketing","Patson Daka, Enock Mwepu","Zambia, South Africa, Austria",contact@futurechampions.com,+260 97 888 3456
+115,Star Talent Sports,"Club transfers, career mentoring, sponsorship activation","Moses Simon, Taiwo Awoniyi","Nigeria, France, Germany",startalent@sports.com,+234 909 567 1234
+116,Football Prestige Management,"Professional contract negotiation, image rights, talent investment","Edouard Mendy, Bertrand Traoré","Ivory Coast, Burkina Faso, UK",info@footballprestige.com,+225 07 678 9012
+117,Elite Sports Africa,"Player representation, legal services, club placements","Innocent Bonke, Frank Onyeka","Nigeria, Denmark, UK",info@elitesportsafrica.com,+234 701 234 5678
+118,Legendary Talent Group,"Contract negotiation, sponsorship acquisitions, PR management","Sebastien Haller, Serge Aurier","Ivory Coast, France, Netherlands",contact@legendarytalent.com,+225 22 789 4321
+119,Goal Masters Management,"Athlete development, club connections, career planning","Paul Onuachu, Henry Onyekuru","Nigeria, Turkey, Belgium",info@goalmasters.com,+234 815 567 8901
+120,Tactical Vision Sports,"Scouting reports, sponsorship management, marketing strategies","Ramy Bensebaini, Islam Slimani","Algeria, France, Germany",tacticalvision@dz.com,+213 663 345 6789
+121,First Touch Agency,"Player development, media consulting, image rights management","Mohammed Kudus, Jonathan Mensah","Ghana, UK, Spain",contact@firsttouchagency.com,+233 27 901 2345
+122,ProLink Football Agency,"Youth scouting, club recruitment, career strategy","Youssef En-Nesyri, Achraf Dari","Morocco, Spain, France",info@prolinkfootball.com,+212 678 432 987
+123,Football Dynamics Management,"Club negotiations, sponsorship brokering, talent scouting","Wilfried Ndidi, Kelechi Iheanacho","Nigeria, England, Belgium",footballdynamics@ng.com,+234 908 765 4321
+124,TopFlight Sports Agency,"International transfers, sponsorship procurement, training camps","Kalidou Koulibaly, Bouna Sarr","Senegal, France, Italy",topflight@senegalsports.com,+221 75 678 9012
+125,True Champions Agency,"Football intelligence, media strategy, financial planning","Jean-Michael Seri, Maxwel Cornet","Ivory Coast, UK, France",champions@trueagency.com,+225 03 987 6543
+126,Royal Sports Management,"Elite athlete contracts, club recommendations, agent services","Ismaël Bennacer, Adam Ounas","Algeria, Italy, France",royalsports@algeria.com,+213 550 876 543
+127,African ProTalent Agency,"Talent scouting, player endorsements, sponsorship deals","Patson Daka, Enock Mwepu","Zambia, Austria, UK",contact@africanprotalent.com,+260 97 345 6789
+128,Total Performance Sports,"Professional coaching, career management, sponsorship activation","Mohamed Elneny, Mostafa Mohamed","Egypt, Turkey, UK",info@totalperformance.com,+20 111 789 6543
+129,Masterclass Football Agency,"Scouting, club placements, social media branding","Faitout Maouassa, Jules Koundé","France, DR Congo, Cameroon",contact@masterclassfootball.com,+33 675 432 1098
+130,Powerhouse Talent Group,"Sports legal support, media handling, player profiling","Andre Onana, Clinton N'Jie","Cameroon, Netherlands, Spain",info@powerhousetalent.com,+237 671 234 567
+131,Game Changers Sports,"Football business consultancy, endorsement strategy, financial planning","Sofiane Boufal, Romain Saïss","Morocco, UK, Spain",gamechangers@morocco.com,+212 666 789 012
+132,Champion Elite Sports,"Talent scouting, contract negotiations, sponsorship management","Wilfried Bony, Jean Seri","Ivory Coast, France, UK",contact@championelitesports.com,+225 20 567 2345
+133,Ultimate Pro Football Agency,"Athlete representation, branding, career management","Victor Moses, Joe Aribo","Nigeria, England, Scotland",info@ultimatepro.com,+234 812 789 6543
+134,Peak Performance Sports,"Sponsorship deals, media consulting, club placements","Pierre Kalulu, Amadou Onana","France, Belgium, Mali",contact@peakperformance.com,+33 675 432 0987
+135,Top Africa Football Agency,"Youth scouting, sponsorship brokering, club recruitment","Patson Daka, Moses Simon","Zambia, Nigeria, Austria",info@topafricaagency.com,+260 97 111 2345
+136,Prime Edge Sports,"Legal advisory, sponsorship strategy, media training","Nicolas Pepe, Bertrand Traoré","Ivory Coast, Burkina Faso, UK",primeedge@sports.com,+225 03 987 6543
+137,Soccer Vision Management,"International transfers, PR management, career planning","Achraf Hakimi, Adam Ounas","Morocco, Algeria, Spain",info@soccervision.com,+212 660 765 4321
+138,Excel Football Agency,"Scouting, player development, media consulting","Jean-Eudes Aholou, Kamaldeen Sulemana","Ghana, Togo, France",contact@excelfootball.com,+233 27 901 3456
+139,Africa Pro Sports Management,"Talent scouting, contract support, sponsorship brokering","Edmond Tapsoba, Kalidou Koulibaly","Burkina Faso, Senegal, Belgium",africaprosports@management.com,+226 78 567 8901
+140,True Stars Sports Agency,"Career mentorship, club placements, brand partnerships","Islam Slimani, Sofiane Feghouli","Algeria, Qatar, France",truestars@sports.com,+213 55 678 2345
+141,MasterPlan Football Agency,"Tactical analysis, contract negotiation, youth development","Andre Onana, Enock Mwepu","Cameroon, Zambia, Netherlands",info@masterplanagency.com,+237 671 222 3334
+142,United Sports Global,"Financial consultancy, sponsorship deals, contract advisory","Percy Tau, Thembinkosi Lorch","South Africa, Egypt, UK",contact@unitedsportsglobal.com,+27 82 987 6543
+143,Africa Goal Talent Agency,"Youth academies, sponsorship placements, scouting analysis","Taiwo Awoniyi, Mohammed Kudus","Nigeria, Ghana, Germany",africagoaltalent@management.com,+234 909 876 4321
+144,Lionheart Sports Agency,"Football legal representation, brand management, PR","Ismael Bennacer, Romain Saïss","Morocco, Algeria, France",lionheart@sports.com,+212 678 432 1098
+145,Elite Foot Africa,"Advanced analytics, sports intelligence, international transfers","Maxwel Cornet, Nicolas Jackson","Ivory Coast, Senegal, France",elitefoot@africa.com,+225 08 901 3456
+146,ProElite Football Agency,"Player scouting, contract negotiations, sponsorship deals","Ibrahim Sangaré, Amad Diallo","Ivory Coast, Netherlands, UK",contact@proelitefootball.com,+225 07 654 3210
+147,Diamond Sports Management,"Talent management, brand endorsements, career consulting","Odion Ighalo, Henry Onyekuru","Nigeria, Saudi Arabia, Turkey",info@diamondsports.com,+234 812 567 8902
+148,Visionary Sports Africa,"Legal representation, contract support, sponsorship procurement","Sofiane Diop, Boubacar Kamara","Senegal, France, Spain",contact@visionarysports.com,+221 77 890 1234
+149,Aspire Global Sports,"Youth academies, player analytics, international recruitment","Yasser Larouci, El Bilal Touré","Algeria, Mali, Qatar",info@aspireglobalsports.com,+213 650 432 567
+150,Legacy Football Agency,"Sponsorship strategy, media training, talent scouting","Moussa Djenepo, Sekou Koita","Mali, Austria, Belgium",contact@legacyfootball.com,+223 75 321 6789
+151,Continental Sports Agency,"Athlete marketing, PR, international transfers","Percy Tau, Fiston Mayele","South Africa, DR Congo, Egypt",info@continentalsports.com,+27 82 456 7890
+152,Next Level Sports Group,"Legal consulting, club placement, sponsorship activation","Kamaldeen Sulemana, Edmund Addo","Ghana, Portugal, Germany",contact@nextlevelsports.com,+233 27 654 3210
+153,United Talent Africa,"Career planning, media exposure, contract advisory","Tino Kadewere, Marvelous Nakamba","Zimbabwe, France, UK",info@unitedtalentafrica.com,+263 71 987 6543
+154,Gold Standard Sports,"Club transfers, player branding, performance analysis","Andre Onana, Habib Diallo","Cameroon, Senegal, Italy",contact@goldstandardsports.com,+237 675 432 109
+155,ProAthlete Football Group,"Scouting, professional mentoring, club negotiations","Lassina Traoré, Pape Matar Sarr","Burkina Faso, Senegal, Netherlands",info@proathletefootball.com,+226 78 987 6543
+156,Champion Sports Agency,"International networking, branding, sponsorship management","Samuel Chukwueze, Terem Moffi","Nigeria, France, Spain",contact@championsports.com,+234 809 321 6789
+157,Exclusive Football Agency,"Athlete profiling, contract strategy, PR consultancy","Taiwo Awoniyi, Bright Osayi-Samuel","Nigeria, UK, Turkey",info@exclusivefootball.com,+234 814 567 8901
+158,Elite Performance Management,"High-performance training, media marketing, contract optimization","Azzedine Ounahi, Youcef Atal","Morocco, France, Spain",contact@eliteperformancemgmt.com,+212 600 987 654
+159,African Sports Elite Agency,"Talent discovery, media exposure, transfer facilitation","Jean Onana, Ibrahim Koné","Cameroon, Mali, France",info@africansportselite.com,+237 671 123 456
+160,Global Sports Network,"Strategic partnerships, player sponsorships, club recruitment","Victor Boniface, Alhassan Yusuf","Nigeria, Belgium, Sweden",contact@globalsportsnetwork.com,+234 809 456 7890
+176,Summit Sports Management,"Talent scouting, career planning, legal support","Patson Daka, Enoch Mwepu","Zambia, England, Austria",info@summitsports.com,+260 97 345 6789
+177,Global Pro Sports,"International transfers, brand sponsorships, endorsements","Kalidou Koulibaly, Edouard Mendy","Senegal, Italy, UK",contact@globalprosports.com,+221 77 234 5678
+178,Next Wave Football Agency,"Contract negotiations, sponsorship deals, PR services","Mohammed Salisu, Abdul Fatawu","Ghana, Spain, UK",info@nextwavefootball.com,+233 20 567 8901
+179,Gold Medal Sports Agency,"Athlete branding, talent recruitment, legal support","Ryan Mendes, Harold Moukoudi","Cape Verde, France, Cameroon",contact@goldmedalsports.com,+238 95 678 2345
+180,Game Changers Football Agency,"Scouting, media management, sponsorship acquisition","Samuel Chukwueze, Zaidu Sanusi","Nigeria, Portugal, Spain",info@gamechangerssports.com,+234 803 234 5678
+181,Victory Path Sports Management,"Financial advisory, legal services, club networking","Percy Tau, Siphiwe Tshabalala","South Africa, Egypt, Belgium",contact@victorypathsports.com,+27 83 456 7890
+182,PowerPlay Football Agency,"Strategic sponsorships, contract handling, player marketing","Teboho Mokoena, Lyle Foster","South Africa, France, UK",info@powerplayagency.com,+27 71 567 8902
+183,Pan-African Sports Advisory,"Club placements, legal negotiations, career mentoring","Victor Osimhen, Peter Olayinka","Nigeria, Czech Republic, Italy",contact@panafricansports.com,+234 901 234 5678
+184,Rising Stars Management,"Performance analysis, talent exposure, sponsorship brokering","Habib Keïta, Sekou Koita","Mali, Austria, Belgium",info@risingstarsmanagement.com,+223 76 345 6789
+185,Elite Soccer Talent Group,"Player career development, brand partnerships, media training","Achraf Hakimi, Noussair Mazraoui","Morocco, France, Germany",contact@elitesoccertalent.com,+212 660 123 456
+186,Professional Players Network,"Contract management, sponsorship consulting, performance tracking","Franck Kessié, Ibrahim Sangaré","Ivory Coast, Spain, Netherlands",info@ppnfootball.com,+225 55 678 1234
+187,United Football Advisory,"Club scouting, international placements, personal branding","Moussa Diaby, Houssem Aouar","Algeria, France, Germany",contact@unitedfootballadvisory.com,+213 661 345 678
+188,Supreme Sports Group,"Player negotiations, contract advisory, club recruitment","Joseph Paintsil, Kamaldeen Sulemana","Ghana, UK, Belgium",info@supremesportsgroup.com,+233 27 654 3210
+189,Excellence Football Agency,"Scouting, sponsorship deals, contract negotiations","Oumar Solet, Mohamed Simakan","Senegal, Germany, France",contact@excellencefootball.com,+221 70 987 6543
+190,Premier Sports Africa,"Player transfers, PR strategy, financial advising","Benoît Badiashile, Jean-Clair Todibo","DR Congo, France, UK",info@premiersportsafrica.com,+243 81 345 6789
+191,Infinity Sports Management,"Player career guidance, international club placements, sponsorship deals","Eric Bailly, Franck Kessié","Ivory Coast, Spain, Italy",info@infinitysports.com,+225 44 567 8901
+192,African Legends Sports Agency,"Talent scouting, financial advisory, club negotiations","Didier Drogba, Samuel Eto'o","Cameroon, Ivory Coast, France",contact@africanlegendsagency.com,+237 67 234 5678
+193,TopFlight Sports Advisory,"Sponsorship brokering, performance tracking, player transfers","Sadio Mané, Kalidou Koulibaly","Senegal, Germany, UK",info@topflightsports.com,+221 76 789 0123
+194,Titan Sports Africa,"Youth development, sponsorship deals, legal consultancy","Victor Osimhen, Paul Onuachu","Nigeria, Belgium, Italy",contact@titansportsafrica.com,+234 810 456 7890
+195,Mastermind Football Management,"Club partnerships, image management, career development","Achraf Hakimi, Youssef En-Nesyri","Morocco, Spain, France",info@mastermindfootball.com,+212 612 345 678
+196,Peak Performance Sports Agency,"Performance analytics, fitness consulting, contract negotiations","Thomas Partey, Inaki Williams","Ghana, UK, Spain",contact@peakperformancesports.com,+233 24 567 8910
+197,Elite Africa Talent Management,"Player endorsements, club scouting, career longevity strategy","Wilfred Ndidi, Kelechi Iheanacho","Nigeria, England, Belgium",info@eliteafricatalent.com,+234 906 789 4321
+198,Dominance Sports Agency,"Tactical analysis, contract advisory, global club placements","Jean Michael Seri, Nicolas Pépé","Ivory Coast, France, UK",contact@dominancesports.com,+225 77 567 8902
+199,Global Stars Football Agency,"Legal consulting, club partnerships, talent scouting","Hakim Ziyech, Noussair Mazraoui","Morocco, Netherlands, Germany",info@globalstarsagency.com,+212 620 345 678
+200,United Sports Development,"Youth scouting, sponsorship negotiations, career planning","Pape Matar Sarr, Ismaila Sarr","Senegal, France, UK",contact@unitedsportsdev.com,+221 78 234 5678
+201,Iconic Sports Africa,"Contract negotiations, international scouting, performance analytics","Samuel Chukwueze, Taiwo Awoniyi","Nigeria, Italy, Spain",info@iconicsportsafrica.com,+234 901 678 4321
+202,Prime Athletics Management,"Sponsorships, PR representation, financial advisory","Percy Tau, Bongani Zungu","South Africa, France, Belgium",contact@primeathletics.com,+27 84 567 8903
+203,African Sports Elite,"Career guidance, talent promotion, image rights management","Sofiane Boufal, Yacine Adli","Morocco, France, Spain",info@africansportselite.com,+212 640 345 789
+204,Legacy Sports Management,"Sponsorship procurement, contract negotiation, agent networking","Idrissa Gueye, Amadou Onana","Senegal, UK, France",contact@legacysportsmgt.com,+221 75 234 6789
+205,Momentum Sports Group,"Tactical analysis, global scouting, sponsorship activation","Moses Simon, Chidozie Awaziem","Nigeria, Portugal, Spain",info@momentumsportsgroup.com,+234 806 543 2109
+206,Ultimate Athlete Management,"Player career optimization, PR consulting, legal support","Jonathan Bamba, Jeremie Boga","Ivory Coast, France, Italy",contact@ultimateathletemgmt.com,+225 09 345 6789
+207,Africa Talent Network,"Youth scouting, international player transfers, contract advisory","Patson Daka, Mohamed Bayo","Zambia, Guinea, France",info@africatalentnetwork.com,+260 95 567 4321
+208,Pioneer Sports Group,"Athlete endorsements, sponsorship deals, legal advisory","Faitout Maouassa, Bouna Sarr","Senegal, France, Germany",contact@pioneersportsgroup.com,+221 76 789 0123
+209,ProVision Football Agency,"Club networking, performance tracking, financial management","Mady Camara, Ibrahim Sangaré","Guinea, Ivory Coast, Italy",info@provisionfootball.com,+224 622 567 890
+210,Ultimate Goal Sports Management,"Youth development, player promotions, club negotiations","James Léa-Siliki, Gaël Kakuta","DR Congo, France, Belgium",contact@ultimategoalsports.com,+243 81 456 7890
+211,Lionheart Sports Agency,"Strategic partnerships, marketing representation, contract negotiation","Adam Ounas, Amine Harit","Algeria, Morocco, France",info@lionheartsports.com,+213 662 345 678
+212,Champion Sports Consulting,"Career mentoring, contract advisory, sponsorship procurement","Tino Kadewere, Marshall Munetsi","Zimbabwe, South Africa, France",contact@championsportsconsulting.com,+263 77 456 8901
+213,All-Star Management Africa,"Sponsorship management, career guidance, scouting services","Habib Diallo, Youssouf Sabaly","Senegal, France, Spain",info@allstarmanagementafrica.com,+221 70 567 4321
+214,Prime Football Management,"Performance analysis, sponsorship brokering, legal consulting","Edmond Tapsoba, Issa Kaboré","Burkina Faso, Germany, France",contact@primefootball.com,+226 68 345 6789
+215,GamePlan Sports Advisory,"Athlete career planning, financial management, sponsorship deals","Azzedine Ounahi, Sofyan Amrabat","Morocco, Spain, Italy",info@gameplansports.com,+212 620 789 234
+216,Champion Strides Football Agency,"Scouting, club placement, marketing representation","Moses Simon, Ola Aina","Nigeria, France, UK",contact@championstrides.com,+234 810 234 5678
+217,NextGen Africa Sports Agency,"Player career optimization, scouting, PR consulting","Noah Fadiga, Lamine Camara","Senegal, France, Belgium",info@nextgenafricasports.com,+221 75 234 5678
+218,First Touch Football Management,"Club transfers, sponsorship deals, player marketing","Gideon Mensah, Joseph Aidoo","Ghana, Spain, Germany",info@firsttouchmanagement.com,+233 20 789 6543
+219,Winning Edge Sports,"Tactical consulting, club networking, sponsorship acquisition","Boubacar Kamara, William Saliba","France, Senegal, Spain",contact@winningedgesports.com,+33 6 234 567 890
+220,Dominant Sports Agency,"Strategic partnerships, career guidance, sponsorship advisory","André-Frank Zambo Anguissa, Clinton N'Jie","Cameroon, Italy, Turkey",info@dominantsportsagency.com,+237 68 789 4321
+221,Future Champions Management,"Talent scouting, contract negotiations, sponsorship brokering","David Datro Fofana, Sekou Koita","Ivory Coast, Austria, Germany",contact@futurechampions.com,+225 55 234 6789
+222,ProScouting Africa,"Club placement, sponsorship deals, legal negotiations","Anass Zaroury, Nayef Aguerd","Morocco, England, Belgium",info@proscoutingafrica.com,+212 660 567 891
+223,Golden Boots Management,"Player transfers, talent scouting, financial consulting","Chidera Ejuke, Taiwo Awoniyi","Nigeria, Germany, Netherlands",info@goldenbootsmgmt.com,+234 810 456 7890
+224,Elite Performance Sports,"Sports marketing, player sponsorships, career management","Ismaïla Sarr, Bamba Dieng","Senegal, UK, France",contact@eliteperformancesports.com,+221 78 567 4321
+225,Platinum Sports Management,"Contract negotiation, image rights management, club connections","Andre Onana, Vincent Aboubakar","Cameroon, Spain, Saudi Arabia",info@platinumsportsmgt.com,+237 69 345 6789
+226,ProEdge Sports Africa,"Youth talent promotion, sponsorships, financial advisory","Patson Daka, Enock Mwepu","Zambia, England, Belgium",contact@proedgesportsafrica.com,+260 96 789 0123
+227,Winning Mindset Management,"Performance consulting, media training, sponsorship deals","Achraf Hakimi, Youssef En-Nesyri","Morocco, France, Spain",info@winningmindsetmgmt.com,+212 610 345 678
+228,Continental Sports Management,"Legal consulting, tactical analysis, sponsorship procurement","Victor Osimhen, Wilfred Ndidi","Nigeria, Italy, UK",contact@continentalsportsmgt.com,+234 902 567 8910
+229,GameChanger Africa,"Club recruitment, marketing representation, contract negotiations","Kalidou Koulibaly, Idrissa Gueye","Senegal, France, UK",info@gamechangerafrica.com,+221 79 345 6789
+230,Gladiator Sports Agency,"Player representation, endorsement deals, sponsorship management","Franck Kessié, Jeremie Boga","Ivory Coast, Italy, Spain",contact@gladiatorsportsagency.com,+225 56 789 4321
+231,Pinnacle Athlete Representation,"Scouting, youth development, financial planning","Yassine Bounou, Sofiane Boufal","Morocco, Spain, Germany",info@pinnacleathleterep.com,+212 630 234 567
+232,Rising Stars Management,"Player promotions, sponsorship deals, international transfers","Moses Simon, Ola Aina","Nigeria, Italy, UK",contact@risingstarsmgt.com,+234 811 789 0123
+233,Iconic Athlete Management,"Endorsement acquisition, club placement, personal branding","Riyad Mahrez, Adam Ounas","Algeria, England, France",info@iconicathletemgmt.com,+213 662 345 678
+234,Visionary Sports Group,"Talent scouting, PR consulting, sponsorship activation","Hamari Traoré, Ibrahima Konaté","Mali, France, Germany",contact@visionarysportsgroup.com,+223 65 789 4321
+235,Trailblazers Football Management,"Club recruitment, contract advisory, youth academy consulting","Zaidu Sanusi, Chidozie Awaziem","Nigeria, Portugal, Spain",info@trailblazersfootball.com,+234 802 234 5678
+236,Excel Sports Africa,"Sponsorship procurement, PR, contract negotiation","Jean Michaël Seri, Serge Aurier","Ivory Coast, UK, France",info@excelsportsafrica.com,+225 56 234 6789
+237,Next Level Sports Agency,"Player endorsements, financial planning, career guidance","Pape Matar Sarr, Ismaila Sarr","Senegal, UK, France",contact@nextlevelsports.com,+221 77 345 6789
+238,Elite Soccer Agents,"Player recruitment, sponsorship deals, career development","Samuel Chukwueze, Wilfried Singo","Nigeria, Ivory Coast, Italy",info@elitesocceragents.com,+234 909 567 8912
+239,Striker First Sports,"Youth scouting, club transfers, legal consulting","Jonathan Bamba, Edmond Tapsoba","Burkina Faso, France, Germany",contact@strikerfirstsports.com,+226 75 678 4321
+240,Legacy Sports Management,"Contract negotiations, sponsorship procurement, financial advisory","Karl Toko Ekambi, Sofiane Feghouli","Cameroon, Algeria, Turkey",info@legacysportsmgt.com,+237 698 234 567
+241,PowerPlay Athlete Representation,"Club placements, scouting, player branding","Mohamed Bayo, Pape Gueye","Guinea, France, Spain",contact@powerplayathletes.com,+224 622 345 6789
+242,StarBridge Sports Management,"Athlete marketing, sponsorship deals, legal assistance","Percy Tau, Keagan Dolly","South Africa, UK, Belgium",info@starbridgesports.com,+27 71 789 0123
+243,Global Goal Sports Agency,"Player management, financial consulting, career strategy","Yves Bissouma, Amadou Haidara","Mali, Germany, France",contact@globalgoalsports.com,+223 64 234 5678
+244,Dynamic Edge Football,"Performance analytics, endorsement deals, club networking","Moussa Djenepo, Hamari Traoré","Mali, France, UK",info@dynamicedgefootball.com,+223 60 789 6543
+245,Winning Play Sports Group,"Legal representation, contract negotiations, sponsorships","Aïssa Mandi, Zinedine Ferhat","Algeria, Spain, France",contact@winningplaysports.com,+213 661 567 890
+246,Precision Sports Management,"Player scouting, agent representation, sponsorship branding","Max Gradel, Simon Adingra","Ivory Coast, Turkey, UK",info@precisionsports.com,+225 57 345 6789
+247,Limitless Talent Agency,"Club transfers, youth scouting, contract management","Nayef Aguerd, Imran Louza","Morocco, UK, Spain",contact@limitlesstalent.com,+212 689 234 567
+248,Game Time Football Agency,"Player promotion, legal advisory, international scouting","Samuel Kalu, Collins Fai","Nigeria, Belgium, Germany",info@gametimefootball.com,+234 808 789 6543
+249,True Champions Sports,"Sponsorship brokering, club negotiations, financial planning","Sebastien Haller, Ibrahim Sangaré","Ivory Coast, Netherlands, France",contact@truechampions.com,+225 56 890 1234
+250,BlueChip Athlete Representation,"Marketing strategy, social media branding, financial consulting","Achraf Dari, Azzedine Ounahi","Morocco, France, Belgium",info@bluechipathletes.com,+212 622 345 678
+251,Victory Sports Africa,"Career planning, legal consulting, club transfers","Serhou Guirassy, Mohamed Simakan","Guinea, France, Germany",contact@victorysportsafrica.com,+224 60 789 4321
+252,Titan Football Management,"Athlete marketing, tactical consulting, contract negotiations","Youcef Atal, Mohamed Fares","Algeria, Italy, France",info@titanfootball.com,+213 663 234 567
+253,Prime Sports Agency,"Scouting, contract drafting, player branding","Salis Abdul Samed, Mohammed Kudus","Ghana, UK, Netherlands",contact@primesportsagency.com,+233 59 678 4321
+254,NextGen Sports Management,"Talent scouting, financial advisory, club placements","Hannibal Mejbri, Karim Konaté","Tunisia, France, Austria",info@nextgensports.com,+216 71 234 567
+255,ProActive Talent Agency,"Player branding, sponsorships, performance consulting","Ilaix Moriba, Kamaldeen Sulemana","Guinea, Spain, Ghana",contact@proactivetalent.com,+224 62 789 4567
+256,African Rising Stars Management,"Youth development, club transfers, contract negotiation","Mohamed Amoura, El Bilal Touré","Algeria, Mali, Belgium",info@africanrisingstars.com,+213 661 345 789
+257,Global Ambition Sports,"Athlete sponsorships, scouting, PR consulting","Tariq Lamptey, Mohammed Salisu","Ghana, UK, Spain",contact@globalambitionsports.com,+233 55 678 9123
+258,PrimePath Sports Group,"Player career planning, sponsorship deals, club connections","Youssouf Fofana, Bouna Sarr","Mali, France, Germany",info@primepathsports.com,+223 60 789 4321
+259,Victory Edge Sports,"Athlete endorsements, club recruitment, performance analytics","Zito Luvumbo, Carlos Baleba","Angola, France, Portugal",contact@victoryedgesports.com,+244 923 567 890
+260,Legends Management Group,"Sponsorship activation, legal advisory, club negotiations","Moses Simon, Chancel Mbemba","Nigeria, DR Congo, France",info@legendsmgt.com,+234 802 345 6789
+261,Dream Big Talent Agency,"Scouting, player branding, financial consulting","Yassine Meriah, Aymen Barkok","Tunisia, Morocco, Germany",contact@dreambigtalent.com,+216 97 456 7890
+262,SpeedStar Sports Representation,"Athlete contract negotiation, media training, sponsorship deals","Edmond Tapsoba, Abdou Diallo","Burkina Faso, Senegal, Germany",info@speedstarsports.com,+226 76 789 3456
+263,Future Champions Agency,"Academy partnerships, club placements, sports marketing","Sekou Koita, Ismael Bennacer","Mali, Algeria, Italy",contact@futurechampionsagency.com,+223 65 890 1234
+264,ProScouts Africa,"Talent scouting, club networking, contract negotiations","Sinaly Diomande, Kamory Doumbia","Ivory Coast, France, Belgium",info@proscoutsafrica.com,+225 56 678 9012
+265,All-Star Football Management,"Club transfers, legal assistance, athlete branding","Ibrahima Sissoko, Mady Camara","Guinea, France, Greece",contact@allstarfootball.com,+224 67 890 1234
+266,Africa Elite Sports Agency,"Player contracts, sponsorship consulting, scouting services","Junior Dina Ebimbe, Malick Thiaw","Senegal, Germany, France",info@africaelitesports.com,+221 79 456 8901
+267,Premier Football Talent Agency,"Youth development, scouting, club placements","Patson Daka, Fashion Sakala","Zambia, UK, Austria",contact@premierfootballtalent.com,+260 96 789 1234
+268,Powerhouse Sports Management,"Endorsement deals, legal assistance, financial planning","Elye Wahi, Sékou Mara","France, Ivory Coast, Belgium",info@powerhousesports.com,+33 6 890 1234 56
+269,Ultimate Football Consulting,"Strategic scouting, club networking, contract management","Hamza Sakhi, Amine Gouiri","Morocco, Algeria, France",contact@ultimatefootball.com,+212 69 890 3456
+270,Champion Edge Management,"Contract negotiations, club scouting, career development","Pape Matar Sarr, Enzo Loiodice","Senegal, France, Spain",info@championedgemanagement.com,+221 76 890 3456
+271,Peak Performance Sports,"Athlete marketing, club placements, sponsorship negotiations","Akor Adams, Akram Afif","Nigeria, Qatar, Belgium",contact@peakperformancesports.com,+234 909 234 5678
+272,Africa Scouting Elite,"Youth scouting, performance analytics, legal consulting","Chisom Egbuchulam, Hervé Koffi","Burkina Faso, Nigeria, Belgium",info@africascoutingelite.com,+226 78 456 7890
+273,Visionary Sports Group,"Player branding, digital media consulting, career development","Brahim Diaz, Moussa Niakhaté","Morocco, Senegal, Germany",contact@visionarysportsgroup.com,+212 66 789 0123
+274,United Football Management,"Sponsorship brokering, youth scouting, financial consulting","Aaron Boupendza, Joris Gnagnon","Gabon, France, Spain",info@unitedfootballmgt.com,+241 77 567 8901
+275,Soccer Stars International,"Athlete career strategy, sponsorships, scouting reports","Sadio Diallo, Hamidou Traoré","Mali, Ivory Coast, Turkey",contact@soccerstarsintl.com,+223 64 789 3456
+276,Momentum Football Agency,"Performance analytics, marketing strategy, contract negotiations","Sofiane Boufal, Youssef En-Nesyri","Morocco, France, Spain",info@momentumfootball.com,+212 62 678 9012
+277,Next Step Talent Agency,"Youth player development, club partnerships, tactical analysis","Ismail Jakobs, Saïd Benrahma","Senegal, Algeria, Germany",contact@nextsteptalent.com,+221 75 789 1234
+278,Total Sports Management,"Club negotiations, sponsorship branding, player investments","Lyle Foster, Bongani Zungu","South Africa, UK, Portugal",info@totalsportsmanagement.com,+27 79 567 8901
+279,Elite Africa Talent,"Club scouting, career mentorship, performance tracking","Lassina Traoré, Bertrand Traoré","Burkina Faso, Netherlands, UK",contact@eliteafricatalent.com,+226 61 789 2345
+280,Golden Goal Representation,"Contract management, financial consulting, sponsorships","Mohamed Camara, Amadou Haidara","Mali, Germany, France",info@goldengoalrep.com,+223 67 890 4567
+281,Prime Vision Sports,"Athlete branding, strategic club placements, digital engagement","Zakaria Aboukhlal, Achraf Bencharki","Morocco, UAE, Netherlands",contact@primevisionsports.com,+212 70 567 8901
+282,Legacy Player Agency,"Talent scouting, club networking, financial advisory","Jean-Pierre Nsamé, Vincent Aboubakar","Cameroon, France, Switzerland",info@legacyplayeragency.com,+237 77 789 0123
+283,Winning Team Sports Agency,"Career mentorship, performance tracking, legal assistance","Patrice Evra, Yaya Sanogo","Ivory Coast, UK, France",contact@winningteamsports.com,+225 62 678 9012
+284,Top Performance Agency,"Contract negotiations, performance analytics, club recruitment","Yves Bissouma, Ellyes Skhiri","Mali, Tunisia, Germany",info@topperformanceagency.com,+223 77 456 7890
+285,Royal Sports Management,"Player scouting, youth development, financial advising","Dango Ouattara, Edmond Tapsoba","Burkina Faso, Belgium, Germany",contact@royalsportsmgt.com,+226 70 234 5678
+286,Gladiator Talent Group,"Marketing & sponsorship deals, career mentoring, scouting","Eric Maxim Choupo-Moting, André Onana","Cameroon, Germany, Italy",info@gladiatortalentgroup.com,+237 99 567 1234
+287,PowerPlay Sports Agency,"Club negotiations, contract optimization, digital branding","Fiston Mayele, Chancel Mbemba","DR Congo, France, Portugal",contact@powerplaysports.com,+243 81 678 2345
+288,Black Star Management,"Youth scouting, career planning, club sponsorship integration","Mohammed Kudus, Abdul Fatawu Issahaku","Ghana, UK, Netherlands",info@blackstaragency.com,+233 54 789 4567
+289,Game Changers Sports Agency,"Athlete contract negotiations, sponsorship branding, legal advisory","Aliou Dieng, Krépin Diatta","Senegal, UAE, France",contact@gamechangersagency.com,+221 77 890 5678
+290,ElitePro Football Agency,"Talent representation, digital media strategy, tactical analysis","Victor Boniface, Gift Orban","Nigeria, Belgium, France",info@eliteproagency.com,+234 80 567 1234
+291,FastTrack Talent Solutions,"Athlete brand partnerships, club placements, media coaching","Seko Fofana, Hamari Traoré","Ivory Coast, France, Saudi Arabia",contact@fasttracksports.com,+225 67 890 2345
+292,Dynamic Sports Representation,"Club negotiations, career counseling, performance tracking","Ismaila Sarr, Boulaye Dia","Senegal, Italy, UK",info@dynamicsportsrep.com,+221 71 567 8901
+293,First Choice Football Agency,"Youth academy placements, contract negotiations, sponsorship scouting","Franck Kessié, Nicolas Pépé","Ivory Coast, Spain, Italy",contact@firstchoicefootball.com,+225 75 890 2345
+294,Legacy Sports Agency,"Athlete sponsorship deals, career mentorship, financial management","Moses Simon, Emmanuel Dennis","Nigeria, France, UK",info@legacysports.com,+234 81 345 6789
+295,Future Icons Management,"Talent scouting, sponsorship negotiations, club transfers","Wilfried Singo, Fodé Ballo-Touré","Ivory Coast, Italy, France",contact@futureiconsmgt.com,+225 76 567 8901
+296,Pioneer Football Agency,"Scouting reports, club sponsorships, brand marketing","Jean Onana, Oumar Solet","Cameroon, France, Germany",info@pioneerfootball.com,+237 68 789 4567
+297,Ultimate Goal Sports Agency,"Player performance consulting, club transfers, sponsorship deals","Ahmed Touba, Youcef Atal","Algeria, Netherlands, France",contact@ultimategoalsports.com,+213 70 234 5678
+298,Winning Edge Sports Management,"Player marketing, scouting, contract negotiations","Cheick Doucouré, Mohamed Bayo","Mali, Guinea, France",info@winningedgesports.com,+223 79 567 8902
+299,NextGen Football Agency,"Youth development, club placements, legal representation","Habib Diallo, Aboubakar Kamara","Senegal, France, England",contact@nextgenfootball.com,+221 78 890 3456
+300,Pro Vision Sports,"Career planning, player investments, sponsorship deals","Yasser Larouci, Amine Gouiri","Algeria, France, Spain",info@provisionsports.com,+213 65 789 4321
+301,Supreme Talent Agency,"Athlete branding, financial management, contract negotiations","Adem Zorgane, Zakaria Aboukhlal","Morocco, Tunisia, Belgium",contact@supremetalentagency.com,+212 62 678 4567
+302,All-Star Football Management,"Performance analytics, club recruitment, legal consulting","Yahya Attiat-Allah, Ellyes Skhiri","Morocco, Tunisia, Germany",info@allstarfootball.com,+212 61 345 7890
+303,Prime Goal Sports Agency,"Talent scouting, tactical analysis, media coaching","Krepin Diatta, Pape Gueye","Senegal, France, Spain",contact@primegoalsports.com,+221 75 890 1234
+304,Strategic Sports Advisory,"Sponsorship deals, contract optimization, financial planning","Ramy Bensebaini, Islam Slimani","Algeria, Germany, France",info@strategicsports.com,+213 79 234 5678
+305,Ambition Football Agency,"Club networking, career strategy, brand sponsorship","Mostafa Mohamed, Omar Marmoush","Egypt, Germany, France",contact@ambitionfootball.com,+20 77 345 6789
+306,Continental Sports Management,"Player endorsements, contract negotiations, club placements","Percy Tau, Keagan Dolly","South Africa, UK, Belgium",info@continentalsportsmgt.com,+27 83 567 2345
+307,Football Success Group,"Scouting, media consulting, sponsorship facilitation","Siphiwe Tshabalala, Teboho Mokoena","South Africa, France, UK",contact@footballsuccess.com,+27 79 890 4567
+308,Future Stars Sports Agency,"Club transfers, youth development, legal representation","Musa Barrow, Omar Colley","Gambia, Italy, Germany",info@futurestarssports.com,+220 70 567 8901
+309,Powerhouse Football Agency,"Player market value assessment, contract negotiations, media strategy","Samuel Chukwueze, Wilfred Ndidi","Nigeria, Spain, England",contact@powerhousefootball.com,+234 80 234 5678
+310,Legends Talent Management,"Tactical consulting, sponsorship scouting, club recruitment","Jordan Ayew, André Ayew","Ghana, France, England",info@legendstalent.com,+233 50 678 1234
+311,BlueChip Sports Agency,"Club networking, financial advising, digital brand development","Edson Castillo, Ronald Araújo","Uruguay, Spain, Italy",contact@bluechipsports.com,+598 98 567 8901
+312,Invictus Football Management,"Athlete marketing, performance evaluation, sponsorship management","Ousmane Diomande, Bamba Dieng","Ivory Coast, Senegal, Portugal",info@invictusfootball.com,+225 64 789 3456
+313,Elite Soccer Agency,"Player career strategy, sponsorship deals, scouting reports","Youssef En-Nesyri, Hakim Ziyech","Morocco, Spain, Netherlands",info@elitesocceragency.com,+212 62 345 6789
+314,Visionary Football Management,"Athlete contract negotiations, club transfers, media training","Riyad Mahrez, Islam Slimani","Algeria, England, France",contact@visionaryfm.com,+213 66 890 2345
+315,Icon Sports Group,"Talent discovery, club recruitment, career mentoring","Patson Daka, Enock Mwepu","Zambia, Austria, England",info@iconsportsgroup.com,+260 97 678 3456
+316,ProPlayer Management,"Financial planning, player scouting, commercial partnerships","Thomas Partey, Kamaldeen Sulemana","Ghana, Spain, England",contact@proplayermanagement.com,+233 54 234 5678
+317,Dominant Sports Agency,"Marketing representation, contract renewals, youth talent management","Serhou Guirassy, Moussa Diaby","Guinea, Germany, France",info@dominantsports.com,+224 66 567 8901
+318,Continental Football Solutions,"Scouting advisory, professional contract guidance, sponsorship deals","Emmanuel Adebayor, Victor Osimhen","Togo, Nigeria, Italy",contact@continentalfootball.com,+228 90 345 6789
+319,Victory Sports Management,"Sports marketing, PR consultancy, financial planning","Mohamed Elneny, Mostafa Mohamed","Egypt, Turkey, England",info@victorysportsmgt.com,+20 100 678 2345
+320,Next Step Football Agency,"Club scouting, performance analysis, contract structuring","Bongani Zungu, Percy Tau","South Africa, France, Belgium",contact@nextstepfa.com,+27 82 345 7890
+321,African Talent Management,"Player mentorship, youth academies, sponsorship acquisition","Naby Keïta, Ilaix Moriba","Guinea, Spain, Germany",info@africantalentmgt.com,+224 60 567 8901
+322,Pinnacle Sports Advisory,"Media coaching, tactical consulting, club recruitment","Wilfried Zaha, Frank Onyeka","Ivory Coast, England, Denmark",info@pinnaclesportsadvisory.com,+225 77 890 2345
+323,Bright Future Football Agency,"Club sponsorship deals, legal advisory, transfer negotiations","Simon Adingra, Kelechi Iheanacho","Nigeria, Ivory Coast, England",contact@brightfuturefa.com,+234 81 345 6789
+324,Top Level Sports Management,"Market intelligence, scouting for elite talent, commercial partnerships","André-Frank Zambo Anguissa, Karl Toko Ekambi","Cameroon, Italy, France",info@toplevelsports.com,+237 99 567 8901
+325,African Dream Football Agency,"Player profiling, agent representation, career planning","Brahim Diaz, Sofiane Boufal","Morocco, Spain, Italy",contact@africandreamfa.com,+212 66 234 5678
+326,Legacy Football Management,"Athlete career consulting, brand endorsement deals, sponsorship negotiations","Nicolas Jackson, Boulaye Dia","Senegal, Italy, Spain",info@legacyfootball.com,+221 77 567 8902
+327,Champion Sports Advisory,"Scouting database, financial structuring, sponsorship planning","Hamza Mendyl, Mehdi Tahrat","Tunisia, France, Saudi Arabia",info@championsports.com,+216 70 345 6789
+328,Grand Slam Sports Agency,"Player branding, sponsorship deals, contract negotiations","Saïd Benrahma, Youcef Atal","Algeria, England, France",info@grandslamsports.com,+213 75 567 4321
+329,Total Game Management,"Athlete investment planning, talent discovery, career management","Odion Ighalo, Chidera Ejuke","Nigeria, Saudi Arabia, Russia",contact@totalgame.com,+234 80 678 9876
+330,All Pro Sports Agency,"Club networking, transfer negotiations, player training programs","Andre Onana, Eric Maxim Choupo-Moting","Cameroon, Italy, Germany",info@allprosports.com,+237 99 567 8901
+331,First Class Football Management,"Scouting, media consulting, sponsorship facilitation","Victor Osimhen, Samuel Chukwueze","Nigeria, Spain, Italy",contact@firstclassfm.com,+234 81 567 4321
+332,Global Football Agency,"Market analysis, athlete career development, sponsorship deals","Achraf Hakimi, Nayef Aguerd","Morocco, France, England",info@globalfootball.com,+212 64 678 2345
+333,Titan Sports Management,"Contract structuring, financial advising, marketing strategy","Sadio Mané, Boulaye Dia","Senegal, Germany, Saudi Arabia",contact@titansports.com,+221 78 456 7890
+334,Pro Athletes Advisory,"Legal consulting, club negotiations, youth player scouting","Moses Simon, Frank Onyeka","Nigeria, France, Denmark",info@proathletes.com,+234 70 345 6789
+335,Future Champions Sports Agency,"Sponsorship coordination, player marketing, career planning","Ismaila Sarr, Idrissa Gueye","Senegal, France, England",contact@futurechampions.com,+221 79 890 2345
+336,Elite Africa Talent Agency,"Player promotion, media representation, scouting management","Patson Daka, Enock Mwepu","Zambia, Austria, England",info@eliteafrica.com,+260 97 678 3456
+337,Summit Football Consultancy,"Performance analytics, career management, scouting consultancy","Ibrahima Konaté, Amadou Haidara","Mali, Germany, France",info@summitfootball.com,+223 79 456 6789
+338,Soccer Pro Management,"Scouting operations, legal advisory, club transfers","Mohamed Camara, Sekou Koita","Mali, Austria, Germany",contact@soccerpro.com,+223 65 789 4321
+339,International Soccer Experts,"Player endorsement deals, contract negotiations, youth academies","Tariq Lamptey, Inaki Williams","Ghana, Spain, England",info@soccerexperts.com,+233 50 678 1234
+340,Gold Standard Football Agency,"Tactical consulting, sponsorship facilitation, club scouting","Ramy Bensebaini, Ellyes Skhiri","Algeria, Germany, France",info@goldstandardfa.com,+213 79 234 5678
+341,Pan-African Football Advisory,"Club sponsorship deals, talent development, transfer negotiations","Mohammed Kudus, Felix Afena-Gyan","Ghana, Italy, England",contact@panafricafootball.com,+233 60 567 8901
+342,Champions League Management,"Financial structuring, branding consultation, club representation","Percy Tau, Bongani Zungu","South Africa, Belgium, France",info@championsleague.com,+27 83 567 2345
+343,Prime Football Agency,"Player transfers, contract negotiations, sponsorships","Wilfried Ndidi, Kelechi Iheanacho","Nigeria, England, Belgium",info@primefootball.com,+234 80 765 4321
+344,SuperSport Talent Management,"Scouting, marketing strategy, talent development","Victor Boniface, Chukwubuike Adamu","Nigeria, Austria, Germany",contact@supersportmgt.com,+234 81 987 6543
+345,Champion Football Representation,"Club sponsorship deals, athlete marketing, contract structuring","Habib Diallo, Sory Kaba","Senegal, France, Spain",info@championfootball.com,+221 77 567 8902
+346,Black Stars Sports Management,"Sponsorship planning, branding consultancy, scouting services","Kudus Mohammed, Antoine Semenyo","Ghana, England, Netherlands",contact@blackstarssports.com,+233 55 678 9012
+347,Tactical Edge Football Agency,"Tactical coaching, player career management, market research","Sofyan Amrabat, Hakim Ziyech","Morocco, Italy, France",info@tacticaledge.com,+212 66 890 2345
+348,Continental Star Sports Management,"Player profiling, investment advising, legal representation","Oumar Solet, Noah Okafor","Guinea, Switzerland, Austria",contact@continentalstarsm.com,+224 90 678 3456
+349,Global Soccer Advisory,"Club negotiations, performance analytics, marketing representation","Tino Kadewere, Marshall Munetsi","Zimbabwe, France, Belgium",info@globalsoccer.com,+263 77 567 2345
+350,NextGen Football Agency,"Future star scouting, commercial partnerships, contract guidance","Jeremy Doku, Amadou Onana","Belgium, Senegal, France",info@nextgenfootball.com,+32 487 567 8910
+351,Skyline Sports Agency,"Player scouting, sponsorship acquisition, financial structuring","Franck Kessié, Ibrahim Sangaré","Ivory Coast, Italy, Netherlands",contact@skylinesports.com,+225 77 678 9012
+352,Premier Talent Management,"Brand management, media representation, club consultancy","Eric Bailly, Simon Adingra","Ivory Coast, France, England",info@premiertalent.com,+225 90 345 6789
+353,Evolve Sports Management,"Youth academy placements, player fitness advisory, marketing","Noah Okafor, Wilfried Singo","Ivory Coast, Switzerland, Italy",contact@evolvesports.com,+41 79 234 5678
+354,Global Impact Football Agency,"Career mentorship, social media branding, transfer facilitation","Benoît Badiashile, Axel Disasi","France, England, Spain",info@globalimpactfa.com,+33 6 789 0123
+355,Infinity Sports Advisory,"Player financial planning, legal advisory, sponsorship management","Yacine Adli, Rayan Aït-Nouri","Algeria, France, England",contact@infinitysports.com,+213 60 567 1234
+356,United Stars Management,"Contract renewal negotiations, player branding, media relations","Moussa Diaby, Randal Kolo Muani","France, Germany, Italy",info@unitedstarsm.com,+33 7 890 1234
+357,ProTech Football Solutions,"Sports psychology, career analytics, scouting reports","Elye Wahi, Désiré Doué","France, England, Netherlands",contact@protechfootball.com,+33 6 789 4321
+358,NextGen Football Solutions,"Talent scouting, club recruitment, career development","Kylian Mbappé, Erling Haaland","France, England, Netherlands",contact@nextgenfootballsolutions.com,+33 6 123 4567
+359,Victory Football Solutions,"Player representation, contract negotiations, sponsorship deals","João Félix, Marcus Rashford","Spain, Italy, Germany",contact@victoryfootballsolutions.com,+34 7 234 5678
+360,Global Talent Football Solutions,"Athlete marketing, performance evaluation, brand endorsement","Victor Osimhen, Khvicha Kvaratskhelia","South America, Europe",contact@globaltalentfootballsolutions.com,+55 21 345 6789
+361,Prime Sports Football Solutions,"Club transfers, contract structuring, image rights management","Pedri, Gavi","United States, Mexico, Canada",contact@primesportsfootballsolutions.com,+1 310 456 7890
+362,Champion Football Solutions,"Sports psychology, career analytics, scouting reports","Eduardo Camavinga, Jamal Musiala","Africa, Middle East",contact@championfootballsolutions.com,+971 50 567 8901
+363,Summit Football Agency,"Player representation, contract negotiations, sponsorship deals","Lautaro Martínez, Rodrygo Goes","France, England, Netherlands",contact@summitfootballagency.com,+33 6 987 6543
+364,Titan Football Agency,"Talent scouting, club recruitment, career development","Kylian Mbappé, Erling Haaland","Spain, Italy, Germany",contact@titanfootballagency.com,+34 7 123 4567
+365,ProEdge Football Agency,"Athlete marketing, performance evaluation, brand endorsement","Victor Osimhen, Khvicha Kvaratskhelia","South America, Europe",contact@proedgefootballagency.com,+55 21 234 5678
+366,MasterClass Football Agency,"Club transfers, contract structuring, image rights management","Pedri, Gavi","United States, Mexico, Canada",contact@masterclassfootballagency.com,+1 310 345 6789
+367,Grand Slam Football Agency,"Sports psychology, career analytics, scouting reports","Eduardo Camavinga, Jamal Musiala","Africa, Middle East",contact@grandslamfootballagency.com,+971 50 456 7890
+368,Dominant Football Agency,"Player scouting, contract negotiations, brand endorsement","Marcus Rashford, Jadon Sancho","United Kingdom, Germany, Spain",contact@dominantfootballagency.com,+44 20 567 4321
+369,Prime Sports Management,"Youth development, media strategy, sponsorship deals","Federico Chiesa, Sandro Tonali","Italy, France, Portugal",contact@primesportsmanagement.com,+39 6 789 0123
+370,Elite Football Solutions,"Market analysis, talent scouting, performance evaluation","Gavi, Eduardo Camavinga","Spain, France, Germany",contact@elitefootballsolutions.com,+34 7 345 6789
+371,NextGen Talent Agency,"Athlete marketing, contract structuring, financial advisory","Jamal Musiala, Florian Wirtz","Germany, Belgium, Netherlands",contact@nextgentalentagency.com,+49 30 678 9012
+372,Visionary Football Management,"Legal consulting, tactical strategy, sponsorship planning","Bukayo Saka, Declan Rice","England, Spain, Italy",contact@visionaryfootball.com,+44 78 234 5678
+373,Legacy Sports Agency,"Player career management, media training, sponsorship negotiation","Rafael Leão, Darwin Núñez","Portugal, Italy, Uruguay",contact@legacysportsagency.com,+351 21 678 3456
+374,Pinnacle Football Solutions,"Scouting operations, performance analytics, legal advisory","Rodrygo Goes, Vinicius Jr.","Brazil, Spain, France",contact@pinnaclefootball.com,+55 11 234 5678
+375,Summit Talent Management,"Market analysis, club negotiations, athlete mentorship","João Félix, Enzo Fernández","Argentina, Portugal, England",contact@summittalent.com,+54 9 11 456 7890
+376,Champion Edge Football Agency,"Youth academy scouting, contract structuring, tactical consulting","Xavi Simons, Jérémy Doku","Netherlands, Belgium, Germany",contact@championedge.com,+31 20 678 2345
+377,Infinity Sports Advisory,"Financial planning, media strategy, career development","Mohamed Kudus, Antony","Ghana, Brazil, Netherlands",contact@infinitysports.com,+233 50 789 1234
+378,Prime Football Consultants,"Player representation, media rights, sponsorship management","Christopher Nkunku, Ousmane Dembélé","France, Germany, Spain",contact@primefootball.com,+33 6 567 4321
+379,Titan Sports Management,"Scouting analytics, legal advisory, financial structuring","Gabriel Martinelli, Takefusa Kubo","Brazil, Spain, Japan",contact@titansports.com,+55 21 234 7890
+380,Champion Pro Football Agency,"Club transfers, career mentorship, market valuation","Rasmus Højlund, Benjamin Šeško","Denmark, Austria, Italy",contact@championpro.com,+45 32 567 8901
+381,Elite Edge Talent Agency,"Contract negotiations, tactical development, athlete branding","Jules Koundé, Nuno Mendes","France, Portugal, Spain",contact@eliteedgetalent.com,+33 7 678 9012
+382,Dominance Football Advisory,"Youth recruitment, sponsorship deals, international scouting","Gonçalo Ramos, Yeremy Pino","Portugal, Spain, England",contact@dominancefootball.com,+351 22 345 6789
+383,Summit Football Management,"Talent scouting, sponsorship acquisition, career development","Loïs Openda, Jonathan David","Belgium, France, Canada",contact@summitfootball.com,+32 4 234 5678
+384,Legacy Pro Sports,"Athlete mentoring, financial planning, club networking","Martin Ødegaard, Darwin Núñez","Norway, Uruguay, England",contact@legacyprosports.com,+47 9 345 6789
+385,Pinnacle Elite Football,"Market analysis, legal representation, player branding","André Onana, Sergej Milinković-Savić","Cameroon, Serbia, Italy",contact@pinnacleelite.com,+381 11 456 7890
+386,Champion International Sports,"Contract negotiations, scouting operations, performance evaluation","Alejandro Balde, Ansu Fati","Spain, Portugal, Netherlands",contact@championsports.com,+34 6 789 0123
+387,Global Vision Football Agency,"Youth scouting, tactical development, sponsorship deals","Dominik Szoboszlai, Cody Gakpo","Hungary, Netherlands, Germany",contact@globalvisionfootball.com,+36 20 345 6789
+388,Pinnacle Sports Advisory,"Contract negotiations, financial consulting, career development","Giovanni Reyna, Adam Hložek","United States, Czech Republic, Germany",contact@pinnaclesports.com,+1 212 345 6789
+389,Summit Elite Management,"Scouting analytics, media strategy, brand partnerships","Moisés Caicedo, Yeremy Pino","Ecuador, Spain, Portugal",contact@summitelitemanagement.com,+593 9 456 7890
+390,Legacy Talent Group,"Youth scouting, sponsorship negotiations, performance training","Hugo Ekitike, Gabriel Veron","France, Brazil, Germany",contact@legacytalent.com,+33 6 123 4567
+391,Visionary Football Advisory,"Legal consulting, tactical development, international transfers","Benjamin Šeško, Romeo Lavia","Slovenia, Belgium, England",contact@visionaryfootball.com,+386 41 678 901
+392,Champion Global Management,"Market valuation, media relations, athlete branding","Jobe Bellingham, Arda Güler","England, Turkey, Spain",contact@championglobal.com,+44 20 567 2345
+393,Summit Football Agency,"Contract structuring, scouting analytics, career guidance","Florian Wirtz, Alejandro Garnacho","Germany, Argentina, Spain",contact@summitfootball.com,+49 40 234 5678
+394,Dominance Sports Agency,"Legal advisory, youth scouting, financial consulting","Harvey Elliott, Romeo Lavia","England, Belgium, Portugal",contact@dominancesports.com,+44 20 789 0123
+395,Visionary Football Group,"Market valuation, sponsorship negotiations, media training","Anssumane Fati, Karim Adeyemi","Spain, Germany, Austria",contact@visionaryfootball.com,+34 6 567 2345
+396,Elite Edge Talent Management,"Brand partnerships, digital marketing, player representation","Elye Wahi, Arda Güler","France, Turkey, Spain",contact@eliteedge.com,+33 7 678 9012
+397,Champion International Football,"Club negotiations, scouting strategy, tactical consultancy","Giorgi Mamardashvili, Mohammed Kudus","Georgia, Ghana, Netherlands",contact@championfootball.com,+995 32 567 7890
+398,NextGen Football Talent,"Player development, career mentorship, market valuation","Noah Okafor, Matheus Nunes","Switzerland, Portugal, England",contact@nextgenfootball.com,+41 22 345 6789
+399,Prime Sports Consulting,"Financial planning, sponsorship negotiations, brand management","Mohammed Salisu, Wilfried Gnonto","Ghana, Italy, Germany",contact@primesports.com,+233 24 567 8901
+400,Summit Global Agency,"Scouting analytics, contract negotiations, media representation","Antonio Silva, Giorgio Scalvini","Portugal, Italy, Spain",contact@summitglobal.com,+351 21 678 9012
+401,Infinity Football Advisors,"Tactical consulting, international transfers, digital branding","Xavi Simons, Nico Williams","Netherlands, Spain, Germany",contact@infinityfootball.com,+31 6 789 0123
+402,Elite Performance Management,"Youth recruitment, media training, sponsorship deals","Malo Gusto, Gabriel Vidović","France, Croatia, Germany",contact@eliteperformance.com,+33 7 678 9012
+403,Pinnacle Athlete Representation,"Legal advisory, scouting reports, career guidance","Oscar Gloukh, Luka Romero","Israel, Argentina, Italy",contact@pinnacleathlete.com,+972 52 345 6789
+404,Visionary Sports Group,"Contract structuring, image rights, financial advisory","Bryan Gil, Samu Chukwueze","Spain, Nigeria, Italy",contact@visionarysports.com,+34 6 789 0123
+405,Champion Edge Management,"Player branding, sponsorship negotiations, talent scouting","Angelo Gabriel, Facundo Buonanotte","Brazil, Argentina, England",contact@championedge.com,+55 11 234 5678
+406,Legacy International Football,"Club networking, performance analytics, career development","Cesare Casadei, Andrey Santos","Italy, Brazil, England",contact@legacyfootball.com,+39 6 567 8901
+407,Dominance Sports Advisory,"Youth scouting, transfer facilitation, sponsorship acquisition","Yunus Musah, Levi Colwill","United States, England, Spain",contact@dominancesports.com,+1 646 234 5678
+408,Summit Football Agency,"Contract structuring, scouting analytics, career guidance","Florian Wirtz, Alejandro Garnacho","Germany, Argentina, Spain",contact@summitfootball.com,+49 40 234 5678
+409,Dominance Sports Agency,"Legal advisory, youth scouting, financial consulting","Harvey Elliott, Romeo Lavia","England, Belgium, Portugal",contact@dominancesports.com,+44 20 789 0123
+410,Visionary Football Group,"Market valuation, sponsorship negotiations, media training","Anssumane Fati, Karim Adeyemi","Spain, Germany, Austria",contact@visionaryfootball.com,+34 6 567 2345
+411,Elite Edge Talent Management,"Brand partnerships, digital marketing, player representation","Elye Wahi, Arda Güler","France, Turkey, Spain",contact@eliteedge.com,+33 7 678 9012
+412,Champion International Football,"Club negotiations, scouting strategy, tactical consultancy","Giorgi Mamardashvili, Mohammed Kudus","Georgia, Ghana, Netherlands",contact@championfootball.com,+995 32 567 7890
+413,Prime Football Consultants,"Player representation, media rights, sponsorship management","Christopher Nkunku, Ousmane Dembélé","France, Germany, Spain",contact@primefootball.com,+33 6 567 4321
+414,Titan Sports Management,"Scouting analytics, legal advisory, financial structuring","Gabriel Martinelli, Takefusa Kubo","Brazil, Spain, Japan",contact@titansports.com,+55 21 234 7890
+415,Champion Pro Football Agency,"Club transfers, career mentorship, market valuation","Rasmus Højlund, Benjamin Šeško","Denmark, Austria, Italy",contact@championpro.com,+45 32 567 8901
+416,Elite Edge Talent Agency,"Contract negotiations, tactical development, athlete branding","Jules Koundé, Nuno Mendes","France, Portugal, Spain",contact@eliteedgetalent.com,+33 7 678 9012
+417,Dominance Football Advisory,"Youth recruitment, sponsorship deals, international scouting","Gonçalo Ramos, Yeremy Pino","Portugal, Spain, England",contact@dominancefootball.com,+351 22 345 6789
+418,Summit Elite Football,"Player negotiations, sponsorship consulting, financial planning","João Neves, Elye Wahi","Portugal, France, England",contact@summitelitefootball.com,+351 22 456 7890
+419,Legacy Sports Consultancy,"Scouting operations, career management, brand marketing","Leny Yoro, Désiré Doué","France, Spain, Belgium",contact@legacysports.com,+33 6 234 5678
+420,Prime Edge Talent Management,"Legal representation, tactical advising, youth development","Arda Güler, Endrick","Turkey, Brazil, Spain",contact@primeedge.com,+90 505 678 9012
+421,Pinnacle Football Representation,"Contract negotiations, sponsorship deals, performance analysis","Yassine Bounou, Bilal El Khannouss","Morocco, Spain, France",contact@pinnaclefootball.com,+212 5 678 2345
+422,Infinity Sports Advisory,"Club networking, brand endorsements, career guidance","Alejandro Balde, Warren Zaïre-Emery","France, Spain, Italy",contact@infinitysports.com,+33 7 234 5678
+423,Champion Global Talent,"Scouting reports, media management, legal consulting","Gabriel Moscardo, Arthur Vermeeren","Brazil, Belgium, Germany",contact@championglobal.com,+55 11 567 8901
+424,Visionary Football Solutions,"Market valuation, sponsorship brokering, youth scouting","Romeo Lavia, Vitor Roque","Belgium, Brazil, England",contact@visionaryfootball.com,+32 4 789 0123
+425,Dominant Sports Group,"Athlete branding, international transfers, performance analytics","Kenan Yıldız, Valentin Carboni","Turkey, Argentina, Italy",contact@dominantsports.com,+90 505 123 6789
+426,Elite Football Management,"Contract renewal, media strategy, digital branding","Simone Pafundi, Jamie Bynoe-Gittens","Italy, England, Germany",contact@elitefootball.com,+39 6 234 5678
+427,Summit Pro Football,"Legal advisory, sponsorship brokering, club negotiations","Angelo Stiller, Ousmane Diomande","Germany, Portugal, France",contact@summitpro.com,+49 30 678 9012
+428,Prime Sports Group,"Scouting analytics, sponsorship management, career development","Lamine Yamal, Warren Zaïre-Emery","Spain, France, England",contact@primesportsgroup.com,+34 6 123 4567
+429,Legacy Football Agency,"Club networking, contract negotiations, media relations","Arthur Vermeeren, Gabriel Moscardo","Belgium, Brazil, Germany",contact@legacyfootball.com,+32 4 678 9012
+430,Summit Global Talent,"Athlete branding, tactical consultancy, sponsorship planning","Paulo Iago, Ousmane Diomande","Portugal, France, Spain",contact@summitglobaltalent.com,+351 22 345 6789
+431,Pinnacle Sports Management,"Legal advisory, transfer facilitation, youth development","Vitor Roque, Kenan Yıldız","Brazil, Turkey, Italy",contact@pinnaclesports.com,+55 11 567 2345
+432,Visionary Talent Solutions,"Contract renewal, brand endorsements, market valuation","Cesare Casadei, Arda Güler","Italy, Turkey, England",contact@visionarytalent.com,+39 6 789 0123
+433,Champion International Sports,"Media training, scouting operations, financial consulting","Angelo Stiller, Bilal El Khannouss","Germany, Morocco, Netherlands",contact@championinternationalsports.com,+49 30 456 7890
+434,Infinity Sports Solutions,"Performance analytics, player branding, sponsorship acquisition","Yassine Bounou, Leny Yoro","Morocco, France, Spain",contact@infinitysports.com,+212 5 678 9012
+435,Elite Football Consultants,"Youth recruitment, digital marketing, strategic planning","João Neves, Endrick","Portugal, Brazil, England",contact@elitefootball.com,+351 22 123 6789
+436,Dominance Football Advisory,"Scouting operations, club negotiations, sponsorship strategy","Romeo Lavia, Valentin Carboni","Belgium, Argentina, Italy",contact@dominancefootball.com,+32 4 567 8901
+437,Summit Edge Talent,"Market analysis, career mentorship, media representation","Angelo Stiller, Kenan Yıldız","Germany, Turkey, Spain",contact@summitedgetalent.com,+49 30 678 9012
+448,Prime Sports Advisory,"Player representation, career mentorship, sponsorship acquisition","Ousmane Diomande, Valentin Carboni","Ivory Coast, Argentina, Italy",contact@primesportsadvisory.com,+225 20 345 6789
+449,Legacy Elite Management,"Legal representation, tactical consulting, youth development","Angelo Gabriel, Noah Darvich","Brazil, Germany, Spain",contact@legacyelitemgmt.com,+55 11 234 5678
+450,Summit Global Representation,"Market valuation, club transfers, financial consulting","Kenan Yıldız, Ethan Nwaneri","Turkey, England, Netherlands",contact@summitglobalrep.com,+90 505 678 9012
+451,Infinity NextGen Football,"Scouting reports, sponsorship brokering, media training","Lamine Yamal, João Neves","Spain, Portugal, France",contact@infinitynextgen.com,+34 6 789 0123
+452,Visionary Football Group,"Career planning, contract negotiations, transfer market strategy","Warren Zaïre-Emery, Gabriele Biancheri","France, Italy, Germany",contact@visionaryfootballgroup.com,+33 7 567 8901
+453,Elite Performance Management,"Athlete branding, tactical development, sponsorship consulting","Matheus Gonçalves, Claudio Echeverri","Brazil, Argentina, Spain",contact@eliteperformancemgmt.com,+55 21 345 6789
+454,Champion Talent Solutions,"Youth scouting, international transfers, financial planning","Lewis Miley, Roony Bardghji","England, Sweden, Netherlands",contact@championtalentsolutions.com,+44 20 567 2345
+455,Dominance Football Consultancy,"Club negotiations, media representation, player branding","Valentin Barco, Gabriel Moscardo","Argentina, Brazil, Germany",contact@dominancefootballconsultancy.com,+54 9 11 678 9012
+456,Summit Future Prospects,"Scouting analytics, talent management, career mentorship","Noah Darvich, Claudio Echeverri","Germany, Argentina, France",contact@summitfutureprospects.com,+49 40 234 5678
+457,Infinity Sports Evolution,"Player representation, sponsorship acquisition, market analysis","Warren Zaïre-Emery, Malick Fofana","France, Belgium, Spain",contact@infinitysportsevolution.com,+33 6 789 0123
+458,Summit Pro Sports,"Contract negotiations, brand partnerships, career mentorship","Kendry Páez, Gabriele Biancheri","Ecuador, Italy, England",contact@summitprosports.com,+593 9 345 6789
+459,Visionary Sports Talent,"Scouting operations, sponsorship acquisition, performance analytics","Romeo Lavia, Lewis Miley","Belgium, England, France",contact@visionarysportstalent.com,+32 4 789 0123
+460,Legacy Global Representation,"Youth scouting, market valuation, media training","Arda Güler, Noah Darvich","Turkey, Germany, Spain",contact@legacyglobal.com,+90 505 234 5678
+461,Prime Edge Football,"Legal advisory, club transfers, career strategy","Matheus Gonçalves, Claudio Echeverri","Brazil, Argentina, Spain",contact@primeedgefootball.com,+55 21 678 9012
+462,Champion Elite Management,"Player branding, tactical consulting, financial planning","Gabriel Moscardo, Valentin Barco","Brazil, Argentina, Italy",contact@championelitemgmt.com,+54 9 11 345 6789
+463,Dominance Football Network,"Athlete branding, sponsorship negotiations, strategic planning","Ethan Nwaneri, Malick Fofana","England, Belgium, Spain",contact@dominancefootballnetwork.com,+44 20 678 9012
+464,Infinity NextGen Talent,"Scouting reports, career mentorship, international transfers","João Neves, Warren Zaïre-Emery","Portugal, France, Italy",contact@infinitynextgentalent.com,+351 22 789 0123
+465,Elite Performance Consultancy,"Sponsorship deals, contract structuring, youth development","Lamine Yamal, Kenan Yıldız","Spain, Turkey, Germany",contact@eliteperformanceconsultancy.com,+34 6 234 5678
+466,Summit Future Stars,"Market valuation, club networking, media training","Ousmane Diomande, Angelo Gabriel","Ivory Coast, Brazil, Spain",contact@summitfuturestars.com,+225 20 345 6789
+467,Visionary Sports Evolution,"Career guidance, sponsorship brokering, transfer facilitation","Roony Bardghji, Ethan Nwaneri","Sweden, England, Netherlands",contact@visionarysportsevolution.com,+46 8 678 9012
+468,Pinnacle Sports Advisory,"Contract negotiations, career strategy, sponsorship acquisition","Endrick, Arda Güler","Brazil, Turkey, Spain",contact@pinnaclesportsadvisory.com,+55 11 789 0123
+469,Summit Elite Management,"Scouting analytics, youth development, performance analysis","João Neves, Vitor Roque","Portugal, Brazil, France",contact@summitelitemanagement.com,+351 22 567 8901
+470,Legacy Global Talent,"Club networking, legal advisory, sponsorship brokering","Lewis Miley, Roony Bardghji","England, Sweden, Germany",contact@legacyglobaltalent.com,+44 20 456 7890
+471,Prime Edge Football Solutions,"Tactical consulting, media relations, market valuation","Ethan Nwaneri, Lamine Yamal","England, Spain, France",contact@primeedgefootball.com,+34 6 678 9012
+472,Infinity Sports Group,"Athlete branding, financial consulting, transfer facilitation","Warren Zaïre-Emery, Kenan Yıldız","France, Turkey, Italy",contact@infinitysportsgroup.com,+33 7 345 6789
+473,Champion Talent Management,"Scouting reports, digital marketing, club transfers","Gabriel Moscardo, Claudio Echeverri","Brazil, Argentina, Spain",contact@championtalentmgmt.com,+55 21 678 2345
+474,Visionary Football Network,"Career mentorship, sponsorship planning, youth scouting","Ousmane Diomande, Angelo Gabriel","Ivory Coast, Brazil, Portugal",contact@visionaryfootballnetwork.com,+225 20 567 8901
+475,Dominance Football Consultancy,"Contract renewals, club negotiations, brand partnerships","Valentin Barco, Noah Darvich","Argentina, Germany, Spain",contact@dominancefootballconsultancy.com,+54 9 11 789 0123
+476,Summit Future Athletes,"Market analysis, sponsorship acquisition, career guidance","Matheus Gonçalves, Gabriele Biancheri","Brazil, Italy, England",contact@summitfutureathletes.com,+55 21 456 7890
+477,Elite Performance Solutions,"Performance training, club transfers, contract structuring","Endrick, Ethan Nwaneri","Brazil, England, Spain",contact@eliteperformancesolutions.com,+44 20 678 2345
+478,Pinnacle Sports Management,"Scouting operations, career development, market valuation","Lamine Yamal, Warren Zaïre-Emery","Spain, France, England",contact@pinnaclesportsmgmt.com,+34 6 123 4567
+479,Summit Global Talent,"Athlete branding, contract negotiations, tactical consulting","Vitor Roque, João Neves","Brazil, Portugal, France",contact@summitglobaltalent.com,+351 22 456 7890
+480,Legacy Elite Football,"Media relations, sponsorship brokering, performance analytics","Claudio Echeverri, Gabriel Moscardo","Argentina, Brazil, Spain",contact@legacyelitefootball.com,+55 11 567 2345
+481,Prime Edge Talent Management,"Legal advisory, club networking, youth scouting","Endrick, Ethan Nwaneri","Brazil, England, Spain",contact@primeedgetalent.com,+44 20 678 9012
+482,Infinity Sports Solutions,"Career mentorship, financial consulting, brand marketing","Lewis Miley, Roony Bardghji","England, Sweden, Germany",contact@infinitysportsolutions.com,+46 8 789 0123
+483,Champion Pro Management,"Contract structuring, scouting analytics, international transfers","Arda Güler, Kenan Yıldız","Turkey, Italy, Germany",contact@championpromgmt.com,+90 505 123 6789
+484,Visionary Football Advisors,"Sponsorship deals, club transfers, media strategy","Ousmane Diomande, Valentin Barco","Ivory Coast, Argentina, France",contact@visionaryfootball.com,+225 20 567 8901
+485,Dominance Global Sports,"Scouting analytics, performance training, athlete branding","Matheus Gonçalves, Gabriele Biancheri","Brazil, Italy, England",contact@dominanceglobalsports.com,+55 21 678 2345
+486,Summit NextGen Representation,"Market analysis, contract negotiations, player branding","Romeo Lavia, Angelo Gabriel","Belgium, Portugal, Brazil",contact@summitnextgenreps.com,+32 4 345 6789
+487,Elite Sports Evolution,"Youth development, tactical consulting, sponsorship planning","Ethan Nwaneri, Malick Fofana","England, Belgium, Spain",contact@elitesportsevolution.com,+44 20 567 8901
+488,Prime Sports Elite,"Player representation, financial advisory, career development","Lamine Yamal, Kenan Yıldız","Spain, Turkey, Germany",contact@primesportselite.com,+34 6 234 5678
+489,Summit International Management,"Scouting analytics, sponsorship brokering, club negotiations","Vitor Roque, Claudio Echeverri","Brazil, Argentina, Spain",contact@summitinternationalmgmt.com,+55 21 456 7890
+490,Legacy Global Sports,"Youth scouting, market valuation, media consulting","João Neves, Warren Zaïre-Emery","Portugal, France, England",contact@legacyglobalsports.com,+351 22 789 0123
+491,Infinity Football Network,"Athlete branding, legal advisory, tactical consulting","Endrick, Romeo Lavia","Brazil, Belgium, Spain",contact@infinityfootballnetwork.com,+55 11 345 6789
+492,Champion Elite Representation,"Contract negotiations, digital marketing, sponsorship acquisition","Malick Fofana, Ethan Nwaneri","Belgium, England, Germany",contact@championeliterep.com,+32 4 678 9012
+493,Visionary Sports Advisory,"Club transfers, scouting operations, performance analytics","Ousmane Diomande, Valentin Barco","Ivory Coast, Argentina, Italy",contact@visionarysportsadvisory.com,+225 20 567 8901
+494,Dominance NextGen Talent,"Career mentorship, financial planning, strategic branding","Matheus Gonçalves, Gabriele Biancheri","Brazil, Italy, England",contact@dominancenextgentalent.com,+55 21 678 2345
+495,Summit Future Stars,"Market analysis, contract structuring, sponsorship deals","Gabriel Moscardo, Claudio Echeverri","Brazil, Argentina, Spain",contact@summitfuturestars.com,+55 11 345 6789
+496,Elite Performance Consultancy,"Athlete development, sponsorship acquisition, tactical training","Lewis Miley, Roony Bardghji","England, Sweden, Germany",contact@eliteperformanceconsultancy.com,+46 8 789 0123
+497,Visionary Football Evolution,"Scouting analytics, media representation, international transfers","Ethan Nwaneri, Angelo Gabriel","England, Portugal, Brazil",contact@visionaryfootballevolution.com,+44 20 567 8901
+498,Pinnacle Elite Sports,"Scouting reports, sponsorship negotiations, contract structuring","Lamine Yamal, Claudio Echeverri","Spain, Argentina, France",contact@pinnacleelitesports.com,+34 6 345 6789
+499,Summit Global Representation,"Player branding, media training, career planning","Vitor Roque, João Neves","Brazil, Portugal, Spain",contact@summitglobalrep.com,+351 22 678 9012
+500,Legacy Pro Sports,"Legal representation, sponsorship brokering, talent scouting","Warren Zaïre-Emery, Malick Fofana","France, Belgium, Germany",contact@legacyprosports.com,+33 7 456 7890
+501,Infinity NextGen Management,"Market valuation, digital marketing, club networking","Endrick, Kenan Yıldız","Brazil, Turkey, Italy",contact@infinitynextgenmgmt.com,+55 11 789 0123
+502,Champion Elite Solutions,"Athlete branding, transfer facilitation, scouting analytics","Gabriel Moscardo, Ethan Nwaneri","Brazil, England, Spain",contact@championelitesolutions.com,+44 20 678 9012
+503,Visionary Football Consultancy,"Club negotiations, media strategy, contract renewals","Ousmane Diomande, Romeo Lavia","Ivory Coast, Belgium, France",contact@visionaryfootballconsultancy.com,+225 20 456 7890
+504,Dominance Global Talent,"Career mentorship, sponsorship acquisition, performance analytics","Matheus Gonçalves, Gabriele Biancheri","Brazil, Italy, England",contact@dominanceglobaltalent.com,+55 21 345 6789
+505,Summit Future Prospects,"Athlete development, scouting reports, club transfers","Valentin Barco, Angelo Gabriel","Argentina, Brazil, Portugal",contact@summitfutureprospects.com,+54 9 11 678 9012
+506,Elite Sports Evolution,"Market analysis, sponsorship deals, financial planning","Lewis Miley, Roony Bardghji","England, Sweden, Netherlands",contact@elitesportsevolution.com,+46 8 789 0123
+507,Visionary Football Network,"Tactical consulting, legal advisory, strategic branding","Ethan Nwaneri, Malick Fofana","England, Belgium, Spain",contact@visionaryfootballnetwork.com,+44 20 567 8901
+508,Prime Edge Sports,"Scouting analytics, contract structuring, sponsorship planning","João Neves, Arda Güler","Portugal, Turkey, Spain",contact@primeedgesports.com,+351 22 789 0123
+509,Summit Pro Athletes,"Performance training, career mentorship, brand marketing","Lamine Yamal, Ethan Nwaneri","Spain, England, France",contact@summitproathletes.com,+34 6 678 9012
+510,Legacy Football Solutions,"Club negotiations, sponsorship acquisition, media strategy","Endrick, Kenan Yıldız","Brazil, Turkey, Germany",contact@legacyfootballsolutions.com,+55 11 345 6789
+511,Infinity Sports Evolution,"Tactical consulting, scouting operations, financial advisory","Valentin Barco, Gabriel Moscardo","Argentina, Brazil, Spain",contact@infinitysportsevolution.com,+54 9 11 456 7890
+512,Champion Global Talent,"Legal representation, career guidance, international transfers","Gabriele Biancheri, Claudio Echeverri","Italy, Argentina, England",contact@championglobaltalent.com,+39 6 789 0123
+513,Visionary Sports Consultancy,"Market analysis, youth scouting, contract renewal negotiations","Ousmane Diomande, Warren Zaïre-Emery","Ivory Coast, France, Portugal",contact@visionarysportsconsultancy.com,+225 20 567 8901
+514,Dominance Elite Representation,"Player branding, sponsorship brokering, performance analytics","Matheus Gonçalves, Roony Bardghji","Brazil, Sweden, Spain",contact@dominanceeliterepresentation.com,+55 21 678 2345
+515,Summit Future Sports,"Scouting reports, media relations, athlete branding","Romeo Lavia, Malick Fofana","Belgium, England, Germany",contact@summitfuturesports.com,+32 4 567 8901
+516,Elite Performance Solutions,"Youth development, sponsorship strategy, strategic branding","Lewis Miley, Ethan Nwaneri","England, Spain, Netherlands",contact@eliteperformancesolutions.com,+44 20 678 9012
+517,Visionary Football Excellence,"Athlete mentorship, digital marketing, sponsorship deals","Endrick, Gabriel Moscardo","Brazil, France, Spain",contact@visionaryfootballexcellence.com,+55 11 345 6789
+518,Pinnacle Global Sports,"Player scouting, financial advisory, brand management","Lamine Yamal, João Neves","Spain, Portugal, England",contact@pinnacleglobalsports.com,+34 6 345 6789
+519,Summit Elite Athletes,"Contract negotiations, career mentorship, sponsorship facilitation","Kenan Yıldız, Claudio Echeverri","Turkey, Argentina, Germany",contact@summiteliteathletes.com,+49 30 567 8901
+520,Legacy Sports Representation,"Media relations, club networking, legal consulting","Ethan Nwaneri, Warren Zaïre-Emery","England, France, Italy",contact@legacysportsrep.com,+44 20 678 9012
+521,Infinity Pro Management,"Athlete branding, tactical advisory, performance evaluation","Gabriel Moscardo, Matheus Gonçalves","Brazil, Spain, France",contact@infinitypromanagement.com,+55 11 456 7890
+522,Champion Sports Advisory,"Sponsorship negotiation, youth development, strategic planning","Ousmane Diomande, Roony Bardghji","Ivory Coast, Sweden, Netherlands",contact@championsportsadvisory.com,+225 20 567 8901
+523,Visionary Talent Group,"Club transfers, financial consulting, scouting analytics","Endrick, Lewis Miley","Brazil, England, Germany",contact@visionarytalentgroup.com,+55 11 345 6789
+524,Dominance Global Representation,"Legal advisory, contract renewals, media training","Malick Fofana, Valentin Barco","Belgium, Argentina, Spain",contact@dominanceglobalrep.com,+32 4 678 9012
+525,Summit Future Champions,"Performance training, international transfers, brand consulting","Gabriele Biancheri, Ethan Nwaneri","Italy, England, Netherlands",contact@summitfuturechampions.com,+39 6 789 0123
+526,Elite Performance Athletes,"Youth scouting, career guidance, tactical development","Warren Zaïre-Emery, Claudio Echeverri","France, Argentina, Spain",contact@eliteperformanceathletes.com,+33 7 456 7890
+527,Visionary Football Evolution,"Sponsorship brokering, strategic branding, club negotiations","Kenan Yıldız, Gabriel Moscardo","Turkey, Brazil, Portugal",contact@visionaryfootballevolution.com,+90 505 234 5678
+528,Pinnacle Sports Elite,"Scouting reports, contract negotiations, media relations","Lamine Yamal, Claudio Echeverri","Spain, Argentina, France",contact@pinnaclesportselite.com,+34 6 123 4567
+529,Summit Global Representation,"Athlete branding, sponsorship deals, club transfers","Vitor Roque, João Neves","Brazil, Portugal, Spain",contact@summitglobalrep.com,+351 22 678 9012
+530,Legacy Pro Football,"Legal representation, talent scouting, performance analysis","Warren Zaïre-Emery, Malick Fofana","France, Belgium, Germany",contact@legacyprofootball.com,+33 7 456 7890
+531,Infinity NextGen Talent,"Market analysis, digital marketing, youth development","Endrick, Kenan Yıldız","Brazil, Turkey, Italy",contact@infinitynextgentalent.com,+55 11 789 0123
+532,Champion Elite Solutions,"Player negotiations, scouting analytics, international transfers","Gabriel Moscardo, Ethan Nwaneri","Brazil, England, Spain",contact@championelitesolutions.com,+44 20 678 9012
+533,Visionary Football Network,"Club negotiations, performance consulting, contract renewals","Ousmane Diomande, Romeo Lavia","Ivory Coast, Belgium, France",contact@visionaryfootballnetwork.com,+225 20 456 7890
+534,Dominance Global Talent,"Athlete mentorship, sponsorship brokering, financial planning","Matheus Gonçalves, Gabriele Biancheri","Brazil, Italy, England",contact@dominanceglobaltalent.com,+55 21 345 6789
+535,Summit Future Prospects,"Talent scouting, media representation, market valuation","Valentin Barco, Angelo Gabriel","Argentina, Brazil, Portugal",contact@summitfutureprospects.com,+54 9 11 678 9012
+536,Elite Performance Solutions,"Youth recruitment, sponsorship strategy, strategic branding","Lewis Miley, Ethan Nwaneri","England, Spain, Netherlands",contact@eliteperformancesolutions.com,+44 20 678 9012
+537,Visionary Football Excellence,"Career guidance, digital marketing, sponsorship facilitation","Endrick, Gabriel Moscardo","Brazil, France, Spain",contact@visionaryfootballexcellence.com,+55 11 345 6789
+538,Prime Edge Talent Management,"Scouting analytics, sponsorship planning, legal advisory","João Neves, Warren Zaïre-Emery","Portugal, France, England",contact@primeedgetalent.com,+351 22 678 9012
+539,Summit Pro Sports,"Player representation, brand partnerships, career development","Kenan Yıldız, Claudio Echeverri","Turkey, Argentina, Germany",contact@summitprosports.com,+90 505 234 5678
+540,Legacy Football Advisory,"Contract structuring, club networking, financial planning","Ethan Nwaneri, Malick Fofana","England, Belgium, Spain",contact@legacyfootballadvisory.com,+44 20 678 9012
+541,Infinity Sports Consultancy,"Athlete branding, performance analytics, international transfers","Gabriel Moscardo, Matheus Gonçalves","Brazil, Spain, France",contact@infinitysportsconsultancy.com,+55 11 456 7890
+542,Champion Sports Representation,"Sponsorship deals, youth development, market analysis","Ousmane Diomande, Roony Bardghji","Ivory Coast, Sweden, Netherlands",contact@championsportsrep.com,+225 20 567 8901
+543,Visionary Talent Solutions,"Club negotiations, tactical consulting, scouting reports","Endrick, Lewis Miley","Brazil, England, Germany",contact@visionarytalentsolutions.com,+55 11 345 6789
+544,Dominance Football Group,"Legal advisory, sponsorship brokering, media training","Malick Fofana, Valentin Barco","Belgium, Argentina, Spain",contact@dominancefootballgroup.com,+32 4 678 9012
+545,Summit Future Legends,"Performance coaching, player branding, contract negotiations","Gabriele Biancheri, Ethan Nwaneri","Italy, England, Netherlands",contact@summitfuturelegends.com,+39 6 789 0123
+546,Elite Performance Athletes,"Youth development, career mentorship, tactical development","Warren Zaïre-Emery, Claudio Echeverri","France, Argentina, Spain",contact@eliteperformanceathletes.com,+33 7 456 7890
+547,Visionary Football Evolution,"Sponsorship negotiations, international transfers, contract renewals","Kenan Yıldız, Gabriel Moscardo","Turkey, Brazil, Portugal",contact@visionaryfootballevolution.com,+90 505 234 5678
+548,Pinnacle Global Talent,"Contract negotiations, player branding, financial consulting","Lamine Yamal, João Neves","Spain, Portugal, England",contact@pinnacleglobaltalent.com,+34 6 789 0123
+549,Summit Elite Representation,"Scouting operations, sponsorship planning, career development","Kenan Yıldız, Claudio Echeverri","Turkey, Argentina, Germany",contact@summiteliterep.com,+49 30 567 8901
+550,Legacy Sports Management,"Athlete mentorship, club negotiations, tactical analysis","Ethan Nwaneri, Warren Zaïre-Emery","England, France, Italy",contact@legacysportsmgmt.com,+44 20 678 9012
+551,Infinity Pro Talent,"Performance analytics, financial advisory, international transfers","Gabriel Moscardo, Matheus Gonçalves","Brazil, Spain, France",contact@infinityprotalent.com,+55 11 456 7890
+552,Champion Sports Group,"Sponsorship negotiations, youth scouting, strategic consulting","Ousmane Diomande, Roony Bardghji","Ivory Coast, Sweden, Netherlands",contact@championsportsgroup.com,+225 20 567 8901
+553,Visionary Talent Management,"Legal consulting, transfer market analysis, scouting reports","Endrick, Lewis Miley","Brazil, England, Germany",contact@visionarytalentmgmt.com,+55 11 345 6789
+554,Dominance Sports Advisory,"Contract renewals, sponsorship deals, media training","Malick Fofana, Valentin Barco","Belgium, Argentina, Spain",contact@dominancesportsadvisory.com,+32 4 678 9012
+555,Summit Future Stars,"Player branding, club networking, market analysis","Gabriele Biancheri, Ethan Nwaneri","Italy, England, Netherlands",contact@summitfuturestars.com,+39 6 789 0123
+556,Elite Performance Consultants,"Youth development, financial strategy, athlete marketing","Warren Zaïre-Emery, Claudio Echeverri","France, Argentina, Spain",contact@eliteperformanceconsultants.com,+33 7 456 7890
+557,Visionary Football Excellence,"Sponsorship acquisition, contract structuring, performance coaching","Kenan Yıldız, Gabriel Moscardo","Turkey, Brazil, Portugal",contact@visionaryfootballexcellence.com,+90 505 234 5678
+558,Prime Edge Football,"Scouting analytics, contract structuring, sponsorship negotiations","Lamine Yamal, Endrick","Spain, Brazil, England",contact@primeedgefootball.com,+34 6 123 4567
+559,Summit Pro Athletes,"Career mentorship, performance training, financial consulting","João Neves, Claudio Echeverri","Portugal, Argentina, Italy",contact@summitproathletes.com,+351 22 678 9012
+560,Legacy Global Management,"Youth development, player branding, sponsorship planning","Ethan Nwaneri, Gabriel Moscardo","England, Brazil, Germany",contact@legacyglobalmgmt.com,+44 20 678 9012
+561,Infinity Sports Consultancy,"Legal advisory, club transfers, tactical development","Matheus Gonçalves, Kenan Yıldız","Brazil, Turkey, France",contact@infinitysportsconsultancy.com,+55 11 456 7890
+562,Champion Talent Representation,"Market analysis, sponsorship acquisition, scouting reports","Ousmane Diomande, Valentin Barco","Ivory Coast, Argentina, Spain",contact@championtalentrep.com,+225 20 567 8901
+563,Visionary Football Group,"Contract renewals, financial strategy, career planning","Warren Zaïre-Emery, Roony Bardghji","France, Sweden, Netherlands",contact@visionaryfootballgroup.com,+33 7 456 7890
+564,Dominance NextGen Sports,"Athlete branding, performance consulting, sponsorship brokering","Ethan Nwaneri, Gabriel Moscardo","England, Brazil, Portugal",contact@dominancenextgensports.com,+32 4 678 9012
+565,Summit Future Legends,"Scouting analytics, media training, club negotiations","Claudio Echeverri, João Neves","Argentina, Portugal, Italy",contact@summitfuturelegends.com,+39 6 789 0123
+566,Elite Performance Solutions,"Player recruitment, digital marketing, market valuation","Kenan Yıldız, Lamine Yamal","Turkey, Spain, France",contact@eliteperformancesolutions.com,+90 505 234 5678
+567,Visionary Sports Evolution,"Tactical consulting, club networking, sponsorship deals","Warren Zaïre-Emery, Endrick","France, Brazil, England",contact@visionarysportsevolution.com,+55 11 345 6789
+568,Pinnacle Global Sports,"Scouting analytics, career planning, financial advisory","João Neves, Warren Zaïre-Emery","Portugal, France, England",contact@pinnacleglobalsports.com,+351 22 678 9012
+569,Summit Elite Athletes,"Contract negotiations, sponsorship planning, performance training","Kenan Yıldız, Claudio Echeverri","Turkey, Argentina, Germany",contact@summiteliteathletes.com,+49 30 567 8901
+570,Legacy Sports Representation,"Athlete mentorship, club negotiations, media strategy","Ethan Nwaneri, Malick Fofana","England, Belgium, Spain",contact@legacysportsrep.com,+44 20 678 9012
+571,Infinity Pro Management,"Performance analytics, financial consulting, international transfers","Gabriel Moscardo, Matheus Gonçalves","Brazil, Spain, France",contact@infinitypromanagement.com,+55 11 456 7890
+572,Champion Sports Advisory,"Sponsorship negotiations, youth scouting, strategic consulting","Ousmane Diomande, Roony Bardghji","Ivory Coast, Sweden, Netherlands",contact@championsportsadvisory.com,+225 20 567 8901
+573,Visionary Talent Group,"Legal consulting, transfer market analysis, scouting reports","Endrick, Lewis Miley","Brazil, England, Germany",contact@visionarytalentgroup.com,+55 11 345 6789
+574,Dominance Global Representation,"Contract renewals, sponsorship deals, media training","Malick Fofana, Valentin Barco","Belgium, Argentina, Spain",contact@dominanceglobalrep.com,+32 4 678 9012
+575,Summit Future Champions,"Player branding, club networking, market analysis","Gabriele Biancheri, Ethan Nwaneri","Italy, England, Netherlands",contact@summitfuturechampions.com,+39 6 789 0123
+576,Elite Performance Athletes,"Youth development, career mentorship, tactical development","Warren Zaïre-Emery, Claudio Echeverri","France, Argentina, Spain",contact@eliteperformanceathletes.com,+33 7 456 7890
+577,Visionary Football Evolution,"Sponsorship negotiations, international transfers, contract renewals","Kenan Yıldız, Gabriel Moscardo","Turkey, Brazil, Portugal",contact@visionaryfootballevolution.com,+90 505 234 5678
+568,Pinnacle Global Sports,"Scouting analytics, career planning, financial advisory","João Neves, Warren Zaïre-Emery","Portugal, France, England",contact@pinnacleglobalsports.com,+351 22 678 9012
+569,Summit Elite Athletes,"Contract negotiations, sponsorship planning, performance training","Kenan Yıldız, Claudio Echeverri","Turkey, Argentina, Germany",contact@summiteliteathletes.com,+49 30 567 8901
+570,Legacy Sports Representation,"Athlete mentorship, club negotiations, media strategy","Ethan Nwaneri, Malick Fofana","England, Belgium, Spain",contact@legacysportsrep.com,+44 20 678 9012
+571,Infinity Pro Management,"Performance analytics, financial consulting, international transfers","Gabriel Moscardo, Matheus Gonçalves","Brazil, Spain, France",contact@infinitypromanagement.com,+55 11 456 7890
+572,Champion Sports Advisory,"Sponsorship negotiations, youth scouting, strategic consulting","Ousmane Diomande, Roony Bardghji","Ivory Coast, Sweden, Netherlands",contact@championsportsadvisory.com,+225 20 567 8901
+573,Visionary Talent Group,"Legal consulting, transfer market analysis, scouting reports","Endrick, Lewis Miley","Brazil, England, Germany",contact@visionarytalentgroup.com,+55 11 345 6789
+574,Dominance Global Representation,"Contract renewals, sponsorship deals, media training","Malick Fofana, Valentin Barco","Belgium, Argentina, Spain",contact@dominanceglobalrep.com,+32 4 678 9012
+575,Summit Future Champions,"Player branding, club networking, market analysis","Gabriele Biancheri, Ethan Nwaneri","Italy, England, Netherlands",contact@summitfuturechampions.com,+39 6 789 0123
+576,Elite Performance Athletes,"Youth development, career mentorship, tactical development","Warren Zaïre-Emery, Claudio Echeverri","France, Argentina, Spain",contact@eliteperformanceathletes.com,+33 7 456 7890
+577,Visionary Football Evolution,"Sponsorship negotiations, international transfers, contract renewals","Kenan Yıldız, Gabriel Moscardo","Turkey, Brazil, Portugal",contact@visionaryfootballevolution.com,+90 505 234 5678
