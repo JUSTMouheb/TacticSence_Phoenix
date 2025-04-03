@@ -1,0 +1,601 @@
+brand_id,brand_name,sponsorship_deals,product_types,location,annual_revenue,contact_email,phone_number,website
+150,Kappa,Football Club,Sportswear,Uganda,$47.4B,contact@kappa.com,2 557 629 850,https://www.kappa.com
+467,Le Coq Sportif,Basketball Team,Basketball,Zambia,$47.3B,contact@le coq sportif.com,2 553 629 252,https://www.le coq sportif.com
+464,Puma,Basketball Team,Footwear,Egypt,$29.7B,contact@puma.com,1 766 661 003,https://www.puma.com
+421,AY Sport,Football Club,Sportswear,Ghana,$39.0B,contact@ay sport.com,2 368 519 018,https://www.ay sport.com
+47,Kappa,National Team,National Team,Egypt,$47.2B,contact@kappa.com,1 635 733 744,https://www.kappa.com
+334,Masita,Football Club,National Team,Uganda,$43.9B,contact@masita.com,1 756 546 092,https://www.masita.com
+389,Masita,National Team,Footwear,Algeria,$31.3B,contact@masita.com,2 042 324 774,https://www.masita.com
+821,Erreà,National Team,Sportswear,Egypt,$24.1B,contact@erreà.com,2 096 714 176,https://www.erreà.com
+266,Masita,Football Club,Football Club,Nigeria,$13.0B,contact@masita.com,2 392 002 270,https://www.masita.com
+307,Erreà,Basketball Team,National Team,Zambia,$45.1B,contact@erreà.com,1 641 804 130,https://www.erreà.com
+11,AY Sport,Football Club,National Team,Ghana,$36.8B,contact@ay sport.com,1 828 156 617,https://www.ay sport.com
+672,Adidas,Basketball Team,Sportswear,Zambia,$32.6B,contact@adidas.com,822 716 181,https://www.adidas.com
+466,Erreà,Basketball Team,National Team,Algeria,$49.2B,contact@erreà.com,1 485 691 593,https://www.erreà.com
+215,Le Coq Sportif,Football Club,Sportswear,Algeria,$6.9B,contact@le coq sportif.com,2 026 434 200,https://www.le coq sportif.com
+835,Adidas,Basketball Team,National Team,Uganda,$27.4B,contact@adidas.com,946 699 631,https://www.adidas.com
+515,Erreà,National Team,National Team,Uganda,$7.9B,contact@erreà.com,922 488 823,https://www.erreà.com
+386,Nike,Football Club,Sportswear,Algeria,$9.7B,contact@nike.com,344 237 894,https://www.nike.com
+960,Kappa,Basketball Team,Footwear,Uganda,$35.9B,contact@kappa.com,1 063 514 143,https://www.kappa.com
+125,Kappa,Basketball Team,Basketball,South Africa,$19.2B,contact@kappa.com,585 991 787,https://www.kappa.com
+920,Le Coq Sportif,Football Club,Sportswear,South Africa,$37.0B,contact@le coq sportif.com,1 008 716 208,https://www.le coq sportif.com
+339,Adidas,Basketball Team,National Team,Kenya,$24.2B,contact@adidas.com,548 092 893,https://www.adidas.com
+75,Kappa,National Team,Football Club,Uganda,$34.5B,contact@kappa.com,1 936 335 129,https://www.kappa.com
+873,Kappa,Football Club,Footwear,Tanzania,$11.8B,contact@kappa.com,1 719 807 276,https://www.kappa.com
+866,Le Coq Sportif,National Team,Footwear,Ghana,$34.1B,contact@le coq sportif.com,441 094 967,https://www.le coq sportif.com
+53,AY Sport,Football Club,Sportswear,Kenya,$6.4B,contact@ay sport.com,2 472 486 751,https://www.ay sport.com
+594,AY Sport,Football Club,National Team,Tanzania,$47.8B,contact@ay sport.com,2 453 763 778,https://www.ay sport.com
+300,Masita,National Team,Basketball,Algeria,$45.6B,contact@masita.com,1 645 808 818,https://www.masita.com
+866,Nike,Football Club,Football Club,Kenya,$8.1B,contact@nike.com,1 417 374 015,https://www.nike.com
+639,Nike,National Team,Footwear,Egypt,$18.7B,contact@nike.com,2 421 919 444,https://www.nike.com
+639,Nike,National Team,Basketball,Egypt,$15.4B,contact@nike.com,917 833 711,https://www.nike.com
+920,Nike,Football Club,Football Club,Tunisia,$25.6B,contact@nike.com,1 281 097 125,https://www.nike.com
+633,Le Coq Sportif,Football Club,Football Club,Egypt,$13.7B,contact@le coq sportif.com,695 314 750,https://www.le coq sportif.com
+834,AY Sport,Football Club,National Team,Egypt,$27.0B,contact@ay sport.com,785 003 715,https://www.ay sport.com
+577,Masita,National Team,Basketball,Senegal,$47.1B,contact@masita.com,771 379 174,https://www.masita.com
+229,AY Sport,Football Club,Basketball,Nigeria,$23.8B,contact@ay sport.com,1 858 276 874,https://www.ay sport.com
+517,AY Sport,Football Club,Sportswear,Uganda,$18.2B,contact@ay sport.com,558 848 245,https://www.ay sport.com
+1,Puma,Football Club,Football Club,South Africa,$12.5B,contact@puma.com,2 396 395 570,https://www.puma.com
+771,Erreà,Basketball Team,Footwear,Kenya,$21.6B,contact@erreà.com,397 565 354,https://www.erreà.com
+227,Erreà,Basketball Team,Footwear,Senegal,$39.3B,contact@erreà.com,387 986 393,https://www.erreà.com
+594,Adidas,Basketball Team,National Team,Ghana,$13.8B,contact@adidas.com,1 113 994 747,https://www.adidas.com
+556,Erreà,Basketball Team,Football Club,Tunisia,$5.4B,contact@erreà.com,502 149 850,https://www.erreà.com
+970,AY Sport,Football Club,Footwear,Ghana,$41.1B,contact@ay sport.com,1 888 784 021,https://www.ay sport.com
+147,Puma,National Team,Footwear,Nigeria,$28.1B,contact@puma.com,382 048 685,https://www.puma.com
+439,Erreà,Basketball Team,Football Club,Senegal,$13.3B,contact@erreà.com,865 084 637,https://www.erreà.com
+225,Puma,Basketball Team,Football Club,Senegal,$46.8B,contact@puma.com,627 399 366,https://www.puma.com
+407,Adidas,Football Club,National Team,Egypt,$48.0B,contact@adidas.com,839 185 554,https://www.adidas.com
+353,Masita,Basketball Team,Basketball,Zambia,$7.1B,contact@masita.com,2 158 039 877,https://www.masita.com
+141,Erreà,Basketball Team,National Team,South Africa,$19.4B,contact@erreà.com,2 179 226 336,https://www.erreà.com
+895,Puma,Basketball Team,National Team,Senegal,$49.1B,contact@puma.com,1 835 184 719,https://www.puma.com
+77,Nike,Football Club,National Team,Egypt,$24.4B,contact@nike.com,2 194 115 692,https://www.nike.com
+84,Erreà,National Team,Footwear,Uganda,$6.7B,contact@erreà.com,1 215 036 703,https://www.erreà.com
+684,Masita,National Team,Basketball,Kenya,$35.2B,contact@masita.com,1 713 733 385,https://www.masita.com
+475,Puma,National Team,Footwear,Algeria,$28.4B,contact@puma.com,2 542 151 066,https://www.puma.com
+100,Nike,National Team,National Team,Uganda,$48.6B,contact@nike.com,576 094 569,https://www.nike.com
+453,Kappa,Football Club,Football Club,Tanzania,$33.9B,contact@kappa.com,743 249 709,https://www.kappa.com
+86,Puma,Basketball Team,Footwear,South Africa,$15.8B,contact@puma.com,2 384 262 126,https://www.puma.com
+452,Puma,Basketball Team,Sportswear,Algeria,$41.6B,contact@puma.com,1 358 168 142,https://www.puma.com
+900,Erreà,National Team,Sportswear,South Africa,$48.3B,contact@erreà.com,752 973 724,https://www.erreà.com
+36,Le Coq Sportif,National Team,National Team,Senegal,$49.3B,contact@le coq sportif.com,1 526 439 836,https://www.le coq sportif.com
+359,Kappa,Football Club,Basketball,Zambia,$7.3B,contact@kappa.com,761 794 208,https://www.kappa.com
+359,Kappa,Basketball Team,Sportswear,Egypt,$23.4B,contact@kappa.com,1 934 403 494,https://www.kappa.com
+644,AY Sport,Basketball Team,Football Club,Egypt,$25.5B,contact@ay sport.com,1 483 783 380,https://www.ay sport.com
+771,Kappa,Football Club,National Team,Senegal,$38.5B,contact@kappa.com,2 306 272 651,https://www.kappa.com
+591,Erreà,National Team,Football Club,Ghana,$32.2B,contact@erreà.com,1 864 704 818,https://www.erreà.com
+51,Puma,Football Club,Basketball,Uganda,$38.5B,contact@puma.com,2 337 194 965,https://www.puma.com
+210,Kappa,Football Club,Sportswear,South Africa,$27.8B,contact@kappa.com,1 739 685 950,https://www.kappa.com
+114,Le Coq Sportif,Football Club,National Team,Zambia,$14.5B,contact@le coq sportif.com,1 178 652 455,https://www.le coq sportif.com
+525,Erreà,National Team,National Team,Tanzania,$7.4B,contact@erreà.com,772 512 214,https://www.erreà.com
+854,Masita,National Team,National Team,Nigeria,$7.0B,contact@masita.com,1 998 967 434,https://www.masita.com
+471,Le Coq Sportif,Football Club,Footwear,Senegal,$32.2B,contact@le coq sportif.com,863 638 316,https://www.le coq sportif.com
+140,AY Sport,Football Club,Basketball,Egypt,$41.6B,contact@ay sport.com,684 551 182,https://www.ay sport.com
+198,AY Sport,Basketball Team,Sportswear,South Africa,$41.9B,contact@ay sport.com,1 334 269 488,https://www.ay sport.com
+52,Erreà,National Team,National Team,Uganda,$7.5B,contact@erreà.com,351 782 639,https://www.erreà.com
+336,Le Coq Sportif,Football Club,Basketball,South Africa,$27.1B,contact@le coq sportif.com,1 025 364 270,https://www.le coq sportif.com
+859,Erreà,National Team,Sportswear,Senegal,$29.5B,contact@erreà.com,1 507 802 377,https://www.erreà.com
+62,AY Sport,National Team,National Team,Zambia,$37.6B,contact@ay sport.com,1 834 451 582,https://www.ay sport.com
+952,Erreà,Football Club,Sportswear,Algeria,$26.5B,contact@erreà.com,1 982 095 353,https://www.erreà.com
+531,Masita,Basketball Team,National Team,Ghana,$22.8B,contact@masita.com,954 047 714,https://www.masita.com
+880,Erreà,Football Club,Basketball,Senegal,$17.8B,contact@erreà.com,2 294 283 671,https://www.erreà.com
+645,Nike,National Team,Basketball,Senegal,$22.8B,contact@nike.com,1 375 727 284,https://www.nike.com
+647,Kappa,Basketball Team,Football Club,Senegal,$38.2B,contact@kappa.com,926 479 117,https://www.kappa.com
+627,Le Coq Sportif,Football Club,Sportswear,Senegal,$35.7B,contact@le coq sportif.com,1 009 196 581,https://www.le coq sportif.com
+604,Le Coq Sportif,Basketball Team,Football Club,Nigeria,$18.0B,contact@le coq sportif.com,2 139 141 660,https://www.le coq sportif.com
+695,Adidas,Football Club,Sportswear,Tunisia,$12.4B,contact@adidas.com,1 764 999 396,https://www.adidas.com
+918,Le Coq Sportif,National Team,Football Club,Nigeria,$45.8B,contact@le coq sportif.com,477 401 287,https://www.le coq sportif.com
+132,Erreà,Football Club,National Team,South Africa,$36.8B,contact@erreà.com,1 024 238 418,https://www.erreà.com
+951,Le Coq Sportif,Football Club,National Team,Tunisia,$16.7B,contact@le coq sportif.com,967 336 229,https://www.le coq sportif.com
+55,AY Sport,National Team,Basketball,Senegal,$41.9B,contact@ay sport.com,1 232 705 686,https://www.ay sport.com
+741,Nike,Football Club,Sportswear,South Africa,$46.6B,contact@nike.com,1 222 354 958,https://www.nike.com
+634,Erreà,Basketball Team,Basketball,Zambia,$34.1B,contact@erreà.com,2 515 309 945,https://www.erreà.com
+297,Kappa,Football Club,Sportswear,Ghana,$5.7B,contact@kappa.com,715 701 129,https://www.kappa.com
+744,Nike,Football Club,National Team,Nigeria,$40.7B,contact@nike.com,2 121 692 467,https://www.nike.com
+33,Nike,Football Club,Football Club,Egypt,$30.2B,contact@nike.com,1 554 621 377,https://www.nike.com
+542,Nike,Football Club,Sportswear,Uganda,$13.5B,contact@nike.com,296 563 985,https://www.nike.com
+139,Erreà,National Team,Sportswear,Nigeria,$20.1B,contact@erreà.com,912 068 703,https://www.erreà.com
+736,Adidas,Basketball Team,Football Club,Uganda,$14.7B,contact@adidas.com,2 466 166 877,https://www.adidas.com
+318,Masita,Basketball Team,Sportswear,Egypt,$29.5B,contact@masita.com,981 543 735,https://www.masita.com
+428,Erreà,Basketball Team,National Team,Zambia,$26.7B,contact@erreà.com,795 888 324,https://www.erreà.com
+992,Erreà,National Team,Basketball,Uganda,$28.6B,contact@erreà.com,1 314 236 942,https://www.erreà.com
+434,AY Sport,Basketball Team,National Team,Algeria,$33.2B,contact@ay sport.com,838 907 910,https://www.ay sport.com
+855,Masita,Football Club,Football Club,Nigeria,$15.5B,contact@masita.com,1 952 043 005,https://www.masita.com
+16,Puma,National Team,National Team,Egypt,$26.4B,contact@puma.com,2 175 393 246,https://www.puma.com
+736,Le Coq Sportif,Basketball Team,Football Club,Egypt,$41.5B,contact@le coq sportif.com,1 467 621 442,https://www.le coq sportif.com
+164,Puma,National Team,Football Club,Tunisia,$6.5B,contact@puma.com,737 284 419,https://www.puma.com
+700,Puma,National Team,National Team,South Africa,$11.8B,contact@puma.com,1 638 513 143,https://www.puma.com
+570,AY Sport,National Team,National Team,Tanzania,$11.8B,0,1 974 596 775,https://www.ay sport.com
+846,Masita,Basketball Team,Football Club,Kenya,$40.3B,contact@masita.com,2 271 054 415,https://www.masita.com
+10,Adidas,Basketball Team,Sportswear,Senegal,$18.8B,contact@adidas.com,772 527 581,https://www.adidas.com
+558,AY Sport,National Team,National Team,Tanzania,$49.0B,contact@ay sport.com,278 067 789,https://www.ay sport.com
+993,AY Sport,National Team,Footwear,Kenya,$19.0B,contact@ay sport.com,1 267 204 343,https://www.ay sport.com
+97,Le Coq Sportif,National Team,Basketball,South Africa,$46.2B,contact@le coq sportif.com,2 236 742 251,https://www.le coq sportif.com
+934,Erreà,Football Club,Football Club,Kenya,$13.8B,contact@erreà.com,769 397 015,https://www.erreà.com
+155,Masita,National Team,Footwear,Algeria,$32.9B,contact@masita.com,1 201 898 463,https://www.masita.com
+132,Le Coq Sportif,National Team,Basketball,South Africa,$34.8B,contact@le coq sportif.com,559 047 298,https://www.le coq sportif.com
+434,AY Sport,Basketball Team,Basketball,South Africa,$44.7B,contact@ay sport.com,266 984 115,https://www.ay sport.com
+512,Adidas,Football Club,Footwear,Tunisia,$33.2B,contact@adidas.com,1 851 689 048,https://www.adidas.com
+94,Masita,Football Club,National Team,South Africa,$7.8B,contact@masita.com,2 275 423 418,https://www.masita.com
+811,Masita,Basketball Team,Football Club,Zambia,$16.9B,contact@masita.com,765 305 473,https://www.masita.com
+943,Masita,Basketball Team,Footwear,South Africa,$18.6B,contact@masita.com,1 009 069 903,https://www.masita.com
+328,Adidas,National Team,National Team,Algeria,$30.4B,contact@adidas.com,1 409 246 879,https://www.adidas.com
+662,Masita,Basketball Team,Footwear,Zambia,$20.7B,contact@masita.com,2 361 717 510,https://www.masita.com
+365,Kappa,Basketball Team,Basketball,Nigeria,$35.0B,contact@kappa.com,2 132 785 675,https://www.kappa.com
+979,Adidas,National Team,Footwear,Kenya,$37.2B,contact@adidas.com,1 928 923 309,https://www.adidas.com
+800,Kappa,National Team,Sportswear,Uganda,$42.8B,contact@kappa.com,2 085 976 455,https://www.kappa.com
+542,Adidas,Football Club,Sportswear,Tanzania,$15.0B,contact@adidas.com,277 661 501,https://www.adidas.com
+543,Masita,National Team,Basketball,South Africa,$48.8B,contact@masita.com,1 301 611 337,https://www.masita.com
+516,AY Sport,National Team,Football Club,Tanzania,$47.3B,contact@ay sport.com,2 412 086 298,https://www.ay sport.com
+763,Kappa,Football Club,Sportswear,Algeria,$14.9B,contact@kappa.com,1 874 093 768,https://www.kappa.com
+407,Puma,National Team,National Team,Nigeria,$8.9B,contact@puma.com,793 239 794,https://www.puma.com
+413,Masita,National Team,Football Club,Algeria,$14.8B,contact@masita.com,2 486 635 253,https://www.masita.com
+156,Masita,Football Club,Basketball,Egypt,$49.5B,contact@masita.com,462 605 720,https://www.masita.com
+17,Adidas,National Team,Football Club,Tunisia,$22.2B,contact@adidas.com,1 997 116 342,https://www.adidas.com
+453,Le Coq Sportif,National Team,Footwear,Tunisia,$38.9B,contact@le coq sportif.com,2 088 651 459,https://www.le coq sportif.com
+72,AY Sport,National Team,National Team,Algeria,$49.3B,contact@ay sport.com,1 361 002 538,https://www.ay sport.com
+991,Le Coq Sportif,Basketball Team,Football Club,Egypt,$37.8B,contact@le coq sportif.com,606 958 077,https://www.le coq sportif.com
+437,Kappa,National Team,National Team,Tanzania,$39.4B,contact@kappa.com,267 637 426,https://www.kappa.com
+603,Le Coq Sportif,Basketball Team,Football Club,Algeria,$38.0B,contact@le coq sportif.com,1 011 343 518,https://www.le coq sportif.com
+286,Adidas,Football Club,National Team,Egypt,$33.1B,contact@adidas.com,458 465 002,https://www.adidas.com
+161,Erreà,Basketball Team,Basketball,Nigeria,$34.6B,contact@erreà.com,1 746 948 789,https://www.erreà.com
+18,Masita,National Team,Sportswear,Kenya,$45.0B,contact@masita.com,1 908 925 166,https://www.masita.com
+939,Puma,Football Club,National Team,Tunisia,$19.9B,contact@puma.com,633 717 830,https://www.puma.com
+884,Nike,National Team,Football Club,Senegal,$18.7B,contact@nike.com,2 138 453 249,https://www.nike.com
+560,AY Sport,National Team,National Team,Tunisia,$46.7B,contact@ay sport.com,849 823 663,https://www.ay sport.com
+369,AY Sport,Basketball Team,Basketball,Algeria,$7.8B,contact@ay sport.com,1 283 111 143,https://www.ay sport.com
+507,Puma,Football Club,Basketball,Uganda,$23.7B,contact@puma.com,524 862 098,https://www.puma.com
+759,Masita,National Team,Footwear,Tunisia,$13.2B,contact@masita.com,221 608 016,https://www.masita.com
+820,Le Coq Sportif,National Team,Basketball,South Africa,$43.1B,contact@le coq sportif.com,551 385 307,https://www.le coq sportif.com
+810,Adidas,National Team,Sportswear,Uganda,$45.3B,contact@adidas.com,1 908 616 851,https://www.adidas.com
+918,Erreà,Football Club,Sportswear,Ghana,$44.9B,contact@erreà.com,2 006 237 340,https://www.erreà.com
+994,Adidas,Football Club,National Team,Uganda,$18.7B,contact@adidas.com,1 288 338 636,https://www.adidas.com
+735,Erreà,Football Club,National Team,South Africa,$26.8B,contact@erreà.com,2 194 084 113,https://www.erreà.com
+950,Le Coq Sportif,National Team,Sportswear,Uganda,$38.5B,contact@le coq sportif.com,1 875 589 276,https://www.le coq sportif.com
+914,AY Sport,National Team,Footwear,Algeria,$25.8B,contact@ay sport.com,2 139 237 495,https://www.ay sport.com
+999,Kappa,Basketball Team,Sportswear,Algeria,$8.9B,contact@kappa.com,1 354 026 389,https://www.kappa.com
+19,Kappa,Basketball Team,Footwear,Egypt,$49.4B,contact@kappa.com,211 516 264,https://www.kappa.com
+109,Masita,Basketball Team,Footwear,Tunisia,$41.6B,contact@masita.com,1 604 423 921,https://www.masita.com
+111,Adidas,Football Club,Sportswear,Senegal,$47.6B,contact@adidas.com,363 434 421,https://www.adidas.com
+507,Kappa,National Team,Sportswear,Ghana,$32.1B,contact@kappa.com,1 722 032 419,https://www.kappa.com
+8,Puma,National Team,Footwear,Tunisia,$39.0B,contact@puma.com,1 939 026 075,https://www.puma.com
+294,Le Coq Sportif,Football Club,Basketball,Tanzania,$39.7B,contact@le coq sportif.com,1 638 021 625,https://www.le coq sportif.com
+4,Kappa,Basketball Team,Football Club,South Africa,$17.9B,contact@kappa.com,2 399 133 251,https://www.kappa.com
+971,Masita,Football Club,National Team,Senegal,$34.2B,contact@masita.com,1 905 518 293,https://www.masita.com
+836,Puma,Football Club,Footwear,South Africa,$25.3B,contact@puma.com,1 594 711 128,https://www.puma.com
+943,Erreà,Football Club,Sportswear,Uganda,$27.5B,contact@erreà.com,1 527 105 260,https://www.erreà.com
+139,AY Sport,Basketball Team,National Team,Egypt,$33.2B,contact@ay sport.com,2 184 771 208,https://www.ay sport.com
+472,Kappa,National Team,Sportswear,Tanzania,$41.9B,contact@kappa.com,1 796 523 566,https://www.kappa.com
+256,Erreà,Football Club,Basketball,Egypt,$20.3B,contact@erreà.com,1 221 495 835,https://www.erreà.com
+752,Le Coq Sportif,Football Club,Footwear,Nigeria,$10.2B,contact@le coq sportif.com,2 037 037 283,https://www.le coq sportif.com
+599,Puma,Football Club,Footwear,Kenya,$17.2B,contact@puma.com,455 224 513,https://www.puma.com
+882,Le Coq Sportif,National Team,National Team,Kenya,$22.6B,contact@le coq sportif.com,1 055 617 064,https://www.le coq sportif.com
+479,Kappa,National Team,Football Club,Egypt,$39.3B,contact@kappa.com,684 325 202,https://www.kappa.com
+990,Erreà,Football Club,Sportswear,Zambia,$31.6B,contact@erreà.com,231 673 491,https://www.erreà.com
+497,Nike,Basketball Team,National Team,Kenya,$49.2B,contact@nike.com,1 796 558 606,https://www.nike.com
+711,Kappa,Football Club,Basketball,Tanzania,$21.4B,contact@kappa.com,1 368 917 920,https://www.kappa.com
+697,Kappa,Football Club,Football Club,Algeria,$31.4B,contact@kappa.com,2 004 338 688,https://www.kappa.com
+991,Puma,National Team,Sportswear,Tanzania,$17.9B,contact@puma.com,1 453 814 309,https://www.puma.com
+691,Le Coq Sportif,Basketball Team,Basketball,Algeria,$24.4B,contact@le coq sportif.com,525 225 559,https://www.le coq sportif.com
+740,Erreà,Football Club,Footwear,Nigeria,$9.3B,contact@erreà.com,2 191 248 129,https://www.erreà.com
+604,Masita,National Team,Football Club,Egypt,$29.4B,contact@masita.com,1 223 223 431,https://www.masita.com
+733,AY Sport,Football Club,Basketball,Tanzania,$9.8B,contact@ay sport.com,1 485 679 331,https://www.ay sport.com
+100,AY Sport,Basketball Team,National Team,Algeria,$11.9B,contact@ay sport.com,909 205 374,https://www.ay sport.com
+547,Le Coq Sportif,Football Club,Basketball,Senegal,$36.7B,contact@le coq sportif.com,957 379 596,https://www.le coq sportif.com
+451,Adidas,National Team,Basketball,Tunisia,$20.3B,contact@adidas.com,1 005 879 674,https://www.adidas.com
+710,Adidas,National Team,Sportswear,Zambia,$27.2B,contact@adidas.com,873 334 406,https://www.adidas.com
+886,AY Sport,Basketball Team,Footwear,Uganda,$8.3B,contact@ay sport.com,1 611 618 311,https://www.ay sport.com
+264,Erreà,Basketball Team,Footwear,Tanzania,$17.3B,contact@erreà.com,1 718 634 029,https://www.erreà.com
+597,AY Sport,Football Club,Footwear,Tunisia,$45.1B,contact@ay sport.com,405 839 676,https://www.ay sport.com
+398,Kappa,National Team,Basketball,Nigeria,$39.1B,contact@kappa.com,472 977 316,https://www.kappa.com
+471,Masita,Basketball Team,Footwear,Egypt,$47.9B,contact@masita.com,1 202 688 202,https://www.masita.com
+148,Nike,Basketball Team,Basketball,Ghana,$34.8B,contact@nike.com,872 954 378,https://www.nike.com
+708,Le Coq Sportif,Basketball Team,National Team,Algeria,$7.4B,contact@le coq sportif.com,916 499 595,https://www.le coq sportif.com
+437,AY Sport,Football Club,National Team,Ghana,$44.2B,contact@ay sport.com,2 383 783 183,https://www.ay sport.com
+366,Kappa,National Team,Basketball,Nigeria,$16.2B,contact@kappa.com,961 242 668,https://www.kappa.com
+803,Adidas,Basketball Team,Basketball,Ghana,$42.2B,contact@adidas.com,2 312 694 151,https://www.adidas.com
+211,Masita,National Team,Football Club,Senegal,$45.5B,contact@masita.com,1 391 115 818,https://www.masita.com
+704,Le Coq Sportif,Basketball Team,Basketball,Algeria,$37.5B,contact@le coq sportif.com,1 824 058 751,https://www.le coq sportif.com
+923,Puma,Basketball Team,Football Club,Uganda,$6.6B,contact@puma.com,1 488 032 902,https://www.puma.com
+697,Erreà,National Team,Basketball,Nigeria,$41.3B,contact@erreà.com,1 312 845 798,https://www.erreà.com
+331,Kappa,Football Club,National Team,Egypt,$14.9B,contact@kappa.com,2 342 999 532,https://www.kappa.com
+766,AY Sport,Basketball Team,Footwear,Nigeria,$20.4B,contact@ay sport.com,505 073 339,https://www.ay sport.com
+85,Kappa,National Team,Footwear,Zambia,$27.4B,contact@kappa.com,1 366 171 428,https://www.kappa.com
+231,Puma,National Team,Football Club,Nigeria,$9.5B,contact@puma.com,1 244 325 090,https://www.puma.com
+159,Masita,Football Club,Basketball,Tanzania,$36.6B,contact@masita.com,2 095 453 219,https://www.masita.com
+663,Nike,Football Club,Football Club,Tanzania,$30.6B,contact@nike.com,2 175 796 471,https://www.nike.com
+213,Le Coq Sportif,National Team,Sportswear,Senegal,$6.3B,contact@le coq sportif.com,1 717 225 899,https://www.le coq sportif.com
+334,Adidas,Basketball Team,Football Club,Kenya,$36.2B,contact@adidas.com,1 868 105 204,https://www.adidas.com
+659,AY Sport,National Team,National Team,Senegal,$33.8B,contact@ay sport.com,1 694 767 742,https://www.ay sport.com
+634,Le Coq Sportif,National Team,National Team,Egypt,$7.1B,contact@le coq sportif.com,1 192 772 401,https://www.le coq sportif.com
+473,Adidas,Football Club,Footwear,South Africa,$10.2B,contact@adidas.com,2 055 656 954,https://www.adidas.com
+812,Le Coq Sportif,Basketball Team,Footwear,Ghana,$39.8B,contact@le coq sportif.com,931 305 244,https://www.le coq sportif.com
+690,Puma,Basketball Team,Sportswear,South Africa,$8.5B,contact@puma.com,1 871 426 381,https://www.puma.com
+561,Le Coq Sportif,Basketball Team,Sportswear,Egypt,$48.3B,contact@le coq sportif.com,712 723 101,https://www.le coq sportif.com
+686,Nike,National Team,Basketball,Ghana,$7.9B,contact@nike.com,1 197 444 808,https://www.nike.com
+897,Erreà,National Team,Footwear,Senegal,$6.8B,contact@erreà.com,1 438 611 889,https://www.erreà.com
+339,AY Sport,National Team,Basketball,Nigeria,$11.4B,contact@ay sport.com,2 532 597 333,https://www.ay sport.com
+566,Erreà,Basketball Team,Sportswear,South Africa,$5.1B,contact@erreà.com,561 922 638,https://www.erreà.com
+941,Kappa,National Team,Football Club,Uganda,$23.7B,contact@kappa.com,971 179 630,https://www.kappa.com
+61,Erreà,Football Club,National Team,Senegal,$23.9B,contact@erreà.com,2 435 143 970,https://www.erreà.com
+329,Adidas,Football Club,Basketball,Kenya,$33.5B,contact@adidas.com,2 015 108 487,https://www.adidas.com
+724,Le Coq Sportif,National Team,National Team,Tanzania,$16.1B,contact@le coq sportif.com,412 076 598,https://www.le coq sportif.com
+443,Erreà,Basketball Team,Football Club,Zambia,$19.7B,contact@erreà.com,2 552 305 102,https://www.erreà.com
+272,Erreà,National Team,National Team,South Africa,$32.0B,contact@erreà.com,2 276 006 146,https://www.erreà.com
+200,Kappa,Basketball Team,Football Club,Ghana,$28.1B,contact@kappa.com,1 304 749 627,https://www.kappa.com
+345,Kappa,National Team,Football Club,Senegal,$36.6B,contact@kappa.com,982 666 554,https://www.kappa.com
+315,Erreà,Basketball Team,National Team,Ghana,$15.3B,contact@erreà.com,1 769 396 640,https://www.erreà.com
+681,AY Sport,National Team,Basketball,Tunisia,$41.4B,contact@ay sport.com,398 512 518,https://www.ay sport.com
+153,Kappa,Football Club,Sportswear,Zambia,$16.0B,contact@kappa.com,1 179 072 430,https://www.kappa.com
+684,AY Sport,National Team,Footwear,Uganda,$8.0B,contact@ay sport.com,219 435 632,https://www.ay sport.com
+74,Erreà,National Team,Sportswear,Nigeria,$15.5B,contact@erreà.com,1 687 962 410,https://www.erreà.com
+64,Erreà,Basketball Team,Sportswear,South Africa,$8.6B,contact@erreà.com,1 204 859 594,https://www.erreà.com
+59,Le Coq Sportif,Basketball Team,Basketball,Algeria,$29.8B,contact@le coq sportif.com,429 088 999,https://www.le coq sportif.com
+785,Masita,Basketball Team,National Team,Kenya,$25.9B,contact@masita.com,506 233 755,https://www.masita.com
+348,Kappa,National Team,Footwear,Zambia,$24.2B,contact@kappa.com,448 547 307,https://www.kappa.com
+645,Puma,Football Club,Footwear,Uganda,$34.1B,contact@puma.com,1 372 774 425,https://www.puma.com
+742,Puma,Basketball Team,Sportswear,Egypt,$37.4B,contact@puma.com,2 281 283 507,https://www.puma.com
+968,Le Coq Sportif,Football Club,Sportswear,South Africa,$47.1B,contact@le coq sportif.com,2 155 686 419,https://www.le coq sportif.com
+74,Puma,National Team,Footwear,Senegal,$11.4B,contact@puma.com,2 202 979 632,https://www.puma.com
+940,Nike,National Team,Sportswear,Zambia,$37.4B,contact@nike.com,1 235 053 477,https://www.nike.com
+251,Erreà,National Team,Sportswear,Algeria,$35.6B,contact@erreà.com,1 199 498 348,https://www.erreà.com
+109,Nike,National Team,National Team,South Africa,$24.0B,contact@nike.com,1 017 373 292,https://www.nike.com
+22,Puma,National Team,Sportswear,Algeria,$36.5B,contact@puma.com,1 219 501 750,https://www.puma.com
+942,Adidas,Basketball Team,Football Club,Nigeria,$37.4B,contact@adidas.com,1 706 029 977,https://www.adidas.com
+333,AY Sport,Basketball Team,Basketball,Kenya,$9.9B,contact@ay sport.com,2 016 798 397,https://www.ay sport.com
+376,Kappa,Basketball Team,National Team,Senegal,$7.8B,contact@kappa.com,1 113 393 315,https://www.kappa.com
+958,Puma,National Team,Basketball,Senegal,$15.1B,contact@puma.com,1 859 038 612,https://www.puma.com
+934,Kappa,Football Club,Football Club,Tanzania,$9.1B,contact@kappa.com,1 916 934 124,https://www.kappa.com
+219,AY Sport,National Team,Footwear,South Africa,$10.4B,contact@ay sport.com,296 812 353,https://www.ay sport.com
+437,Masita,Football Club,Footwear,Zambia,$25.5B,contact@masita.com,275 366 513,https://www.masita.com
+892,Puma,National Team,Football Club,South Africa,$16.3B,contact@puma.com,646 229 561,https://www.puma.com
+922,Le Coq Sportif,National Team,National Team,Nigeria,$31.9B,contact@le coq sportif.com,489 641 997,https://www.le coq sportif.com
+162,Erreà,National Team,National Team,Egypt,$24.7B,contact@erreà.com,2 183 157 480,https://www.erreà.com
+223,Le Coq Sportif,Football Club,National Team,Nigeria,$16.9B,contact@le coq sportif.com,692 142 003,https://www.le coq sportif.com
+412,Adidas,Basketball Team,Sportswear,Ghana,$7.0B,contact@adidas.com,625 485 883,https://www.adidas.com
+182,Puma,National Team,National Team,Nigeria,$47.8B,contact@puma.com,1 308 931 549,https://www.puma.com
+103,Nike,National Team,Footwear,South Africa,$21.8B,contact@nike.com,1 791 876 058,https://www.nike.com
+874,Adidas,Football Club,Football Club,Nigeria,$23.8B,contact@adidas.com,1 275 125 645,https://www.adidas.com
+771,Masita,National Team,Sportswear,Nigeria,$15.5B,contact@masita.com,1 878 731 151,https://www.masita.com
+530,Adidas,Basketball Team,Footwear,Algeria,$33.3B,contact@adidas.com,332 954 885,https://www.adidas.com
+824,Puma,Basketball Team,Football Club,Kenya,$39.0B,contact@puma.com,928 216 427,https://www.puma.com
+641,Erreà,National Team,Football Club,Nigeria,$32.4B,contact@erreà.com,1 821 114 408,https://www.erreà.com
+72,AY Sport,Basketball Team,Footwear,Algeria,$30.0B,contact@ay sport.com,1 721 643 786,https://www.ay sport.com
+506,Erreà,National Team,Footwear,Egypt,$23.6B,contact@erreà.com,1 321 793 209,https://www.erreà.com
+161,Erreà,Football Club,Footwear,Kenya,$22.8B,contact@erreà.com,865 756 448,https://www.erreà.com
+111,Puma,Basketball Team,Basketball,Nigeria,$34.8B,contact@puma.com,1 791 627 879,https://www.puma.com
+806,Nike,Football Club,Footwear,Kenya,$5.3B,contact@nike.com,2 433 545 514,https://www.nike.com
+972,Nike,National Team,Footwear,Egypt,$24.4B,contact@nike.com,2 009 402 474,https://www.nike.com
+575,Erreà,Football Club,Football Club,Senegal,$20.1B,contact@erreà.com,628 596 245,https://www.erreà.com
+1000,Masita,Football Club,Sportswear,Tanzania,$38.1B,contact@masita.com,2 484 527 901,https://www.masita.com
+30,Nike,Basketball Team,Basketball,Kenya,$46.5B,contact@nike.com,941 334 880,https://www.nike.com
+202,Erreà,Basketball Team,Sportswear,South Africa,$16.5B,contact@erreà.com,1 459 736 604,https://www.erreà.com
+610,Erreà,Football Club,Football Club,Ghana,$42.8B,contact@erreà.com,1 336 917 174,https://www.erreà.com
+707,Erreà,National Team,Basketball,Kenya,$40.6B,contact@erreà.com,2 451 918 706,https://www.erreà.com
+202,Erreà,National Team,Basketball,Nigeria,$33.7B,contact@erreà.com,1 278 091 364,https://www.erreà.com
+935,Le Coq Sportif,National Team,Football Club,Kenya,$13.2B,contact@le coq sportif.com,2 323 366 790,https://www.le coq sportif.com
+148,Puma,Football Club,Footwear,Algeria,$42.0B,contact@puma.com,2 123 366 635,https://www.puma.com
+888,Puma,Basketball Team,Sportswear,Egypt,$25.5B,contact@puma.com,2 054 577 954,https://www.puma.com
+492,Puma,Basketball Team,Sportswear,Algeria,$39.2B,contact@puma.com,649 946 233,https://www.puma.com
+537,Puma,Basketball Team,Basketball,Tunisia,$23.4B,contact@puma.com,2 474 187 804,https://www.puma.com
+861,Le Coq Sportif,Basketball Team,Footwear,Nigeria,$24.1B,contact@le coq sportif.com,1 094 683 525,https://www.le coq sportif.com
+102,Adidas,Football Club,National Team,Tunisia,$24.2B,contact@adidas.com,1 653 814 561,https://www.adidas.com
+726,Adidas,National Team,Footwear,Nigeria,$18.8B,contact@adidas.com,2 298 227 873,https://www.adidas.com
+738,Masita,National Team,Sportswear,Egypt,$23.6B,contact@masita.com,2 411 252 849,https://www.masita.com
+150,Kappa,National Team,Footwear,Tanzania,$30.3B,contact@kappa.com,2 535 314 066,https://www.kappa.com
+767,Erreà,National Team,Basketball,Nigeria,$18.1B,contact@erreà.com,1 167 841 745,https://www.erreà.com
+140,Nike,Football Club,Basketball,Egypt,$43.4B,contact@nike.com,2 375 557 640,https://www.nike.com
+186,Puma,Basketball Team,Basketball,Tanzania,$18.2B,contact@puma.com,773 421 241,https://www.puma.com
+541,Kappa,National Team,National Team,Algeria,$41.4B,contact@kappa.com,1 805 679 011,https://www.kappa.com
+168,AY Sport,Basketball Team,Sportswear,Algeria,$29.8B,contact@ay sport.com,2 085 169 589,https://www.ay sport.com
+36,Erreà,Football Club,Footwear,Tanzania,$13.5B,contact@erreà.com,1 673 826 177,https://www.erreà.com
+830,Adidas,Football Club,Sportswear,Kenya,$10.3B,contact@adidas.com,2 429 383 944,https://www.adidas.com
+290,Adidas,Basketball Team,Basketball,South Africa,$32.0B,contact@adidas.com,1 914 321 799,https://www.adidas.com
+293,Erreà,Basketball Team,Footwear,Tanzania,$38.7B,contact@erreà.com,824 589 343,https://www.erreà.com
+666,Nike,Basketball Team,National Team,Senegal,$31.5B,contact@nike.com,2 064 562 244,https://www.nike.com
+772,Le Coq Sportif,Basketball Team,Footwear,Ghana,$14.0B,contact@le coq sportif.com,317 215 131,https://www.le coq sportif.com
+952,Puma,Football Club,Sportswear,Ghana,$44.6B,contact@puma.com,1 568 878 983,https://www.puma.com
+927,Masita,Football Club,Sportswear,Tunisia,$33.4B,contact@masita.com,322 156 088,https://www.masita.com
+490,Puma,Football Club,Basketball,Kenya,$41.5B,contact@puma.com,1 834 552 182,https://www.puma.com
+117,Adidas,Basketball Team,Sportswear,Zambia,$45.8B,contact@adidas.com,2 096 457 910,https://www.adidas.com
+239,Puma,National Team,National Team,South Africa,$19.2B,contact@puma.com,628 168 422,https://www.puma.com
+492,AY Sport,Football Club,Football Club,Algeria,$26.2B,contact@ay sport.com,958 993 340,https://www.ay sport.com
+938,Adidas,Basketball Team,National Team,Egypt,$8.5B,contact@adidas.com,2 179 928 511,https://www.adidas.com
+522,Nike,Football Club,Basketball,Uganda,$42.4B,contact@nike.com,1 411 114 091,https://www.nike.com
+345,Le Coq Sportif,Basketball Team,Basketball,Ghana,$18.1B,contact@le coq sportif.com,1 165 127 097,https://www.le coq sportif.com
+178,Le Coq Sportif,Basketball Team,Footwear,Nigeria,$29.6B,contact@le coq sportif.com,1 175 344 181,https://www.le coq sportif.com
+371,Erreà,Basketball Team,Footwear,Tanzania,$34.1B,contact@erreà.com,2 366 543 316,https://www.erreà.com
+137,Erreà,Football Club,Sportswear,Zambia,$35.0B,contact@erreà.com,1 651 486 272,https://www.erreà.com
+596,Erreà,Football Club,Footwear,Uganda,$42.9B,contact@erreà.com,1 743 248 618,https://www.erreà.com
+800,Masita,Football Club,National Team,Zambia,$17.0B,contact@masita.com,1 071 258 498,https://www.masita.com
+871,Puma,Basketball Team,Football Club,Egypt,$32.8B,contact@puma.com,2 519 818 862,https://www.puma.com
+358,Puma,Football Club,National Team,Senegal,$16.8B,contact@puma.com,1 065 374 691,https://www.puma.com
+600,Masita,Basketball Team,Basketball,Zambia,$46.3B,contact@masita.com,644 748 716,https://www.masita.com
+760,Le Coq Sportif,National Team,Footwear,Algeria,$15.4B,contact@le coq sportif.com,2 514 162 933,https://www.le coq sportif.com
+671,AY Sport,National Team,Basketball,Nigeria,$21.0B,contact@ay sport.com,1 077 669 834,https://www.ay sport.com
+464,Puma,Basketball Team,Footwear,Uganda,$25.8B,contact@puma.com,877 119 182,https://www.puma.com
+610,Nike,National Team,Footwear,Senegal,$18.4B,contact@nike.com,208 564 761,https://www.nike.com
+596,Le Coq Sportif,Basketball Team,Football Club,Senegal,$5.9B,contact@le coq sportif.com,936 645 964,https://www.le coq sportif.com
+226,Kappa,Basketball Team,Footwear,Ghana,$48.3B,contact@kappa.com,1 474 139 416,https://www.kappa.com
+825,AY Sport,Basketball Team,Sportswear,Kenya,$44.8B,contact@ay sport.com,818 415 477,https://www.ay sport.com
+493,Le Coq Sportif,National Team,Sportswear,Algeria,$35.3B,contact@le coq sportif.com,2 142 304 814,https://www.le coq sportif.com
+947,Le Coq Sportif,Football Club,Footwear,Algeria,$21.5B,contact@le coq sportif.com,1 653 381 214,https://www.le coq sportif.com
+349,AY Sport,National Team,Sportswear,Zambia,$24.1B,contact@ay sport.com,1 071 824 252,https://www.ay sport.com
+936,Erreà,Football Club,National Team,Senegal,$42.0B,contact@erreà.com,1 906 754 433,https://www.erreà.com
+53,Adidas,National Team,Football Club,Tanzania,$47.7B,contact@adidas.com,1 394 737 662,https://www.adidas.com
+998,Puma,Basketball Team,Footwear,Zambia,$22.8B,contact@puma.com,2 416 829 193,https://www.puma.com
+103,Kappa,Basketball Team,Football Club,Ghana,$30.0B,contact@kappa.com,1 478 794 372,https://www.kappa.com
+613,Adidas,Basketball Team,Basketball,Ghana,$21.1B,contact@adidas.com,1 949 081 692,https://www.adidas.com
+866,Adidas,National Team,Football Club,Nigeria,$5.5B,contact@adidas.com,702 116 534,https://www.adidas.com
+457,Masita,Basketball Team,National Team,Kenya,$39.5B,contact@masita.com,268 763 786,https://www.masita.com
+998,Kappa,Basketball Team,Basketball,Tanzania,$18.9B,contact@kappa.com,677 784 334,https://www.kappa.com
+640,AY Sport,Football Club,Sportswear,Senegal,$36.8B,contact@ay sport.com,977 279 563,https://www.ay sport.com
+876,Kappa,Basketball Team,Sportswear,Tanzania,$49.2B,contact@kappa.com,1 974 251 073,https://www.kappa.com
+366,Masita,National Team,Footwear,Ghana,$22.3B,contact@masita.com,1 918 691 630,https://www.masita.com
+77,Nike,Football Club,Basketball,Tanzania,$5.2B,contact@nike.com,1 742 568 624,https://www.nike.com
+701,Masita,Basketball Team,Footwear,Algeria,$33.7B,contact@masita.com,574 794 001,https://www.masita.com
+970,Nike,Basketball Team,Football Club,South Africa,$22.6B,contact@nike.com,2 038 284 848,https://www.nike.com
+133,Le Coq Sportif,National Team,Football Club,Zambia,$47.3B,contact@le coq sportif.com,713 501 847,https://www.le coq sportif.com
+735,Puma,Football Club,Football Club,Zambia,$43.6B,contact@puma.com,2 111 004 228,https://www.puma.com
+432,Puma,Basketball Team,Basketball,Tanzania,$9.1B,contact@puma.com,1 601 843 525,https://www.puma.com
+828,Puma,Basketball Team,Football Club,Uganda,$41.9B,contact@puma.com,1 177 599 837,https://www.puma.com
+623,Kappa,Basketball Team,Basketball,Nigeria,$46.6B,contact@kappa.com,1 311 721 246,https://www.kappa.com
+391,Adidas,Basketball Team,Sportswear,Tunisia,$8.7B,contact@adidas.com,655 058 013,https://www.adidas.com
+302,Erreà,Football Club,Basketball,Nigeria,$5.8B,contact@erreà.com,374 578 326,https://www.erreà.com
+827,Masita,National Team,Basketball,Tanzania,$44.9B,contact@masita.com,438 217 150,https://www.masita.com
+546,Nike,Basketball Team,Sportswear,Tunisia,$43.5B,contact@nike.com,539 787 026,https://www.nike.com
+136,Masita,Football Club,Football Club,Ghana,$15.5B,contact@masita.com,1 568 058 351,https://www.masita.com
+728,AY Sport,Football Club,Footwear,Tunisia,$38.4B,contact@ay sport.com,1 544 586 419,https://www.ay sport.com
+440,Kappa,Football Club,National Team,Tunisia,$12.7B,contact@kappa.com,1 328 573 151,https://www.kappa.com
+609,Masita,Football Club,Basketball,Nigeria,$18.2B,contact@masita.com,901 083 217,https://www.masita.com
+232,Le Coq Sportif,Basketball Team,Footwear,Tunisia,$33.7B,contact@le coq sportif.com,1 487 273 550,https://www.le coq sportif.com
+787,Masita,National Team,Basketball,South Africa,$16.4B,contact@masita.com,1 699 996 345,https://www.masita.com
+517,AY Sport,Football Club,National Team,Tanzania,$22.2B,contact@ay sport.com,2 438 197 134,https://www.ay sport.com
+185,Le Coq Sportif,National Team,Basketball,Senegal,$7.0B,contact@le coq sportif.com,2 559 228 020,https://www.le coq sportif.com
+292,Puma,National Team,Football Club,Algeria,$15.7B,contact@puma.com,1 524 671 353,https://www.puma.com
+540,Le Coq Sportif,Basketball Team,Sportswear,Algeria,$14.2B,contact@le coq sportif.com,392 584 937,https://www.le coq sportif.com
+375,Adidas,Basketball Team,National Team,Tanzania,$48.7B,contact@adidas.com,2 264 047 061,https://www.adidas.com
+367,Puma,National Team,Sportswear,Kenya,$26.5B,contact@puma.com,2 174 339 126,https://www.puma.com
+193,Masita,Football Club,Basketball,Uganda,$27.0B,contact@masita.com,847 705 835,https://www.masita.com
+990,Adidas,National Team,Basketball,Ghana,$20.7B,contact@adidas.com,242 075 829,https://www.adidas.com
+475,Puma,Basketball Team,National Team,Tunisia,$25.8B,contact@puma.com,2 236 221 986,https://www.puma.com
+991,Le Coq Sportif,Football Club,Footwear,South Africa,$7.0B,contact@le coq sportif.com,765 114 430,https://www.le coq sportif.com
+561,Kappa,National Team,Footwear,Kenya,$16.7B,contact@kappa.com,411 857 895,https://www.kappa.com
+866,Adidas,National Team,Football Club,Zambia,$5.6B,contact@adidas.com,872 965 826,https://www.adidas.com
+809,Adidas,National Team,National Team,Senegal,$34.6B,contact@adidas.com,2 296 991 934,https://www.adidas.com
+823,Kappa,National Team,National Team,Algeria,$30.3B,contact@kappa.com,1 968 937 210,https://www.kappa.com
+79,Masita,Basketball Team,Basketball,Algeria,$29.0B,contact@masita.com,1 386 607 931,https://www.masita.com
+698,Erreà,National Team,Footwear,Uganda,$47.1B,contact@erreà.com,2 536 054 493,https://www.erreà.com
+35,Puma,Basketball Team,Sportswear,Tanzania,$24.4B,contact@puma.com,888 841 315,https://www.puma.com
+449,Erreà,Basketball Team,Footwear,Kenya,$14.7B,contact@erreà.com,1 089 359 770,https://www.erreà.com
+647,Le Coq Sportif,Basketball Team,Basketball,Senegal,$34.9B,contact@le coq sportif.com,2 173 908 340,https://www.le coq sportif.com
+23,Erreà,Football Club,Basketball,South Africa,$13.0B,contact@erreà.com,2 221 793 862,https://www.erreà.com
+978,Le Coq Sportif,National Team,Footwear,South Africa,$16.1B,contact@le coq sportif.com,1 836 879 541,https://www.le coq sportif.com
+836,Puma,National Team,Basketball,Tanzania,$29.8B,contact@puma.com,1 381 013 227,https://www.puma.com
+127,Masita,Basketball Team,Basketball,Algeria,$41.1B,contact@masita.com,2 405 358 270,https://www.masita.com
+233,Masita,Football Club,National Team,Tanzania,$42.8B,contact@masita.com,1 496 597 685,https://www.masita.com
+330,Adidas,National Team,National Team,Tunisia,$11.6B,contact@adidas.com,271 072 619,https://www.adidas.com
+768,Le Coq Sportif,National Team,Footwear,Ghana,$21.2B,contact@le coq sportif.com,482 617 227,https://www.le coq sportif.com
+538,Masita,National Team,Football Club,South Africa,$19.2B,contact@masita.com,1 435 881 185,https://www.masita.com
+524,Nike,Basketball Team,Basketball,Senegal,$21.4B,contact@nike.com,2 239 367 207,https://www.nike.com
+188,Puma,National Team,Footwear,Ghana,$8.4B,contact@puma.com,1 697 768 852,https://www.puma.com
+373,Le Coq Sportif,National Team,Sportswear,Tanzania,$25.4B,contact@le coq sportif.com,582 653 066,https://www.le coq sportif.com
+879,Nike,Football Club,Basketball,Uganda,$6.3B,contact@nike.com,263 734 155,https://www.nike.com
+635,Kappa,Football Club,Footwear,Uganda,$20.3B,contact@kappa.com,2 018 323 933,https://www.kappa.com
+547,Adidas,Basketball Team,National Team,Algeria,$11.4B,contact@adidas.com,556 354 774,https://www.adidas.com
+526,Kappa,Basketball Team,Football Club,Uganda,$47.0B,contact@kappa.com,1 262 028 416,https://www.kappa.com
+40,Le Coq Sportif,Basketball Team,National Team,Tanzania,$15.0B,contact@le coq sportif.com,895 782 281,https://www.le coq sportif.com
+831,Le Coq Sportif,Football Club,Football Club,South Africa,$24.8B,contact@le coq sportif.com,2 452 114 750,https://www.le coq sportif.com
+114,Nike,National Team,Football Club,South Africa,$42.9B,contact@nike.com,2 011 815 872,https://www.nike.com
+411,AY Sport,National Team,Sportswear,Nigeria,$48.5B,contact@ay sport.com,1 577 687 195,https://www.ay sport.com
+193,Le Coq Sportif,Football Club,National Team,South Africa,$22.4B,contact@le coq sportif.com,752 607 943,https://www.le coq sportif.com
+618,Erreà,Football Club,Football Club,Kenya,$14.7B,contact@erreà.com,592 823 799,https://www.erreà.com
+429,Le Coq Sportif,Football Club,Footwear,Kenya,$32.7B,contact@le coq sportif.com,212 036 601,https://www.le coq sportif.com
+433,AY Sport,National Team,Football Club,Senegal,$18.5B,contact@ay sport.com,1 727 413 714,https://www.ay sport.com
+396,AY Sport,Basketball Team,National Team,Algeria,$17.6B,contact@ay sport.com,2 071 576 605,https://www.ay sport.com
+368,Kappa,National Team,Football Club,Kenya,$12.4B,contact@kappa.com,2 414 731 400,https://www.kappa.com
+924,Kappa,Basketball Team,National Team,Tanzania,$14.1B,contact@kappa.com,1 315 413 443,https://www.kappa.com
+988,AY Sport,Basketball Team,National Team,Algeria,$29.7B,contact@ay sport.com,2 374 155 119,https://www.ay sport.com
+340,Le Coq Sportif,Basketball Team,Basketball,Tunisia,$26.6B,contact@le coq sportif.com,2 326 613 751,https://www.le coq sportif.com
+987,Adidas,National Team,Basketball,Egypt,$48.5B,contact@adidas.com,997 998 579,https://www.adidas.com
+314,Puma,Basketball Team,National Team,Senegal,$25.6B,contact@puma.com,2 158 863 628,https://www.puma.com
+206,Puma,Basketball Team,Football Club,Uganda,$9.1B,contact@puma.com,1 329 342 104,https://www.puma.com
+45,Puma,National Team,Footwear,Uganda,$11.5B,contact@puma.com,793 712 245,https://www.puma.com
+435,Le Coq Sportif,Football Club,Sportswear,Ghana,$9.3B,contact@le coq sportif.com,209 168 003,https://www.le coq sportif.com
+752,Adidas,National Team,National Team,Kenya,$42.4B,contact@adidas.com,1 081 304 778,https://www.adidas.com
+338,Nike,Football Club,Basketball,South Africa,$38.1B,contact@nike.com,672 967 937,https://www.nike.com
+192,Adidas,Football Club,Football Club,Zambia,$40.4B,contact@adidas.com,418 619 978,https://www.adidas.com
+848,Nike,Basketball Team,Basketball,Ghana,$46.0B,contact@nike.com,1 966 745 634,https://www.nike.com
+482,Le Coq Sportif,Football Club,Footwear,Zambia,$37.4B,contact@le coq sportif.com,1 428 278 372,https://www.le coq sportif.com
+548,Puma,National Team,Footwear,Algeria,$25.1B,contact@puma.com,1 867 273 521,https://www.puma.com
+37,Kappa,Basketball Team,National Team,Ghana,$22.5B,contact@kappa.com,2 453 549 396,https://www.kappa.com
+728,Masita,National Team,Footwear,Senegal,$20.3B,contact@masita.com,1 806 728 711,https://www.masita.com
+762,Nike,National Team,Football Club,Ghana,$18.4B,contact@nike.com,1 574 805 713,https://www.nike.com
+226,Erreà,Basketball Team,National Team,Tunisia,$26.9B,contact@erreà.com,2 343 003 050,https://www.erreà.com
+609,Masita,Basketball Team,Footwear,Senegal,$37.8B,contact@masita.com,1 917 088 916,https://www.masita.com
+998,Adidas,National Team,National Team,Nigeria,$45.6B,contact@adidas.com,977 518 939,https://www.adidas.com
+499,Puma,Basketball Team,Sportswear,Kenya,$28.2B,contact@puma.com,1 383 694 652,https://www.puma.com
+341,Adidas,National Team,Footwear,Zambia,$41.9B,contact@adidas.com,2 477 468 508,https://www.adidas.com
+690,Erreà,Basketball Team,Football Club,South Africa,$29.7B,contact@erreà.com,1 421 455 282,https://www.erreà.com
+382,Erreà,Basketball Team,Basketball,Tanzania,$34.6B,contact@erreà.com,988 875 770,https://www.erreà.com
+706,Nike,Football Club,Footwear,Tanzania,$47.2B,contact@nike.com,2 318 497 693,https://www.nike.com
+280,Erreà,National Team,Football Club,Nigeria,$36.7B,contact@erreà.com,1 845 376 995,https://www.erreà.com
+547,Le Coq Sportif,Basketball Team,Basketball,South Africa,$6.2B,contact@le coq sportif.com,2 424 511 558,https://www.le coq sportif.com
+734,Nike,Basketball Team,Sportswear,Tunisia,$22.8B,contact@nike.com,1 302 254 975,https://www.nike.com
+443,Puma,Football Club,Basketball,South Africa,$47.7B,contact@puma.com,1 011 978 402,https://www.puma.com
+583,Erreà,National Team,Basketball,Zambia,$33.7B,contact@erreà.com,2 225 293 942,https://www.erreà.com
+636,Le Coq Sportif,Football Club,Basketball,Kenya,$48.0B,contact@le coq sportif.com,1 006 554 937,https://www.le coq sportif.com
+375,Puma,Football Club,Sportswear,Ghana,$43.0B,contact@puma.com,764 771 907,https://www.puma.com
+913,Kappa,Basketball Team,National Team,Kenya,$45.2B,contact@kappa.com,1 786 973 315,https://www.kappa.com
+285,Nike,Basketball Team,Footwear,South Africa,$31.1B,contact@nike.com,2 479 398 740,https://www.nike.com
+508,Erreà,National Team,National Team,Senegal,$42.0B,contact@erreà.com,599 563 456,https://www.erreà.com
+458,Kappa,Football Club,Footwear,Uganda,$35.5B,contact@kappa.com,752 811 163,https://www.kappa.com
+112,Nike,Football Club,National Team,Uganda,$47.0B,contact@nike.com,221 708 496,https://www.nike.com
+46,Adidas,Basketball Team,National Team,Ghana,$8.5B,contact@adidas.com,604 463 598,https://www.adidas.com
+381,Erreà,Football Club,Football Club,Zambia,$13.7B,contact@erreà.com,2 345 804 551,https://www.erreà.com
+666,Adidas,Football Club,Footwear,Uganda,$41.8B,contact@adidas.com,1 919 529 765,https://www.adidas.com
+983,Nike,Basketball Team,Basketball,Zambia,$48.0B,contact@nike.com,934 005 788,https://www.nike.com
+44,Kappa,Basketball Team,Basketball,Nigeria,$16.3B,contact@kappa.com,369 923 586,https://www.kappa.com
+497,Erreà,Football Club,National Team,Tunisia,$33.5B,contact@erreà.com,2 257 883 283,https://www.erreà.com
+953,Masita,National Team,Basketball,Nigeria,$37.6B,contact@masita.com,1 358 911 865,https://www.masita.com
+7,AY Sport,National Team,Football Club,Algeria,$31.6B,contact@ay sport.com,1 971 575 127,https://www.ay sport.com
+318,Erreà,Football Club,Football Club,Zambia,$35.8B,contact@erreà.com,402 375 313,https://www.erreà.com
+215,AY Sport,Football Club,Basketball,Algeria,$41.2B,contact@ay sport.com,1 669 756 512,https://www.ay sport.com
+569,Masita,Basketball Team,Footwear,Algeria,$30.5B,contact@masita.com,1 132 582 262,https://www.masita.com
+939,Kappa,Football Club,Footwear,Zambia,$29.1B,contact@kappa.com,1 586 802 028,https://www.kappa.com
+281,Nike,Basketball Team,Sportswear,Senegal,$15.9B,contact@nike.com,1 738 982 003,https://www.nike.com
+697,Le Coq Sportif,Football Club,Basketball,Uganda,$5.3B,contact@le coq sportif.com,2 547 961 176,https://www.le coq sportif.com
+16,Le Coq Sportif,National Team,National Team,Algeria,$40.7B,contact@le coq sportif.com,1 872 106 042,https://www.le coq sportif.com
+86,Kappa,Basketball Team,Football Club,Senegal,$22.8B,contact@kappa.com,1 581 772 073,https://www.kappa.com
+919,AY Sport,Football Club,Football Club,Uganda,$45.1B,contact@ay sport.com,1 173 476 654,https://www.ay sport.com
+58,Masita,National Team,Football Club,Egypt,$18.1B,contact@masita.com,332 575 081,https://www.masita.com
+517,Kappa,Football Club,Football Club,Egypt,$23.0B,contact@kappa.com,1 984 421 021,https://www.kappa.com
+623,Masita,National Team,Footwear,Uganda,$45.9B,contact@masita.com,1 775 679 039,https://www.masita.com
+289,AY Sport,Football Club,Footwear,South Africa,$21.1B,contact@ay sport.com,2 344 252 345,https://www.ay sport.com
+775,Puma,Basketball Team,Basketball,Uganda,$10.8B,contact@puma.com,1 236 413 720,https://www.puma.com
+754,Masita,National Team,Basketball,Tanzania,$47.6B,contact@masita.com,2 278 897 789,https://www.masita.com
+260,Adidas,Football Club,Footwear,Zambia,$27.6B,contact@adidas.com,1 462 423 888,https://www.adidas.com
+573,Le Coq Sportif,Football Club,National Team,Zambia,$27.0B,contact@le coq sportif.com,611 255 074,https://www.le coq sportif.com
+891,Masita,Basketball Team,Footwear,Kenya,$46.0B,contact@masita.com,1 472 636 060,https://www.masita.com
+373,Le Coq Sportif,Football Club,Sportswear,Tanzania,$11.2B,contact@le coq sportif.com,2 219 295 889,https://www.le coq sportif.com
+715,AY Sport,Basketball Team,Footwear,Ghana,$16.6B,contact@ay sport.com,1 097 665 154,https://www.ay sport.com
+507,Puma,National Team,Football Club,South Africa,$48.2B,contact@puma.com,533 121 744,https://www.puma.com
+778,Kappa,Football Club,Footwear,South Africa,$17.6B,contact@kappa.com,1 102 817 927,https://www.kappa.com
+608,Le Coq Sportif,Basketball Team,Sportswear,Tanzania,$32.0B,contact@le coq sportif.com,392 222 055,https://www.le coq sportif.com
+431,Puma,National Team,Footwear,Zambia,$36.7B,contact@puma.com,1 711 962 531,https://www.puma.com
+823,Erreà,Basketball Team,Sportswear,Tunisia,$37.1B,contact@erreà.com,2 092 826 130,https://www.erreà.com
+507,Adidas,National Team,Sportswear,Zambia,$12.4B,contact@adidas.com,745 538 547,https://www.adidas.com
+122,Masita,Football Club,Sportswear,Tunisia,$37.8B,contact@masita.com,1 119 514 416,https://www.masita.com
+94,Masita,Football Club,Sportswear,South Africa,$34.9B,contact@masita.com,2 427 573 356,https://www.masita.com
+227,Adidas,Football Club,Footwear,Ghana,$33.7B,contact@adidas.com,1 762 266 271,https://www.adidas.com
+914,Kappa,Football Club,Footwear,Kenya,$20.3B,contact@kappa.com,525 694 012,https://www.kappa.com
+689,Puma,Football Club,National Team,Uganda,$49.9B,contact@puma.com,1 733 235 739,https://www.puma.com
+207,Adidas,Basketball Team,Football Club,Nigeria,$31.0B,contact@adidas.com,1 692 769 498,https://www.adidas.com
+87,AY Sport,Football Club,Footwear,Uganda,$14.5B,contact@ay sport.com,1 314 542 724,https://www.ay sport.com
+648,Adidas,National Team,Football Club,South Africa,$14.6B,contact@adidas.com,2 138 277 730,https://www.adidas.com
+654,Adidas,Basketball Team,Basketball,Algeria,$18.8B,contact@adidas.com,1 898 426 817,https://www.adidas.com
+706,Adidas,Football Club,Sportswear,Kenya,$45.7B,contact@adidas.com,2 453 706 031,https://www.adidas.com
+573,Erreà,National Team,Sportswear,Senegal,$8.0B,contact@erreà.com,2 489 195 854,https://www.erreà.com
+625,Puma,National Team,Basketball,South Africa,$12.8B,contact@puma.com,2 269 115 130,https://www.puma.com
+353,Masita,Basketball Team,Football Club,Senegal,$12.7B,contact@masita.com,1 195 577 148,https://www.masita.com
+376,Nike,Basketball Team,Basketball,Tanzania,$13.0B,contact@nike.com,1 255 659 741,https://www.nike.com
+593,AY Sport,Football Club,Football Club,Nigeria,$46.3B,contact@ay sport.com,1 849 254 697,https://www.ay sport.com
+552,Nike,National Team,National Team,Algeria,$44.1B,contact@nike.com,468 881 165,https://www.nike.com
+55,Erreà,National Team,National Team,Nigeria,$20.5B,contact@erreà.com,1 095 025 572,https://www.erreà.com
+33,AY Sport,National Team,National Team,Senegal,$44.1B,contact@ay sport.com,815 327 365,https://www.ay sport.com
+231,AY Sport,Football Club,National Team,Zambia,$13.0B,contact@ay sport.com,1 149 674 460,https://www.ay sport.com
+573,Adidas,National Team,Football Club,Nigeria,$33.5B,contact@adidas.com,907 349 221,https://www.adidas.com
+953,Adidas,Football Club,Football Club,Senegal,$33.5B,contact@adidas.com,1 443 625 156,https://www.adidas.com
+236,Erreà,Basketball Team,Football Club,Kenya,$34.8B,contact@erreà.com,2 477 384 693,https://www.erreà.com
+317,AY Sport,Basketball Team,Sportswear,Egypt,$35.2B,contact@ay sport.com,283 362 785,https://www.ay sport.com
+70,Erreà,Basketball Team,Basketball,Zambia,$27.8B,contact@erreà.com,2 472 361 430,https://www.erreà.com
+53,Erreà,Basketball Team,National Team,Tanzania,$10.9B,contact@erreà.com,872 513 547,https://www.erreà.com
+348,Masita,Basketball Team,Sportswear,Nigeria,$15.3B,contact@masita.com,909 457 406,https://www.masita.com
+483,Adidas,Football Club,Footwear,Kenya,$14.1B,contact@adidas.com,2 334 098 404,https://www.adidas.com
+969,Kappa,Football Club,Footwear,Tanzania,$35.8B,contact@kappa.com,2 159 742 554,https://www.kappa.com
+604,AY Sport,National Team,Footwear,Zambia,$46.3B,contact@ay sport.com,949 911 866,https://www.ay sport.com
+654,Le Coq Sportif,Football Club,Sportswear,Nigeria,$13.9B,contact@le coq sportif.com,485 264 379,https://www.le coq sportif.com
+609,Adidas,Basketball Team,Sportswear,Uganda,$43.5B,contact@adidas.com,2 294 901 847,https://www.adidas.com
+625,Puma,Basketball Team,Sportswear,Tunisia,$48.4B,contact@puma.com,1 498 927 797,https://www.puma.com
+799,Nike,National Team,Sportswear,Senegal,$35.0B,contact@nike.com,2 317 129 287,https://www.nike.com
+266,Kappa,Football Club,Footwear,South Africa,$9.7B,contact@kappa.com,1 352 836 315,https://www.kappa.com
+429,Puma,Basketball Team,Sportswear,Nigeria,$47.9B,contact@puma.com,1 275 487 810,https://www.puma.com
+758,Le Coq Sportif,National Team,National Team,South Africa,$23.8B,contact@le coq sportif.com,1 285 302 186,https://www.le coq sportif.com
+112,Puma,Football Club,Basketball,Nigeria,$16.8B,contact@puma.com,2 193 721 147,https://www.puma.com
+561,Adidas,Football Club,Footwear,Kenya,$23.5B,contact@adidas.com,744 604 900,https://www.adidas.com
+693,Puma,Football Club,Sportswear,Egypt,$32.2B,contact@puma.com,2 518 669 176,https://www.puma.com
+462,Kappa,National Team,Football Club,Nigeria,$47.1B,contact@kappa.com,433 822 357,https://www.kappa.com
+763,Adidas,Football Club,Basketball,Senegal,$14.6B,contact@adidas.com,2 163 031 875,https://www.adidas.com
+695,Erreà,Basketball Team,Footwear,Zambia,$6.8B,contact@erreà.com,2 233 925 335,https://www.erreà.com
+366,Kappa,Football Club,Football Club,Senegal,$41.7B,contact@kappa.com,2 515 246 633,https://www.kappa.com
+487,Puma,Football Club,Basketball,Tanzania,$45.4B,contact@puma.com,2 532 501 249,https://www.puma.com
+420,Nike,National Team,Football Club,Algeria,$8.3B,contact@nike.com,2 467 466 246,https://www.nike.com
+286,Adidas,Basketball Team,Sportswear,South Africa,$22.7B,contact@adidas.com,1 886 459 360,https://www.adidas.com
+413,Nike,Football Club,Footwear,Tanzania,$38.2B,contact@nike.com,2 476 425 659,https://www.nike.com
+321,Puma,Football Club,Footwear,South Africa,$26.2B,contact@puma.com,381 156 593,https://www.puma.com
+907,Kappa,National Team,Basketball,Nigeria,$42.7B,contact@kappa.com,1 457 116 935,https://www.kappa.com
+56,Puma,Basketball Team,Sportswear,Ghana,$21.5B,contact@puma.com,2 148 908 480,https://www.puma.com
+860,AY Sport,Football Club,Basketball,Algeria,$32.7B,contact@ay sport.com,677 577 228,https://www.ay sport.com
+330,Kappa,National Team,National Team,Senegal,$29.2B,contact@kappa.com,2 212 914 177,https://www.kappa.com
+317,AY Sport,Basketball Team,Football Club,Uganda,$24.3B,contact@ay sport.com,2 415 595 053,https://www.ay sport.com
+884,Erreà,Football Club,Footwear,Algeria,$25.1B,contact@erreà.com,548 689 497,https://www.erreà.com
+565,Le Coq Sportif,Football Club,Footwear,Tunisia,$11.0B,contact@le coq sportif.com,2 409 242 977,https://www.le coq sportif.com
+233,Kappa,Football Club,Football Club,Algeria,$39.0B,contact@kappa.com,2 354 144 240,https://www.kappa.com
+294,Masita,Basketball Team,National Team,South Africa,$47.2B,contact@masita.com,2 224 806 798,https://www.masita.com
+402,Kappa,Basketball Team,Basketball,Algeria,$26.5B,contact@kappa.com,1 072 462 518,https://www.kappa.com
+867,Nike,Basketball Team,National Team,Tunisia,$16.2B,contact@nike.com,223 752 655,https://www.nike.com
+750,Erreà,National Team,National Team,Kenya,$5.3B,contact@erreà.com,1 998 548 113,https://www.erreà.com
+83,Adidas,Basketball Team,Sportswear,Tanzania,$41.0B,contact@adidas.com,2 141 214 883,https://www.adidas.com
+195,AY Sport,Football Club,Basketball,Egypt,$7.3B,contact@ay sport.com,1 619 046 476,https://www.ay sport.com
+413,Puma,National Team,National Team,Egypt,$29.8B,contact@puma.com,2 206 716 934,https://www.puma.com
+976,Nike,National Team,Football Club,South Africa,$20.5B,contact@nike.com,1 009 275 307,https://www.nike.com
+796,Erreà,Basketball Team,Footwear,Tunisia,$45.8B,contact@erreà.com,471 577 466,https://www.erreà.com
+198,Le Coq Sportif,Football Club,Footwear,Zambia,$21.1B,contact@le coq sportif.com,502 558 236,https://www.le coq sportif.com
+368,Masita,Basketball Team,Football Club,South Africa,$40.1B,contact@masita.com,2 362 717 382,https://www.masita.com
+62,Masita,Basketball Team,National Team,Kenya,$37.0B,contact@masita.com,2 544 512 813,https://www.masita.com
+983,Erreà,Basketball Team,Basketball,Nigeria,$45.1B,contact@erreà.com,1 873 892 103,https://www.erreà.com
+779,Le Coq Sportif,Basketball Team,Football Club,Kenya,$35.6B,contact@le coq sportif.com,561 439 248,https://www.le coq sportif.com
+1000,Kappa,Football Club,Basketball,Egypt,$21.6B,contact@kappa.com,376 887 788,https://www.kappa.com
+235,Erreà,National Team,Footwear,Ghana,$46.3B,contact@erreà.com,1 377 515 594,https://www.erreà.com
+84,Le Coq Sportif,National Team,Footwear,South Africa,$38.1B,contact@le coq sportif.com,1 488 001 402,https://www.le coq sportif.com
+96,Adidas,National Team,National Team,Nigeria,$19.5B,contact@adidas.com,1 757 799 558,https://www.adidas.com
+924,Masita,National Team,Basketball,Tunisia,$14.6B,contact@masita.com,2 387 142 072,https://www.masita.com
+56,Masita,Football Club,Sportswear,Egypt,$47.2B,contact@masita.com,699 639 947,https://www.masita.com
+723,AY Sport,National Team,Footwear,Nigeria,$24.1B,contact@ay sport.com,1 651 564 906,https://www.ay sport.com
+924,Masita,National Team,Sportswear,Tunisia,$36.1B,contact@masita.com,1 072 341 589,https://www.masita.com
+253,Masita,Football Club,Sportswear,Senegal,$47.0B,contact@masita.com,581 633 634,https://www.masita.com
+282,Erreà,Football Club,Basketball,Zambia,$34.6B,contact@erreà.com,1 892 804 484,https://www.erreà.com
+455,Masita,Football Club,Footwear,Nigeria,$34.4B,contact@masita.com,292 487 789,https://www.masita.com
+887,Erreà,National Team,National Team,Algeria,$16.5B,contact@erreà.com,437 556 519,https://www.erreà.com
+102,Masita,Football Club,Sportswear,Algeria,$10.7B,contact@masita.com,2 171 321 722,https://www.masita.com
+797,Kappa,National Team,National Team,Tunisia,$37.3B,contact@kappa.com,431 108 257,https://www.kappa.com
+625,Kappa,National Team,Football Club,Tunisia,$11.7B,contact@kappa.com,2 558 901 857,https://www.kappa.com
+217,AY Sport,Basketball Team,Sportswear,Algeria,$22.5B,contact@ay sport.com,1 363 649 447,https://www.ay sport.com
+675,Adidas,National Team,Footwear,Nigeria,$18.0B,contact@adidas.com,768 501 934,https://www.adidas.com
+359,Adidas,Football Club,Sportswear,Tanzania,$27.9B,contact@adidas.com,474 043 923,https://www.adidas.com
+378,AY Sport,Basketball Team,National Team,South Africa,$22.1B,contact@ay sport.com,2 496 214 817,https://www.ay sport.com
+466,Kappa,Football Club,Footwear,Senegal,$15.3B,contact@kappa.com,928 815 245,https://www.kappa.com
+842,Le Coq Sportif,Football Club,Football Club,Senegal,$35.7B,contact@le coq sportif.com,1 533 502 134,https://www.le coq sportif.com
+578,Le Coq Sportif,Football Club,Basketball,Zambia,$36.2B,contact@le coq sportif.com,2 261 613 554,https://www.le coq sportif.com
+376,Masita,Football Club,National Team,Uganda,$10.8B,contact@masita.com,2 067 894 194,https://www.masita.com
+322,Le Coq Sportif,Basketball Team,Basketball,Tunisia,$45.0B,contact@le coq sportif.com,2 365 547 443,https://www.le coq sportif.com
+72,Masita,Basketball Team,Football Club,Kenya,$46.7B,contact@masita.com,297 804 249,https://www.masita.com
+717,Erreà,Basketball Team,Basketball,Kenya,$23.7B,contact@erreà.com,912 078 871,https://www.erreà.com
+286,Puma,Basketball Team,Sportswear,Ghana,$38.9B,contact@puma.com,2 019 277 088,https://www.puma.com
+301,Kappa,Basketball Team,Footwear,Tanzania,$45.9B,contact@kappa.com,1 419 299 328,https://www.kappa.com
+534,Kappa,Football Club,Basketball,Kenya,$46.8B,contact@kappa.com,2 466 617 491,https://www.kappa.com
+526,AY Sport,Football Club,Basketball,Senegal,$19.6B,contact@ay sport.com,1 611 385 794,https://www.ay sport.com
+294,AY Sport,Basketball Team,National Team,Tunisia,$19.9B,contact@ay sport.com,1 165 373 266,https://www.ay sport.com
+689,Puma,Basketball Team,National Team,Kenya,$16.4B,contact@puma.com,1 916 626 887,https://www.puma.com
+841,Puma,National Team,Basketball,Tanzania,$44.1B,contact@puma.com,317 307 694,https://www.puma.com
+803,AY Sport,National Team,Basketball,Egypt,$11.3B,contact@ay sport.com,1 147 784 411,https://www.ay sport.com
+281,AY Sport,Football Club,Basketball,Tanzania,$17.6B,contact@ay sport.com,1 316 068 142,https://www.ay sport.com
+760,Le Coq Sportif,Basketball Team,Football Club,Tanzania,$49.5B,contact@le coq sportif.com,625 014 109,https://www.le coq sportif.com
+948,Masita,Basketball Team,National Team,Nigeria,$31.2B,contact@masita.com,779 913 771,https://www.masita.com
+146,Erreà,National Team,Sportswear,South Africa,$16.3B,contact@erreà.com,2 269 478 998,https://www.erreà.com
+644,Masita,Basketball Team,National Team,Senegal,$42.3B,contact@masita.com,2 221 382 318,https://www.masita.com
+364,Adidas,Basketball Team,Sportswear,Egypt,$15.8B,contact@adidas.com,433 756 524,https://www.adidas.com
+332,Erreà,Football Club,Basketball,Kenya,$9.9B,contact@erreà.com,773 919 836,https://www.erreà.com
+272,Puma,Basketball Team,Football Club,Algeria,$25.1B,contact@puma.com,483 983 989,https://www.puma.com
+802,Nike,Football Club,National Team,Tunisia,$22.3B,contact@nike.com,1 955 354 615,https://www.nike.com
+373,Nike,National Team,National Team,South Africa,$33.4B,contact@nike.com,2 461 271 565,https://www.nike.com
+955,Nike,Basketball Team,Footwear,Algeria,$14.7B,contact@nike.com,289 663 898,https://www.nike.com
+314,Le Coq Sportif,Football Club,Football Club,Tanzania,$30.5B,contact@le coq sportif.com,1 051 026 547,https://www.le coq sportif.com
+564,AY Sport,Basketball Team,Sportswear,Tanzania,$10.9B,contact@ay sport.com,748 526 171,https://www.ay sport.com
+640,Kappa,Football Club,Sportswear,South Africa,$27.7B,contact@kappa.com,704 408 642,https://www.kappa.com
+600,Puma,Football Club,Football Club,Uganda,$29.0B,contact@puma.com,511 093 363,https://www.puma.com
+195,Kappa,Basketball Team,Football Club,Nigeria,$22.9B,contact@kappa.com,525 779 249,https://www.kappa.com
+362,Nike,Basketball Team,Football Club,Egypt,$34.8B,contact@nike.com,2 317 007 523,https://www.nike.com
+1,Masita,Football Club,National Team,Nigeria,$38.0B,contact@masita.com,1 345 224 280,https://www.masita.com
+104,Adidas,Basketball Team,National Team,Egypt,$33.9B,contact@adidas.com,2 521 917 893,https://www.adidas.com
+207,Nike,National Team,Sportswear,Kenya,$42.0B,contact@nike.com,992 884 641,https://www.nike.com
+314,Erreà,Football Club,National Team,Uganda,$30.3B,contact@erreà.com,2 334 187 892,https://www.erreà.com
+779,Kappa,Basketball Team,Basketball,Uganda,$38.2B,contact@kappa.com,1 495 373 026,https://www.kappa.com
+939,Adidas,National Team,Sportswear,Algeria,$46.9B,contact@adidas.com,1 541 463 529,https://www.adidas.com
+286,Le Coq Sportif,Basketball Team,Footwear,Uganda,$12.6B,contact@le coq sportif.com,369 657 445,https://www.le coq sportif.com
+442,Adidas,Football Club,Footwear,Algeria,$35.2B,contact@adidas.com,1 139 309 423,https://www.adidas.com
+397,Erreà,Football Club,Footwear,Kenya,$48.2B,contact@erreà.com,1 854 537 220,https://www.erreà.com
+415,Masita,Football Club,National Team,Senegal,$49.4B,contact@masita.com,763 074 365,https://www.masita.com
+968,Puma,Football Club,Footwear,Kenya,$12.5B,contact@puma.com,451 879 307,https://www.puma.com
+784,Puma,Basketball Team,Basketball,Senegal,$24.2B,contact@puma.com,577 442 858,https://www.puma.com
+477,Erreà,National Team,National Team,Nigeria,$45.3B,contact@erreà.com,899 448 033,https://www.erreà.com
+516,Adidas,Football Club,Sportswear,Zambia,$29.8B,contact@adidas.com,2 533 166 455,https://www.adidas.com
