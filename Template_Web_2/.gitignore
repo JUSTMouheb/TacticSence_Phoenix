@@ -1,0 +1,24 @@
+﻿# Dependencies
+/node_modules
+/frontend/node_modules
+/.pnp
+.pnp.js
+
+# Build outputs
+/dist
+/frontend/dist
+/build
+/frontend/build
+/.angular
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.flv
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,230 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #343a40;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #e2e6ea;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.section-slide {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .item-slick1 {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .item-slick1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .wrap-content-slide1 {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .caption1-slide1 {
+    font-size: 24px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .caption2-slide1 {
+    font-size: 60px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .btn1 {
+    min-width: 160px;
+    height: 50px;
+    background-color: #0563bb;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.4s;
+  }
+  
+  .btn1:hover {
+    background-color: white;
+    color: #0563bb;
+  }
+  
+  .wrap-slick1-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick1-dots {
+    display: flex !important;
+  }
+  
+  .slick1-dots li {
+    display: block;
+    margin: 0 5px;
+  }
+  
+  .slick1-dots li button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    border: none;
+    text-indent: -9999px;
+  }
+  
+  .slick1-dots li.slick-active button {
+    background-color: white;
+  }
+  
+  .sizefull {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flex-col-c-m {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .t-center {
+    text-align: center;
+  }
+  
+  .visible-false {
+    visibility: hidden;
+    opacity: 0;
+  }
+  /* Custom styling for Slick slider */
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.wrap-slick1 {
+  position: relative;
+  height: 100vh;
+}
+
+.slick1 {
+  height: 100%;
+}
+
+.item-slick1 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.item-slick1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrap-content-slide1 {
+  position: relative;
+  z-index: 2;
+  padding: 15px;
+}
+
+.caption1-slide1 {
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.caption2-slide1 {
+  font-size: 60px;
+  color: #fff;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+}
+
+.btn1 {
+  min-width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0563bb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.4s;
+  font-weight: 500;
+}
+
+.btn1:hover {
+  background-color: white;
+  color: #0563bb;
+}
+
