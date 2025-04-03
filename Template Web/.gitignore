@@ -1,7 +1,0 @@
-﻿# Large media files
-**/Video Problem Statement PI.mp4
-
-# Node modules and build files
-node_modules/
-dist/
-.angular/
