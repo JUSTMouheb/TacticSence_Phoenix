@@ -28,12 +28,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-              
-             
-            ],
-           "scripts": []
+           "styles": [
+  "src/styles.scss",
+  "src/assets/css/main.css"
+],
+"scripts": [
+  "node_modules/jquery/dist/jquery.min.js",
+  "src/assets/js/main.js"
+]
   
           },
           "configurations": {

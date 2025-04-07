@@ -228,3 +228,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #0563bb;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add padding to sections to account for fixed header */
+section {
+  padding-top: 80px;
+  margin-top: -60px; /* Offset for fixed header */
+}

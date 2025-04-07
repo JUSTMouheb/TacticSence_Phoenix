@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { MatchesComponent } from './components/matches/matches.component';
-import { PlayersComponent } from './components/players/players.component';
-import { StatisticsComponent } from './components/statistics/statistics.component';
-import { TeamsComponent } from './components/teams/teams.component';
+import {Routes } from '@angular/router';
+
+import { HomeComponent } from './components/sections/home/home.component';
+import { AboutComponent } from './components/sections/about/about.component';
+import { PlayersComponent } from './components/sections/players/players.component';
+import { ClubsComponent } from './components/sections/clubs/clubs.component';
+import { AnalyticsComponent } from './components/sections/analytics/analytics.component';
+import { ContactComponent } from './components/sections/contact/contact.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'matches', component: MatchesComponent },
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'players', component: PlayersComponent },
-  { path: 'statistics', component: StatisticsComponent },
-  { path: 'teams', component: TeamsComponent },
+  { path: 'clubs', component: ClubsComponent },
+  { path: 'analytics', component: AnalyticsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  
 })
 export class AppRoutingModule { }

@@ -1,0 +1,121 @@
+.about {
+    padding: 80px 0;
+  }
+  
+  .about .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #212529;
+  }
+  
+  .about .section-title p {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 40px;
+  }
+  
+  .about-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .about-list li {
+    padding: 10px 0;
+  }
+  
+  .about-list i {
+    color: #ee1e46;
+    margin-right: 10px;
+  }
+  
+  .section-bg {
+    background-color: #f8f9fa;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add responsive padding */
+  @media (max-width: 768px) {
+    .about {
+      padding: 60px 0;
+    }
+    
+    .about .section-title h2 {
+      font-size: 28px;
+    }
+  }
+
+  /* Add these styles to ensure proper spacing */
+main {
+    min-height: calc(100vh - 160px); /* account for header and footer */
+    padding-top: 80px; /* If your header is fixed */
+    padding-bottom: 40px;
+  }
+  
+  /* Basic styling for all sections */
+  section {
+    padding: 80px 0;
+  }
+  
+  /* Section title styling */
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .section-title h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #ee1e46;
+    display: block;
+    margin: 15px auto 0;
+  }
+  
+  .section-bg {
+    background-color: #f8f9fa;
+  }
+  
+  /* Make sure Bootstrap grid is working */
+  .container, .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col-lg-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  @media (min-width: 992px) {
+    .col-lg-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }

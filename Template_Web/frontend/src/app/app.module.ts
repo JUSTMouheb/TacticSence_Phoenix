@@ -1,25 +1,27 @@
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppComponent } from './app.component';
-import { HeroComponent } from './components/home/hero/hero.component';
-import { AboutComponent } from './components/home/about/about.component';
-import { FeaturesComponent } from './components/home/features/features.component';
-import { StatsComponent } from './components/home/stats/stats.component';
-import { ContactComponent } from './components/home/contact/contact.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { HomeComponent } from './components/sections/home/home.component';
+import { AboutComponent } from './components/sections/about/about.component';
+import { PlayersComponent } from './components/sections/players/players.component';
+import { ClubsComponent } from './components/sections/clubs/clubs.component';
+import { AnalyticsComponent } from './components/sections/analytics/analytics.component';
+import { ContactComponent } from './components/sections/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroComponent,
-    AboutComponent,
-    FeaturesComponent,
-    StatsComponent,
-    ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    AboutComponent,
+    PlayersComponent,
+    ClubsComponent,
+    AnalyticsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule

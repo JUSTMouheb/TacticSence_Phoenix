@@ -4,6 +4,8 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 declare var AOS: any;
 declare var GLightbox: any;
 declare var Swiper: any;
+declare var PureCounter: any;
+
 
 @Component({
   selector: 'app-root',
@@ -25,6 +27,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   
   ngAfterViewInit(): void {
     // Initialize any post-render functionality if needed
+     // Initialize PureCounter after view is fully loaded
+     new PureCounter();
   }
 
   // Initialize all UI components and libraries
