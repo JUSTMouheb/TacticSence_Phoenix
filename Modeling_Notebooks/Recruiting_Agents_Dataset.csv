@@ -1,0 +1,246 @@
+scout_id,full_name,affiliated_club,region,experience_years,verified_status,successful_signings,preferred_positions,Performance_Score,contact_email,phone_number
+1,Emmanuel Obafemi,Enyimba FC,Nigeria,10,True,30,"Forwards, Midfielders",17.0,emmanuel.obafemi@enyimbafc.com,+234 803 555 7890
+2,Hiroshi Nakamura,Urawa Red Diamonds,Japan,12,True,40,"Attacking Midfielders, Wingers",21.6,hiroshi.nakamura@urawareds.co.jp,+81 3 5556 9876
+3,Diego Fuentes,Boca Juniors,Argentina,14,True,55,"Defensive Midfielders, Center Backs",28.2,diego.fuentes@bocajuniors.com,+54 11 555 4321
+4,William Thompson,LA Galaxy,United States,9,False,22,"Forwards, Strikers",11.5,william.thompson@lagalaxy.com,+1 310 555 8765
+5,Felipe Hernandez,Cruz Azul,Mexico,11,True,33,"Fullbacks, Midfielders",18.5,felipe.hernandez@cruzazul.com.mx,+52 55 555 7890
+6,Vladimir Petrovic,Red Star Belgrade,Serbia,13,True,47,"Defensive Midfielders, Wingers",24.7,vladimir.petrovic@redstar.rs,+381 11 555 2345
+7,Jorge Mendes,Gestifute (Independent),Portugal,25,True,100,All Positions,49.5,jorge.mendes@gestifute.com,+351 21 555 1234
+8,Fatou Diallo,,Senegal,6,False,12,"Strikers, Goalkeepers",6.6000000000000005,fatou.diallo@freelancescout.com,+221 76 555 6789
+9,Hans Müller,Bayern Munich,Germany,18,True,65,"Center Backs, Midfielders",33.4,hans.muller@bayernmunich.com,+49 89 555 8765
+10,Lucas Almeida,São Paulo FC,Brazil,10,True,36,"Forwards, Playmakers",19.4,lucas.almeida@saopaulofc.com.br,+55 11 555 4321
+11,Pablo Longoria,Olympique de Marseille,France,16,True,80,"Forwards, Midfielders",38.8,pablo.longoria@om.fr,+33 1 555 6789
+12,Giovanni Branchini,Independent,Italy,30,True,120,All Positions,59.0,giovanni.branchini@footballagency.it,+39 06 555 2345
+13,César Luis Merlo,Independent,Argentina,15,True,70,"Defensive Midfielders, Center Backs",34.5,cesar.merlo@footballscouting.com,+54 9 11 555 8765
+14,Thomas Kroth,PRO Profil GmbH,Germany,20,True,90,All Positions,44.0,thomas.kroth@proprofil.de,+49 30 555 7890
+15,Fali Ramadani,LIAN Sports,Albania,22,True,85,"Forwards, Midfielders",42.6,fali.ramadani@liansports.com,+355 4 555 4321
+16,Aboubakar Kamara,Freelance,Senegal,7,False,20,"Forwards, Goalkeepers",10.1,aboubakar.kamara@freelance.com,+221 77 555 1234
+17,Pedro Aldave,Aldave Sports Management,Paraguay,18,True,50,All Positions,27.4,pedro.aldave@aldavesports.com,+595 21 555 8765
+18,Rafaela Pimenta,Independent (formerly Mino Raiola's agency),Brazil,12,True,60,All Positions,29.6,rafaela.pimenta@footballagents.com,+55 21 555 9876
+19,Andy Bara,Universal Sports Group,Croatia,17,True,75,"Defenders, Midfielders",37.1,andy.bara@usg.com,+385 1 555 6789
+20,Paul Stretford,Triple S Sports & Entertainment,United Kingdom,25,True,110,All Positions,53.5,paul.stretford@triplessports.com,+44 20 555 2345
+21,Antonio Ricci,Juventus,Italy,15,True,58,"Defenders, Central Midfielders",29.700000000000003,antonio.ricci@juventus.com,+39 011 555 7890
+22,Olivier Fontaine,Paris Saint-Germain,France,14,True,60,"Forwards, Wingers",30.2,olivier.fontaine@psg.fr,+33 1 555 9876
+23,Miguel Vasquez,Real Madrid,Spain,20,True,85,"Attacking Midfielders, Playmakers",42.0,miguel.vasquez@realmadrid.com,+34 91 555 4321
+24,Patrick O'Connor,Manchester United,United Kingdom,17,True,70,"Defensive Midfielders, Center Backs",35.1,patrick.oconnor@manutd.com,+44 161 555 8765
+25,Luis Monteiro,FC Porto,Portugal,12,True,45,"Fullbacks, Midfielders",23.6,luis.monteiro@fcporto.pt,+351 22 555 7890
+26,Zhang Wei,Shanghai Shenhua,China,11,False,32,"Strikers, Playmakers",16.1,zhang.wei@shanghaishenhua.cn,+86 21 5556 9876
+27,Ahmed Mansour,Al Ahly SC,Egypt,16,True,55,"Goalkeepers, Defenders",28.8,ahmed.mansour@alahly.com,+20 2 555 4321
+28,Pablo Ramirez,Club América,Mexico,13,True,48,"Forwards, Attacking Midfielders",25.1,pablo.ramirez@clubamerica.com.mx,+52 55 555 8765
+29,Sebastian Muller,Borussia Dortmund,Germany,19,True,75,"Wingers, Strikers",37.7,sebastian.muller@bvb.de,+49 231 555 6789
+30,Rajiv Patel,Bengaluru FC,India,8,False,20,"Defensive Midfielders, Fullbacks",10.4,rajiv.patel@bengalurufc.com,+91 80 555 1234
+31,Kofi Adu,Asante Kotoko,Ghana,14,True,42,"Midfielders, Wingers",23.0,kofi.adu@asantekotoko.com.gh,+233 30 555 6789
+32,Mamadou Diouf,Al Ahly SC,Senegal,18,True,60,"Strikers, Fullbacks",31.4,mamadou.diouf@alahly.com.eg,+20 2 555 4321
+33,Boubacar Keita,TP Mazembe,Democratic Republic of the Congo,16,True,48,"Defenders, Goalkeepers",26.000000000000004,boubacar.keita@tpmazembe.com.cd,+243 81 555 1234
+34,Jean-Claude N'Diaye,Raja Casablanca,Morocco,12,True,35,"Central Midfielders, Wingers",19.6,jeanclaude.ndiaye@rajacasablanca.com.ma,+212 5 22 555 9876
+35,Ahmed El-Sayed,Zamalek SC,Egypt,20,True,85,"Strikers, Defenders",42.0,ahmed.elsayed@zamaleksc.com.eg,+20 2 555 7890
+36,Kwame Owusu,Aduana Stars,Ghana,11,True,28,"Midfielders, Strikers",16.5,kwame.owusu@aduanastars.com.gh,+233 24 555 6789
+37,Tshiamo Dube,Mamelodi Sundowns,South Africa,15,True,53,"Defenders, Midfielders",27.700000000000003,tshiamo.dube@mamelodisundowns.com.za,+27 11 555 4321
+38,Mohamed Farouk,Algeria National Team (Freelance),Algeria,13,True,40,"Forwards, Wingers",21.9,mohamed.farouk@freelancescout.al,+213 21 555 6789
+39,Abdoulaye Toure,Stade Malien,Mali,10,True,26,"Defenders, Midfielders",15.4,abdoulaye.toure@stademalien.com.ml,+223 66 555 4321
+40,Chigozie Okwuosa,Enugu Rangers,Nigeria,8,False,18,"Forwards, Midfielders",9.6,chigozie.okwuosa@enugurangers.com.ng,+234 703 555 7890
+41,Ibrahim Diallo,ASEC Mimosas,Ivory Coast,9,True,34,"Wingers, Strikers",18.3,ibrahim.diallo@asecmimosas.com.ci,+225 22 555 4321
+42,Hakim Ben Ali,Esperance Sportive de Tunis,Tunisia,14,True,50,"Defenders, Midfielders",26.2,hakim.benali@etstunis.com.tn,+216 71 555 9876
+43,Kofi Appiah,Asante Kotoko SC,Ghana,12,True,41,"Midfielders, Forwards",22.0,kofi.appiah@asantekotoko.com.gh,+233 27 555 6789
+44,Joseph N'Goran,Stade Abidjan,Ivory Coast,7,False,15,"Defenders, Goalkeepers",8.1,joseph.ngoran@stadeabidjan.com.ci,+225 23 555 4321
+45,Mohammed Ali Alhaji,Al Ahly SC,Egypt,16,True,75,"Forwards, Strikers",36.8,mohammed.ali@alahlyegypt.com.eg,+20 2 555 9876
+46,Seydou Keita,Mali National Team,Mali,18,True,60,"Midfielders, Wingers",31.4,seydou.keita@malifootball.com.ml,+223 67 555 2345
+47,Amadou Fofana,Club Africain,Tunisia,10,True,38,"Fullbacks, Center Backs",20.200000000000003,amadou.fofana@clubafricain.com.tn,+216 72 555 6789
+48,Lamine Diop,Olympique de Marseille (Freelance),Senegal,13,True,45,"Wingers, Midfielders",23.9,lamine.diop@freelancescout.com.sn,+221 77 555 9876
+49,Tarek Ben Youssef,Etoile Sportive du Sahel,Tunisia,11,True,42,"Midfielders, Forwards",22.1,tarek.benyoussef@ess.co.tn,+216 71 555 3456
+50,Firas Jaziri,Club Sportif Sfaxien,Tunisia,8,True,20,"Goalkeepers, Defenders",12.4,firas.jaziri@css.com.tn,+216 72 555 9876
+51,Ahmed Moukhtar,Al Ahly SC,Egypt,14,True,70,"Strikers, Forwards",34.2,ahmed.moukhtar@alahlyegypt.com.eg,+20 2 555 6789
+52,Mohamed Salah El-Din,Zamalek SC,Egypt,12,True,63,"Wingers, Midfielders",30.800000000000004,mohamed.salah@zamaleksc.com.eg,+20 3 555 2345
+53,Omar Al-Mansour,Al Hilal FC,Saudi Arabia,9,True,55,"Defenders, Midfielders",26.7,omar.almansour@alhilal.com.sa,+966 11 555 9876
+54,Abdulaziz Al-Fahad,Al Nassr FC,Saudi Arabia,15,True,90,"Strikers, Wingers",42.5,abdulaziz.alfahad@alnassrfc.com.sa,+966 12 555 4321
+55,Rami Al-Khalil,Al Ittihad Club,Saudi Arabia,10,True,48,"Goalkeepers, Fullbacks",24.200000000000003,rami.alkhalil@alittihad.com.sa,+966 13 555 8765
+56,Youssef Al-Mahmoud,Al-Ahli SC,Saudi Arabia,7,True,30,"Defenders, Midfielders",16.1,youssef.almahmoud@alahli.com.sa,+966 11 555 4321
+57,Yassir Akram,Al Sadd SC,Qatar,13,True,60,"Wingers, Strikers",29.9,yassir.akram@alsadd.com.qa,+974 44 555 2345
+58,Khaled Al-Fayez,Al Rayyan SC,Qatar,11,True,50,"Midfielders, Fullbacks",25.3,khaled.alfayez@alrayyan.com.qa,+974 44 555 8765
+59,Sami Al-Hassan,Al Nassr FC,Saudi Arabia,8,True,35,"Midfielders, Wingers",18.4,sami.alhassan@alnassrfc.com.sa,+966 14 555 1234
+60,Fatimah Al-Rashid,Al Ahly SC,Egypt,11,False,40,"Forwards, Midfielders",19.3,fatimah.alrashid@alahlyegypt.com.eg,+20 2 555 9876
+61,Tariq Juma,Al Ittihad Club,Tunisia,13,True,45,"Defenders, Goalkeepers",23.9,tariq.juma@alittihad.com.tn,+216 71 555 1234
+62,Khalil Al-Sahli,Esperance Tunis,Tunisia,9,True,38,"Forwards, Midfielders",19.900000000000002,khalil.alsahli@esperance.com.tn,+216 71 555 6789
+63,Hassan Mohamed,Al Ahly SC,Egypt,15,True,80,"Wingers, Midfielders",38.5,hassan.mohamed@alahlyegypt.com.eg,+20 2 555 8765
+64,Mariam Al-Fahad,Al Hilal FC,Saudi Arabia,10,True,50,"Defenders, Goalkeepers",25.0,mariam.alfahad@alhilal.com.sa,+966 11 555 3456
+65,Fahd Al-Buraiki,Al Nasr FC,UAE,11,True,70,"Midfielders, Forwards",33.3,fahd.alburaiki@alnasrfc.com.ae,+971 4 555 4321
+66,Ali Ben Ali,Carthage Eagles,Tunisia,8,True,28,"Wingers, Fullbacks",15.600000000000001,ali.benali@carthageeagles.com.tn,+216 71 555 7890
+67,Hassan Al-Salim,Al Wahda FC,UAE,14,True,60,"Strikers, Forwards",30.2,hassan.alsalim@alwahda.com.ae,+971 2 555 5678
+68,Omar El-Hamidi,Al Zamalek SC,Egypt,12,True,72,"Defenders, Midfielders",34.4,omar.elhamidi@zamaleksc.com.eg,+20 3 555 6789
+69,Sami Al-Soudani,Al Ittihad Club,Tunisia,7,False,35,"Forwards, Strikers",16.1,sami.alsoudani@alittihad.com.tn,+216 71 555 9876
+70,Rashid Al-Kuwari,Al Sadd SC,Qatar,9,True,50,"Midfielders, Fullbacks",24.7,rashid.alkuwari@alsadd.com.qa,+974 44 555 4321
+71,Amina Al-Hashimi,Al Ahly SC,Egypt,10,True,55,"Forwards, Midfielders",27.0,amina.alhashimi@alahlyegypt.com.eg,+20 2 555 6789
+72,Mohammad Al-Basha,Al Hilal FC,Saudi Arabia,15,True,65,"Defenders, Midfielders",32.5,mohammad.albasha@alhilal.com.sa,+966 11 555 6789
+73,Rami Bouazizi,Club Africain,Tunisia,8,True,45,"Wingers, Midfielders",22.4,rami.bouazizi@clubafricain.tn,+216 71 555 9876
+74,Hassan Al-Mousa,Al Nassr FC,UAE,12,True,72,"Strikers, Forwards",34.4,hassan.almousa@alnasrfc.com.ae,+971 4 555 2345
+75,Nadia Al-Khatib,Al Ittihad Club,Tunisia,7,False,35,"Defenders, Goalkeepers",16.1,nadia.alkhatib@alittihad.com.tn,+216 71 555 4321
+76,Khaled Al-Majed,Al Sadd SC,Qatar,13,True,60,"Midfielders, Wingers",29.9,khaled.almajed@alsadd.com.qa,+974 44 555 5678
+77,Sarah Ali,Al Zamalek SC,Egypt,6,True,38,"Fullbacks, Midfielders",19.0,sarah.ali@zamaleksc.com.eg,+20 3 555 9876
+78,Mohammad Al-Fayez,Al Ahly SC,Egypt,14,True,80,"Forwards, Midfielders",38.2,mohammad.alfayez@alahlyegypt.com.eg,+20 2 555 9876
+79,Mona Al-Rashed,Al Hilal FC,Saudi Arabia,10,True,58,"Defenders, Wingers",28.200000000000003,mona.alrashed@alhilal.com.sa,+966 11 555 3456
+80,Abdallah Al-Jarallah,Al Ittihad Club,Tunisia,9,True,50,"Goalkeepers, Defenders",24.7,abdallah.aljarallah@alittihad.com.tn,+216 71 555 1234
+81,Zainab Al-Harbi,Al Ahly SC,Egypt,11,True,60,"Forwards, Wingers",29.3,zainab.alharbi@alahlyegypt.com.eg,+20 2 555 2345
+82,Aliya Al-Mansoori,Al Sadd SC,Qatar,9,True,48,"Midfielders, Fullbacks",23.900000000000002,aliya.almansoori@alsadd.com.qa,+974 44 555 6789
+83,Ahmed Al-Matar,Al Zamalek SC,Egypt,14,True,75,"Defenders, Midfielders",36.2,ahmed.almatar@zamaleksc.com.eg,+20 3 555 1234
+84,Fatima Al-Muhaidib,Al Hilal FC,Saudi Arabia,12,True,68,"Goalkeepers, Wingers",32.800000000000004,fatima.almuhaidib@alhilal.com.sa,+966 11 555 8765
+85,Omar Al-Suadi,Al Ittihad Club,Tunisia,7,False,29,"Strikers, Midfielders",13.700000000000001,omar.alsuadi@alittihad.com.tn,+216 71 555 2345
+86,Tariq El-Karim,Club Africain,Tunisia,10,True,58,"Defenders, Fullbacks",28.200000000000003,tariq.elkarim@clubafricain.tn,+216 71 555 5678
+87,Yassine Al-Rashid,Al Nasr FC,UAE,11,True,60,"Midfielders, Wingers",29.3,yassine.alrashid@alnasrfc.com.ae,+971 4 555 8765
+88,Jameela Al-Fahad,Al Ittihad Club,Tunisia,13,True,72,"Forwards, Midfielders",34.7,jameela.alfahad@alittihad.com.tn,+216 71 555 1234
+89,Mohammad Al-Karim,Al Sadd SC,Qatar,8,True,50,"Strikers, Fullbacks",24.4,mohammad.alkarim@alsadd.com.qa,+974 44 555 9876
+90,Reem Al-Fahad,Al Zamalek SC,Egypt,10,True,65,"Defenders, Goalkeepers",31.0,reem.alfahad@zamaleksc.com.eg,+20 3 555 2345
+91,Hassan Al-Fahad,Al Ahly SC,Egypt,9,True,70,"Forwards, Midfielders",32.7,hassan.alfahad@alahlyegypt.com.eg,+20 2 555 5432
+92,Muna Al-Mansoor,Al Hilal FC,Saudi Arabia,12,True,65,"Wingers, Fullbacks",31.6,muna.almansoor@alhilal.com.sa,+966 11 555 2345
+93,Adil Al-Khamis,Al Sadd SC,Qatar,8,True,49,"Defenders, Goalkeepers",24.0,adil.alkhamis@alsadd.com.qa,+974 44 555 1234
+94,Tariq Al-Harith,Al Zamalek SC,Egypt,14,True,75,"Forwards, Midfielders",36.2,tariq.alharith@zamaleksc.com.eg,+20 3 555 7890
+95,Sami Al-Khaled,Al Ittihad Club,Tunisia,7,False,38,"Strikers, Defenders",17.3,sami.alkhaled@alittihad.com.tn,+216 71 555 6789
+96,Layla Al-Fahad,Al Ahly SC,Egypt,11,True,68,"Wingers, Midfielders",32.5,layla.alfahad@alahlyegypt.com.eg,+20 2 555 2341
+97,Yousef Al-Hamdan,Al Hilal FC,Saudi Arabia,10,True,52,"Defenders, Midfielders",25.8,yousef.alhamdan@alhilal.com.sa,+966 11 555 6789
+98,Zaki Al-Khatib,Al Sadd SC,Qatar,13,True,70,"Goalkeepers, Forwards",33.9,zaki.alkhatib@alsadd.com.qa,+974 44 555 2345
+99,Amina Al-Tamimi,Al Zamalek SC,Egypt,9,True,50,"Midfielders, Wingers",24.7,amina.almansoor@zamaleksc.com.eg,+20 3 555 3456
+100,Mona Al-Said,Al Ittihad Club,Tunisia,10,True,60,"Strikers, Fullbacks",29.0,mona.alsaid@alittihad.com.tn,+216 71 555 9876
+101,Fahad Al-Jabari,Al Ahly SC,Egypt,8,True,52,"Defenders, Goalkeepers",25.2,fahad.aljabari@alahlyegypt.com.eg,+20 2 555 4321
+102,Layla Al-Mansoor,Al Hilal FC,Saudi Arabia,7,True,48,"Midfielders, Wingers",23.300000000000004,layla.almansoor@alhilal.com.sa,+966 11 555 1234
+103,Ahmed Al-Fahad,Al Sadd SC,Qatar,15,True,85,"Forwards, Midfielders",40.5,ahmed.alfahad@alsadd.com.qa,+974 44 555 8765
+104,Mona Al-Kharbash,Al Zamalek SC,Egypt,11,True,64,"Defenders, Fullbacks",30.900000000000002,mona.alkharbash@zamaleksc.com.eg,+20 3 555 9876
+105,Rania Al-Sabah,Al Ittihad Club,Tunisia,8,True,51,"Midfielders, Wingers",24.8,rania.alsabah@alittihad.com.tn,+216 71 555 4567
+106,Omar Al-Mansoor,Al Ahly SC,Egypt,10,True,73,"Midfielders, Forwards",34.2,omar.almansoor@alahlyegypt.com.eg,+20 2 555 1234
+107,Huda Al-Salim,Al Hilal FC,Saudi Arabia,12,True,60,"Fullbacks, Wingers",29.6,huda.alsalim@alhilal.com.sa,+966 11 555 6789
+108,Khaled Al-Azizi,Al Sadd SC,Qatar,14,True,85,"Strikers, Midfielders",40.2,khaled.alazizi@alsadd.com.qa,+974 44 555 9876
+109,Ranya Al-Khatib,Al Zamalek SC,Egypt,8,True,47,"Defenders, Fullbacks",23.2,ranya.alkhatib@zamaleksc.com.eg,+20 3 555 6789
+110,Khalid Al-Nasser,Al Ittihad Club,Tunisia,6,False,38,"Midfielders, Goalkeepers",17.0,khalid.almansoor@alittihad.com.tn,+216 71 555 2345
+111,Lina Al-Sharif,Al Ahly SC,Egypt,9,True,57,"Strikers, Midfielders",27.5,lina.alsharif@alahlyegypt.com.eg,+20 2 555 3456
+112,Salma Al-Hamdan,Al Hilal FC,Saudi Arabia,11,True,65,"Defenders, Fullbacks",31.3,salma.alhamdan@alhilal.com.sa,+966 11 555 4321
+113,Tariq Al-Rashed,Al Sadd SC,Qatar,13,True,80,"Forwards, Midfielders",37.9,tariq.alrashed@alsadd.com.qa,+974 44 555 6543
+114,Yasmin Al-Fahad,Al Zamalek SC,Egypt,7,True,42,"Goalkeepers, Midfielders",20.900000000000002,yasmin.alfahad@zamaleksc.com.eg,+20 3 555 2345
+115,Noura Al-Hussein,Al Ittihad Club,Tunisia,5,False,29,"Defenders, Wingers",13.100000000000001,noura.alhussein@alittihad.com.tn,+216 71 555 6789
+116,Faris Al-Jubair,Al Ahly SC,Egypt,9,True,58,"Midfielders, Forwards",27.900000000000002,faris.aljubair@alahlyegypt.com.eg,+20 2 555 1234
+117,Zayd Al-Tamimi,Al Hilal FC,Saudi Arabia,8,True,50,"Fullbacks, Wingers",24.4,zayd.almartimi@alhilal.com.sa,+966 11 555 6789
+118,Amira Al-Salem,Al Sadd SC,Qatar,10,True,65,"Strikers, Midfielders",31.0,amira.alsalem@alsadd.com.qa,+974 44 555 1234
+119,Rami Al-Khamis,Al Zamalek SC,Egypt,6,False,33,"Goalkeepers, Midfielders",15.0,rami.alkhamis@zamaleksc.com.eg,+20 3 555 6789
+120,Rania Al-Nasser,Al Ittihad Club,Tunisia,12,True,78,"Forwards, Midfielders",36.800000000000004,rania.alnasser@alittihad.com.tn,+216 71 555 2345
+121,Fatimah Al-Mansour,Al Ahly SC,Egypt,11,True,71,"Midfielders, Wingers",33.7,fatimah.almansour@alahlyegypt.com.eg,+20 2 555 9876
+122,Layla Al-Jarrah,Al Hilal FC,Saudi Arabia,8,True,55,"Defenders, Fullbacks",26.4,layla.aljarrah@alhilal.com.sa,+966 11 555 8765
+123,Zeinab Al-Fayed,Al Sadd SC,Qatar,9,True,62,"Strikers, Fullbacks",29.5,zeinab.alfayed@alsadd.com.qa,+974 44 555 7654
+124,Khalil Al-Ramzi,Al Zamalek SC,Egypt,7,True,48,"Midfielders, Wingers",23.300000000000004,khalil.alramzi@zamaleksc.com.eg,+20 3 555 4567
+125,Maysa Al-Muftah,Al Ittihad Club,Tunisia,6,False,39,"Strikers, Defenders",17.400000000000002,maysa.almuftah@alittihad.com.tn,+216 71 555 4321
+126,Mona Al-Harbi,Al Ahly SC,Egypt,10,True,70,"Forwards, Goalkeepers",33.0,mona.alharbi@alahlyegypt.com.eg,+20 2 555 2345
+127,Omar Al-Dosari,Al Hilal FC,Saudi Arabia,13,True,77,"Midfielders, Forwards",36.7,omar.aldosari@alhilal.com.sa,+966 11 555 3456
+128,Tariq Al-Sayed,Al Sadd SC,Qatar,15,True,88,"Wingers, Midfielders",41.7,tariq.alsayed@alsadd.com.qa,+974 44 555 8765
+129,Rania Al-Mahmoud,Al Zamalek SC,Egypt,8,True,60,"Defenders, Fullbacks",28.4,rania.almahmoud@zamaleksc.com.eg,+20 3 555 6789
+130,Sami Al-Farsi,Al Ittihad Club,Tunisia,7,False,34,"Midfielders, Forwards",15.700000000000001,sami.alfarsi@alittihad.com.tn,+216 71 555 6789
+131,Fatimah Al-Kabir,Al Ahly SC,Egypt,9,True,62,"Wingers, Midfielders",29.5,fatimah.alkabir@alahlyegypt.com.eg,+20 2 555 3456
+132,Aliyah Al-Zahrani,Al Hilal FC,Saudi Arabia,12,True,72,"Strikers, Fullbacks",34.4,aliyah.alzahrani@alhilal.com.sa,+966 11 555 2345
+133,Bashir Al-Tayeb,Al Sadd SC,Qatar,10,True,68,"Goalkeepers, Midfielders",32.2,bashir.altayeb@alsadd.com.qa,+974 44 555 1234
+134,Rasha Al-Khatib,Al Zamalek SC,Egypt,11,True,73,"Fullbacks, Strikers",34.5,rasha.alkhatib@zamaleksc.com.eg,+20 3 555 2345
+135,Zainab Al-Raouf,Al Ittihad Club,Tunisia,9,False,55,"Midfielders, Fullbacks",24.7,zainab.alraouf@alittihad.com.tn,+216 71 555 9876
+136,Salah Al-Mansour,Al Ahly SC,Egypt,6,True,53,"Wingers, Midfielders",25.000000000000004,salah.almansour@alahlyegypt.com.eg,+20 2 555 1234
+137,Fawzi Al-Qadi,Al Hilal FC,Saudi Arabia,7,True,61,"Forwards, Defenders",28.500000000000004,fawzi.alqadi@alhilal.com.sa,+966 11 555 4567
+138,Huda Al-Shamari,Al Sadd SC,Qatar,9,True,64,"Strikers, Midfielders",30.3,huda.alshamari@alsadd.com.qa,+974 44 555 9876
+139,Nour Al-Kabir,Al Zamalek SC,Egypt,10,True,75,"Midfielders, Fullbacks",35.0,nour.alkabir@zamaleksc.com.eg,+20 3 555 7890
+140,Rasha Al-Mahmoud,Al Ittihad Club,Tunisia,8,False,47,"Strikers, Defenders",21.2,rasha.almahmoud@alittihad.com.tn,+216 71 555 7654
+141,Zainab Al-Hassan,Al Ahly SC,Egypt,11,True,72,"Midfielders, Wingers",34.1,zainab.alhassan@alahlyegypt.com.eg,+20 2 555 8765
+142,Khaled Al-Dosari,Al Hilal FC,Saudi Arabia,9,True,66,"Defenders, Goalkeepers",31.1,khaled.aldosari@alhilal.com.sa,+966 11 555 6789
+143,Lina Al-Amin,Al Sadd SC,Qatar,8,True,59,"Midfielders, Fullbacks",28.0,lina.alamin@alsadd.com.qa,+974 44 555 3456
+144,Omar Al-Shahrani,Al Zamalek SC,Egypt,10,True,74,"Forwards, Midfielders",34.6,omar.alshahrani@zamaleksc.com.eg,+20 3 555 4321
+145,Mona Al-Shehri,Al Ittihad Club,Tunisia,7,False,43,"Defenders, Midfielders",19.3,mona.alshehri@alittihad.com.tn,+216 71 555 9876
+146,Samiha Al-Ajmi,Al Ahly SC,Egypt,12,True,78,"Goalkeepers, Forwards",36.800000000000004,samiha.alajmi@alahlyegypt.com.eg,+20 2 555 2345
+147,Amal Al-Farhan,Al Hilal FC,Saudi Arabia,10,True,79,"Midfielders, Fullbacks",36.6,amal.alfarhan@alhilal.com.sa,+966 11 555 1234
+148,Ranya Al-Khamis,Al Sadd SC,Qatar,13,True,84,"Strikers, Wingers",39.5,ranya.alkhamis@alsadd.com.qa,+974 44 555 8765
+149,Abdulrahman Al-Mohammad,Al Zamalek SC,Egypt,14,True,86,"Wingers, Defenders",40.6,abdulrahman.almohammad@zamaleksc.com.eg,+20 3 555 6789
+150,Khaled Al-Saadi,Al Ittihad Club,Tunisia,15,False,90,"Forwards, Midfielders",40.5,khaled.alsaadi@alittihad.com.tn,+216 71 555 2345
+151,Sami Al-Khalil,Al Ahly SC,Egypt,16,True,92,"Midfielders, Strikers",43.6,sami.alkhalil@alahlyegypt.com.eg,+20 2 555 4321
+152,Mohammed Al-Jaafari,Al Hilal FC,Saudi Arabia,14,True,98,"Wingers, Goalkeepers",45.400000000000006,mohammed.aljaafari@alhilal.com.sa,+966 11 555 1234
+153,Jameela Al-Rashed,Al Sadd SC,Qatar,15,True,100,"Forwards, Midfielders",46.5,jameela.alrashed@alsadd.com.qa,+974 44 555 6789
+154,Faisal Al-Mansoori,Al Zamalek SC,Egypt,17,True,104,"Defenders, Fullbacks",48.7,faisal.almansoori@zamaleksc.com.eg,+20 3 555 8765
+155,Rami Al-Sabah,Al Ittihad Club,Tunisia,18,True,108,"Midfielders, Wingers",50.6,rami.alsabah@alittihad.com.tn,+216 71 555 8765
+156,Mariam Al-Jassim,Al Ahly SC,Egypt,19,True,112,"Forwards, Midfielders",52.50000000000001,mariam.aljassim@alahlyegypt.com.eg,+20 2 555 6789
+157,Khalil Al-Ajmi,Al Hilal FC,Saudi Arabia,16,True,110,"Defenders, Goalkeepers",50.8,khalil.alaajmi@alhilal.com.sa,+966 11 555 2345
+158,Amal Al-Muqbil,Al Sadd SC,Qatar,20,True,120,"Wingers, Midfielders",56.0,amal.almuqbil@alsadd.com.qa,+974 44 555 1234
+159,Hassan Al-Khaled,Al Zamalek SC,Egypt,21,True,125,"Strikers, Fullbacks",58.3,hassan.alkhaled@zamaleksc.com.eg,+20 3 555 2345
+160,Layla Al-Saeed,Al Ittihad Club,Tunisia,22,True,130,"Midfielders, Strikers",60.6,layla.alsaed@alittihad.com.tn,+216 71 555 4321
+161,Hussein Al-Mahmoud,Al Ahly SC,Egypt,23,True,135,"Defenders, Goalkeepers",62.9,hussein.almahmoud@alahlyegypt.com.eg,+20 2 555 4321
+162,Ahmed Al-Jubair,Al Hilal FC,Saudi Arabia,24,True,140,"Fullbacks, Wingers",65.2,ahmed.aljubair@alhilal.com.sa,+966 11 555 8765
+163,Maha Al-Dosari,Al Sadd SC,Qatar,25,True,150,"Strikers, Midfielders",69.5,maha.aldosari@alsadd.com.qa,+974 44 555 2345
+164,Ahmed Al-Rashid,Al Zamalek SC,Egypt,26,True,155,"Midfielders, Defenders",71.8,ahmed.alrashid@zamaleksc.com.eg,+20 3 555 6789
+165,Mazen Al-Turki,Al Ittihad Club,Tunisia,27,True,160,"Wingers, Midfielders",74.1,mazen.alturki@alittihad.com.tn,+216 71 555 7654
+166,Youssef Al-Harbi,Al Ahly SC,Egypt,28,True,165,"Goalkeepers, Fullbacks",76.4,youssef.alharbi@alahlyegypt.com.eg,+20 2 555 9876
+167,Ali Al-Shammari,Al Hilal FC,Saudi Arabia,29,True,170,"Midfielders, Strikers",78.7,ali.alshammari@alhilal.com.sa,+966 11 555 3456
+168,Khadija Al-Khudhair,Al Sadd SC,Qatar,30,True,175,"Forwards, Midfielders",81.0,khadija.alkhudhair@alsadd.com.qa,+974 44 555 4567
+169,Omar Al-Najdi,Al Zamalek SC,Egypt,32,True,180,"Defenders, Goalkeepers",83.6,omar.alnajdi@zamaleksc.com.eg,+20 3 555 2345
+170,Sara Al-Mazrouei,Al Ittihad Club,Tunisia,33,True,185,"Wingers, Fullbacks",85.9,sara.almazrouei@alittihad.com.tn,+216 71 555 8765
+171,Zaid Al-Karimi,Al Ahly SC,Egypt,35,True,190,"Strikers, Fullbacks",88.5,zaid.alkarimi@alahlyegypt.com.eg,+20 2 555 1234
+172,Mohammed Al-Muftah,Al Hilal FC,Saudi Arabia,36,True,200,"Midfielders, Strikers",92.8,mohammed.almuftah@alhilal.com.sa,+966 11 555 2345
+173,Hassan Al-Fadhli,Al Sadd SC,Qatar,38,True,210,"Forwards, Goalkeepers",97.4,hassan.alfadhli@alsadd.com.qa,+974 44 555 6789
+174,Yasmin Al-Rabea,Al Zamalek SC,Egypt,39,True,220,"Midfielders, Strikers",101.7,yasmin.alrabea@zamaleksc.com.eg,+20 3 555 5678
+175,Sami Al-Mohannadi,Al Ittihad Club,Tunisia,40,True,230,"Defenders, Goalkeepers",106.0,sami.almohannadi@alittihad.com.tn,+216 71 555 4321
+176,Noura Al-Hashmi,Al Ahly SC,Egypt,42,True,240,"Wingers, Fullbacks",110.6,noura.alhashmi@alahlyegypt.com.eg,+20 2 555 6789
+177,Ali Al-Rashid,Al Hilal FC,Saudi Arabia,45,True,250,"Midfielders, Defenders",115.5,ali.alrashid@alhilal.com.sa,+966 11 555 8765
+178,Maha Al-Qadhi,Al Sadd SC,Qatar,47,True,260,"Forwards, Midfielders",120.1,maha.alqadhi@alsadd.com.qa,+974 44 555 8901
+179,Fahad Al-Dosari,Al Zamalek SC,Egypt,48,True,270,"Goalkeepers, Fullbacks",124.4,fahad.aldosari@zamaleksc.com.eg,+20 3 555 9876
+180,Layla Al-Khalifa,Al Ittihad Club,Tunisia,20,True,280,"Defenders, Midfielders",120.0,layla.alkhalifa@alittihad.com.tn,+216 71 555 2345
+181,Youssef Ben Ali,Al Ahly SC,Egypt,22,True,290,"Wingers, Strikers",124.6,youssef.benali@alahlyegypt.com.eg,+20 2 555 6543
+182,Samir Al-Fawzan,Al Hilal FC,Saudi Arabia,29,True,300,"Midfielders, Fullbacks",130.7,samir.alfawzan@alhilal.com.sa,+966 11 555 3456
+183,Reem Al-Sabah,Al Sadd SC,Qatar,15,True,310,"Goalkeepers, Forwards",130.5,reem.alsabah@alsadd.com.qa,+974 44 555 2345
+184,Ahmed Al-Shaikh,Al Zamalek SC,Egypt,25,True,320,"Defenders, Midfielders",137.5,ahmed.alshaikh@zamaleksc.com.eg,+20 3 555 6789
+185,Omar Al-Mutairi,Al Ittihad Club,Tunisia,14,True,33,"Forwards, Midfielders",19.400000000000002,omar.almutairi@alittihad.com.tn,+216 71 555 6543
+186,Layla Al-Nassir,Al Ahly SC,Egypt,22,True,34,"Wingers, Midfielders",22.200000000000003,layla.alnassir@alahlyegypt.com.eg,+20 2 555 4321
+187,Tariq Al-Saadi,Al Hilal FC,Saudi Arabia,12,True,35,"Defenders, Goalkeepers",19.6,tariq.alsaadi@alhilal.com.sa,+966 11 555 4321
+188,Fahima Al-Qasim,Al Sadd SC,Qatar,18,True,36,"Midfielders, Fullbacks",21.8,fahima.alqasim@alsadd.com.qa,+974 44 555 1234
+189,Sami Al-Rubaie,Al Zamalek SC,Egypt,10,True,8,"Wingers, Forwards",8.2,sami.alrubaie@zamaleksc.com.eg,+20 3 555 1234
+190,Hassan Al-Turki,Al Ittihad Club,Tunisia,8,True,3,"Forwards, Midfielders",5.6,hassan.alturki@alittihad.com.tn,+216 71 555 4321
+191,Laila Al-Mansoori,Al Ahly SC,Egypt,9,True,3,"Midfielders, Defenders",5.9,laila.almansoori@alahlyegypt.com.eg,+20 2 555 6789
+192,Abdullah Al-Khalifa,Al Hilal FC,Saudi Arabia,5,True,2,"Wingers, Goalkeepers",4.3,abdullah.alkhalifa@alhilal.com.sa,+966 11 555 6789
+193,Rania Al-Fahad,Al Sadd SC,Qatar,10,True,41,"Fullbacks, Defenders",21.400000000000002,rania.alfahad@alsadd.com.qa,+974 44 555 6789
+194,Mansour Al-Ghamdi,Al Zamalek SC,Egypt,11,True,42,"Forwards, Midfielders",22.1,mansour.alghamdi@zamaleksc.com.eg,+20 3 555 9876
+195,Salma Al-Mutlaq,Al Ittihad Club,Tunisia,15,True,43,"Defenders, Goalkeepers",23.7,salma.almutlaq@alittihad.com.tn,+216 71 555 9876
+196,Karim Al-Sayed,Al Ahly SC,Egypt,20,True,44,"Midfielders, Wingers",25.6,karim.alsayed@alahlyegypt.com.eg,+20 2 555 1235
+197,Noura Al-Sharif,Al Hilal FC,Saudi Arabia,13,True,15,"Fullbacks, Wingers",11.9,noura.alsharif@alhilal.com.sa,+966 11 555 8765
+198,Jamal Al-Qaradawi,Al Sadd SC,Qatar,13,True,46,"Forwards, Midfielders",24.3,jamal.alqaradawi@alsadd.com.qa,+974 44 555 7654
+199,Yasmin Al-Khatib,Al Zamalek SC,Egypt,14,True,47,"Wingers, Goalkeepers",25.0,yasmin.alkhatib@zamaleksc.com.eg,+20 3 555 8765
+200,Omar Al-Mansouri,Al Ittihad Club,Tunisia,14,True,48,"Defenders, Midfielders",25.400000000000002,omar.almansouri@alittihad.com.tn,+216 71 555 1235
+201,Ali Al-Maliki,Al Ahly SC,Egypt,15,True,6,"Forwards, Midfielders",8.9,ali.almaliki@alahlyegypt.com.eg,+20 2 555 9876
+202,Fawzi Al-Jabari,Al Hilal FC,Saudi Arabia,15,True,10,"Goalkeepers, Wingers",10.5,fawzi.aljabari@alhilal.com.sa,+966 11 555 7654
+203,Maha Al-Majed,Al Sadd SC,Qatar,16,True,5,"Defenders, Midfielders",8.8,maha.almajed@alsadd.com.qa,+974 44 555 8765
+204,Khalid Al-Bakr,Al Zamalek SC,Egypt,6,True,2,"Wingers, Forwards",4.6,khalid.albakr@zamaleksc.com.eg,+20 3 555 9877
+205,Nour Al-Din,Al Ittihad Club,Tunisia,10,True,5,"Midfielders, Fullbacks",7.0,nour.aldin@alittihad.com.tn,+216 71 555 9877
+206,Martin Schmidt,Al Ahly SC,Germany,5,True,54,"Forwards, Midfielders",25.1,martin.schmidt@alahlyegypt.com.eg,+49 171 555 8765
+207,Anna Richardson,Al Hilal FC,United Kingdom,18,True,5,"Defenders, Goalkeepers",9.399999999999999,anna.richardson@alhilal.com.sa,+44 20 555 6789
+208,Luis Gómez,Al Sadd SC,Spain,5,True,5,"Wingers, Midfielders",5.5,luis.gomez@alsadd.com.qa,+34 91 555 3456
+209,Cecilia Dupont,Al Zamalek SC,France,9,True,57,"Fullbacks, Forwards",27.5,cecilia.dupont@zamaleksc.com.eg,+33 1 555 7890
+210,Javier Martínez,Al Ittihad Club,Argentina,9,True,5,"Midfielders, Wingers",6.699999999999999,javier.martinez@alittihad.com.tn,+54 11 555 2345
+211,Fiona Williams,Zesco United FC,New Zealand,2,True,0,"Defenders, Goalkeepers",2.6,fiona.williams@zesco.co.zm,+64 9 555 1234
+212,Tariq Al-Rashid,Esperance Sportive de Tunis,Jordan,10,True,60,"Forwards, Midfielders",29.0,tariq.alrashid@etstunis.com.tn,+962 6 555 8765
+213,Zara Williams,Mamelodi Sundowns FC,United States,15,True,61,"Fullbacks, Wingers",30.900000000000002,zara.williams@mamelodisundowns.co.za,+1 212 555 2345
+214,Gustavo Silva,TP Mazembe,Brazil,20,True,62,"Midfielders, Defenders",32.8,gustavo.silva@tpmazembe.com.cd,+55 11 555 6789
+215,Rachel Green,Orlando Pirates FC,Australia,15,True,63,"Goalkeepers, Fullbacks",31.700000000000003,rachel.green@orlandopirates.co.za,+61 2 555 3456
+216,Oliver Brown,AFC Leopards,Canada,23,True,64,"Midfielders, Wingers",34.5,oliver.brown@afcleopards.co.ke,+1 416 555 4321
+217,Yasmin Abdallah,Wydad Casablanca,Egypt,5,True,1,"Defenders, Midfielders",3.9,yasmin.abdallah@wydad.com.ma,+20 2 555 8765
+218,Daniel Sanchez,Asante Kotoko SC,Mexico,8,True,6,"Forwards, Fullbacks",6.800000000000001,daniel.sanchez@asantekotoko.com.gh,+52 55 555 3456
+219,Lindsey Thompson,Simba SC,South Africa,12,True,6,"Goalkeepers, Defenders",8.0,lindsey.thompson@simba.co.tz,+27 21 555 6789
+220,Stefano Rossi,TP Mazembe,Italy,15,True,68,"Wingers, Forwards",33.7,stefano.rossi@tpmazembe.com.cd,+39 06 555 2345
+221,Karim El-Mahdi,Pyramids FC,Morocco,12,True,5,"Midfielders, Fullbacks",7.6,karim.elmahdi@pyramidsfc.com.eg,+212 5 555 8765
+222,Samantha Clark,Raja Casablanca,United States,8,True,7,"Forwards, Midfielders",7.2,samantha.clark@rajacasablanca.com.ma,+1 312 555 4321
+223,Giuseppe Bianchi,Zamalek SC,Italy,9,True,10,"Defenders, Goalkeepers",8.7,giuseppe.bianchi@zamaleksc.com.eg,+39 02 555 6789
+224,Leila Moreno,Al Hilal FC,Brazil,2,True,2,"Wingers, Fullbacks",3.4,leila.moreno@alhilal.com.sa,+55 21 555 7890
+225,Eduardo Garcia,Al Ittihad Club,Spain,2,True,3,"Midfielders, Forwards",3.8000000000000003,eduardo.garcia@alittihad.com.tn,+34 93 555 8765
+226,Maria Lopez,Al Ahly SC,Argentina,2,True,4,"Forwards, Wingers",4.2,maria.lopez@alahlyegypt.com,+54 11 555 6789
+227,Javier Martínez,Esperance Sportive de Tunis,Spain,8,True,5,"Midfielders, Defenders",6.4,javier.martinez@eternal.tn,+34 91 555 1234
+228,Sophie Dubois,Sundowns FC,France,9,True,6,"Goalkeepers, Midfielders",7.1,sophie.dubois@sundowns.co.za,+33 1 55 555 4321
+229,James Murphy,Al Nassr FC,United Kingdom,5,True,3,"Forwards, Fullbacks",4.7,james.murphy@alnassrfc.sa,+44 20 555 6789
+230,Tariq Hassan,Asec Mimosas,United Arab Emirates,9,True,7,"Defenders, Wingers",7.5,tariq.hassan@asecmimosas.com.ci,+971 50 555 7890
+231,Eleanor Brown,Lobi Stars FC,Australia,11,True,7,"Midfielders, Forwards",8.1,eleanor.brown@lobistarsfc.com.ng,+61 3 555 6789
+232,Marcelo Oliveira,Vita Club,Brazil,11,True,8,"Goalkeepers, Midfielders",8.5,marcelo.oliveira@vitaclub.com.cd,+55 21 555 7890
+233,Luca Ricci,Stade Malien,Italy,3,True,10,"Wingers, Defenders",6.9,luca.ricci@stademalien.com.ml,+39 06 555 2345
+234,Ricardo González,Algeria National Team,Mexico,3,True,12,"Midfielders, Forwards",7.700000000000001,ricardo.gonzalez@algerianational.com.dz,+52 55 555 9876
+235,Alicia Vega,Coton Sport,Colombia,5,True,83,"Goalkeepers, Fullbacks",36.7,alicia.vega@cotonsport.com.cm,+57 1 555 4321
+236,Carlos Rodríguez,Mamelodi Sundowns FC,Spain,13,True,84,"Wingers, Midfielders",39.5,carlos.rodriguez@mamelodisundowns.co.za,+34 91 555 6543
+237,Linda Johnson,TP Mazembe,United States,13,True,85,"Defenders, Goalkeepers",39.9,linda.johnson@tpmazembe.cd,+1 312 555 6789
+238,Matthias Fischer,Al Hilal FC,Germany,14,True,86,"Forwards, Wingers",40.6,matthias.fischer@alhilalfc.sa,+49 30 555 1234
+239,Oliver Adams,Raja Casablanca,United Kingdom,34,True,421,"Midfielders, Fullbacks",180.6,oliver.adams@rajacasablanca.ma,+44 20 555 2345
+240,Ana Silva,Zamalek SC,Portugal,15,True,88,"Forwards, Midfielders",41.7,ana.silva@zamaleksc.com.eg,+351 21 555 9876
+241,Nicolas Dupont,JS Kabylie,France,14,True,89,"Defenders, Goalkeepers",41.800000000000004,nicolas.dupont@jskabylie.com.dz,+33 1 55 555 6789
+242,Ricardo Perez,Medeama SC,Mexico,12,True,90,"Wingers, Midfielders",41.6,ricardo.perez@medeama.sc,+52 55 555 1234
+243,Sarah Moore,Akhmat Grozny,Australia,23,True,910,"Defenders, Forwards",372.9,sarah.moore@akhmatgrozny.com,+61 2 555 7890
+244,Damien Lefevre,Al Merrikh SC,Belgium,13,True,92,"Midfielders, Fullbacks",42.7,damien.lefevre@almerrikhsc.com.sd,+32 2 555 4321
+245,Liam O'Connor,Enyimba FC,Ireland,37,True,930,"Forwards, Midfielders",385.1,liam.oconnor@enyimbafc.com.ng,+353 1 555 6789

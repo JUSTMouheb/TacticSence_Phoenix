@@ -1,0 +1,629 @@
+box_id,company_name,services_offered,affiliated_clients,partnerships_made,region,contact_email,phone_number,social_media_links
+1,Ogilvy Africa,"Full Service, Shopper Marketing",Multiple Brands,Various Partners,"Nairobi, Kenya",info@ogilvyafrica.com,+254 20 1234567,www.linkedin.com/company/ogilvy-africa
+2,MullenLowe South Africa,Full Service,Various Clients,Multiple Partners,"Johannesburg, South Africa",contact@mullenlowe.co.za,+27 11 2345678,www.twitter.com/mullenlowesa
+3,Red Media Africa,PR & Digital Marketing,"Access Bank, Lipton",Statecraft,"Lagos, Nigeria",info@redmediaafrica.com,+234 1 7654321,www.facebook.com/redmediaafrica
+4,Media24 Africa,PR & Digital Marketing,"CAF, FIFA","Nike Africa, Puma","Cape Town, South Africa",contact@media24.africa,+27 21 8765432,www.instagram.com/media24africa
+5,Tunisia Comms,Sports Branding,"Esperance FC, Adidas",Local Clubs,"Tunis, Tunisia",support@tuniscom.tn,+216 71 123456,www.tuniscom.tn
+6,Morocco Media Hub,Influencer Marketing,Raja Casablanca,FIFA Arab Cup,"Casablanca, Morocco",hello@moroccomedia.com,+212 5 6789012,www.instagram.com/moroccomediahub
+7,Nigeria PR Experts,Sponsorship & Media,"Nike Africa, CAF","Adidas, TotalEnergies","Abuja, Nigeria",support@prnaija.com,+234 9 8765432,www.twitter.com/prnaija
+8,Kenya Sport Comms,Football Sponsorship & PR,Kenyan Premier League,"Betway, Safaricom","Nairobi, Kenya",contact@kenyacomms.ke,+254 20 7654321,www.facebook.com/kenyacomms
+9,Ghana Branding Hub,Athlete Marketing & Sponsorship,Black Stars Ghana,"MTN Ghana, Vodafone","Accra, Ghana",hello@ghanabranding.com,+233 30 1234567,www.ghanabranding.com
+10,Senegal Sports Media,Football PR & Club Branding,Senegal FA,Orange Senegal,"Dakar, Senegal",info@senegalsports.com,+221 33 8765432,www.senegalsports.com
+11,Cape Town Media Hub,Digital PR & Sponsorships,South African Football Association,"Vodacom, Adidas","Cape Town, South Africa",info@capetownmedia.co.za,+27 21 7654321,www.capetownmedia.co.za
+12,Lagos Football PR,Sports Branding & Athlete Management,Nigerian Premier League,"MTN, Airtel","Lagos, Nigeria",contact@lagosfootballpr.ng,+234 803 654321,www.lagosfootballpr.ng
+13,Dakar Sports Media,Club Promotions & Sponsorship Activation,"Senegal FA, Ligue 1 Senegal","Orange Senegal, TotalEnergies","Dakar, Senegal",media@dakarsports.sn,+221 77 1234567,www.dakarsports.sn
+14,Rabat PR Solutions,Athlete Marketing & Digital PR,Moroccan Botola Pro Clubs,"Pepsi Morocco, Vodafone","Rabat, Morocco",contact@rabatpr.ma,+212 6 9876543,www.rabatpr.ma
+15,Algiers Football Media,Public Relations & Media Management,Algerian National Team,"Sonatrach, Adidas","Algiers, Algeria",pr@algiersfootball.com,+213 770 654321,www.algiersfootball.com
+16,Addis Sports Connect,Football PR & Branding,Ethiopian Football Federation,"EthioTelecom, Coca Cola","Addis Ababa, Ethiopia",support@addissports.com,+251 9 8765432,www.addissports.com
+17,Accra Sports Media,Athlete Endorsements & Club PR,Ghana Premier League,"MTN Ghana, Puma","Accra, Ghana",info@accrasportsmedia.com,+233 50 1234567,www.accrasportsmedia.com
+18,Nairobi Sport Promotions,Football Marketing & Sponsorship,Kenyan Premier League,"Betway Kenya, Safaricom","Nairobi, Kenya",contact@nairobi-sports.com,+254 700 987654,www.nairobi-sports.com
+19,Tunisian Football Branding,Club PR & Branding Strategies,"Tunisia FA, Club Africain","Orange Tunisia, Adidas","Tunis, Tunisia",pr@tunisianfootball.tn,+216 20 876543,www.tunisianfootball.tn
+20,Dar es Salaam Media Hub,Player Sponsorship & Club PR,Tanzanian Football League,"Tigo Tanzania, Vodacom","Dar es Salaam, Tanzania",support@darsportsmedia.com,+255 75 9876543,www.darsportsmedia.com
+21,Maputo Sports PR,Club Marketing & Sponsorships,Mozambique National Team,"Movitel, Adidas","Maputo, Mozambique",info@maputosportspr.com,+258 82 7654321,www.maputosportspr.com
+22,Lusaka Media Experts,Football Branding & Athlete PR,Zambian Super League,"MTN Zambia, Pepsi","Lusaka, Zambia",media@lusakamedia.com,+260 97 6543210,www.lusakamedia.com
+23,Yaoundé Sports Branding,Football PR & Marketing,"Cameroon FA, Elite One League","Guinness Cameroon, Adidas","Yaoundé, Cameroon",pr@yaoundesports.cm,+237 675 987654,www.yaoundesports.cm
+24,Abidjan Football Promotions,Athlete Endorsements & Club PR,Ivory Coast National Team,"Coca Cola, Puma","Abidjan, Ivory Coast",info@abidjanfootball.com,+225 07 654321,www.abidjanfootball.com
+25,Johannesburg Sports PR,Sponsorship Activation & Digital PR,South African Premier League,"Nike South Africa, Vodacom","Johannesburg, South Africa",contact@joburgsportspr.co.za,+27 11 1234567,www.joburgsportspr.co.za
+26,Khartoum Media Solutions,Football Sponsorship & Branding,Sudanese Football League,"Zain Sudan, Adidas","Khartoum, Sudan",support@khartoumsports.com,+249 90 654321,www.khartoumsports.com
+27,Conakry Sports Media,Football Branding & Sponsorships,Guinea FA,"Orange Guinea, Puma","Conakry, Guinea",pr@conakrysports.com,+224 622 987654,www.conakrysports.com
+28,Monrovia Football PR,Club PR & Digital Branding,Liberian National Team,"MTN Liberia, Pepsi","Monrovia, Liberia",info@monroviasports.com,+231 77 123456,www.monroviasports.com
+29,Freetown Media Hub,Athlete Marketing & Sponsorships,Sierra Leone Premier League,"Africell, Adidas","Freetown, Sierra Leone",contact@freetownsports.com,+232 76 654321,www.freetownsports.com
+30,Gaborone Football PR,Football Marketing & Athlete Branding,Botswana Football Association,"Orange Botswana, Puma","Gaborone, Botswana",support@gaboronesports.com,+267 71 987654,www.gaboronesports.com
+31,Windhoek Sports PR,Football Sponsorship & Club PR,Namibian Premier League,"MTC Namibia, Puma","Windhoek, Namibia",info@windhoeksportspr.com,+264 81 2345678,www.windhoeksportspr.com
+32,Banjul Football Media,Club PR & Digital Branding,Gambian National Team,"Africell, Adidas","Banjul, Gambia",contact@banjulsports.com,+220 77 987654,www.banjulsports.com
+33,Djibouti Sports Communications,Football PR & Sponsorship,Djibouti Football Federation,"Telcom Djibouti, Nike","Djibouti, Djibouti",support@djiboutisports.com,+253 77 765432,www.djiboutisports.com
+34,Brazzaville Media Experts,Club Promotions & Sponsorship,Congo Premier League,"TotalEnergies, Adidas","Brazzaville, Congo",media@brazzavillesports.com,+242 06 654321,www.brazzavillesports.com
+35,Nouakchott Football Branding,Football PR & Athlete Marketing,Mauritania National Team,"Mauritel, Puma","Nouakchott, Mauritania",info@nouakchottsports.com,+222 45 987654,www.nouakchottsports.com
+36,Mogadishu Sports Media,Football PR & Digital Promotion,Somali Premier League,"Hormuud Telecom, Adidas","Mogadishu, Somalia",pr@mogadishusports.com,+252 61 7654321,www.mogadishusports.com
+37,Lomé Sports PR,Club Sponsorship & Athlete Branding,Togolese National Team,"Moov Togo, Nike","Lomé, Togo",contact@lomesportspr.com,+228 90 987654,www.lomesportspr.com
+38,Port Louis Football Marketing,Club Branding & Sponsorships,Mauritius National Team,"Orange Mauritius, Puma","Port Louis, Mauritius",support@portlouissports.com,+230 57 654321,www.portlouissports.com
+39,Kigali Sports Connect,Football PR & Digital Sponsorships,Rwanda Premier League,"MTN Rwanda, Adidas","Kigali, Rwanda",info@kigalisportspr.com,+250 78 2345678,www.kigalisportspr.com
+40,Bamako Football Promotions,Club PR & Sponsorships,Mali National Team,"Orange Mali, Nike","Bamako, Mali",contact@bamakosports.com,+223 79 765432,www.bamakosports.com
+41,Malabo Media Hub,Football Branding & PR,Equatorial Guinea League,"TotalEnergies, Adidas","Malabo, Equatorial Guinea",pr@malabosports.com,+240 99 987654,www.malabosports.com
+42,Niamey Sports Media,Athlete Sponsorship & Club Branding,Niger Football Federation,"Airtel Niger, Puma","Niamey, Niger",support@niameysports.com,+227 97 654321,www.niameysports.com
+43,Libreville Football PR,Club Branding & PR Services,Gabon National Team,"Moov Gabon, Adidas","Libreville, Gabon",info@librevillesports.com,+241 74 987654,www.librevillesports.com
+44,Victoria Football Branding,Football PR & Club Marketing,Seychelles National Team,"Airtel Seychelles, Nike","Victoria, Seychelles",contact@victoriasports.com,+248 25 765432,www.victoriasports.com
+45,Asunción Sports Media,Football Sponsorship & PR,São Tomé & Príncipe League,"Unitel, Adidas","São Tomé, São Tomé & Príncipe",pr@saotomesports.com,+239 99 654321,www.saotomesports.com
+46,Antananarivo Sports PR,Club Sponsorships & Media Branding,Madagascar National Team,"Airtel Madagascar, Puma","Antananarivo, Madagascar",support@antananarivosports.com,+261 32 987654,www.antananarivosports.com
+47,Comoros Sports Connect,Football PR & Digital Marketing,Comoros Football Federation,"Telma Comoros, Nike","Moroni, Comoros",info@comorossportspr.com,+269 77 654321,www.comorossportspr.com
+48,Luanda Media Experts,Football Sponsorship & Branding,Angola Girabola League,"Unitel Angola, Adidas","Luanda, Angola",contact@luandasports.com,+244 92 765432,www.luandasports.com
+49,Bissau Sports PR,Football Promotions & Branding,Guinea-Bissau National Team,"Orange Bissau, Puma","Bissau, Guinea-Bissau",pr@bissausports.com,+245 96 987654,www.bissausports.com
+50,Dodoma Football Media,Football PR & Digital Branding,Tanzania Football Federation,"Tigo Tanzania, Nike","Dodoma, Tanzania",support@dodomasports.com,+255 65 654321,www.dodomasports.com
+51,Ouagadougou Football PR,Football Marketing & Sponsorships,Burkina Faso Premier League,"Orange Burkina, Puma","Ouagadougou, Burkina Faso",info@ouagadougousports.com,+226 70 654321,www.ouagadougousports.com
+52,Maputo Sports Communications,Athlete Branding & PR,Mozambique National Team,"Vodacom Mozambique, Nike","Maputo, Mozambique",contact@maputosports.com,+258 82 7654321,www.maputosports.com
+53,Asmara Media Hub,Football PR & Sponsorships,Eritrean National Team,"Eritel, Adidas","Asmara, Eritrea",pr@asmarasports.com,+291 7 654321,www.asmarasports.com
+54,Lilongwe Sports Media,Club PR & Athlete Marketing,Malawi National Team,"TNM Malawi, Puma","Lilongwe, Malawi",support@lilongwesports.com,+265 88 987654,www.lilongwesports.com
+55,N’Djamena Football PR,Football Sponsorship & Branding,Chadian Football League,"Airtel Chad, Adidas","N’Djamena, Chad",info@ndjamenasports.com,+235 99 765432,www.ndjamenasports.com
+56,Juba Sports Branding,Athlete PR & Sponsorships,South Sudan National Team,"MTN South Sudan, Nike","Juba, South Sudan",contact@jubasports.com,+211 92 654321,www.jubasports.com
+57,Praia Sports Connect,Football Marketing & Sponsorships,Cape Verde Premier League,"Unitel T+, Puma","Praia, Cape Verde",pr@praiasports.com,+238 95 765432,www.praiasports.com
+58,Niamey Football Media,Football PR & Club Branding,Nigerien Football Federation,"Moov Niger, Adidas","Niamey, Niger",support@niameysports.com,+227 97 654321,www.niameysports.com
+59,Bujumbura Sports Promotions,Football Branding & Digital PR,Burundi Premier League,"Econet Burundi, Nike","Bujumbura, Burundi",info@bujumburasports.com,+257 79 765432,www.bujumburasports.com
+60,Porto-Novo Football PR,Athlete Branding & Club Promotions,Benin Premier League,"MTN Benin, Puma","Porto-Novo, Benin",contact@portonovosports.com,+229 97 654321,www.portonovosports.com
+61,Victoria PR Solutions,Football Sponsorship & Media,Seychelles National Team,"Cable & Wireless, Adidas","Victoria, Seychelles",pr@victoriasports.com,+248 25 765432,www.victoriasports.com
+62,São Tomé Media Hub,Athlete PR & Branding,São Tomé National Team,"Unitel ST, Nike","São Tomé, São Tomé & Príncipe",support@saotomesports.com,+239 99 765432,www.saotomesports.com
+63,Antananarivo Football PR,Club Promotions & Sponsorships,Madagascar National Team,"Airtel Madagascar, Puma","Antananarivo, Madagascar",info@antananarivosports.com,+261 32 987654,www.antananarivosports.com
+64,Moroni Sports Branding,Football PR & Club Marketing,Comoros National Team,"Telma Comoros, Adidas","Moroni, Comoros",contact@comorossports.com,+269 77 654321,www.comorossports.com
+65,Luanda Media Hub,Football Branding & Sponsorships,Angola Premier League,"Unitel Angola, Nike","Luanda, Angola",pr@luandasports.com,+244 92 765432,www.luandasports.com
+66,Bissau Football PR,Club PR & Sponsorship Activation,Guinea-Bissau Premier League,"Orange Bissau, Adidas","Bissau, Guinea-Bissau",support@bissausports.com,+245 96 987654,www.bissausports.com
+67,Dodoma Football Media,Football Marketing & Club PR,Tanzania Premier League,"Tigo Tanzania, Puma","Dodoma, Tanzania",info@dodomasports.com,+255 65 654321,www.dodomasports.com
+68,Kampala Football Connect,Athlete Branding & Sponsorships,Uganda Premier League,"MTN Uganda, Adidas","Kampala, Uganda",contact@kampalasports.com,+256 75 765432,www.kampalasports.com
+69,Freetown Sports Branding,Football PR & Club Sponsorship,Sierra Leone Premier League,"Africell, Puma","Freetown, Sierra Leone",pr@freetownsports.com,+232 76 654321,www.freetownsports.com
+70,Maseru Football Promotions,Football Branding & Sponsorship,Lesotho Football League,"Vodacom Lesotho, Nike","Maseru, Lesotho",support@maserusports.com,+266 50 987654,www.maserusports.com
+71,Lusaka Sports PR,Football Club PR & Sponsorships,Zambia Super League,"MTN Zambia, Adidas","Lusaka, Zambia",info@lusakasports.com,+260 97 654321,www.lusakasports.com
+72,Djibouti Sports Media,Football Branding & Sponsorships,Djibouti Football Federation,"Telcom Djibouti, Nike","Djibouti, Djibouti",contact@djiboutisports.com,+253 77 765432,www.djiboutisports.com
+73,Bangui Football Connect,Football PR & Sponsorship Activation,Central African Republic League,"Orange CAR, Puma","Bangui, CAR",pr@banguisports.com,+236 70 765432,www.banguisports.com
+74,Conakry Media Solutions,Football Marketing & Sponsorships,Guinea Premier League,"MTN Guinea, Adidas","Conakry, Guinea",support@conakrysports.com,+224 62 987654,www.conakrysports.com
+75,Libreville Sports PR,Club Sponsorship & Athlete Branding,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",info@librevillesports.com,+241 74 765432,www.librevillesports.com
+76,Lomé PR Solutions,Club PR & Digital Marketing,Togo Premier League,"Moov Togo, Puma","Lomé, Togo",info@lomesportspr.com,+228 90 123456,www.lomesportspr.com
+77,Port Louis Branding Hub,Football Branding & PR,Mauritius National Team,"Orange Mauritius, Adidas","Port Louis, Mauritius",contact@portlouissports.com,+230 57 654987,www.portlouissports.com
+78,Kigali Media Experts,Athlete PR & Sponsorships,Rwanda Premier League,"MTN Rwanda, Nike","Kigali, Rwanda",pr@kigalisports.com,+250 78 654321,www.kigalisports.com
+79,Bamako Football Media,Club Promotions & PR,Mali National Team,"Orange Mali, Puma","Bamako, Mali",support@bamakosports.com,+223 79 765123,www.bamakosports.com
+80,Malabo Sports Connect,Football PR & Branding,Equatorial Guinea Premier League,"TotalEnergies, Adidas","Malabo, Equatorial Guinea",info@malabosports.com,+240 99 543210,www.malabosports.com
+81,Niamey Sports PR,Athlete Branding & Sponsorship,Niger Football Federation,"Airtel Niger, Nike","Niamey, Niger",contact@niameysports.com,+227 97 567432,www.niameysports.com
+82,Libreville Media Hub,Football Marketing & PR,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",pr@librevillesports.com,+241 74 987321,www.librevillesports.com
+83,Victoria PR Connect,Football Sponsorships & Branding,Seychelles National Team,"Airtel Seychelles, Adidas","Victoria, Seychelles",support@victoriasports.com,+248 25 987654,www.victoriasports.com
+84,São Tomé Football PR,Football Sponsorships & Branding,São Tomé Premier League,"Unitel ST, Nike","São Tomé, São Tomé & Príncipe",info@saotomesports.com,+239 99 321654,www.saotomesports.com
+85,Antananarivo Media House,Club PR & Sponsorships,Madagascar Premier League,"Airtel Madagascar, Puma","Antananarivo, Madagascar",contact@antananarivosports.com,+261 32 987456,www.antananarivosports.com
+86,Moroni Sports PR,Football Branding & Athlete Marketing,Comoros Premier League,"Telma Comoros, Adidas","Moroni, Comoros",pr@comorossports.com,+269 77 543210,www.comorossports.com
+87,Luanda PR Experts,Football Sponsorships & Club Branding,Angola Girabola League,"Unitel Angola, Nike","Luanda, Angola",support@luandasports.com,+244 92 765987,www.luandasports.com
+88,Bissau Sports Connect,Football PR & Athlete Branding,Guinea-Bissau Premier League,"Orange Bissau, Puma","Bissau, Guinea-Bissau",info@bissausports.com,+245 96 543987,www.bissausports.com
+89,Dodoma Football PR,Club Marketing & Sponsorships,Tanzania Football Federation,"Tigo Tanzania, Adidas","Dodoma, Tanzania",contact@dodomasports.com,+255 65 678432,www.dodomasports.com
+90,Kampala Media House,Football Branding & Sponsorships,Uganda Premier League,"MTN Uganda, Puma","Kampala, Uganda",pr@kampalasports.com,+256 75 432987,www.kampalasports.com
+91,Freetown PR & Branding,Club PR & Sponsorships,Sierra Leone Premier League,"Africell, Adidas","Freetown, Sierra Leone",support@freetownsports.com,+232 76 789654,www.freetownsports.com
+92,Maseru Football Media,Football Marketing & PR,Lesotho Premier League,"Vodacom Lesotho, Nike","Maseru, Lesotho",info@maserusports.com,+266 50 123678,www.maserusports.com
+93,Lusaka Football Promotions,Athlete Branding & PR,Zambian Super League,"MTN Zambia, Puma","Lusaka, Zambia",contact@lusakasports.com,+260 97 654789,www.lusakasports.com
+94,Bangui Sports PR,Football Sponsorships & Branding,Central African Republic League,"Orange CAR, Adidas","Bangui, CAR",pr@banguisports.com,+236 70 321987,www.banguisports.com
+95,Conakry PR & Sponsorships,Club Branding & Athlete Marketing,Guinea Premier League,"MTN Guinea, Nike","Conakry, Guinea",support@conakrysports.com,+224 62 876543,www.conakrysports.com
+96,Libreville Football Connect,Football PR & Club Marketing,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",info@librevillesports.com,+241 74 543789,www.librevillesports.com
+97,Accra Sports Branding,Football PR & Sponsorships,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",contact@accrasports.com,+233 30 567432,www.accrasports.com
+98,Dakar Football Promotions,Club PR & Sponsorship Activation,Senegal Premier League,"Orange Senegal, Nike","Dakar, Senegal",pr@dakarsports.com,+221 77 654321,www.dakarsports.com
+99,Johannesburg Sports PR,Athlete PR & Digital Branding,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",support@joburgsports.com,+27 11 543876,www.joburgsports.com
+100,Tunis Football Branding,Football PR & Club Marketing,"Tunisia FA, Club Africain","Orange Tunisia, Adidas","Tunis, Tunisia",info@tunissports.com,+216 20 987654,www.tunissports.com
+101,Lomé Sports Marketing,Athlete Sponsorship & Club PR,Togo National Team,"Moov Togo, Puma","Lomé, Togo",info@lomesportsmarketing.com,+228 92 345678,www.lomesportsmarketing.com
+102,Banjul PR Hub,Football Branding & Sponsorship,Gambian Football League,"Africell Gambia, Adidas","Banjul, Gambia",contact@banjulprhub.com,+220 77 654321,www.banjulprhub.com
+103,Nouakchott Sports Promotions,Football PR & Sponsorship,Mauritania National Team,"Mauritel, Puma","Nouakchott, Mauritania",pr@nouakchottsports.com,+222 45 987654,www.nouakchottsports.com
+104,Juba Sports Connect,Football Sponsorships & PR,South Sudan Premier League,"MTN South Sudan, Adidas","Juba, South Sudan",support@jubasports.com,+211 92 345678,www.jubasports.com
+105,Asmara Media Experts,Club Branding & Athlete Marketing,Eritrea National Team,"Eritel, Nike","Asmara, Eritrea",info@asmarasports.com,+291 7 654321,www.asmarasports.com
+106,Bissau Sports Promotions,Football PR & Sponsorship Activation,Guinea-Bissau League,"Orange Bissau, Puma","Bissau, Guinea-Bissau",pr@bissausports.com,+245 96 765432,www.bissausports.com
+107,Port Louis Football Branding,Club PR & Digital Marketing,Mauritius National Team,"Orange Mauritius, Adidas","Port Louis, Mauritius",contact@portlouissports.com,+230 57 654321,www.portlouissports.com
+108,Antananarivo Media Hub,Football Branding & Athlete Sponsorships,Madagascar Premier League,"Airtel Madagascar, Puma","Antananarivo, Madagascar",support@antananarivosports.com,+261 32 987654,www.antananarivosports.com
+109,Dar es Salaam PR Connect,Football Sponsorship & Digital Branding,Tanzania Football Federation,"Tigo Tanzania, Nike","Dar es Salaam, Tanzania",info@darsports.com,+255 65 678901,www.darsports.com
+110,Niamey Sports PR Solutions,Club Branding & PR Services,Niger Premier League,"Airtel Niger, Adidas","Niamey, Niger",pr@niameysports.com,+227 97 345678,www.niameysports.com
+111,Brazzaville Sports Promotions,Football Sponsorship & Club Marketing,Congo National Team,"TotalEnergies, Puma","Brazzaville, Congo",support@brazzavillesports.com,+242 06 987654,www.brazzavillesports.com
+112,Monrovia Football PR,Football PR & Digital Marketing,Liberia Football League,"MTN Liberia, Adidas","Monrovia, Liberia",info@monroviasports.com,+231 77 432109,www.monroviasports.com
+113,Victoria Sports Marketing,Athlete Branding & Club PR,Seychelles National Team,"Airtel Seychelles, Puma","Victoria, Seychelles",contact@victoriasports.com,+248 25 987654,www.victoriasports.com
+114,São Tomé Football Media,Club Promotions & Sponsorships,São Tomé & Príncipe League,"Unitel ST, Nike","São Tomé, São Tomé & Príncipe",pr@saotomesports.com,+239 99 654321,www.saotomesports.com
+115,Mogadishu Football PR,Football Branding & Sponsorship,Somalia Premier League,"Hormuud Telecom, Adidas","Mogadishu, Somalia",support@mogadishusports.com,+252 61 765432,www.mogadishusports.com
+116,Windhoek PR Solutions,Football Sponsorship & PR Services,Namibian National Team,"MTC Namibia, Puma","Windhoek, Namibia",info@windhoeksports.com,+264 81 345678,www.windhoeksports.com
+117,Accra Sports PR,Club Branding & Digital PR,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",contact@accrasports.com,+233 30 987654,www.accrasports.com
+118,Dakar Sports Promotions,Football PR & Digital Sponsorship,Senegal Football Federation,"Orange Senegal, Nike","Dakar, Senegal",pr@dakarsports.com,+221 77 654321,www.dakarsports.com
+119,Johannesburg PR Hub,Athlete Branding & Sponsorships,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",support@joburgsports.com,+27 11 543876,www.joburgsports.com
+120,Tunis Football PR,Club Promotions & Sponsorships,"Tunisia FA, Club Africain","Orange Tunisia, Adidas","Tunis, Tunisia",info@tunissports.com,+216 20 987654,www.tunissports.com
+121,Maputo Sports PR,Football Branding & Sponsorships,Mozambique Premier League,"Vodacom Mozambique, Puma","Maputo, Mozambique",pr@maputosports.com,+258 82 765432,www.maputosports.com
+122,Gaborone Football Promotions,Football PR & Sponsorships,Botswana Premier League,"Orange Botswana, Nike","Gaborone, Botswana",support@gaboronesports.com,+267 71 987654,www.gaboronesports.com
+123,Luanda Sports Media,Football Branding & PR Services,Angola National Team,"Unitel Angola, Adidas","Luanda, Angola",info@luandasports.com,+244 92 765987,www.luandasports.com
+124,Freetown Football PR,Club Marketing & Athlete PR,Sierra Leone Premier League,"Africell, Puma","Freetown, Sierra Leone",contact@freetownsports.com,+232 76 789654,www.freetownsports.com
+125,Kampala PR Hub,Football Sponsorship & Club PR,Uganda Football League,"MTN Uganda, Nike","Kampala, Uganda",pr@kampalasports.com,+256 75 432987,www.kampalasports.com
+126,Lusaka Sports Promotions,Football Sponsorship & Branding,Zambia Premier League,"MTN Zambia, Puma","Lusaka, Zambia",info@lusakasportspr.com,+260 97 432567,www.lusakasportspr.com
+127,Bujumbura PR Connect,Football PR & Digital Marketing,Burundi Premier League,"Econet Burundi, Nike","Bujumbura, Burundi",contact@bujumburasports.com,+257 79 876543,www.bujumburasports.com
+128,Porto-Novo Media Hub,Football Branding & Sponsorship,Benin Premier League,"MTN Benin, Puma","Porto-Novo, Benin",pr@portonovosports.com,+229 97 345678,www.portonovosports.com
+129,Bangui Sports PR,Football Sponsorships & Branding,Central African Republic League,"Orange CAR, Adidas","Bangui, CAR",support@banguisports.com,+236 70 321567,www.banguisports.com
+130,Niamey PR Solutions,Football Branding & Athlete Sponsorship,Niger Premier League,"Moov Niger, Adidas","Niamey, Niger",info@niameysports.com,+227 97 234567,www.niameysports.com
+131,Yaoundé Sports Marketing,Athlete Sponsorship & Club PR,Cameroon Football League,"Guinness Cameroon, Nike","Yaoundé, Cameroon",contact@yaoundesports.com,+237 675 654321,www.yaoundesports.com
+132,Abidjan Media Experts,Football PR & Sponsorship Activation,Ivory Coast League,"Coca-Cola, Puma","Abidjan, Ivory Coast",pr@abidjansports.com,+225 07 654321,www.abidjansports.com
+133,Nouakchott Football Branding,Club PR & Digital Marketing,Mauritania Premier League,"Mauritel, Puma","Nouakchott, Mauritania",support@nouakchottsports.com,+222 45 987321,www.nouakchottsports.com
+134,Juba Football Promotions,Football Sponsorships & Branding,South Sudan National Team,"MTN South Sudan, Adidas","Juba, South Sudan",info@jubasports.com,+211 92 345678,www.jubasports.com
+135,Mogadishu Sports PR,Football Branding & Sponsorship,Somalia Premier League,"Hormuud Telecom, Adidas","Mogadishu, Somalia",contact@mogadishusports.com,+252 61 765321,www.mogadishusports.com
+136,Gaborone PR Hub,Football Sponsorship & Branding,Botswana Premier League,"Orange Botswana, Puma","Gaborone, Botswana",pr@gaboronesports.com,+267 71 876543,www.gaboronesports.com
+137,Dar es Salaam Football Promotions,Athlete Branding & Sponsorship,Tanzania Premier League,"Tigo Tanzania, Nike","Dar es Salaam, Tanzania",support@darsports.com,+255 65 654987,www.darsports.com
+138,Asmara Sports Connect,Football Sponsorship & PR,Eritrean Football League,"Eritel, Puma","Asmara, Eritrea",info@asmarasports.com,+291 7 765432,www.asmarasports.com
+139,Freetown Sports Marketing,Football Branding & Digital Marketing,Sierra Leone Premier League,"Africell, Adidas","Freetown, Sierra Leone",contact@freetownsports.com,+232 76 789321,www.freetownsports.com
+140,Victoria PR Experts,Football Sponsorship & Club Branding,Seychelles National Team,"Airtel Seychelles, Puma","Victoria, Seychelles",pr@victoriasports.com,+248 25 432987,www.victoriasports.com
+141,Antananarivo PR Solutions,Football Branding & Digital PR,Madagascar Premier League,"Airtel Madagascar, Adidas","Antananarivo, Madagascar",support@antananarivosports.com,+261 32 654789,www.antananarivosports.com
+142,São Tomé Media Hub,Club Promotions & Sponsorships,São Tomé & Príncipe League,"Unitel ST, Nike","São Tomé, São Tomé & Príncipe",info@saotomesports.com,+239 99 765321,www.saotomesports.com
+143,Libreville Sports Promotions,Athlete Branding & Club PR,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",contact@librevillesports.com,+241 74 987123,www.librevillesports.com
+144,Tunis Football PR,Club Branding & Sponsorship,Tunisia National Team,"Orange Tunisia, Adidas","Tunis, Tunisia",pr@tunissports.com,+216 20 543789,www.tunissports.com
+145,Johannesburg PR Solutions,Football Sponsorship & PR Services,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",support@joburgsports.com,+27 11 567432,www.joburgsports.com
+146,Dakar Media Experts,Football Branding & Sponsorship Activation,Senegal Premier League,"Orange Senegal, Nike","Dakar, Senegal",info@dakarsports.com,+221 77 432678,www.dakarsports.com
+147,Accra PR Hub,Athlete Sponsorship & Club PR,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",contact@accrasports.com,+233 30 876543,www.accrasports.com
+148,Lusaka Football Branding,Club PR & Digital Marketing,Zambian Premier League,"MTN Zambia, Puma","Lusaka, Zambia",pr@lusakasports.com,+260 97 543876,www.lusakasports.com
+149,Bamako Sports Connect,Football Branding & Sponsorships,Mali Premier League,"Orange Mali, Nike","Bamako, Mali",support@bamakosports.com,+223 79 678543,www.bamakosports.com
+150,Windhoek Football PR,Football Sponsorship & Branding,Namibian Premier League,"MTC Namibia, Adidas","Windhoek, Namibia",info@windhoeksports.com,+264 81 765432,www.windhoeksports.com
+151,Lomé Football PR,Athlete PR & Sponsorship Activation,Togo Premier League,"Moov Togo, Puma","Lomé, Togo",info@lomesportspr.com,+228 92 345678,www.lomesportspr.com
+152,Banjul Media Hub,Club PR & Digital Marketing,Gambia Football Federation,"Africell Gambia, Adidas","Banjul, Gambia",contact@banjulmedia.com,+220 77 654321,www.banjulmedia.com
+153,Nouakchott PR Solutions,Football Sponsorship & PR,Mauritania Premier League,"Mauritel, Puma","Nouakchott, Mauritania",pr@nouakchottpr.com,+222 45 987654,www.nouakchottpr.com
+154,Juba Sports Branding,Football Sponsorship & Branding,South Sudan Premier League,"MTN South Sudan, Adidas","Juba, South Sudan",support@jubasportsbranding.com,+211 92 345678,www.jubasportsbranding.com
+155,Asmara Football Promotions,Football PR & Athlete Marketing,Eritrea National Team,"Eritel, Nike","Asmara, Eritrea",info@asmarasportspr.com,+291 7 654321,www.asmarasportspr.com
+156,Port Louis PR Hub,Football Sponsorship & PR,Mauritius National Team,"Orange Mauritius, Puma","Port Louis, Mauritius",contact@portlouissportspr.com,+230 57 654321,www.portlouissportspr.com
+157,Antananarivo Media Solutions,Football Branding & Athlete PR,Madagascar Premier League,"Airtel Madagascar, Adidas","Antananarivo, Madagascar",support@antananarivopr.com,+261 32 987654,www.antananarivopr.com
+158,Dar es Salaam Sports Connect,Football Sponsorships & Branding,Tanzania Football Federation,"Tigo Tanzania, Nike","Dar es Salaam, Tanzania",info@darsportspr.com,+255 65 678901,www.darsportspr.com
+159,Niamey Football PR,Club Branding & PR Services,Niger Premier League,"Airtel Niger, Adidas","Niamey, Niger",pr@niameysportspr.com,+227 97 345678,www.niameysportspr.com
+160,Brazzaville PR Connect,Football Sponsorship & Club Branding,Congo National Team,"TotalEnergies, Puma","Brazzaville, Congo",support@brazzavillesportspr.com,+242 06 987654,www.brazzavillesportspr.com
+161,Monrovia Football Media,Football PR & Digital Marketing,Liberia Football League,"MTN Liberia, Adidas","Monrovia, Liberia",info@monroviasportspr.com,+231 77 432109,www.monroviasportspr.com
+162,Victoria Sports Promotions,Football Sponsorship & Club Branding,Seychelles National Team,"Airtel Seychelles, Puma","Victoria, Seychelles",contact@victoriasportspr.com,+248 25 987654,www.victoriasportspr.com
+163,São Tomé Media Hub,Club Promotions & Sponsorships,São Tomé & Príncipe League,"Unitel ST, Nike","São Tomé, São Tomé & Príncipe",pr@saotomesportspr.com,+239 99 654321,www.saotomesportspr.com
+164,Mogadishu PR Connect,Football Branding & Sponsorship,Somalia Premier League,"Hormuud Telecom, Adidas","Mogadishu, Somalia",support@mogadishusportspr.com,+252 61 765432,www.mogadishusportspr.com
+165,Windhoek PR Hub,Football Sponsorship & PR Services,Namibian Premier League,"MTC Namibia, Puma","Windhoek, Namibia",info@windhoeksportspr.com,+264 81 345678,www.windhoeksportspr.com
+166,Accra Football Promotions,Club PR & Digital Marketing,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",contact@accrasportspr.com,+233 30 987654,www.accrasportspr.com
+167,Dakar PR Experts,Football Sponsorship & Digital Branding,Senegal Football Federation,"Orange Senegal, Nike","Dakar, Senegal",pr@dakarsportspr.com,+221 77 654321,www.dakarsportspr.com
+168,Johannesburg PR House,Athlete Branding & Sponsorships,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",support@joburgsportspr.com,+27 11 543876,www.joburgsportspr.com
+169,Tunis Football PR,Club Promotions & Sponsorships,"Tunisia FA, Club Africain","Orange Tunisia, Adidas","Tunis, Tunisia",info@tunissportspr.com,+216 20 987654,www.tunissportspr.com
+170,Maputo Media Solutions,Football Branding & Sponsorships,Mozambique Premier League,"Vodacom Mozambique, Puma","Maputo, Mozambique",pr@maputosportspr.com,+258 82 765432,www.maputosportspr.com
+171,Gaborone Football Promotions,Football PR & Sponsorships,Botswana Premier League,"Orange Botswana, Nike","Gaborone, Botswana",support@gaboronesportspr.com,+267 71 987654,www.gaboronesportspr.com
+172,Luanda Media House,Football Branding & PR Services,Angola National Team,"Unitel Angola, Adidas","Luanda, Angola",info@luandasportspr.com,+244 92 765987,www.luandasportspr.com
+173,Freetown Football PR,Club Marketing & Athlete PR,Sierra Leone Premier League,"Africell, Puma","Freetown, Sierra Leone",contact@freetownsportspr.com,+232 76 789654,www.freetownsportspr.com
+174,Kampala PR Connect,Football Sponsorship & Club PR,Uganda Football League,"MTN Uganda, Nike","Kampala, Uganda",pr@kampalasportspr.com,+256 75 432987,www.kampalasportspr.com
+175,Lusaka PR Experts,Football Sponsorship & Branding,Zambian Premier League,"MTN Zambia, Puma","Lusaka, Zambia",support@lusakasportspr.com,+260 97 543876,www.lusakasportspr.com
+176,Maseru Sports PR,Athlete Branding & Club Promotions,Lesotho Premier League,"Vodacom Lesotho, Puma","Maseru, Lesotho",info@maserusportspr.com,+266 50 543678,www.maserusportspr.com
+177,Lilongwe Football Media,Football Sponsorship & PR,Malawi Premier League,"TNM Malawi, Adidas","Lilongwe, Malawi",contact@lilongwesportspr.com,+265 88 876543,www.lilongwesportspr.com
+178,Djibouti Sports PR,Football Branding & Sponsorship,Djibouti Football Federation,"Telcom Djibouti, Nike","Djibouti, Djibouti",pr@djiboutisportspr.com,+253 77 543321,www.djiboutisportspr.com
+179,Niamey Football Connect,Football Sponsorship & Club PR,Niger Premier League,"Moov Niger, Adidas","Niamey, Niger",support@niameysportspr.com,+227 97 876543,www.niameysportspr.com
+180,Praia Sports Media,Football PR & Athlete Marketing,Cape Verde National Team,"Unitel T+, Puma","Praia, Cape Verde",info@praiasportspr.com,+238 95 765432,www.praiasportspr.com
+181,N’Djamena PR Solutions,Club PR & Sponsorship Activation,Chadian Premier League,"Airtel Chad, Adidas","N’Djamena, Chad",contact@ndjamenasportspr.com,+235 99 432987,www.ndjamenasportspr.com
+182,Bujumbura Football Branding,Football Branding & PR Services,Burundi Premier League,"Econet Burundi, Nike","Bujumbura, Burundi",pr@bujumburasportspr.com,+257 79 654987,www.bujumburasportspr.com
+183,Bissau Media House,Athlete Branding & Club Sponsorship,Guinea-Bissau Premier League,"Orange Bissau, Puma","Bissau, Guinea-Bissau",support@bissausportspr.com,+245 96 432876,www.bissausportspr.com
+184,Gitega Sports PR,Football Sponsorship & Branding,Burundi Premier League,"Lumitel, Adidas","Gitega, Burundi",info@gitegasportspr.com,+257 71 876543,www.gitegasportspr.com
+185,Lomé Sports Connect,Football PR & Digital Marketing,Togo National Team,"Moov Togo, Puma","Lomé, Togo",contact@lomesportspr.com,+228 90 654987,www.lomesportspr.com
+186,Porto-Novo Football Promotions,Football Sponsorships & Club Branding,Benin Premier League,"MTN Benin, Adidas","Porto-Novo, Benin",pr@portonovosportspr.com,+229 97 876543,www.portonovosportspr.com
+187,Dodoma PR Solutions,Football Branding & Sponsorship,Tanzania Football Federation,"Tigo Tanzania, Nike","Dodoma, Tanzania",support@dodomasportspr.com,+255 65 432987,www.dodomasportspr.com
+188,Libreville Sports Media,Club PR & Athlete Marketing,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",info@librevillesportspr.com,+241 74 543789,www.librevillesportspr.com
+189,Accra Football Media,Football PR & Sponsorships,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",contact@accrasportspr.com,+233 30 765432,www.accrasportspr.com
+190,Dakar Sports PR,Football Branding & Digital Marketing,Senegal Football Federation,"Orange Senegal, Nike","Dakar, Senegal",pr@dakarsportspr.com,+221 77 876543,www.dakarsportspr.com
+191,Johannesburg PR Connect,Athlete Branding & Club Sponsorships,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",support@joburgsportspr.com,+27 11 654987,www.joburgsportspr.com
+192,Tunis Football Promotions,Club PR & Sponsorship Activation,"Tunisia FA, Club Africain","Orange Tunisia, Adidas","Tunis, Tunisia",info@tunissportspr.com,+216 20 543876,www.tunissportspr.com
+193,Freetown Media Hub,Football Branding & Sponsorships,Sierra Leone Premier League,"Africell, Puma","Freetown, Sierra Leone",contact@freetownsportspr.com,+232 76 432876,www.freetownsportspr.com
+194,Lusaka PR Experts,Football Sponsorship & Branding,Zambian Premier League,"MTN Zambia, Puma","Lusaka, Zambia",support@lusakasportspr.com,+260 97 876543,www.lusakasportspr.com
+195,Bamako Football Media,Football Branding & PR Services,Mali Premier League,"Orange Mali, Nike","Bamako, Mali",info@bamakosportspr.com,+223 79 543876,www.bamakosportspr.com
+196,Windhoek Sports PR,Football Sponsorship & Club PR,Namibian Premier League,"MTC Namibia, Adidas","Windhoek, Namibia",contact@windhoeksportspr.com,+264 81 765432,www.windhoeksportspr.com
+197,Brazzaville PR House,Football Sponsorships & Branding,Congo National Team,"TotalEnergies, Puma","Brazzaville, Congo",pr@brazzavillesportspr.com,+242 06 432987,www.brazzavillesportspr.com
+198,Monrovia Sports Connect,Football Branding & Sponsorships,Liberia Football League,"MTN Liberia, Adidas","Monrovia, Liberia",support@monroviasportspr.com,+231 77 987654,www.monroviasportspr.com
+199,Niamey Football Promotions,Football Sponsorship & PR,Niger Premier League,"Airtel Niger, Adidas","Niamey, Niger",info@niameysportspr.com,+227 97 432876,www.niameysportspr.com
+200,Luanda PR Hub,Football Branding & Sponsorship Activation,Angola National Team,"Unitel Angola, Adidas","Luanda, Angola",contact@luandasportspr.com,+244 92 654987,www.luandasportspr.com
+201,Nairobi Sports PR,Athlete Branding & Club Promotions,Kenya Premier League,"Safaricom, Adidas","Nairobi, Kenya",info@nairobisportspr.com,+254 72 543876,www.nairobisportspr.com
+202,Kampala Football Media,Football Sponsorship & PR,Uganda Premier League,"MTN Uganda, Nike","Kampala, Uganda",contact@kampalasportspr.com,+256 75 654987,www.kampalasportspr.com
+203,Harare PR Solutions,Football Branding & Sponsorship,Zimbabwe Premier League,"Econet Zimbabwe, Puma","Harare, Zimbabwe",pr@huraresportspr.com,+263 77 987654,www.huraresportspr.com
+204,Maputo Football PR,Football Sponsorship & Club Branding,Mozambique Premier League,"Vodacom Mozambique, Adidas","Maputo, Mozambique",support@maputosportspr.com,+258 82 876543,www.maputosportspr.com
+205,Gaborone Sports Media,Football Branding & PR Services,Botswana Premier League,"Orange Botswana, Puma","Gaborone, Botswana",info@gaboronesportspr.com,+267 71 543876,www.gaboronesportspr.com
+206,Banjul PR Experts,Football Sponsorship & Branding,Gambia Premier League,"Africell Gambia, Adidas","Banjul, Gambia",contact@banjulsportspr.com,+220 77 876543,www.banjulsportspr.com
+207,Praia Football Branding,Football PR & Athlete Marketing,Cape Verde Premier League,"Unitel T+, Nike","Praia, Cape Verde",pr@praiasportspr.com,+238 95 765432,www.praiasportspr.com
+208,N'Djamena Media Hub,Club PR & Digital Marketing,Chadian Football Federation,"Airtel Chad, Puma","N'Djamena, Chad",support@ndjamenasportspr.com,+235 99 543876,www.ndjamenasportspr.com
+209,Bujumbura PR Connect,Football Sponsorship & PR,Burundi Premier League,"Lumitel, Adidas","Bujumbura, Burundi",info@bujumburasportspr.com,+257 79 987654,www.bujumburasportspr.com
+210,Asmara PR Solutions,Football Sponsorship & Branding,Eritrea Premier League,"Eritel, Puma","Asmara, Eritrea",contact@asmarasportspr.com,+291 7 654987,www.asmarasportspr.com
+211,Conakry Football Promotions,Football Sponsorships & Club Branding,Guinea Premier League,"MTN Guinea, Adidas","Conakry, Guinea",pr@conakrysportspr.com,+224 62 876543,www.conakrysportspr.com
+212,Bamako Sports PR,Football Branding & Sponsorship,Mali Premier League,"Orange Mali, Puma","Bamako, Mali",support@bamakosportspr.com,+223 79 432987,www.bamakosportspr.com
+213,Monrovia Football Media,Football PR & Athlete Branding,Liberia Premier League,"MTN Liberia, Nike","Monrovia, Liberia",info@monroviasportspr.com,+231 77 876543,www.monroviasportspr.com
+214,Niamey Sports Connect,Football Sponsorship & Branding,Niger Premier League,"Moov Niger, Adidas","Niamey, Niger",contact@niameysportspr.com,+227 97 543876,www.niameysportspr.com
+215,Brazzaville PR Hub,Football Branding & PR Services,Congo National Team,"TotalEnergies, Puma","Brazzaville, Congo",pr@brazzavillesportspr.com,+242 06 876543,www.brazzavillesportspr.com
+216,Freetown Sports Branding,Football Sponsorship & Club Promotions,Sierra Leone Premier League,"Africell, Adidas","Freetown, Sierra Leone",support@freetownsportspr.com,+232 76 432987,www.freetownsportspr.com
+217,Windhoek Football Media,Football Sponsorship & PR,Namibian Premier League,"MTC Namibia, Puma","Windhoek, Namibia",info@windhoeksportspr.com,+264 81 765432,www.windhoeksportspr.com
+218,Dodoma PR Experts,Football Branding & Club Marketing,Tanzania Premier League,"Tigo Tanzania, Nike","Dodoma, Tanzania",contact@dodomasportspr.com,+255 65 987654,www.dodomasportspr.com
+219,Ouagadougou Media Solutions,Football Sponsorship & PR Services,Burkina Faso Premier League,"Orange Burkina, Adidas","Ouagadougou, Burkina Faso",pr@ouagadougousportspr.com,+226 76 432987,www.ouagadougousportspr.com
+220,Nouakchott Football Promotions,Club PR & Digital Marketing,Mauritania Premier League,"Mauritel, Puma","Nouakchott, Mauritania",support@nouakchottsportspr.com,+222 45 876543,www.nouakchottsportspr.com
+221,Yaoundé Sports PR,Athlete Branding & Club Promotions,Cameroon Premier League,"MTN Cameroon, Adidas","Yaoundé, Cameroon",info@yaoundesportspr.com,+237 675 543876,www.yaoundesportspr.com
+222,Lomé Media Hub,Football Sponsorship & PR,Togo Premier League,"Moov Togo, Puma","Lomé, Togo",contact@lomesportspr.com,+228 90 876543,www.lomesportspr.com
+223,Banjul PR Experts,Football Branding & Sponsorship,Gambia Premier League,"Africell Gambia, Nike","Banjul, Gambia",pr@banjulsportspr.com,+220 77 432987,www.banjulsportspr.com
+224,Maseru Football Branding,Football Sponsorships & Club Branding,Lesotho Premier League,"Vodacom Lesotho, Adidas","Maseru, Lesotho",support@maserusportspr.com,+266 50 654987,www.maserusportspr.com
+225,Praia PR Connect,Football PR & Digital Marketing,Cape Verde National Team,"Unitel T+, Puma","Praia, Cape Verde",info@praiasportspr.com,+238 95 765432,www.praiasportspr.com
+226,N'Djamena Sports Promotions,Football Sponsorship & PR,Chadian Football Federation,"Airtel Chad, Nike","N'Djamena, Chad",contact@ndjamenasportspr.com,+235 99 543876,www.ndjamenasportspr.com
+227,Bujumbura Football PR,Football Branding & Sponsorship,Burundi Premier League,"Lumitel, Adidas","Bujumbura, Burundi",pr@bujumburasportspr.com,+257 79 654987,www.bujumburasportspr.com
+228,Libreville PR Hub,Athlete Branding & Club Sponsorship,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",support@librevillesportspr.com,+241 74 432876,www.librevillesportspr.com
+229,Nairobi Football Media,Football Sponsorship & PR,Kenya Premier League,"Safaricom, Adidas","Nairobi, Kenya",info@nairobisportspr.com,+254 72 654987,www.nairobisportspr.com
+230,Lusaka PR Experts,Football Branding & Club Marketing,Zambian Premier League,"MTN Zambia, Puma","Lusaka, Zambia",contact@lusakasportspr.com,+260 97 876543,www.lusakasportspr.com
+231,Lilongwe Media Solutions,Football Sponsorship & PR Services,Malawi Premier League,"TNM Malawi, Adidas","Lilongwe, Malawi",pr@lilongwesportspr.com,+265 88 432987,www.lilongwesportspr.com
+232,Windhoek Football PR,Football Sponsorship & Branding,Namibian Premier League,"MTC Namibia, Nike","Windhoek, Namibia",support@windhoeksportspr.com,+264 81 654321,www.windhoeksportspr.com
+233,Maputo Sports Branding,Football PR & Athlete Marketing,Mozambique Premier League,"Vodacom Mozambique, Puma","Maputo, Mozambique",info@maputosportspr.com,+258 82 765432,www.maputosportspr.com
+234,Harare PR Connect,Football Branding & PR Services,Zimbabwe Premier League,"Econet Zimbabwe, Adidas","Harare, Zimbabwe",contact@huraresportspr.com,+263 77 543876,www.huraresportspr.com
+235,Johannesburg Sports PR,Football Sponsorship & Branding,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",pr@joburgsportspr.com,+27 11 987654,www.joburgsportspr.com
+236,Dakar Football Media,Football Branding & PR,Senegal Football Federation,"Orange Senegal, Nike","Dakar, Senegal",support@dakarsportspr.com,+221 77 432876,www.dakarsportspr.com
+237,Accra PR Solutions,Athlete Sponsorship & Club PR,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",info@accrasportspr.com,+233 30 876543,www.accrasportspr.com
+238,Tunis Media Experts,Football Sponsorship & Club Branding,Tunisia National Team,"Orange Tunisia, Puma","Tunis, Tunisia",contact@tunissportspr.com,+216 20 654321,www.tunissportspr.com
+239,Freetown Football PR,Club Marketing & Sponsorship,Sierra Leone Premier League,"Africell, Nike","Freetown, Sierra Leone",pr@freetownsportspr.com,+232 76 543987,www.freetownsportspr.com
+240,Ouagadougou Sports PR,Football Branding & Club PR,Burkina Faso Premier League,"Orange Burkina, Adidas","Ouagadougou, Burkina Faso",support@ouagadougousportspr.com,+226 76 432987,www.ouagadougousportspr.com
+241,Nouakchott PR Connect,Football Sponsorship & Club PR,Mauritania Premier League,"Mauritel, Puma","Nouakchott, Mauritania",info@nouakchottsportspr.com,+222 45 876543,www.nouakchottsportspr.com
+242,Djibouti Sports Branding,Football Sponsorship & PR,Djibouti Football Federation,"Telcom Djibouti, Nike","Djibouti, Djibouti",contact@djiboutisportspr.com,+253 77 543876,www.djiboutisportspr.com
+243,Luanda Sports PR,Football Branding & Sponsorship,Angola Premier League,"Unitel Angola, Puma","Luanda, Angola",info@luandasportspr.com,+244 92 654987,www.luandasportspr.com
+244,Dodoma PR Solutions,Football Sponsorship & PR,Tanzania Premier League,"Tigo Tanzania, Adidas","Dodoma, Tanzania",contact@dodomasportspr.com,+255 65 765432,www.dodomasportspr.com
+245,Kinshasa Football Media,Football Branding & Club PR,DR Congo National Team,"Vodacom Congo, Nike","Kinshasa, DR Congo",pr@kinshasasportspr.com,+243 81 543987,www.kinshasasportspr.com
+246,Asmara PR House,Football PR & Sponsorship,Eritrean Football League,"Eritel, Puma","Asmara, Eritrea",support@asmarasportspr.com,+291 7 654987,www.asmarasportspr.com
+247,Conakry Media Hub,Football Sponsorship & Club Branding,Guinea Premier League,"MTN Guinea, Adidas","Conakry, Guinea",info@conakrysportspr.com,+224 62 432987,www.conakrysportspr.com
+248,Monrovia Sports Promotions,Football Branding & PR Services,Liberia Premier League,"MTN Liberia, Nike","Monrovia, Liberia",contact@monroviasportspr.com,+231 77 543876,www.monroviasportspr.com
+249,Niamey PR Connect,Football Sponsorship & PR,Niger Premier League,"Moov Niger, Adidas","Niamey, Niger",pr@niameysportspr.com,+227 97 876543,www.niameysportspr.com
+250,Brazzaville Football Branding,Football PR & Athlete Marketing,Congo Premier League,"TotalEnergies, Puma","Brazzaville, Congo",support@brazzavillesportspr.com,+242 06 432987,www.brazzavillesportspr.com
+251,Freetown PR Hub,Football Sponsorship & Branding,Sierra Leone Premier League,"Africell, Adidas","Freetown, Sierra Leone",info@freetownsportspr.com,+232 76 654987,www.freetownsportspr.com
+252,Windhoek Sports PR,Football Sponsorship & PR,Namibian Premier League,"MTC Namibia, Nike","Windhoek, Namibia",contact@windhoeksportspr.com,+264 81 432987,www.windhoeksportspr.com
+253,Dakar Media Experts,Football Sponsorship & Branding,Senegal Football Federation,"Orange Senegal, Puma","Dakar, Senegal",pr@dakarsportspr.com,+221 77 765432,www.dakarsportspr.com
+254,Accra PR Solutions,Football Branding & Club PR,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",support@accrasportspr.com,+233 30 543876,www.accrasportspr.com
+255,Tunis Football Promotions,Club PR & Sponsorship Activation,Tunisia National Team,"Orange Tunisia, Nike","Tunis, Tunisia",info@tunissportspr.com,+216 20 876543,www.tunissportspr.com
+256,Nouakchott Sports Connect,Football Branding & Sponsorship,Mauritania Premier League,"Mauritel, Puma","Nouakchott, Mauritania",contact@nouakchottsportspr.com,+222 45 654987,www.nouakchottsportspr.com
+257,Ouagadougou PR House,Football Sponsorship & PR,Burkina Faso Premier League,"Orange Burkina, Adidas","Ouagadougou, Burkina Faso",pr@ouagadougousportspr.com,+226 76 432876,www.ouagadougousportspr.com
+258,Djibouti Sports PR,Football Branding & Sponsorship,Djibouti Football Federation,"Telcom Djibouti, Nike","Djibouti, Djibouti",support@djiboutisportspr.com,+253 77 876543,www.djiboutisportspr.com
+259,Maseru PR Experts,Football Sponsorship & Club Branding,Lesotho Premier League,"Vodacom Lesotho, Adidas","Maseru, Lesotho",info@maserusportspr.com,+266 50 765432,www.maserusportspr.com
+260,Lilongwe Football PR,Football Sponsorship & Branding,Malawi Premier League,"TNM Malawi, Puma","Lilongwe, Malawi",contact@lilongwesportspr.com,+265 88 543987,www.lilongwesportspr.com
+261,Maputo PR Solutions,Football Sponsorship & PR,Mozambique Premier League,"Vodacom Mozambique, Adidas","Maputo, Mozambique",pr@maputosportspr.com,+258 82 432876,www.maputosportspr.com
+262,Harare PR Connect,Football Branding & PR Services,Zimbabwe Premier League,"Econet Zimbabwe, Nike","Harare, Zimbabwe",support@huraresportspr.com,+263 77 765432,www.huraresportspr.com
+263,Yaoundé Football PR,Football Branding & Club Promotions,Cameroon Premier League,"MTN Cameroon, Adidas","Yaoundé, Cameroon",info@yaoundesportspr.com,+237 675 543987,www.yaoundesportspr.com
+264,Lomé PR Hub,Football Sponsorship & PR,Togo Premier League,"Moov Togo, Puma","Lomé, Togo",contact@lomesportspr.com,+228 90 876543,www.lomesportspr.com
+265,Banjul PR Experts,Football Branding & Sponsorship,Gambia Premier League,"Africell Gambia, Nike","Banjul, Gambia",pr@banjulsportspr.com,+220 77 432987,www.banjulsportspr.com
+266,Maseru Media Solutions,Football Sponsorships & Club Branding,Lesotho Premier League,"Vodacom Lesotho, Adidas","Maseru, Lesotho",support@maserusportspr.com,+266 50 654987,www.maserusportspr.com
+267,Praia Football PR,Football PR & Digital Marketing,Cape Verde National Team,"Unitel T+, Puma","Praia, Cape Verde",info@praiasportspr.com,+238 95 765432,www.praiasportspr.com
+268,N'Djamena PR Solutions,Football Sponsorship & PR,Chadian Football Federation,"Airtel Chad, Nike","N'Djamena, Chad",contact@ndjamenasportspr.com,+235 99 543876,www.ndjamenasportspr.com
+269,Bujumbura PR House,Football Branding & Sponsorship,Burundi Premier League,"Lumitel, Adidas","Bujumbura, Burundi",pr@bujumburasportspr.com,+257 79 654987,www.bujumburasportspr.com
+270,Libreville Media Hub,Athlete Branding & Club Sponsorship,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",support@librevillesportspr.com,+241 74 432876,www.librevillesportspr.com
+271,Nairobi PR Experts,Football Sponsorship & PR,Kenya Premier League,"Safaricom, Adidas","Nairobi, Kenya",info@nairobisportspr.com,+254 72 654987,www.nairobisportspr.com
+272,Lusaka PR Connect,Football Branding & Club Marketing,Zambian Premier League,"MTN Zambia, Puma","Lusaka, Zambia",contact@lusakasportspr.com,+260 97 876543,www.lusakasportspr.com
+273,Lilongwe PR Solutions,Football Sponsorship & PR Services,Malawi Premier League,"TNM Malawi, Adidas","Lilongwe, Malawi",pr@lilongwesportspr.com,+265 88 432987,www.lilongwesportspr.com
+274,Windhoek Football PR,Football Sponsorship & Branding,Namibian Premier League,"MTC Namibia, Nike","Windhoek, Namibia",support@windhoeksportspr.com,+264 81 654321,www.windhoeksportspr.com
+275,Maputo Sports Branding,Football PR & Athlete Marketing,Mozambique Premier League,"Vodacom Mozambique, Puma","Maputo, Mozambique",info@maputosportspr.com,+258 82 765432,www.maputosportspr.com
+276,Harare PR Connect,Football Branding & PR Services,Zimbabwe Premier League,"Econet Zimbabwe, Adidas","Harare, Zimbabwe",contact@huraresportspr.com,+263 77 543876,www.huraresportspr.com
+277,Johannesburg PR House,Football Sponsorship & Branding,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",pr@joburgsportspr.com,+27 11 987654,www.joburgsportspr.com
+278,Dakar Football PR,Football Branding & PR,Senegal Football Federation,"Orange Senegal, Nike","Dakar, Senegal",support@dakarsportspr.com,+221 77 432876,www.dakarsportspr.com
+279,Accra PR Connect,Athlete Sponsorship & Club PR,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",info@accrasportspr.com,+233 30 876543,www.accrasportspr.com
+280,Tunis Media Experts,Football Sponsorship & Club Branding,Tunisia National Team,"Orange Tunisia, Puma","Tunis, Tunisia",contact@tunissportspr.com,+216 20 654321,www.tunissportspr.com
+281,Freetown Sports PR,Club Marketing & Sponsorship,Sierra Leone Premier League,"Africell, Nike","Freetown, Sierra Leone",pr@freetownsportspr.com,+232 76 543987,www.freetownsportspr.com
+282,Ouagadougou Football PR,Football Branding & Club PR,Burkina Faso Premier League,"Orange Burkina, Adidas","Ouagadougou, Burkina Faso",support@ouagadougousportspr.com,+226 76 432987,www.ouagadougousportspr.com
+283,Nouakchott PR House,Football Sponsorship & Club PR,Mauritania Premier League,"Mauritel, Puma","Nouakchott, Mauritania",info@nouakchottsportspr.com,+222 45 876543,www.nouakchottsportspr.com
+284,Djibouti Sports Branding,Football Sponsorship & PR,Djibouti Football Federation,"Telcom Djibouti, Nike","Djibouti, Djibouti",contact@djiboutisportspr.com,+253 77 543876,www.djiboutisportspr.com
+285,Porto-Novo PR Hub,Football Branding & Club Promotions,Benin Premier League,"MTN Benin, Adidas","Porto-Novo, Benin",info@portonovosportspr.com,+229 97 654987,www.portonovosportspr.com
+286,Bissau Media Solutions,Football Sponsorship & PR,Guinea-Bissau Premier League,"Orange Bissau, Puma","Bissau, Guinea-Bissau",contact@bissausportspr.com,+245 96 432876,www.bissausportspr.com
+287,Bamako Sports PR,Football Branding & Sponsorship,Mali Premier League,"Orange Mali, Nike","Bamako, Mali",pr@bamakosportspr.com,+223 79 543876,www.bamakosportspr.com
+288,Lomé Football PR,Football Sponsorships & Club Branding,Togo Premier League,"Moov Togo, Adidas","Lomé, Togo",support@lomesportspr.com,+228 90 654987,www.lomesportspr.com
+289,Cotonou PR Experts,Football PR & Digital Marketing,Benin Premier League,"MTN Benin, Puma","Cotonou, Benin",info@cotonousportspr.com,+229 94 543876,www.cotonousportspr.com
+290,Gitega Football Media,Football Sponsorship & PR,Burundi Premier League,"Lumitel, Adidas","Gitega, Burundi",contact@gitegasportspr.com,+257 71 876543,www.gitegasportspr.com
+291,Fes Sports Promotions,Football Branding & PR Services,Moroccan Botola League,"Inwi, Nike","Fes, Morocco",pr@fessportspr.com,+212 66 432987,www.fessportspr.com
+292,Omdurman PR Connect,Football Sponsorship & Branding,Sudan Premier League,"Zain Sudan, Puma","Omdurman, Sudan",support@omdurmansportspr.com,+249 91 654987,www.omdurmansportspr.com
+293,El Jadida PR Solutions,Football Sponsorship & PR,Moroccan Botola League,"Maroc Telecom, Adidas","El Jadida, Morocco",info@eljadidasportspr.com,+212 61 543876,www.eljadidasportspr.com
+294,Douala Football PR,Football Sponsorships & Club PR,Cameroon Premier League,"MTN Cameroon, Nike","Douala, Cameroon",contact@doualasportspr.com,+237 69 876543,www.doualasportspr.com
+295,Mogadishu Sports PR,Football Branding & Club Marketing,Somali Premier League,"Hormuud Telecom, Adidas","Mogadishu, Somalia",pr@mogadishusportspr.com,+252 61 543876,www.mogadishusportspr.com
+296,Lagos PR House,Football Branding & PR,Nigeria Premier League,"Airtel Nigeria, Puma","Lagos, Nigeria",support@lagossportspr.com,+234 80 765432,www.lagossportspr.com
+297,Abuja Sports Connect,Athlete Sponsorship & Club PR,Nigeria Premier League,"MTN Nigeria, Adidas","Abuja, Nigeria",info@abujasportspr.com,+234 81 432987,www.abujasportspr.com
+298,Yaoundé PR Experts,Football Sponsorship & Club Branding,Cameroon Premier League,"MTN Cameroon, Puma","Yaoundé, Cameroon",contact@yaoundesportspr.com,+237 65 543876,www.yaoundesportspr.com
+299,Nouakchott PR Connect,Football Branding & Sponsorship,Mauritania Premier League,"Mauritel, Nike","Nouakchott, Mauritania",pr@nouakchottsportspr.com,+222 45 654987,www.nouakchottsportspr.com
+300,Niamey PR Solutions,Football Sponsorship & PR,Niger Premier League,"Airtel Niger, Adidas","Niamey, Niger",support@niameysportspr.com,+227 97 876543,www.niameysportspr.com
+301,Lusaka PR Experts,Football Branding & Club PR,Zambia Premier League,"MTN Zambia, Puma","Lusaka, Zambia",info@lusakasportspr.com,+260 97 654987,www.lusakasportspr.com
+302,Harare Football PR,Football Sponsorships & Club Marketing,Zimbabwe Premier League,"Econet Zimbabwe, Adidas","Harare, Zimbabwe",contact@huraresportspr.com,+263 77 543876,www.huraresportspr.com
+303,Windhoek Sports Media,Football Branding & Sponsorship,Namibian Premier League,"MTC Namibia, Nike","Windhoek, Namibia",pr@windhoeksportspr.com,+264 81 432987,www.windhoeksportspr.com
+304,Johannesburg PR Hub,Football Sponsorship & Club PR,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",support@joburgsportspr.com,+27 11 654987,www.joburgsportspr.com
+305,Port Harcourt PR Agency,Football Branding & Sponsorship,Nigeria Premier League,"MTN Nigeria, Adidas","Port Harcourt, Nigeria",info@phsportspr.com,+234 84 654321,www.phsportspr.com
+306,Kaduna Football Media,Football Sponsorship & PR,Nigeria Premier League,"Airtel Nigeria, Puma","Kaduna, Nigeria",contact@kadunasportspr.com,+234 80 432987,www.kadunasportspr.com
+307,Benin City PR Solutions,Football Branding & PR Services,Nigeria Premier League,"Glo Nigeria, Nike","Benin City, Nigeria",pr@beninsportspr.com,+234 81 765432,www.beninsportspr.com
+308,Jos Football PR,Football Sponsorship & Branding,Nigeria Premier League,"Etisalat Nigeria, Adidas","Jos, Nigeria",support@jossportspr.com,+234 70 876543,www.jossportspr.com
+309,Kano Sports Promotions,Football PR & Digital Marketing,Nigeria Premier League,"MTN Nigeria, Puma","Kano, Nigeria",info@kanosportspr.com,+234 80 543876,www.kanosportspr.com
+310,Enugu PR Experts,Football Sponsorship & PR,Nigeria Premier League,"Airtel Nigeria, Nike","Enugu, Nigeria",contact@enugusportspr.com,+234 81 654987,www.enugusportspr.com
+311,Ibadan PR Connect,Football Branding & Sponsorship,Nigeria Premier League,"Glo Nigeria, Adidas","Ibadan, Nigeria",pr@ibadansportspr.com,+234 70 432987,www.ibadansportspr.com
+312,Abeokuta Sports Branding,Football Sponsorships & Club PR,Nigeria Premier League,"Etisalat Nigeria, Puma","Abeokuta, Nigeria",support@abeokutasportspr.com,+234 80 765432,www.abeokutasportspr.com
+313,Bamenda Football PR,Football Branding & PR Services,Cameroon Premier League,"MTN Cameroon, Nike","Bamenda, Cameroon",info@bamendasportspr.com,+237 69 876543,www.bamendasportspr.com
+314,Garoua PR Solutions,Football Sponsorship & Branding,Cameroon Premier League,"Orange Cameroon, Adidas","Garoua, Cameroon",contact@garouasportspr.com,+237 65 543876,www.garouasportspr.com
+315,Douala Football Media,Football PR & Digital Marketing,Cameroon Premier League,"MTN Cameroon, Puma","Douala, Cameroon",pr@doualasportspr.com,+237 67 432987,www.doualasportspr.com
+316,Lagos Sports PR,Football Sponsorship & PR,Nigeria Premier League,"Glo Nigeria, Nike","Lagos, Nigeria",support@lagossportspr.com,+234 80 654987,www.lagossportspr.com
+317,Accra PR Solutions,Football Sponsorships & Club PR,Ghana Premier League,"MTN Ghana, Adidas","Accra, Ghana",info@accrasportspr.com,+233 30 876543,www.accrasportspr.com
+318,Kumasi Football PR,Football Branding & Club PR,Ghana Premier League,"Vodafone Ghana, Puma","Kumasi, Ghana",contact@kumasisportspr.com,+233 27 543876,www.kumasisportspr.com
+319,Tamale PR Experts,Football Sponsorship & Branding,Ghana Premier League,"Tigo Ghana, Nike","Tamale, Ghana",pr@tamalesportspr.com,+233 24 765432,www.tamalesportspr.com
+320,Ouagadougou PR Connect,Football Sponsorship & PR,Burkina Faso Premier League,"Orange Burkina, Adidas","Ouagadougou, Burkina Faso",support@ouagadougousportspr.com,+226 76 432987,www.ouagadougousportspr.com
+321,Nouakchott PR House,Football Branding & Sponsorship,Mauritania Premier League,"Mauritel, Puma","Nouakchott, Mauritania",info@nouakchottsportspr.com,+222 45 876543,www.nouakchottsportspr.com
+322,Djibouti Sports Branding,Football Sponsorship & PR,Djibouti Football Federation,"Telcom Djibouti, Nike","Djibouti, Djibouti",contact@djiboutisportspr.com,+253 77 543876,www.djiboutisportspr.com
+323,Mogadishu Football PR,Football Branding & Sponsorship,Somali Premier League,"Hormuud Telecom, Adidas","Mogadishu, Somalia",pr@mogadishusportspr.com,+252 61 543876,www.mogadishusportspr.com
+324,Lusaka PR Experts,Football Branding & Club PR,Zambia Premier League,"MTN Zambia, Puma","Lusaka, Zambia",info@lusakasportspr.com,+260 97 654987,www.lusakasportspr.com
+325,Harare Football PR,Football Sponsorships & Club Marketing,Zimbabwe Premier League,"Econet Zimbabwe, Adidas","Harare, Zimbabwe",contact@huraresportspr.com,+263 77 543876,www.huraresportspr.com
+326,Windhoek Sports Media,Football Branding & Sponsorship,Namibian Premier League,"MTC Namibia, Nike","Windhoek, Namibia",pr@windhoeksportspr.com,+264 81 432987,www.windhoeksportspr.com
+327,Johannesburg PR Hub,Football Sponsorship & Club PR,South African Premier League,"Vodacom SA, Puma","Johannesburg, South Africa",support@joburgsportspr.com,+27 11 654987,www.joburgsportspr.com
+328,Blantyre PR Solutions,Football Branding & Sponsorship,Malawi Premier League,"TNM Malawi, Adidas","Blantyre, Malawi",info@blantyresportspr.com,+265 88 654987,www.blantyresportspr.com
+329,Gaborone Football Media,Football Sponsorship & PR,Botswana Premier League,"Orange Botswana, Puma","Gaborone, Botswana",contact@gaboronesportspr.com,+267 71 432876,www.gaboronesportspr.com
+330,Nouadhibou PR Experts,Football Branding & Sponsorship,Mauritania Premier League,"Mauritel, Nike","Nouadhibou, Mauritania",pr@nouadhibousportspr.com,+222 46 543876,www.nouadhibousportspr.com
+331,Dzaoudzi PR House,Football PR & Digital Marketing,Mayotte Football League,"Orange Mayotte, Adidas","Dzaoudzi, Mayotte",support@dzaoudzisportspr.com,+262 63 765432,www.dzaoudzisportspr.com
+332,Moroni PR Connect,Football Sponsorship & PR,Comoros Premier League,"Comores Telecom, Puma","Moroni, Comoros",info@moronisportspr.com,+269 34 432876,www.moronisportspr.com
+333,Victoria PR Agency,Football Branding & Sponsorship,Seychelles Premier League,"Cable & Wireless Seychelles, Nike","Victoria, Seychelles",contact@victoriasportspr.com,+248 28 543876,www.victoriasportspr.com
+334,Zanzibar PR Experts,Football Sponsorship & Branding,Zanzibar Premier League,"Tigo Zanzibar, Adidas","Zanzibar, Tanzania",pr@zanzibarsportspr.com,+255 65 876543,www.zanzibarsportspr.com
+335,Maseru Sports Branding,Football PR & Athlete Marketing,Lesotho Premier League,"Vodacom Lesotho, Puma","Maseru, Lesotho",support@maserusportspr.com,+266 50 654987,www.maserusportspr.com
+336,Bujumbura PR Solutions,Football Sponsorships & Club PR,Burundi Premier League,"Lumitel, Adidas","Bujumbura, Burundi",info@bujumburasportspr.com,+257 79 654987,www.bujumburasportspr.com
+337,Brazzaville PR Connect,Football Branding & Sponsorship,Congo Premier League,"TotalEnergies, Nike","Brazzaville, Congo",contact@brazzavillesportspr.com,+242 06 432987,www.brazzavillesportspr.com
+338,Banjul PR Hub,Football Sponsorship & Branding,Gambia Premier League,"Africell, Adidas","Banjul, Gambia",pr@banjulsportspr.com,+220 77 543987,www.banjulsportspr.com
+339,Freetown Sports PR,Football Sponsorship & PR,Sierra Leone Premier League,"Africell, Puma","Freetown, Sierra Leone",support@freetownsportspr.com,+232 76 654987,www.freetownsportspr.com
+340,Niamey PR Solutions,Football Branding & Club PR,Niger Premier League,"Moov Niger, Adidas","Niamey, Niger",info@niameysportspr.com,+227 97 654987,www.niameysportspr.com
+341,N'Djamena PR Agency,Football Sponsorship & Branding,Chadian Football Federation,"Airtel Chad, Nike","N'Djamena, Chad",contact@ndjamenasportspr.com,+235 99 876543,www.ndjamenasportspr.com
+342,Lome PR House,Football PR & Sponsorship,Togo Premier League,"Moov Togo, Adidas","Lomé, Togo",pr@lomesportspr.com,+228 90 432876,www.lomesportspr.com
+343,Ouagadougou PR Connect,Football Branding & Sponsorship,Burkina Faso Premier League,"Orange Burkina, Puma","Ouagadougou, Burkina Faso",support@ouagadougousportspr.com,+226 76 654987,www.ouagadougousportspr.com
+344,Yaoundé PR Solutions,Football Sponsorships & Club PR,Cameroon Premier League,"MTN Cameroon, Nike","Yaoundé, Cameroon",info@yaoundesportspr.com,+237 69 543876,www.yaoundesportspr.com
+345,Kinshasa PR Hub,Football Sponsorship & PR,DR Congo National Team,"Vodacom Congo, Adidas","Kinshasa, DR Congo",contact@kinshasasportspr.com,+243 81 432987,www.kinshasasportspr.com
+346,Abidjan PR Experts,Football Branding & Sponsorship,Ivory Coast Premier League,"Orange Ivory Coast, Puma","Abidjan, Ivory Coast",pr@abidjansportspr.com,+225 57 654987,www.abidjansportspr.com
+347,Dakar PR Solutions,Football Sponsorships & Club PR,Senegal Football Federation,"Orange Senegal, Nike","Dakar, Senegal",support@dakarsportspr.com,+221 77 876543,www.dakarsportspr.com
+348,Johannesburg PR House,Football Branding & PR Services,South African Premier League,"Vodacom SA, Adidas","Johannesburg, South Africa",info@joburgsportspr.com,+27 11 654987,www.joburgsportspr.com
+349,Cairo PR Connect,Football Sponsorship & Branding,Egyptian Premier League,"Vodafone Egypt, Puma","Cairo, Egypt",contact@cairosportspr.com,+20 10 876543,www.cairosportspr.com
+350,Casablanca Sports Branding,Football PR & Digital Marketing,Moroccan Botola League,"Maroc Telecom, Adidas","Casablanca, Morocco",pr@casablancasportspr.com,+212 61 543876,www.casablancasportspr.com
+351,Tripoli PR Agency,Football Branding & Sponsorship,Libyan Premier League,"Libyana Mobile, Adidas","Tripoli, Libya",info@tripolisportspr.com,+218 91 654987,www.tripolisportspr.com
+352,Benghazi Football Media,Football Sponsorship & PR,Libyan Premier League,"Almadar, Puma","Benghazi, Libya",contact@benghazisportspr.com,+218 92 432876,www.benghazisportspr.com
+353,Nairobi PR Experts,Football Branding & PR Services,Kenyan Premier League,"Safaricom, Nike","Nairobi, Kenya",pr@nairobisportspr.com,+254 72 765432,www.nairobisportspr.com
+354,Mombasa PR House,Football Sponsorship & Branding,Kenyan Premier League,"Airtel Kenya, Adidas","Mombasa, Kenya",support@mombasasportspr.com,+254 71 543876,www.mombasasportspr.com
+355,Kampala Football PR,Football PR & Sponsorship,Ugandan Premier League,"MTN Uganda, Puma","Kampala, Uganda",info@kampalasportspr.com,+256 75 876543,www.kampalasportspr.com
+356,Juba PR Solutions,Football Branding & PR,South Sudan Premier League,"Zain South Sudan, Nike","Juba, South Sudan",contact@jubasportspr.com,+211 95 654321,www.jubasportspr.com
+357,Dar es Salaam PR Experts,Football Sponsorship & Branding,Tanzanian Premier League,"Vodacom Tanzania, Adidas","Dar es Salaam, Tanzania",pr@daressalaamsportspr.com,+255 68 432987,www.daressalaamsportspr.com
+358,Antananarivo Sports PR,Football PR & Digital Marketing,Madagascar Premier League,"Telma Madagascar, Puma","Antananarivo, Madagascar",support@antananarivosportspr.com,+261 34 543876,www.antananarivosportspr.com
+359,Bujumbura Football Branding,Football Sponsorship & PR Services,Burundi Premier League,"Lumitel, Nike","Bujumbura, Burundi",info@bujumburasportspr.com,+257 76 654987,www.bujumburasportspr.com
+360,Kinshasa PR Connect,Football Sponsorship & Branding,DR Congo National Team,"Vodacom Congo, Adidas","Kinshasa, DR Congo",contact@kinshasasportspr.com,+243 81 876543,www.kinshasasportspr.com
+361,Brazzaville PR House,Football PR & Sponsorship,Congo Premier League,"TotalEnergies, Puma","Brazzaville, Congo",pr@brazzavillesportspr.com,+242 06 543876,www.brazzavillesportspr.com
+362,Lusaka PR Experts,Football Sponsorship & PR,Zambia Premier League,"MTN Zambia, Adidas","Lusaka, Zambia",support@lusakasportspr.com,+260 97 654987,www.lusakasportspr.com
+363,Harare Football PR,Football Branding & Club PR,Zimbabwe Premier League,"Econet Zimbabwe, Nike","Harare, Zimbabwe",info@huraresportspr.com,+263 77 876543,www.huraresportspr.com
+364,Gaborone PR Solutions,Football Sponsorships & Club PR,Botswana Premier League,"Orange Botswana, Puma","Gaborone, Botswana",contact@gaboronesportspr.com,+267 71 543876,www.gaboronesportspr.com
+365,Johannesburg PR Connect,Football PR & Digital Marketing,South African Premier League,"Vodacom SA, Adidas","Johannesburg, South Africa",pr@joburgsportspr.com,+27 11 432987,www.joburgsportspr.com
+366,Cape Town PR Agency,Football Branding & Sponsorship,South African Premier League,"MTN South Africa, Nike","Cape Town, South Africa",support@capetownsportspr.com,+27 21 654987,www.capetownsportspr.com
+367,Durban PR House,Football Sponsorship & Branding,South African Premier League,"Telkom SA, Adidas","Durban, South Africa",info@durbansportspr.com,+27 31 876543,www.durbansportspr.com
+368,Casablanca PR Experts,Football Sponsorships & Club PR,Moroccan Botola League,"Inwi, Puma","Casablanca, Morocco",contact@casablancasportspr.com,+212 61 543876,www.casablancasportspr.com
+369,Rabat Football PR,Football Branding & Club PR,Moroccan Botola League,"Maroc Telecom, Nike","Rabat, Morocco",pr@rabatsportspr.com,+212 66 432987,www.rabatsportspr.com
+370,Algiers PR Solutions,Football Sponsorship & PR,Algerian Ligue 1,"Djezzy, Adidas","Algiers, Algeria",support@algierssportspr.com,+213 21 876543,www.algierssportspr.com
+371,Tunis PR Hub,Football Branding & Sponsorship,Tunisian Ligue 1,"Ooredoo Tunisia, Adidas","Tunis, Tunisia",info@tunissportspr.com,+216 71 654987,www.tunissportspr.com
+372,Sfax Football Media,Football Sponsorship & PR,Tunisian Ligue 1,"Tunisie Telecom, Puma","Sfax, Tunisia",contact@sfaxsportspr.com,+216 74 432876,www.sfaxsportspr.com
+373,Oran PR Experts,Football Branding & Sponsorship,Algerian Ligue 1,"Mobilis Algeria, Nike","Oran, Algeria",pr@oransportspr.com,+213 41 765432,www.oransportspr.com
+374,Constantine PR House,Football PR & Digital Marketing,Algerian Ligue 1,"Djezzy, Adidas","Constantine, Algeria",support@constantinesportspr.com,+213 31 543876,www.constantinesportspr.com
+375,Tripoli PR Solutions,Football Sponsorships & Club PR,Libyan Premier League,"Libyana Mobile, Puma","Tripoli, Libya",info@tripolisportspr.com,+218 91 654321,www.tripolisportspr.com
+376,Benghazi PR Connect,Football Branding & PR,Libyan Premier League,"Almadar, Nike","Benghazi, Libya",contact@benghazisportspr.com,+218 92 876543,www.benghazisportspr.com
+377,Cairo PR House,Football Sponsorship & Branding,Egyptian Premier League,"Vodafone Egypt, Adidas","Cairo, Egypt",pr@cairosportspr.com,+20 10 654987,www.cairosportspr.com
+378,Alexandria PR Experts,Football Branding & PR Services,Egyptian Premier League,"Orange Egypt, Puma","Alexandria, Egypt",support@alexandriasportspr.com,+20 3 765432,www.alexandriasportspr.com
+379,Khartoum Football PR,Football Sponsorship & PR,Sudan Premier League,"Zain Sudan, Nike","Khartoum, Sudan",info@khartoumsportspr.com,+249 91 432987,www.khartoumsportspr.com
+380,Mombasa PR Solutions,Football Sponsorship & Branding,Kenyan Premier League,"Airtel Kenya, Adidas","Mombasa, Kenya",contact@mombasasportspr.com,+254 71 654321,www.mombasasportspr.com
+381,Zanzibar Sports PR,Football PR & Digital Marketing,Zanzibar Premier League,"Tigo Zanzibar, Puma","Zanzibar, Tanzania",pr@zanzibarsportspr.com,+255 65 543876,www.zanzibarsportspr.com
+382,Antananarivo PR House,Football Branding & Sponsorship,Madagascar Premier League,"Telma Madagascar, Nike","Antananarivo, Madagascar",support@antananarivosportspr.com,+261 34 654987,www.antananarivosportspr.com
+383,Gaborone PR Experts,Football Sponsorship & Branding,Botswana Premier League,"Orange Botswana, Adidas","Gaborone, Botswana",info@gaboronesportspr.com,+267 71 432987,www.gaboronesportspr.com
+384,Lusaka PR Solutions,Football Sponsorships & Club PR,Zambia Premier League,"MTN Zambia, Puma","Lusaka, Zambia",contact@lusakasportspr.com,+260 97 765432,www.lusakasportspr.com
+385,Harare PR Connect,Football Branding & PR,Zimbabwe Premier League,"Econet Zimbabwe, Nike","Harare, Zimbabwe",pr@huraresportspr.com,+263 77 543876,www.huraresportspr.com
+386,Windhoek PR House,Football Sponsorship & Branding,Namibian Premier League,"MTC Namibia, Adidas","Windhoek, Namibia",support@windhoeksportspr.com,+264 81 432987,www.windhoeksportspr.com
+387,Cape Town PR Hub,Football PR & Digital Marketing,South African Premier League,"MTN South Africa, Puma","Cape Town, South Africa",info@capetownsportspr.com,+27 21 654321,www.capetownsportspr.com
+388,Durban PR Experts,Football Sponsorship & Branding,South African Premier League,"Vodacom SA, Nike","Durban, South Africa",contact@durbansportspr.com,+27 31 876543,www.durbansportspr.com
+389,Johannesburg Sports PR,Football Branding & Club PR,South African Premier League,"Telkom SA, Adidas","Johannesburg, South Africa",pr@joburgsportspr.com,+27 11 543876,www.joburgsportspr.com
+390,Dakar PR Solutions,Football Sponsorships & Club PR,Senegal Football Federation,"Orange Senegal, Puma","Dakar, Senegal",support@dakarsportspr.com,+221 77 654987,www.dakarsportspr.com
+391,Abuja PR Hub,Football Sponsorship & Branding,Nigeria Premier League,"MTN Nigeria, Adidas","Abuja, Nigeria",info@abujasportspr.com,+234 80 654987,www.abujasportspr.com
+392,Lagos PR Experts,Football Branding & PR,Nigeria Premier League,"Glo Nigeria, Puma","Lagos, Nigeria",contact@lagossportspr.com,+234 81 432987,www.lagossportspr.com
+393,Port Harcourt PR Solutions,Football PR & Sponsorship,Nigeria Premier League,"Airtel Nigeria, Nike","Port Harcourt, Nigeria",pr@portharcourtsportspr.com,+234 84 765432,www.portharcourtsportspr.com
+394,Kano Football PR,Football Branding & Club PR,Nigeria Premier League,"Etisalat Nigeria, Adidas","Kano, Nigeria",support@kanosportspr.com,+234 70 543876,www.kanosportspr.com
+395,Ibadan PR Solutions,Football Sponsorship & Branding,Nigeria Premier League,"Glo Nigeria, Puma","Ibadan, Nigeria",info@ibadansportspr.com,+234 90 654987,www.ibadansportspr.com
+396,Accra PR House,Football Sponsorship & PR,Ghana Premier League,"MTN Ghana, Nike","Accra, Ghana",contact@accrasportspr.com,+233 30 432987,www.accrasportspr.com
+397,Kumasi PR Experts,Football Branding & PR,Ghana Premier League,"Vodafone Ghana, Adidas","Kumasi, Ghana",pr@kumasisportspr.com,+233 27 765432,www.kumasisportspr.com
+398,Tamale Football PR,Football Sponsorship & Branding,Ghana Premier League,"Tigo Ghana, Puma","Tamale, Ghana",support@tamalesportspr.com,+233 24 543876,www.tamalesportspr.com
+399,Ouagadougou PR Connect,Football Sponsorship & PR,Burkina Faso Premier League,"Orange Burkina, Adidas","Ouagadougou, Burkina Faso",info@ouagadougousportspr.com,+226 76 654987,www.ouagadougousportspr.com
+400,Nouakchott PR Solutions,Football Branding & Club PR,Mauritania Premier League,"Mauritel, Nike","Nouakchott, Mauritania",contact@nouakchottsportspr.com,+222 45 543876,www.nouakchottsportspr.com
+401,Dakar PR Hub,Football Sponsorship & Branding,Senegal Football Federation,"Orange Senegal, Puma","Dakar, Senegal",pr@dakarsportspr.com,+221 77 432987,www.dakarsportspr.com
+402,Freetown PR House,Football Sponsorship & PR,Sierra Leone Premier League,"Africell, Adidas","Freetown, Sierra Leone",support@freetownsportspr.com,+232 76 654987,www.freetownsportspr.com
+403,Banjul Football PR,Football Branding & Club PR,Gambia Premier League,"Africell, Nike","Banjul, Gambia",info@banjulsportspr.com,+220 77 543876,www.banjulsportspr.com
+404,Bissau PR Experts,Football Sponsorships & Club PR,Guinea-Bissau Premier League,"Orange Bissau, Puma","Bissau, Guinea-Bissau",contact@bissausportspr.com,+245 96 654987,www.bissausportspr.com
+405,Conakry PR Solutions,Football Sponsorship & Branding,Guinea Premier League,"MTN Guinea, Adidas","Conakry, Guinea",pr@conakrysportspr.com,+224 62 432987,www.conakrysportspr.com
+406,Abidjan PR Connect,Football Branding & PR,Ivory Coast Premier League,"Orange Ivory Coast, Nike","Abidjan, Ivory Coast",support@abidjansportspr.com,+225 57 876543,www.abidjansportspr.com
+407,Lome PR Experts,Football Sponsorship & Branding,Togo Premier League,"Moov Togo, Puma","Lomé, Togo",info@lomesportspr.com,+228 90 543876,www.lomesportspr.com
+408,Yaoundé PR House,Football Sponsorship & PR,Cameroon Premier League,"MTN Cameroon, Adidas","Yaoundé, Cameroon",contact@yaoundesportspr.com,+237 65 654987,www.yaoundesportspr.com
+409,Douala PR Hub,Football Sponsorships & Club PR,Cameroon Premier League,"Orange Cameroon, Nike","Douala, Cameroon",pr@doualasportspr.com,+237 69 432987,www.doualasportspr.com
+410,Kinshasa PR Solutions,Football Branding & PR,DR Congo National Team,"Vodacom Congo, Puma","Kinshasa, DR Congo",support@kinshasasportspr.com,+243 81 654987,www.kinshasasportspr.com
+411,Brazzaville PR Hub,Football Branding & Sponsorship,Congo Premier League,"TotalEnergies, Adidas","Brazzaville, Congo",info@brazzavillesportspr.com,+242 06 654987,www.brazzavillesportspr.com
+412,Libreville PR Experts,Football Sponsorship & Branding,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",contact@librevillesportspr.com,+241 74 432987,www.librevillesportspr.com
+413,Malabo PR House,Football Sponsorship & PR,Equatorial Guinea Premier League,"Orange Guinea, Nike","Malabo, Equatorial Guinea",pr@malabosportspr.com,+240 98 765432,www.malabosportspr.com
+414,São Tomé PR Solutions,Football Sponsorships & Club PR,São Tomé Premier League,"Unitel São Tomé, Adidas","São Tomé, São Tomé and Príncipe",support@saotomesportspr.com,+239 99 654987,www.saotomesportspr.com
+415,Luanda PR Connect,Football Branding & PR,Angolan Premier League,"Unitel Angola, Puma","Luanda, Angola",info@luandasportspr.com,+244 91 543876,www.luandasportspr.com
+416,Windhoek PR Experts,Football Sponsorship & Branding,Namibian Premier League,"MTC Namibia, Nike","Windhoek, Namibia",contact@windhoeksportspr.com,+264 81 765432,www.windhoeksportspr.com
+417,Gaborone PR Solutions,Football Sponsorships & Club PR,Botswana Premier League,"Orange Botswana, Adidas","Gaborone, Botswana",pr@gaboronesportspr.com,+267 71 876543,www.gaboronesportspr.com
+418,Maseru PR Hub,Football Branding & Sponsorship,Lesotho Premier League,"Vodacom Lesotho, Puma","Maseru, Lesotho",support@maserusportspr.com,+266 50 654987,www.maserusportspr.com
+419,Maputo PR House,Football Sponsorship & PR,Mozambican Premier League,"TMC Mozambique, Nike","Maputo, Mozambique",info@maputosportspr.com,+258 84 432987,www.maputosportspr.com
+420,Harare PR Experts,Football Branding & PR,Zimbabwe Premier League,"Econet Zimbabwe, Adidas","Harare, Zimbabwe",contact@huraresportspr.com,+263 77 654987,www.huraresportspr.com
+421,Lilongwe PR Solutions,Football Sponsorships & Club PR,Malawi Premier League,"TNM Malawi, Puma","Lilongwe, Malawi",pr@lilongwesportspr.com,+265 88 543876,www.lilongwesportspr.com
+422,Kigali PR Connect,Football Branding & PR,Rwanda Premier League,"MTN Rwanda, Nike","Kigali, Rwanda",support@kigalisportspr.com,+250 78 432987,www.kigalisportspr.com
+423,Bujumbura PR Hub,Football Sponsorship & Branding,Burundi Premier League,"Lumitel, Adidas","Bujumbura, Burundi",info@bujumburasportspr.com,+257 79 654987,www.bujumburasportspr.com
+424,Nairobi PR House,Football Sponsorship & PR,Kenyan Premier League,"Safaricom Kenya, Puma","Nairobi, Kenya",contact@nairobisportspr.com,+254 72 876543,www.nairobisportspr.com
+425,Mombasa PR Experts,Football Branding & Club PR,Kenyan Premier League,"Airtel Kenya, Adidas","Mombasa, Kenya",pr@mombasasportspr.com,+254 71 654987,www.mombasasportspr.com
+426,Kampala PR Solutions,Football Sponsorships & Club PR,Ugandan Premier League,"MTN Uganda, Nike","Kampala, Uganda",support@kampalasportspr.com,+256 75 432987,www.kampalasportspr.com
+427,Juba PR Connect,Football Branding & PR,South Sudan Premier League,"Zain South Sudan, Adidas","Juba, South Sudan",info@jubasportspr.com,+211 95 654987,www.jubasportspr.com
+428,Dar es Salaam PR Hub,Football Sponsorship & Branding,Tanzanian Premier League,"Vodacom Tanzania, Puma","Dar es Salaam, Tanzania",contact@daressalaamsportspr.com,+255 68 543876,www.daressalaamsportspr.com
+429,Lusaka PR House,Football Sponsorship & PR,Zambia Premier League,"MTN Zambia, Nike","Lusaka, Zambia",pr@lusakasportspr.com,+260 97 654987,www.lusakasportspr.com
+430,Johannesburg PR Experts,Football Branding & PR,South African Premier League,"Vodacom SA, Adidas","Johannesburg, South Africa",support@joburgsportspr.com,+27 11 432987,www.joburgsportspr.com
+431,Johannesburg Sports Media,Football Branding & Sponsorship,South African Premier League,"MTN South Africa, Adidas","Johannesburg, South Africa",info@joburgsportsmedia.com,+27 11 765432,www.joburgsportsmedia.com
+432,Cape Town PR Experts,Football Sponsorship & PR,South African Premier League,"Vodacom SA, Puma","Cape Town, South Africa",contact@capetownsportspr.com,+27 21 543876,www.capetownsportspr.com
+433,Durban PR Hub,Football Branding & PR,South African Premier League,"Telkom SA, Nike","Durban, South Africa",pr@durbansportspr.com,+27 31 654987,www.durbansportspr.com
+434,Pretoria PR Solutions,Football Sponsorship & Branding,South African Premier League,"Cell C, Adidas","Pretoria, South Africa",support@pretoriasportspr.com,+27 12 876543,www.pretoriasportspr.com
+435,Nairobi Football Media,Football Sponsorship & PR,Kenyan Premier League,"Safaricom Kenya, Puma","Nairobi, Kenya",info@nairobisportsmedia.com,+254 72 432987,www.nairobisportsmedia.com
+436,Mombasa PR Experts,Football Branding & Club PR,Kenyan Premier League,"Airtel Kenya, Adidas","Mombasa, Kenya",contact@mombasasportspr.com,+254 71 543876,www.mombasasportspr.com
+437,Kampala Sports PR,Football Sponsorships & Club PR,Ugandan Premier League,"MTN Uganda, Nike","Kampala, Uganda",pr@kampalasportspr.com,+256 75 654987,www.kampalasportspr.com
+438,Juba PR Hub,Football Branding & Sponsorship,South Sudan Premier League,"Zain South Sudan, Puma","Juba, South Sudan",support@jubasportspr.com,+211 95 432987,www.jubasportspr.com
+439,Dar es Salaam PR Experts,Football Sponsorship & Branding,Tanzanian Premier League,"Vodacom Tanzania, Adidas","Dar es Salaam, Tanzania",info@daressalaamsportspr.com,+255 68 543876,www.daressalaamsportspr.com
+440,Lusaka PR House,Football Sponsorship & PR,Zambia Premier League,"MTN Zambia, Nike","Lusaka, Zambia",contact@lusakasportspr.com,+260 97 654987,www.lusakasportspr.com
+441,Gaborone Football Media,Football Branding & PR,Botswana Premier League,"Orange Botswana, Puma","Gaborone, Botswana",pr@gaboronesportspr.com,+267 71 876543,www.gaboronesportspr.com
+442,Windhoek PR Solutions,Football Sponsorships & Club PR,Namibian Premier League,"MTC Namibia, Adidas","Windhoek, Namibia",support@windhoeksportspr.com,+264 81 543876,www.windhoeksportspr.com
+443,Harare PR Experts,Football Branding & PR,Zimbabwe Premier League,"Econet Zimbabwe, Nike","Harare, Zimbabwe",info@huraresportspr.com,+263 77 654987,www.huraresportspr.com
+444,Lilongwe PR House,Football Sponsorship & PR,Malawi Premier League,"TNM Malawi, Puma","Lilongwe, Malawi",contact@lilongwesportspr.com,+265 88 432987,www.lilongwesportspr.com
+445,Brazzaville PR Connect,Football Sponsorship & Branding,Congo Premier League,"TotalEnergies, Adidas","Brazzaville, Congo",pr@brazzavillesportspr.com,+242 06 654987,www.brazzavillesportspr.com
+446,Libreville PR Experts,Football Branding & Sponsorship,Gabon Premier League,"Moov Gabon, Puma","Libreville, Gabon",support@librevillesportspr.com,+241 74 543876,www.librevillesportspr.com
+447,Luanda Sports PR,Football Sponsorship & PR,Angolan Premier League,"Unitel Angola, Nike","Luanda, Angola",info@luandasportspr.com,+244 91 432987,www.luandasportspr.com
+448,Maputo PR House,Football Branding & Club PR,Mozambican Premier League,"TMC Mozambique, Adidas","Maputo, Mozambique",contact@maputosportspr.com,+258 84 654987,www.maputosportspr.com
+449,Kigali PR Hub,Football Sponsorship & Branding,Rwanda Premier League,"MTN Rwanda, Puma","Kigali, Rwanda",pr@kigalisportspr.com,+250 78 543876,www.kigalisportspr.com
+450,Bujumbura PR Solutions,Football Branding & PR,Burundi Premier League,"Lumitel, Adidas","Bujumbura, Burundi",support@bujumburasportspr.com,+257 79 654987,www.bujumburasportspr.com
+451,Yaoundé PR Solutions,Football Sponsorship & PR,Cameroon Premier League,"MTN Cameroon, Adidas","Yaoundé, Cameroon",info@yaoundesportspr.com,+237 69 543876,www.yaoundesportspr.com
+452,Douala PR Connect,Football Branding & Club PR,Cameroon Premier League,"Orange Cameroon, Puma","Douala, Cameroon",contact@doualasportspr.com,+237 65 432987,www.doualasportspr.com
+453,Abidjan PR Hub,Football Sponsorship & Branding,Ivory Coast Premier League,"Orange Ivory Coast, Nike","Abidjan, Ivory Coast",pr@abidjansportspr.com,+225 57 876543,www.abidjansportspr.com
+454,Bouaké PR Experts,Football Branding & PR,Ivory Coast Premier League,"MTN Ivory Coast, Adidas","Bouaké, Ivory Coast",support@bouakesportspr.com,+225 54 654987,www.bouakesportspr.com
+455,Lome Football PR,Football Sponsorships & Club PR,Togo Premier League,"Moov Togo, Puma","Lomé, Togo",info@lomesportspr.com,+228 90 543876,www.lomesportspr.com
+456,Cotonou PR House,Football Branding & Sponsorship,Benin Premier League,"MTN Benin, Nike","Cotonou, Benin",contact@cotonousportspr.com,+229 97 432987,www.cotonousportspr.com
+457,Niamey PR Solutions,Football Sponsorship & PR,Niger Premier League,"Moov Niger, Adidas","Niamey, Niger",pr@niameysportspr.com,+227 97 654987,www.niameysportspr.com
+458,N'Djamena PR Experts,Football Branding & Club PR,Chadian Football Federation,"Airtel Chad, Puma","N'Djamena, Chad",support@ndjamenasportspr.com,+235 99 876543,www.ndjamenasportspr.com
+459,Bamako PR Hub,Football Sponsorship & Branding,Mali Premier League,"Orange Mali, Nike","Bamako, Mali",info@bamakosportspr.com,+223 76 543876,www.bamakosportspr.com
+460,Conakry PR House,Football Branding & PR,Guinea Premier League,"MTN Guinea, Adidas","Conakry, Guinea",contact@conakrysportspr.com,+224 62 432987,www.conakrysportspr.com
+461,Bissau PR Experts,Football Sponsorships & Club PR,Guinea-Bissau Premier League,"Orange Guinea-Bissau, Puma","Bissau, Guinea-Bissau",pr@bissausportspr.com,+245 96 654987,www.bissausportspr.com
+462,Freetown PR Solutions,Football Sponsorship & Branding,Sierra Leone Premier League,"Africell, Nike","Freetown, Sierra Leone",support@freetownsportspr.com,+232 76 654987,www.freetownsportspr.com
+463,Banjul PR Connect,Football Branding & PR,Gambia Premier League,"Africell, Adidas","Banjul, Gambia",info@banjulsportspr.com,+220 77 543876,www.banjulsportspr.com
+464,Nouakchott PR Hub,Football Sponsorships & Club PR,Mauritania Premier League,"Mauritel, Puma","Nouakchott, Mauritania",contact@nouakchottsportspr.com,+222 45 654987,www.nouakchottsportspr.com
+465,Dakar PR House,Football Sponsorship & Branding,Senegal Football Federation,"Orange Senegal, Nike","Dakar, Senegal",pr@dakarsportspr.com,+221 77 432987,www.dakarsportspr.com
+466,Tripoli PR Experts,Football Branding & PR,Libyan Premier League,"Libyana Mobile, Adidas","Tripoli, Libya",support@tripolisportspr.com,+218 91 654987,www.tripolisportspr.com
+467,Benghazi PR Solutions,Football Sponsorships & Club PR,Libyan Premier League,"Almadar, Puma","Benghazi, Libya",info@benghazisportspr.com,+218 92 876543,www.benghazisportspr.com
+468,Cairo PR Connect,Football Sponsorship & Branding,Egyptian Premier League,"Vodafone Egypt, Nike","Cairo, Egypt",contact@cairosportspr.com,+20 10 654987,www.cairosportspr.com
+469,Alexandria PR House,Football Branding & PR,Egyptian Premier League,"Orange Egypt, Adidas","Alexandria, Egypt",pr@alexandriasportspr.com,+20 3 543876,www.alexandriasportspr.com
+470,Rabat PR Hub,Football Sponsorships & Club PR,Moroccan Botola League,"Maroc Telecom, Puma","Rabat, Morocco",support@rabatsportspr.com,+212 61 654987,www.rabatsportspr.com
+471,Marrakech PR House,Football Sponsorship & PR,Moroccan Botola League,"Inwi, Adidas","Marrakech, Morocco",info@marrakechsportspr.com,+212 66 543876,www.marrakechsportspr.com
+472,Casablanca PR Experts,Football Branding & Sponsorship,Moroccan Botola League,"Orange Maroc, Puma","Casablanca, Morocco",contact@casablancasportspr.com,+212 61 654987,www.casablancasportspr.com
+473,Oran PR Connect,Football Sponsorships & Club PR,Algerian Ligue 1,"Mobilis Algeria, Nike","Oran, Algeria",pr@oransportspr.com,+213 41 432987,www.oransportspr.com
+474,Annaba PR Solutions,Football Branding & PR,Algerian Ligue 1,"Djezzy, Adidas","Annaba, Algeria",support@annabasportspr.com,+213 38 654321,www.annabasportspr.com
+475,Tunis PR Hub,Football Sponsorship & Branding,Tunisian Ligue 1,"Ooredoo Tunisia, Puma","Tunis, Tunisia",info@tunissportspr.com,+216 71 432876,www.tunissportspr.com
+476,Sfax PR Solutions,Football Branding & PR,Tunisian Ligue 1,"Tunisie Telecom, Nike","Sfax, Tunisia",contact@sfaxsportspr.com,+216 74 543987,www.sfaxsportspr.com
+477,Nouadhibou PR House,Football Sponsorships & Club PR,Mauritania Premier League,"Chinguitel, Adidas","Nouadhibou, Mauritania",pr@nouadhibousportspr.com,+222 45 432876,www.nouadhibousportspr.com
+478,Zanzibar PR Experts,Football Sponsorship & Branding,Zanzibar Premier League,"Tigo Zanzibar, Puma","Zanzibar, Tanzania",support@zanzibarsportspr.com,+255 65 654321,www.zanzibarsportspr.com
+479,Mogadishu PR Connect,Football Branding & PR,Somalia Premier League,"Hormuud Telecom, Nike","Mogadishu, Somalia",info@mogadishusportspr.com,+252 61 543987,www.mogadishusportspr.com
+480,Djibouti PR Solutions,Football Sponsorship & PR,Djibouti Premier League,"Djibouti Telecom, Adidas","Djibouti, Djibouti",contact@djiboutisportspr.com,+253 77 654987,www.djiboutisportspr.com
+481,Asmara PR House,Football Sponsorships & Club PR,Eritrean Premier League,"Eritel, Puma","Asmara, Eritrea",pr@asmarasportspr.com,+291 1 432987,www.asmarasportspr.com
+482,Addis Ababa PR Hub,Football Branding & Sponsorship,Ethiopian Premier League,"Ethio Telecom, Nike","Addis Ababa, Ethiopia",support@addissportspr.com,+251 91 654987,www.addissportspr.com
+483,Khartoum PR Experts,Football Branding & PR,Sudan Premier League,"Zain Sudan, Adidas","Khartoum, Sudan",info@khartoumsportspr.com,+249 91 543876,www.khartoumsportspr.com
+484,Juba PR Solutions,Football Sponsorship & Branding,South Sudan Premier League,"MTN South Sudan, Puma","Juba, South Sudan",contact@jubasportspr.com,+211 95 654987,www.jubasportspr.com
+485,Luanda PR Connect,Football Branding & PR,Angolan Premier League,"Unitel Angola, Nike","Luanda, Angola",pr@luandasportspr.com,+244 91 432987,www.luandasportspr.com
+486,Maputo PR Experts,Football Sponsorships & Club PR,Mozambican Premier League,"Vodacom Mozambique, Adidas","Maputo, Mozambique",support@maputosportspr.com,+258 84 654987,www.maputosportspr.com
+487,Lilongwe PR House,Football Branding & Sponsorship,Malawi Premier League,"TNM Malawi, Puma","Lilongwe, Malawi",info@lilongwesportspr.com,+265 88 543876,www.lilongwesportspr.com
+488,Bujumbura PR Solutions,Football Sponsorship & PR,Burundi Premier League,"Lumitel, Nike","Bujumbura, Burundi",contact@bujumburasportspr.com,+257 79 654987,www.bujumburasportspr.com
+489,Windhoek PR Connect,Football Sponsorship & Branding,Namibian Premier League,"MTC Namibia, Adidas","Windhoek, Namibia",pr@windhoeksportspr.com,+264 81 543876,www.windhoeksportspr.com
+490,Gaborone PR Hub,Football Branding & PR,Botswana Premier League,"Orange Botswana, Puma","Gaborone, Botswana",support@gaboronesportspr.com,+267 71 432987,www.gaboronesportspr.com
+491,Lusaka PR Experts,Football Sponsorship & PR,Zambia Premier League,"MTN Zambia, Nike","Lusaka, Zambia",info@lusakasportspr.com,+260 97 654321,www.lusakasportspr.com
+492,Harare PR Solutions,Football Branding & Sponsorship,Zimbabwe Premier League,"Econet Zimbabwe, Adidas","Harare, Zimbabwe",contact@huraresportspr.com,+263 77 543876,www.huraresportspr.com
+493,Maseru PR Connect,Football Sponsorships & Club PR,Lesotho Premier League,"Vodacom Lesotho, Puma","Maseru, Lesotho",pr@maserusportspr.com,+266 50 654987,www.maserusportspr.com
+494,Blantyre PR House,Football Sponsorship & Branding,Malawi Premier League,"TNM Malawi, Nike","Blantyre, Malawi",support@blantyresportspr.com,+265 99 543876,www.blantyresportspr.com
+495,Kigali PR Hub,Football Branding & PR,Rwanda Premier League,"MTN Rwanda, Adidas","Kigali, Rwanda",info@kigalisportspr.com,+250 78 654987,www.kigalisportspr.com
+496,Bujumbura PR Experts,Football Sponsorship & PR,Burundi Premier League,"Lumitel, Puma","Bujumbura, Burundi",contact@bujumburasportspr.com,+257 79 543876,www.bujumburasportspr.com
+497,Bangui PR Solutions,Football Sponsorships & Club PR,Central African Republic Premier League,"Orange CAR, Adidas","Bangui, CAR",pr@banguisportspr.com,+236 75 654987,www.banguisportspr.com
+498,N'Djamena PR Connect,Football Branding & PR,Chadian Premier League,"Airtel Chad, Puma","N'Djamena, Chad",support@ndjamenasportspr.com,+235 99 543876,www.ndjamenasportspr.com
+499,Djibouti PR Hub,Football Sponsorship & Branding,Djibouti Premier League,"Djibouti Telecom, Nike","Djibouti, Djibouti",info@djiboutisportspr.com,+253 77 654987,www.djiboutisportspr.com
+500,Asmara PR Experts,Football Branding & PR,Eritrean Premier League,"Eritel, Adidas","Asmara, Eritrea",contact@asmarasportspr.com,+291 1 543876,www.asmarasportspr.com
+501,Maputo PR Solutions,Football Sponsorships & Club PR,Mozambican Premier League,"Vodacom Mozambique, Puma","Maputo, Mozambique",pr@maputosportspr.com,+258 84 654987,www.maputosportspr.com
+502,Antananarivo PR House,Football Sponsorship & Branding,Madagascar Premier League,"Telma Madagascar, Nike","Antananarivo, Madagascar",support@antananarivosportspr.com,+261 34 543876,www.antananarivosportspr.com
+503,Victoria PR Connect,Football Branding & PR,Seychelles Premier League,"Cable & Wireless Seychelles, Adidas","Victoria, Seychelles",info@victoriasportspr.com,+248 43 654987,www.victoriasportspr.com
+504,Port Louis PR Hub,Football Sponsorship & Branding,Mauritius Premier League,"Mauritius Telecom, Puma","Port Louis, Mauritius",contact@portlouissportspr.com,+230 57 543876,www.portlouissportspr.com
+505,Moroni PR Experts,Football Sponsorships & Club PR,Comoros Premier League,"Telco Comoros, Nike","Moroni, Comoros",pr@moronisportspr.com,+269 34 654987,www.moronisportspr.com
+506,Nouméa PR Solutions,Football Branding & PR,Mayotte Premier League,"Mayotte Telecom, Adidas","Mamoudzou, Mayotte",support@mayottesportspr.com,+262 62 543876,www.mayottesportspr.com
+507,Saint-Denis PR House,Football Sponsorship & Branding,Réunion Premier League,"Orange Réunion, Puma","Saint-Denis, Réunion",info@reunionsportspr.com,+262 692 654987,www.reunionsportspr.com
+508,Brazzaville PR Hub,Football Branding & PR,Congo Premier League,"TotalEnergies, Adidas","Brazzaville, Congo",contact@brazzavillesportspr.com,+242 06 543876,www.brazzavillesportspr.com
+509,Libreville PR Experts,Football Sponsorship & PR,Gabon Premier League,"Moov Gabon, Nike","Libreville, Gabon",pr@librevillesportspr.com,+241 74 654987,www.librevillesportspr.com
+510,Malabo PR Solutions,Football Sponsorships & Club PR,Equatorial Guinea Premier League,"Orange Equatorial Guinea, Puma","Malabo, Equatorial Guinea",support@malabosportspr.com,+240 98 543876,www.malabosportspr.com
+511,Bamenda PR Experts,Football Sponsorship & Branding,Cameroon Premier League,"MTN Cameroon, Adidas","Bamenda, Cameroon",info@bamendasportspr.com,+237 69 654321,www.bamendasportspr.com
+512,Buea PR Solutions,Football Branding & PR,Cameroon Premier League,"Orange Cameroon, Puma","Buea, Cameroon",contact@bueasportspr.com,+237 65 543876,www.bueasportspr.com
+513,Garoua PR Hub,Football Sponsorship & Branding,Cameroon Premier League,"CamTel, Nike","Garoua, Cameroon",pr@garouasportspr.com,+237 67 654987,www.garouasportspr.com
+514,Goma PR Connect,Football Sponsorships & Club PR,DR Congo Premier League,"Vodacom Congo, Adidas","Goma, DR Congo",support@gomasportspr.com,+243 99 543876,www.gomasportspr.com
+515,Lubumbashi PR House,Football Branding & PR,DR Congo Premier League,"Orange DRC, Puma","Lubumbashi, DR Congo",info@lubumbashisportspr.com,+243 97 654987,www.lubumbashisportspr.com
+516,Bukavu PR Experts,Football Sponsorship & Branding,DR Congo Premier League,"Africell DRC, Nike","Bukavu, DR Congo",contact@bukavusportspr.com,+243 95 543876,www.bukavusportspr.com
+517,Douentza PR Solutions,Football Sponsorship & PR,Mali Premier League,"Orange Mali, Adidas","Douentza, Mali",pr@douentzasportspr.com,+223 76 654987,www.douentzasportspr.com
+518,Segou PR Connect,Football Branding & Club PR,Mali Premier League,"Moov Africa Mali, Puma","Segou, Mali",support@segousportspr.com,+223 75 543876,www.segousportspr.com
+519,Kano PR Experts,Football Sponsorships & Club PR,Nigeria Premier League,"MTN Nigeria, Nike","Kano, Nigeria",info@kanosportspr.com,+234 80 654987,www.kanosportspr.com
+520,Ibadan PR Solutions,Football Sponsorship & Branding,Nigeria Premier League,"Airtel Nigeria, Adidas","Ibadan, Nigeria",contact@ibadansportspr.com,+234 81 543876,www.ibadansportspr.com
+521,Onitsha PR Hub,Football Branding & PR,Nigeria Premier League,"Glo Nigeria, Puma","Onitsha, Nigeria",pr@onitshasportspr.com,+234 82 654987,www.onitshasportspr.com
+522,Benin City PR House,Football Sponsorship & PR,Nigeria Premier League,"Etisalat Nigeria, Nike","Benin City, Nigeria",support@benincitysportspr.com,+234 84 543876,www.benincitysportspr.com
+523,Kaduna PR Connect,Football Branding & Sponsorship,Nigeria Premier League,"Airtel Nigeria, Adidas","Kaduna, Nigeria",info@kadunasportspr.com,+234 85 654987,www.kadunasportspr.com
+524,Jos PR Experts,Football Sponsorships & Club PR,Nigeria Premier League,"MTN Nigeria, Puma","Jos, Nigeria",contact@jossportspr.com,+234 86 543876,www.jossportspr.com
+525,Makurdi PR Solutions,Football Sponsorship & PR,Nigeria Premier League,"Glo Nigeria, Nike","Makurdi, Nigeria",pr@makurdisportspr.com,+234 87 654987,www.makurdisportspr.com
+526,Port Harcourt PR Hub,Football Branding & PR,Nigeria Premier League,"Etisalat Nigeria, Adidas","Port Harcourt, Nigeria",support@portharcourtsportspr.com,+234 88 543876,www.portharcourtsportspr.com
+527,Uyo PR House,Football Sponsorships & Club PR,Nigeria Premier League,"Airtel Nigeria, Puma","Uyo, Nigeria",info@uyosportspr.com,+234 89 654987,www.uyosportspr.com
+528,Warri PR Experts,Football Sponsorship & Branding,Nigeria Premier League,"MTN Nigeria, Nike","Warri, Nigeria",contact@warrisportspr.com,+234 90 543876,www.warrisportspr.com
+529,Abeokuta PR Solutions,Football Branding & PR,Nigeria Premier League,"Glo Nigeria, Adidas","Abeokuta, Nigeria",pr@abeokutasportspr.com,+234 91 654987,www.abeokutasportspr.com
+530,Ilorin PR Connect,Football Sponsorships & Club PR,Nigeria Premier League,"Airtel Nigeria, Puma","Ilorin, Nigeria",support@ilorinsportspr.com,+234 92 543876,www.ilorinsportspr.com
+531,Ado Ekiti PR Hub,Football Sponsorship & Branding,Nigeria Premier League,"MTN Nigeria, Adidas","Ado Ekiti, Nigeria",info@adoekitisportspr.com,+234 93 654987,www.adoekitisportspr.com
+532,Akure PR Experts,Football Branding & PR,Nigeria Premier League,"Airtel Nigeria, Puma","Akure, Nigeria",contact@akuresportspr.com,+234 94 543876,www.akuresportspr.com
+533,Lokoja PR Solutions,Football Sponsorship & PR,Nigeria Premier League,"Glo Nigeria, Nike","Lokoja, Nigeria",pr@lokojasportspr.com,+234 95 654987,www.lokojasportspr.com
+534,Calabar PR Connect,Football Sponsorships & Club PR,Nigeria Premier League,"Etisalat Nigeria, Adidas","Calabar, Nigeria",support@calabarsportspr.com,+234 96 543876,www.calabarsportspr.com
+535,Osogbo PR House,Football Branding & Sponsorship,Nigeria Premier League,"MTN Nigeria, Puma","Osogbo, Nigeria",info@osogbosportspr.com,+234 97 654987,www.osogbosportspr.com
+536,Enugu PR Hub,Football Sponsorship & PR,Nigeria Premier League,"Airtel Nigeria, Nike","Enugu, Nigeria",contact@enugusportspr.com,+234 98 543876,www.enugusportspr.com
+537,Minna PR Experts,Football Branding & PR,Nigeria Premier League,"Glo Nigeria, Adidas","Minna, Nigeria",pr@minnasportspr.com,+234 99 654987,www.minnasportspr.com
+538,Yola PR Solutions,Football Sponsorships & Club PR,Nigeria Premier League,"Etisalat Nigeria, Puma","Yola, Nigeria",support@yolasportspr.com,+234 100 543876,www.yolasportspr.com
+539,Maiduguri PR Connect,Football Sponsorship & Branding,Nigeria Premier League,"MTN Nigeria, Nike","Maiduguri, Nigeria",info@maidugurisportspr.com,+234 101 654987,www.maidugurisportspr.com
+540,Gusau PR House,Football Branding & PR,Nigeria Premier League,"Airtel Nigeria, Adidas","Gusau, Nigeria",contact@gusausportspr.com,+234 102 543876,www.gusausportspr.com
+541,Bauchi PR Hub,Football Sponsorship & PR,Nigeria Premier League,"Glo Nigeria, Puma","Bauchi, Nigeria",pr@bauchisportspr.com,+234 103 654987,www.bauchisportspr.com
+542,Katsina PR Experts,Football Sponsorship & Branding,Nigeria Premier League,"Etisalat Nigeria, Nike","Katsina, Nigeria",support@katsinasportspr.com,+234 104 543876,www.katsinasportspr.com
+543,Sokoto PR Solutions,Football Branding & PR,Nigeria Premier League,"MTN Nigeria, Adidas","Sokoto, Nigeria",info@sokotosportspr.com,+234 105 654987,www.sokotosportspr.com
+544,Damaturu PR Connect,Football Sponsorship & Club PR,Nigeria Premier League,"Airtel Nigeria, Puma","Damaturu, Nigeria",contact@damaturusportspr.com,+234 106 543876,www.damaturusportspr.com
+545,Jalingo PR House,Football Sponsorships & Club PR,Nigeria Premier League,"Glo Nigeria, Nike","Jalingo, Nigeria",pr@jalingosportspr.com,+234 107 654987,www.jalingosportspr.com
+546,Birnin Kebbi PR Experts,Football Branding & PR,Nigeria Premier League,"Etisalat Nigeria, Adidas","Birnin Kebbi, Nigeria",support@birninkebbisportspr.com,+234 108 543876,www.birninkebbisportspr.com
+547,Dutse PR Hub,Football Sponsorship & Branding,Nigeria Premier League,"MTN Nigeria, Puma","Dutse, Nigeria",info@dutsesportspr.com,+234 109 654987,www.dutsesportspr.com
+548,Gombe PR Connect,Football Branding & PR,Nigeria Premier League,"Airtel Nigeria, Nike","Gombe, Nigeria",contact@gombesportspr.com,+234 110 543876,www.gombesportspr.com
+549,Abakaliki PR Solutions,Football Sponsorship & Club PR,Nigeria Premier League,"Glo Nigeria, Adidas","Abakaliki, Nigeria",pr@abakalikisportspr.com,+234 111 654987,www.abakalikisportspr.com
+550,Umuahia PR House,Football Sponsorships & Club PR,Nigeria Premier League,"Etisalat Nigeria, Puma","Umuahia, Nigeria",support@umuhaiasportspr.com,+234 112 543876,www.umuhaiasportspr.com
+551,Zaria PR Experts,Football Sponsorship & PR,Nigeria Premier League,"MTN Nigeria, Adidas","Zaria, Nigeria",info@zariasportspr.com,+234 113 654987,www.zariasportspr.com
+552,Makeni PR Solutions,Football Branding & Sponsorship,Sierra Leone Premier League,"Orange Sierra Leone, Puma","Makeni, Sierra Leone",contact@makenisportspr.com,+232 77 543876,www.makenisportspr.com
+553,Bo PR Connect,Football Sponsorships & Club PR,Sierra Leone Premier League,"Africell Sierra Leone, Nike","Bo, Sierra Leone",pr@bosportspr.com,+232 76 654987,www.bosportspr.com
+554,Koidu PR House,Football Branding & PR,Sierra Leone Premier League,"Orange Sierra Leone, Adidas","Koidu, Sierra Leone",support@koidusportspr.com,+232 75 543876,www.koidusportspr.com
+555,Kenema PR Experts,Football Sponsorship & PR,Sierra Leone Premier League,"Africell Sierra Leone, Puma","Kenema, Sierra Leone",info@kenemasportspr.com,+232 74 654987,www.kenemasportspr.com
+556,Bissau PR Solutions,Football Sponsorship & Branding,Guinea-Bissau Premier League,"Moov Guinea-Bissau, Nike","Bissau, Guinea-Bissau",contact@bissausportspr.com,+245 96 543876,www.bissausportspr.com
+557,Kindia PR Connect,Football Sponsorships & Club PR,Guinea Premier League,"MTN Guinea, Adidas","Kindia, Guinea",pr@kindiasportspr.com,+224 62 654987,www.kindiasportspr.com
+558,Nzérékoré PR Hub,Football Branding & PR,Guinea Premier League,"Orange Guinea, Puma","Nzérékoré, Guinea",support@nzeresportspr.com,+224 61 543876,www.nzeresportspr.com
+559,Mamou PR House,Football Branding & Sponsorship,Guinea Premier League,"Moov Guinea, Nike","Mamou, Guinea",info@mamousportspr.com,+224 60 654987,www.mamousportspr.com
+560,Labe PR Experts,Football Sponsorship & PR,Guinea Premier League,"MTN Guinea, Adidas","Labe, Guinea",contact@labesportspr.com,+224 59 543876,www.labesportspr.com
+561,Dakar PR Hub,Football Branding & PR,Senegal Premier League,"Orange Senegal, Puma","Dakar, Senegal",pr@dakarsportspr.com,+221 77 654987,www.dakarsportspr.com
+562,Saint-Louis PR Solutions,Football Sponsorship & Branding,Senegal Premier League,"Moov Senegal, Nike","Saint-Louis, Senegal",support@saintlouissportspr.com,+221 76 543876,www.saintlouissportspr.com
+563,Kaolack PR Experts,Football Sponsorship & PR,Senegal Premier League,"Orange Senegal, Adidas","Kaolack, Senegal",info@kaolacksportspr.com,+221 75 654987,www.kaolacksportspr.com
+564,Tambacounda PR Connect,Football Sponsorships & Club PR,Senegal Premier League,"Moov Senegal, Puma","Tambacounda, Senegal",contact@tambacoundasportspr.com,+221 74 543876,www.tambacoundasportspr.com
+565,Ziguinchor PR Hub,Football Branding & PR,Senegal Premier League,"Orange Senegal, Nike","Ziguinchor, Senegal",pr@ziguinchorsportspr.com,+221 73 654987,www.ziguinchorsportspr.com
+566,Banjul PR Solutions,Football Sponsorship & Branding,Gambia Premier League,"Africell Gambia, Adidas","Banjul, Gambia",support@banjulsportspr.com,+220 77 543876,www.banjulsportspr.com
+567,Serekunda PR Experts,Football Sponsorship & PR,Gambia Premier League,"Orange Gambia, Puma","Serekunda, Gambia",info@serekundasportspr.com,+220 76 654987,www.serekundasportspr.com
+568,Brikama PR House,Football Sponsorships & Club PR,Gambia Premier League,"Africell Gambia, Nike","Brikama, Gambia",contact@brikamasportspr.com,+220 75 543876,www.brikamasportspr.com
+569,Farafenni PR Hub,Football Branding & PR,Gambia Premier League,"Orange Gambia, Adidas","Farafenni, Gambia",pr@farafennisportspr.com,+220 74 654987,www.farafennisportspr.com
+570,Georgetown PR Solutions,Football Sponsorship & Branding,Gambia Premier League,"Africell Gambia, Puma","Georgetown, Gambia",support@georgetownsportspr.com,+220 73 543876,www.georgetownsportspr.com
+571,Kigali PR Connect,Football Sponsorship & Branding,Rwanda Premier League,"MTN Rwanda, Adidas","Kigali, Rwanda",info@kigalisportspr.com,+250 78 654987,www.kigalisportspr.com
+572,Butare PR Solutions,Football Branding & PR,Rwanda Premier League,"Airtel Rwanda, Puma","Butare, Rwanda",contact@butaresportspr.com,+250 77 543876,www.butaresportspr.com
+573,Gisenyi PR Experts,Football Sponsorships & Club PR,Rwanda Premier League,"Moov Rwanda, Nike","Gisenyi, Rwanda",pr@gisenyisportspr.com,+250 76 654987,www.gisenyisportspr.com
+574,Ruhengeri PR House,Football Branding & Sponsorship,Rwanda Premier League,"Orange Rwanda, Adidas","Ruhengeri, Rwanda",support@ruhengerisportspr.com,+250 75 543876,www.ruhengerisportspr.com
+575,Kampala PR Hub,Football Sponsorship & PR,Uganda Premier League,"MTN Uganda, Puma","Kampala, Uganda",info@kampalasportspr.com,+256 78 654987,www.kampalasportspr.com
+576,Entebbe PR Solutions,Football Branding & PR,Uganda Premier League,"Airtel Uganda, Nike","Entebbe, Uganda",contact@entebbesportspr.com,+256 77 543876,www.entebbesportspr.com
+577,Gulu PR Experts,Football Sponsorships & Club PR,Uganda Premier League,"Moov Uganda, Adidas","Gulu, Uganda",pr@gulusportspr.com,+256 76 654987,www.gulusportspr.com
+578,Mbarara PR House,Football Branding & Sponsorship,Uganda Premier League,"Orange Uganda, Puma","Mbarara, Uganda",support@mbararasportspr.com,+256 75 543876,www.mbararasportspr.com
+579,Dar es Salaam PR Connect,Football Sponsorship & Branding,Tanzania Premier League,"Vodacom Tanzania, Nike","Dar es Salaam, Tanzania",info@daressalaamsportspr.com,+255 78 654987,www.daressalaamsportspr.com
+580,Arusha PR Solutions,Football Branding & PR,Tanzania Premier League,"Tigo Tanzania, Adidas","Arusha, Tanzania",contact@arushasportspr.com,+255 77 543876,www.arushasportspr.com
+581,Mwanza PR Experts,Football Sponsorships & Club PR,Tanzania Premier League,"Airtel Tanzania, Puma","Mwanza, Tanzania",pr@mwanzaasportspr.com,+255 76 654987,www.mwanzaasportspr.com
+582,Dodoma PR House,Football Branding & Sponsorship,Tanzania Premier League,"Halotel Tanzania, Nike","Dodoma, Tanzania",support@dodomasportspr.com,+255 75 543876,www.dodomasportspr.com
+583,Lusaka PR Hub,Football Sponsorship & PR,Zambia Premier League,"MTN Zambia, Adidas","Lusaka, Zambia",info@lusakasportspr.com,+260 97 654987,www.lusakasportspr.com
+584,Ndola PR Solutions,Football Branding & PR,Zambia Premier League,"Airtel Zambia, Puma","Ndola, Zambia",contact@ndolasportspr.com,+260 96 543876,www.ndolasportspr.com
+585,Kitwe PR Experts,Football Sponsorships & Club PR,Zambia Premier League,"Zamtel, Nike","Kitwe, Zambia",pr@kitwesportspr.com,+260 95 654987,www.kitwesportspr.com
+586,Livingstone PR House,Football Branding & Sponsorship,Zambia Premier League,"Moov Zambia, Adidas","Livingstone, Zambia",support@livingstonesportspr.com,+260 94 543876,www.livingstonesportspr.com
+587,Windhoek PR Hub,Football Sponsorship & Branding,Namibia Premier League,"MTC Namibia, Puma","Windhoek, Namibia",info@windhoeksportspr.com,+264 81 654987,www.windhoeksportspr.com
+588,Swakopmund PR Solutions,Football Branding & PR,Namibia Premier League,"Paratus Namibia, Nike","Swakopmund, Namibia",contact@swakopmundsportspr.com,+264 80 543876,www.swakopmundsportspr.com
+589,Gaborone PR Experts,Football Sponsorships & Club PR,Botswana Premier League,"Orange Botswana, Adidas","Gaborone, Botswana",pr@gaboronesportspr.com,+267 71 654987,www.gaboronesportspr.com
+590,Francistown PR House,Football Branding & Sponsorship,Botswana Premier League,"BeMobile Botswana, Puma","Francistown, Botswana",support@francistownsportspr.com,+267 70 543876,www.francistownsportspr.com
+591,Port Louis PR Experts,Football Sponsorship & Branding,Mauritius Premier League,"Mauritius Telecom, Adidas","Port Louis, Mauritius",info@portlouissportspr.com,+230 57 654987,www.portlouissportspr.com
+592,Curepipe PR Solutions,Football Branding & PR,Mauritius Premier League,"Orange Mauritius, Puma","Curepipe, Mauritius",contact@curepipesportspr.com,+230 56 543876,www.curepipesportspr.com
+593,Quatre Bornes PR Experts,Football Sponsorships & Club PR,Mauritius Premier League,"Emtel Mauritius, Nike","Quatre Bornes, Mauritius",pr@quatrebornessportspr.com,+230 55 654987,www.quatrebornessportspr.com
+594,Saint Pierre PR House,Football Branding & Sponsorship,Mauritius Premier League,"MTML Mauritius, Adidas","Saint Pierre, Mauritius",support@saintpierresportspr.com,+230 54 543876,www.saintpierresportspr.com
+595,Antananarivo PR Hub,Football Sponsorship & PR,Madagascar Premier League,"Telma Madagascar, Puma","Antananarivo, Madagascar",info@antananarivosportspr.com,+261 34 654987,www.antananarivosportspr.com
+596,Toamasina PR Solutions,Football Branding & PR,Madagascar Premier League,"Airtel Madagascar, Nike","Toamasina, Madagascar",contact@toamasinasportspr.com,+261 33 543876,www.toamasinasportspr.com
+597,Fianarantsoa PR Experts,Football Sponsorships & Club PR,Madagascar Premier League,"Orange Madagascar, Adidas","Fianarantsoa, Madagascar",pr@fianarantsoasportspr.com,+261 32 654987,www.fianarantsoasportspr.com
+598,Mahajanga PR House,Football Branding & Sponsorship,Madagascar Premier League,"Moov Madagascar, Puma","Mahajanga, Madagascar",support@mahajangasportspr.com,+261 31 543876,www.mahajangasportspr.com
+599,Victoria PR Connect,Football Sponsorship & Branding,Seychelles Premier League,"Cable & Wireless Seychelles, Nike","Victoria, Seychelles",info@victoriasportspr.com,+248 43 654987,www.victoriasportspr.com
+600,Saint-Denis PR Experts,Football Branding & PR,Réunion Premier League,"Orange Réunion, Adidas","Saint-Denis, Réunion",contact@saintdenissportspr.com,+262 692 543876,www.saintdenissportspr.com
+601,Mamoudzou PR House,Football Sponsorships & Club PR,Mayotte Premier League,"Mayotte Telecom, Puma","Mamoudzou, Mayotte",pr@mamoudzousportspr.com,+262 269 654987,www.mamoudzousportspr.com
+602,Moroni PR Hub,Football Branding & Sponsorship,Comoros Premier League,"Telco Comoros, Nike","Moroni, Comoros",support@moronisportspr.com,+269 34 543876,www.moronisportspr.com
+603,Nouakchott PR Connect,Football Sponsorship & Branding,Mauritania Premier League,"Chinguitel Mauritania, Adidas","Nouakchott, Mauritania",info@nouakchottsportspr.com,+222 45 654987,www.nouakchottsportspr.com
+604,Kaedi PR Solutions,Football Branding & PR,Mauritania Premier League,"Moov Mauritania, Puma","Kaedi, Mauritania",contact@kaedisportspr.com,+222 44 543876,www.kaedisportspr.com
+605,Zouerate PR Experts,Football Sponsorships & Club PR,Mauritania Premier League,"Mattel Mauritania, Nike","Zouerate, Mauritania",pr@zoueratesportspr.com,+222 43 654987,www.zoueratesportspr.com
+606,Bamako PR House,Football Branding & Sponsorship,Mali Premier League,"Orange Mali, Adidas","Bamako, Mali",support@bamakosportspr.com,+223 76 543876,www.bamakosportspr.com
+607,Sikasso PR Hub,Football Sponsorship & Branding,Mali Premier League,"Moov Mali, Puma","Sikasso, Mali",info@sikassosportspr.com,+223 75 654987,www.sikassosportspr.com
+608,Segou PR Solutions,Football Branding & PR,Mali Premier League,"Mattel Mali, Nike","Segou, Mali",contact@segousportspr.com,+223 74 543876,www.segousportspr.com
+609,Koulikoro PR Experts,Football Sponsorships & Club PR,Mali Premier League,"Orange Mali, Adidas","Koulikoro, Mali",pr@koulikorosportspr.com,+223 73 654987,www.koulikorosportspr.com
+610,Niamey PR Experts,Football Sponsorship & Branding,Niger Premier League,"Moov Niger, Adidas","Niamey, Niger",info@niameysportspr.com,+227 96 654987,www.niameysportspr.com
+611,Zinder PR Solutions,Football Branding & PR,Niger Premier League,"Orange Niger, Puma","Zinder, Niger",contact@zindersportspr.com,+227 95 543876,www.zindersportspr.com
+612,Maradi PR Experts,Football Sponsorships & Club PR,Niger Premier League,"Airtel Niger, Nike","Maradi, Niger",pr@maradisportspr.com,+227 94 654987,www.maradisportspr.com
+613,Agadez PR House,Football Branding & Sponsorship,Niger Premier League,"Moov Niger, Adidas","Agadez, Niger",support@agadezsportspr.com,+227 93 543876,www.agadezsportspr.com
+614,Conakry PR Hub,Football Sponsorship & PR,Guinea Premier League,"MTN Guinea, Puma","Conakry, Guinea",info@conakrysportspr.com,+224 66 654987,www.conakrysportspr.com
+615,Kankan PR Solutions,Football Branding & PR,Guinea Premier League,"Orange Guinea, Nike","Kankan, Guinea",contact@kankansportspr.com,+224 65 543876,www.kankansportspr.com
+616,Nzérékoré PR Experts,Football Sponsorships & Club PR,Guinea Premier League,"Moov Guinea, Adidas","Nzérékoré, Guinea",pr@nzeresportspr.com,+224 64 654987,www.nzeresportspr.com
+617,Mamou PR House,Football Branding & Sponsorship,Guinea Premier League,"MTN Guinea, Puma","Mamou, Guinea",support@mamousportspr.com,+224 63 543876,www.mamousportspr.com
+618,Freetown PR Hub,Football Sponsorship & Branding,Sierra Leone Premier League,"Orange Sierra Leone, Nike","Freetown, Sierra Leone",info@freetownsportspr.com,+232 77 654987,www.freetownsportspr.com
+619,Bo PR Solutions,Football Branding & PR,Sierra Leone Premier League,"Africell Sierra Leone, Adidas","Bo, Sierra Leone",contact@bosportspr.com,+232 76 543876,www.bosportspr.com
+620,Kenema PR Experts,Football Sponsorships & Club PR,Sierra Leone Premier League,"Orange Sierra Leone, Puma","Kenema, Sierra Leone",pr@kenemasportspr.com,+232 75 654987,www.kenemasportspr.com
+621,Koidu PR House,Football Branding & Sponsorship,Sierra Leone Premier League,"MTN Sierra Leone, Nike","Koidu, Sierra Leone",support@koidusportspr.com,+232 74 543876,www.koidusportspr.com
+622,Nouakchott PR Connect,Football Sponsorship & Branding,Mauritania Premier League,"Chinguitel Mauritania, Adidas","Nouakchott, Mauritania",info@nouakchottsportspr.com,+222 45 654987,www.nouakchottsportspr.com
+623,Kaedi PR Solutions,Football Branding & PR,Mauritania Premier League,"Moov Mauritania, Puma","Kaedi, Mauritania",contact@kaedisportspr.com,+222 44 543876,www.kaedisportspr.com
+624,Zouerate PR Experts,Football Sponsorships & Club PR,Mauritania Premier League,"Mattel Mauritania, Nike","Zouerate, Mauritania",pr@zoueratesportspr.com,+222 43 654987,www.zoueratesportspr.com
+625,Bamako PR House,Football Branding & Sponsorship,Mali Premier League,"Orange Mali, Adidas","Bamako, Mali",support@bamakosportspr.com,+223 76 543876,www.bamakosportspr.com
+626,Sikasso PR Hub,Football Sponsorship & Branding,Mali Premier League,"Moov Mali, Puma","Sikasso, Mali",info@sikassosportspr.com,+223 75 654987,www.sikassosportspr.com
+627,Segou PR Solutions,Football Branding & PR,Mali Premier League,"Mattel Mali, Nike","Segou, Mali",contact@segousportspr.com,+223 74 543876,www.segousportspr.com
+628,Koulikoro PR Experts,Football Sponsorships & Club PR,Mali Premier League,"Orange Mali, Adidas","Koulikoro, Mali",pr@koulikorosportspr.com,+223 73 654987,www.koulikorosportspr.com
