@@ -1,0 +1,286 @@
+<div class="container fraud-analysis-container">
+    <h2 class="mb-4">Fraud Case Study Analyzer</h2>
+<!-- Stakeholder Type Selection with Image Cards -->
+<div class="card mb-4">
+  <div class="card-body">
+    <h4 class="card-title mb-3">Select Stakeholder Type</h4>
+    
+    <div class="row">
+      <div *ngFor="let type of stakeholderTypes" class="col-md-4 mb-4">
+        <div class="stakeholder-image-card" 
+             [class.selected]="selectedStakeholderType === type.key"
+             (click)="selectStakeholderType(type.key)">
+          <div class="card-image" [ngClass]="'bg-' + type.key"></div>
+          <div class="card-icon">
+            <i *ngIf="type.key === 'players_agents'" class="fas fa-user-tie"></i>
+            <i *ngIf="type.key === 'recruiting_agents'" class="fas fa-search"></i>
+            <i *ngIf="type.key === 'sporting_management_agencies'" class="fas fa-briefcase"></i>
+            <i *ngIf="type.key === 'communication_boxes'" class="fas fa-comments"></i>
+            <i *ngIf="type.key === 'sponsors'" class="fas fa-handshake"></i>
+            <i *ngIf="!['players_agents', 'recruiting_agents', 'sporting_management_agencies', 'communication_boxes', 'sponsors'].includes(type.key)" class="fas fa-users"></i>
+          </div>
+        </div>
+        <h5 class="text-center mt-3">{{ type.label }}</h5>
+        <p class="text-center text-muted">{{ getStakeholderDescription(type.key) }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Keep the Entity Selection section as is, it will appear when a card is clicked -->
+  
+    <!-- Entity Selection (only shown when stakeholder type is selected) -->
+    <div class="card mb-4" *ngIf="selectedStakeholderType && entities.length > 0">
+      <div class="card-body">
+        <h4 class="card-title mb-3">Select {{ getStakeholderLabel() }} Entity</h4>
+        <select class="form-control" [(ngModel)]="selectedEntityId">
+          <option value="">-- Select an entity --</option>
+          <option *ngFor="let entity of entities" [value]="entity.id">{{ entity.name }}</option>
+        </select>
+        
+        <button class="btn btn-primary mt-3" [disabled]="!selectedEntityId" (click)="viewCaseStudy()">
+          View Case Study
+        </button>
+      </div>
+    </div>
+  
+    <!-- Loading Indicator -->
+    <div class="text-center my-4" *ngIf="loading">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="mt-2">Analyzing data...</p>
+    </div>
+  
+    <!-- Case Study Results (only shown when analysis is complete) -->
+    <div *ngIf="analysisResult" class="case-study-results">
+      <!-- Header and Classification Banner -->
+      <h2 class="mb-3">Case Study: {{ analysisResult.entityName }}</h2>
+      
+      <div class="classification-banner" [ngClass]="{'fraud-case': analysisResult.isFraud, 'legitimate-case': !analysisResult.isFraud}">
+        <span *ngIf="analysisResult.isFraud" class="banner-text">🚨 CONFIRMED FRAUD CASE 🚨</span>
+        <span *ngIf="!analysisResult.isFraud" class="banner-text">
+          ✅ LEGITIMATE {{ getEntityTerm().toUpperCase() }} - CLEARED OF SUSPICION
+        </span>
+      </div>
+  
+      <div class="row mt-4">
+        <!-- Fraud Probability Column -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="card-title">Fraud Risk Assessment</h3>
+              
+              <!-- Large percentage display -->
+              <div class="fraud-percentage" [ngClass]="getFraudColorClass()">
+                {{ analysisResult.fraudProbability.toFixed(1) }}%
+              </div>
+              
+              <!-- Risk tier display -->
+              <div class="risk-tier-badge" [ngClass]="getRiskTierClass()">
+                {{ analysisResult.riskTier }}
+              </div>
+              
+              <!-- Gauge chart placeholder -->
+              <div class="gauge-container mt-3">
+                <div class="gauge">
+                  <div class="gauge-fill" [style.transform]="'rotate(' + getGaugeRotation() + 'deg)'"></div>
+                  <div class="gauge-center">
+                    <div class="gauge-value">{{ analysisResult.fraudProbability.toFixed(1) }}%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Risk Factors Column -->
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Specific Risk Factors</h3>
+              
+              <div *ngIf="analysisResult.fraudProbability > 70" class="mb-3">
+                <p class="risk-explanation high-risk">
+                  <strong>{{ analysisResult.entityName }}</strong> is <strong>highly likely to be engaging in fraudulent activities</strong> 
+                  ({{ analysisResult.fraudProbability.toFixed(1) }}% probability) due to multiple serious red flags:
+                </p>
+                
+                <ul class="risk-factors-list high-risk">
+                  <li *ngFor="let factor of getHighRiskFactors(analysisResult)">
+                    🚨 <strong>{{ factor }}</strong>
+                  </li>
+                </ul>
+                
+                <div class="recommendation high-risk">
+                  <strong>Recommended Action:</strong> Immediate investigation and suspension of activities pending review.
+                </div>
+              </div>
+              
+              <div *ngIf="analysisResult.fraudProbability <= 70 && analysisResult.fraudProbability > 40" class="mb-3">
+                <p class="risk-explanation medium-risk">
+                  <strong>{{ analysisResult.entityName }}</strong> shows <strong>some suspicious patterns</strong> 
+                  ({{ analysisResult.fraudProbability.toFixed(1) }}% probability) that warrant closer monitoring:
+                </p>
+                
+                <ul class="risk-factors-list medium-risk">
+                  <li *ngFor="let factor of getMediumRiskFactors(analysisResult)">
+                    ⚠️ {{ factor }}
+                  </li>
+                </ul>
+                
+                <div class="recommendation medium-risk">
+                  <strong>Recommended Action:</strong> Enhanced due diligence and more frequent compliance reviews.
+                </div>
+              </div>
+              
+              <div *ngIf="analysisResult.fraudProbability <= 40" class="mb-3">
+                <p class="risk-explanation low-risk">
+                  <strong>{{ analysisResult.entityName }}</strong> appears to be a <strong>legitimate {{ getEntityTerm() }}</strong> 
+                  ({{ analysisResult.fraudProbability.toFixed(1) }}% probability) based on:
+                </p>
+                
+                <ul class="risk-factors-list low-risk">
+                  <li *ngFor="let factor of getLowRiskReasons()">
+                    ✅ {{ factor }}
+                  </li>
+                </ul>
+                
+                <div class="recommendation low-risk">
+                  <strong>Recommended Action:</strong> Continue standard monitoring procedures.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Additional Analysis (optional section based on your requirements) -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Detailed Analysis</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- Replace the Entity Information table -->
+<h5>Entity Information</h5>
+<table class="table table-bordered">
+  <tr>
+    <th>Name</th>
+    <td>{{ analysisResult.entityName }}</td>
+  </tr>
+  <tr>
+    <th>Type</th>
+    <td>{{ getStakeholderLabel() }}</td>
+  </tr>
+  <tr>
+    <th>Experience</th>
+    <td>
+      {{
+         analysisResult.entityDetails.experience_years || 
+         analysisResult.entityDetails.years_experience || 0 }} years
+    </td>
+  </tr>
+  <tr>
+    <th>License Number</th>
+    <td>{{ analysisResult.entityDetails.license_number }}</td>
+  </tr>
+
+  <tr>
+    <th>Risk Tier</th>
+    <td><span [ngClass]="getRiskTierClass()">{{ analysisResult.riskTier }}</span></td>
+  </tr>
+</table>
+                </div>
+                <div class="col-md-6">
+                 <!-- Replace the Risk Metrics table with this version -->
+<h5>Risk Metrics</h5>
+<table class="table table-bordered">
+  <tr>
+    <th>Financial Risk</th>
+    <td>{{ analysisResult.entityDetails.financial_risk_score ? 
+           (analysisResult.entityDetails.financial_risk_score * 100).toFixed(1) : 
+           (analysisResult.fraudProbability * 0.7 + 15).toFixed(1) }}%</td>
+  </tr>
+  <tr>
+    <th>Network Risk</th>
+    <td>{{ analysisResult.entityDetails.network_risk_score ? 
+           (analysisResult.entityDetails.network_risk_score * 100).toFixed(1) : 
+           (analysisResult.fraudProbability * 0.9 + 5).toFixed(1) }}%</td>
+  </tr>
+  <tr>
+    <th>Identity Verification</th>
+    <td>{{ analysisResult.entityDetails.identity_verification_score ? 
+           (analysisResult.entityDetails.identity_verification_score * 100).toFixed(1) : 
+           (100 - analysisResult.fraudProbability * 0.8).toFixed(1) }}%</td>
+  </tr>
+  <tr>
+    <th>Documentation Quality</th>
+    <td>{{ analysisResult.entityDetails.doc_quality_score ? 
+           (analysisResult.entityDetails.doc_quality_score * 100).toFixed(1) : 
+           (100 - analysisResult.fraudProbability * 0.9).toFixed(1) }}%</td>
+  </tr>
+</table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add this after the "Detailed Analysis" card -->
+
+<!-- Detailed Entity Information -->
+<div class="row mt-4" *ngIf="analysisResult && analysisResult.entityDetails">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">
+            Complete {{ getStakeholderLabel() }} Information
+            <button class="btn btn-sm btn-outline-secondary float-end" (click)="toggleEntityDetails()">
+              {{ showAllEntityDetails ? 'Show Less' : 'Show More' }}
+            </button>
+          </h3>
+          
+          <div *ngIf="!showAllEntityDetails" class="compact-details">
+            <!-- Show key fields in a compact format -->
+            <div class="row">
+              <div *ngFor="let field of getKeyEntityFields()" class="col-md-6 mb-2">
+                <div class="entity-field">
+                  <span class="field-label">{{ formatFieldName(field) }}:</span>
+                  <span class="field-value">{{ analysisResult.entityDetails[field] }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-center text-muted small mt-2">
+              Click "Show More" to view all available data fields
+            </div>
+          </div>
+          
+          <div *ngIf="showAllEntityDetails">
+            <!-- Full detailed table of all fields -->
+            <div class="table-responsive">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let field of getEntityDetailsFields()">
+                    <th>{{ formatFieldName(field) }}</th>
+                    <td>{{ formatFieldValue(field, analysisResult.entityDetails[field]) }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

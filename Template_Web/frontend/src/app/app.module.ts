@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms'; // Add this import
+import { HttpClientModule } from '@angular/common/http'; // Add this import
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
@@ -24,7 +25,10 @@ import { ContactComponent } from './components/sections/contact/contact.componen
     ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule // Add this module to your imports array
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
