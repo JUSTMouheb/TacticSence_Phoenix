@@ -1,0 +1,512 @@
+club_name,club_tier,international_exposure,league_strength,league_exposure,club_reputation_notes
+1º de Agosto,Tier 1,High (CAF),3.5,Medium-High,One of Angola’s most decorated clubs
+1º de Maio,Tier 1,Low,2.5,Medium,"Competes in Angola's Girabola, less success than 1º de Agosto"
+Abia Warriors,Tier 1,Low,3.0,Medium,"Competes in Nigerian Premier League, not internationally known"
+AC Mamahira,Tier 2,None,1.5,Low,Limited data; likely local Malian club
+Academia F. Amadou Diallo,Tier 2,Low (Academy ties),2.0,Medium,Youth-focused club in Côte d'Ivoire; exports players
+Academica do Soyo,Tier 2,None,2.0,Low,"Based in Angola, not much regional presence"
+Academica Lobito,Tier 1,Low,2.5,Medium,Mid-table team in Angola’s top tier
+Accra Great Olympics,Tier 1,Medium,3.0,Medium-High,Historical Ghanaian club; strong local fanbase
+Accra Lions FC,Tier 1,Medium (exports),3.0,Medium,"Focus on youth development, rising in Ghana"
+Adamawa United,Tier 2,None,2.0,Low,"Nigerian club, not consistently in NPFL"
+Aduana Stars,Tier 1,Medium,3.2,Medium,Former Ghana Premier League champions
+Aduana Stars,Tier 1,Medium,3.2,Medium,Ghanaian club; 2-time league champions
+Adzope,Tier 2,Low,2.0,Low,Lower-division Ivorian club
+Africa Sports National,Tier 1,High (CAF historic),3.5,Medium-High,Historic powerhouse in Côte d'Ivoire with CAF trophies
+Aigle Royal,Tier 1,Medium,3.0,Medium,Based in Cameroon; consistent league presence
+Ain Fakroun,Tier 2,None,2.0,Low,"Algerian club, sporadic top-tier appearances"
+Ajax Cape Town,Tier 1,Medium (exports),3.2,High,"Strong youth academy, linked to Ajax Amsterdam"
+Akokana,Tier 2,None,1.5,Low,Nigerien club with limited exposure
+Akwa Starlets,Tier 2,None,2.0,Low,"Nigerian club, feeder to Akwa United"
+Akwa United,Tier 1,Medium,3.0,Medium,"Nigerian top-flight club, league title in 2021"
+Al Ahli Khartoum,Tier 1,Medium (CAF entries),2.8,Medium,One of Sudan’s consistent league teams
+Al Ahli Tripoli,Tier 1,High,3.0,Medium,One of Libya’s most successful clubs; regular CAF participant
+Al Ahli Wad Medani,Tier 1,Low,2.5,Low,Sudanese club with historic presence but less recent success
+Al Ahly,Tier 1,Very High,5.0,Global,Africa's most decorated club; CAF Champions League giants
+Al Ahly Benghazi,Tier 1,Medium,3.0,Medium,Libyan side with solid domestic record and CAF appearances
+Al Ahly Merowe,Tier 1,Low,2.5,Low,Emerging club in Sudan with recent CAF Confederation participation
+Al Ahly Shendi,Tier 1,Medium,2.8,Medium,Solid Sudanese club with regional visibility
+Al Amir,Tier 2,None,1.8,Low,Lower-tier Sudanese team with minimal exposure
+Al Fallah Atbara FC,Tier 2,None,2.0,Low,Sudanese club with local relevance only
+Al Hilal Kadougli,Tier 1,Low,2.5,Low,"Participates in Sudan’s top division, no major honors"
+Al Hilal Omdurman,Tier 1,High,4.0,High,Top Sudanese club with strong CAF history and regional dominance
+Al Hilal Port Sudan,Tier 1,Low,2.5,Low,Sudanese club competing in top division with limited continental presence
+Al Ittihad,Tier 1,High,3.5,Medium-High,"Major Libyan club, multiple CAF appearances and strong domestic record"
+Al Khartoum SC,Tier 1,Medium,2.8,Medium,Strong club in Sudanese Premier League with CAF participation
+Al Masry,Tier 1,High,4.0,High,"Historic Egyptian club, regularly qualifies for CAF competitions"
+Al Mokawloon Al Arab,Tier 1,Medium,3.5,Medium-High,Egyptian club with strong youth system and decent continental history
+Al Mourada,Tier 1,Low,2.5,Low,Sudanese club with past success but limited recent visibility
+Al Nasr FC,Tier 1,Medium,3.0,Medium,Name shared by several African clubs; commonly Libyan or Egyptian with CAF presence
+Al Rabta Kosti,Tier 2,None,2.0,Low,Lower-tier club in Sudan with limited reach
+Al Sharkeyah,Tier 2,None,2.2,Low,Egyptian club occasionally promoted to Premier League
+Al Shimali,Tier 2,None,1.8,Low,Local Sudanese club with minimal exposure
+Al Shorta Al Qadarif,Tier 1,Low,2.5,Low,Sudanese top-division club with local prominence
+Al-Ahli Atbara,Tier 1,Low,2.5,Low,Based in Sudan; occasional CAF preliminary appearances
+Al-Ittihad,Tier 1,Medium,3.2,Medium,Name shared by several clubs; likely Libya or Sudan with regional relevance
+Al-Ittihad Al-Sakandary,Tier 1,Medium,3.8,High,"Alexandria-based Egyptian club; historic, consistent in Premier League"
+Al-Mergheni,Tier 2,None,2.0,Low,Sudanese second-division club; limited regional presence
+Al-Merreikh,Tier 1,High,4.0,High,One of Sudan’s most decorated clubs; strong CAF presence
+Al-Nil,Tier 2,None,2.0,Low,Likely Sudanese or Egyptian club with low media coverage
+Ala'ab Damanhour,Tier 2,None,2.2,Low,Egyptian lower-tier club with brief Premier League history
+Alamal Atbara,Tier 1,Medium,2.8,Medium,Sudanese club with recent CAF Confederation Cup appearances
+Alkali Nassara,Tier 2,None,1.8,Low,Little-known Sudanese team with low competitive record
+AmaZulu FC,Tier 1,Medium,3.5,High,South African Premier Division team with strong fanbase and CAF appearances
+Amidaus Professionals FC,Tier 2,None,2.0,Low,Ghanaian club; formerly in top flight but now largely inactive
+Annaba,Tier 2,None,2.2,Low,"Algerian club often in second division, some historical presence"
+Apejes de Mfou,Tier 1,Low,3.0,Medium,Cameroonian club known for youth development and top division stability
+AS Ain M'lila,Tier 1,Low,2.8,Medium,Algerian top-tier club with fluctuating success
+AS Avenir de Tombouctou,Tier 2,None,2.0,Low,Malian regional club; limited top-flight experience
+AS Bamako,Tier 1,Medium,3.0,Medium,Malian first division club; mid-level domestic contender
+AS Eliwidj FC,Tier 2,None,1.8,Low,Lesser-known West African club with limited coverage
+AS Fortuna,Tier 1,Low,2.8,Medium,Cameroonian Ligue 1 club with youth talent focus
+AS Kasserine,Tier 2,None,2.2,Low,Tunisian second-tier team with past top-flight appearances
+AS Korofina,Tier 2,None,2.0,Low,Malian lower-division club with limited national recognition
+AS Matelots,Tier 2,None,2.0,Low,Ivorian or Cameroonian regional club; low exposure
+AS Nianan,Tier 2,None,2.0,Low,Based in Mali; small club occasionally in Ligue 1
+AS Police,Tier 1,Low,2.5,Medium,"Name shared in several countries (Mali, Niger, etc.); typically government-affiliated"
+AS Real Bamako,Tier 1,High,3.5,Medium,Top club in Mali; multiple league titles and CAF appearances
+AS Rejiche,Tier 1,Low,2.8,Medium,Tunisian club with recent top-tier appearances
+AS Sale,Tier 2,None,2.5,Medium,Moroccan second division club with historical presence
+AS Slimane,Tier 1,Low,2.8,Medium,Tunisian Ligue 1 side; mid-table performer
+AS Tanda,Tier 1,Medium,3.0,Medium,Ivorian club with Ligue 1 title in 2014–2015 season
+AS-FAN,Tier 1,Medium,3.0,Medium,Nigerien club representing the military; regular continental qualifiers
+Asante Kotoko,Tier 1,Very High,4.0,High,One of Ghana’s biggest clubs; multiple CAF Champions League finals
+ASEC Mimosas,Tier 1,Very High,4.0,High,Top Ivorian club; famous for youth academy and continental dominance
+ASGNN,Tier 1,Medium,3.0,Medium,Niger Armed Forces club with frequent CAF Confederation participation
+Ashanti Gold FC,Tier 1,High,3.5,High,Historic Ghanaian club; CAF finalists in 1997
+ASI D'Abengourou,Tier 1,Low,2.8,Medium,Ivorian club with top-division experience and limited CAF record
+ASM Oran,Tier 2,None,2.2,Low,Algerian second-tier club with a strong regional presence
+ASO Chlef,Tier 1,Medium,3.0,Medium,Algerian club with top-flight success and occasional CAF appearances
+Astres FC de Douala,Tier 1,Medium,3.0,Medium,Cameroonian club regularly participating in Elite One
+Aswan FC,Tier 1,Low,2.8,Medium,Egyptian club with fluctuating presence in the Premier League
+Asyut Petrol,Tier 2,None,2.2,Low,Egyptian second-tier team with limited national visibility
+Atar Club,Tier 2,None,1.8,Low,Likely regional Mauritanian club with minimal exposure
+Atletico do Namibe,Tier 2,None,2.0,Low,"Angolan club formerly in top flight, now with limited visibility"
+Atletico Petro Luanda,Tier 1,High,4.0,High,Top Angolan club; regular in CAF Champions League
+Atletico Sport Aviacao,Tier 1,Medium,3.0,Medium,Angolan club known as ASA; had strong league presence in 2000s
+Avenir de La Marsa,Tier 2,None,2.5,Medium,Historic Tunisian club; currently in Ligue 2
+Avion Fc Du Nkam,Tier 1,Low,2.8,Medium,Cameroonian Elite One club; emerging talent base
+Azam,Tier 1,High,3.5,High,Tanzanian club consistently challenging Simba and Yanga; strong CAF performances
+Bakaridjan de Baroueli,Tier 1,Low,2.8,Medium,Malian Ligue 1 club; mid-table contender with growing profile
+Bamboutos,Tier 1,Medium,3.2,Medium,Popular Cameroonian club with strong local support and CAF potential
+Bantu Rovers,Tier 2,Low,2.0,Low,Zimbabwean developmental club; known for exporting youth talent
+Baroka FC,Tier 1,Low,3.0,Medium,South African club known for strong cup runs; relegated in 2022 but with Premier Division history
+Bayelsa United,Tier 1,Medium,3.0,Medium,Nigerian club; FA Cup winner with previous CAF Confederation participation
+Bechem United,Tier 1,Low,2.8,Medium,Ghanaian Premier League side; known for developing local talent
+Ben Guerdane,Tier 1,Low,2.8,Medium,Tunisian Ligue 1 club; known for mid-table consistency and defensive play
+Bendel Insurance,Tier 1,Medium,3.2,Medium,Historic Nigerian club with recent rise and national cup wins
+Benfica Luanda,Tier 1,Medium,3.0,Medium,Angolan top-tier club affiliated with SL Benfica; past CAF appearances
+Beni-Khalled,Tier 2,None,2.0,Low,Tunisian second-division team with past Ligue 1 appearances
+Berekum Arsenal,Tier 2,Low,2.2,Low,"Ghanaian club with history in top flight, now playing in lower divisions"
+Berekum Chelsea FC,Tier 1,Medium,3.0,Medium,Ghana Premier League champions in 2011; participated in CAF Champions League
+Bibiani Gold Stars F.C.,Tier 1,Low,2.8,Medium,Ghanaian club with recent promotion to Premier League and competitive rise
+Bidvest Wits,Tier 1,High,4.0,High,Historic South African club; won PSL title in 2016–17; sold its license in 2020
+Black Leopards,Tier 1,Low,2.8,Medium,South African club with PSL experience; yo-yo between top and second tier
+Black Mambas,Tier 2,None,2.0,Low,Zimbabwean club with law enforcement affiliation; limited exposure
+Black Rhinos,Tier 1,Low,2.8,Medium,Zimbabwe Premier League club with a history of disciplined play and army ties
+Bloemfontein Celtic,Tier 1,Medium,3.5,High,Well-supported South African club; license sold to Royal AM in 2021
+Botafogo FC,Tier 2,None,2.0,Low,"Name used by multiple local clubs (e.g. Nigeria, Angola); usually lower-tier"
+Bouake FC,Tier 1,Low,2.8,Medium,Ivorian Ligue 1 club; stable mid-table team
+Brong Ahafo Stars,Tier 2,None,2.0,Low,Ghanaian second-tier team; former Premier League participant
+Buffaloes FC,Tier 1,Low,2.5,Low,Zimbabwean club with army links; sporadic Premier League performances
+Buildcon,Tier 1,Medium,3.0,Medium,Zambian Super League club; known for hiring foreign players and coaches
+Bukola Babes,Tier 2,Low,2.2,Low,Nigerian club now known as ABS FC; known for youth development
+Bulawayo Chiefs,Tier 1,Low,2.8,Medium,Zimbabwean Premier League club known for witty social media presence
+Bulawayo City FC,Tier 1,None,2.5,Low,Municipal club from Zimbabwe with occasional Premier League presence
+C.D. Lunda Sul,Tier 1,Low,2.8,Low,Angolan club from Lunda Sul province; rising presence in Girabola
+CA Batna,Tier 2,None,2.2,Low,Algerian club with historical Ligue 1 experience
+CA Bizertin,Tier 1,Medium,3.2,Medium,Tunisian top-flight club; winner of CAF Cup in 1988
+CA Bordj Bou Arreridj,Tier 2,Low,2.5,Low,Algerian club with fluctuating presence between top two divisions
+Cabinda,Tier 1,Low,2.8,Low,May refer to Sporting Cabinda or other local teams in Angola’s Girabola
+Caiman Douala,Tier 2,None,2.2,Low,Cameroonian lower-tier club; based in football-rich Douala
+Canon Sportif,Tier 1,High,3.8,Medium-High,One of Cameroon’s most successful clubs; multiple CAF titles
+Cape Town City FC,Tier 1,Medium,3.8,High,South African Premier Division club; reformed in 2016 with strong domestic performance
+CAPS United,Tier 1,High,3.5,Medium,Top Zimbabwean club; multiple league titles and CAF Champions League appearances
+CAS de Sevare,Tier 2,None,2.0,Low,Malian regional team with limited competitive record
+Centre Salif Keita,Tier 2,Low,2.5,Low,Malian academy club founded by Salif Keita; known for talent production
+Ceramica Cleopatra,Tier 1,Low,3.0,Medium,Emerging Egyptian Premier League team with corporate backing
+Chabab Atlas Khenifra,Tier 2,None,2.2,Low,Moroccan club with limited exposure and occasional top-tier appearances
+Chabab Rif Al Hoceima,Tier 1,Low,2.8,Medium,Moroccan club formerly in Botola Pro; now less active competitively
+Chambishi FC,Tier 1,None,2.8,Low,Zambian Super League club with mid-table profile
+Chapungu United,Tier 1,Low,2.5,Low,Zimbabwean Air Force club; relegated and promoted multiple times
+Chicken Inn FC,Tier 1,Medium,3.0,Medium,Top Zimbabwean club; Premier League champions in 2015
+Chippa United,Tier 1,Low,3.0,High,South African Premier Division club known for instability in coaching staff but strong visibility
+Chiredzi FC,Tier 2,None,2.0,Low,Zimbabwean lower-tier club; formerly in Premier League but currently inactive
+Club Africain,Tier 1,Very High,4.5,High,One of Tunisia’s most iconic clubs; CAF Champions League winner in 1991
+Club Olympique de Medenine,Tier 2,None,2.2,Low,Tunisian club with occasional top-flight appearances
+Club Omnisports de Korhogo (CIV),Tier 2,None,2.0,Low,Ivorian regional club with little national presence
+CO Bouafle,Tier 2,None,2.2,Low,Ivorian team with minor domestic impact
+CODM Meknes,Tier 2,Low,2.5,Medium,Historic Moroccan club; past Botola champion now in second division
+Colombe du Dja et Lobo,Tier 1,Low,2.8,Medium,Cameroonian Elite One team with growing reputation
+Cosmos de Bafia,Tier 2,None,2.0,Low,Cameroonian club relegated from Elite One in recent years
+Coton Sport,Tier 1,Very High,4.2,High,Top Cameroonian club; consistent CAF Champions League performer
+CR Belouizdad,Tier 1,High,4.0,High,Top Algerian club with recent league dominance and regular CAF Champions League appearances
+Cranborne Bullets FC,Tier 1,None,2.5,Low,Zimbabwean Premier League team; relatively new to top-flight football
+Crown FC,Tier 2,None,2.0,Low,Nigerian club with brief top-tier spell; currently in second division
+CS Constantine,Tier 1,High,3.8,High,Historic Algerian club; national champion and frequent CAF competitor
+CS Hammam-Lif,Tier 2,Low,2.5,Medium,Tunisian club with historical top-flight presence and multiple cup titles
+CS Sfaxien,Tier 1,Very High,4.5,High,One of Tunisia’s most successful clubs; multiple CAF Confederation Cup titles
+Dan Kassawa,Tier 1,Low,2.5,Low,Nigerien club with domestic top-tier participation
+Debo Club,Tier 2,None,2.0,Low,Malian lower-division club with minimal exposure
+Delta Force FC,Tier 2,None,2.0,Low,Nigerian club briefly promoted to NPFL; currently inactive
+Denguele Sport,Tier 1,Low,2.8,Medium,Ivorian Ligue 1 team with modest CAF appearances
+Desportivo Da Huila,Tier 1,Low,2.8,Medium,Angolan Girabola club; stable top-flight presence
+Diaraf,Tier 1,High,3.5,Medium,Senegalese giants; multiple league titles and CAF appearances
+Difaa El Jadida,Tier 1,High,3.5,High,Competitive Moroccan club; regular in Botola Pro and continental tournaments
+Djoliba AC,Tier 1,High,3.8,Medium-High,Top Malian club with strong national and continental track record
+Dolphins FC,Tier 1,Medium,3.2,Medium,Nigerian club merged into Rivers United; historic FA Cup winners
+Domant FC,Tier 2,None,2.2,Low,Angolan team with past Girabola experience; currently less visible
+Dongo,Tier 2,None,2.0,Low,Likely a local/regional club with little public data available
+Douanes Niamey,Tier 1,Medium,3.0,Medium,Top club in Niger; regularly represents the country in CAF competitions
+Douglas Warriors,Tier 2,None,2.0,Low,Zimbabwean second-tier club; limited competitive presence
+Dragon de Yaounde,Tier 1,Medium,3.0,Medium,Historic Cameroonian club with domestic titles and strong fan base
+DRB Tadjenanet,Tier 2,None,2.5,Low,Algerian club with brief top-flight run in the mid-2010s
+Dreams FC,Tier 1,Medium,3.2,Medium,Ghanaian club known for youth development and current CAF Confederation Cup run
+Duguwolofila,Tier 2,None,2.0,Low,Malian club with minimal visibility; occasional top-tier appearances
+Dynamos,Tier 1,Very High,4.0,High,Zimbabwe’s most successful club; strong CAF history and local dominance
+Eagles,Tier 2,None,2.0,Low,Club name used by several lower-tier teams; context-specific identity
+Ebusua Dwarfs,Tier 1,Low,2.8,Medium,Historic Ghanaian club with strong local roots and a loyal fanbase
+Eding Sport FC,Tier 1,Medium,3.0,Medium,Cameroonian club that won the league in 2016–17; rising domestic power
+EFYM,Tier 2,None,2.2,Low,Ivorian club with a focus on education and training; lower-tier in Ligue 2
+EGS Gafsa,Tier 1,Low,2.8,Medium,Tunisian club with recent top-flight return; consistent performer in Ligue 2
+El Dakhleya,Tier 1,Low,2.8,Medium,Egyptian club with a police affiliation; in and out of the Premier League
+El Entag El Harby,Tier 1,Low,3.0,Medium,Egyptian club owned by the Ministry of Military Production; fluctuates between divisions
+El Geish,Tier 1,Medium,3.2,Medium,Also known as Tala'ea El Gaish SC; strong Egyptian side with military ties and recent cup success
+El Gounah,Tier 1,Low,2.8,Medium,Egyptian Premier League club with modern facilities and coastal backing
+El Kanemi Warriors,Tier 1,Low,3.0,Medium,Nigerian club based in Maiduguri; consistent NPFL team with strong home presence
+El Mansura,Tier 2,None,2.2,Low,Egyptian second-division club with historical top-flight appearances
+El Minya,Tier 2,None,2.2,Low,Egyptian club with limited success outside of regional leagues
+El Nasr Tadeen,Tier 2,None,2.0,Low,Egyptian team with brief Premier League appearance in 2016–17
+El Nsoor,Tier 2,None,2.0,Low,Sudanese lower-division team with little competitive history
+El Raja,Tier 2,None,2.3,Low,Egyptian club from Marsa Matruh; known for brief top-flight spell in 2017–18
+El Zamalek,Tier 1,Very High,5.0,Global,One of Africa’s elite clubs; multiple-time CAF and Egyptian Premier League champions
+El-Sharkia Lel Dokhan (Eastern Company SC),Tier 1,Low,2.8,Medium,Egyptian club with tobacco industry backing; recent promotion to Premier League
+Eleven Wise,Tier 2,None,2.0,Low,Historic Ghanaian club from Sekondi; currently outside top flight
+Eleven Wonders FC,Tier 1,None,2.8,Medium,Ghanaian Premier League club known for defensive style and underdog spirit
+Elmina Sharks,Tier 1,Low,2.8,Medium,Coastal Ghanaian club with growing reputation in the Premier League
+ENPPI,Tier 1,Medium,3.2,Medium,Egyptian Petroleum club; regular in Premier League with past CAF entries
+Entente Sportive du Bafing,Tier 1,Low,2.8,Medium,Ivorian Ligue 1 club; known for physical play and recent promotion
+Enugu Rangers,Tier 1,High,3.8,High,One of Nigeria’s most storied clubs; multiple NPFL and CAF appearances
+Enyimba,Tier 1,Very High,4.5,High,Nigeria’s most successful club; 2× CAF Champions League winners
+EO Sidi Bouzid,Tier 1,Low,2.8,Medium,Tunisian club with recent top-flight entry and disciplined play
+ES Bingerville,Tier 2,None,2.2,Low,Ivorian second-division team with limited national exposure
+ES Setif,Tier 1,Very High,4.5,High,One of Algeria’s top clubs; 2× CAF Champions League winners
+Esperance de Tunis,Tier 1,Very High,5.0,Global,Tunisia’s most successful club; 4× CAF Champions League winners
+Espoir,Tier 2,None,2.0,Low,Common name in Rwanda and Burkina Faso; typically used by lower-tier development clubs
+Etoile du Sahel,Tier 1,Very High,4.8,High,CAF Champions League and Confederation Cup winners; historic Tunisian powerhouse
+Etoile Metlaoui,Tier 1,Low,2.8,Medium,Tunisian Ligue 1 club; consistent but not a title contender
+FAR Rabat,Tier 1,High,4.0,High,Moroccan army club; multiple-time league and African Cup Winners' Cup champions
+Fauve Azur Elite FC,Tier 1,Low,2.8,Medium,Cameroonian Elite One club with recent top-tier presence
+FC Bravos DO Maquis,Tier 1,Low,2.8,Low,Angolan Girabola club; mid-table regulars with local fanbase
+FC Masr,Tier 1,Low,2.8,Medium,Cairo-based Egyptian club with growing ambitions; formerly in Premier League
+FC Platinum,Tier 1,High,3.5,Medium,Top Zimbabwean club; frequent league champion and CAF participant
+FC Struga Trim-Lum,Tier 1,Medium,3.2,Medium,North Macedonian club that recently rose to the top tier and earned European qualification
+Ferroviario da Beira,Tier 1,High,3.5,Medium,Top club from Mozambique; known for strong CAF Champions League performances
+Ferroviario Do Huambo,Tier 2,None,2.2,Low,"Angolan club with historical relevance, currently not in top flight"
+Feutcheu FC,Tier 1,Low,2.8,Medium,Cameroonian club focused on youth development; consistent Elite One competitor
+FK Borec Veles,Tier 1,Low,2.8,Medium,North Macedonian club with occasional top-tier appearances
+Flame Lilly,Tier 2,None,2.0,Low,Zimbabwean police-affiliated team with limited Premier League presence
+Forest Rangers,Tier 1,Medium,3.2,Medium,Zambian Super League club; recent rise in performance and CAF qualifiers
+Fovu de Baham,Tier 1,Medium,3.0,Medium,Cameroonian club with national cup wins and stable top-flight presence
+Free State Stars,Tier 2,Low,2.5,Medium,Historic South African club; won the Nedbank Cup in 2018 but relegated in 2019
+FUS Rabat,Tier 1,High,4.0,High,Prominent Moroccan club; CAF Confederation Cup winner in 2010
+Future FC,Tier 1,Medium,3.2,High,Fast-rising Egyptian club with recent CAF Confederation Cup appearances and strong backing
+Gabes,Tier 2,None,2.3,Low,Tunisian club from southern Tunisia; history in Ligue 1 but now in lower divisions
+Gaborone United,Tier 1,Medium,3.0,Medium,One of Botswana’s top clubs; regular in CAF competitions
+Gateway FC,Tier 2,None,2.0,Low,Nigerian club with brief national recognition; currently in lower tiers
+GD Baixa de Kassanje,Tier 1,Low,2.5,Low,Angolan club recently promoted to Girabola; limited national impact
+GFK Tikvesh,Tier 1,Low,2.8,Medium,North Macedonian club with historical importance and recent top-tier presence
+Ghazl El Mehalla,Tier 1,Low,3.0,Medium,Egyptian Premier League club with a strong history and one league title (1973)
+Giwa FC,Tier 2,None,2.0,Low,Nigerian club banned from NPFL in 2016 due to administrative issues
+Go Round,Tier 2,None,2.0,Low,Brief NPFL stint; currently in Nigerian second division
+Gombe United,Tier 1,Low,2.8,Medium,Nigerian club with recurring presence in NPFL and local fan support
+Green Buffaloes,Tier 1,Medium,3.0,Medium,Zambian army club; consistent performer in Super League with CAF experience
+Green Eagles,Tier 1,Medium,3.2,Medium,Zambian club regularly competing in CAF Confederation Cup
+Grombalia Sports,Tier 2,None,2.2,Low,Tunisian club with brief Ligue 1 history; now mostly in lower divisions
+Gunners,Tier 1,Medium,2.8,Medium,Zimbabwean club; 2009 league champions and CAF participant
+Hamam Sousse,Tier 1,Low,2.8,Medium,Tunisian Ligue 1 team with competitive but mid-tier performance
+Harare City,Tier 1,Low,2.8,Medium,Municipal Zimbabwean club; former FA Cup winner with decent league record
+Haras El-Hodood SC,Tier 1,Medium,3.0,Medium,Egyptian military-affiliated club with Premier League history and cup success
+Hardbody,Tier 2,None,2.0,Low,Zimbabwean club with a short-lived top-tier appearance and humorous name recognition
+Hasaacas,Tier 2,Low,2.5,Low,"Ghanaian club with rich history, currently in Division One; former Premier League champions"
+Hassania Agadir,Tier 1,High,3.5,High,One of Morocco's historic clubs; strong CAF and Botola Pro competitor
+Hay Al Arab,Tier 1,Medium,3.0,Medium,Sudanese club from Port Sudan; known for its long-standing league participation
+Hay Al Wadi SC,Tier 1,Low,2.8,Low,Sudanese club with consistent top-flight appearances but limited visibility
+HB Chelghoum Laid,Tier 1,Low,2.8,Medium,Algerian club with recent promotion to Ligue 1; competitive performances
+Heart of Lions,Tier 2,Low,2.5,Low,Ghanaian club with past Premier League experience; currently in Division One
+Heartland FC,Tier 1,Medium,3.2,Medium,Nigerian club with a strong legacy and past CAF Champions League final appearance (2009)
+Hearts of Oak,Tier 1,Very High,4.5,High,One of Ghana’s biggest clubs; CAF Champions League winners in 2000
+Herentals FC,Tier 1,Low,2.8,Medium,Zimbabwean Premier League club sponsored by Herentals Group of Colleges
+Highlanders,Tier 1,High,3.5,High,One of Zimbabwe’s oldest and most popular clubs; strong local and regional reputation
+Highlands Park,Tier 2,Low,2.8,Medium,South African club formerly in PSL; sold top-flight license in 2020
+Highway,Tier 2,None,2.0,Low,Lesser-known Zimbabwean club; limited national and regional visibility
+Hilal Al-Obayed,Tier 1,Medium,3.0,Medium,Sudanese club known for recent CAF Confederation Cup appearances and solid league finishes
+Hilal El-Fasher,Tier 1,Low,2.8,Low,Top-division Sudanese club with growing domestic presence
+Hire,Tier 2,None,1.8,Low,Little-known regional team; unclear country reference — likely local/Ivorian
+Horoya AC,Tier 1,Very High,4.5,High,Guinea’s most successful club; dominant domestically and frequent CAF semi-finalist
+How Mine,Tier 1 (defunct),Medium,3.0,Medium,Zimbabwean club sponsored by mining company; folded in 2018 after strong CAF run
+Hwange,Tier 1,Low,2.8,Medium,Zimbabwean Premier League club; formerly known as Wankie FC with long history
+Ifeanyi Ubah United,Tier 1,Medium,3.0,Medium,Privately owned Nigerian club; NPFL champions in 2016 Federation Cup
+Ikorodu United,Tier 2,None,2.0,Low,Nigerian club briefly in NPFL; currently in lower divisions
+Indeni FC,Tier 1,Low,2.8,Low,Zambian club with recent Super League appearances; limited continental record
+Inter Allies FC,Tier 2,Low,2.5,Low,Ghanaian club known for youth exports and past Premier League participation
+Interclube de Angola,Tier 1,Medium,3.0,Medium,Angolan club with strong local support and regular Girabola and CAF participation
+Ismaily SC,Tier 1,High,4.0,High,Egyptian club with CAF Champions League title in 1969 and rich history
+Issia Wazi,Tier 2,None,2.2,Low,Ivorian club with brief Ligue 1 appearances and limited recent exposure
+Ittihad El-Shorta,Tier 2,None,2.5,Low,Egyptian police-affiliated club; has played in Premier League in past years
+Ittihad Tanger,Tier 1,Medium,3.5,High,Popular Moroccan club; won Botola Pro in 2017–18
+Ittihad Zemouri de Khemisset,Tier 2,None,2.3,Low,Moroccan club with historical top-flight appearances but now in lower leagues
+Jangorzo,Tier 2,None,2.0,Low,Little-known Nigerien club with minimal national presence
+Jazeerat Al Feel,Tier 2,None,2.0,Low,Sudanese lower-division team; rarely featured at national level
+JC Abidjan,Tier 2,Low,2.2,Low,Ivorian club with development focus; fluctuates between divisions
+Jeanne d'Arc de Bamako,Tier 2,None,2.3,Low,Malian club with past Ligue 1 presence and historical relevance
+Jeunesse Sportive Soualem,Tier 1,Low,2.8,Medium,Recently promoted Moroccan Botola Pro club; rising domestic presence
+Jigawa Golden Stars,Tier 1,Low,2.8,Medium,Nigerian club with NPFL history; promoted and relegated multiple times
+Jomo Cosmos,Tier 2,Medium,2.5,Medium,South African club known for producing top talent; formerly in PSL
+JS Kabylie,Tier 1,Very High,4.5,High,Most successful Algerian club; 2× CAF Champions League winners
+JS Kairouanaise,Tier 2,Low,2.5,Medium,"Historic Tunisian club with past top-tier glory, currently in Ligue 2"
+JS Saoura,Tier 1,High,3.8,High,Algerian club from the Sahara; regular CAF participant and league title contender
+JSK Chabab Kasba Tadla,Tier 2,None,2.2,Low,Moroccan club with brief Botola Pro spell; now in lower divisions
+JSM Bejaia,Tier 2,Low,2.5,Low,Algerian club with past Ligue 1 success and a CAF Confederation Cup final in 2012
+JSM Laayoune,Tier 2,None,2.0,Low,Moroccan regional club from the southern city of Laayoune; minimal top-tier exposure
+JSM Skikda,Tier 2,None,2.3,Low,Algerian club with brief top-flight appearance; currently playing in lower leagues
+JUTH FC,Tier 2,None,2.0,Low,Defunct Nigerian club previously affiliated with the Jos University Teaching Hospital
+Jwaneng Galaxy FC,Tier 1,High,3.5,Medium,Botswana’s top club; regular CAF Champions League participant
+Kabuscorp SCP,Tier 1,High,3.5,Medium,Angolan club known for signing famous internationals; won Girabola in 2013
+Kabwe Warriors,Tier 1,Medium,3.2,Medium,Zambian club with a strong historical legacy and league titles
+KAC Kenitra,Tier 2,Low,2.5,Low,Historic Moroccan club currently outside Botola Pro
+KACM Marrakech,Tier 2,Low,2.5,Low,Moroccan club with past Botola Pro status; currently rebuilding in lower divisions
+Kaduna United FC,Tier 2,None,2.0,Low,Nigerian club previously in NPFL; now struggling to regain top-tier status
+Kafue Celtic,Tier 1,Low,2.8,Medium,Zambian club known for developing Patson Daka; recently promoted to top tier
+Kaizer Chiefs,Tier 1,Very High,5.0,Global,South Africa’s most popular club; CAF Champions League finalists in 2021
+Kaloum Star,Tier 1,High,3.5,Medium,One of Guinea’s most historic clubs; frequent CAF participant
+Kalulushi Modern Stars,Tier 2,None,2.2,Low,Zambian club with history in Super League; currently fluctuating in lower tiers
+Kano Pillars,Tier 1,High,3.8,High,One of Nigeria’s biggest clubs; multiple NPFL titles and CAF appearances
+Kansanshi Dynamos,Tier 1,Low,2.8,Medium,Zambian Super League club with growing ambitions and mining company backing
+Karela United FC,Tier 1,Low,2.8,Medium,Ghanaian Premier League club with strong home form and vibrant support
+Katsina United,Tier 1,Low,2.8,Medium,Consistent NPFL team with solid performances and state backing
+KCCA FC,Tier 1,Very High,4.2,High,Uganda’s leading club; regular CAF Champions League and Confederation Cup contender
+Khroub,Tier 2,None,2.3,Low,Algerian club currently outside Ligue 1; historic mid-tier club
+Kiglon,Tier 2,None,2.0,Low,Zimbabwean club formerly in top flight; now defunct or restructured
+King Faisal,Tier 1,Low,2.8,Medium,Ghanaian Premier League club with fluctuating performance and strong youth policy
+Kitwe United,Tier 1,Low,2.8,Medium,Zambian club with strong history and loyal fan base; currently competitive in Super League
+Konkola Blades,Tier 1,Low,2.8,Medium,Zambian club with historical presence in the Super League; supported by the mining community
+Konkola Mine Police,Tier 2,None,2.2,Low,Lower-tier Zambian club affiliated with law enforcement and mining
+Kwara United,Tier 1,Medium,3.0,Medium,Nigerian club with consistent NPFL appearances and continental ambition
+Lamontville Golden Arrows,Tier 1,Medium,3.2,High,South African Premier Division club with strong local support and tactical discipline
+Lausanne,Tier 1,High,3.8,High,Swiss club (Lausanne-Sport); notable in Swiss Super League with history in UEFA competitions
+Legon Cities FC,Tier 1,Low,2.8,Medium,Rebranded Ghanaian Premier League club formerly known as Wa All Stars
+Lengthens,Tier 2,None,2.0,Low,Defunct or inactive Zimbabwean club; formerly played in Premier League
+Liberty Professionals,Tier 2,Medium,2.5,Medium,Ghanaian club famous for producing players like Michael Essien; recently relegated
+Liga Muculmana,Tier 1,High,3.5,Medium,Mozambican powerhouse with multiple league titles and CAF appearances
+Lime Hotspurs,Tier 2,None,2.0,Low,Zambian club previously in top division; now less competitive
+Lion Blesse,Tier 2,None,2.2,Low,Cameroonian club from Elite Two with limited national exposure
+LLB Academic,Tier 1,Medium,3.0,Medium,Top Burundian club; multiple domestic titles and CAF appearances
+Lobi Stars,Tier 1,High,3.5,Medium,Nigerian club; NPFL champions in 2018 and regular continental participant
+LPTA Tozeur,Tier 2,None,2.0,Low,Tunisian lower-league club with minimal national or regional exposure
+Lumwana Radiants,Tier 1,Low,2.8,Low,Zambian club from the copperbelt; mid-to-lower Super League side
+Lusaka Dynamos,Tier 1,Medium,3.0,Medium,Zambian Super League club with a history of signing international players
+Lys Sassandra,Tier 1,Low,2.8,Medium,Ivorian Ligue 1 club known for youth development and steady top-tier performance
+Maghreb Fes,Tier 1,High,3.8,High,Historic Moroccan club; CAF Confederation Cup and Throne Cup winners
+Mamelodi Sundowns FC,Tier 1,Very High,5.0,Global,South Africa’s most dominant club in the 2010s–2020s; CAF Champions League winners
+Manica Diamonds,Tier 1,Low,2.8,Medium,Zimbabwean Premier League club; recently promoted with corporate sponsorship
+Maritzburg United,Tier 1,Low,3.0,High,"South African club known as 'The Team of Choice'; consistent PSL performer, recently relegated"
+Marumo Gallants FC,Tier 1,Medium,3.2,Medium,"South African club; 2021–22 CAF Confederation Cup quarter-finalist, FA Cup winner"
+Masvingo United,Tier 2,None,2.3,Low,"Zimbabwean club with strong early 2000s presence, currently in lower divisions"
+Mbabane Swallows,Tier 1,High,3.5,Medium,Eswatini’s most successful club; regulars in CAF competitions
+MC Alger,Tier 1,Very High,4.5,High,Historic Algerian club; CAF Champions League winner (1976) and multiple domestic titles
+MC El Eulma,Tier 2,Low,2.5,Low,Algerian club with past Ligue 1 presence and short CAF Confederation Cup run
+MC Oran,Tier 1,Medium,3.5,Medium-High,Algerian club with strong fan base and multiple league titles in the 1990s
+MCO Oujda,Tier 1,Low,2.8,Medium,Mid-table Moroccan club with stable Botola Pro status and regional fan base
+Medeama SC,Tier 1,High,3.5,Medium-High,Ghanaian club; league champion in 2023 and CAF Champions League participant
+Merikh Kosti,Tier 2,None,2.2,Low,Sudanese lower-division club; overshadowed by top-tier teams
+Merreikh El-Fasher,Tier 1,Low,2.8,Medium,Sudanese Premier League club; mid-table performance with occasional strong runs
+Merreikh Nyala,Tier 2,None,2.2,Low,"Sudanese club with past top-flight participation, now outside of the spotlight"
+MFM FC,Tier 1,Medium,3.2,Medium,Nigerian club backed by a church ministry; NPFL runner-up in 2017 and CAF participant
+Mighty Jets,Tier 2,None,2.0,Low,One of Nigeria’s oldest clubs; former top-tier champions now in lower divisions
+Misr El Makasa,Tier 1,Medium,3.0,Medium,Egyptian club with rapid rise in the 2010s; finished 2nd in 2016–17 Premier League
+MO Bejaia,Tier 2,Low,2.5,Low,Algerian club; reached CAF Confederation Cup final in 2016 but since relegated
+Moghreb Tetouan,Tier 1,High,3.5,High,Moroccan club; Botola champions and CAF Champions League participant (2014)
+Monomatapa United,Tier 2,Low,2.3,Low,"Zimbabwean club; former champions in 2008, now inactive or restructured"
+Moossou FC,Tier 2,None,2.0,Low,"Ivorian club with brief top-tier history, now mostly in lower divisions"
+Moroka Swallows,Tier 1,Medium,3.2,High,Historic South African club; PSL founders with recent promotion and resurgence
+Motor Action,Tier 2,Low,2.3,Low,Zimbabwean club; 2010 champions but now inactive or dissolved
+MSP Batna,Tier 2,None,2.2,Low,"Algerian club with history in top divisions, now primarily in lower leagues"
+Mufulira Wanderers,Tier 1,High (historic),3.2,Medium,One of Zambia’s most decorated clubs; past CAF competition regular
+NA Hussein Dey,Tier 1,Medium,3.0,Medium,Algerian club with long Ligue 1 history and continental appearances
+Nacional de Benguela,Tier 2,None,2.0,Low,Angolan club with limited Girabola experience; now lesser known
+Nakambala Leopards,Tier 2,None,2.3,Low,Zambian club sponsored by a sugar company; relegated from top flight
+NAPSA Stars FC,Tier 1,Medium,3.2,Medium,Zambian club with recent continental competition and FA Cup success
+Nasarawa United,Tier 1,Medium,3.0,Medium,Nigerian club with strong home record and steady NPFL presence
+National Assembly,Tier 2,None,2.0,Low,Zambian government-affiliated team; minimal recent top-tier activity
+National Bank,Tier 2,None,2.2,Low,Likely refers to an Egyptian or Sudanese club with minimal exposure
+NC Magra,Tier 1,Low,2.8,Medium,Algerian Ligue 1 club with recent top-tier consistency and cup final appearance
+Nchanga Rangers,Tier 1,Low,2.8,Medium,Zambian club with a strong legacy in Copperbelt football; fluctuates between divisions
+Nembe City FC,Tier 2,None,2.0,Low,Nigerian club with a short spell in NPFL; now inactive
+New Edubiase FC,Tier 2,None,2.3,Low,Ghanaian club; won FA Cup in 2012 but relegated since
+New Star de Douala,Tier 1,Medium,3.0,Medium,Cameroonian club; top-tier presence and CAF Confederation Cup experience
+Ngezi Platinum FC,Tier 1,High,3.5,Medium,Zimbabwean club with rapid rise; FA Cup winners and strong league finishes
+NIGELEC,Tier 1,Medium,3.0,Medium,Top club from Niger; regular CAF Confederation Cup participant
+Niger Tornadoes,Tier 1,Low,2.8,Medium,Nigerian club; frequent NPFL presence with cup final appearances
+Njala Quan,Tier 2,None,2.2,Low,Cameroonian club with brief Elite One history; now in lower tiers
+Njube Sundowns,Tier 2,None,2.0,Low,Zimbabwean club with limited top-flight history; likely defunct or restructured
+Nkana FC,Tier 1,Very High,4.2,High,One of Zambia’s most successful clubs; CAF Champions League finalist in 1990
+Nkwazi,Tier 1,Low,2.8,Medium,Zambian police-affiliated club; mid-table Super League presence
+Nogoom FC,Tier 2,None,2.3,Low,Egyptian club formerly known as Nogoom El Mostakbal; focused on youth development
+Ocean Boys FC,Tier 2,None,2.2,Low,Defunct Nigerian club; FA Cup winners in 2008 but later disbanded
+OCK Khouribga,Tier 1,Medium,3.2,High,Well-known Moroccan club; past league champion and regular in Botola Pro
+Office Niger Sports,Tier 2,None,2.2,Low,Malian club from the Office du Niger region; limited domestic achievements
+OFTA FC,Tier 2,None,2.0,Low,Cameroonian second-division club; occasional Elite One promotion contender
+Olympic Club de Safi,Tier 1,Medium,3.3,High,Moroccan top-tier club; participated in CAF Confederation Cup in recent years
+Olympic El Qanah FC,Tier 2,Low,2.3,Low,Historic Egyptian club; has struggled to regain top-flight status in recent years
+Olympic Niamey,Tier 1,Medium,2.8,Medium,One of Niger’s top clubs; consistent Ligue 1 and CAF Confederation Cup participant
+Olympique Beja,Tier 1,Low,2.8,Medium,Tunisian Ligue 1 club; cup winners in the past with steady domestic performances
+Olympique de Bamako,Tier 1,Medium,3.2,Medium,Strong Malian side; regular Ligue 1 contender and CAF competition participant
+Olympique de Medea,Tier 2,None,2.3,Low,Algerian club with recent Ligue 1 relegation; striving for return
+Olympique de Missira,Tier 2,None,2.0,Low,Lesser-known Malian club; local presence with limited national achievements
+Olympique du Kef,Tier 2,None,2.2,Low,Tunisian club with sporadic top-tier appearances; mostly in Ligue 2
+Onze Createurs,Tier 1,Medium,3.0,Medium,Malian club from Bamako; FA Cup winners and regular top-tier competitor
+Orlando Pirates,Tier 1,Very High,5.0,Global,South African football giant; CAF Champions League winner and PSL powerhouse
+Ouragahio,Tier 2,None,2.0,Low,Ivorian club with low-tier national visibility
+PA Sambizanga,Tier 1,Medium,3.0,Medium,Historic Angolan club with Girabola presence and fan following in Luanda
+Panthere,Tier 1,Low,2.8,Medium,Cameroonian top-flight club; cup finalists and strong regional presence
+Paradou AC,Tier 1,Medium,3.2,Medium-High,Algerian club known for its elite academy; developed many national team players
+Petrojet,Tier 2,Low,2.5,Medium,"Egyptian petroleum-affiliated club; relegated from Premier League, currently in second tier"
+Pharco FC,Tier 1,Low,2.8,Medium,New-generation Egyptian club with pharmaceutical backing and recent top-tier rise
+Plateau United,Tier 1,Medium,3.2,Medium,NPFL champions in 2017; consistent Nigerian top-flight performer
+Platinum Stars,Defunct,Medium,3.2,High,South African club active in the 2010s; CAF participant before being sold in 2018
+Police FC,Tier 1,Low,2.8,Medium,"Multiple clubs across Africa use this name (Rwanda, Uganda, Kenya); typically law enforcement-backed"
+Polokwane City,Tier 1,Low,3.0,Medium,South African club recently promoted back to the PSL after strong second-tier campaign
+Porcelana FC,Tier 2,None,2.2,Low,Angolan club with brief Girabola history; named after local porcelain factory
+Power Dynamos,Tier 1,High,4.0,High,Top Zambian club; league champions and strong CAF competition track record
+Pretoria University,Tier 2,Low,2.5,Medium,"South African academic-affiliated club; known as 'AmaTuks', formerly in PSL"
+Prison Leopards,Tier 1,Low,2.8,Medium,Zambian club affiliated with the prison service; active in the Super League
+Progresso Associacao do Sambizanga,Tier 1,Medium,3.0,Medium,Luanda-based Angolan club with historic presence in Girabola and community roots
+Progresso da Lunda Sul,Tier 1,Low,2.8,Low,Angolan club with Girabola participation; less decorated than Luanda-based Progresso
+Pwd Bamenda,Tier 1,Medium,3.2,Medium,"Cameroonian club; Elite One champions in 2019–20, recently involved in CAF competitions"
+Pyramids FC,Tier 1,High,4.2,High,Ambitious Egyptian club with strong financial backing; CAF Confederation Cup runner-up (2020)
+Quelaton,Tier 2,None,2.0,Low,Zimbabwean club with brief PSL appearance before relegation
+Racing Club d'Abidjan,Tier 1,Medium,3.2,Medium,Emerging Ivorian club; Ligue 1 champions in 2020 and CAF Champions League participant
+Racing de Casablanca,Tier 2,Low,2.5,Low,"Historic Moroccan club; formerly in Botola Pro, currently in second division"
+Raja Beni Mellal,Tier 2,None,2.3,Low,Moroccan club with fluctuating status between Botola Pro and lower leagues
+Ranchers Bees,Tier 2,None,2.0,Low,Nigerian club with strong presence in the 1980s; now outside top flight
+Rapide Club Oued Zem,Tier 2,None,2.5,Low,Moroccan club with recent relegation from Botola Pro; mid-tier visibility
+RC Arbaa,Tier 2,None,2.3,Low,Algerian club with brief top-flight experience; currently in lower division
+RC Bafoussam,Tier 2,Low,2.3,Low,"Cameroonian club with a strong historical presence, now rebuilding in lower leagues"
+RC Relizane,Tier 2,None,2.5,Low,Algerian club with intermittent presence in Ligue 1; mostly in second division
+RCA Raja Casablanca Athletic,Tier 1,Very High,5.0,Global,One of Africa’s elite clubs; 3× CAF Champions League winner and multiple Botola titles
+Real Tamale,Tier 1,Low,2.8,Medium,Ghanaian Premier League club with historical influence; known for producing key national players
+Recreativo da Caala,Tier 1,Medium,3.2,Medium,Angolan Girabola club with solid league performance and occasional CAF appearances
+Recreativo do Libolo,Tier 1,High,3.8,Medium-High,One of Angola’s top clubs in the 2010s; Girabola champions and CAF group stage regulars
+Red Arrows,Tier 1,High,3.5,Medium,Zambian Air Force club; multiple league titles and regular CAF qualifiers
+Remo Stars,Tier 1,Medium,3.0,Medium,Fast-rising Nigerian club with continental ambitions and strong youth development
+Renaissance Club Zemamra,Tier 2,None,2.5,Low,Moroccan club with recent Botola Pro promotion and relegation; currently in second tier
+Renaissance de Ngoumou,Tier 2,None,2.2,Low,Cameroonian club formerly in Elite One; now in lower divisions
+Rising Stars,Tier 2,None,2.0,Low,Nigerian club formerly in NPFL; currently inactive or in lower leagues
+Roan United,Tier 2,Low,2.3,Low,Historic Zambian club from the mining town of Luanshya; currently not in top tier
+Roumde Adjia,Tier 2,None,2.2,Low,Cameroonian club named after a stadium in Garoua; limited competitive impact
+Royal AM,Tier 1,Medium,3.2,High,South African PSL club with strong media presence and continental aspirations
+RSB Berkane,Tier 1,Very High,4.5,High,Moroccan club; CAF Confederation Cup champions in 2020 and 2022
+Sabana de Mopti,Tier 2,None,2.0,Low,Malian club from the Mopti region; minimal national impact
+Sabe,Tier 2,None,2.0,Low,Little-known club likely from West Africa; limited public data available
+Sable Batie,Tier 1,Medium,3.0,Medium,Cameroonian club with Elite One history and local success
+Sagrada Esperança,Tier 1,High,3.8,Medium,Angolan Girabola champions (2021); regular CAF Champions League participant
+Sahel,Tier 1,Medium,3.0,Medium,Nigerien club (ASN NIGER SAHEL) with domestic titles and CAF presence
+Saida,Tier 2,None,2.3,Low,Algerian club currently in lower division; former Ligue 1 participants
+Saint George,Tier 1,Very High,4.5,High,Ethiopia’s most successful club; regular CAF Champions League competitor
+San Pedro,Tier 1,Medium,3.5,Medium,Ivorian club growing in influence; won national cups and competes in CAF tournaments
+Santa Rita de Cassia FC,Tier 1,Low,2.8,Low,Angolan club with Girabola experience; tragic 2017 stadium incident noted in club history
+Santos,Tier 2,Low,2.5,Low,"Name used by multiple clubs in Africa (South Africa, Nigeria); typically second-tier or youth-based"
+Santos de Angola,Tier 1,Medium,3.0,Medium,Well-known Angolan club; has competed in Girabola and CAF tournaments
+Saurimo FC,Tier 2,None,2.3,Low,Angolan club with past Girabola participation; currently out of top-tier spotlight
+SC Chabab Mohammedia,Tier 1,Medium,3.2,High,Historic Moroccan club revived in recent years; notable youth development and Botola Pro status
+Scorpion FC de Be,Tier 2,None,2.0,Low,Beninese club with limited top-tier presence and little public data
+Sekhukhune United FC,Tier 1,Medium,3.2,High,South African club recently promoted to PSL; strong management and competitive squad
+Sewe,Tier 1,High,3.5,Medium,Refers to Séwé Sport (Côte d'Ivoire); multiple-time league champions and CAF finalists
+Shabanie Mine,Tier 2,Low,2.3,Low,Zimbabwean mining club with strong fan base but now in lower tiers
+Sharks,Tier 2,Low,2.2,Low,Nigerian club (Sharks FC) merged with Dolphins to form Rivers United; historic Port Harcourt side
+Shooting Stars,Tier 1,High (historic),3.2,Medium,"One of Nigeria’s most historic clubs; CAF Cup winners in 1992, currently in NPFL"
+Sigui,Tier 2,None,2.0,Low,Malian club from Kayes region; minimal national exposure
+Simba SC,Tier 1,Very High,4.5,High,Tanzania’s top club alongside Yanga; CAF Champions League regular and East African powerhouse
+Smouha SC,Tier 1,Medium,3.2,Medium,Egyptian Premier League club based in Alexandria; cup finalists and CAF participants
+SO Armee,Tier 2,None,2.3,Low,"Likely refers to a military-affiliated club from West Africa (e.g., Côte d'Ivoire); low visibility"
+Sofapaka,Tier 1,High,3.5,Medium,Top Kenyan Premier League club; KPL champions in 2009 and CAF participants
+Sogakope WAFA,Tier 1,Medium,3.0,Medium,Ghanaian club (West African Football Academy); known for elite youth development
+SOL FC,Tier 1,Low,2.8,Medium,Ivorian Ligue 1 club with competitive domestic performance; known for strong home form
+Sport Lubango e Benfica,Tier 2,None,2.3,Low,Angolan club with historical top-tier presence; currently not among Girabola elite
+Sportif de Chebba,Tier 1,Low,2.8,Medium,Tunisian Ligue 1 club with recent promotion and growing reputation
+Sporting Clube de Benguela,Tier 2,None,2.2,Low,Angolan club with colonial-era history; limited modern competitive record
+Sporting de Cabinda,Tier 1,Low,2.8,Low,Angolan club from the Cabinda province; fluctuating Girabola status
+Sporting Gagnoa,Tier 1,Medium,3.2,Medium,Ivorian club; domestic cup winners and recent CAF Confederation Cup participants
+Sportive de Djerba,Tier 2,None,2.3,Low,Tunisian club with brief Ligue 1 history; currently in lower division
+St. George,Tier 1,Very High,4.5,High,Ethiopia's most decorated club; dominant in league and a regular CAF Champions League participant
+Stade d'Abidjan,Tier 1,High,3.2,Medium,Historic Ivorian club; past CAF Champions League winners (1966)
+Stade Gabesien,Tier 2,Low,2.5,Low,Tunisian club with previous Ligue 1 experience; now in lower divisions
+Stade Malien Bamako,Tier 1,Very High,4.2,High,Mali’s top club; multiple domestic titles and strong CAF track record
+Stade Malien Sikasso,Tier 2,None,2.3,Low,"Malian regional club, not affiliated with the main Stade Malien of Bamako"
+Stade Renard de Melong,Tier 1,Medium,3.0,Medium,Cameroonian Elite One club; national cup winner with recent CAF entries
+Stade Tunisien,Tier 1,High,3.5,High,Historic Tunisian club with league titles and consistent top-tier performance
+Stella Club,Tier 1,Medium,3.0,Medium,Ivorian club with CAF history and strong legacy in the 1970s–1980s
+Stellenbosch FC,Tier 1,Medium,3.2,High,South African PSL club with strong development pipeline and rising form
+Sunshine Stars,Tier 1,High,3.5,Medium,Nigerian club known for deep runs in CAF Confederation and Champions League
+Supersport United,Tier 1,High,4.2,High,Top South African PSL club; multiple league titles and CAF Confederation Cup finalist (2017)
+Tanta,Tier 2,None,2.3,Low,Egyptian club with periodic Premier League appearances; mostly in lower tiers
+Taraba,Tier 2,None,2.2,Low,Nigerian club with brief NPFL stint; now inactive or in regional leagues
+Telephonaat Beni Suef,Tier 2,None,2.3,Low,Egyptian club formerly in the Premier League; now in second division
+Tema Youth,Tier 2,Low,2.5,Low,Ghanaian club known for youth development; fluctuates between Premier League and lower tiers
+Tenax CS FC,Tier 1,None,2.8,Medium,Zimbabwean Premier League club backed by prison services; known for defensive style
+Teungueth FC,Tier 1,High,3.5,Medium,Senegalese champions; strong CAF Champions League performance in 2020–21
+Tiko United,Tier 2,Low,2.5,Low,"Cameroonian club; 2009 Elite One champions, now in lower leagues"
+Togo-Port,Tier 1,Medium,3.0,Medium,Togolese club; national champions and CAF Champions League group stage participant (2018)
+Tonnerre Kalara Club,Tier 1,High (historic),3.2,Medium,"Legendary Cameroonian club; home to Roger Milla, past CAF Cup Winners' Cup champions"
+Township Rollers,Tier 1,High,3.8,High,Botswana’s most successful club; frequent CAF Champions League participant
+Triangle FC,Tier 1,Medium,3.0,Medium,Zimbabwean club backed by a sugar estate; FA Cup winner and CAF Confederation Cup participant
+Tripple B,Tier 2,None,2.2,Low,Congolese club (DRC); former Ligue 1 team with limited recent activity
+TS Galaxy,Tier 1,High,3.5,High,South African club; CAF Confederation Cup winners in 2019 while still in second tier
+Tsholotsho,Tier 2,None,2.0,Low,Zimbabwean club that had a brief stay in the top division; now inactive
+UMS de Loum,Tier 1,Medium,3.2,Medium,Cameroonian Elite One champions in 2016; recent CAF Champions League participants
+Underhill,Tier 2,None,2.0,Low,Zimbabwean club from the Mutare area; short-lived Premier League presence
+Uniao Sport Clube do Uige,Tier 2,None,2.2,Low,Angolan club from the Uíge province; minimal top-tier appearances
+Union Douala,Tier 1,High,3.5,Medium-High,Historic Cameroonian club; multiple Elite One titles and CAF experience
+Union Sportive de Douala,Tier 1,High,3.5,Medium-High,Duplicate name for Union Douala; major Cameroonian club with strong legacy
+Unisport FC Du Haut-Nkam,Tier 1,Medium,3.0,Medium,Cameroonian club from Bafang; past national champions with Elite One presence
+Université Ngaoundéré,Tier 2,None,2.0,Low,University-affiliated Cameroonian team; limited professional exposure
+Urana,Tier 2,None,2.0,Low,"Little-known club, likely from Niger; minimal public data available"
+US Biskra,Tier 1,Low,2.8,Medium,Algerian Ligue 1 club with a consistent top-flight presence
+US Monastir,Tier 1,High,3.5,High,Top Tunisian club with recent CAF Confederation Cup appearances and cup victories
+US Tataouine,Tier 1,Low,2.8,Medium,Southern Tunisian Ligue 1 club known for passionate local support
+Usc Bassam,Tier 1,Low,2.8,Medium,"Ivorian Ligue 1 club from Grand-Bassam; past domestic success, mid-tier status"
+USFAS Bamako,Tier 1,Medium,3.0,Medium,Malian army-affiliated club; consistent league presence with continental appearances
+USGN,Tier 1,High,3.5,Medium,"Top club from Niger; Union Sportive Gendarmerie Nationale, regular CAF competitors"
+USM Alger,Tier 1,Very High,5.0,Global,Algeria’s most prominent club; CAF Confederation Cup and Super Cup winners (2023)
+USM Bel Abbes,Tier 2,Low,2.5,Low,Algerian club with past Ligue 1 experience and an Algerian Cup title; currently in lower division
+USM Blida,Tier 2,Low,2.3,Low,Algerian club with fluctuating presence between Ligue 1 and Ligue 2
+USM El Harrach,Tier 2,Low,2.5,Low,Historic Algerian club; Ligue 1 champions in 1998 but now in Ligue 2
+Victoria,Tier 2,None,2.0,Low,Likely refers to Victoria United (Cameroon or Seychelles); limited continental exposure
+WA Tlemcen,Tier 2,Low,2.5,Low,Algerian club with two Algerian Cup wins; recently relegated from Ligue 1
+Wad Hashim SC Sennar,Tier 2,None,2.2,Low,Sudanese club with brief top-tier appearances; currently in lower ranks
+Wadi Degla FC,Tier 2,Medium,2.8,Medium,Modern Egyptian club with strong facilities and youth focus; recently relegated from Premier League
+Warri Wolves FC,Tier 1,Medium,3.0,Medium,Nigerian club with multiple continental appearances; known for producing national team players
+Wassaman United,Tier 2,None,2.2,Low,Ghanaian club with brief Premier League experience; now in lower divisions
+WhaWha,Tier 2,None,2.0,Low,Zimbabwean correctional service club with short-lived PSL promotion
+Wikki Tourist,Tier 1,Medium,3.0,Medium,Nigerian club with consistent NPFL presence and regional visibility
+Wiliete SC,Tier 1,Low,2.8,Low,Angolan Girabola club with recent promotion and growing domestic competitiveness
+Williamsville Athletic Club,Tier 1,Medium,3.2,Medium,Ivorian Ligue 1 side; CAF Champions League participant in 2018
+WWS Rangers,Tier 2,None,2.0,Low,"Little-known club, likely from Nigeria or West Africa; minimal public data"
+Wydad Casablanca,Tier 1,Very High,5.0,Global,Moroccan giants; multiple-time CAF Champions League and Botola Pro winners
+Wydad Fes,Tier 2,Low,2.5,Low,Moroccan club with historical top-tier stints; currently outside Botola Pro
+Yadah FC,Tier 1,Low,2.8,Medium,Zimbabwean Premier League club; church-owned and stable top-flight presence
+Yafoot FC Yaounde 2,Tier 2,None,2.2,Low,Cameroonian lower-division club; based in Yaoundé with modest reach
+Yobe Desert Stars,Tier 2,None,2.0,Low,Nigerian club briefly in the NPFL; relegated due to performance and instability
+Yopougon FC,Tier 2,None,2.2,Low,Ivorian club based in Abidjan suburb; low domestic impact and visibility
+Young Africans,Tier 1,Very High,4.5,High,Tanzania’s most successful club; fierce rival of Simba SC and regular CAF Champions League contender
+Young Green Eagles,Tier 2,None,2.2,Low,Zambian lower-division team; not to be confused with the national youth side
+Young Sport Academy Bamenda,Tier 1,Medium,3.2,Medium,Cameroonian club known for youth development; Elite One champions in 2020
+Youssoufia Berrechid,Tier 1,Low,2.8,Medium,Moroccan Botola Pro club with modest top-flight presence
+Zamfara United FC,Tier 2,None,2.0,Low,Nigerian club formerly in NPFL; currently in lower division or inactive
+Zanaco,Tier 1,High,4.0,High,One of Zambia’s top clubs; multiple league champions and regular CAF competitors
+Zarzis,Tier 2,Low,2.5,Low,Tunisian club with Ligue 1 history; currently in lower division
+ZESCO United,Tier 1,Very High,4.5,High,Top Zambian club; dominant in league and consistent in CAF Champions League
+Zimbabwe Saints,Tier 2,Low,2.3,Low,Historic Zimbabwean club; now largely inactive or restructured
+ZPC Kariba,Tier 1,Low,2.8,Medium,Zimbabwean Premier League club backed by Zimbabwe Power Company
+Zumunta,Tier 2,None,2.0,Low,Nigerian amateur or local league club; very limited public data available
