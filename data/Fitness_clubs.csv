@@ -1,0 +1,289 @@
+club_id,club_name,services_offered,affiliated_players,certified_trainers,location,membership_fees,verified_status,contact_email,phone_number
+CAF001,Wadi Degla Football Academy,"Youth training, scouting, fitness",150,12,Cairo Egypt,$500/year,Yes,info@wadidegla.com,+20 2 2529 0000
+CAF002,West African Football Academy,"Technical training, education, lodging",200,15,Accra Ghana,$400/year,Yes,admin@wafa-ghana.org,+233 30 396 7890
+CAF003,Pepsi Football Academy,"Grassroots training, talent development",300,20,Lagos Nigeria,$350/year,Yes,pepsiacademy@gmail.com,+234 1 454 1234
+CAF004,Diambars Institute,"Football education, scholarships",120,10,Saly Senegal,$600/year,Yes,contact@diambars.org,+221 33 957 1414
+CAF005,ASEC Mimosas Academy,"Elite training, competitive leagues",180,14,Abidjan Ivory Coast,$450/year,Yes,asecmimosas@asec.ci,+225 21 35 6789
+CAF006,Ajax Cape Town Academy,"Youth development, professional pathways",160,13,Cape Town South Africa,$550/year,Yes,info@ajaxct.co.za,+27 21 761 4900
+CAF007,Mohammed VI Football Academy,"High-performance training, academics",140,18,Rabat Morocco,$700/year,Yes,contact@m6academy.ma,+212 537 67 8900
+CAF008,JS Kabylie Academy,"Skill development, regional tournaments",130,11,Tizi Ouzou Algeria,$400/year,Yes,jskabylie@jsk.dz,+213 26 20 1234
+CAF009,Espérance Sportive de Tunis Academy,"Elite youth programs, scouting",170,15,Tunis Tunisia,$500/year,Yes,contact@estunis.com,+216 71 234 567
+CAF010,Kadji Sports Academy,"Boarding, football training, education",100,9,Douala Cameroon,$450/year,Yes,info@kadji-sports.com,+237 233 42 5678
+CAF011,Mathare Youth Sports Association,"Community outreach, soccer training",250,10,Nairobi Kenya,$300/year,Yes,mysa@mathareyouth.org,+254 20 567 8901
+CAF012,Arthur Davies Soccer Academy,"Youth coaching, talent identification",110,8,Lusaka Zambia,$350/year,Yes,arthurdavies@adsa.zm,"260,211,234,567"
+CAF013,Right to Dream Academy,"Elite training, education, scholarships",90,12,Old Akrade Ghana,$800/year,Yes,info@righttodream.com,+233 30 278 9012
+CAF014,Generation Foot,"Talent development, professional pathways",130,11,Dakar Senegal,$550/year,Yes,contact@generationfoot.sn,+221 33 867 5432
+CAF015,JMJ Soccer Academy,"Grassroots training, youth development",200,14,Kumasi Ghana,$350/year,Yes,jmjacademy@gmail.com,+233 32 203 4567
+CAF016,Stars of Africa Academy,"Skill coaching, scouting",140,10,Johannesburg South Africa,$500/year,Yes,info@starsofafrica.co.za,+27 11 234 5678
+CAF017,Mamelodi Sundowns Youth Academy,"Elite training, competitive programs",160,13,Pretoria South Africa,$600/year,Yes,youth@sundownsfc.co.za,+27 12 345 6789
+CAF018,Académie de Football d’Angondjé,"Technical training, youth leagues",120,9,Libreville Gabon,$400/year,Yes,afa.gabon@gmail.com,+241 01 23 4567
+CAF019,Black Aces Academy,"Community training, talent scouting",180,12,Harare Zimbabwe,$300/year,Yes,blackaces@zimsoccer.org,+263 4 567 8901
+CAF020,CFFA Madagascar,"Football education, grassroots programs",100,8,Antananarivo Madagascar,$250/year,Yes,cffa.mada@gmail.com,+261 20 22 34567
+CAF021,Kwara Football Academy,"Youth development, scouting tournaments",150,12,Ilorin Nigeria,$400/year,Yes,info@kfa.ng,"2,348,031,234,567"
+CAF022,Feyenoord Fasta Academy,"Technical training, partnerships",130,10,Tema Ghana,$450/year,Yes,contact@feyenoordghana.org,+233 30 290 1234
+CAF023,Ligi Ndogo Academy,"Skill training, leadership programs",110,9,Nairobi Kenya,$350/year,Yes,info@ligindogo.co.ke,+254 20 345 6789
+CAF024,Young Bafana Soccer Academy,"Holistic training, education",80,7,Somerset West South Africa,$450/year,Yes,youngbafana@ybacademy.org,+27 21 876 5432
+CAF025,Barcelona Lagos Academy,"Youth coaching, technical skills",120,10,Lagos Nigeria,$500/year,Yes,barcelonalagos@fcbarcelona.ng,+234 1 789 0123
+CAF026,Red Bull Ghana Academy,High-performance training,100,11,Sogakope Ghana,$600/year,Yes,info@redbullghana.com,+233 30 567 8901
+CAF027,Académie JMG Mali,"Elite training, European pathways",90,8,Bamako Mali,$400/year,Yes,jmgmali@academie.ml,+223 20 21 3456
+CAF028,Orlando Pirates Youth Academy,"Skill development, pro pathways",140,12,Johannesburg South Africa,$550/year,Yes,youth@orlandopiratesfc.co.za,+27 11 890 1234
+CAF029,Enyimba Youth Academy,"Grassroots training, competitive play",160,13,Aba Nigeria,$400/year,Yes,enquiries@enyimbafc.net,"2,348,065,678,901"
+CAF030,Hearts of Oak Academy,"Technical training, youth leagues",130,10,Accra Ghana,$450/year,Yes,info@heartsofoakfc.com,+233 30 234 5678
+CAF031,TP Mazembe Youth Academy,"Elite coaching, talent scouting",150,14,Lubumbashi DR Congo,$500/year,Yes,contact@tpmazembe.com,+243 81 234 5678
+CAF032,Al Ahly Youth Academy,"High-performance training, scouting",200,18,Cairo Egypt,$600/year,Yes,youth@alahlyegypt.com,+20 2 345 6789
+CAF033,Zamalek SC Academy,"Skill development, competitive programs",180,15,Cairo Egypt,$550/year,Yes,info@zamalek.sc,+20 2 789 0123
+CAF034,Raja Casablanca Academy,"Youth training, technical skills",140,12,Casablanca Morocco,$500/year,Yes,rajaacademy@rcm.ma,+212 522 34 5678
+CAF035,Wydad AC Academy,"Elite training, regional tournaments",160,13,Casablanca Morocco,$550/year,Yes,wydadacademy@wac.ma,+212 522 67 8901
+CAF036,Simba SC Academy,"Grassroots training, talent development",120,10,Dar es Salaam Tanzania,$350/year,Yes,simbaacademy@simbasc.co.tz,+255 22 345 6789
+CAF037,Yanga SC Academy,"Skill coaching, youth leagues",130,11,Dar es Salaam Tanzania,$400/year,Yes,info@yanga.co.tz,+255 22 678 9012
+CAF038,Gor Mahia Youth Academy,"Community training, scouting",150,12,Nairobi Kenya,$300/year,Yes,gormahiaacademy@gmfc.co.ke,+254 20 123 4567
+CAF039,Vipers SC Academy,"Technical training, pro pathways",100,9,Kampala Uganda,$350/year,Yes,vipersacademy@viperssc.co.ug,+256 41 234 5678
+CAF040,St. George SA Academy,"Youth development, education",110,8,Addis Ababa Ethiopia,$300/year,Yes,info@stgeorgefc.et,+251 11 345 6789
+CAF041,Asante Kotoko Academy,"Elite training, competitive play",140,12,Kumasi Ghana,$450/year,Yes,kotokoacademy@aksc.com,+233 32 234 5678
+CAF042,Kaizer Chiefs Youth Academy,"Skill development, scouting",160,13,Johannesburg South Africa,$600/year,Yes,youth@kaizerchiefs.co.za,+27 11 567 8901
+CAF043,Hafia FC Academy,"Grassroots training, talent identification",100,9,Conakry Guinea,$350/year,Yes,hafiaacademy@hafiafc.com,+224 30 234 5678
+CAF044,Santos FC Academy Angola,"Youth coaching, technical skills",120,10,Luanda Angola,$400/year,Yes,santosacademy@santosfc.ao,+244 222 34 5678
+CAF045,CD Primeiro de Agosto Academy,"Elite training, youth leagues",130,11,Luanda Angola,$450/year,Yes,info@primeirodeagosto.ao,+244 222 67 8901
+CAF046,Stade Malien Academy,"Skill training, competitive programs",110,9,Bamako Mali,$400/year,Yes,stademalien@smfc.ml,+223 20 67 8901
+CAF047,Horoya AC Academy,"Youth development, scouting",120,10,Conakry Guinea,$400/year,Yes,horoyaacademy@horoyaac.com,+224 30 567 8901
+CAF048,AS Vita Club Academy,"Technical training, pro pathways",140,12,Kinshasa DR Congo,$450/year,Yes,info@asvitaclub.cd,+243 82 345 6789
+CAF049,CS Sfaxien Academy,"Elite training, youth leagues",130,11,Sfax Tunisia,$500/year,Yes,academy@cssfaxien.tn,+216 74 234 5678
+CAF050,Étoile du Sahel Academy,"Skill development, scouting",150,12,Sousse Tunisia,$550/year,Yes,etoileacademy@etoiledusahel.tn,+216 73 345 6789
+CAF051,ASEC Abidjan Academy,"Grassroots training, education",110,10,Abidjan Ivory Coast,$400/year,Yes,asecabidjan@asec.ci,+225 21 67 8901
+CAF052,Canon Yaoundé Academy,"Youth coaching, talent development",100,9,Yaoundé Cameroon,$450/year,Yes,canonacademy@cyfc.cm,+237 222 34 5678
+CAF053,Tonnerre Yaoundé Academy,"Technical training, scouting",90,8,Yaoundé Cameroon,$400/year,Yes,tonnerre@tyfc.cm,+237 222 67 8901
+CAF054,Djoliba AC Academy,"Skill training, competitive play",120,10,Bamako Mali,$350/year,Yes,djolibaacademy@dac.ml,+223 20 89 0123
+CAF055,Racing Club de Bobo Academy,"Youth development, leagues",100,9,Bobo-Dioulasso Burkina Faso,$300/year,Yes,rcbobo@rcbf.bf,+226 20 97 1234
+CAF056,Étoile Filante Academy,"Grassroots training, scouting",110,8,Ouagadougou Burkina Faso,$350/year,Yes,etoilefilante@efbf.bf,+226 25 34 5678
+CAF057,ASFA Yennenga Academy,"Technical training, youth programs",90,7,Ouagadougou Burkina Faso,$300/year,Yes,asfa@asfay.bf,+226 25 67 8901
+CAF058,SC Gagnoa Academy,"Skill development, talent identification",100,9,Gagnoa Ivory Coast,$400/year,Yes,scgagnoa@scg.ci,+225 23 45 6789
+CAF059,Africa Sports Academy,"Youth coaching, competitive play",120,10,Abidjan Ivory Coast,$450/year,Yes,africasports@as.ci,+225 21 89 0123
+CAF060,SO Armée Academy,"Technical training, scouting",90,8,Abidjan Ivory Coast,$400/year,Yes,soarmee@soa.ci,+225 22 34 5678
+CAF061,AS Douanes Academy,"Grassroots training, youth leagues",100,9,Lomé Togo,$350/year,Yes,asdouanes@adt.tg,+228 22 34 5678
+CAF062,Dypto FC Academy,"Skill training, pro pathways",80,7,Lomé Togo,$300/year,Yes,dyptoacademy@dypto.tg,+228 22 67 8901
+CAF063,ASC Kara Academy,"Youth development, technical skills",90,8,Kara Togo,$350/year,Yes,asckara@asck.tg,+228 26 34 5678
+CAF064,USM Alger Academy,"Elite training, scouting",140,12,Algiers Algeria,$500/year,Yes,usmalger@usma.dz,+213 21 34 5678
+CAF065,MC Alger Academy,"Technical training, youth leagues",130,11,Algiers Algeria,$450/year,Yes,mcalger@mca.dz,+213 21 67 8901
+CAF066,CR Belouizdad Academy,"Skill development, competitive play",120,10,Algiers Algeria,$400/year,Yes,crbelouizdad@crb.dz,+213 21 89 0123
+CAF067,ES Sétif Academy,"Youth coaching, talent scouting",110,9,Sétif Algeria,$450/year,Yes,essetif@ess.dz,+213 36 34 5678
+CAF068,Paradou AC Academy,"Elite training, pro pathways",100,10,Algiers Algeria,$500/year,Yes,paradou@paradouac.dz,+213 21 23 4567
+CAF069,ASO Chlef Academy,"Grassroots training, education",90,8,Chlef Algeria,$400/year,Yes,aso@asochlef.dz,+213 27 34 5678
+CAF070,Hassan II Academy,"Technical training, youth development",120,11,Rabat Morocco,$550/year,Yes,hassan2academy@h2a.ma,+212 537 89 0123
+CAF071,FUS Rabat Academy,"Skill training, competitive leagues",130,10,Rabat Morocco,$500/year,Yes,fusrabat@fusr.ma,+212 537 67 8901
+CAF072,ASFAR Academy,"Elite training, scouting",140,12,Rabat Morocco,$600/year,Yes,asfar@asfar.ma,+212 537 34 5678
+CAF073,Ittihad Tanger Academy,"Youth coaching, technical skills",100,9,Tangier Morocco,$450/year,Yes,ittihad@irt.ma,+212 539 34 5678
+CAF074,Chabab Rif Al Hoceima Academy,"Grassroots training, leagues",90,8,Al Hoceima Morocco,$400/year,Yes,chabab@crh.ma,+212 539 67 8901
+CAF075,Club Africain Academy,"Skill development, pro pathways",130,11,Tunis Tunisia,$500/year,Yes,clubafricain@ca.tn,+216 71 67 8901
+CAF076,CS Hammam-Lif Academy,"Youth training, scouting",100,9,Hammam-Lif Tunisia,$450/year,Yes,cshl@cshl.tn,+216 71 34 5678
+CAF077,Stade Tunisien Academy,"Technical training, youth leagues",90,8,Tunis Tunisia,$400/year,Yes,stadetunisien@st.tn,+216 71 89 0123
+CAF078,DC Motema Pembe Academy,"Elite training, competitive play",120,10,Kinshasa DR Congo,$450/year,Yes,dcmotema@dcmp.cd,+243 81 67 8901
+CAF079,AS Maniema Union Academy,"Grassroots training, scouting",100,9,Kindu DR Congo,$400/year,Yes,asmaniema@amu.cd,+243 82 34 5678
+CAF080,FC Saint-Éloi Lupopo Academy,"Skill training, youth programs",110,8,Lubumbashi DR Congo,$450/year,Yes,fclupopo@fcl.cd,+243 81 89 0123
+CAF081,Azam FC Academy,"Technical training, pro pathways",120,10,Dar es Salaam Tanzania,$400/year,Yes,azamacademy@azamfc.co.tz,+255 22 89 0123
+CAF082,Namungo FC Academy,"Youth coaching, talent development",90,8,Lindi Tanzania,$350/year,Yes,namungo@namungofc.co.tz,+255 23 34 5678
+CAF083,Mbeya City FC Academy,"Skill development, scouting",100,9,Mbeya Tanzania,$300/year,Yes,mbeyacity@mcfc.co.tz,+255 25 34 5678
+CAF084,Kampala City FC Academy,"Elite training, youth leagues",130,11,Kampala Uganda,$400/year,Yes,kcca@kccafc.co.ug,+256 41 67 8901
+CAF085,Proline FC Academy,"Grassroots training, education",90,8,Kampala Uganda,$350/year,Yes,proline@prolinefc.co.ug,+256 41 89 0123
+CAF086,Onduparaka FC Academy,"Skill training, competitive play",100,9,Arua Uganda,$300/year,Yes,onduparaka@ofc.co.ug,+256 47 34 5678
+CAF087,Hawassa City FC Academy,"Youth development, scouting",90,8,Hawassa Ethiopia,$300/year,Yes,hawassa@hcfc.et,+251 46 34 5678
+CAF088,Ethiopia Nigd Bank FC Academy,"Technical training, leagues",100,9,Addis Ababa Ethiopia,$350/year,Yes,nigdbank@nbfc.et,+251 11 67 8901
+CAF089,Fasil Kenema Academy,"Skill coaching, pro pathways",110,8,Gondar Ethiopia,$400/year,Yes,fasilkenema@fkfc.et,+251 58 34 5678
+CAF090,Green Buffaloes Academy,"Youth training, competitive play",100,9,Lusaka Zambia,$350/year,Yes,greenbuffaloes@gbfc.zm,+260 211 34 5678
+CAF091,Zanaco FC Academy,"Elite training, scouting",120,10,Lusaka Zambia,$400/year,Yes,zanaco@zanacofc.zm,+260 211 67 8901
+CAF092,Nkana FC Academy,"Skill development, youth leagues",110,9,Kitwe Zambia,$350/year,Yes,nkana@nkanafc.zm,+260 212 34 5678
+CAF093,Dynamos FC Academy,"Grassroots training, talent identification",130,11,Harare Zimbabwe,$300/year,Yes,dynamos@dynamosfc.co.zw,+263 4 67 8901
+CAF094,CAPS United Academy,"Technical training, pro pathways",100,9,Harare Zimbabwe,$350/year,Yes,capsunited@caps.co.zw,+263 4 89 0123
+CAF095,Highlanders FC Academy,"Youth coaching, scouting",110,8,Bulawayo Zimbabwe,$300/year,Yes,highlanders@hfc.co.zw,+263 9 34 5678
+CAF096,Chicken Inn FC Academy,"Skill training, competitive leagues",90,7,Bulawayo Zimbabwe,$300/year,Yes,chickeninn@cifc.co.zw,+263 9 67 8901
+CAF097,CFP Maputo Academy,"Youth development, technical skills",100,9,Maputo Mozambique,$350/year,Yes,cfpmaputo@cfp.mz,+258 21 34 5678
+CAF098,UD Songo Academy,"Elite training, scouting",110,8,Songo Mozambique,$400/year,Yes,udsongo@uds.mz,+258 26 34 5678
+CAF099,Black Bulls Academy,"Grassroots training, youth programs",90,7,Maputo Mozambique,$350/year,Yes,blackbulls@bbfc.mz,+258 21 67 8901
+CAF100,SC Villa Academy,"Skill development, pro pathways",120,10,Kampala Uganda,$400/year,Yes,scvilla@scv.co.ug,+256 41 34 5678
+CAF101,Ashanti Gold Academy,"Technical training, competitive play",130,11,Obuasi Ghana,$450/year,Yes,ashantigold@agfc.com,+233 32 67 8901
+CAF101,Ashanti Gold Academy,"Technical training, competitive play",130,11,Obuasi Ghana,$450/year,Yes,ashantigold@agfc.com,+233 32 67 8901
+CAF102,Kano Pillars Youth Academy,"Grassroots training, scouting",150,12,Kano Nigeria,$350/year,Yes,kano.pillars@kcfc.ng,"2,348,034,567,890"
+CAF103,Shooting Stars Academy,"Youth development, technical skills",120,10,Ibadan Nigeria,$400/year,Yes,shootingstars@ssfc.ng,"2,348,023,456,789"
+CAF104,Enugu Rangers Academy,"Elite training, competitive leagues",140,11,Enugu Nigeria,$450/year,Yes,rangers@erfc.ng,"2,348,067,890,123"
+CAF105,Heartland FC Academy,"Skill coaching, talent identification",110,9,Owerri Nigeria,$400/year,Yes,heartland@hfc.ng,"2,348,031,234,567"
+CAF106,Plateau United Academy,"Youth training, scouting",100,8,Jos Nigeria,$350/year,Yes,plateau@pufc.ng,"2,348,056,789,012"
+CAF107,Sunshine Stars Academy,"Technical training, youth leagues",130,10,Akure Nigeria,$400/year,Yes,sunshine@ssfc.ng,"2,348,092,345,678"
+CAF108,Bidvest Wits Youth Academy,"Elite training, pro pathways",140,12,Johannesburg South Africa,$550/year,Yes,witsyouth@bwfc.co.za,+27 11 345 6789
+CAF109,SuperSport United Academy,"Skill development, competitive play",150,13,Pretoria South Africa,$600/year,Yes,supersport@sufc.co.za,+27 12 678 9012
+CAF110,Bloemfontein Celtic Academy,"Youth coaching, technical skills",120,10,Bloemfontein South Africa,$500/year,Yes,celtic@bcfc.co.za,+27 51 234 5678
+CAF111,Adama City FC Academy,"Grassroots training, education",100,8,Adama Ethiopia,$300/year,Yes,adamacity@acfc.et,+251 22 34 5678
+CAF112,Dire Dawa City Academy,"Skill training, youth programs",90,7,Dire Dawa Ethiopia,$300/year,Yes,diredawa@ddfc.et,+251 25 34 5678
+CAF113,Wolaitta Dicha Academy,"Youth development, scouting",110,9,Sodo Ethiopia,$350/year,Yes,wolaitta@wdfc.et,+251 46 67 8901
+CAF114,Express FC Academy,"Technical training, competitive leagues",120,10,Kampala Uganda,$400/year,Yes,express@efc.co.ug,+256 41 34 5678
+CAF115,Bul FC Academy,"Grassroots training, talent development",100,8,Jinja Uganda,$350/year,Yes,bulfc@bul.co.ug,+256 43 67 8901
+CAF116,Kabaka Kyabagu Academy,"Youth coaching, skill development",90,7,Mbarara Uganda,$300/year,Yes,kabaka@kka.co.ug,+256 48 34 5678
+CAF117,ASEC Ndiambour Academy,"Technical training, youth leagues",110,9,Louga Senegal,$450/year,Yes,asecndiambour@an.sn,+221 33 67 8901
+CAF118,AS Pikine Academy,"Skill development, scouting",120,10,Pikine Senegal,$500/year,Yes,aspikine@asp.sn,+221 33 34 5678
+CAF119,Teungueth FC Academy,"Elite training, pro pathways",130,11,Rufisque Senegal,$550/year,Yes,teungueth@tfc.sn,+221 33 89 0123
+CAF120,Académie de Football de Djibouti,"Youth training, education",80,6,Djibouti City Djibouti,$300/year,Yes,afdjibouti@afd.dj,+253 21 34 5678
+CAF121,Hafia FC Youth Academy,"Grassroots training, scouting",100,9,Conakry Guinea,$350/year,Yes,hafia@hfc.gn,+224 30 34 5678
+CAF122,CI Kamsar Academy,"Skill coaching, youth programs",90,8,Kamsar Guinea,$300/year,Yes,cikamsar@cik.gn,+224 30 67 8901
+CAF123,ASKO de Kara Academy,"Technical training, competitive play",110,9,Kara Togo,$350/year,Yes,asko@askok.tg,+228 26 34 5678
+CAF124,Sembehun FC Academy,"Youth development, leagues",90,7,Porto-Novo Benin,$300/year,Yes,sembehun@sfc.bj,+229 21 34 5678
+CAF125,Dragons FC Academy,"Skill training, scouting",100,8,Porto-Novo Benin,$350/year,Yes,dragons@dfc.bj,+229 21 67 8901
+CAF126,Buffles du Borgou Academy,"Grassroots training, education",80,6,Parakou Benin,$300/year,Yes,buffles@bbfc.bj,+229 23 34 5678
+CAF127,Étoile Sportive du Sahel Academy,"Elite training, youth leagues",140,12,Bamako Mali,$400/year,Yes,etoilesahel@ess.ml,+223 20 34 5678
+CAF128,Real Bamako Academy,"Technical training, pro pathways",120,10,Bamako Mali,$450/year,Yes,realbamako@rb.ml,+223 20 67 8901
+CAF129,Centre Salif Keita,"Youth coaching, talent development",100,9,Bamako Mali,$400/year,Yes,salifkeita@csk.ml,+223 20 89 0123
+CAF130,Académie des Comores,"Grassroots training, scouting",70,5,Moroni Comoros,$250/year,Yes,academie@adc.km,+269 77 34 5678
+CAF131,FC Platinum Academy,"Skill development, competitive play",110,9,Zvishavane Zimbabwe,$350/year,Yes,fcplatinum@fcp.co.zw,+263 39 34 5678
+CAF132,Manica Diamonds Academy,"Youth training, technical skills",100,8,Mutare Zimbabwe,$300/year,Yes,manica@md.co.zw,+263 20 67 8901
+CAF133,Ngezi Platinum Stars Academy,"Elite training, scouting",120,10,Ngezi Zimbabwe,$350/year,Yes,ngezi@nps.co.zw,+263 55 34 5678
+CAF134,ZPC Kariba Academy,"Grassroots training, youth leagues",90,7,Kariba Zimbabwe,$300/year,Yes,zpc@zpck.co.zw,+263 61 34 5678
+CAF135,Al Merreikh Academy,"Technical training, competitive play",130,11,Omdurman Sudan,$400/year,Yes,almerreikh@amfc.sd,+249 18 34 5678
+CAF136,Al Hilal Academy,"Elite training, pro pathways",150,12,Omdurman Sudan,$450/year,Yes,alhilal@ahfc.sd,+249 18 67 8901
+CAF137,Khartoum NC Academy,"Youth coaching, skill development",100,9,Khartoum Sudan,$350/year,Yes,khartoum@knc.sd,+249 15 34 5678
+CAF138,Hilal Obayed Academy,"Grassroots training, scouting",90,8,Obayed Sudan,$300/year,Yes,hilalobayed@ho.sd,+249 15 67 8901
+CAF139,Young Africans Academy,"Skill training, youth programs",120,10,Juba South Sudan,$300/year,Yes,youngafricans@ya.ss,+211 92 34 5678
+CAF140,Malakia FC Academy,"Youth development, technical skills",80,6,Juba South Sudan,$250/year,Yes,malakia@mfc.ss,+211 92 67 8901
+CAF141,APR FC Academy,"Elite training, competitive leagues",130,11,Kigali Rwanda,$400/year,Yes,apr@aprfc.rw,+250 78 34 5678
+CAF142,Rayon Sports Academy,"Skill development, scouting",110,9,Gisenyi Rwanda,$350/year,Yes,rayon@rsfc.rw,+250 78 67 8901
+CAF143,Mukura Victory Academy,"Grassroots training, youth programs",90,8,Huye Rwanda,$300/year,Yes,mukura@mvfc.rw,+250 78 89 0123
+CAF144,Police FC Academy,"Technical training, competitive play",100,9,Kigali Rwanda,$350/year,Yes,police@pfc.rw,+250 78 34 5678
+CAF145,Green Eagles Academy,"Youth coaching, skill development",110,8,Choma Zambia,$350/year,Yes,greeneagles@gefc.zm,+260 21 34 5678
+CAF146,Power Dynamos Academy,"Elite training, scouting",120,10,Kitwe Zambia,$400/year,Yes,power@pdfc.zm,+260 21 67 8901
+CAF147,Red Arrows Academy,"Grassroots training, youth leagues",100,9,Lusaka Zambia,$350/year,Yes,redarrows@rafc.zm,+260 21 89 0123
+CAF148,Ferroviaire FC Academy,"Skill training, competitive play",90,7,Lubango Angola,$400/year,Yes,ferroviaire@ffc.ao,+244 26 34 5678
+CAF149,Petro Atlético Academy,"Youth development, pro pathways",130,11,Luanda Angola,$450/year,Yes,petro@patfc.ao,+244 22 67 8901
+CAF150,Kabuscorp SC Academy,"Technical training, scouting",110,9,Luanda Angola,$400/year,Yes,kabuscorp@ksc.ao,+244 22 34 5678
+CAF151,Desportivo da Huíla Academy,"Youth training, technical skills",100,8,Huíla Angola,$400/year,Yes,desportivo@dhfc.ao,+244 26 67 8901
+CAF152,Interclube Academy,"Elite training, competitive leagues",120,10,Luanda Angola,$450/year,Yes,interclube@icfc.ao,+244 22 89 0123
+CAF153,Academia de Futebol de Bissau,"Grassroots training, scouting",90,7,Bissau Guinea-Bissau,$300/year,Yes,afbissau@afb.gw,+245 95 34 5678
+CAF154,Sporting Bissau Academy,"Skill development, youth programs",80,6,Bissau Guinea-Bissau,$250/year,Yes,sporting@sbfc.gw,+245 95 67 8901
+CAF155,Balantas FC Academy,"Youth coaching, technical skills",70,5,Mansôa Guinea-Bissau,$250/year,Yes,balantas@bfc.gw,+245 95 89 0123
+CAF156,ASEC Koudougou Academy,"Grassroots training, education",90,7,Koudougou Burkina Faso,$300/year,Yes,aseck@asec.bf,+226 20 34 5678
+CAF157,RCK Academy,"Skill training, competitive play",100,8,Ouagadougou Burkina Faso,$350/year,Yes,rck@rck.bf,+226 25 67 8901
+CAF158,Majestic FC Academy,"Youth development, scouting",110,9,Bobo-Dioulasso Burkina Faso,$350/year,Yes,majestic@mfc.bf,+226 20 89 0123
+CAF159,AS SONABEL Academy,"Technical training, youth leagues",80,6,Ouagadougou Burkina Faso,$300/year,Yes,sonabel@asb.bf,+226 25 34 5678
+CAF160,Bujumbura City Academy,"Grassroots training, scouting",90,7,Gitega Burundi,$300/year,Yes,bujumbura@bcfc.bi,+257 22 34 5678
+CAF161,Le Messager FC Academy,"Youth coaching, skill development",80,6,Ngozi Burundi,$250/year,Yes,messager@mfc.bi,+257 22 67 8901
+CAF162,Vital’O FC Academy,"Technical training, competitive play",100,8,Gitega Burundi,$350/year,Yes,vitalo@vfc.bi,+257 22 89 0123
+CAF163,Stella Maris Academy,"Grassroots training, education",90,7,Monrovia Liberia,$300/year,Yes,stellamaris@smfc.lr,+231 88 34 5678
+CAF164,LISCR FC Academy,"Skill development, youth leagues",100,8,Monrovia Liberia,$350/year,Yes,liscr@lfc.lr,+231 88 67 8901
+CAF165,Barrack Young Controllers Academy,"Youth training, scouting",110,9,Monrovia Liberia,$350/year,Yes,byc@byc.lr,+231 88 89 0123
+CAF166,Nimba United Academy,"Technical training, competitive play",80,6,Sanniquellie Liberia,$300/year,Yes,nimba@nufc.lr,+231 88 34 5678
+CAF167,Académie de Football de Niamey,"Grassroots training, scouting",90,7,Niamey Niger,$300/year,Yes,afniamey@afn.ne,+227 20 34 5678
+CAF168,Sahel SC Academy,"Skill coaching, youth programs",100,8,Niamey Niger,$350/year,Yes,sahel@ssc.ne,+227 20 67 8901
+CAF169,AS GNN Academy,"Youth development, technical skills",80,6,Niamey Niger,$300/year,Yes,asgnn@agn.ne,+227 20 89 0123
+CAF170,Zamalek SC Youth Academy,"Elite training, competitive leagues",150,12,Gezira Egypt,$550/year,Yes,zamalek@zsc.eg,+20 2 34 5678
+CAF171,Ismaily SC Academy,"Skill development, scouting",130,11,Ismailia Egypt,$500/year,Yes,ismaily@isc.eg,+20 64 34 5678
+CAF172,Pyramids FC Academy,"Youth training, pro pathways",140,12,Cairo Egypt,$600/year,Yes,pyramids@pfc.eg,+20 2 67 8901
+CAF173,ENPPI Club Academy,"Technical training, youth leagues",120,10,Cairo Egypt,$500/year,Yes,enppi@enppi.eg,+20 2 89 0123
+CAF174,Mokawloon Academy,"Grassroots training, scouting",110,9,Cairo Egypt,$450/year,Yes,mokawloon@mfc.eg,+20 2 34 5678
+CAF175,Hussein Dey Academy,"Youth coaching, skill development",100,8,Algiers Algeria,$400/year,Yes,husseindey@hd.dz,+213 21 34 5678
+CAF176,MC Oran Academy,"Technical training, competitive play",120,10,Oran Algeria,$450/year,Yes,mcoran@mco.dz,+213 41 34 5678
+CAF177,JS Saoura Academy,"Skill development, youth leagues",110,9,Bechar Algeria,$400/year,Yes,jssaoura@jss.dz,+213 49 34 5678
+CAF178,CS Constantine Academy,"Elite training, scouting",130,11,Constantine Algeria,$450/year,Yes,csconstantine@csc.dz,+213 31 34 5678
+CAF179,NA Hussein Dey Academy,"Youth training, technical skills",100,8,Algiers Algeria,$400/year,Yes,nahd@nahd.dz,+213 21 67 8901
+CAF180,ASC Diaraf Academy,"Grassroots training, competitive play",120,10,Dakar Senegal,$500/year,Yes,diaraf@ad.sn,+221 33 34 5678
+CAF181,Jaraaf Academy,"Skill development, youth programs",110,9,Dakar Senegal,$450/year,Yes,jaraaf@jfc.sn,+221 33 67 8901
+CAF182,AS Douanes Academy Senegal,"Youth coaching, scouting",100,8,Dakar Senegal,$400/year,Yes,douanes@ads.sn,+221 33 89 0123
+CAF183,Linguère Academy,"Technical training, leagues",90,7,Saint-Louis Senegal,$400/year,Yes,linguere@alf.sn,+221 33 34 5678
+CAF184,Casa Sports Academy,"Elite training, pro pathways",130,11,Ziguinchor Senegal,$450/year,Yes,casa@csfc.sn,+221 33 67 8901
+CAF185,AS Kaloum Star Academy,"Grassroots training, scouting",100,9,Conakry Guinea,$350/year,Yes,kaloum@aks.gn,+224 30 34 5678
+CAF186,Satellite FC Academy,"Skill coaching, youth leagues",90,8,Conakry Guinea,$300/year,Yes,satellite@sfc.gn,+224 30 67 8901
+CAF187,Fello Star Academy,"Youth development, technical skills",80,6,Labé Guinea,$300/year,Yes,fello@fsfc.gn,+224 30 89 0123
+CAF188,AS Togo Port Academy,"Technical training, competitive play",100,8,Lomé Togo,$350/year,Yes,togoport@atp.tg,+228 22 34 5678
+CAF189,AC Merlan Academy,"Youth training, scouting",90,7,Lomé Togo,$300/year,Yes,merlan@amfc.tg,+228 22 67 8901
+CAF190,Dynamic Togolais Academy,"Skill development, youth programs",80,6,Lomé Togo,$300/year,Yes,dynamic@dtfc.tg,+228 22 89 0123
+CAF191,Requins de l’Atlantique Academy,"Grassroots training, leagues",90,7,Cotonou Benin,$350/year,Yes,requins@rafc.bj,+229 21 34 5678
+CAF192,AS Dragons Academy,"Youth coaching, technical skills",100,8,Cotonou Benin,$350/year,Yes,asdragons@adfc.bj,+229 21 67 8901
+CAF193,Espoir FC Academy,"Skill training, competitive play",80,6,Abomey Benin,$300/year,Yes,espoir@efc.bj,+229 22 34 5678
+CAF194,Salitas FC Academy,"Elite training, scouting",110,9,Ouagadougou Burkina Faso,$350/year,Yes,salitas@sfc.bf,+226 25 34 5678
+CAF195,USFA Academy,"Youth development, pro pathways",100,8,Ouagadougou Burkina Faso,$350/year,Yes,usfa@usfa.bf,+226 25 67 8901
+CAF196,Rahimo FC Academy,"Technical training, youth leagues",90,7,Bobo-Dioulasso Burkina Faso,$300/year,Yes,rahimo@rfc.bf,+226 20 34 5678
+CAF197,Flambeau de l’Est Academy,"Grassroots training, scouting",80,6,Gitega Burundi,$250/year,Yes,flambeau@fefc.bi,+257 22 34 5678
+CAF198,Atlético Olympic Academy,"Skill coaching, youth programs",90,7,Bujumbura Burundi,$300/year,Yes,atletico@aofc.bi,+257 22 67 8901
+CAF199,Watanga FC Academy,"Youth training, technical skills",100,8,Monrovia Liberia,$350/year,Yes,watanga@wfc.lr,+231 88 34 5678
+CAF200,Mighty Barrolle Academy,"Elite training, competitive leagues",110,9,Monrovia Liberia,$350/year,Yes,barrolle@mbfc.lr,+231 88 67 8901
+CAF201,ASN Nigelec Academy,"Grassroots training, scouting",90,7,Niamey Niger,$300/year,Yes,nigelec@ann.ne,+227 20 34 5678
+CAF202,AS Fan Academy,"Skill development, youth leagues",100,8,Niamey Niger,$350/year,Yes,asfan@afn.ne,+227 20 67 8901
+CAF203,US Gendarmerie Academy,"Youth coaching, technical skills",80,6,Niamey Niger,$300/year,Yes,usg@usgn.ne,+227 20 89 0123
+CAF204,Al Ittihad Academy,"Elite training, competitive play",130,11,Tripoli Libya,$450/year,Yes,alittihad@aifc.ly,+218 21 34 5678
+CAF205,Al Ahly Tripoli Academy,"Youth training, pro pathways",140,12,Tripoli Libya,$500/year,Yes,alahly@atfc.ly,+218 21 67 8901
+CAF206,Al Nasr Benghazi Academy,"Skill development, scouting",120,10,Benghazi Libya,$450/year,Yes,alnasr@anfc.ly,+218 61 34 5678
+CAF207,Al Madina Academy,"Technical training, youth leagues",100,9,Tripoli Libya,$400/year,Yes,almadina@amfc.ly,+218 21 89 0123
+CAF208,Hilal Sabha Academy,"Grassroots training, competitive play",90,8,Sabha Libya,$400/year,Yes,hilalsabha@hsfc.ly,+218 71 34 5678
+CAF209,FUS de Rabat Academy,"Elite training, scouting",130,11,Rabat Morocco,$550/year,Yes,fus@fusr.ma,+212 537 34 5678
+CAF210,MAS Fez Academy,"Youth coaching, technical skills",120,10,Fes Morocco,$500/year,Yes,masfez@mas.ma,+212 535 34 5678
+CAF211,IRT Tangier Academy,"Skill development, youth programs",110,9,Tangier Morocco,$450/year,Yes,irt@irt.ma,+212 539 67 8901
+CAF212,Hassania Agadir Academy,"Technical training, competitive leagues",100,8,Agadir Morocco,$450/year,Yes,hassania@hafc.ma,+212 528 34 5678
+CAF213,Olympic Safi Academy,"Grassroots training, scouting",90,7,Safi Morocco,$400/year,Yes,olympicsafi@osfc.ma,+212 524 34 5678
+CAF214,Al Ahli Khartoum Academy,"Youth training, technical skills",110,9,Khartoum Sudan,$350/year,Yes,alahli@akfc.sd,+249 18 34 5678
+CAF215,Merreikh Al-Fasher Academy,"Skill development, competitive play",90,8,Al-Fasher Sudan,$300/year,Yes,merreikh@mffc.sd,+249 18 67 8901
+CAF216,Hay Al-Arab Academy,"Grassroots training, youth leagues",100,7,Port Sudan Sudan,$300/year,Yes,hayalarab@haafc.sd,+249 31 34 5678
+CAF217,Atlabara FC Academy,"Youth coaching, scouting",90,6,Juba South Sudan,$250/year,Yes,atlabara@afc.ss,+211 92 34 5678
+CAF218,Kator FC Academy,"Technical training, youth programs",80,5,Juba South Sudan,$250/year,Yes,kator@kfc.ss,+211 92 67 8901
+CAF219,Police Kibungo Academy,"Skill development, competitive leagues",100,8,Kibungo Rwanda,$350/year,Yes,policekibungo@pkfc.rw,+250 78 34 5678
+CAF220,AS Kigali Academy,"Youth training, pro pathways",110,9,Kigali Rwanda,$400/year,Yes,askigali@ask.rw,+250 78 67 8901
+CAF221,Kiyovu Sports Academy,"Grassroots training, scouting",90,7,Kigali Rwanda,$350/year,Yes,kiyovu@ksfc.rw,+250 78 89 0123
+CAF222,Musanze FC Academy,"Technical training, youth leagues",80,6,Musanze Rwanda,$300/year,Yes,musanze@mfc.rw,+250 78 34 5678
+CAF223,ZESCO United Academy,"Elite training, competitive play",120,10,Ndola Zambia,$400/year,Yes,zesco@zufc.zm,+260 21 34 5678
+CAF224,Lusaka Dynamos Academy,"Youth coaching, skill development",100,8,Lusaka Zambia,$350/year,Yes,lusaka@ldfc.zm,+260 21 67 8901
+CAF225,Napsa Stars Academy,"Grassroots training, scouting",90,7,Lusaka Zambia,$350/year,Yes,napsa@nsfc.zm,+260 21 89 0123
+CAF226,Bravos do Maquis Academy,"Skill training, youth programs",100,8,Luena Angola,$400/year,Yes,bravos@bmfc.ao,+244 26 34 5678
+CAF227,Sagrada Esperança Academy,"Youth development, technical skills",110,9,Dundo Angola,$450/year,Yes,sagrada@sefc.ao,+244 26 67 8901
+CAF228,Academia de Futbol da Praia,"Grassroots training, scouting",80,6,Praia Cape Verde,$300/year,Yes,afpraia@afp.cv,+238 26 34 5678
+CAF229,Sporting Praia Academy,"Skill coaching, youth leagues",90,7,Praia Cape Verde,$350/year,Yes,sporting@spfc.cv,+238 26 67 8901
+CAF230,Académica do Mindelo Academy,"Youth training, competitive play",70,5,Mindelo Cape Verde,$300/year,Yes,academica@amfc.cv,+238 23 34 5678
+CAF231,Modern Future FC Academy,"Elite training, pro pathways",130,11,Cairo Egypt,$550/year,Yes,modernfuture@mffc.eg,+20 2 34 5678
+CAF232,Smouha SC Academy,"Skill development, scouting",120,10,Alexandria Egypt,$500/year,Yes,smouha@ssc.eg,+20 3 34 5678
+CAF233,Tala’ea El Gaish Academy,"Technical training, youth leagues",110,9,Cairo Egypt,$450/year,Yes,talaea@teg.eg,+20 2 67 8901
+CAF234,Ghazl El Mahalla Academy,"Grassroots training, competitive play",100,8,Mahalla Egypt,$400/year,Yes,ghazl@gemfc.eg,+20 40 34 5678
+CAF235,El Entag El Harby Academy,"Youth coaching, skill development",90,7,Cairo Egypt,$400/year,Yes,entag@eehfc.eg,+20 2 89 0123
+CAF236,Jimma Aba Jifar Academy,"Skill training, youth programs",100,8,Jimma Ethiopia,$300/year,Yes,jimma@jajfc.et,+251 47 34 5678
+CAF237,Bahir Dar Kenema Academy,"Youth development, technical skills",90,7,Bahir Dar Ethiopia,$300/year,Yes,bahirdar@bkfc.et,+251 58 34 5678
+CAF238,Defence Force Academy,"Grassroots training, scouting",80,6,Addis Ababa Ethiopia,$300/year,Yes,defence@dffc.et,+251 11 34 5678
+CAF239,URA FC Academy,"Elite training, competitive leagues",110,9,Kampala Uganda,$400/year,Yes,ura@urafc.co.ug,+256 41 34 5678
+CAF240,Wakiso Giants Academy,"Skill development, youth programs",90,7,Wakiso Uganda,$350/year,Yes,wakiso@wgfc.co.ug,+256 41 67 8901
+CAF241,Busoga United Academy,"Youth training, technical skills",80,6,Jinja Uganda,$300/year,Yes,busoga@bufc.co.ug,+256 43 34 5678
+CAF242,Sofapaka FC Academy,"Grassroots training, scouting",100,8,Nairobi Kenya,$350/year,Yes,sofapaka@sffc.co.ke,+254 20 34 5678
+CAF243,Tusker FC Academy,"Skill coaching, youth leagues",110,9,Nairobi Kenya,$400/year,Yes,tusker@tfc.co.ke,+254 20 67 8901
+CAF244,AFC Leopards Academy,"Youth development, competitive play",120,10,Nairobi Kenya,$400/year,Yes,leopards@alfc.co.ke,+254 20 89 0123
+CAF245,Bandari FC Academy,"Technical training, scouting",100,8,Mombasa Kenya,$350/year,Yes,bandari@bfc.co.ke,+254 41 34 5678
+CAF246,Gor Mahia Academy,"Elite training, pro pathways",130,11,Nairobi Kenya,$400/year,Yes,gormahia@gmfc.co.ke,+254 20 34 5678
+CAF247,Mathare United Academy,"Grassroots training, youth programs",110,9,Nairobi Kenya,$350/year,Yes,mathare@mufc.co.ke,+254 20 67 8901
+CAF248,Kariobangi Sharks Academy,"Skill development, technical skills",90,7,Nairobi Kenya,$350/year,Yes,sharks@ksfc.co.ke,+254 20 89 0123
+CAF249,Posta Rangers Academy,"Youth coaching, scouting",80,6,Nairobi Kenya,$300/year,Yes,posta@prfc.co.ke,+254 20 34 5678
+CAF250,Nzoia Sugar Academy,"Technical training, youth leagues",90,7,Bungoma Kenya,$300/year,Yes,nzoia@nsfc.co.ke,+254 55 34 5678
+CAF252,Shabana FC Academy,"Grassroots training, scouting",90,7,Kisii Kenya,$300/year,Yes,shabana@sffc.co.ke,+254 58 34 5678
+CAF253,Western Stima Academy,"Skill development, youth programs",80,6,Kisumu Kenya,$300/year,Yes,stima@wsfc.co.ke,+254 57 34 5678
+CAF254,Chemelil Sugar Academy,"Youth coaching, technical skills",70,5,Chemelil Kenya,$250/year,Yes,chemelil@csfc.co.ke,+254 57 67 8901
+CAF255,Thika United Academy,"Technical training, scouting",90,7,Thika Kenya,$350/year,Yes,thika@tufc.co.ke,+254 67 34 5678
+CAF256,Kenya Police FC Academy,"Skill training, competitive play",100,8,Nairobi Kenya,$350/year,Yes,police@kpfc.co.ke,+254 20 34 5678
+CAF257,Mount Kenya United Academy,"Youth development, leagues",80,6,Nanyuki Kenya,$300/year,Yes,mountkenya@mkufc.co.ke,+254 62 34 5678
+CAF258,Kakamega Homeboyz Academy,"Grassroots training, scouting",110,9,Kakamega Kenya,$350/year,Yes,homeboyz@khfc.co.ke,+254 56 34 5678
+CAF259,Vihiga United Academy,"Skill coaching, youth programs",90,7,Vihiga Kenya,$300/year,Yes,vihiga@vufc.co.ke,+254 56 67 8901
+CAF260,Nakumatt FC Academy,"Youth training, technical skills",80,6,Nairobi Kenya,$300/year,Yes,nakumatt@nfc.co.ke,+254 20 34 5678
+CAF261,Mbale Heroes Academy,"Grassroots training, scouting",90,7,Mbale Uganda,$300/year,Yes,mbale@mhfc.co.ug,+256 45 34 5678
+CAF262,Tooro United Academy,"Skill development, youth leagues",80,6,Fort Portal Uganda,$300/year,Yes,tooro@tufc.co.ug,+256 48 34 5678
+CAF263,Jinja North FC Academy,"Youth coaching, technical skills",70,5,Jinja Uganda,$250/year,Yes,jinjanorth@jnfc.co.ug,+256 43 34 5678
+CAF264,Mbarara City Academy,"Technical training, competitive play",100,8,Mbarara Uganda,$350/year,Yes,mbarara@mcfc.co.ug,+256 48 67 8901
+CAF265,Gaddafi FC Academy,"Youth development, scouting",90,7,Jinja Uganda,$300/year,Yes,gaddafi@gfc.co.ug,+256 43 89 0123
+CAF266,Sidama Coffee Academy,"Grassroots training, youth programs",100,8,Hawassa Ethiopia,$300/year,Yes,sidama@scfc.et,+251 46 34 5678
+CAF267,Mekelle 70 Enderta Academy,"Skill training, competitive leagues",90,7,Mekelle Ethiopia,$300/year,Yes,mekelle@mefc.et,+251 34 34 5678
+CAF268,Arba Minch City Academy,"Youth coaching, technical skills",80,6,Arba Minch Ethiopia,$250/year,Yes,arbaminch@amfc.et,+251 46 34 5678
+CAF269,Hadiya Hossana Academy,"Technical training, scouting",90,7,Hossana Ethiopia,$300/year,Yes,hadiya@hhfc.et,+251 46 67 8901
+CAF270,Wolkite City Academy,"Youth development, leagues",80,6,Wolkite Ethiopia,$250/year,Yes,wolkite@wcfc.et,+251 11 34 5678
+CAF271,Al Masry Academy,"Elite training, competitive play",130,11,Port Said Egypt,$500/year,Yes,almasry@amfc.eg,+20 66 34 5678
+CAF272,Ittihad Alexandria Academy,"Skill development, youth leagues",120,10,Alexandria Egypt,$450/year,Yes,ittihad@iafc.eg,+20 3 34 5678
+CAF273,Misr Lel Makkasa Academy,"Youth training, pro pathways",110,9,Fayoum Egypt,$400/year,Yes,makkasa@mlmfc.eg,+20 84 34 5678
+CAF274,El Gouna FC Academy,"Technical training, scouting",100,8,El Gouna Egypt,$450/year,Yes,elgouna@egfc.eg,+20 65 34 5678
+CAF275,AsWAN FC Academy,"Grassroots training, youth programs",90,7,Aswan Egypt,$400/year,Yes,aswan@afc.eg,+20 97 34 5678
+CAF276,Boavista Praia Academy,"Youth coaching, technical skills",90,7,Praia Cape Verde,$350/year,Yes,boavista@bffc.cv,+238 26 34 5678
+CAF277,CS Mindelense Academy,"Skill training, competitive play",80,6,Mindelo Cape Verde,$300/year,Yes,mindelense@cmfc.cv,+238 23 34 5678
+CAF278,Académica do Sal Academy,"Grassroots training, scouting",70,5,Espargos Cape Verde,$250/year,Yes,academica@asfc.cv,+238 24 34 5678
+CAF279,Progresso Sambizanga Academy,"Youth development, leagues",100,8,Luanda Angola,$400/year,Yes,progresso@psfc.ao,+244 22 34 5678
+CAF280,Recreativo do Libolo Academy,"Technical training, competitive play",110,9,Calulo Angola,$450/year,Yes,recreativo@rlfc.ao,+244 23 34 5678
+CAF281,Forest Rangers Academy,"Skill coaching, youth programs",100,8,Ndola Zambia,$350/year,Yes,forest@frfc.zm,+260 21 34 5678
+CAF282,Kabwe Warriors Academy,"Youth training, technical skills",90,7,Kabwe Zambia,$300/year,Yes,kabwe@kwfc.zm,+260 21 67 8901
+CAF283,Buildcon FC Academy,"Grassroots training, scouting",80,6,Ndola Zambia,$300/year,Yes,buildcon@bfc.zm,+260 21 89 0123
+CAF284,Lumwana Radiants Academy,"Skill development, competitive leagues",90,7,Solwezi Zambia,$350/year,Yes,lumwana@lrfc.zm,+260 21 34 5678
+CAF285,Triangle United Academy,"Youth coaching, scouting",100,8,Chiredzi Zimbabwe,$300/year,Yes,triangle@tufc.co.zw,+263 31 34 5678
+CAF286,Harare City Academy,"Technical training, youth programs",110,9,Harare Zimbabwe,$350/year,Yes,harare@hcfc.co.zw,+263 4 34 5678
+CAF287,Bantu Rovers Academy,"Grassroots training, competitive play",90,7,Bulawayo Zimbabwe,$300/year,Yes,bantu@brfc.co.zw,+263 9 34 5678
+CAF288,Hwange FC Academy,"Youth development, technical skills",80,6,Hwange Zimbabwe,$250/year,Yes,hwange@hfc.co.zw,+263 81 34 5678
