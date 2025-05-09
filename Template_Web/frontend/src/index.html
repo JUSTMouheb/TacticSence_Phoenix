@@ -93,10 +93,771 @@
 
   <script src="assets/js2/main.js"></script>
 
+  <!-- In the head or at the end of body, add: -->
+<!-- Isotope -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!-- GLightbox -->
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
- 
+  <script src="assets/js/randomize-backgrounds.js"></script>
+
+
+<!-- Chatbot Container -->
+<div class="chatbot-container">
+    <div class="chatbot-header">
+       <h5 class="text-white">TacticSense Assistant</h5>
+        <button id="closeChat" class="close-btn">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+        <div class="bot-message">Welcome to TacticSense's website! Hey! I’m here to help you navigate TacticSense. You can ask me about player stats, club data, or transfer agents!</div>
+    </div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbotInput" placeholder="Ask anything...">
+        <button id="sendQueryBtn">
+            <i class="bi bi-send-fill"></i>
+        </button>
+    </div>
+</div>
+
+
+<!-- Chatbot Toggle Button -->
+<div class="chat-toggle-btn" id="chatToggleBtn">
+    <img src="assets/img/Logo TacticSense Attempt.png" alt="TacticSense" class="chat-logo">
+</div>
+
+<!-- Chatbot Script - Non-module version to avoid import issues -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const messagesContainer = document.getElementById('chatbotMessages');
+        const inputField = document.getElementById('chatbotInput');
+        const sendButton = document.getElementById('sendQueryBtn');
+        
+        // ChatbotService functionality inline to avoid module issues
+        const apiUrl = 'http://localhost:5000/api/chatbot';
+        
+        function addMessage(text, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = isUser ? 'user-message' : 'bot-message';
+            messageDiv.textContent = text;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        async function sendQuery() {
+            const query = inputField.value.trim();
+            if (!query) return;
+            
+            // Add user message
+            addMessage(query, true);
+            inputField.value = '';
+            
+            // Show typing indicator
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'bot-message typing';
+            typingDiv.textContent = '...';
+            messagesContainer.appendChild(typingDiv);
+            
+            try {
+                // Send query to API
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query }),
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                // Remove typing indicator
+                messagesContainer.removeChild(typingDiv);
+                
+                // Add bot response
+                addMessage(data.message || "I couldn't understand that query.");
+                
+                // If there's result data, display it
+                if (data.result_data && data.result_data.length > 0) {
+                    const dataDiv = document.createElement('div');
+                    dataDiv.className = 'bot-message data-message';
+                    dataDiv.innerHTML = `<strong>Found ${data.result_data.length} results:</strong>`;
+                    
+                    // Create a simple table for the first 5 results
+                    const table = document.createElement('table');
+                    table.className = 'results-table';
+                    
+                    // Add headers
+                    // Replace the line with:
+const headers = Object.keys(data.result_data[0]).slice(0, 5); // Limit to 5 columns
+                    const headerRow = document.createElement('tr');
+                    headers.forEach(header => {
+                        const th = document.createElement('th');
+                        th.textContent = header;
+                        headerRow.appendChild(th);
+                    });
+                    table.appendChild(headerRow);
+                    
+                    // Add data rows (max 5)
+                    data.result_data.slice(0, 5).forEach(item => {
+                        const row = document.createElement('tr');
+                        headers.forEach(header => {
+                            const td = document.createElement('td');
+                            td.textContent = item[header] || '';
+                            row.appendChild(td);
+                        });
+                        table.appendChild(row);
+                    });
+                    
+                    dataDiv.appendChild(table);
+                    messagesContainer.appendChild(dataDiv);
+                }
+           } catch (error) {
+    // Remove typing indicator
+    if (typingDiv.parentNode) {
+        messagesContainer.removeChild(typingDiv);
+    }
+    
+    // Show error message with more details
+    addMessage('Sorry, there was an error processing your request: ' + 
+        (error.message || 'Unknown error'));
+    console.error('Chatbot request error:', error);
+}
+        }
+        
+        // Event listeners
+        if (sendButton) {
+            sendButton.addEventListener('click', sendQuery);
+        }
+        
+        if (inputField) {
+            inputField.addEventListener('keypress', event => {
+                if (event.key === 'Enter') {
+                    sendQuery();
+                }
+            });
+        }
+    });
+</script>
+
+
+<style>
+/* Chatbot styles */
+
+/* Chat toggle button */
+.chat-toggle-btn {
+    position: absolute; /* Change from fixed to absolute for scroll following */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ee1e46;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(238, 30, 70, 0.4);
+    z-index: 1000;
+    transition: top 0.3s ease; /* Smooth transition for position changes */
+    overflow: hidden;
+    animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+.chat-toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+.chat-logo {
+    width: 70px; /* Size to fill the button */
+    height: 70px;
+    object-fit: contain;
+    filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.2)); /* Adds subtle shadow to logo */
+    background-color: transparent; /* Ensures transparency */
+}
+
+.chat-toggle-btn i {
+    font-size: 24px;
+    color: white;
+}
+
+/* Chatbot container */
+.chatbot-container {
+    position: absolute; /* Change from fixed to absolute for scroll following */
+    right: 90px;
+    width: 380px;
+    max-height: 550px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: none;
+    transition: top 0.3s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+
+
+
+
+/* Update the animation for the new positioning */
+.chatbot-container.visible {
+    display: block;
+    animation: popup-side 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popup-side {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) translateX(20px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+/* Additional modifications for the responsive behavior */
+@media screen and (max-height: 650px) {
+    .chatbot-container {
+        max-height: 80vh; /* Limit height on smaller screens */
+    }
+}
+/* Chatbot header */
+.chatbot-header {
+    background-color: #ee1e46;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab; /* Indicates draggable */
+}
+
+.chatbot-header:active {
+    cursor: grabbing; /* Indicates active dragging */
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Chatbot messages area */
+.chatbot-messages {
+    height: 400px;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.user-message, .bot-message {
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    max-width: 85%;
+    word-break: break-word;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    animation: fadeIn 0.3s ease;
+}
+
+.user-message {
+    background-color: #ee1e46;
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+}
+
+.bot-message {
+    background-color: #e9e9e9;
+    border-bottom-left-radius: 4px;
+}
+
+/* Typing indicator */
+.typing {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.typing span {
+    height: 8px;
+    width: 8px;
+    background-color: #aaa;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    animation: pulse 1s infinite;
+}
+
+.typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing span:nth-child(3) {
+    animation-delay: 0.4s;
+    margin-right: 0;
+}
+
+/* Details and data message formats */
+.details-message {
+    background-color: #f0f8ff;
+    border-left: 3px solid #0066cc;
+    padding: 10px 12px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.data-message {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    overflow-x: auto;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Results table */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.results-table th, .results-table td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Input area */
+.chatbot-input {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #e1e1e1;
+    background-color: white;
+}
+
+#chatbotInput {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+#chatbotInput:focus {
+    border-color: #ee1e46;
+}
+
+#sendQueryBtn {
+    background-color: #ee1e46;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#sendQueryBtn:hover {
+    background-color: #ee1e46;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.7; }
+}
+
+@keyframes pulse-ring {
+    0% {
+        box-shadow: 0 0 0 0 rgba(238, 30, 70, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(238, 30, 70, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(238, 30, 70, 0);
+    }
+}
+</style>
+<script>
+       document.addEventListener('DOMContentLoaded', function() {
+    // DOM Elements
+    const messagesContainer = document.getElementById('chatbotMessages');
+    const inputField = document.getElementById('chatbotInput');
+    const sendButton = document.getElementById('sendQueryBtn');
+    const chatToggleBtn = document.getElementById('chatToggleBtn');
+    const chatbotContainer = document.querySelector('.chatbot-container');
+    const closeChat = document.getElementById('closeChat');
+    const chatbotHeader = document.querySelector('.chatbot-header');
+    
+    // Track state
+    const userId = 'user_' + new Date().getTime(); // Simple user ID for context tracking
+    let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let ticking = false;
+    let isFollowingScroll = true; // Set to false if user has dragged the chatbot
+    let isDragging = false;
+    let offsetX, offsetY;
+    
+    // API endpoint
+    const apiUrl = 'http://localhost:5000/api/chatbot';
+    
+    // ===== SCROLL FOLLOWING FUNCTIONALITY =====
+    
+    // Initial position - middle right
+    positionChatAtViewportMiddle();
+    
+    // Follow scroll position
+    window.addEventListener('scroll', function() {
+        if (!isFollowingScroll) return; // Skip if user has manually positioned
+        
+        lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                positionChatAtViewportMiddle();
+                ticking = false;
+            });
+            
+            ticking = true;
+        }
+    });
+    
+    // Update on window resize
+    window.addEventListener('resize', function() {
+        if (!isFollowingScroll) return;
+        positionChatAtViewportMiddle();
+    });
+    
+    // Position chatbot in the middle of current viewport
+    function positionChatAtViewportMiddle() {
+        if (!chatToggleBtn) return;
+        
+        // Get viewport height
+        const viewportHeight = window.innerHeight;
+        
+        // Position in the middle of the current viewport
+        const middlePosition = viewportHeight / 2;
+        
+        // Apply position to chat button
+        chatToggleBtn.style.top = `${middlePosition + window.pageYOffset}px`;
+        chatToggleBtn.style.transform = 'translateY(-50%)';
+        
+        // Also update chatbot container position if it's open
+        if (chatbotContainer && chatbotContainer.style.display === 'block') {
+            chatbotContainer.style.top = `${middlePosition + window.pageYOffset}px`;
+            chatbotContainer.style.transform = 'translateY(-50%)';
+        }
+    }
+    
+    // ===== DRAGGABLE FUNCTIONALITY =====
+    
+    if (chatbotContainer && chatbotHeader) {
+        // Make the header indicate it's draggable
+        chatbotHeader.style.cursor = 'grab';
+        
+        // Start dragging
+        chatbotHeader.addEventListener('mousedown', function(e) {
+            isDragging = true;
+            
+            // Get the current position of the mouse relative to the chatbot
+            offsetX = e.clientX - chatbotContainer.getBoundingClientRect().left;
+            offsetY = e.clientY - chatbotContainer.getBoundingClientRect().top;
+            
+            // Change cursor to indicate dragging
+            chatbotHeader.style.cursor = 'grabbing';
+        });
+        
+        // Stop dragging
+        document.addEventListener('mouseup', function() {
+            if (isDragging) {
+                isDragging = false;
+                chatbotHeader.style.cursor = 'grab';
+            }
+        });
+        
+        // Move while dragging
+        document.addEventListener('mousemove', function(e) {
+            if (!isDragging) return;
+            
+            // Disable scroll following when user manually drags
+            isFollowingScroll = false;
+            
+            // Calculate new position
+            const newX = e.clientX - offsetX;
+            const newY = e.clientY - offsetY;
+            
+            // Apply new position with boundaries
+            chatbotContainer.style.right = 'auto';
+            chatbotContainer.style.bottom = 'auto';
+            chatbotContainer.style.left = Math.max(0, Math.min(window.innerWidth - chatbotContainer.offsetWidth, newX)) + 'px';
+            chatbotContainer.style.top = Math.max(0, Math.min(window.innerHeight - chatbotContainer.offsetHeight, newY)) + 'px';
+            chatbotContainer.style.transform = 'none';
+        });
+        
+        
+    }
+    
+    // ===== TOGGLE FUNCTIONALITY =====
+    
+    if (chatToggleBtn && chatbotContainer) {
+        // Show chatbot
+        chatToggleBtn.addEventListener('click', function() {
+            chatbotContainer.style.display = 'block';
+            
+            // Position container near the button
+            if (isFollowingScroll) {
+                chatbotContainer.style.top = chatToggleBtn.style.top;
+                chatbotContainer.style.transform = 'translateY(-50%)';
+            }
+            
+            // Add animation class with slight delay
+            setTimeout(() => {
+                chatbotContainer.classList.add('visible');
+            }, 10);
+            
+            // Focus on input field
+            if (inputField) {
+                setTimeout(() => inputField.focus(), 300);
+            }
+        });
+        
+        // Hide chatbot
+        if (closeChat) {
+            closeChat.addEventListener('click', function() {
+                chatbotContainer.classList.remove('visible');
+                // Wait for animation to finish before hiding
+                setTimeout(() => {
+                    chatbotContainer.style.display = 'none';
+                }, 400);
+            });
+        }
+    }
+    // ===== MESSAGE FUNCTIONALITY =====
+    
+    function addMessage(text, isUser = false) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = isUser ? 'user-message' : 'bot-message';
+        messageDiv.textContent = text;
+        messagesContainer.appendChild(messageDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    function addTypingIndicator() {
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'bot-message typing';
+        typingDiv.innerHTML = '<span></span><span></span><span></span>';
+        messagesContainer.appendChild(typingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        return typingDiv;
+    }
+    
+    function addDetailsMessage(details) {
+        if (!details) return;
+        
+        const detailsDiv = document.createElement('div');
+        detailsDiv.className = 'details-message';
+        detailsDiv.innerHTML = details.replace(/\n/g, '<br>');
+        messagesContainer.appendChild(detailsDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    function createTable(data, maxRows = 10) {
+        if (!data || !data.length) return null;
+        
+        // Limit columns for better UX
+        const headers = Object.keys(data[0]).slice(0, 5);
+        
+        const table = document.createElement('table');
+        table.className = 'results-table';
+        
+        // Create header row
+        const headerRow = document.createElement('tr');
+        headers.forEach(header => {
+            const th = document.createElement('th');
+            th.textContent = header;
+            headerRow.appendChild(th);
+        });
+        table.appendChild(headerRow);
+        
+        // Create data rows
+        data.slice(0, maxRows).forEach(item => {
+            const row = document.createElement('tr');
+            headers.forEach(header => {
+                const td = document.createElement('td');
+                td.textContent = item[header] || '';
+                row.appendChild(td);
+            });
+            table.appendChild(row);
+        });
+        
+        return table;
+    }
+    
+    async function sendQuery() {
+        const query = inputField.value.trim();
+        if (!query) return;
+        
+        // Add user message
+        addMessage(query, true);
+        inputField.value = '';
+        
+        // Show typing indicator
+        const typingDiv = addTypingIndicator();
+        
+        try {
+            // Send query to API with user context
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ 
+                    query,
+                    user_id: userId
+                }),
+            });
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Remove typing indicator
+            messagesContainer.removeChild(typingDiv);
+            
+            // Add bot response
+            addMessage(data.message || "I couldn't understand that query.");
+            
+            // If there are details, show them
+            if (data.details) {
+                addDetailsMessage(data.details);
+            }
+            
+            // If there's result data, display it
+            if (data.result_data && data.result_data.length > 0) {
+                const dataDiv = document.createElement('div');
+                dataDiv.className = 'data-message';
+                
+                // Create the results table
+                const table = createTable(data.result_data);
+                if (table) {
+                    dataDiv.appendChild(table);
+                    
+                    // Add note if there are more results than shown
+                    if (data.result_data.length > 10) {
+                        const noteP = document.createElement('p');
+                        noteP.style.fontSize = '0.8rem';
+                        noteP.style.fontStyle = 'italic';
+                        noteP.style.marginTop = '5px';
+                        noteP.textContent = `Showing 10 of ${data.result_data.length} results.`;
+                        dataDiv.appendChild(noteP);
+                    }
+                    
+                    messagesContainer.appendChild(dataDiv);
+                }
+            }
+            
+            // Scroll to the bottom
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            
+        } catch (error) {
+            // Remove typing indicator
+            if (typingDiv.parentNode) {
+                messagesContainer.removeChild(typingDiv);
+            }
+            
+            // Show error message
+            addMessage('Sorry, there was an error connecting to the chatbot service. Please check if the API is running.');
+            console.error('Chatbot request error:', error);
+        }
+    }
+    
+    // Event listeners for sending messages
+    if (sendButton) {
+        sendButton.addEventListener('click', sendQuery);
+    }
+    
+    if (inputField) {
+        inputField.addEventListener('keypress', event => {
+            if (event.key === 'Enter') {
+                sendQuery();
+            }
+        });
+    }
+    
+    // Suggest some example queries
+    setTimeout(() => {
+        const suggestionsDiv = document.createElement('div');
+        suggestionsDiv.className = 'bot-message';
+        suggestionsDiv.innerHTML = "You can ask me questions like:<br>" +
+            "• How many players are under 26?<br>" +
+            "• List all clubs<br>" +
+            "• Tell me about football in Africa<br>" +
+            "• Who are the sponsors?";
+        messagesContainer.appendChild(suggestionsDiv);
+    }, 1000);
+});
+</script>
 </body>
 
 </html>

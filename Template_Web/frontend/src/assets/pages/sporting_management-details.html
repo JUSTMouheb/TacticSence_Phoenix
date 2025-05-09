@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sporting Management Agency Details | TacticSense</title>
+  
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/font-awesome/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <!-- Custom CSS for agency details -->
+  <style>
+    .agency-header {
+      background: linear-gradient(rgba(40, 58, 90, 0.8), rgba(40, 58, 90, 0.9)), url("../img/hero-bg.jpg") center center;
+      background-size: cover;
+      padding: 100px 0 60px 0;
+      color: white;
+      margin-bottom: 40px;
+    }
+    
+    .profile-img {
+      height: 250px;
+      width: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .verification-badge {
+      background-color: #28a745;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    
+    .agency-stats {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .stat-item {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #283a5a;
+      margin-bottom: 0;
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    
+    .agency-details-card {
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+    
+    .detail-label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #283a5a;
+    }
+    
+    .detail-value {
+      margin-bottom: 15px;
+    }
+    
+    .back-btn {
+      margin-bottom: 20px;
+    }
+    
+    .client-badge {
+      display: inline-block;
+      background-color: #e9ecef;
+      color: #495057;
+      padding: 6px 12px;
+      border-radius: 50px;
+      margin: 5px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+    
+    .client-badge:hover {
+      background-color: #dee2e6;
+    }
+    
+    .skeleton-loading {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 4px;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .revenue-chart {
+      height: 200px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    
+    @keyframes loading {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="../../index.html">TacticSense</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../../index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#about">About</a></li>
+          <li><a class="nav-link scrollto active" href="../../index.html#analytics">Risk Intelligence</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="../../index.html#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Agency Header -->
+    <section class="agency-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 id="agencyName" class="mb-2">Loading...</h1>
+            <p id="agencyTagline" class="lead mb-3">Loading...</p>
+            <div id="verificationStatus" class="verification-badge">
+              <i class="bi bi-check-circle-fill me-1"></i> Verified
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <!-- Back Button -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <a href="../../index.html#analytics" class="btn btn-outline-primary back-btn">
+            <i class="bi bi-arrow-left"></i> Back to Risk Intelligence
+          </a>
+        </div>
+      </div>
+
+      <!-- Agency Info -->
+      <div class="row">
+        <!-- Left Column - Image and Key Stats -->
+        <div class="col-lg-4 mb-4">
+          <div class="text-center mb-4">
+            <img id="agencyImage" src="../img/soccer/soccer1.jpg" alt="Agency Logo" class="profile-img">
+          </div>
+          
+          <div class="agency-stats">
+            <h3 class="text-center mb-4">Key Metrics</h3>
+            
+            <div class="row">
+              <div class="col-6 stat-item">
+                <p id="clientCount" class="stat-number">--</p>
+                <p class="stat-label">Total Clients</p>
+              </div>
+              <div class="col-6 stat-item">
+                <p id="yearsInBusiness" class="stat-number">--</p>
+                <p class="stat-label">Years Active</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-6 stat-item">
+                <p id="annualRevenue" class="stat-number">--</p>
+                <p class="stat-label">Revenue (M)</p>
+              </div>
+              <div class="col-6 stat-item">
+                <p id="staffCount" class="stat-number">--</p>
+                <p class="stat-label">Staff Count</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="agency-details-card">
+            <h3 class="mb-4">Contact Information</h3>
+            
+            <p class="detail-label">Email</p>
+            <p id="contactEmail" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Phone</p>
+            <p id="phoneNumber" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Headquarters</p>
+            <p id="headquarters" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Website</p>
+            <p id="website" class="detail-value">Loading...</p>
+          </div>
+        </div>
+        
+        <!-- Right Column - Detailed Information -->
+        <div class="col-lg-8">
+          <div class="agency-details-card">
+            <h3 class="mb-4">Agency Information</h3>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <p class="detail-label">License Number</p>
+                <p id="licenseNumber" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Founded</p>
+                <p id="foundedYear" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Verification Date</p>
+                <p id="verificationDate" class="detail-value">Loading...</p>
+              </div>
+              
+              <div class="col-md-6">
+                <p class="detail-label">Services</p>
+                <p id="services" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Key Specialization</p>
+                <p id="keySpecialization" class="detail-value">Loading...</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="agency-details-card">
+            <h3 class="mb-4">Key Clients</h3>
+            <div id="clientList" class="mb-4">
+              Loading client information...
+            </div>
+          </div>
+          
+          <div class="agency-details-card">
+            <h3 class="mb-4">Financial Overview</h3>
+            <div class="revenue-chart mb-4" id="revenueChart">
+              <!-- Chart would go here if using a charting library -->
+              <div class="d-flex align-items-center justify-content-center h-100">
+                <p class="text-muted">Revenue data visualization</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="detail-label">Annual Revenue</p>
+                <p id="annualRevenueDetail" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Average Contract Value</p>
+                <p id="avgContractValue" class="detail-value">Loading...</p>
+              </div>
+              <div class="col-md-6">
+                <p class="detail-label">Growth Rate (Annual)</p>
+                <p id="growthRate" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Financial Stability Score</p>
+                <p id="financialStability" class="detail-value">Loading...</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="agency-details-card">
+            <h3 class="mb-4">Overview</h3>
+            <p id="overview">Loading agency information...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>TacticSense</h3>
+            <p>
+              123 Alpha Street <br>
+              London, SE1 7TP<br>
+              United Kingdom <br><br>
+              <strong>Phone:</strong> +44 20 5678 1234<br>
+              <strong>Email:</strong> info@tacticsense.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#analytics">Risk Intelligence</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Risk Analysis</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fraud Detection</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Stakeholder Verification</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Market Intelligence</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Compliance Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Connect with us on social media for the latest updates in football business intelligence</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; 2025 <strong><span>TacticSense</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../js/main.js"></script>
+
+  <!-- Script to load and display agency details -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get agency ID from URL parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const agencyId = urlParams.get('id');
+      
+      // Try to get agency details from localStorage
+      let agencyDetails = JSON.parse(localStorage.getItem('sporting_management_agenciesFullDetails') || '{}');
+      
+      // If we don't have the specific agency or the ID doesn't match
+      if (!agencyDetails || agencyDetails.id != agencyId) {
+        console.log('Agency details not found in localStorage or ID mismatch');
+        
+        // Try to get from the selected agency in localStorage
+        const selectedAgency = JSON.parse(localStorage.getItem('selectedSportingManagementAgencies') || '{}');
+        
+        if (selectedAgency && selectedAgency.id == agencyId) {
+          agencyDetails = selectedAgency;
+        } else {
+          console.log('Agency not found in selected agencies either');
+          // Try to load from CSV file
+          fetchAgencyFromCSV(agencyId);
+          return; // Exit function and let the CSV loader handle it
+        }
+      }
+      
+      // Assign random football image for the agency
+      assignRandomImage();
+      
+      // Update the page with agency details
+      populateAgencyDetails(agencyDetails);
+    });
+    
+    function assignRandomImage() {
+      const footballImages = [
+        '../img/soccer/soccer1.jpg',
+        '../img/soccer/soccer2.jpg',
+        '../img/soccer/soccer3.jpg',
+        '../img/soccer/soccer4.jpg',
+        '../img/soccer/soccer5.jpg',
+        '../img/soccer/soccer6.jpg',
+        '../img/soccer/soccer7.jpg',
+        '../img/soccer/soccer8.jpg',
+        '../img/soccer/soccer9.jpg',
+        '../img/soccer/soccer10.jpg',
+        '../img/soccer/soccer11.jpg',
+        '../img/soccer/soccer12.jpg'
+      ];
+      
+      const randomImage = footballImages[Math.floor(Math.random() * footballImages.length)];
+      document.getElementById('agencyImage').src = randomImage;
+    }
+    
+    async function fetchAgencyFromCSV(agencyId) {
+      try {
+        // Load the CSV file
+        const response = await fetch('../data/Sporting_management_agencies_Dataset.csv');
+        if (!response.ok) {
+          throw new Error('Failed to load Sporting Management Agencies dataset');
+        }
+        
+        const csvText = await response.text();
+        const rows = csvText.split('\n');
+        const headers = rows[0].split(',').map(h => h.trim());
+        
+        // Look for agency with matching ID
+        for (let i = 1; i < rows.length; i++) {
+          const values = rows[i].split(',');
+          if (values.length <= 1) continue; // Skip empty rows
+          
+          const rowData = {};
+          headers.forEach((header, index) => {
+            rowData[header] = values[index] ? values[index].trim() : '';
+          });
+          
+          if (rowData.id === agencyId || rowData.license_number === agencyId) {
+            assignRandomImage();
+            populateAgencyDetails(rowData);
+            return;
+          }
+        }
+        
+        // If we get here, agency wasn't found
+        showError(`Sporting Management Agency with ID ${agencyId} not found`);
+      } catch (error) {
+        console.error('Error loading CSV data:', error);
+        showError('Failed to load agency data. Please try again later.');
+      }
+    }
+    
+    function populateAgencyDetails(agency) {
+      // Set the agency name and basic info
+      document.getElementById('agencyName').textContent = agency.agency_name || agency.name || 'Unknown Name';
+      document.getElementById('agencyTagline').textContent = agency.tagline || 'Sporting Management Agency';
+      
+      // Set verification status
+      const verifiedStatus = agency.verified_status === true || agency.verified_status === 'true' ? 'Verified' : 'Pending Verification';
+      document.getElementById('verificationStatus').innerHTML = 
+        `<i class="bi bi-check-circle-fill me-1"></i> ${verifiedStatus}`;
+      
+      if (verifiedStatus !== 'Verified') {
+        document.getElementById('verificationStatus').style.backgroundColor = '#ffc107';
+      }
+      
+      // Set key metrics
+      document.getElementById('clientCount').textContent = agency.client_count || agency.num_represented_entities || 'N/A';
+      document.getElementById('yearsInBusiness').textContent = agency.years_in_business || calculateYearsActive(agency.founded_year);
+      document.getElementById('annualRevenue').textContent = formatRevenue(agency.annual_revenue);
+      document.getElementById('staffCount').textContent = agency.staff_count || 'N/A';
+      
+      // Set contact information
+      document.getElementById('contactEmail').textContent = agency.contact_email || agency.email || 'N/A';
+      document.getElementById('phoneNumber').textContent = agency.phone_number || agency.phone || 'N/A';
+      document.getElementById('headquarters').textContent = agency.headquarters || `${agency.region || 'N/A'}, ${agency.country || 'N/A'}`;
+      document.getElementById('website').textContent = agency.website || 'N/A';
+      
+      // Set agency information
+      document.getElementById('licenseNumber').textContent = agency.license_number || agency.id || 'N/A';
+      document.getElementById('foundedYear').textContent = agency.founded_year || 'N/A';
+      document.getElementById('verificationDate').textContent = agency.verification_date || 'May 8, 2025';
+      document.getElementById('services').textContent = agency.services_offered || agency.services || 'N/A';
+      document.getElementById('keySpecialization').textContent = agency.specialization || 'N/A';
+      
+      // Set client list
+      if (agency.key_clients || agency.clients) {
+        const clientsContainer = document.getElementById('clientList');
+        clientsContainer.innerHTML = '';
+        
+        const clients = (agency.key_clients || agency.clients || '').split(',');
+        clients.forEach(client => {
+          const clientName = client.trim();
+          if (clientName) {
+            const clientBadge = document.createElement('span');
+            clientBadge.className = 'client-badge';
+            clientBadge.innerHTML = `<i class="bi bi-person me-1"></i> ${clientName}`;
+            clientsContainer.appendChild(clientBadge);
+          }
+        });
+        
+        if (clients.length <= 1 && !clients[0]) {
+          clientsContainer.textContent = 'No client information available';
+        }
+      } else {
+        document.getElementById('clientList').textContent = 'No client information available';
+      }
+      
+      // Set financial information
+      document.getElementById('annualRevenueDetail').textContent = formatCurrency(agency.annual_revenue);
+      document.getElementById('avgContractValue').textContent = formatCurrency(agency.avg_contract_value);
+      document.getElementById('growthRate').textContent = formatPercentage(agency.growth_rate);
+      document.getElementById('financialStability').textContent = agency.financial_stability_score || 'N/A';
+      
+      // Set overview content
+      document.getElementById('overview').textContent = generateOverview(agency);
+    }
+    
+    function calculateYearsActive(foundedYear) {
+      if (!foundedYear) return 'N/A';
+      try {
+        const year = parseInt(foundedYear);
+        const currentYear = new Date().getFullYear();
+        return (currentYear - year).toString();
+      } catch (e) {
+        return 'N/A';
+      }
+    }
+    
+    function formatRevenue(revenue) {
+      if (!revenue) return 'N/A';
+      
+      try {
+        const revenueNum = parseFloat(revenue);
+        return (revenueNum / 1000000).toFixed(1);
+      } catch (e) {
+        return revenue;
+      }
+    }
+    
+    function formatCurrency(amount) {
+      if (!amount) return 'N/A';
+      
+      try {
+        const amountNum = parseFloat(amount);
+        return '$' + amountNum.toLocaleString();
+      } catch (e) {
+        return amount;
+      }
+    }
+    
+    function formatPercentage(value) {
+      if (!value) return 'N/A';
+      
+      try {
+        const percentage = parseFloat(value);
+        return percentage.toFixed(1) + '%';
+      } catch (e) {
+        return value;
+      }
+    }
+    
+    function generateOverview(agency) {
+      const name = agency.agency_name || agency.name || 'This management agency';
+      const years = agency.years_in_business || calculateYearsActive(agency.founded_year) || 'several';
+      const clients = agency.client_count || agency.num_represented_entities || 'numerous';
+      const revenue = formatCurrency(agency.annual_revenue || '1000000');
+      const specialization = agency.specialization || 'athlete representation';
+      
+      return `${name} is a professional sporting management agency with ${years} years of experience in the industry. The agency currently represents ${clients} clients and generates approximately ${revenue} in annual revenue. They specialize in ${specialization} and offer comprehensive management services including contract negotiation, brand development, and career management for athletes. With a dedicated staff of ${agency.staff_count || 'experienced professionals'}, they have built a strong reputation for delivering exceptional results for their clients.`;
+    }
+    
+    function showError(message) {
+      document.getElementById('agencyName').textContent = 'Error Loading Data';
+      document.getElementById('agencyTagline').textContent = 'Please try again later';
+      document.getElementById('verificationStatus').style.backgroundColor = '#dc3545';
+      document.getElementById('verificationStatus').innerHTML = '<i class="bi bi-x-circle-fill me-1"></i> Data Error';
+      document.getElementById('overview').textContent = message || 'Failed to load agency details. Please try again later.';
+    }
+  </script>
+</body>
+</html>

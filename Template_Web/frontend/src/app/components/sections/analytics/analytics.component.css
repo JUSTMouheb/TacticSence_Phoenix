@@ -1,758 +1,1191 @@
-/* Base Styles */
-.fraud-analysis-container {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 32px 24px;
-  color: #2d3748;
-  background-color: #f8fafc;
-  border-radius: 12px;
-}
-
-h2, h3, h4, h5 {
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-
-.card {
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: hidden;
-  margin-bottom: 24px;
-  background-color: #fff;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.card-body {
-  padding: 24px;
-}
-
-.card-title {
-  color: #1e293b;
-  font-size: 1.25rem;
-  margin-bottom: 20px;
-}
-
-/* Form Controls */
-.form-control {
-  border-radius: 8px;
-  border: 1px solid #cbd5e0;
-  padding: 12px 16px;
-  font-size: 1rem;
-  background-color: #fff;
-  transition: all 0.2s ease;
-}
-
-.form-control:focus {
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
-  border-color: #4299e1;
-}
-
-.btn {
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.9rem;
-}
-
-.btn-primary {
-  background-color: #3182ce;
-  border-color: #3182ce;
-}
-
-.btn-primary:hover {
-  background-color: #2c5282;
-  border-color: #2c5282;
-}
-
-.btn-outline-secondary {
-  color: #4a5568;
-  border-color: #cbd5e0;
-}
-
-.btn-outline-secondary:hover {
-  background-color: #edf2f7;
-  color: #1a202c;
-}
-
-/* Classification Banner */
-.classification-banner {
-  padding: 18px;
-  text-align: center;
-  font-weight: 700;
-  border-radius: 8px;
-  margin-bottom: 24px;
-  font-size: 1.25rem;
-  animation: fadeInUp 0.5s ease-out;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.fraud-case {
-  background-color: #fff5f5;
-  color: #e53e3e;
-  border: 2px solid #fc8181;
-}
-
-.legitimate-case {
-  background-color: #f0fff4;
-  color: #38a169;
-  border: 2px solid #68d391;
-}
-
-.banner-text {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Fraud Percentage Display */
-.fraud-percentage {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin: 24px 0;
-  line-height: 1;
-  animation: fadeNumberIn 0.8s ease-out;
-}
-
-@keyframes fadeNumberIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
+/* ==========================================
+   1. Base Layout and Section Styling 
+   ========================================== */
+   .analytics {
+    padding: 80px 0;
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+  
+  section {
+    padding: 80px 0;
   }
-}
-
-.text-danger {
-  color: #e53e3e;
-}
-
-.text-warning {
-  color: #d69e2e;
-}
-
-.text-success {
-  color: #38a169;
-}
-
-/* Risk Tier Badge */
-.risk-tier-badge {
-  display: inline-block;
-  padding: 8px 18px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.risk-very-high {
-  background-color: #fff5f5;
-  color: #c53030;
-  border: 1px solid #fc8181;
-}
-
-.risk-high {
-  background-color: #fffaf0;
-  color: #c05621;
-  border: 1px solid #fbd38d;
-}
-
-.risk-medium {
-  background-color: #fefcbf;
-  color: #b7791f;
-  border: 1px solid #f6e05e;
-}
-
-.risk-low {
-  background-color: #f0fff4;
-  color: #2f855a;
-  border: 1px solid #9ae6b4;
-}
-
-.risk-very-low {
-  background-color: #e6fffa;
-  color: #2c7a7b;
-  border: 1px solid #81e6d9;
-}
-
-/* Enhanced Gauge Chart */
-.gauge-container {
-  position: relative;
-  width: 220px;
-  height: 110px;
-  margin: 28px auto;
-  overflow: hidden;
-}
-
-.gauge {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background-color: #edf2f7;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.gauge-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: linear-gradient(90deg, 
-    #38a169, 
-    #68d391, 
-    #f6e05e, 
-    #f6ad55, 
-    #fc8181, 
-    #e53e3e);
-  clip-path: polygon(110px 110px, 110px 0, 220px 0, 220px 220px, 0 220px, 0 0, 110px 0);
-  transform-origin: 110px 110px;
-  transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.gauge-center {
-  position: absolute;
-  top: 110px;
-  left: 0;
-  width: 220px;
-  height: 110px;
-  background-color: #fff;
-  border-radius: 110px 110px 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 16px;
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.gauge-value {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #2d3748;
-}
-
-/* Risk Factors */
-.risk-explanation {
-  margin-bottom: 18px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  border-left: 4px solid;
-  padding-left: 16px;
-  border-radius: 2px;
-}
-
-.risk-factors-list {
-  margin-bottom: 24px;
-  padding-left: 12px;
-  list-style-type: none;
-}
-
-.risk-factors-list li {
-  margin-bottom: 14px;
-  line-height: 1.5;
-  padding: 12px 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
-  position: relative;
-}
-
-.risk-factors-list li:hover {
-  transform: translateX(5px);
-}
-
-.high-risk.risk-explanation {
-  border-color: #e53e3e;
-  background-color: rgba(229, 62, 62, 0.05);
-}
-
-.medium-risk.risk-explanation {
-  border-color: #d69e2e;
-  background-color: rgba(214, 158, 46, 0.05);
-}
-
-.low-risk.risk-explanation {
-  border-color: #38a169;
-  background-color: rgba(56, 161, 105, 0.05);
-}
-
-.risk-factors-list.high-risk li {
-  background-color: #fff5f5;
-  border-left: 4px solid #e53e3e;
-}
-
-.risk-factors-list.medium-risk li {
-  background-color: #fffaf0;
-  border-left: 4px solid #d69e2e;
-}
-
-.risk-factors-list.low-risk li {
-  background-color: #f0fff4;
-  border-left: 4px solid #38a169;
-}
-
-.recommendation {
-  padding: 16px;
-  border-radius: 8px;
-  margin-top: 20px;
-  margin-bottom: 24px;
-  font-size: 1.05rem;
-}
-
-.recommendation.high-risk {
-  background-color: #fff5f5;
-  border-left: 6px solid #e53e3e;
-  color: #c53030;
-}
-
-.recommendation.medium-risk {
-  background-color: #fffaf0;
-  border-left: 6px solid #d69e2e;
-  color: #c05621;
-}
-
-.recommendation.low-risk {
-  background-color: #f0fff4;
-  border-left: 6px solid #38a169;
-  color: #2f855a;
-}
-
-/* Enhanced Tables */
-.table {
-  border-collapse: separate;
-  border-spacing: 0;
-  width: 100%;
-  margin-bottom: 0;
-}
-
-.table th, 
-.table td {
-  padding: 14px;
-  vertical-align: middle;
-}
-
-.table th {
-  font-weight: 600;
-  color: #4a5568;
-  border-bottom: 2px solid #edf2f7;
-}
-
-.table-bordered {
-  border-radius: 8px;
-}
-
-.table-bordered td, 
-.table-bordered th {
-  border: 1px solid #edf2f7;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: #f7fafc;
-}
-
-.table-hover tbody tr:hover {
-  background-color: #edf2f7;
-}
-
-/* Entity Details Section */
-.compact-details {
-  padding: 18px;
-  background-color: #f8fafc;
-  border-radius: 8px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03);
-  animation: fadeIn 0.4s ease-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+  
+  .section-bg {
+    background-color: #f8f9fa;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  /* ==========================================
+     2. Typography & Text Styles
+     ========================================== */
+  h2, h3, h4, h5 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
   }
-}
-
-.entity-field {
-  display: flex;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
-}
-
-.field-label {
-  font-weight: 600;
-  margin-right: 12px;
-  color: #4a5568;
-  flex: 0 0 170px;
-}
-
-.field-value {
-  color: #1a202c;
-  font-weight: 500;
-}
-
-.table-responsive {
-  max-height: 500px;
-  overflow-y: auto;
-  margin-top: 12px;
-  animation: fadeIn 0.4s ease-out;
-  border-radius: 8px;
-}
-
-/* Loading Indicator */
-.text-center.my-4 {
-  padding: 40px 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0.6;
+  
+  .text-danger {
+    color: #e53e3e;
   }
-  50% {
-    opacity: 1;
+  
+  .text-warning {
+    color: #d69e2e;
   }
-  100% {
-    opacity: 0.6;
+  
+  .text-success {
+    color: #38a169;
   }
-}
-
-.spinner-border {
-  width: 3rem;
-  height: 3rem;
-  border-width: 0.25rem;
-}
-
-/* Animation for case study results */
-.case-study-results {
-  animation: slideUp 0.5s ease-out;
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+  
+  /* ==========================================
+     3. Section Title Styling
+     ========================================== */
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    color: #212529;
   }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+  
+  .section-title h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #ee1e46;
+    display: block;
+    margin: 15px auto 0;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  .section-title p {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 40px;
   }
-}
-
-/* Responsive adjustments */
-@media (max-width: 991px) {
+  
+  /* ==========================================
+     4. Grid System & Containers
+     ========================================== */
+  .container, .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col-lg-4, .col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
+  
+  /* ==========================================
+     5. Main Container Styling
+     ========================================== */
   .fraud-analysis-container {
-    padding: 20px 16px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    color: #2d3748;
+    background-color: #f8fafc;
+    border-radius: 12px;
+  }
+  
+  /* ==========================================
+     6. Card & Form Elements
+     ========================================== */
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background-color: #fff;
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   }
   
   .card-body {
-    padding: 20px;
+    padding: 24px;
   }
-}
+  
+  .card-title {
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    padding: 12px 16px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
+    border-color: #4299e1;
+  }
+  
+  .btn {
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary {
+    background-color: #3182ce;
+    border-color: #3182ce;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2c5282;
+    border-color: #2c5282;
+  }
+  
+  .btn-outline-secondary {
+    color: #4a5568;
+    border-color: #cbd5e0;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #edf2f7;
+    color: #1a202c;
+  }
+  
+  .btn-outline-light {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+  }
+  
+  /* ==========================================
+     7. Stakeholder Selection Styling
+     ========================================== */
+  .selection-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .selection-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #ee1e46, #ff4c30);
+  }
+  
+  .stakeholder-grid {
+    margin-top: 30px;
+  }
+  
+  .stakeholder-tile {
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    height: 100%;
+  }
+  
+  .stakeholder-tile:hover {
+    transform: translateY(-8px);
+  }
+  
+  .stakeholder-tile.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    background: #ee1e46;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tile-image-container {
+    position: relative;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .tile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.9);
+    transition: all 0.6s ease;
+  }
+  
+  .tile-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%);
+    z-index: 1;
+  }
+  
+  .stakeholder-tile:hover .tile-image {
+    transform: scale(1.1);
+    filter: brightness(1);
+  }
+  
+  .tile-icon {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ff4c30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffffff;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .stakeholder-tile:hover .tile-icon {
+    transform: translateX(-50%) scale(1.15);
+  }
+  
+  .tile-icon i {
+    color: white;
+    font-size: 28px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tile-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #2d3748;
+    transition: color 0.3s ease;
+  }
+  
+  .stakeholder-tile:hover .tile-title {
+    color: #ee1e46;
+  }
+  
+  .tile-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #718096;
+    padding: 0 10px;
+  }
+  
+  /* Different colors for different stakeholder types */
+  .stakeholder-tile:nth-child(3n+1) .tile-icon {
+    background-color: #ff4c30; /* Red */
+  }
+  
+  .stakeholder-tile:nth-child(3n+2) .tile-icon {
+    background-color: #3083DC; /* Blue */
+  }
+  
+  .stakeholder-tile:nth-child(3n+3) .tile-icon {
+    background-color: #30ba8f; /* Green */
+  }
+  
 
-@media (max-width: 767px) {
-  .gauge-container {
-    width: 180px;
-    height: 90px;
+  /* ==========================================
+     9. Classification Banner
+     ========================================== */
+  .classification-banner {
+    padding: 18px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+    animation: fadeInUp 0.5s ease-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  .gauge {
-    width: 180px;
-    height: 180px;
+  .fraud-case {
+    background-color: #fff5f5;
+    color: #e53e3e;
+    border: 2px solid #fc8181;
   }
   
-  .gauge-fill {
-    width: 180px;
-    height: 180px;
-    clip-path: polygon(90px 90px, 90px 0, 180px 0, 180px 180px, 0 180px, 0 0, 90px 0);
-    transform-origin: 90px 90px;
+  .legitimate-case {
+    background-color: #f0fff4;
+    color: #38a169;
+    border: 2px solid #68d391;
   }
   
-  .gauge-center {
-    top: 90px;
-    width: 180px;
-    height: 90px;
-    border-radius: 90px 90px 0 0;
+  .banner-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
   }
   
+  /* ==========================================
+     10. Fraud Risk Display
+     ========================================== */
   .fraud-percentage {
-    font-size: 2.8rem;
-  }
-  
-  .field-label {
-    flex: 0 0 140px;
-  }
-
-  .field-value {
-    word-break: break-word;
-  }
-}
-
-@media (max-width: 576px) {
-  .gauge-container {
-    width: 150px;
-    height: 75px;
-  }
-  
-  .gauge {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .gauge-fill {
-    width: 150px;
-    height: 150px;
-    clip-path: polygon(75px 75px, 75px 0, 150px 0, 150px 150px, 0 150px, 0 0, 75px 0);
-    transform-origin: 75px 75px;
-  }
-  
-  .gauge-center {
-    top: 75px;
-    width: 150px;
-    height: 75px;
-    border-radius: 75px 75px 0 0;
-  }
-  
-  .fraud-percentage {
-    font-size: 2.2rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 24px 0;
+    line-height: 1;
+    animation: fadeNumberIn 0.8s ease-out;
   }
   
   .risk-tier-badge {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .field-label, .field-value {
-    flex: 100%;
+  .risk-very-high {
+    background-color: #fff5f5;
+    color: #c53030;
+    border: 1px solid #fc8181;
+  }
+  
+  .risk-high {
+    background-color: #fffaf0;
+    color: #c05621;
+    border: 1px solid #fbd38d;
+  }
+  
+  .risk-medium {
+    background-color: #fefcbf;
+    color: #b7791f;
+    border: 1px solid #f6e05e;
+  }
+  
+  .risk-low {
+    background-color: #f0fff4;
+    color: #2f855a;
+    border: 1pxksam solid #9ae6b4;
+  }
+  
+  .risk-very-low {
+    background-color: #e6fffa;
+    color: #2c7a7b;
+    border: 1px solid #81e6d9;
+  }
+  
+  /* ==========================================
+     11. Risk Factors & Recommendations
+     ========================================== */
+  .risk-explanation {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border-left: 4px solid;
+    padding-left: 16px;
+    border-radius: 2px;
+  }
+  
+  .risk-factors-list {
+    margin-bottom: 24px;
+    padding-left: 12px;
+    list-style-type: none;
+  }
+  
+  .risk-factors-list li {
+    margin-bottom: 14px;
+    line-height: 1.5;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  .risk-factors-list li:hover {
+    transform: translateX(5px);
+  }
+  
+  .high-risk.risk-explanation {
+    border-color: #e53e3e;
+    background-color: rgba(229, 62, 62, 0.05);
+  }
+  
+  .medium-risk.risk-explanation {
+    border-color: #d69e2e;
+    background-color: rgba(214, 158, 46, 0.05);
+  }
+  
+  .low-risk.risk-explanation {
+    border-color: #38a169;
+    background-color: rgba(56, 161, 105, 0.05);
+  }
+  
+  .risk-factors-list.high-risk li {
+    background-color: #fff5f5;
+    border-left: 4px solid #e53e3e;
+  }
+  
+  .risk-factors-list.medium-risk li {
+    background-color: #fffaf0;
+    border-left: 4px solid #d69e2e;
+  }
+  
+  .risk-factors-list.low-risk li {
+    background-color: #f0fff4;
+    border-left: 4px solid #38a169;
+  }
+  
+  .recommendation {
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+  }
+  
+  .recommendation.high-risk {
+    background-color: #fff5f5;
+    border-left: 6px solid #e53e3e;
+    color: #c53030;
+  }
+  
+  .recommendation.medium-risk {
+    background-color: #fffaf0;
+    border-left: 6px solid #d69e2e;
+    color: #c05621;
+  }
+  
+  .recommendation.low-risk {
+    background-color: #f0fff4;
+    border-left: 6px solid #38a169;
+    color: #2f855a;
+  }
+  
+  /* ==========================================
+     12. Analytics List & Utilities
+     ========================================== */
+  .analytics-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .analytics-list li {
+    padding: 10px 0;
+  }
+  
+  .analytics-list i {
+    color: #ee1e46;
+    margin-right: 10px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ==========================================
+     13. Enhanced Gauge Chart
+     ========================================== */
+  .gauge-container {
+    position: relative;
+    width: 220px;
+    height: 110px;
+    margin: 28px auto;
+    overflow: hidden;
+  }
+  
+  .gauge {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #edf2f7;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .gauge-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, 
+      #38a169, 
+      #68d391, 
+      #f6e05e, 
+      #f6ad55, 
+      #fc8181, 
+      #e53e3e);
+    clip-path: polygon(110px 110px, 110px 0, 220px 0, 220px 220px, 0 220px, 0 0, 110px 0);
+    transform-origin: 110px 110px;
+    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  
+  .gauge-center {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 220px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 110px 110px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 16px;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gauge-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2d3748;
+  }
+  
+  /* ==========================================
+     14. Enhanced Tables
+     ========================================== */
+  .table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .table th, 
+  .table td {
+    padding: 14px;
+    vertical-align: middle;
+  }
+  
+  .table th {
+    font-weight: 600;
+    color: #4a5568;
+    border-bottom: 2px solid #edf2f7;
+  }
+  
+  .table-bordered {
+    border-radius: 8px;
+  }
+  
+  .table-bordered td, 
+  .table-bordered th {
+    border: 1px solid #edf2f7;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f7fafc;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #edf2f7;
+  }
+  
+  /* ==========================================
+     15. Entity Details Section
+     ========================================== */
+  .compact-details {
+    padding: 18px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03);
+    animation: fadeIn 0.4s ease-out;
   }
   
   .entity-field {
-    flex-direction: column;
+    display: flex;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
   }
   
-  .entity-field .field-value {
-    margin-top: 4px;
+  .field-label {
+    font-weight: 600;
+    margin-right: 12px;
+    color: #4a5568;
+    flex: 0 0 170px;
   }
-
-
-  /* Add these styles for stakeholder type cards */
-
-.stakeholder-cards {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-.stakeholder-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 24px 20px;
+  
+  .field-value {
+    color: #1a202c;
+    font-weight: 500;
+  }
+  
+  .table-responsive {
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 12px;
+    animation: fadeIn 0.4s ease-out;
+    border-radius: 8px;
+  }
+  
+  /* ==========================================
+     16. Loading Indicator
+     ========================================== */
+  .text-center.my-4 {
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.25rem;
+  }
+  
+  /* ==========================================
+     17. Case Study Results
+     ========================================== */
+  .case-study-results {
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  /* ==========================================
+     18. Animations
+     ========================================== */
+  @keyframes fadeNumberIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes pulse-select {
+    0% {
+      box-shadow: 0 0 0 0 rgba(49, 130, 206, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 6px rgba(49, 130, 206, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(49, 130, 206, 0);
+    }
+  }
+  
+  /* ==========================================
+     19. Responsive Adjustments
+     ========================================== */
+  @media (max-width: 991px) {
+    .fraud-analysis-container {
+      padding: 20px 16px;
+    }
+    
+    .card-body {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .analytics {
+      padding: 60px 0;
+    }
+    
+    .analytics .section-title h2 {
+      font-size: 28px;
+    }
+    
+    .tile-image-container {
+      height: 180px;
+    }
+    
+    .tile-icon {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .tile-title {
+      font-size: 1.2rem;
+      margin-top: 18px;
+    }
+    
+    .gauge-container {
+      width: 180px;
+      height: 90px;
+    }
+    
+    .gauge {
+      width: 180px;
+      height: 180px;
+    }
+    
+    .gauge-fill {
+      width: 180px;
+      height: 180px;
+      clip-path: polygon(90px 90px, 90px 0, 180px 0, 180px 180px, 0 180px, 0 0, 90px 0);
+      transform-origin: 90px 90px;
+    }
+    
+    .gauge-center {
+      top: 90px;
+      width: 180px;
+      height: 90px;
+      border-radius: 90px 90px 0 0;
+    }
+    
+    .fraud-percentage {
+      font-size: 2.8rem;
+    }
+    
+    .field-label {
+      flex: 0 0 140px;
+    }
+  
+    .field-value {
+      word-break: break-word;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .gauge-container {
+      width: 150px;
+      height: 75px;
+    }
+    
+    .gauge {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .gauge-fill {
+      width: 150px;
+      height: 150px;
+      clip-path: polygon(75px 75px, 75px 0, 150px 0, 150px 150px, 0 150px, 0 0, 75px 0);
+      transform-origin: 75px 75px;
+    }
+    
+    .gauge-center {
+      top: 75px;
+      width: 150px;
+      height: 75px;
+      border-radius: 75px 75px 0 0;
+    }
+    
+    .fraud-percentage {
+      font-size: 2.2rem;
+    }
+    
+    .risk-tier-badge {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+    
+    .field-label, .field-value {
+      flex: 100%;
+    }
+    
+    .entity-field {
+      flex-direction: column;
+    }
+    
+    .entity-field .field-value {
+      margin-top: 4px;
+    }
+  }
+  
+  /* ==========================================
+     20. Spacing Adjustments
+     ========================================== */
+  #analytics .section-title {
+    margin-bottom: 5px;
+  }
+  
+  #analytics .section-title p {
+    margin-bottom: 5px;
+  }
+  
+  #analytics .container:not(.section-title) {
+    padding-top: 0;
+  }
+  
+  #analytics .selection-heading {
+    margin-top: 5px;
+  }
+  
+  #analytics.analytics.section {
+    padding-top: 20px;
+  } 
+  
+ /* ==========================================
+   21. Stakeholder Cards and Hover Effects
+   ========================================== */
+.portfolio-filters {
+  padding: 0;
+  margin: 0 0 40px 0;
+  list-style: none;
   text-align: center;
-  transition: all 0.3s ease;
+}
+
+.portfolio-filters li {
   cursor: pointer;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid transparent;
-}
-
-.stakeholder-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.stakeholder-card.selected {
-  border-color: #3182ce;
-  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.3), 0 8px 16px rgba(49, 130, 206, 0.1);
-}
-
-.stakeholder-card.selected::after {
-  content: "✓";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #3182ce;
-  color: white;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.stakeholder-icon {
-  font-size: 32px;
-  margin-bottom: 16px;
-  color: #3182ce;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.stakeholder-title {
-  font-size: 18px;
-  margin-bottom: 10px;
+  display: inline-block;
+  padding: 8px 20px;
+  margin: 0 4px 10px;
+  border-radius: 50px;
+  font-size: 15px;
+  line-height: 1;
+  color: #444;
+  transition: all 0.3s ease;
+  border: 2px solid #ddd;
   font-weight: 600;
-  color: #2d3748;
 }
 
-.stakeholder-description {
-  font-size: 14px;
-  color: #718096;
-  margin-bottom: 0;
-  line-height: 1.4;
+.portfolio-filters li:hover,
+.portfolio-filters li.filter-active {
+  color: #fff;
+  background-color: #ee1e46;
+  border-color: #ee1e46;
 }
 
-/* Add animation for selection */
-@keyframes pulse-select {
-  0% {
-    box-shadow: 0 0 0 0 rgba(49, 130, 206, 0.4);
-  }
-  70% {
-    box-shadow: 0 0 0 6px rgba(49, 130, 206, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(49, 130, 206, 0);
-  }
+.portfolio-item {
+  margin-bottom: 30px;
 }
 
-.stakeholder-card.selected {
-  animation: pulse-select 1.5s;
-}
-
-
-/* Stakeholder Image Card Styles */
-.stakeholder-image-card {
+.portfolio-content {
+  background: #ffffff;
   position: relative;
-  height: 200px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
 }
 
-.stakeholder-image-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+.portfolio-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.stakeholder-image-card.selected {
-  box-shadow: 0 5px 15px rgba(255, 76, 48, 0.3);
-  border: 2px solid #ff4c30;
+/* Container for the background image */
+.portfolio-img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 280px;
+  width: 100%;
 }
 
-.card-image {
+/* Soccer backgrounds styles */
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  transition: transform 0.4s ease;
+  background-color: #f0f0f0; /* Fallback color */
+}
+
+/* Add overlay gradient to make text more readable */
+.portfolio-img::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.85);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
+  z-index: 1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 
-/* Background images for different stakeholder types */
-.bg-players_agents {
-  background-image: url('https://images.unsplash.com/photo-1507133750040-4a8f57021571');
+.portfolio-img-container:hover .portfolio-img {
+  transform: scale(1.1);
 }
 
-.bg-recruiting_agents {
-  background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978');
+.portfolio-img-container:hover .portfolio-img::before {
+  opacity: 0.7;
 }
 
-.bg-sporting_management_agencies {
-  background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df');
-}
-
-.bg-communication_boxes {
-  background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0');
-}
-
-.bg-sponsors {
-  background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786');
-}
-
-/* Fallback background color if images aren't available */
-[class*="bg-"] {
-  background-color: #3083DC;
-}
-
-.card-icon {
-  position: relative;
-  z-index: 2;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #ff4c30;
+/* Hover overlay for interactive elements */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 
-/* Different colors for different stakeholder types */
-.stakeholder-image-card:nth-of-type(1) .card-icon {
-  background-color: #ff4c30; /* Red */
+.portfolio-img-container:hover .hover-overlay {
+  opacity: 1;
 }
 
-.stakeholder-image-card:nth-of-type(2) .card-icon {
-  background-color: #3083DC; /* Blue */
+/* ==========================================
+ Enhanced Overlay Text Visibility
+ ========================================== */
+.overlay-content {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  max-width: 90%;
 }
 
-.stakeholder-image-card:nth-of-type(3) .card-icon {
-  background-color: #30ba8f; /* Green */
+.overlay-content h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.01em;
 }
 
-.stakeholder-image-card:nth-of-type(4) .card-icon {
-  background-color: #d6306a; /* Pink */
+.entity-license {
+  font-size: 16px;
+  opacity: 1;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.stakeholder-image-card:nth-of-type(5) .card-icon {
-  background-color: #8430dc; /* Purple */
+.entity-desc {
+  font-size: 15px;
+  opacity: 1;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.card-icon i {
+/* Make the button stand out more */
+.overlay-content .btn-outline-light {
+  font-weight: 700;
+  border-width: 2px;
+  padding: 10px 24px;
+  text-shadow: none;
+  margin-top: 15px;
+  position: relative;
+  z-index: 3;
+}
+
+.overlay-content .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Background class fallbacks for other stakeholder types */
+.bg-recruiting_agents {
+  background: linear-gradient(135deg, #3083DC, #1a5899);
+}
+
+.bg-communication_boxes {
+  background: linear-gradient(135deg, #7c4dff, #5928e5);
+}
+
+.bg-sporting_management_agencies {
+  background: linear-gradient(135deg, #30ba8f, #209271);
+}
+
+.bg-sponsors {
+  background: linear-gradient(135deg, #f6ad55, #dd6b20);
+}
+
+/* Force image display for soccer backgrounds */
+[data-entity-id] .portfolio-img[style*="background-image"] {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+
+/* Add these styles for pagination styling */
+
+/* Pagination container */
+.pagination-container {
+  margin-top: 2rem;
+}
+
+/* Style for pagination links */
+.pagination .page-item .page-link {
+  color: #ee1e46;
+  border-color: #dee2e6;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Active page state */
+.pagination .page-item.active .page-link {
+  background-color: #ee1e46;
+  border-color: #ee1e46;
   color: white;
-  font-size: 28px;
+  box-shadow: 0 2px 5px rgba(238, 30, 70, 0.3);
 }
+
+/* Hover effect */
+.pagination .page-item:not(.active):not(.disabled) .page-link:hover {
+  background-color: rgba(238, 30, 70, 0.1);
+  color: #ee1e46;
+  border-color: #ee1e46;
+}
+
+/* Disabled pagination items */
+.pagination .page-item.disabled .page-link {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+/* Focus effect (when clicked) */
+.pagination .page-link:focus {
+  box-shadow: 0 0 0 0.2rem rgba(238, 30, 70, 0.25);
+  z-index: 3;
+}
+
+/* Pagination ellipsis (...) styling */
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+  border-color: #dee2e6;
+}
+
+/* Previous/next arrows */
+.pagination .page-link[aria-label="Previous"],
+.pagination .page-link[aria-label="Next"] {
+  font-size: 1.1rem;
+  padding-top: 0.3rem;
+}
+
+.btn-outline-light {
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.btn-outline-light:active {
+  transform: translateY(-1px);
 }

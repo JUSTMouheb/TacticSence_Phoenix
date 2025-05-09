@@ -11,6 +11,7 @@ import { PlayersComponent } from './components/sections/players/players.componen
 import { ClubsComponent } from './components/sections/clubs/clubs.component';
 import { AnalyticsComponent } from './components/sections/analytics/analytics.component';
 import { ContactComponent } from './components/sections/contact/contact.component';
+import { CsvService } from './services/CsvService';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './components/sections/contact/contact.componen
     PlayersComponent,
     ClubsComponent,
     AnalyticsComponent,
-    ContactComponent
+    ContactComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { ContactComponent } from './components/sections/contact/contact.componen
     HttpClientModule // Add this module to your imports array
    
   ],
-  providers: [],
+  providers: [ CsvService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -368,6 +368,117 @@ def health():
     """Health check endpoint"""
     return jsonify({"status": "ok", "service": "Fraud Detection API"})
 
+###### RETURN ONLY VERIFIED STAKEHOLDERS ############
+# Add this new endpoint
+@app.route('/api/verified-entities/<stakeholder_type>', methods=['GET'])
+def get_verified_entities_by_type(stakeholder_type):
+    """Get only verified (non-fraudulent) entities for a specific stakeholder type"""
+    try:
+        # Get all entities first
+        entities = get_all_entities_by_type(stakeholder_type)
+        if not entities:
+            return jsonify([])
+            
+        # Filter out fraudulent entities
+        verified_entities = []
+        for entity in entities:
+            # Check if entity is fraudulent using the fraud service
+            result = service.predict_fraud({
+                'entityId': entity['id'],
+                'entityType': stakeholder_type
+            })
+            
+            # Only include entities with low fraud probability (less than 70%)
+            if result['fraudProbability'] < 70:
+                # Add verification status
+                entity['verification_status'] = 'Verified'
+                entity['verification_date'] = '2025-04-16'  # Today's date
+                verified_entities.append(entity)
+        
+        logger.info(f"Returning {len(verified_entities)} verified entities out of {len(entities)} total for {stakeholder_type}")
+        return jsonify(verified_entities)
+            
+    except Exception as e:
+        logger.error(f"Error getting verified entities for {stakeholder_type}: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return jsonify({"error": str(e)}), 500
+# Create helper function to avoid code duplication
+def get_all_entities_by_type(stakeholder_type):
+    """Helper function to get all entities regardless of fraud status"""
+    try:
+        # Define file path based on stakeholder type
+        if stakeholder_type == 'players_agents':
+            file_path = os.path.join('c:', os.sep, 'Modeling Notebooks', 'Players_Agents_Dataset.csv')
+            id_column = "license_number"
+            name_column = "full_name"
+        elif stakeholder_type == 'recruiting_agents':
+            file_path = os.path.join('c:', os.sep, 'Modeling Notebooks', 'Recruiting_Agents_Dataset.csv')
+            id_column = "license_id"  # Might be different
+            name_column = "agent_name"  # Might be different
+        elif stakeholder_type == 'sporting_management_agencies':
+            file_path = os.path.join('c:', os.sep, 'Modeling Notebooks', 'Sporting_management_agencies_Dataset.csv')
+            id_column = "license_number" 
+            name_column = "agency_name"  # Likely different
+        elif stakeholder_type == 'communication_boxes':
+            file_path = os.path.join('c:', os.sep, 'Modeling Notebooks', 'Communication_Boxes_Dataset.csv')
+            id_column = "license_number"
+            name_column = "company_name"  # Likely different
+        elif stakeholder_type == 'sponsors':
+            file_path = os.path.join('c:', os.sep, 'Modeling Notebooks', 'Sponsors_Dataset.csv')
+            id_column = "license_number"
+            name_column = "sponsor_name"  # Likely different
+        else:
+            logger.warning(f"No dataset defined for entity type: {stakeholder_type}")
+            return []
+        
+        # Read the CSV file
+        df = pd.read_csv(file_path)
+        logger.info(f"Successfully read CSV with {len(df)} rows for {stakeholder_type}")
+        
+        # Try to find the correct ID and name columns if specified ones don't exist
+        if id_column not in df.columns:
+            possible_id_columns = [col for col in df.columns if 'id' in col.lower() or 'license' in col.lower() or 'number' in col.lower()]
+            if possible_id_columns:
+                id_column = possible_id_columns[0]
+                logger.info(f"Using {id_column} as the ID column")
+            else:
+                # If no suitable ID column found, return error
+                logger.error(f"No suitable ID column found in {stakeholder_type} dataset")
+                return []
+                
+        if name_column not in df.columns:
+            possible_name_columns = [col for col in df.columns if 'name' in col.lower() or 'title' in col.lower()]
+            if possible_name_columns:
+                name_column = possible_name_columns[0]
+                logger.info(f"Using {name_column} as the name column")
+            else:
+                # If no suitable name column found, return error
+                logger.error(f"No suitable name column found in {stakeholder_type} dataset")
+                return []
+        
+        # Create entities list
+        entities = []
+        for index, row in df.iterrows():
+            try:
+                entity = {
+                    "id": str(row[id_column]),
+                    "name": str(row[name_column]),
+                    "type": stakeholder_type
+                }
+                entities.append(entity)
+            except Exception as e:
+                logger.error(f"Error processing row {index}: {str(e)}")
+                continue
+                
+        logger.info(f"Created {len(entities)} entities for {stakeholder_type}")
+        return entities
+            
+    except Exception as e:
+        logger.error(f"Error getting entities for {stakeholder_type}: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return []
 if __name__ == '__main__':
     # Test that all dataset files exist
     datasets = [

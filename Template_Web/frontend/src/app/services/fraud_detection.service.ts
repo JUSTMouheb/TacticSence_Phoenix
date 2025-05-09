@@ -12,10 +12,21 @@ export interface FraudDetectionResult {
   entityDetails?: any; // Add this property to support entity details
 }
 
+// Update the Entity interface to include the optional properties
 export interface Entity {
   id: string;
   name: string;
   type: string;
+  verification_status?: string;
+  verification_date?: string;
+  email?: string;
+  phone?: string;
+  location?: string;
+  specialization?: string;
+  languages?: string;
+  certification?: string;
+  experience_years?: number;
+  years_experience?: number;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -71,6 +82,54 @@ export class FraudDetectionService {
         })
       );
   }
+
+
+  // Add this new method
+getVerifiedEntitiesByType(stakeholderType: string): Observable<Entity[]> {
+  // Log the API call for debugging
+  console.log(`Fetching verified entities for type: ${stakeholderType}`);
+  
+  return this.http.get<Entity[]>(`${this.apiUrl}/verified-entities/${stakeholderType}`)
+    .pipe(
+      tap(data => console.log(`Received ${data.length} verified entities from API`)),
+      catchError(error => {
+        console.error(`Error fetching verified ${stakeholderType} entities:`, error);
+        
+        // Fall back to mock data for development purposes
+        return of(this.getMockVerifiedEntities(stakeholderType));
+      })
+    );
+}
+
+// Add this helper method for mock data
+private getMockVerifiedEntities(stakeholderType: string): Entity[] {
+  // Create mock verified entities for development
+  const mockEntities: Entity[] = [];
+  let namePrefix = '';
+  let count = 3; // Fewer entities since these are "verified"
+  
+  switch(stakeholderType) {
+    case 'players_agents':
+      namePrefix = 'Verified Agent';
+      break;
+    case 'recruiting_agents':
+      namePrefix = 'Verified Recruiter';
+      break;
+    // Other cases...
+  }
+  
+  for (let i = 1; i <= count; i++) {
+    mockEntities.push({
+      id: `${stakeholderType}_verified_${i}`,
+      name: `${namePrefix} ${i}`,
+      type: stakeholderType,
+      verification_status: 'Verified',
+      verification_date: '2025-04-16'
+    });
+  }
+  
+  return mockEntities;
+}
   
   // Existing mock data methods (keep them for fallback)...
   private getMockEntities(stakeholderType: string): Entity[] {

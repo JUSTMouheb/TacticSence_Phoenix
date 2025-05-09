@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stakeholder Details | TacticSense</title>
+  
+  <!-- Include your CSS files -->
+  <link href="../styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    .stakeholder-header {
+      background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+      padding: 40px 0;
+      color: white;
+      margin-bottom: 30px;
+    }
+    
+    .stakeholder-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .detail-card {
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background-color: white;
+    }
+    
+    .stats-card {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .stats-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    
+    .stats-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0d6efd;
+    }
+    
+    .back-btn {
+      margin: 20px 0;
+    }
+    
+    .client-badge {
+      padding: 8px 12px;
+      margin: 5px;
+      display: inline-block;
+      background-color: #e9ecef;
+      border-radius: 25px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="stakeholder-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h1 id="stakeholder-name" class="display-4">Loading...</h1>
+          <p id="stakeholder-license" class="lead">License: Loading...</p>
+          <p id="stakeholder-type" class="text-light">Category: Loading...</p>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <span id="profile-rating" class="badge bg-warning p-2 fs-5">Rating: --</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <a href="index.html" class="btn btn-outline-primary back-btn">
+          <i class="fas fa-arrow-left"></i> Back to Stakeholders
+        </a>
+      </div>
+    </div>
+    
+    <div class="row mt-4">
+      <div class="col-lg-4 mb-4">
+        <img id="stakeholder-img" src="img/soccer/soccer1.jpg" class="stakeholder-image mb-4" alt="Stakeholder">
+        
+        <div class="detail-card">
+          <h3>Contact Information</h3>
+          <hr>
+          <p><strong><i class="fas fa-envelope me-2"></i> Email:</strong> <span id="contact-email">Loading...</span></p>
+          <p><strong><i class="fas fa-phone me-2"></i> Phone:</strong> <span id="contact-phone">Loading...</span></p>
+          <p><strong><i class="fas fa-map-marker-alt me-2"></i> Region:</strong> <span id="contact-region">Loading...</span></p>
+          <p><strong><i class="fas fa-flag me-2"></i> Country:</strong> <span id="contact-country">Loading...</span></p>
+        </div>
+        
+        <div class="detail-card">
+          <h3>Professional Information</h3>
+          <hr>
+          <p><strong><i class="fas fa-graduation-cap me-2"></i> Specialization:</strong> <span id="specialization">Loading...</span></p>
+          <p><strong><i class="fas fa-language me-2"></i> Languages:</strong> <span id="languages">Loading...</span></p>
+          <p><strong><i class="fas fa-building me-2"></i> Agency:</strong> <span id="agency">Loading...</span></p>
+          <p><strong><i class="fas fa-calendar-alt me-2"></i> Last Contract:</strong> <span id="last-contract">Loading...</span></p>
+        </div>
+      </div>
+      
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="stats-card">
+              <div class="stats-value" id="years-experience">--</div>
+              <div class="stats-label">Years Experience</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stats-card">
+              <div class="stats-value" id="success-rate">--</div>
+              <div class="stats-label">Success Rate</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stats-card">
+              <div class="stats-value" id="total-clients">--</div>
+              <div class="stats-label">Total Clients</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="detail-card mt-4">
+          <h3>Top Clients</h3>
+          <hr>
+          <div id="top-clients" class="mb-3">Loading...</div>
+        </div>
+        
+        <div class="detail-card">
+          <h3>Financial Information</h3>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Avg Contract Value:</strong> <span id="avg-contract">Loading...</span></p>
+              <p><strong>Best Negotiated Contract:</strong> <span id="best-contract">Loading...</span></p>
+            </div>
+            <div class="col-md-6">
+              <p><strong>Preferred Contract Terms:</strong> <span id="contract-terms">Loading...</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Function to get URL parameters
+    function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      const results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+    
+    // Function to format currency
+    function formatCurrency(value) {
+      return new Intl.NumberFormat('en-US', { 
+        style: 'currency', 
+        currency: 'EUR',
+        maximumFractionDigits: 0
+      }).format(value);
+    }
+    
+    // Load stakeholder data
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get stakeholder ID from URL params
+      const stakeholderId = getUrlParameter('id');
+      
+      // Try to get stakeholder data from localStorage
+      let stakeholder = null;
+      try {
+        stakeholder = JSON.parse(localStorage.getItem('selectedStakeholder'));
+      } catch (e) {
+        console.error('Error parsing stakeholder data:', e);
+      }
+      
+      // If stakeholder data not found in localStorage, try to fetch it from the dataset
+      if (!stakeholder) {
+        // Load the CSV data and find the stakeholder
+        // This is a simplified example - in a real app you'd fetch from an API
+        fetch('../../data/Players_Agents_Dataset.csv')
+          .then(response => response.text())
+          .then(csvData => {
+            // Parse CSV and find the stakeholder with matching ID
+            // This is a simplified implementation
+            // You would need a proper CSV parser in a production app
+            const lines = csvData.split('\n');
+            const headers = lines[0].split(',');
+            
+            for (let i = 1; i < lines.length; i++) {
+              const data = lines[i].split(',');
+              if (data[1] === stakeholderId) {
+                stakeholder = {};
+                headers.forEach((header, index) => {
+                  stakeholder[header] = data[index];
+                });
+                populateStakeholderDetails(stakeholder);
+                break;
+              }
+            }
+            
+            if (!stakeholder) {
+              showError('Stakeholder not found');
+            }
+          })
+          .catch(error => {
+            showError('Error loading stakeholder data: ' + error.message);
+          });
+      } else {
+        // We have stakeholder data from localStorage
+        populateStakeholderDetails(stakeholder);
+      }
+    });
+    
+    function populateStakeholderDetails(stakeholder) {
+      // Basic details
+      document.getElementById('stakeholder-name').textContent = stakeholder.name || stakeholder.full_name || 'Name Not Available';
+      document.getElementById('stakeholder-license').textContent = 'License: ' + stakeholder.id || stakeholder.license_number;
+      document.getElementById('stakeholder-type').textContent = 'Category: ' + formatStakeholderType(stakeholder.type);
+      
+      // Rating and stats
+      document.getElementById('profile-rating').textContent = 'Rating: ' + (stakeholder.profile_rating || '--') + ' / 5';
+      document.getElementById('years-experience').textContent = stakeholder.years_experience || stakeholder.experience_years || '--';
+      document.getElementById('success-rate').textContent = (stakeholder.success_rate || '--') + '%';
+      document.getElementById('total-clients').textContent = stakeholder.total_clients || '--';
+      
+      // Contact info
+      document.getElementById('contact-email').textContent = stakeholder.contact_email || stakeholder.email || '--';
+      document.getElementById('contact-phone').textContent = stakeholder.phone_number || stakeholder.phone || '--';
+      document.getElementById('contact-region').textContent = stakeholder.region || '--';
+      document.getElementById('contact-country').textContent = stakeholder.country || '--';
+      
+      // Professional info
+      document.getElementById('specialization').textContent = stakeholder.specialization || '--';
+      document.getElementById('languages').textContent = stakeholder.languages_spoken || stakeholder.languages || '--';
+      document.getElementById('agency').textContent = stakeholder.agency_affiliation || '--';
+      document.getElementById('last-contract').textContent = stakeholder.last_contract_date || '--';
+      
+      // Financial info
+      document.getElementById('avg-contract').textContent = formatCurrency(stakeholder.avg_contract_value || 0);
+      document.getElementById('best-contract').textContent = stakeholder.best_negotiated_contract || '--';
+      document.getElementById('contract-terms').textContent = stakeholder.preferred_contract_terms || '--';
+      
+      // Top clients
+      const clientsContainer = document.getElementById('top-clients');
+      if (stakeholder.top_clients) {
+        const clients = stakeholder.top_clients.split(',').map(client => client.trim());
+        clientsContainer.innerHTML = '';
+        clients.forEach(client => {
+          const badge = document.createElement('span');
+          badge.className = 'client-badge';
+          badge.innerHTML = '<i class="fas fa-user me-1"></i> ' + client;
+          clientsContainer.appendChild(badge);
+        });
+      } else {
+        clientsContainer.textContent = 'No clients information available';
+      }
+      
+      // Set a random soccer background image
+      const randomIndex = Math.floor(Math.random() * 5) + 1;
+      document.getElementById('stakeholder-img').src = `img/soccer/soccer${randomIndex}.jpg`;
+    }
+    
+    function formatStakeholderType(type) {
+      if (!type) return 'Unknown';
+      
+      // Convert snake_case to Title Case
+      return type
+        .split('_')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    }
+    
+    function showError(message) {
+      document.getElementById('stakeholder-name').textContent = 'Error';
+      document.getElementById('stakeholder-license').textContent = message;
+      document.getElementById('stakeholder-type').textContent = 'Please go back and try again';
+    }
+  </script>
+</body>
+</html>

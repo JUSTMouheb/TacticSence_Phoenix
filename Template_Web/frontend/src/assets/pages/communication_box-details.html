@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communication Box Details | TacticSense</title>
+  
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/font-awesome/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <!-- Custom CSS for stakeholder details -->
+  <style>
+    .entity-header {
+      background: linear-gradient(rgba(40, 58, 90, 0.8), rgba(40, 58, 90, 0.9)), url("../img/hero-bg.jpg") center center;
+      background-size: cover;
+      padding: 100px 0 60px 0;
+      color: white;
+      margin-bottom: 40px;
+    }
+    
+    .profile-img {
+      height: 250px;
+      width: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .verification-badge {
+      background-color: #28a745;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    
+    .entity-stats {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .stat-item {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #283a5a;
+      margin-bottom: 0;
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    
+    .entity-details-card {
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+    
+    .detail-label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #283a5a;
+    }
+    
+    .detail-value {
+      margin-bottom: 15px;
+    }
+    
+    .back-btn {
+      margin-bottom: 20px;
+    }
+    
+    .skeleton-loading {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 4px;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .client-badge {
+      display: inline-block;
+      background-color: #e9ecef;
+      color: #495057;
+      padding: 6px 12px;
+      border-radius: 50px;
+      margin: 5px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+    
+    .client-badge:hover {
+      background-color: #dee2e6;
+    }
+    
+    @keyframes loading {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="../../index.html">TacticSense</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../../index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#about">About</a></li>
+          <li><a class="nav-link scrollto active" href="../../index.html#analytics">Risk Intelligence</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="../../index.html#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Entity Header -->
+    <section class="entity-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 id="entityName" class="mb-2">Loading...</h1>
+            <p id="entityType" class="lead mb-3">Communication Box</p>
+            <div id="verificationStatus" class="verification-badge">
+              <i class="bi bi-check-circle-fill me-1"></i> Verified
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <!-- Back Button -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <a href="../../index.html#analytics" class="btn btn-outline-primary back-btn">
+            <i class="bi bi-arrow-left"></i> Back to Risk Intelligence
+          </a>
+        </div>
+      </div>
+
+      <!-- Entity Info -->
+      <div class="row">
+        <!-- Left Column - Image and Key Stats -->
+        <div class="col-lg-4 mb-4">
+          <div class="text-center mb-4">
+            <img id="entityImage" src="../img/soccer/soccer1.jpg" alt="Communication Box" class="profile-img">
+          </div>
+          
+          <div class="entity-stats">
+            <h3 class="text-center mb-4">Key Metrics</h3>
+            
+            <div class="row">
+              <div class="col-6 stat-item">
+                <p id="mediaReach" class="stat-number">--</p>
+                <p class="stat-label">Media Reach (M)</p>
+              </div>
+              <div class="col-6 stat-item">
+                <p id="platformCount" class="stat-number">--</p>
+                <p class="stat-label">Platforms</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-6 stat-item">
+                <p id="yearsActive" class="stat-number">--</p>
+                <p class="stat-label">Years Active</p>
+              </div>
+              <div class="col-6 stat-item">
+                <p id="campaignCount" class="stat-number">--</p>
+                <p class="stat-label">Campaigns</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="entity-details-card">
+            <h3 class="mb-4">Contact Information</h3>
+            
+            <p class="detail-label">Email</p>
+            <p id="contactEmail" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Phone</p>
+            <p id="phoneNumber" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Region</p>
+            <p id="region" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Website</p>
+            <p id="website" class="detail-value">Loading...</p>
+          </div>
+        </div>
+        
+        <!-- Right Column - Detailed Information -->
+        <div class="col-lg-8">
+          <div class="entity-details-card">
+            <h3 class="mb-4">Company Information</h3>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <p class="detail-label">License Number</p>
+                <p id="licenseNumber" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Primary Market</p>
+                <p id="primaryMarket" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Verification Date</p>
+                <p id="verificationDate" class="detail-value">Loading...</p>
+              </div>
+              
+              <div class="col-md-6">
+                <p class="detail-label">Services</p>
+                <p id="services" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Founded</p>
+                <p id="foundedYear" class="detail-value">Loading...</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="entity-details-card">
+            <h3 class="mb-4">Clients & Partners</h3>
+            <div id="clientList" class="mb-4">
+              Loading client information...
+            </div>
+          </div>
+          
+          <div class="entity-details-card">
+            <h3 class="mb-4">Overview</h3>
+            <p id="overview">Loading company information...</p>
+          </div>
+          
+          <div class="entity-details-card">
+            <h3 class="mb-4">Recent Campaigns</h3>
+            <div id="recentCampaigns">
+              <div class="skeleton-loading"></div>
+              <div class="skeleton-loading"></div>
+              <div class="skeleton-loading"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>TacticSense</h3>
+            <p>
+              123 Alpha Street <br>
+              London, SE1 7TP<br>
+              United Kingdom <br><br>
+              <strong>Phone:</strong> +44 20 5678 1234<br>
+              <strong>Email:</strong> info@tacticsense.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#analytics">Risk Intelligence</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Risk Analysis</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fraud Detection</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Stakeholder Verification</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Market Intelligence</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Compliance Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Connect with us on social media for the latest updates in football business intelligence</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; 2025 <strong><span>TacticSense</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../js/main.js"></script>
+
+  <!-- Script to load and display entity details -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get entity ID from URL parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const entityId = urlParams.get('id');
+      
+      // Try to get entity details from localStorage
+      let entityDetails = JSON.parse(localStorage.getItem('communication_boxesFullDetails') || '{}');
+      
+      // If we don't have the specific entity or the ID doesn't match
+      if (!entityDetails || entityDetails.id != entityId) {
+        console.log('Entity details not found in localStorage or ID mismatch');
+        
+        // Try to get from the selected entity in localStorage
+        const selectedEntity = JSON.parse(localStorage.getItem('selectedCommunicationBoxes') || '{}');
+        
+        if (selectedEntity && selectedEntity.id == entityId) {
+          entityDetails = selectedEntity;
+        } else {
+          console.log('Entity not found in selected entities either');
+          // Try to load from CSV file
+          fetchEntityFromCSV(entityId);
+          return; // Exit function and let the CSV loader handle it
+        }
+      }
+      
+      // Assign random football image for the entity
+      assignRandomImage();
+      
+      // Update the page with entity details
+      populateEntityDetails(entityDetails);
+    });
+    
+    function assignRandomImage() {
+      const footballImages = [
+        '../img/soccer/soccer1.jpg',
+        '../img/soccer/soccer2.jpg',
+        '../img/soccer/soccer3.jpg',
+        '../img/soccer/soccer4.jpg',
+        '../img/soccer/soccer5.jpg',
+        '../img/soccer/soccer6.jpg',
+        '../img/soccer/soccer7.jpg',
+        '../img/soccer/soccer8.jpg',
+        '../img/soccer/soccer9.jpg',
+        '../img/soccer/soccer10.jpg',
+        '../img/soccer/soccer11.jpg',
+        '../img/soccer/soccer12.jpg'
+      ];
+      
+      const randomImage = footballImages[Math.floor(Math.random() * footballImages.length)];
+      document.getElementById('entityImage').src = randomImage;
+    }
+    
+    async function fetchEntityFromCSV(entityId) {
+      try {
+        // Load the CSV file
+        const response = await fetch('../data/Communication_Boxes_Dataset.csv');
+        if (!response.ok) {
+          throw new Error('Failed to load Communication Boxes dataset');
+        }
+        
+        const csvText = await response.text();
+        const rows = csvText.split('\n');
+        const headers = rows[0].split(',').map(h => h.trim());
+        
+        // Look for entity with matching ID
+        for (let i = 1; i < rows.length; i++) {
+          const values = rows[i].split(',');
+          if (values.length <= 1) continue; // Skip empty rows
+          
+          const rowData = {};
+          headers.forEach((header, index) => {
+            rowData[header] = values[index] ? values[index].trim() : '';
+          });
+          
+          if (rowData.id === entityId || rowData.license_number === entityId) {
+            assignRandomImage();
+            populateEntityDetails(rowData);
+            return;
+          }
+        }
+        
+        // If we get here, entity wasn't found
+        showError(`Communication Box with ID ${entityId} not found`);
+      } catch (error) {
+        console.error('Error loading CSV data:', error);
+        showError('Failed to load entity data. Please try again later.');
+      }
+    }
+    
+    function populateEntityDetails(entity) {
+      // Set the entity name and basic info
+      document.getElementById('entityName').textContent = entity.company_name || entity.name || 'Unknown Name';
+      
+      // Set verification status
+      const verifiedStatus = entity.verified_status === true || entity.verified_status === 'true' ? 'Verified' : 'Pending Verification';
+      document.getElementById('verificationStatus').innerHTML = 
+        `<i class="bi bi-check-circle-fill me-1"></i> ${verifiedStatus}`;
+      
+      if (verifiedStatus !== 'Verified') {
+        document.getElementById('verificationStatus').style.backgroundColor = '#ffc107';
+      }
+      
+      // Set key metrics
+      document.getElementById('mediaReach').textContent = entity.media_reach || 'N/A';
+      document.getElementById('platformCount').textContent = entity.platform_count || 'N/A';
+      document.getElementById('yearsActive').textContent = entity.years_active || calculateYearsActive(entity.founded_year);
+      document.getElementById('campaignCount').textContent = entity.campaign_count || 'N/A';
+      
+      // Set contact information
+      document.getElementById('contactEmail').textContent = entity.contact_email || entity.email || 'N/A';
+      document.getElementById('phoneNumber').textContent = entity.phone_number || entity.phone || 'N/A';
+      document.getElementById('region').textContent = entity.region || 'N/A';
+      document.getElementById('website').textContent = entity.website || 'N/A';
+      
+      // Set company information
+      document.getElementById('licenseNumber').textContent = entity.license_number || entity.id || 'N/A';
+      document.getElementById('primaryMarket').textContent = entity.primary_market || 'N/A';
+      document.getElementById('verificationDate').textContent = entity.verification_date || 'May 8, 2025';
+      document.getElementById('services').textContent = entity.services_offered || entity.services || 'N/A';
+      document.getElementById('foundedYear').textContent = entity.founded_year || 'N/A';
+      
+      // Set clients & partners
+      if (entity.client_list || entity.clients) {
+        const clientsContainer = document.getElementById('clientList');
+        clientsContainer.innerHTML = '';
+        
+        const clients = (entity.client_list || entity.clients || '').split(',');
+        clients.forEach(client => {
+          const clientName = client.trim();
+          if (clientName) {
+            const clientBadge = document.createElement('span');
+            clientBadge.className = 'client-badge';
+            clientBadge.innerHTML = `<i class="bi bi-building me-1"></i> ${clientName}`;
+            clientsContainer.appendChild(clientBadge);
+          }
+        });
+        
+        if (clients.length <= 1 && !clients[0]) {
+          clientsContainer.textContent = 'No client information available';
+        }
+      } else {
+        document.getElementById('clientList').textContent = 'No client information available';
+      }
+      
+      // Set overview content
+      document.getElementById('overview').textContent = generateOverview(entity);
+      
+      // Set recent campaigns
+      document.getElementById('recentCampaigns').innerHTML = generateRecentCampaigns(entity);
+    }
+    
+    function calculateYearsActive(foundedYear) {
+      if (!foundedYear) return 'N/A';
+      try {
+        const year = parseInt(foundedYear);
+        const currentYear = new Date().getFullYear();
+        return (currentYear - year).toString();
+      } catch (e) {
+        return 'N/A';
+      }
+    }
+    
+    function generateOverview(entity) {
+      const name = entity.company_name || entity.name || 'This communication box';
+      const years = entity.years_active || calculateYearsActive(entity.founded_year) || 'several';
+      const market = entity.primary_market || 'various markets';
+      const platforms = entity.platform_count || 'multiple';
+      const reach = entity.media_reach || 'significant';
+      
+      return `${name} is a professional communication service company with ${years} years of experience in ${market}. They specialize in sports media relations and public communications, operating across ${platforms} different platforms with a combined media reach of ${reach} million. Their expertise includes managing public relations for football clubs, players, and sports organizations, handling press releases, media inquiries, and digital marketing campaigns. Their professional approach to sports communication has earned them a strong reputation in the industry.`;
+    }
+    
+    function generateRecentCampaigns(entity) {
+      const html = [];
+      
+      html.push('<div class="mb-4">');
+      html.push(`<p>${entity.company_name || entity.name} has successfully managed campaigns for various clients in the football industry, focusing primarily on ${entity.primary_market || 'sports media'}.</p>`);
+      html.push('</div>');
+      
+      // Create campaign highlights
+      html.push('<h5>Recent Campaign Highlights:</h5>');
+      html.push('<ul class="mb-4">');
+      
+      // If we have specific campaign data, use it; otherwise, generate generic ones
+      if (entity.recent_campaigns) {
+        const campaigns = entity.recent_campaigns.split(',');
+        campaigns.forEach(campaign => {
+          html.push(`<li>${campaign.trim()}</li>`);
+        });
+      } else {
+        // Generate generic campaigns based on their stats
+        const clientNames = (entity.client_list || entity.clients || '').split(',')
+          .map(c => c.trim())
+          .filter(c => c);
+          
+        // Generate campaigns using client names if available
+        if (clientNames.length > 0) {
+          for (let i = 0; i < Math.min(3, clientNames.length); i++) {
+            html.push(`<li>Season launch media campaign for ${clientNames[i]}</li>`);
+          }
+        }
+        
+        // Add some generic campaigns
+        html.push('<li>Crisis management for high-profile player transfer</li>');
+        html.push('<li>Social media campaign reaching over 5 million followers</li>');
+        html.push('<li>Press conference management for international tournament</li>');
+      }
+      
+      html.push('</ul>');
+      
+      return html.join('');
+    }
+    
+    function showError(message) {
+      document.getElementById('entityName').textContent = 'Error Loading Data';
+      document.getElementById('verificationStatus').style.backgroundColor = '#dc3545';
+      document.getElementById('verificationStatus').innerHTML = '<i class="bi bi-x-circle-fill me-1"></i> Data Error';
+      document.getElementById('overview').textContent = message || 'Failed to load entity details. Please try again later.';
+    }
+  </script>
+</body>
+</html>

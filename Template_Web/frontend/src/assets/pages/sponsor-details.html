@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsor Details | TacticSense</title>
+  
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/font-awesome/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <!-- Custom CSS for stakeholder details -->
+  <style>
+    .sponsor-header {
+      background: linear-gradient(rgba(255, 146, 0, 0.8), rgba(255, 146, 0, 0.9)), url("../img/hero-bg.jpg") center center;
+      background-size: cover;
+      padding: 100px 0 60px 0;
+      color: white;
+      margin-bottom: 40px;
+    }
+    
+    .profile-img {
+      height: 250px;
+      width: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .verification-badge {
+      background-color: #28a745;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    
+    .sponsor-stats {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .stat-item {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #ff9200;
+      margin-bottom: 0;
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    
+    .sponsor-details-card {
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+    
+    .detail-label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #ff9200;
+    }
+    
+    .detail-value {
+      margin-bottom: 15px;
+    }
+    
+    .back-btn {
+      margin-bottom: 20px;
+    }
+    
+    .partnership-badge {
+      display: inline-block;
+      background-color: #fff3e0;
+      color: #ff9200;
+      padding: 5px 10px;
+      border-radius: 50px;
+      margin: 5px;
+      font-size: 0.9rem;
+    }
+    
+    .campaign-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #ff9200;
+    }
+    
+    .campaign-title {
+      font-weight: 600;
+      color: #ff9200;
+      margin-bottom: 5px;
+    }
+    
+    .campaign-date {
+      font-size: 0.8rem;
+      color: #6c757d;
+      margin-bottom: 5px;
+    }
+    
+    .skeleton-loading {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 4px;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+    
+    @keyframes loading {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
+    
+    .donut-chart {
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="../../index.html">TacticSense</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../../index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#about">About</a></li>
+          <li><a class="nav-link scrollto active" href="../../index.html#analytics">Risk Intelligence</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="../../index.html#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Sponsor Header -->
+    <section class="sponsor-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 id="sponsorName" class="mb-2">Loading...</h1>
+            <p id="sponsorIndustry" class="lead mb-3">Loading...</p>
+            <div id="verificationStatus" class="verification-badge">
+              <i class="bi bi-check-circle-fill me-1"></i> Verified
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <!-- Back Button -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <a href="../../index.html#analytics" class="btn btn-outline-primary back-btn">
+            <i class="bi bi-arrow-left"></i> Back to Risk Intelligence
+          </a>
+        </div>
+      </div>
+
+      <!-- Sponsor Info -->
+      <div class="row">
+        <!-- Left Column - Image and Key Stats -->
+        <div class="col-lg-4 mb-4">
+          <div class="text-center mb-4">
+            <img id="sponsorLogo" src="../img/soccer/soccer1.jpg" alt="Sponsor" class="profile-img">
+          </div>
+          
+          <div class="sponsor-stats">
+            <h3 class="text-center mb-4">Sponsorship Stats</h3>
+            
+            <div class="row">
+              <div class="col-6 stat-item">
+                <p id="sponsorshipBudget" class="stat-number">$0M</p>
+                <p class="stat-label">Annual Budget</p>
+              </div>
+              <div class="col-6 stat-item">
+                <p id="activeDeals" class="stat-number">0</p>
+                <p class="stat-label">Active Deals</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-6 stat-item">
+                <p id="yearsActive" class="stat-number">0</p>
+                <p class="stat-label">Years Active</p>
+              </div>
+              <div class="col-6 stat-item">
+                <p id="trustScore" class="stat-number">0%</p>
+                <p class="stat-label">Trust Score</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sponsor-details-card">
+            <h3 class="mb-4">Contact Information</h3>
+            
+            <p class="detail-label">Email</p>
+            <p id="contactEmail" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Phone</p>
+            <p id="phoneNumber" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Headquarters</p>
+            <p id="headquarters" class="detail-value">Loading...</p>
+            
+            <p class="detail-label">Website</p>
+            <p id="website" class="detail-value">Loading...</p>
+          </div>
+        </div>
+        
+        <!-- Right Column - Detailed Information -->
+        <div class="col-lg-8">
+          <div class="sponsor-details-card">
+            <h3 class="mb-4">Company Profile</h3>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <p class="detail-label">Industry</p>
+                <p id="industry" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Founded</p>
+                <p id="foundedYear" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Verification Date</p>
+                <p id="verificationDate" class="detail-value">Loading...</p>
+              </div>
+              
+              <div class="col-md-6">
+                <p class="detail-label">Sponsorship Focus</p>
+                <p id="sponsorshipFocus" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Market Capitalization</p>
+                <p id="marketCap" class="detail-value">Loading...</p>
+                
+                <p class="detail-label">Revenue</p>
+                <p id="revenue" class="detail-value">Loading...</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sponsor-details-card">
+            <h3 class="mb-4">Sponsorship Portfolio</h3>
+            <div id="sponsorshipPortfolio" class="d-flex flex-wrap">
+              <div class="skeleton-loading w-100"></div>
+              <div class="skeleton-loading w-100"></div>
+            </div>
+          </div>
+          
+          <div class="sponsor-details-card">
+            <h3 class="mb-4">Recent Campaigns</h3>
+            <div id="recentCampaigns">
+              <div class="skeleton-loading"></div>
+              <div class="skeleton-loading"></div>
+              <div class="skeleton-loading"></div>
+            </div>
+          </div>
+          
+          <div class="sponsor-details-card">
+            <div class="row">
+              <div class="col-lg-6">
+                <h3 class="mb-4">Marketing Channels</h3>
+                <div id="marketingChannels">
+                  <div class="skeleton-loading"></div>
+                  <div class="skeleton-loading"></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h3 class="mb-4">Budget Allocation</h3>
+                <div class="donut-chart" id="budgetChart">
+                  <div class="skeleton-loading"></div>
+                  <div class="skeleton-loading"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>TacticSense</h3>
+            <p>
+              123 Alpha Street <br>
+              London, SE1 7TP<br>
+              United Kingdom <br><br>
+              <strong>Phone:</strong> +44 20 5678 1234<br>
+              <strong>Email:</strong> info@tacticsense.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#analytics">Risk Intelligence</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Risk Analysis</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fraud Detection</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Stakeholder Verification</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Market Intelligence</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Compliance Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Connect with us on social media for the latest updates in football business intelligence</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; 2025 <strong><span>TacticSense</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../js/main.js"></script>
+
+  <!-- Script to load and display sponsor details -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get sponsor ID from URL parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const sponsorId = urlParams.get('id');
+      
+      // Try to get sponsor details from localStorage
+      let sponsorDetails = JSON.parse(localStorage.getItem('sponsorsFullDetails') || '{}');
+      
+      // If we don't have the specific sponsor or the ID doesn't match
+      if (!sponsorDetails || sponsorDetails.id != sponsorId) {
+        console.log('Sponsor details not found in localStorage or ID mismatch');
+        
+        // Try to get from the selected sponsor in localStorage
+        const selectedSponsor = JSON.parse(localStorage.getItem('selectedSponsors') || '{}');
+        
+        if (selectedSponsor && selectedSponsor.id == sponsorId) {
+          sponsorDetails = selectedSponsor;
+        } else {
+          console.log('Sponsor not found in selected sponsors either');
+          // Try to load from CSV
+          fetchSponsorFromCSV(sponsorId).then(data => {
+            if (data) {
+              sponsorDetails = data;
+              populateSponsorDetails(sponsorDetails);
+            }
+          });
+          
+          // Set minimum details for error handling in case CSV fails too
+          sponsorDetails = {
+            id: sponsorId || 'Unknown',
+            name: 'Sponsor Not Found',
+            industry: 'Unknown Industry',
+            error: 'Could not load sponsor details'
+          };
+        }
+      }
+      
+      // Assign random football image for the sponsor
+      const footballImages = [
+        '../img/soccer/soccer1.jpg',
+        '../img/soccer/soccer2.jpg',
+        '../img/soccer/soccer3.jpg',
+        '../img/soccer/soccer4.jpg',
+        '../img/soccer/soccer5.jpg',
+        '../img/soccer/soccer6.jpg',
+        '../img/soccer/soccer7.jpg',
+        '../img/soccer/soccer8.jpg',
+        '../img/soccer/soccer9.jpg',
+        '../img/soccer/soccer10.jpg',
+        '../img/soccer/soccer11.jpg',
+        '../img/soccer/soccer12.jpg'
+      ];
+      
+      const randomImage = footballImages[Math.floor(Math.random() * footballImages.length)];
+      document.getElementById('sponsorLogo').src = randomImage;
+      
+      // Update the page with sponsor details
+      populateSponsorDetails(sponsorDetails);
+    });
+    
+    // Function to fetch sponsor data from CSV if needed
+    async function fetchSponsorFromCSV(sponsorId) {
+      try {
+        const response = await fetch('../data/sponsors_dataset.csv');
+        const csvText = await response.text();
+        
+        // Simple CSV parsing
+        const rows = csvText.split('\n');
+        const headers = rows[0].split(',');
+        
+        for (let i = 1; i < rows.length; i++) {
+          const values = rows[i].split(',');
+          if (values.length > 1) {
+            const rowData = {};
+            headers.forEach((header, index) => {
+              rowData[header.trim()] = values[index] ? values[index].trim() : '';
+            });
+            
+            if (rowData.id === sponsorId) {
+              return rowData;
+            }
+          }
+        }
+        console.error("Sponsor not found in CSV");
+        return null;
+      } catch (error) {
+        console.error("Error fetching CSV data:", error);
+        return null;
+      }
+    }
+    
+    function populateSponsorDetails(sponsor) {
+      // Set the sponsor name and industry
+      document.getElementById('sponsorName').textContent = sponsor.company_name || sponsor.name || 'Unknown Name';
+      document.getElementById('sponsorIndustry').textContent = sponsor.industry || 'Unknown Industry';
+      
+      // Set verification status
+      const verifiedStatus = sponsor.verification_status === 'true' || sponsor.verification_status === true ? 'Verified' : 'Pending Verification';
+      document.getElementById('verificationStatus').innerHTML = 
+        `<i class="bi bi-check-circle-fill me-1"></i> ${verifiedStatus}`;
+      
+      if (sponsor.verification_status !== 'true' && sponsor.verification_status !== true) {
+        document.getElementById('verificationStatus').style.backgroundColor = '#ffc107';
+      }
+      
+      // Format sponsorship budget
+      let budget = sponsor.sponsorship_budget || sponsor.annual_budget || '0';
+      if (typeof budget === 'string') {
+        budget = budget.replace(/[^0-9.]/g, '');
+      }
+      const budgetNum = parseFloat(budget);
+      const formattedBudget = budgetNum >= 1000000 ? 
+        `$${(budgetNum / 1000000).toFixed(1)}M` : 
+        `$${(budgetNum / 1000).toFixed(0)}K`;
+      
+      // Set key stats
+      document.getElementById('sponsorshipBudget').textContent = formattedBudget;
+      document.getElementById('activeDeals').textContent = sponsor.active_deals || '0';
+      document.getElementById('yearsActive').textContent = sponsor.years_active || calculateYearsActive(sponsor.founded_year);
+      document.getElementById('trustScore').textContent = `${sponsor.trust_score || '85'}%`;
+      
+      // Set contact information
+      document.getElementById('contactEmail').textContent = sponsor.email || 'contact@example.com';
+      document.getElementById('phoneNumber').textContent = sponsor.phone || 'N/A';
+      document.getElementById('headquarters').textContent = sponsor.headquarters || sponsor.location || 'N/A';
+      
+      const website = sponsor.website || `www.${sponsor.company_name?.toLowerCase().replace(/\s/g, '')}.com` || 'N/A';
+      document.getElementById('website').innerHTML = `<a href="https://${website}" target="_blank">${website}</a>`;
+      
+      // Set company profile
+      document.getElementById('industry').textContent = sponsor.industry || 'N/A';
+      document.getElementById('foundedYear').textContent = sponsor.founded_year || 'N/A';
+      document.getElementById('verificationDate').textContent = sponsor.verification_date || 'May 8, 2025';
+      document.getElementById('sponsorshipFocus').textContent = sponsor.sponsorship_focus || 'Sports Teams and Events';
+      
+      const marketCap = formatCurrency(sponsor.market_cap || '0');
+      document.getElementById('marketCap').textContent = marketCap;
+      
+      const revenue = formatCurrency(sponsor.revenue || '0');
+      document.getElementById('revenue').textContent = revenue;
+      
+      // Set sponsorship portfolio
+      const portfolioContainer = document.getElementById('sponsorshipPortfolio');
+      const partnerships = parsePartnershipString(sponsor.partnerships || sponsor.sponsored_entities || '');
+      
+      if (partnerships.length > 0) {
+        portfolioContainer.innerHTML = '';
+        partnerships.forEach(partner => {
+          const badge = document.createElement('span');
+          badge.className = 'partnership-badge';
+          badge.innerHTML = `<i class="fas fa-handshake me-1"></i> ${partner}`;
+          portfolioContainer.appendChild(badge);
+        });
+      } else {
+        portfolioContainer.textContent = 'No partnerships information available';
+      }
+      
+      // Set recent campaigns
+      const campaignsContainer = document.getElementById('recentCampaigns');
+      const campaigns = generateCampaigns(sponsor);
+      
+      if (campaigns.length > 0) {
+        campaignsContainer.innerHTML = '';
+        campaigns.forEach(campaign => {
+          const campaignCard = document.createElement('div');
+          campaignCard.className = 'campaign-card';
+          
+          campaignCard.innerHTML = `
+            <div class="campaign-title">${campaign.title}</div>
+            <div class="campaign-date">${campaign.date}</div>
+            <div>${campaign.description}</div>
+          `;
+          
+          campaignsContainer.appendChild(campaignCard);
+        });
+      } else {
+        campaignsContainer.textContent = 'No recent campaign information available';
+      }
+      
+      // Set marketing channels
+      const channelsContainer = document.getElementById('marketingChannels');
+      const channels = ['Television', 'Social Media', 'Stadium Branding', 'Player Endorsements', 'Digital Media'];
+      
+      channelsContainer.innerHTML = '';
+      channels.forEach(channel => {
+        const channelItem = document.createElement('div');
+        channelItem.className = 'mb-2';
+        channelItem.innerHTML = `<i class="fas fa-check-circle text-success me-2"></i> ${channel}`;
+        channelsContainer.appendChild(channelItem);
+      });
+      
+      // Set budget chart (simplified version without actual chart library)
+      const chartContainer = document.getElementById('budgetChart');
+      chartContainer.innerHTML = `
+        <div class="text-center mb-3">Budget Allocation</div>
+        <div class="progress mb-2" style="height: 20px;">
+          <div class="progress-bar bg-primary" style="width: 40%;">TV & Media (40%)</div>
+        </div>
+        <div class="progress mb-2" style="height: 20px;">
+          <div class="progress-bar bg-success" style="width: 25%;">Events (25%)</div>
+        </div>
+        <div class="progress mb-2" style="height: 20px;">
+          <div class="progress-bar bg-info" style="width: 20%;">Digital (20%)</div>
+        </div>
+        <div class="progress mb-2" style="height: 20px;">
+          <div class="progress-bar bg-warning" style="width: 15%;">Merchandise (15%)</div>
+        </div>
+      `;
+    }
+    
+    function calculateYearsActive(foundedYear) {
+      if (!foundedYear) return '5';
+      try {
+        const founded = parseInt(foundedYear);
+        const currentYear = new Date().getFullYear();
+        return Math.max(1, currentYear - founded).toString();
+      } catch (e) {
+        return '5';
+      }
+    }
+    
+    function formatCurrency(value) {
+      if (!value) return '$0';
+      
+      let numValue = parseFloat(value.toString().replace(/[^0-9.]/g, ''));
+      if (isNaN(numValue)) return '$0';
+      
+      if (numValue >= 1000000000) {
+        return `$${(numValue / 1000000000).toFixed(1)}B`;
+      } else if (numValue >= 1000000) {
+        return `$${(numValue / 1000000).toFixed(1)}M`;
+      } else if (numValue >= 1000) {
+        return `$${(numValue / 1000).toFixed(0)}K`;
+      }
+      
+      return `$${numValue.toFixed(0)}`;
+    }
+    
+    function parsePartnershipString(partnershipsStr) {
+      if (!partnershipsStr) return [];
+      
+      return partnershipsStr
+        .split(/[,;]/)
+        .map(p => p.trim())
+        .filter(p => p.length > 0);
+    }
+    
+    function generateCampaigns(sponsor) {
+      const campaigns = [];
+      const currentYear = new Date().getFullYear();
+      
+      // Try to extract campaign info from sponsor data if available
+      if (sponsor.recent_campaigns) {
+        try {
+          return JSON.parse(sponsor.recent_campaigns);
+        } catch (e) {
+          // Fall back to generated data
+        }
+      }
+      
+      // Generate some sample campaigns
+      const campaignTypes = [
+        'Season Launch',
+        'Player Endorsement',
+        'Championship Sponsorship',
+        'Youth Development Program',
+        'Fan Engagement Initiative'
+      ];
+      
+      const descriptions = [
+        'A multi-platform campaign highlighting our partnership with the team for the upcoming season.',
+        'Strategic sponsorship of key players to increase brand visibility during matches.',
+        'Title sponsorship of the championship with extensive media coverage.',
+        'Investment in grassroots football development to build community relations.',
+        'Interactive fan experiences to build loyalty and engagement.'
+      ];
+      
+      // Generate 2-4 campaigns
+      const numCampaigns = Math.floor(Math.random() * 3) + 2;
+      for (let i = 0; i < numCampaigns; i++) {
+        const randomType = campaignTypes[Math.floor(Math.random() * campaignTypes.length)];
+        const randomDesc = descriptions[Math.floor(Math.random() * descriptions.length)];
+        const randomMonth = Math.floor(Math.random() * 12) + 1;
+        
+        campaigns.push({
+          title: `${randomType} Campaign`,
+          date: `${currentYear}-${randomMonth.toString().padStart(2, '0')}-${Math.floor(Math.random() * 28) + 1}`,
+          description: randomDesc
+        });
+      }
+      
+      // Sort by date (most recent first)
+      return campaigns.sort((a, b) => new Date(b.date) - new Date(a.date));
+    }
+  </script>
+</body>
+</html>
