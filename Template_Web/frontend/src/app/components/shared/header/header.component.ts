@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
 
 // Declare libraries needed for the header
 declare var $: any;
@@ -13,8 +13,14 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // Initialize header-specific functionality
+
+  }
+ ngAfterViewInit() {
+    // This is the right place to initialize DOM-related functionality
     this.initMobileNav();
+    
+    // Add this console log to verify it's running
+    console.log('Mobile navigation initialized');
   }
 
   // Listen for window scroll events to change header style
@@ -31,18 +37,29 @@ export class HeaderComponent implements OnInit {
   }
 
   // Initialize mobile navigation functionality
-  private initMobileNav(): void {
-    // For mobile navigation toggle
-    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-    const navmenu = document.getElementById('navmenu');
+ // Initialize mobile navigation functionality
+private initMobileNav(): void {
+  // For mobile navigation toggle
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const navmenu = document.getElementById('navmenu');
+  
+  console.log('Toggle element:', mobileNavToggle);
+  console.log('Nav menu element:', navmenu);
+  
+  if (mobileNavToggle && navmenu) {
+    // Remove any existing listeners (cleanup)
+    const newToggle = mobileNavToggle.cloneNode(true) as HTMLElement; // Add type assertion here
+    mobileNavToggle.parentNode?.replaceChild(newToggle, mobileNavToggle);
     
-    if (mobileNavToggle && navmenu) {
-      mobileNavToggle.addEventListener('click', () => {
-        navmenu.classList.toggle('active');
-        mobileNavToggle.classList.toggle('bi-list');
-        mobileNavToggle.classList.toggle('bi-x');
-      });
-    }
+    // Add the event listener to the new element
+    newToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      console.log('Toggle clicked');
+      navmenu.classList.toggle('active');
+      newToggle.classList.toggle('bi-list');
+      newToggle.classList.toggle('bi-x');
+    });
+  }
 
     // Handle dropdown toggles on mobile
     const dropdownLinks = document.querySelectorAll('.navmenu .dropdown > a');

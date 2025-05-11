@@ -282,3 +282,145 @@ h1, h2, h3, h4, h5, h6 {
   color: #ee1e46 !important;
   background-color: #f0f8ff;
 }
+/* Fix mobile navigation */
+.mobile-nav-toggle {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 9999;
+}
+
+@media (max-width: 991px) {
+  .navmenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    z-index: 9995;
+    background: rgba(39, 61, 78, 0.95);
+    padding: 60px 0;
+    transition: 0.3s;
+    overflow-y: auto;
+  }
+
+  .navmenu.active {
+    right: 0;
+  }
+  
+  .navmenu ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navmenu ul li {
+    margin: 0;
+    padding: 10px 20px;
+  }
+}
+
+/* Fix the blue box issue */
+.site-logo h1 {
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+/* Fix alignment */
+.justify-content-between {
+  justify-content: space-between !important;
+}
+/* Mobile Navigation Styles */
+@media (max-width: 1199px) {
+  .navmenu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 80%;
+    max-width: 400px;
+    min-width: 280px;
+    height: 100vh;
+    background: #273d4e;
+    padding-top: 70px;
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9997;
+  }
+
+  .navmenu.active {
+    right: 0; /* Slide in when active */
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .navmenu ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navmenu li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .navmenu a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .navmenu a:hover,
+  .navmenu a.active {
+    color: #ee1e46;
+  }
+}
+
+/* Mobile toggle button */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 9999;
+  border: 0;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+  line-height: 0;
+  color: #fff;
+  padding: 5px;
+}
+
+/* Change icon when menu is open */
+.mobile-nav-toggle.bi-x {
+  color: #ee1e46;
+}
+
+/* Proper display for larger screens */
+@media (min-width: 1200px) {
+  .mobile-nav-toggle {
+    display: none;
+  }
+  
+  .navmenu {
+    display: flex;
+  }
+  
+  .navmenu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navmenu li {
+    position: relative;
+    padding: 0;
+    margin: 0 15px;
+  }
+}
