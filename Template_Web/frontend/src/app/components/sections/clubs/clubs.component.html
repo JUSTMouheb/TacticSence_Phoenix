@@ -1,1 +1,187 @@
 
+<section class="clubs-section">
+  <div class="container">
+    <!-- Hero Section -->
+    <div class="clubs-hero">
+      <h2 class="clubs-title">Elite Clubs</h2>
+      <p class="clubs-subtitle">Africa's football powerhouses</p>
+      
+    
+    </div>
+    
+    <!-- Featured Clubs Section -->
+    <div class="featured-clubs">
+     
+      
+      <div class="row">
+        <div *ngFor="let club of featuredClubs" class="col-lg-4 col-md-6 mb-4">
+          <div class="club-card">
+            <div class="club-badge-container">
+              <img [src]="club.badge" [alt]="club.name + ' badge'" class="club-badge">
+            </div>
+            <div class="club-details">
+              <h4>{{club.name}}</h4>
+              <p class="club-country"><img [src]="club.countryFlag" alt="Country flag" class="country-flag"> {{club.country}}</p>
+              <div class="club-stats">
+                <div class="stat">
+                  <span class="stat-value">{{club.founded}}</span>
+                  <span class="stat-label">Founded</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">{{club.leagueTitles}}</span>
+                  <span class="stat-label">League Titles</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">{{club.continentalTitles}}</span>
+                  <span class="stat-label">CAF Titles</span>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-club-details w-100" (click)="openClubDetails(club)">
+  View Official Website <i class="bi bi-globe"></i>
+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Latest News Section -->
+    <div class="clubs-news">
+        <h3 class="featured-title text-center">Latest from African Club Football</h3>
+        <p class="featured-subtitle text-center mb-4">Breaking news and updates</p>
+   
+      <div class="row">
+        <div *ngFor="let news of latestNews" class="col-lg-6 mb-4">
+          <div class="news-card">
+            <div class="news-image">
+              <img [src]="news.image" [alt]="news.title">
+              <div class="news-category">{{news.category}}</div>
+            </div>
+       <div class="news-content">
+  <h5 class="news-title">{{news.title}}</h5>
+  <p class="news-date">{{news.date}}</p>
+  <p class="news-excerpt">{{news.excerpt}}</p>
+  <a [href]="news.url" target="_blank" rel="noopener noreferrer" class="read-more">
+    Read Full Story <i class="bi bi-arrow-right"></i>
+  </a>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <hr>
+    <!-- Rising Clubs Section -->
+    <div class="rising-clubs">
+     
+         <h3 class="featured-title text-center">Rising Forces</h3>
+        <p class="featured-subtitle text-center mb-4">Emerging clubs to watch</p>
+   
+      <div class="row">
+        <div *ngFor="let club of risingClubs" class="col-lg-3 col-md-6 mb-4">
+          <div class="rising-club-card">
+            <div class="rising-club-image">
+              <img [src]="club.image" [alt]="club.name" class="club-image">
+              <div class="club-overlay">
+                <div class="club-badge">
+                  <img [src]="club.badge" [alt]="club.name + ' badge'">
+                </div>
+              </div>
+            </div>
+            <div class="rising-club-details">
+              <h5>{{club.name}}</h5>
+              <p class="club-location">{{club.country}}</p>
+              <p class="club-description">{{club.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Club Academies Section -->
+    <div class="club-academies">
+
+         <h3 class="featured-title text-center">Youth Development</h3>
+        <p class="featured-subtitle text-center mb-4">Africa's top talent factories</p>
+   
+      <div class="academies-container">
+        <div *ngFor="let academy of topAcademies; let i = index" class="academy-item" [class.active]="selectedAcademy === i">
+          <div class="academy-header" (click)="selectAcademy(i)">
+            <div class="academy-name">
+              <img [src]="academy.logo" [alt]="academy.name + ' logo'" class="academy-logo">
+              <h5>{{academy.name}}</h5>
+            </div>
+            <div class="academy-toggle">
+              <i class="bi" [ngClass]="selectedAcademy === i ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+            </div>
+          </div>
+          <div class="academy-details" *ngIf="selectedAcademy === i">
+            <div class="row">
+              <div class="col-md-6">
+                <img [src]="academy.image" [alt]="academy.name" class="academy-image">
+              </div>
+              <div class="col-md-6">
+                <div class="academy-info">
+                  <p class="academy-description">{{academy.description}}</p>
+                  <h6>Notable Graduates:</h6>
+                  <ul class="graduates-list">
+                    <li *ngFor="let graduate of academy.graduates">{{graduate}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Club Details Modal -->
+<div class="modal fade" id="clubDetailsModal" tabindex="-1" aria-labelledby="clubDetailsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header" *ngIf="selectedClub">
+        <h5 class="modal-title" id="clubDetailsModalLabel">{{selectedClub.name}} Official Website</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0" *ngIf="selectedClub">
+        <iframe [src]="sanitizedWebsiteUrl" width="100%" height="600" frameborder="0"></iframe>
+        <div class="club-profile">
+          <div class="club-profile-header">
+            <img [src]="selectedClub.badge" [alt]="selectedClub.name + ' badge'" class="club-profile-badge">
+            <div class="club-profile-basics">
+              <p class="club-country"><img [src]="selectedClub.countryFlag" alt="Country flag" class="country-flag"> {{selectedClub.country}}</p>
+              <p>Founded: {{selectedClub.founded}}</p>
+              <p>Stadium: {{selectedClub.stadium}}</p>
+              <p>Capacity: {{selectedClub.stadiumCapacity}}</p>
+            </div>
+          </div>
+          
+          <div class="club-profile-content">
+            <h6>Club History</h6>
+            <p>{{selectedClub.history}}</p>
+            
+            <h6>Honours</h6>
+            <ul class="honours-list">
+              <li *ngFor="let honour of selectedClub.honours">{{honour}}</li>
+            </ul>
+            
+            <h6>Key Players</h6>
+            <div class="key-players">
+              <div *ngFor="let player of selectedClub.keyPlayers" class="key-player">
+                <img [src]="player.image" [alt]="player.name" class="player-image">
+                <div class="player-info">
+                  <p class="player-name">{{player.name}}</p>
+                  <p class="player-position">{{player.position}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
