@@ -43,7 +43,6 @@
               <div class="hover-overlay">
                 <div class="overlay-content">
                   <h4>{{ entity.name }}</h4>
-                  <p class="entity-license">License: {{ entity.id }}</p>
                   <p class="entity-desc">{{ getStakeholderDescription(entity.type) }}</p>
                   <a href="#" (click)="navigateToDetails(entity); $event.preventDefault()" 
                   class="btn btn-outline-light mt-3">

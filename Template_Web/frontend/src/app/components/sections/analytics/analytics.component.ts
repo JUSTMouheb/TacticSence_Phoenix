@@ -57,23 +57,65 @@ export class AnalyticsComponent implements OnInit, AfterViewInit, DoCheck {
   entityImageMap: Map<string, string> = new Map();
 
   // Soccer images with correct path
-  footballImages: string[] = [
-    'assets/img/soccer/soccer1.jpg',
-    'assets/img/soccer/soccer2.jpg',
-    'assets/img/soccer/soccer3.jpg',
-    'assets/img/soccer/soccer4.jpg',
-    'assets/img/soccer/soccer5.jpg',
-    'assets/img/soccer/soccer6.jpg',
-    'assets/img/soccer/soccer7.jpg',
-    'assets/img/soccer/soccer8.jpg',
-    'assets/img/soccer/soccer9.jpg',
-    'assets/img/soccer/soccer10.jpg',
-    'assets/img/soccer/soccer11.jpg',
-    'assets/img/soccer/soccer12.jpg',
-  
+footballImages: string[] = [
+    'assets/img/soccer/soccer1.avif',
+    'assets/img/soccer/soccer2.avif',
+    'assets/img/soccer/soccer3.avif',
+    'assets/img/soccer/soccer4.avif',
+    'assets/img/soccer/soccer5.avif',
+    'assets/img/soccer/soccer6.avif',
+    'assets/img/soccer/soccer7.avif',
+    'assets/img/soccer/soccer8.avif',
+    'assets/img/soccer/soccer9.avif',
+    'assets/img/soccer/soccer10.avif',
+    'assets/img/soccer/soccer11.avif',
+    'assets/img/soccer/soccer12.avif'
+];
+ recruitingAgentImages: string[] = [
+    'assets/img/recagents/recagent1.avif',
+    'assets/img/recagents/recagent2.avif',
+    'assets/img/recagents/recagent3.avif',
+    'assets/img/recagents/recagent4.avif',
+    'assets/img/recagents/recagent5.avif',
+    'assets/img/recagents/recagent6.avif',
+    'assets/img/recagents/recagent7.avif',
+    'assets/img/recagents/recagent8.avif',
+    'assets/img/recagents/recagent9.avif',
+    'assets/img/recagents/recagent10.avif',
+    'assets/img/recagents/recagent11.avif',
+    'assets/img/recagents/recagent12.avif'
+];
 
-  ];
+communicationBoxImages: string[] = [
+    'assets/img/combox/combox1.avif',
+    'assets/img/combox/combox2.avif',
+    'assets/img/combox/combox3.avif',
+    'assets/img/combox/combox4.avif',
+    'assets/img/combox/combox5.avif',
+    'assets/img/combox/combox6.avif',
+    'assets/img/combox/combox7.avif',
+    'assets/img/combox/combox8.avif',
+    'assets/img/combox/combox9.avif',
+    'assets/img/combox/combox10.avif',
+    'assets/img/combox/combox11.avif',
+    'assets/img/combox/combox12.avif'
+];
 
+// Sporting Management Agencies images with correct path
+sportingManagementImages: string[] = [
+  'assets/img/sma/sma1.avif',
+  'assets/img/sma/sma2.avif',
+  'assets/img/sma/sma3.avif',
+  'assets/img/sma/sma4.avif',
+  'assets/img/sma/sma5.avif',
+  'assets/img/sma/sma6.avif',
+  'assets/img/sma/sma7.avif',
+  'assets/img/sma/sma8.avif',
+  'assets/img/sma/sma9.avif',
+  'assets/img/sma/sma10.avif',
+  'assets/img/sma/sma11.avif',
+  'assets/img/sma/sma12.avif'
+];
   itemsPerPage: number = 12;
   paginationState: { [key: string]: PaginationState } = {
     'all': { currentPage: 1, totalPages: 1 },
@@ -200,23 +242,28 @@ export class AnalyticsComponent implements OnInit, AfterViewInit, DoCheck {
     }, 500);
   }
   
-  // New method to directly apply backgrounds to DOM elements
-  applyBackgroundsToDom(): void {
-    this.verifiedEntities.forEach(entity => {
-      if (entity.type === 'players_agents') {
-        const imagePath = this.entityImageMap.get(entity.id);
-        if (imagePath) {
-          const elements = document.querySelectorAll(`[data-entity-id="${entity.id}"] .portfolio-img`);
-          elements.forEach(el => {
-            (el as HTMLElement).style.backgroundImage = `url(${imagePath})`;
-            (el as HTMLElement).style.backgroundSize = 'cover';
-            (el as HTMLElement).style.backgroundPosition = 'center';
-            console.log(`Applied background to DOM for ${entity.name}: ${imagePath}`);
-          });
+// New method to directly apply backgrounds to DOM elements
+applyBackgroundsToDom(): void {
+  this.verifiedEntities.forEach(entity => {
+    const imagePath = this.entityImageMap.get(entity.id);
+    if (imagePath) {
+      const elements = document.querySelectorAll(`[data-entity-id="${entity.id}"] .portfolio-img`);
+      elements.forEach(el => {
+        // Apply background images for all stakeholder types that have images
+        if (entity.type === 'players_agents' || 
+            entity.type === 'recruiting_agents' || 
+            entity.type === 'communication_boxes' || 
+            entity.type === 'sporting_management_agencies' || 
+            entity.type === 'sponsors') {
+          (el as HTMLElement).style.backgroundImage = `url(${imagePath})`;
+          (el as HTMLElement).style.backgroundSize = 'cover';
+          (el as HTMLElement).style.backgroundPosition = 'center';
+          console.log(`Applied background to DOM for ${entity.name} (${entity.type}): ${imagePath}`);
         }
-      }
-    });
-  }
+      });
+    }
+  });
+}
 
   initIsotope(): void {
     setTimeout(() => {
@@ -291,56 +338,95 @@ export class AnalyticsComponent implements OnInit, AfterViewInit, DoCheck {
       });
   }
 
-  private assignBackgroundClasses(): void {
-    this.entityImageMap.clear();
-    
-    // Create a shuffled copy of the football images
-    const shuffledImages = [...this.footballImages].sort(() => Math.random() - 0.5);
-    console.log('Shuffled images:', shuffledImages);
-    
-    // Process all entities to ensure consistent background assignment
-    let playerAgentIndex = 0;
-    this.verifiedEntities.forEach(entity => {
-      if (entity.type === 'players_agents') {
-        // Use a counter for player agents to cycle through shuffled images
-        const imgIndex = playerAgentIndex % shuffledImages.length;
-        const imagePath = shuffledImages[imgIndex];
-        this.entityImageMap.set(entity.id, imagePath);
-        console.log(`Player agent ${entity.name} (${entity.id}) assigned image: ${imagePath}`);
-        playerAgentIndex++;
-      } else {
-        // For other stakeholder types, use type-specific background class
-        const bgClass = this.otherBackgrounds[entity.type] || `bg-${entity.type}`;
-        this.entityImageMap.set(entity.id, bgClass);
-      }
-    });
-  }
+  // Update assignBackgroundClasses to handle all stakeholder types
+private assignBackgroundClasses(): void {
+  this.entityImageMap.clear();
+  
+  // Create shuffled copies of all image arrays
+  const shuffledImages = {
+    'players_agents': [...this.footballImages].sort(() => Math.random() - 0.5),
+    'recruiting_agents': [...this.recruitingAgentImages].sort(() => Math.random() - 0.5),
+    'communication_boxes': [...this.communicationBoxImages].sort(() => Math.random() - 0.5),
+    'sporting_management_agencies': [...this.sportingManagementImages].sort(() => Math.random() - 0.5),
+    'sponsors': [...this.footballImages].sort(() => Math.random() - 0.5), // Add this line to use football images for sponsors
+  
+  };
+  
+  // Initialize counters for each type
+  const typeCounters = {
+    'players_agents': 0,
+    'recruiting_agents': 0,
+    'communication_boxes': 0,
+    'sporting_management_agencies': 0,
+    'sponsors': 0
+  };
+  
+  // Process all entities
+  this.verifiedEntities.forEach(entity => {
+    if (shuffledImages[entity.type]) {
+      const imgIndex = typeCounters[entity.type] % shuffledImages[entity.type].length;
+      const imagePath = shuffledImages[entity.type][imgIndex];
+      
+      // Verify the image exists before assigning
+      fetch(imagePath)
+        .then(response => {
+          if (response.ok) {
+            this.entityImageMap.set(entity.id, imagePath);
+            console.log(`${entity.type} ${entity.name} (${entity.id}) assigned image: ${imagePath}`);
+          } else {
+            // Fallback to a default image if the assigned one doesn't exist
+            const fallbackImage = `../../assets/img/combox/combox1.avif`;
+            this.entityImageMap.set(entity.id, fallbackImage);
+            console.warn(`Image not found: ${imagePath}, using fallback: ${fallbackImage}`);
+          }
+        })
+        .catch(error => {
+          console.error(`Error checking image: ${imagePath}`, error);
+          const fallbackImage = `../../assets/img/combox/combox1.avif`;
+          this.entityImageMap.set(entity.id, fallbackImage);
+        });
+      
+      typeCounters[entity.type]++;
+    } else {
+      // Fallback for any stakeholder type without images
+      const bgClass = this.otherBackgrounds[entity.type] || `bg-${entity.type}`;
+      this.entityImageMap.set(entity.id, bgClass);
+    }
+  });
+}
 
-  // Update this method to ensure backgrounds are applied properly
-  getEntityBackgroundStyle(entityId: string): { [key: string]: string } {
-    const background = this.entityImageMap.get(entityId);
-    if (!background) {
-      return { 
-        'background-image': 'url(assets/img/soccer/soccer1.jpg)', 
-        'background-size': 'cover', 
-        'background-position': 'center',
-        'background-repeat': 'no-repeat'
-      };
-    }
-    
-    // If it's a path (not a CSS class that starts with 'bg-'), use it as background image
-    if (!background.startsWith('bg-')) {
-      return { 
-        'background-image': `url(${background})`,
-        'background-size': 'cover',
-        'background-position': 'center',
-        'background-repeat': 'no-repeat'
-      };
-    }
-    // Otherwise return empty object (class will be applied by ngClass)
-    return {};
+ // Update getEntityBackgroundStyle to handle all types
+getEntityBackgroundStyle(entityId: string): { [key: string]: string } {
+  const background = this.entityImageMap.get(entityId);
+  if (!background) {
+    return { 
+      'background-image': 'url(assets/img/soccer/soccer1.avif)', 
+      'background-size': 'cover', 
+      'background-position': 'center',
+      'background-repeat': 'no-repeat'
+    };
+  }
+  if (!background) {
+    return { 
+      'background-image': 'url(../../assets/img/combox/combox1.avif)', 
+      'background-size': 'cover', 
+      'background-position': 'center',
+      'background-repeat': 'no-repeat'
+    };
   }
   
+  // If it's a path (not a CSS class that starts with 'bg-'), use it as background image
+  if (!background.startsWith('bg-')) {
+    return { 
+      'background-image': `url(${background})`,
+      'background-size': 'cover',
+      'background-position': 'center',
+      'background-repeat': 'no-repeat'
+    };
+  }
+  // Otherwise return empty object (class will be applied by ngClass)
+  return {};
+}
   getEntityBackgroundClass(entityId: string): string {
     const background = this.entityImageMap.get(entityId);
     if (background && background.startsWith('bg-')) {

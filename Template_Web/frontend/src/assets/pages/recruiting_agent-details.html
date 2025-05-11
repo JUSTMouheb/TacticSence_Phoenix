@@ -5,918 +5,1246 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recruiting Agent Details | TacticSense</title>
   
-  <!-- Favicons -->
-  <link href="../img/favicon.png" rel="icon">
-  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts and Vendor CSS -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="../../assets/css/main.css" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../vendor/aos/aos.css" rel="stylesheet">
-  <link href="../vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../vendor/font-awesome/css/all.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="../css/style.css" rel="stylesheet">
-
-  <!-- Custom CSS for stakeholder details -->
-  <style>
-    /* Navbar styling */
-.navmenu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navmenu li {
-    position: relative;
-  }
-  
-  .navmenu a {
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  /* Hover effect */
-  .navmenu a:hover {
-    color: #ee1e46; /* Light blue color on hover */
-    transform: translateY(-2px); /* Slight upward movement on hover */
-  }
-  
-  /* Active link styling */
-  .navmenu a.active {
-    color: #ffffff;
-    font-weight: 700;
-    position: relative;
-  }
-  
-  /* Underline effect for active link */
-  .navmenu a.active::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 15px;
-    right: 15px;
-    height: 2px;
-    background-color: #ffffff;
-  }
-  
-  body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #343a40;
-}
-
-.navbar {
-    background-color: #007bff;
-}
-
-.navbar-brand, .navbar-nav .nav-link {
-    color: #ffffff;
-}
-
-.navbar-brand:hover, .navbar-nav .nav-link:hover {
-    color: #e2e6ea;
-}
-
-
-
-.card {
-    border: none;
-}
-
-.card-header {
-    background-color: #007bff;
-    color: #ffffff;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-.section-slide {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .item-slick1 {
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-  
-  .item-slick1::before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-  }
-  
-  .wrap-content-slide1 {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .caption1-slide1 {
-    font-size: 24px;
-    line-height: 1.2;
-    color: white;
-    text-transform: uppercase;
-  }
-  
-  .caption2-slide1 {
-    font-size: 60px;
-    line-height: 1.1;
-    color: white;
-    text-transform: uppercase;
-  }
-  
-  .btn1 {
-    min-width: 160px;
-    height: 50px;
-    background-color: #0563bb;
-    color: white;
-    border-radius: 5px;
-    transition: all 0.4s;
-  }
-  
-  .btn1:hover {
-    background-color: white;
-    color: #0563bb;
-  }
-  
-  .wrap-slick1-dots {
-    position: absolute;
-    width: 100%;
-    bottom: 60px;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slick1-dots {
-    display: flex !important;
-  }
-  
-  .slick1-dots li {
-    display: block;
-    margin: 0 5px;
-  }
-  
-  .slick1-dots li button {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(255,255,255,0.5);
-    border: none;
-    text-indent: -9999px;
-  }
-  
-  .slick1-dots li.slick-active button {
-    background-color: white;
-  }
-  
-  .sizefull {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .flex-col-c-m {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .t-center {
-    text-align: center;
-  }
-  
-  .visible-false {
-    visibility: hidden;
-    opacity: 0;
-  }
-  /* Custom styling for Slick slider */
-.slick-list,
-.slick-track {
-  height: 100%;
-}
-
-.wrap-slick1 {
-  position: relative;
-  height: 100vh;
-}
-
-.slick1 {
-  height: 100%;
-}
-
-.item-slick1 {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
-
-.item-slick1::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.wrap-content-slide1 {
-  position: relative;
-  z-index: 2;
+ <style>
+/* Add this to your existing CSS styles */
+.certification-container {
+  background-color: rgba(248, 249, 250, 0.5);
+  border-radius: 6px;
   padding: 15px;
 }
 
-.caption1-slide1 {
-  font-size: 24px;
+.certification-item {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 15px;
+  position: relative;
+}
+
+.certification-item:not(:last-child) {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.certification-icon {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.certification-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.certification-header h6 {
+  flex-grow: 1;
+  margin-bottom: 0;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.certification-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.certification-badge.valid {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.certification-badge.pending {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.certification-badge.expired {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.certification-details {
+  font-size: 14px;
+  padding-left: 28px;
+}
+
+.certification-details small {
+  color: #6c757d;
+  display: block;
+  margin-bottom: 3px;
+}
+/* Enhanced button styles */
+.btn-enhanced {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(45deg, var(--primary-color), #d41836);
   color: #fff;
-  line-height: 1.2;
-  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(238, 30, 70, 0.3);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-enhanced:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(238, 30, 70, 0.4);
+  color: #fff;
+}
+
+.btn-enhanced:active {
+  transform: translateY(1px);
+}
+
+.btn-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 14px 16px;
+}
+
+.btn-text {
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+/* Animation for icon */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.btn-enhanced:hover .fa-arrow-left {
+  animation: pulse 1s infinite;
+}
+    /* Hero section styles */
+/* Hero section styles */
+.hero {
+  position: relative;
+  padding: 120px 0 60px;
+  min-height: 500px;
+  margin-top: 0;
+}
+
+
+.hero.overlay {
+  position: relative;
+  margin-top: 0;
+}
+.hero.overlay:before {
+  content: "";
+  position: absolute;
+  background: rgba(39, 61, 78, 0.85);
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Button styles */
+.btn-get-started {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+  background-color: #d41836; /* Darker shade of primary color */
+  transform: translateY(-3px);
+  color: #fff;
+}
+/* Certification styles */
+/* Certification styles */
+.certification-icon {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.certification-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.certification-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.certification-badge.valid {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.certification-badge.pending {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.certification-badge.expired {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.certification-details {
+  font-size: 14px;
+}
+
+.certification-details small {
+  color: #6c757d;
+  display: block;
+  margin-bottom: 3px;
+}
+/* Fix body padding */
+body {
+  padding-top: 0 !important; /* Remove default padding */
+  margin-top: 0;
+}
+/* Fix header positioning */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  border-bottom: none;
+}
+.header.scrolled {
+  background-color: rgba(39, 61, 78, 0.95); /* Dark background when scrolled */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+   :root {
+    --primary-color: #ee1e46;
+    --heading-color: #273d4e; 
+   }
+   /* Hero styles to match TacticSense homepage */
+
+
+ 
+   
+   .hero h1 {
+  margin-top: 0; /* Remove top margin */
+}
+
+   .header.scrolled {
+     background-color: rgba(21, 24, 29, 0.95);
+     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+   }
+
+   .site-logo h1 {
+     font-weight: 700;
+     font-size: 28px;
+     color: #fff;
+     margin: 0;
+   }
+
+   /* Navbar styling */
+   .navmenu ul {
+     display: flex;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
+
+   .navmenu li {
+     position: relative;
+   }
+
+   .navmenu a {
+     color: #fff;
+     padding: 10px 15px;
+     text-decoration: none;
+     display: block;
+     font-size: 14px;
+     font-weight: 500;
+     transition: all 0.3s ease;
+   }
+
+   /* Hover effect */
+   .navmenu a:hover {
+     color: #ee1e46;
+     transform: translateY(-2px);
+   }
+
+   /* Active link styling */
+   .navmenu a.active {
+     color: #ffffff;
+     font-weight: 700;
+     position: relative;
+   }
+
+   /* Underline effect for active link */
+   .navmenu a.active::after {
+     content: '';
+     position: absolute;
+     bottom: -3px;
+     left: 15px;
+     right: 15px;
+     height: 2px;
+     background-color: #ffffff;
+   }
+
+   /* Mobile navigation */
+   .mobile-nav-toggle {
+     display: none;
+     color: #fff;
+     font-size: 24px;
+     cursor: pointer;
+   }
+
+   @media (max-width: 1199.98px) {
+     .mobile-nav-toggle {
+       display: block;
+     }
+
+     .navmenu ul {
+       display: none;
+       position: absolute;
+       top: 100%;
+       left: 0;
+       right: 0;
+       background-color: 
+#273d4e; 
+       flex-direction: column;
+       padding: 10px 0;
+       margin-top: 15px;
+       border-radius: 5px;
+       box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+       z-index: 1000;
+     }
+
+     .navmenu.active ul {
+       display: block;
+     }
+   }
+
+   /* Make hover effect more visible */
+   .navmenu a:hover,
+   .navmenu li:hover > a {
+     color: #ee1e46 !important;
+     transform: translateY(-2px);
+     text-shadow: 0 0 5px rgba(238, 30, 70, 0.5);
+   }
+
+   /* Agent page specific styles */
+   .agent-header {
+     background: linear-gradient(to right, var(--primary-color), #d41836);
+     color: white;
+     padding: 40px 0;
+     margin-bottom: 30px;
+     margin-top: 0;
+   }
+
+   .agent-header h1 {
+     font-weight: 700;
+   }
+
+   .agent-profile-img {
+     width: 100%;
+     max-height: 300px;
+     object-fit: cover;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   }
+
+   .stat-card {
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+     padding: 20px;
+     margin-bottom: 25px;
+     transition: transform 0.3s ease;
+   }
+
+   .stat-card:hover {
+     transform: translateY(-5px);
+   }
+
+   .stat-value {
+     font-size: 2.2rem;
+     font-weight: 700;
+     color: var(--primary-color);
+   }
+
+   .stat-label {
+     font-size: 1rem;
+     color: #6c757d;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+   }
+
+   .details-card {
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+     padding: 25px;
+     margin-bottom: 25px;
+   }
+
+   .details-card h3 {
+     color: var(--secondary-color);
+     font-weight: 600;
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px solid #e9ecef;
+   }
+
+   .client-badge {
+     display: inline-block;
+     background-color: #e9ecef;
+     color: #495057;
+     padding: 8px 15px;
+     border-radius: 50px;
+     margin: 5px;
+     font-weight: 500;
+     transition: background-color 0.3s ease;
+   }
+
+   .client-badge:hover {
+     background-color: #dee2e6;
+   }
+
+   .detail-item {
+     margin-bottom: 15px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #e9ecef;
+   }
+
+   .detail-item:last-child {
+     border-bottom: none;
+     padding-bottom: 0;
+   }
+
+   .detail-label {
+     font-weight: 600;
+     color: #495057;
+   }
+
+   .back-btn {
+     margin: 20px 0;
+     padding: 10px 20px;
+     font-weight: 600;
+   }
+
+   .license-badge {
+     background-color: var(--secondary-color);
+     color: white;
+     padding: 8px 15px;
+     border-radius: 50px;
+     font-weight: 500;
+     font-size: 0.9rem;
+   }
+
+   .verification-badge {
+     background-color: #28a745;
+     color: white;
+     padding: 8px 15px;
+     border-radius: 50px;
+     font-weight: 500;
+     font-size: 0.9rem;
+     display: inline-block;
+   }
+
+   .verification-badge.false {
+     background-color: #dc3545;
+   }
+/* New Portfolio-style Header for Agent Details */
+.portfolio-hero {
+  background-color: 
+#273d4e; 
+  position: relative;
+  padding: 80px 0 60px; /* Reduced top padding */
+  color: white;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0; /* Changed from -1px */
+  margin-bottom: 0;
+  text-align: center;
+}
+.portfolio-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
-.caption2-slide1 {
-  font-size: 60px;
-  color: #fff;
-  line-height: 1.1;
-  text-transform: uppercase;
-  margin-bottom: 37px;
+.portfolio-hero .subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+.breadcrumbs {
+  margin-top: 20px;
+  font-size: 15px;
 }
 
-.btn1 {
-  min-width: 160px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0563bb;
-  color: white;
+.breadcrumbs a {
+  color: #ee1e46; /* Your primary color */
   text-decoration: none;
-  border-radius: 5px;
-  transition: all 0.4s;
-  font-weight: 500;
+  margin: 0 5px;
+}
+.breadcrumbs span {
+  margin: 0 5px;
 }
 
-.btn1:hover {
-  background-color: white;
-  color: #0563bb;
+.breadcrumbs a:first-child {
+  margin-left: 0;
 }
 
-/* Make hover effect more visible */
-.navmenu a:hover,
-.navmenu li:hover > a {
-  color: #ee1e46 !important; /* Bright cyan color that stands out */
-  transform: translateY(-2px);
-  text-shadow: 0 0 5px rgba(69, 229, 255, 0.5); /* Add glow effect */
+.breadcrumbs a:hover {
+  text-decoration: underline;
 }
 
-/* Dropdown hover effect */
-.navmenu .dropdown ul a:hover {
-  color: #ee1e46 !important;
-  background-color: #f0f8ff;
-}
-    .agent-header {
-      background: linear-gradient(rgba(40, 58, 90, 0.8), rgba(40, 58, 90, 0.9)), url("../img/hero-bg.jpg") center center;
-      background-size: cover;
-      padding: 100px 0 60px 0;
-      color: white;
-      margin-bottom: 40px;
-    }
-    
-    .profile-img {
-      height: 250px;
-      width: 250px;
-      border-radius: 10px;
-      object-fit: cover;
-      margin-bottom: 20px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-    
-    .verification-badge {
-      background-color: #28a745;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 50px;
-      font-size: 0.9rem;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    
-    .agent-stats {
-      background-color: #f8f9fa;
-      border-radius: 10px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .stat-item {
-      text-align: center;
-      margin-bottom: 15px;
-    }
-    
-    .stat-number {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #283a5a;
-      margin-bottom: 0;
-    }
-    
-    .stat-label {
-      font-size: 0.9rem;
-      color: #6c757d;
-    }
-    
-    .agent-details-card {
-      border-radius: 10px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      background-color: white;
-    }
-    
-    .detail-label {
-      font-weight: 600;
-      margin-bottom: 5px;
-      color: #283a5a;
-    }
-    
-    .detail-value {
-      margin-bottom: 15px;
-    }
-    
-    .back-btn {
-      margin-bottom: 20px;
-    }
-    
-    .skeleton-loading {
-      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-      background-size: 200% 100%;
-      animation: loading 1.5s infinite;
-      border-radius: 4px;
-      height: 20px;
-      margin-bottom: 10px;
-    }
-    
-    
-    :root {
-  --primary-color: #ee1e46;
-  --secondary-color: #15181d;
+.breadcrumbs a:hover {
+  text-decoration: underline;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Agent Info Bar - below the hero section */
+.agent-info-bar {
   background-color: #f8f9fa;
-  color: #212529;
-  padding-top: 78px; /* Adjusted for fixed header */
-}
-
-/* Header Styles */
-.header {
-  background-color: var(--secondary-color);
+  border-bottom: 1px solid #e9ecef;
   padding: 15px 0;
-  z-index: 999;
-  transition: all 0.3s ease;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  margin-bottom: 30px;
 }
 
-.header.scrolled {
-  background-color: rgba(21, 24, 29, 0.95);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.site-logo h1 {
-  font-weight: 700;
-  font-size: 28px;
-  color: #fff;
-  margin: 0;
-}
-
-/* Navbar styling - PRESERVED ORIGINAL STYLES */
-.navmenu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navmenu li {
-  position: relative;
-}
-
-.navmenu a {
-  color: #fff;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-  font-size: 14px;
+/* Update badge styles to be more subtle and modern */
+.license-badge {
+  background-color: #343a40;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  display: inline-block;
 }
 
-/* Hover effect */
-.navmenu a:hover {
-  color: #ee1e46; /* Red color on hover */
-  transform: translateY(-2px); /* Slight upward movement on hover */
+.verification-badge {
+  background-color: #28a745;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-block;
 }
 
-/* Active link styling */
-.navmenu a.active {
-  color: #ffffff;
-  font-weight: 700;
-  position: relative;
+.verification-badge.false {
+  background-color: #dc3545;
 }
 
-/* Underline effect for active link */
-.navmenu a.active::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 15px;
-  right: 15px;
-  height: 2px;
-  background-color: #ffffff; /* White underline as requested */
+.location-info {
+  color: #495057;
+  font-size: 0.95rem;
 }
 
-/* Mobile navigation */
-.mobile-nav-toggle {
-  display: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
+.rating-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: inline-block;
 }
 
-@media (max-width: 1199.98px) {
-  .mobile-nav-toggle {
-    display: block;
+
+
+/* Set top padding based on content needs, not for spacing from navbar */
+@media (min-width: 992px) {
+  .portfolio-hero {
+    padding-top: 100px; /* Adjusted for desktop */
   }
+}
 
-  .navmenu ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #15181d;
-    flex-direction: column;
+@media (max-width: 991px) {
+  .portfolio-hero {
+    padding-top: 60px; /* Smaller padding on mobile */
+  }
+}
+   /* Footer Styles */
+  .footer {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .footer .footer-top {
+    padding-top: 50px;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+  .text-accent {
+    color: #ee1e46;
+  }
+  
+  .footer .footer-about .logo {
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+  
+  .footer .footer-about .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+  }
+  
+  .footer .footer-about .logo span {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+  }
+  
+  .footer .footer-about p {
+    font-size: 14px;
+    font-family: var(--heading-font);
+  }
+  
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .footer .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-links ul i {
+    padding-right: 3px;
+    font-size: 13px;
+    line-height: 0;
+    color: var(--accent-color);
+  }
+  
+  .footer .footer-links ul li {
     padding: 10px 0;
-    margin-top: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer .footer-links ul a {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer .footer-links ul a:hover {
+    color: var(--accent-color);
+  }
+  
+  .footer .footer-contact p {
+    margin-bottom: 5px;
+  }
+  
+  .footer .footer-newsletter .newsletter-form {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 6px 8px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+    display: flex;
+    background-color: var(--background-color);
+    transition: 0.3s;
+  }
+  
+  .footer .footer-newsletter .newsletter-form:focus-within {
+    border-color: var(--accent-color);
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=email] {
+    border: 0;
+    padding: 4px;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--default-color);
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+    outline: none;
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=submit] {
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: -7px -8px -7px 0;
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  }
+  
+  .footer .copyright {
+    padding: 25px 0;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+  
+  .footer .copyright p {
+    margin-bottom: 0;
+  }
+  
+  .footer .credits {
+    margin-top: 6px;
+    font-size: 13px;
   }
 
-  .navmenu.active ul {
-    display: block;
-  }
-}
+   /* Scroll top button */
+   .scroll-top {
+     position: fixed;
+     visibility: hidden;
+     opacity: 0;
+     right: 15px;
+     bottom: 15px;
+     z-index: 99999;
+     background-color: var(--primary-color);
+     width: 40px;
+     height: 40px;
+     border-radius: 4px;
+     color: #fff;
+     transition: all 0.4s;
+   }
 
-/* Make hover effect more visible */
-.navmenu a:hover,
-.navmenu li:hover > a {
-  color: #ee1e46 !important; /* Bright red color that stands out */
-  transform: translateY(-2px);
-  text-shadow: 0 0 5px rgba(238, 30, 70, 0.5); /* Add glow effect */
-}
+   .scroll-top:hover {
+     background-color: #d41836;
+   }
+
+   .scroll-top.active {
+     visibility: visible;
+     opacity: 1;
+   }
+
+   @media (max-width: 767px) {
+     .stat-card {
+       margin-bottom: 15px;
+     }
+     
+     .agent-header {
+       padding: 25px 0;
+     }
+     
+     .stat-value {
+       font-size: 1.8rem;
+     }
+   }
   </style>
 </head>
 <body>
-  <!-- ======= Header ======= -->
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-
-    <div class="container">
-      <div class="d-flex align-items-center">
-        <div class="site-logo">
-          <a href="index.html" style="text-decoration: none !important;">
-            <h1 class="m-0 text-white" style="font-size: 28px;">TacticSense</h1>
-          </a>
-        </div>
-        <div class="ml-auto">
+  <!-- Header Container (with fallback) -->
+  <div id="header-container"></div>
+  <div id="header-fallback" style="display:none;">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="site-logo">
+            <a href="../../index.html" style="text-decoration: none !important;">
+              <h1 class="m-0 text-white" style="font-size: 28px;">TacticSense</h1>
+            </a>
+          </div>
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="#home" class="active">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#players">Players</a></li>
-              <li><a href="#clubs">Clubs</a></li>
-              <li><a href="#analytics">Analytics</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../index.html#about">About</a></li>
+              <li><a href="../../index.html#players">Players</a></li>
+              <li><a href="../../index.html#clubs">Clubs</a></li>
+              <li><a href="../../index.html#analytics" class="active">Analytics</a></li>
+              <li><a href="../../index.html#contact">Contact</a></li>
             </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
-  
-          <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-white"><span
-              class="icon-menu h3 text-white"></span></a>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </div>
       </div>
-    </div>
-  
-  </header>
+    </header>
+  </div>
 
-
-
-  <main id="main">
-    <!-- Hero section with multiple images carousel -->
-<div class="hero overlay" style="background-image: url('assets/images2/bg_3.jpg');">
+  <!-- Hero section with agent details and slogan -->
+  <div class="hero overlay" style="background-image: url('../../assets/images2/bg_3.jpg');">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-5 ml-auto">
-          <h2 class="text-white">DISCOVER. DEVELOP. DOMINATE.</h2>
-          
-  
-          <p class="text-white">Unlocking Africa's football potential with advanced analytics and performance insights.
-          </p>
-          <br>
-         <!-- Inside your hero section -->
-  <div class="d-flex" data-aos="fade-up" data-aos-delay="300">
-    <a href="#about" class="btn-get-started">Get Started</a>
-    <a href="assets/images2/Video Problem Statement PI.mp4" 
-       class="glightbox btn-watch-video d-flex align-items-center ms-3" 
-       data-type="video"
-       onerror="this.style.display='none'">
-      <i class="bi bi-play-circle"></i><span>Watch Video</span>
-    </a>
-  </div>
-           
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 id="agent-name" class="text-white">Loading Agent Details...</h1>
+          <p id="agent-subtitle" class="text-white mb-4">Recruiting & Talent Placement</p>
+          <div class="breadcrumbs text-white mb-4">
+            <a href="../../index.html" class="text-primary">Home</a> /
+            <a href="../../index.html#analytics" class="text-primary">Analytics</a> /
+            <span>Recruiting Agent Details</span>
+          </div>
+          <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="javascript:history.back()" class="btn-enhanced">
+              <span class="btn-icon-wrapper">
+                <i class="fas fa-arrow-left"></i>
+              </span>
+              <span class="btn-text">BACK TO STAKEHOLDERS</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-    <!-- Agent Header -->
-    <section class="agent-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1 id="agentName" class="mb-2">Loading...</h1>
-            <p id="agentClub" class="lead mb-3">Loading...</p>
-            <div id="verificationStatus" class="verification-badge">
-              <i class="bi bi-check-circle-fill me-1"></i> Verified
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="container">
-      <!-- Back Button -->
-      <div class="row mb-4">
-        <div class="col-12">
-          <a href="../../index.html#analytics" class="btn btn-outline-primary back-btn">
-            <i class="bi bi-arrow-left"></i> Back to Risk Intelligence
-          </a>
-        </div>
-      </div>
+ <!-- Replace the content in the container div (lines ~325-453) with this updated structure -->
 
-      <!-- Agent Info -->
+<div class="container mb-5">
+  <div class="row mb-4">
+    </div>
+
+     <div class="row">
+   <!-- Left Column with combined information -->
+<div class="col-lg-4 mb-4">
+  <!-- Agent Image -->
+  <img id="agent-image" src="../../assets/img/recagents/recagent1.avif" alt="Recruiting Agent" class="agent-profile-img mb-4">
+  
+  <!-- Combined Information Card -->
+  <div class="details-card enhanced-card">
+    <h3><i class="fas fa-id-badge me-2"></i>Agent Information</h3>
+    
+    <!-- Basic Information -->
+    <div class="card-section">
+      <div class="detail-item">
+        <div class="detail-label mb-1"><i class="fas fa-map-marker-alt me-2"></i> Region</div>
+        <div id="agent-location">Loading...</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label mb-1"><i class="fas fa-star me-2"></i> Performance Score</div>
+        <div id="profile-rating">Performance: --/5</div>
+      </div>
+    </div>
+    
+    <!-- Contact Information -->
+    <div class="card-section">
+      <div class="detail-item">
+        <div class="detail-label mb-1"><i class="fas fa-envelope me-2"></i> Email</div>
+        <div id="agent-email">loading...</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label mb-1"><i class="fas fa-phone me-2"></i> Phone</div>
+        <div id="agent-phone">loading...</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label mb-1"><i class="fas fa-globe me-2"></i> Region</div>
+        <div id="agent-region">loading...</div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Right Column -->
+    <div class="col-lg-8">
+      <!-- Key Stats -->
       <div class="row">
-        <!-- Left Column - Image and Key Stats -->
-        <div class="col-lg-4 mb-4">
-          <div class="text-center mb-4">
-            <img id="agentImage" src="../img/soccer/soccer1.jpg" alt="Recruiting Agent" class="profile-img">
+        <div class="col-md-4 mb-4">
+          <div class="stat-card text-center">
+            <div class="stat-value" id="years-experience">--</div>
+            <div class="stat-label">Experience Years</div>
           </div>
-          
-          <div class="agent-stats">
-            <h3 class="text-center mb-4">Performance Stats</h3>
-            
-            <div class="row">
-              <div class="col-6 stat-item">
-                <p id="experienceYears" class="stat-number">--</p>
-                <p class="stat-label">Years Experience</p>
-              </div>
-              <div class="col-6 stat-item">
-                <p id="successfulSignings" class="stat-number">--</p>
-                <p class="stat-label">Successful Signings</p>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-6 stat-item">
-                <p id="performanceScore" class="stat-number">--</p>
-                <p class="stat-label">Performance Score</p>
-              </div>
-              <div class="col-6 stat-item">
-                <p id="verifiedStatus" class="stat-number">--</p>
-                <p class="stat-label">Verification</p>
-              </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="stat-card text-center">
+            <div class="stat-value" id="success-rate">--</div>
+            <div class="stat-label">Successful Signings</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="stat-card text-center">
+            <div class="stat-value" id="performance-score">--</div>
+            <div class="stat-label">Performance Score</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Professional Information -->
+      <div class="details-card">
+        <h3>Professional Information</h3>
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="detail-item">
+              <div class="detail-label mb-1"><i class="fas fa-building me-2"></i> Affiliated Club</div>
+              <div id="affiliated-club">loading...</div>
             </div>
           </div>
+          <div class="col-md-6">
+            <div class="detail-item">
+              <div class="detail-label mb-1"><i class="fas fa-futbol me-2"></i> Preferred Positions</div>
+              <div id="preferred-positions">loading...</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <div class="agent-details-card">
-            <h3 class="mb-4">Contact Information</h3>
-            
-            <p class="detail-label">Email</p>
-            <p id="contactEmail" class="detail-value">Loading...</p>
-            
-            <p class="detail-label">Phone</p>
-            <p id="phoneNumber" class="detail-value">Loading...</p>
-            
-            <p class="detail-label">Region</p>
-            <p id="region" class="detail-value">Loading...</p>
+      <!-- Add this code after the existing row with Affiliated Club and Preferred Positions -->
+<div class="row">
+  <div class="col-12">
+    <div class="detail-item">
+      <div class="detail-label mb-3"><i class="fas fa-certificate me-2"></i> Certifications & Licenses</div>
+      <div id="agent-certifications" class="certification-container">
+        <!-- FIFA License -->
+        <div class="certification-item mb-3">
+          <div class="certification-header">
+            <i class="fas fa-award certification-icon"></i>
+            <h6 class="mb-0">FIFA Football Agent License</h6>
+            <span class="certification-badge valid ms-auto">Active</span>
+          </div>
+          <div class="certification-details mt-2">
+            <small>License No: FIFA-23045</small>
+            <small>Issued: October 2023</small>
+            <small>Expires: October 2027</small>
           </div>
         </div>
         
-        <!-- Right Column - Detailed Information -->
-        <div class="col-lg-8">
-          <div class="agent-details-card">
-            <h3 class="mb-4">Professional Information</h3>
-            
-            <div class="row">
-              <div class="col-md-6">
-                <p class="detail-label">Scout ID</p>
-                <p id="scoutId" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Affiliated Club</p>
-                <p id="affiliatedClub" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Verification Date</p>
-                <p id="verificationDate" class="detail-value">Loading...</p>
-              </div>
-              
-              <div class="col-md-6">
-                <p class="detail-label">Preferred Positions</p>
-                <p id="preferredPositions" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Experience Level</p>
-                <p id="experienceLevel" class="detail-value">Loading...</p>
-              </div>
-            </div>
+        <!-- National Federation License -->
+        <div class="certification-item mb-3">
+          <div class="certification-header">
+            <i class="fas fa-id-card certification-icon"></i>
+            <h6 class="mb-0">National Federation License</h6>
+            <span class="certification-badge pending ms-auto">Pending</span>
           </div>
-          
-          <div class="agent-details-card">
-            <h3 class="mb-4">Overview</h3>
-            <p id="overview">Loading biography and professional background information...</p>
+          <div class="certification-details mt-2">
+            <small>Federation: Tunisian Football Federation (DTN)</small>
+            <small>Status: Application in Process</small>
           </div>
-          
-          <div class="agent-details-card">
-            <h3 class="mb-4">Track Record</h3>
-            <div id="trackRecord">
-              <div class="skeleton-loading"></div>
-              <div class="skeleton-loading"></div>
-              <div class="skeleton-loading"></div>
-            </div>
+        </div>
+        
+        <!-- Scouting Certification -->
+        <div class="certification-item">
+          <div class="certification-header">
+            <i class="fas fa-search certification-icon"></i>
+            <h6 class="mb-0">PFSA Professional Scouting Certification</h6>
+            <span class="certification-badge valid ms-auto">Level 3</span>
+          </div>
+          <div class="certification-details mt-2">
+            <small>Issued by: Professional Football Scouts Association</small>
+            <small>Completed: February 2024</small>
+            <small>Specialization: Youth Talent Identification</small>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  </div>
+</div>
 
-  </main>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>TacticSense</h3>
-            <p>
-              123 Alpha Street <br>
-              London, SE1 7TP<br>
-              United Kingdom <br><br>
-              <strong>Phone:</strong> +44 20 5678 1234<br>
-              <strong>Email:</strong> info@tacticsense.com<br>
-            </p>
+  <!-- Footer Container (with fallback) -->
+  <div id="footer-container"></div>
+<div id="footer-fallback" style="display:none;">
+    <footer id="footer" class="footer dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <!-- First column - About/Logo -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="../../index.html" class="logo d-flex align-items-center">
+              <span class="sitename">TacticSense</span>
+            </a>
+            <div class="footer-contact pt-3 text-start">
+              <p>123 Football Avenue</p>
+              <p>Lagos, Nigeria 500001</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+234 812 345 6789</span></p>
+              <p><strong>Email:</strong> <span>info@tacticsense.com</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+          <!-- Second column - Useful links -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Quick Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#analytics">Risk Intelligence</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#players">Players</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#analytics">Analytics</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <!-- Third column - Our Services -->
+          <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Risk Analysis</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Fraud Detection</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Stakeholder Verification</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Market Intelligence</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Compliance Solutions</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Player Analytics</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Team Performance</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Talent Scouting</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Training Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Match Analysis</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Connect with us on social media for the latest updates in football business intelligence</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+          <!-- Fourth column - Newsletter -->
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Join Our Community</h4>
+            <p>Subscribe for updates on African football analytics, scouting reports, and exclusive insights.</p>
+            <form action="#" method="post" class="php-email-form">
+              <div class="newsletter-form">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Thank you for subscribing!</div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; 2025 <strong><span>TacticSense</span></strong>. All Rights Reserved
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">TacticSense</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Powering <span class="text-accent">African Football</span> Through <span class="text-accent">Data &amp; Analytics</span>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../vendor/aos/aos.js"></script>
-  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="../js/main.js"></script>
-
-  <!-- Script to load and display agent details -->
-  <script>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Load header
+      const headerContainer = document.getElementById('header-container');
+      if (headerContainer) {
+        fetch('../../app/components/shared/header/header.component.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(html => {
+            headerContainer.innerHTML = html;
+            initNavigation();
+            setActiveNavLinks();
+          })
+          .catch(error => {
+            console.error('Error loading header:', error);
+            // Fallback to local header if can't load component
+            const fallbackHeader = document.getElementById('header-fallback');
+            if (fallbackHeader) {
+              headerContainer.innerHTML = fallbackHeader.innerHTML;
+              initNavigation();
+              setActiveNavLinks();
+            }
+          });
+      }
+
+      // Load footer
+      const footerContainer = document.getElementById('footer-container');
+      if (footerContainer) {
+        fetch('../../app/components/shared/footer/footer.component.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(html => {
+            footerContainer.innerHTML = html;
+            initScrollToTop();
+          })
+          .catch(error => {
+            console.error('Error loading footer:', error);
+            // Fallback to local footer if can't load component
+            const fallbackFooter = document.getElementById('footer-fallback');
+            if (fallbackFooter) {
+              footerContainer.innerHTML = fallbackFooter.innerHTML;
+              initScrollToTop();
+            }
+          });
+      }
+      
       // Get agent ID from URL parameter
       const urlParams = new URLSearchParams(window.location.search);
-      const agentId = urlParams.get('id');
+      const scoutId = urlParams.get('id');
       
       // Try to get agent details from localStorage
       let agentDetails = JSON.parse(localStorage.getItem('recruiting_agentsFullDetails') || '{}');
-      
-      // If we don't have the specific agent or the ID doesn't match
-      if (!agentDetails || agentDetails.id != agentId) {
-        console.log('Agent details not found in localStorage or ID mismatch');
-        
-        // Try to get from the selected recruiting agent in localStorage
+      if (!agentDetails || agentDetails.scout_id != scoutId) {
         const selectedAgent = JSON.parse(localStorage.getItem('selectedRecruitingAgents') || '{}');
-        
-        if (selectedAgent && selectedAgent.id == agentId) {
+        if (selectedAgent && selectedAgent.scout_id == scoutId) {
           agentDetails = selectedAgent;
         } else {
-          console.log('Agent not found in selected agents either');
-          // Set minimum details for error handling
-          agentDetails = {
-            id: agentId || 'Unknown',
-            name: 'Agent Not Found',
-            error: 'Could not load agent details'
+          agentDetails = { 
+            scout_id: scoutId || 'Unknown', 
+            full_name: 'Agent Not Found', 
+            error: 'Could not load agent details' 
           };
         }
       }
       
-      // Assign random football image for the agent
-      const footballImages = [
-        '../img/soccer/soccer1.jpg',
-        '../img/soccer/soccer2.jpg',
-        '../img/soccer/soccer3.jpg',
-        '../img/soccer/soccer4.jpg',
-        '../img/soccer/soccer5.jpg',
-        '../img/soccer/soccer6.jpg',
-        '../img/soccer/soccer7.jpg',
-        '../img/soccer/soccer8.jpg',
-        '../img/soccer/soccer9.jpg',
-        '../img/soccer/soccer10.jpg',
-        '../img/soccer/soccer11.jpg',
-        '../img/soccer/soccer12.jpg'
-      ];
-      
-      const randomImage = footballImages[Math.floor(Math.random() * footballImages.length)];
-      document.getElementById('agentImage').src = randomImage;
-      
-      // Update the page with agent details
-      populateAgentDetails(agentDetails);
+ // Replace the image loading code with this corrected version
+
+// Set agent image - use a random soccer image
+const randomIndex = Math.floor(Math.random() * 5) + 1;
+document.getElementById('agent-image').src = `../img/recagents/recagent${randomIndex}.avif`;
+
+// Update the page with agent details
+populateAgentDetails(agentDetails);
     });
-    
-    function populateAgentDetails(agent) {
-      // Set the agent name and basic info
-      document.getElementById('agentName').textContent = agent.full_name || agent.name || 'Unknown Name';
-      document.getElementById('agentClub').textContent = agent.affiliated_club || 'Independent';
-      
-      // Set verification status
-      const verifiedStatus = agent.verified_status === true ? 'Verified' : 'Pending Verification';
-      document.getElementById('verificationStatus').innerHTML = 
-        `<i class="bi bi-check-circle-fill me-1"></i> ${verifiedStatus}`;
-      
-      if (agent.verified_status !== true) {
-        document.getElementById('verificationStatus').style.backgroundColor = '#ffc107';
+
+    // Initialize navigation functionality
+    function initNavigation() {
+      // Header scroll effect
+      function handleScroll() {
+        const header = document.querySelector('.header');
+        if (header) {
+          if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        }
       }
       
-      // Set key stats
-      document.getElementById('experienceYears').textContent = agent.experience_years || 'N/A';
-      document.getElementById('successfulSignings').textContent = agent.successful_signings || 'N/A';
-      document.getElementById('performanceScore').textContent = 
-        agent.Performance_Score ? agent.Performance_Score.toFixed(1) : 'N/A';
-      document.getElementById('verifiedStatus').textContent = verifiedStatus;
+      // Initialize mobile navigation
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const navmenu = document.getElementById('navmenu');
       
-      // Set contact information
-      document.getElementById('contactEmail').textContent = agent.contact_email || 'N/A';
-      document.getElementById('phoneNumber').textContent = agent.phone_number || 'N/A';
-      document.getElementById('region').textContent = agent.region || 'N/A';
+      if (mobileNavToggle && navmenu) {
+        mobileNavToggle.addEventListener('click', function() {
+          navmenu.classList.toggle('active');
+          this.classList.toggle('bi-list');
+          this.classList.toggle('bi-x');
+        });
+      }
       
-      // Set professional information
-      document.getElementById('scoutId').textContent = agent.scout_id || agent.id || 'N/A';
-      document.getElementById('affiliatedClub').textContent = agent.affiliated_club || 'Independent';
-      document.getElementById('verificationDate').textContent = agent.verification_date || 'May 8, 2025';
-      document.getElementById('preferredPositions').textContent = agent.preferred_positions || 'All Positions';
-      
-      // Set experience level based on years
-      const years = parseInt(agent.experience_years) || 0;
-      let experienceLevel = 'Junior';
-      if (years > 15) experienceLevel = 'Expert';
-      else if (years > 10) experienceLevel = 'Senior';
-      else if (years > 5) experienceLevel = 'Intermediate';
-      document.getElementById('experienceLevel').textContent = experienceLevel;
-      
-      // Set overview content
-      document.getElementById('overview').textContent = generateOverview(agent);
-      
-      // Set track record
-      document.getElementById('trackRecord').innerHTML = generateTrackRecord(agent);
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Initial state
     }
     
-    function generateOverview(agent) {
-      const years = agent.experience_years || 'several';
-      const club = agent.affiliated_club || 'various clubs';
-      const region = agent.region || 'the football industry';
-      const positions = agent.preferred_positions || 'various positions';
+    // Set active links based on current page
+    function setActiveNavLinks() {
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll('.navmenu a');
       
-      return `${agent.full_name || agent.name} is a professional recruiting agent with ${years} years of experience in ${region}. Currently affiliated with ${club}, they specialize in scouting talent for ${positions}. With ${agent.successful_signings || 'numerous'} successful signings throughout their career, they have built a reputation for identifying promising talent and facilitating strategic player transfers. Their professional approach to recruitment has earned them a performance score of ${agent.Performance_Score ? agent.Performance_Score.toFixed(1) : 'N/A'} in the TacticSense verification system.`;
+      // Remove active class from all links
+      navLinks.forEach(link => link.classList.remove('active'));
+      
+      // Add active class based on path
+      if (currentPath.includes('recruiting_agent-details.html')) {
+        const analyticsLink = document.querySelector('.navmenu a[href="../../index.html#analytics"], .navmenu a[href="#analytics"]');
+        if (analyticsLink) analyticsLink.classList.add('active');
+      } else {
+        // Default to home if on index
+        const homeLink = document.querySelector('.navmenu a[href="../../index.html"], .navmenu a[href="#home"]');
+        if (homeLink) homeLink.classList.add('active');
+      }
     }
     
-    function generateTrackRecord(agent) {
-      const signings = parseInt(agent.successful_signings) || 0;
-      const html = [];
-      
-      html.push('<div class="mb-4">');
-      html.push(`<p>Throughout their ${agent.experience_years || 'N/A'} year career, ${agent.full_name || agent.name} has successfully recruited ${signings} players, focusing primarily on ${agent.preferred_positions || 'various positions'}.</p>`);
-      html.push('</div>');
-      
-      // Create achievement highlights
-      html.push('<h5>Career Highlights:</h5>');
-      html.push('<ul class="mb-4">');
-      
-      // Generate random achievements based on their stats
-      if (agent.Performance_Score > 30) {
-        html.push('<li>Recognized as a top-tier talent scout in ' + agent.region + '</li>');
+    // Initialize scroll to top functionality
+    function initScrollToTop() {
+      const scrollTop = document.getElementById('scroll-top');
+      if (scrollTop) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 100) {
+            scrollTop.classList.add('active');
+          } else {
+            scrollTop.classList.remove('active');
+          }
+        });
+        
+        scrollTop.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
       }
-      
-      if (signings > 50) {
-        html.push('<li>Responsible for over 50 successful player signings across their career</li>');
-      } else if (signings > 20) {
-        html.push('<li>Successfully placed over ' + signings + ' players with professional clubs</li>');
-      }
-      
-      if (agent.affiliated_club && agent.affiliated_club !== 'Independent') {
-        html.push('<li>Key recruitment specialist for ' + agent.affiliated_club + '</li>');
-      }
-      
-      if (parseInt(agent.experience_years) > 10) {
-        html.push('<li>Over a decade of experience in professional football scouting</li>');
-      }
-      
-      // Add some generic achievements if we don't have enough
-      if (html.length < 7) {
-        html.push('<li>Developed extensive network of contacts across multiple football leagues</li>');
-        html.push('<li>Successfully identified emerging talent in youth academies</li>');
-        html.push('<li>Reputation for thorough player assessment and evaluation</li>');
-      }
-      
-      html.push('</ul>');
-      
-      return html.join('');
     }
-  </script>
+
+  function populateAgentDetails(agent) {
+  // Update name in hero section
+  document.getElementById('agent-name').textContent = agent.full_name || 'Unknown Name';
+  
+  // Basic Information - only region and performance score as requested
+  document.getElementById('agent-location').textContent = agent.region || 'Unknown Region';
+  document.getElementById('profile-rating').textContent = `Performance: ${parseFloat(agent.Performance_Score || 0).toFixed(1)}/5`;
+  
+  // Contact Information
+  document.getElementById('agent-email').textContent = agent.contact_email || 'Not available';
+  document.getElementById('agent-phone').textContent = agent.phone_number || 'Not available';
+  document.getElementById('agent-region').textContent = agent.region || 'Not available';
+  
+  // Key Stats
+  document.getElementById('years-experience').textContent = agent.experience_years || '0';
+  document.getElementById('success-rate').textContent = agent.successful_signings || '0';
+  document.getElementById('performance-score').textContent = agent.Performance_Score || '0';
+  
+  // Professional Information
+  document.getElementById('affiliated-club').textContent = agent.affiliated_club || 'Not affiliated';
+  document.getElementById('preferred-positions').textContent = formatPositions(agent.preferred_positions);
+}
+    
+    function formatPositions(positions) {
+      if (!positions) return 'None specified';
+      return positions.split(',').map(pos => pos.trim()).filter(pos => pos).join(', ');
+    }
+</script>
 </body>
 </html>

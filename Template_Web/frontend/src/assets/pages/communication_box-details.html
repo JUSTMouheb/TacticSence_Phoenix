@@ -5,572 +5,1617 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Communication Box Details | TacticSense</title>
   
-  <!-- Favicons -->
-  <link href="../img/favicon.png" rel="icon">
-  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../vendor/aos/aos.css" rel="stylesheet">
-  <link href="../vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../vendor/font-awesome/css/all.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="../css/style.css" rel="stylesheet">
-
-  <!-- Custom CSS for stakeholder details -->
+  <!-- CSS Files (cleaned up duplicates) -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap and Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Main CSS Files -->
+  <link href="../../assets/css/main.css" rel="stylesheet">
+  
   <style>
-    .entity-header {
-      background: linear-gradient(rgba(40, 58, 90, 0.8), rgba(40, 58, 90, 0.9)), url("../img/hero-bg.jpg") center center;
-      background-size: cover;
-      padding: 100px 0 60px 0;
-      color: white;
-      margin-bottom: 40px;
+    :root {
+      --primary-color: #ee1e46;
+      --heading-color: #273d4e;
     }
-    
-    .profile-img {
-      height: 250px;
-      width: 250px;
-      border-radius: 10px;
-      object-fit: cover;
-      margin-bottom: 20px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-    
-    .verification-badge {
-      background-color: #28a745;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 50px;
-      font-size: 0.9rem;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    
-    .entity-stats {
-      background-color: #f8f9fa;
-      border-radius: 10px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .stat-item {
-      text-align: center;
-      margin-bottom: 15px;
-    }
-    
-    .stat-number {
-      font-size: 2rem;
+
+
+/* Enhanced button styles */
+.btn-enhanced {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(45deg, var(--primary-color), #d41836);
+  color: #fff;
+  font-weight: 600;
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(238, 30, 70, 0.3);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-enhanced:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(238, 30, 70, 0.4);
+  color: #fff;
+}
+
+.btn-enhanced:active {
+  transform: translateY(1px);
+}
+
+.btn-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 14px 16px;
+}
+
+.btn-text {
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+/* Animation for icon */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.btn-enhanced:hover .fa-arrow-left {
+  animation: pulse 1s infinite;
+}
+    /* Hero section styles */
+/* Hero section styles */
+.hero {
+  position: relative;
+  padding: 120px 0 60px;
+  min-height: 500px;
+  margin-top: 0;
+}
+
+
+.hero.overlay {
+  position: relative;
+  margin-top: 0;
+}
+.hero.overlay:before {
+  content: "";
+  position: absolute;
+  background: rgba(39, 61, 78, 0.85);
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Button styles */
+.btn-get-started {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+  background-color: #d41836; /* Darker shade of primary color */
+  transform: translateY(-3px);
+  color: #fff;
+}
+/* Certification styles */
+/* Certification styles */
+.certification-icon {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.certification-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.certification-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.certification-badge.valid {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.certification-badge.pending {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.certification-badge.expired {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.certification-details {
+  font-size: 14px;
+}
+
+.certification-details small {
+  color: #6c757d;
+  display: block;
+  margin-bottom: 3px;
+}
+/* Fix body padding */
+body {
+  padding-top: 0 !important; /* Remove default padding */
+  margin-top: 0;
+}
+/* Fix header positioning */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  border-bottom: none;
+}
+.header.scrolled {
+  background-color: rgba(39, 61, 78, 0.95); /* Dark background when scrolled */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+   :root {
+    --primary-color: #ee1e46;
+    --heading-color: #273d4e; 
+   }
+   /* Hero styles to match TacticSense homepage */
+
+
+ 
+   
+   .hero h1 {
+  margin-top: 0; /* Remove top margin */
+}
+
+   .header.scrolled {
+     background-color: rgba(21, 24, 29, 0.95);
+     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+   }
+
+   .site-logo h1 {
+     font-weight: 700;
+     font-size: 28px;
+     color: #fff;
+     margin: 0;
+   }
+
+   /* Navbar styling */
+   .navmenu ul {
+     display: flex;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
+
+   .navmenu li {
+     position: relative;
+   }
+
+   .navmenu a {
+     color: #fff;
+     padding: 10px 15px;
+     text-decoration: none;
+     display: block;
+     font-size: 14px;
+     font-weight: 500;
+     transition: all 0.3s ease;
+   }
+
+   /* Hover effect */
+   .navmenu a:hover {
+     color: #ee1e46;
+     transform: translateY(-2px);
+   }
+
+   /* Active link styling */
+   .navmenu a.active {
+     color: #ffffff;
+     font-weight: 700;
+     position: relative;
+   }
+
+   /* Underline effect for active link */
+   .navmenu a.active::after {
+     content: '';
+     position: absolute;
+     bottom: -3px;
+     left: 15px;
+     right: 15px;
+     height: 2px;
+     background-color: #ffffff;
+   }
+
+   /* Mobile navigation */
+   .mobile-nav-toggle {
+     display: none;
+     color: #fff;
+     font-size: 24px;
+     cursor: pointer;
+   }
+
+   @media (max-width: 1199.98px) {
+     .mobile-nav-toggle {
+       display: block;
+     }
+
+     .navmenu ul {
+       display: none;
+       position: absolute;
+       top: 100%;
+       left: 0;
+       right: 0;
+       background-color: 
+#273d4e; 
+       flex-direction: column;
+       padding: 10px 0;
+       margin-top: 15px;
+       border-radius: 5px;
+       box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+       z-index: 1000;
+     }
+
+     .navmenu.active ul {
+       display: block;
+     }
+   }
+
+   /* Make hover effect more visible */
+   .navmenu a:hover,
+   .navmenu li:hover > a {
+     color: #ee1e46 !important;
+     transform: translateY(-2px);
+     text-shadow: 0 0 5px rgba(238, 30, 70, 0.5);
+   }
+
+   /* Agent page specific styles */
+   .agent-header {
+     background: linear-gradient(to right, var(--primary-color), #d41836);
+     color: white;
+     padding: 40px 0;
+     margin-bottom: 30px;
+     margin-top: 0;
+   }
+
+   .agent-header h1 {
+     font-weight: 700;
+   }
+
+   .agent-profile-img {
+     width: 100%;
+     max-height: 300px;
+     object-fit: cover;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   }
+
+   .stat-card {
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+     padding: 20px;
+     margin-bottom: 25px;
+     transition: transform 0.3s ease;
+   }
+
+   .stat-card:hover {
+     transform: translateY(-5px);
+   }
+
+   .stat-value {
+     font-size: 2.2rem;
+     font-weight: 700;
+     color: var(--primary-color);
+   }
+
+   .stat-label {
+     font-size: 1rem;
+     color: #6c757d;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+   }
+
+   .details-card {
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+     padding: 25px;
+     margin-bottom: 25px;
+   }
+
+   .details-card h3 {
+     color: var(--secondary-color);
+     font-weight: 600;
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px solid #e9ecef;
+   }
+
+   .client-badge {
+     display: inline-block;
+     background-color: #e9ecef;
+     color: #495057;
+     padding: 8px 15px;
+     border-radius: 50px;
+     margin: 5px;
+     font-weight: 500;
+     transition: background-color 0.3s ease;
+   }
+
+   .client-badge:hover {
+     background-color: #dee2e6;
+   }
+
+   .detail-item {
+     margin-bottom: 15px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #e9ecef;
+   }
+
+   .detail-item:last-child {
+     border-bottom: none;
+     padding-bottom: 0;
+   }
+
+   .detail-label {
+     font-weight: 600;
+     color: #495057;
+   }
+
+   .back-btn {
+     margin: 20px 0;
+     padding: 10px 20px;
+     font-weight: 600;
+   }
+
+   .license-badge {
+     background-color: var(--secondary-color);
+     color: white;
+     padding: 8px 15px;
+     border-radius: 50px;
+     font-weight: 500;
+     font-size: 0.9rem;
+   }
+
+   .verification-badge {
+     background-color: #28a745;
+     color: white;
+     padding: 8px 15px;
+     border-radius: 50px;
+     font-weight: 500;
+     font-size: 0.9rem;
+     display: inline-block;
+   }
+
+   .verification-badge.false {
+     background-color: #dc3545;
+   }
+/* New Portfolio-style Header for Agent Details */
+.portfolio-hero {
+  background-color: 
+#273d4e; 
+  position: relative;
+  padding: 80px 0 60px; /* Reduced top padding */
+  color: white;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0; /* Changed from -1px */
+  margin-bottom: 0;
+  text-align: center;
+}
+.portfolio-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.portfolio-hero .subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+.breadcrumbs {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.breadcrumbs a {
+  color: #ee1e46; /* Your primary color */
+  text-decoration: none;
+  margin: 0 5px;
+}
+.breadcrumbs span {
+  margin: 0 5px;
+}
+
+.breadcrumbs a:first-child {
+  margin-left: 0;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* Agent Info Bar - below the hero section */
+.agent-info-bar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* Update badge styles to be more subtle and modern */
+.license-badge {
+  background-color: #343a40;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.verification-badge {
+  background-color: #28a745;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.verification-badge.false {
+  background-color: #dc3545;
+}
+
+.location-info {
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+.rating-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+
+
+/* Set top padding based on content needs, not for spacing from navbar */
+@media (min-width: 992px) {
+  .portfolio-hero {
+    padding-top: 100px; /* Adjusted for desktop */
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio-hero {
+    padding-top: 60px; /* Smaller padding on mobile */
+  }
+}
+   /* Footer Styles */
+  .footer {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .footer .footer-top {
+    padding-top: 50px;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+  .text-accent {
+    color: #ee1e46;
+  }
+  
+  .footer .footer-about .logo {
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+  
+  .footer .footer-about .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+  }
+  
+  .footer .footer-about .logo span {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+  }
+  
+  .footer .footer-about p {
+    font-size: 14px;
+    font-family: var(--heading-font);
+  }
+  
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .footer .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-links ul i {
+    padding-right: 3px;
+    font-size: 13px;
+    line-height: 0;
+    color: var(--accent-color);
+  }
+  
+  .footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer .footer-links ul a {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer .footer-links ul a:hover {
+    color: var(--accent-color);
+  }
+  
+  .footer .footer-contact p {
+    margin-bottom: 5px;
+  }
+  
+  .footer .footer-newsletter .newsletter-form {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 6px 8px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+    display: flex;
+    background-color: var(--background-color);
+    transition: 0.3s;
+  }
+  
+  .footer .footer-newsletter .newsletter-form:focus-within {
+    border-color: var(--accent-color);
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=email] {
+    border: 0;
+    padding: 4px;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--default-color);
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+    outline: none;
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=submit] {
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: -7px -8px -7px 0;
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  }
+  
+  .footer .copyright {
+    padding: 25px 0;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+  
+  .footer .copyright p {
+    margin-bottom: 0;
+  }
+  
+  .footer .credits {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+
+   /* Scroll top button */
+   .scroll-top {
+     position: fixed;
+     visibility: hidden;
+     opacity: 0;
+     right: 15px;
+     bottom: 15px;
+     z-index: 99999;
+     background-color: var(--primary-color);
+     width: 40px;
+     height: 40px;
+     border-radius: 4px;
+     color: #fff;
+     transition: all 0.4s;
+   }
+
+   .scroll-top:hover {
+     background-color: #d41836;
+   }
+
+   .scroll-top.active {
+     visibility: visible;
+     opacity: 1;
+   }
+
+   @media (max-width: 767px) {
+     .stat-card {
+       margin-bottom: 15px;
+     }
+     
+     .agent-header {
+       padding: 25px 0;
+     }
+     
+     .stat-value {
+       font-size: 1.8rem;
+     }
+   }
+
+    /* Enhanced button styles */
+    .btn-enhanced {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(45deg, var(--primary-color), #d41836);
+      color: #fff;
       font-weight: 600;
-      color: #283a5a;
-      margin-bottom: 0;
+      padding: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(238, 30, 70, 0.3);
+      transition: all 0.3s ease;
+      letter-spacing: 0.5px;
     }
-    
-    .stat-label {
-      font-size: 0.9rem;
-      color: #6c757d;
+
+    .btn-enhanced:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(238, 30, 70, 0.4);
+      color: #fff;
     }
-    
-    .entity-details-card {
-      border-radius: 10px;
+
+    .btn-icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.15);
+      padding: 14px 16px;
+    }
+
+    .btn-text {
+      padding: 0 20px;
+      font-size: 14px;
+    }
+
+    /* Hero section styles */
+    .hero {
+      position: relative;
+      padding: 120px 0 60px;
+      min-height: 500px;
+      margin-top: 0;
+    }
+
+    .hero.overlay {
+      position: relative;
+      margin-top: 0;
+    }
+
+    .hero.overlay:before {
+      content: "";
+      position: absolute;
+      background: rgba(39, 61, 78, 0.85);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    /* Card styles */
+    .details-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
       padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      background-color: white;
+      margin-bottom: 25px;
     }
-    
+
+    .details-card h3 {
+      color: var(--heading-color);
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .stat-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      margin-bottom: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stat-value {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: #6c757d;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Detail items */
+    .detail-item {
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px dashed #e9ecef;
+    }
+
+    .detail-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
     .detail-label {
       font-weight: 600;
-      margin-bottom: 5px;
-      color: #283a5a;
+      color: #495057;
     }
-    
-    .detail-value {
-      margin-bottom: 15px;
-    }
-    
-    .back-btn {
-      margin-bottom: 20px;
-    }
-    
-    .skeleton-loading {
-      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-      background-size: 200% 100%;
-      animation: loading 1.5s infinite;
-      border-radius: 4px;
-      height: 20px;
-      margin-bottom: 10px;
-    }
-    
+
+    /* Badge styles */
     .client-badge {
       display: inline-block;
       background-color: #e9ecef;
       color: #495057;
-      padding: 6px 12px;
+      padding: 8px 15px;
       border-radius: 50px;
       margin: 5px;
       font-weight: 500;
       transition: background-color 0.3s ease;
     }
-    
+
     .client-badge:hover {
       background-color: #dee2e6;
     }
-    
-    @keyframes loading {
-      0% {
-        background-position: 200% 0;
+
+    .verification-badge {
+      background-color: #28a745;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+
+    .verification-badge.false {
+      background-color: #dc3545;
+    }
+
+    /* Certification styles */
+    .certification-icon {
+      color: var(--primary-color);
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .certification-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .certification-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .certification-badge.valid {
+      background-color: rgba(40, 167, 69, 0.1);
+      color: #28a745;
+    }
+
+    .certification-badge.pending {
+      background-color: rgba(255, 193, 7, 0.1);
+      color: #ffc107;
+    }
+
+    .certification-badge.expired {
+      background-color: rgba(220, 53, 69, 0.1);
+      color: #dc3545;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    .breadcrumbs a {
+      color: var(--primary-color);
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .breadcrumbs span {
+      margin: 0 5px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+      .stat-card {
+        margin-bottom: 15px;
       }
-      100% {
-        background-position: -200% 0;
+      .stat-value {
+        font-size: 1.8rem;
       }
     }
   </style>
 </head>
 <body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="../../index.html">TacticSense</a></h1>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="../../index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="../../index.html#about">About</a></li>
-          <li><a class="nav-link scrollto active" href="../../index.html#analytics">Risk Intelligence</a></li>
-          <li><a class="nav-link scrollto" href="../../index.html#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="../../index.html#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- Entity Header -->
-    <section class="entity-header">
+  <!-- Header Container -->
+  <div id="header-container"></div>
+  
+  <!-- Header Fallback -->
+  <div id="header-fallback" style="display:none;">
+   <header id="header" class="header d-flex align-items-center fixed-top">
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1 id="entityName" class="mb-2">Loading...</h1>
-            <p id="entityType" class="lead mb-3">Communication Box</p>
-            <div id="verificationStatus" class="verification-badge">
-              <i class="bi bi-check-circle-fill me-1"></i> Verified
-            </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="site-logo">
+            <a href="../../index.html" style="text-decoration: none !important;">
+              <h1 class="m-0 text-white" style="font-size: 28px;">TacticSense</h1>
+            </a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container">
-      <!-- Back Button -->
-      <div class="row mb-4">
-        <div class="col-12">
-          <a href="../../index.html#analytics" class="btn btn-outline-primary back-btn">
-            <i class="bi bi-arrow-left"></i> Back to Risk Intelligence
-          </a>
-        </div>
-      </div>
-
-      <!-- Entity Info -->
-      <div class="row">
-        <!-- Left Column - Image and Key Stats -->
-        <div class="col-lg-4 mb-4">
-          <div class="text-center mb-4">
-            <img id="entityImage" src="../img/soccer/soccer1.jpg" alt="Communication Box" class="profile-img">
-          </div>
-          
-          <div class="entity-stats">
-            <h3 class="text-center mb-4">Key Metrics</h3>
-            
-            <div class="row">
-              <div class="col-6 stat-item">
-                <p id="mediaReach" class="stat-number">--</p>
-                <p class="stat-label">Media Reach (M)</p>
-              </div>
-              <div class="col-6 stat-item">
-                <p id="platformCount" class="stat-number">--</p>
-                <p class="stat-label">Platforms</p>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-6 stat-item">
-                <p id="yearsActive" class="stat-number">--</p>
-                <p class="stat-label">Years Active</p>
-              </div>
-              <div class="col-6 stat-item">
-                <p id="campaignCount" class="stat-number">--</p>
-                <p class="stat-label">Campaigns</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="entity-details-card">
-            <h3 class="mb-4">Contact Information</h3>
-            
-            <p class="detail-label">Email</p>
-            <p id="contactEmail" class="detail-value">Loading...</p>
-            
-            <p class="detail-label">Phone</p>
-            <p id="phoneNumber" class="detail-value">Loading...</p>
-            
-            <p class="detail-label">Region</p>
-            <p id="region" class="detail-value">Loading...</p>
-            
-            <p class="detail-label">Website</p>
-            <p id="website" class="detail-value">Loading...</p>
-          </div>
-        </div>
-        
-        <!-- Right Column - Detailed Information -->
-        <div class="col-lg-8">
-          <div class="entity-details-card">
-            <h3 class="mb-4">Company Information</h3>
-            
-            <div class="row">
-              <div class="col-md-6">
-                <p class="detail-label">License Number</p>
-                <p id="licenseNumber" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Primary Market</p>
-                <p id="primaryMarket" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Verification Date</p>
-                <p id="verificationDate" class="detail-value">Loading...</p>
-              </div>
-              
-              <div class="col-md-6">
-                <p class="detail-label">Services</p>
-                <p id="services" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Founded</p>
-                <p id="foundedYear" class="detail-value">Loading...</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="entity-details-card">
-            <h3 class="mb-4">Clients & Partners</h3>
-            <div id="clientList" class="mb-4">
-              Loading client information...
-            </div>
-          </div>
-          
-          <div class="entity-details-card">
-            <h3 class="mb-4">Overview</h3>
-            <p id="overview">Loading company information...</p>
-          </div>
-          
-          <div class="entity-details-card">
-            <h3 class="mb-4">Recent Campaigns</h3>
-            <div id="recentCampaigns">
-              <div class="skeleton-loading"></div>
-              <div class="skeleton-loading"></div>
-              <div class="skeleton-loading"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>TacticSense</h3>
-            <p>
-              123 Alpha Street <br>
-              London, SE1 7TP<br>
-              United Kingdom <br><br>
-              <strong>Phone:</strong> +44 20 5678 1234<br>
-              <strong>Email:</strong> info@tacticsense.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+          <nav id="navmenu" class="navmenu">
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#analytics">Risk Intelligence</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../index.html#about">About</a></li>
+              <li><a href="../../index.html#players">Players</a></li>
+              <li><a href="../../index.html#clubs">Clubs</a></li>
+              <li><a href="../../index.html#analytics" class="active">Analytics</a></li>
+              <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Hero section -->
+  <div class="hero overlay" style="background-image: url('../../assets/images2/bg_3.jpg');">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 id="entityName" class="text-white">Loading Communication Box Details...</h1>
+          <p id="entityType" class="text-white mb-4">Media Relations & Public Communications</p>
+          
+          <div class="breadcrumbs text-white mb-4">
+            <a href="../../index.html" class="text-primary">Home</a> / 
+            <a href="../../index.html#analytics" class="text-primary">Analytics</a> / 
+            <span>Communication Box Details</span>
+          </div>
+          
+          <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="javascript:history.back()" class="btn-enhanced">
+              <span class="btn-icon-wrapper">
+                <i class="fas fa-arrow-left"></i>
+              </span>
+              <span class="btn-text">BACK TO STAKEHOLDERS</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-4">
+        <div class="text-center mb-4">
+          <img id="entityImage" src="../img/combox/combox1.avif" alt="Communication Box" class="img-fluid rounded-3 shadow" style="max-width: 300px;">
+        </div>
+
+        <!-- Basic Information Card -->
+       <!-- Replace the Basic Information Card with this -->
+<div class="details-card">
+  <h3><i class="fas fa-info-circle me-2"></i>Basic Information</h3>
+  <div class="detail-item">
+    <div class="detail-label"><i class="fas fa-building me-2"></i>Company Name</div>
+    <div id="companyName">Loading...</div>
+  </div>
+  <div class="detail-item">
+    <div class="detail-label"><i class="fas fa-map-marker-alt me-2"></i>Region</div>
+    <div id="region">Loading...</div>
+  </div>
+</div>
+
+        <!-- Contact Information Card -->
+        <!-- Replace the Contact Information Card with this -->
+<div class="details-card">
+  <h3><i class="fas fa-address-card me-2"></i>Contact Information</h3>
+  <div class="detail-item">
+    <div class="detail-label"><i class="fas fa-envelope me-2"></i>Email</div>
+    <div id="contactEmail">Loading...</div>
+  </div>
+  <div class="detail-item">
+    <div class="detail-label"><i class="fas fa-phone me-2"></i>Phone</div>
+    <div id="phoneNumber">Loading...</div>
+  </div>
+  <div class="detail-item">
+    <div class="detail-label"><i class="fas fa-hashtag me-2"></i>Social Media</div>
+    <div id="socialMediaLinks">Loading...</div>
+  </div>
+</div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-8">
+        <!-- Key Stats -->
+      <!-- Remove the Key Stats section and replace with this -->
+<div class="details-card">
+  <h3><i class="fas fa-briefcase me-2"></i>Services Offered</h3>
+  <div id="servicesOffered" class="d-flex flex-wrap gap-2 mb-3">
+    Loading services...
+  </div>
+</div>
+
+        <!-- Certifications Card -->
+        <div class="details-card">
+          <h3><i class="fas fa-certificate me-2"></i>Certifications</h3>
+          <div class="row">
+            <!-- Media Relations Certification -->
+            <div class="col-md-6">
+              <div class="detail-item">
+                <div class="certification-header">
+                  <i class="fas fa-newspaper certification-icon"></i>
+                  <div class="detail-label mb-1">Media Relations</div>
+                </div>
+                <div id="mediaRelationsCert">
+                  <span class="certification-badge valid">
+                    <i class="fas fa-check-circle me-1"></i>Certified
+                  </span>
+                  <div class="certification-details mt-2">
+                    <small>International Media Relations Board</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Digital Communications Certification -->
+            <div class="col-md-6">
+              <div class="detail-item">
+                <div class="certification-header">
+                  <i class="fas fa-digital certification-icon"></i>
+                  <div class="detail-label mb-1">Digital Communications</div>
+                </div>
+                <div id="digitalComCert">
+                  <span class="certification-badge valid">
+                    <i class="fas fa-check-circle me-1"></i>Certified
+                  </span>
+                  <div class="certification-details mt-2">
+                    <small>Digital Communications Authority</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Replace the Certifications Card with this -->
+<div class="details-card">
+  <h3><i class="fas fa-handshake me-2"></i>Partnerships</h3>
+  <div id="partnershipsList" class="d-flex flex-wrap gap-2">
+    Loading partnership information...
+  </div>
+</div>
+        <!-- Company Information -->
+      <!-- Replace the Company Information Card with this -->
+<div class="details-card">
+  <h3><i class="fas fa-users me-2"></i>Affiliated Clients</h3>
+  <div id="clientList" class="d-flex flex-wrap gap-2">
+    Loading client information...
+  </div>
+</div>
+
+    
+
+    
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
+  <!-- Footer Fallback -->
+  <div id="footer-fallback" style="display:none;">
+    <footer id="footer" class="footer dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <!-- First column - About/Logo -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="../../index.html" class="logo d-flex align-items-center">
+              <span class="sitename">TacticSense</span>
+            </a>
+            <div class="footer-contact pt-3 text-start">
+              <p>123 Football Avenue</p>
+              <p>Lagos, Nigeria 500001</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+234 812 345 6789</span></p>
+              <p><strong>Email:</strong> <span>info@tacticsense.com</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!-- Second column - Useful links -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#players">Players</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#analytics">Analytics</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <!-- Third column - Our Services -->
+          <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Risk Analysis</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Fraud Detection</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Stakeholder Verification</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Market Intelligence</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Compliance Solutions</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Player Analytics</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Team Performance</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Talent Scouting</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Training Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Match Analysis</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Connect with us on social media for the latest updates in football business intelligence</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+          <!-- Fourth column - Newsletter -->
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Join Our Community</h4>
+            <p>Subscribe for updates on African football analytics, scouting reports, and exclusive insights.</p>
+            <form action="#" method="post" class="php-email-form">
+              <div class="newsletter-form">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Thank you for subscribing!</div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; 2025 <strong><span>TacticSense</span></strong>. All Rights Reserved
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">TacticSense</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Powering <span class="text-accent">African Football</span> Through <span class="text-accent">Data &amp; Analytics</span>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../vendor/aos/aos.js"></script>
-  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="../js/main.js"></script>
-
-  <!-- Script to load and display entity details -->
-  <script>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  
+<script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Get entity ID from URL parameter
-      const urlParams = new URLSearchParams(window.location.search);
-      const entityId = urlParams.get('id');
-      
-      // Try to get entity details from localStorage
-      let entityDetails = JSON.parse(localStorage.getItem('communication_boxesFullDetails') || '{}');
-      
-      // If we don't have the specific entity or the ID doesn't match
-      if (!entityDetails || entityDetails.id != entityId) {
-        console.log('Entity details not found in localStorage or ID mismatch');
-        
-        // Try to get from the selected entity in localStorage
-        const selectedEntity = JSON.parse(localStorage.getItem('selectedCommunicationBoxes') || '{}');
-        
-        if (selectedEntity && selectedEntity.id == entityId) {
-          entityDetails = selectedEntity;
-        } else {
-          console.log('Entity not found in selected entities either');
-          // Try to load from CSV file
-          fetchEntityFromCSV(entityId);
-          return; // Exit function and let the CSV loader handle it
-        }
+      // Load header
+      const headerContainer = document.getElementById('header-container');
+      if (headerContainer) {
+        fetch('../../app/components/shared/header/header.component.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(html => {
+            headerContainer.innerHTML = html;
+            initNavigation();
+            setActiveNavLinks();
+          })
+          .catch(error => {
+            console.error('Error loading header:', error);
+            // Fallback to local header if can't load component
+            const fallbackHeader = document.getElementById('header-fallback');
+            if (fallbackHeader) {
+              headerContainer.innerHTML = fallbackHeader.innerHTML;
+              initNavigation();
+              setActiveNavLinks();
+            }
+          });
+      }
+
+      // Load footer
+      const footerContainer = document.getElementById('footer-container');
+      if (footerContainer) {
+        fetch('../../app/components/shared/footer/footer.component.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(html => {
+            footerContainer.innerHTML = html;
+            initScrollToTop();
+          })
+          .catch(error => {
+            console.error('Error loading footer:', error);
+            // Fallback to local footer if can't load component
+            const fallbackFooter = document.getElementById('footer-fallback');
+            if (fallbackFooter) {
+              footerContainer.innerHTML = fallbackFooter.innerHTML;
+              initScrollToTop();
+            }
+          });
       }
       
-      // Assign random football image for the entity
-      assignRandomImage();
+      // Get communication box ID from URL parameter
+       const urlParams = new URLSearchParams(window.location.search);
+  const entityId = urlParams.get('id');
+      
+  console.log("Loading communication box with ID:", entityId);
+       // Try to get entity details from localStorage
+  let entityDetails = null;
+  try {
+    entityDetails = JSON.parse(localStorage.getItem('communication_boxesFullDetails') || 'null');
+  } catch (e) {
+    console.error("Error parsing localStorage data:", e);
+  }
+      // Try to get from the selected entity in localStorage
+    let selectedEntity = null;
+    try {
+      selectedEntity = JSON.parse(localStorage.getItem('selectedCommunicationBoxes') || 'null');
+    } catch (e) {
+      console.error("Error parsing selected entity data:", e);
+    }
+    
+    if (selectedEntity && selectedEntity.id == entityId) {
+      entityDetails = selectedEntity;
+    } else {
+      console.log('Entity not found in selected entities either');
+      // Try to load from CSV or use fallback
+      useFallbackData(entityId);
+      return;
+    }
+      
+      
+      // Assign random image for the communication box
+      setRandomEntityImage();
       
       // Update the page with entity details
       populateEntityDetails(entityDetails);
     });
+    // Define the function to set a random entity image
+
+function setRandomEntityImage() {
+  try {
+    const randomIndex = Math.floor(Math.random() * 5) + 1;
+    const imgElement = document.getElementById('entityImage');
     
-    function assignRandomImage() {
-      const footballImages = [
-        '../img/soccer/soccer1.jpg',
-        '../img/soccer/soccer2.jpg',
-        '../img/soccer/soccer3.jpg',
-        '../img/soccer/soccer4.jpg',
-        '../img/soccer/soccer5.jpg',
-        '../img/soccer/soccer6.jpg',
-        '../img/soccer/soccer7.jpg',
-        '../img/soccer/soccer8.jpg',
-        '../img/soccer/soccer9.jpg',
-        '../img/soccer/soccer10.jpg',
-        '../img/soccer/soccer11.jpg',
-        '../img/soccer/soccer12.jpg'
+    if (imgElement) {
+      // Create an array of possible image paths to try in order
+      const possiblePaths = [
+        `../img/combox/combox${randomIndex}.avif`,
+        `../../assets/img/combox/combox${randomIndex}.avif`,
+        `../img/combox/combox${randomIndex}.jpg`,
+        `../../assets/img/combox/combox${randomIndex}.jpg`,
+        `../img/soccer/soccer${randomIndex}.avif`,
+        `../img/soccer/soccer${randomIndex}.jpg`
       ];
       
-      const randomImage = footballImages[Math.floor(Math.random() * footballImages.length)];
-      document.getElementById('entityImage').src = randomImage;
+      // Try loading each path until one works
+      tryNextImagePath(imgElement, possiblePaths, 0);
+    } else {
+      console.error("Could not find element with ID 'entityImage'");
     }
-    
-    async function fetchEntityFromCSV(entityId) {
-      try {
-        // Load the CSV file
-        const response = await fetch('../data/Communication_Boxes_Dataset.csv');
-        if (!response.ok) {
-          throw new Error('Failed to load Communication Boxes dataset');
-        }
-        
-        const csvText = await response.text();
-        const rows = csvText.split('\n');
-        const headers = rows[0].split(',').map(h => h.trim());
-        
-        // Look for entity with matching ID
-        for (let i = 1; i < rows.length; i++) {
-          const values = rows[i].split(',');
-          if (values.length <= 1) continue; // Skip empty rows
-          
-          const rowData = {};
-          headers.forEach((header, index) => {
-            rowData[header] = values[index] ? values[index].trim() : '';
-          });
-          
-          if (rowData.id === entityId || rowData.license_number === entityId) {
-            assignRandomImage();
-            populateEntityDetails(rowData);
-            return;
+  } catch (e) {
+    console.error("Error setting random entity image:", e);
+  }
+}
+// Helper function to try loading images from different paths
+function tryNextImagePath(imgElement, paths, index) {
+  // If we've tried all paths, use a definite fallback
+  if (index >= paths.length) {
+    console.log("All image paths failed, using default fallback");
+    imgElement.src = "../../assets/images2/bg_3.jpg";
+    return;
+  }
+  
+  // Try current path
+  const currentPath = paths[index];
+  console.log(`Trying image path (${index+1}/${paths.length}): ${currentPath}`);
+  
+  // Create a new image to test loading
+  const testImg = new Image();
+  testImg.onload = function() {
+    // Image loaded successfully, use this path
+    imgElement.src = currentPath;
+    console.log(`✅ Image loaded successfully: ${currentPath}`);
+  };
+  
+  testImg.onerror = function() {
+    // Current path failed, try next one
+    console.log(`❌ Failed to load: ${currentPath}`);
+    tryNextImagePath(imgElement, paths, index + 1);
+  };
+  
+  // Start loading the image
+  testImg.src = currentPath;
+}
+    // Initialize navigation functionality
+    function initNavigation() {
+      // Header scroll effect
+      function handleScroll() {
+        const header = document.querySelector('.header');
+        if (header) {
+          if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
           }
         }
-        
-        // If we get here, entity wasn't found
-        showError(`Communication Box with ID ${entityId} not found`);
-      } catch (error) {
-        console.error('Error loading CSV data:', error);
-        showError('Failed to load entity data. Please try again later.');
+      }
+      
+      // Initialize mobile navigation
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const navmenu = document.getElementById('navmenu');
+      
+      if (mobileNavToggle && navmenu) {
+        mobileNavToggle.addEventListener('click', function() {
+          navmenu.classList.toggle('active');
+          this.classList.toggle('bi-list');
+          this.classList.toggle('bi-x');
+        });
+      }
+      
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Initial state
+    }
+    
+    // Set active links based on current page
+    function setActiveNavLinks() {
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll('.navmenu a');
+      
+      // Remove active class from all links
+      navLinks.forEach(link => link.classList.remove('active'));
+      
+      // Add active class based on path
+      if (currentPath.includes('communication_box-details.html')) {
+        const analyticsLink = document.querySelector('.navmenu a[href="../../index.html#analytics"], .navmenu a[href="#analytics"]');
+        if (analyticsLink) analyticsLink.classList.add('active');
+      } else {
+        // Default to home if on index
+        const homeLink = document.querySelector('.navmenu a[href="../../index.html"], .navmenu a[href="#home"]');
+        if (homeLink) homeLink.classList.add('active');
       }
     }
     
-    function populateEntityDetails(entity) {
-      // Set the entity name and basic info
-      document.getElementById('entityName').textContent = entity.company_name || entity.name || 'Unknown Name';
-      
-      // Set verification status
-      const verifiedStatus = entity.verified_status === true || entity.verified_status === 'true' ? 'Verified' : 'Pending Verification';
-      document.getElementById('verificationStatus').innerHTML = 
-        `<i class="bi bi-check-circle-fill me-1"></i> ${verifiedStatus}`;
-      
-      if (verifiedStatus !== 'Verified') {
-        document.getElementById('verificationStatus').style.backgroundColor = '#ffc107';
-      }
-      
-      // Set key metrics
-      document.getElementById('mediaReach').textContent = entity.media_reach || 'N/A';
-      document.getElementById('platformCount').textContent = entity.platform_count || 'N/A';
-      document.getElementById('yearsActive').textContent = entity.years_active || calculateYearsActive(entity.founded_year);
-      document.getElementById('campaignCount').textContent = entity.campaign_count || 'N/A';
-      
-      // Set contact information
-      document.getElementById('contactEmail').textContent = entity.contact_email || entity.email || 'N/A';
-      document.getElementById('phoneNumber').textContent = entity.phone_number || entity.phone || 'N/A';
-      document.getElementById('region').textContent = entity.region || 'N/A';
-      document.getElementById('website').textContent = entity.website || 'N/A';
-      
-      // Set company information
-      document.getElementById('licenseNumber').textContent = entity.license_number || entity.id || 'N/A';
-      document.getElementById('primaryMarket').textContent = entity.primary_market || 'N/A';
-      document.getElementById('verificationDate').textContent = entity.verification_date || 'May 8, 2025';
-      document.getElementById('services').textContent = entity.services_offered || entity.services || 'N/A';
-      document.getElementById('foundedYear').textContent = entity.founded_year || 'N/A';
-      
-      // Set clients & partners
-      if (entity.client_list || entity.clients) {
-        const clientsContainer = document.getElementById('clientList');
-        clientsContainer.innerHTML = '';
-        
-        const clients = (entity.client_list || entity.clients || '').split(',');
-        clients.forEach(client => {
-          const clientName = client.trim();
-          if (clientName) {
-            const clientBadge = document.createElement('span');
-            clientBadge.className = 'client-badge';
-            clientBadge.innerHTML = `<i class="bi bi-building me-1"></i> ${clientName}`;
-            clientsContainer.appendChild(clientBadge);
+    // Initialize scroll to top functionality
+    function initScrollToTop() {
+      const scrollTop = document.getElementById('scroll-top');
+      if (scrollTop) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 100) {
+            scrollTop.classList.add('active');
+          } else {
+            scrollTop.classList.remove('active');
           }
         });
         
-        if (clients.length <= 1 && !clients[0]) {
-          clientsContainer.textContent = 'No client information available';
-        }
-      } else {
-        document.getElementById('clientList').textContent = 'No client information available';
+        scrollTop.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
       }
-      
-      // Set overview content
-      document.getElementById('overview').textContent = generateOverview(entity);
-      
-      // Set recent campaigns
-      document.getElementById('recentCampaigns').innerHTML = generateRecentCampaigns(entity);
     }
+    
+// Replace the image loading code with this corrected version
+
+// Set entity image - use a random combox image
+const randomIndex = Math.floor(Math.random() * 5) + 1;
+document.getElementById('entityImage').src = `../img/combox/combox${randomIndex}.avif`;
+
+// Update the page with entity details
+populateEntityDetails(entityDetails);
+    
+    // Function to use fallback data if we can't load from any source
+    function useFallbackData(entityId) {
+  console.log("Using fallback communication box data");
+  const fallbackEntity = {
+    id: entityId || "CB001",
+    company_name: "Global Media Communications",
+    region: "West Africa",
+    contact_email: "contact@globalmediacomms.com",
+    phone_number: "+234-555-123-4567",
+    social_media_links: "https://facebook.com/globalmediacomms, https://twitter.com/globalmediacomm, https://instagram.com/globalmedia",
+    services_offered: "Media Relations, PR, Crisis Management, Digital Communications",
+    partnerships_made: "African Media Association, Sports Broadcasting Network, Digital Marketing Alliance",
+    affiliated_clients: "African Football Federation, Nigeria Premier League, Golden Stars FC"
+  };
+  populateEntityDetails(fallbackEntity);
+}
+    
+    // Helper function to safely set element text content
+    function setElementText(id, text) {
+      const element = document.getElementById(id);
+      if (element) element.textContent = text;
+      return !!element; // Return whether the element existed
+    }
+    
+    // Helper function to safely set element HTML
+    function setElementHTML(id, html) {
+      const element = document.getElementById(id);
+      if (element) element.innerHTML = html;
+      return !!element;
+    }
+    
+  
+// Replace the populateEntityDetails function with this updated version
+
+function populateEntityDetails(entity) {
+  if (!entity) {
+    console.error("No communication box data available");
+    return;
+  }
+  
+  console.log("Entity data received:", entity); // Add this line to debug
+  
+  // Set the entity name and type
+  setElementText('entityName', entity.company_name || entity.name || 'Unknown Communication Box');
+  setElementText('entityType', 'Media Relations & Public Communications');
+  setElementText('companyName', entity.company_name || entity.name || 'Unknown Communication Box');
+  
+  // Fix for region field
+  setElementText('region', entity.region || 'West Africa');
+  
+  // Fix for contact information - ensure phone_number is properly used
+  setElementText('contactEmail', entity.contact_email || entity.email || 'contact@example.com');
+  setElementText('phoneNumber', entity.phone_number || '+234-555-123-4567');
+  
+  // Fix for social media links
+  const socialMediaContainer = document.getElementById('socialMediaLinks');
+  if (socialMediaContainer && entity.social_media_links) {
+    let socialLinks = '';
+    const links = entity.social_media_links.split(',').map(link => link.trim());
+    
+    if (links.length > 0) {
+      links.forEach(link => {
+        let platform = 'globe';
+        if (link.includes('facebook')) platform = 'facebook';
+        if (link.includes('twitter') || link.includes('x.com')) platform = 'twitter';
+        if (link.includes('instagram')) platform = 'instagram';
+        if (link.includes('linkedin')) platform = 'linkedin';
+        
+        socialLinks += `<a href="${link}" target="_blank" class="me-2"><i class="fab fa-${platform}"></i> ${formatSocialLink(link)}</a><br>`;
+      });
+      
+      socialMediaContainer.innerHTML = socialLinks;
+    } else {
+      socialMediaContainer.textContent = 'No social media links provided';
+    }
+  } else if (socialMediaContainer) {
+    // Default social media if none provided in data
+    socialMediaContainer.innerHTML = `
+      <a href="https://twitter.com/globalmediacomm" target="_blank" class="me-2"><i class="fab fa-twitter"></i> Twitter</a><br>
+      <a href="https://facebook.com/globalmediacomms" target="_blank" class="me-2"><i class="fab fa-facebook"></i> Facebook</a>
+    `;
+  }
+  
+  // Set services offered
+  const servicesContainer = document.getElementById('servicesOffered');
+  if (servicesContainer) {
+    const services = entity.services_offered ? entity.services_offered.split(',').map(s => s.trim()) : 
+        ['Media Relations', 'Public Relations', 'Digital Marketing', 'Crisis Management'];
+    
+    servicesContainer.innerHTML = '';
+    services.forEach(service => {
+      const badge = document.createElement('span');
+      badge.className = 'client-badge';
+      badge.innerHTML = `<i class="fas fa-check-circle me-1"></i> ${service}`;
+      servicesContainer.appendChild(badge);
+    });
+  }
+  
+  // Set partnerships
+  const partnershipsContainer = document.getElementById('partnershipsList');
+  if (partnershipsContainer) {
+    const partnerships = entity.partnerships_made ? entity.partnerships_made.split(',').map(p => p.trim()) : 
+        ['African Media Association', 'Sports Broadcasting Network', 'Digital Marketing Alliance'];
+    
+    partnershipsContainer.innerHTML = '';
+    partnerships.forEach(partner => {
+      const badge = document.createElement('span');
+      badge.className = 'client-badge';
+      badge.innerHTML = `<i class="fas fa-handshake me-1"></i> ${partner}`;
+      partnershipsContainer.appendChild(badge);
+    });
+  }
+  
+  // Set clients list
+  const clientListContainer = document.getElementById('clientList');
+  if (clientListContainer) {
+    const clients = entity.affiliated_clients ? entity.affiliated_clients.split(',').map(c => c.trim()) : 
+        ['African Football Federation', 'Nigeria Premier League', 'Golden Stars FC', 'East Africa Sports Network'];
+    
+    clientListContainer.innerHTML = '';
+    clients.forEach(client => {
+      const badge = document.createElement('span');
+      badge.className = 'client-badge';
+      badge.innerHTML = `<i class="fas fa-user-tie me-1"></i> ${client}`;
+      clientListContainer.appendChild(badge);
+    });
+  }
+}
+
+// Helper function to format social media links for display
+function formatSocialLink(link) {
+  // Extract domain name
+  let domain = link.replace(/https?:\/\//i, '')
+    .replace(/www\./i, '')
+    .split('/')[0];
+  
+  // Return platform name
+  if (domain.includes('facebook')) return 'Facebook';
+  if (domain.includes('twitter')) return 'Twitter';
+  if (domain.includes('x.com')) return 'X';
+  if (domain.includes('instagram')) return 'Instagram';
+  if (domain.includes('linkedin')) return 'LinkedIn';
+  
+  // If no match, return the domain
+  return domain;
+}
     
     function calculateYearsActive(foundedYear) {
-      if (!foundedYear) return 'N/A';
+      if (!foundedYear) return '7';
       try {
-        const year = parseInt(foundedYear);
+        const founded = parseInt(foundedYear);
         const currentYear = new Date().getFullYear();
-        return (currentYear - year).toString();
+        return Math.max(1, currentYear - founded).toString();
       } catch (e) {
-        return 'N/A';
+        return '7';
       }
     }
     
-    function generateOverview(entity) {
-      const name = entity.company_name || entity.name || 'This communication box';
-      const years = entity.years_active || calculateYearsActive(entity.founded_year) || 'several';
-      const market = entity.primary_market || 'various markets';
-      const platforms = entity.platform_count || 'multiple';
-      const reach = entity.media_reach || 'significant';
+    function formatDate(dateString) {
+      if (!dateString) return 'N/A';
       
-      return `${name} is a professional communication service company with ${years} years of experience in ${market}. They specialize in sports media relations and public communications, operating across ${platforms} different platforms with a combined media reach of ${reach} million. Their expertise includes managing public relations for football clubs, players, and sports organizations, handling press releases, media inquiries, and digital marketing campaigns. Their professional approach to sports communication has earned them a strong reputation in the industry.`;
-    }
-    
-    function generateRecentCampaigns(entity) {
-      const html = [];
-      
-      html.push('<div class="mb-4">');
-      html.push(`<p>${entity.company_name || entity.name} has successfully managed campaigns for various clients in the football industry, focusing primarily on ${entity.primary_market || 'sports media'}.</p>`);
-      html.push('</div>');
-      
-      // Create campaign highlights
-      html.push('<h5>Recent Campaign Highlights:</h5>');
-      html.push('<ul class="mb-4">');
-      
-      // If we have specific campaign data, use it; otherwise, generate generic ones
-      if (entity.recent_campaigns) {
-        const campaigns = entity.recent_campaigns.split(',');
-        campaigns.forEach(campaign => {
-          html.push(`<li>${campaign.trim()}</li>`);
-        });
-      } else {
-        // Generate generic campaigns based on their stats
-        const clientNames = (entity.client_list || entity.clients || '').split(',')
-          .map(c => c.trim())
-          .filter(c => c);
-          
-        // Generate campaigns using client names if available
-        if (clientNames.length > 0) {
-          for (let i = 0; i < Math.min(3, clientNames.length); i++) {
-            html.push(`<li>Season launch media campaign for ${clientNames[i]}</li>`);
-          }
-        }
+      try {
+        const date = new Date(dateString);
+        if (isNaN(date.getTime())) return dateString;
         
-        // Add some generic campaigns
-        html.push('<li>Crisis management for high-profile player transfer</li>');
-        html.push('<li>Social media campaign reaching over 5 million followers</li>');
-        html.push('<li>Press conference management for international tournament</li>');
+        return date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long', 
+          day: 'numeric'
+        });
+      } catch (e) {
+        return dateString;
       }
-      
-      html.push('</ul>');
-      
-      return html.join('');
     }
     
-    function showError(message) {
-      document.getElementById('entityName').textContent = 'Error Loading Data';
-      document.getElementById('verificationStatus').style.backgroundColor = '#dc3545';
-      document.getElementById('verificationStatus').innerHTML = '<i class="bi bi-x-circle-fill me-1"></i> Data Error';
-      document.getElementById('overview').textContent = message || 'Failed to load entity details. Please try again later.';
+    function formatCurrency(value) {
+      if (!value) return '$0';
+      
+      let numValue = parseFloat(value.toString().replace(/[^0-9.]/g, ''));
+      if (isNaN(numValue)) return '$0';
+      
+      if (numValue >= 1000000000) {
+        return `$${(numValue / 1000000000).toFixed(1)}B`;
+      } else if (numValue >= 1000000) {
+        return `$${(numValue / 1000000).toFixed(1)}M`;
+      } else if (numValue >= 1000) {
+        return `$${(numValue / 1000).toFixed(0)}K`;
+      }
+      
+      return `$${numValue.toFixed(0)}`;
     }
-  </script>
+    
+  
+ 
+      
+</script>
 </body>
 </html>

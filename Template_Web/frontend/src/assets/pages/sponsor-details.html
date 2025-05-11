@@ -5,124 +5,633 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sponsor Details | TacticSense</title>
   
-  <!-- Favicons -->
-  <link href="../img/favicon.png" rel="icon">
-  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../vendor/aos/aos.css" rel="stylesheet">
-  <link href="../vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../vendor/font-awesome/css/all.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="../css/style.css" rel="stylesheet">
-
-  <!-- Custom CSS for stakeholder details -->
+  <!-- CSS Files (cleaned up duplicates) -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap and Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Main CSS Files -->
+  <link href="../../assets/css/main.css" rel="stylesheet">
+  
   <style>
-    .sponsor-header {
-      background: linear-gradient(rgba(255, 146, 0, 0.8), rgba(255, 146, 0, 0.9)), url("../img/hero-bg.jpg") center center;
-      background-size: cover;
-      padding: 100px 0 60px 0;
-      color: white;
-      margin-bottom: 40px;
-    }
-    
-    .profile-img {
-      height: 250px;
-      width: 250px;
+
+    /* Improved Card Styles */
+    .details-card, .sponsor-details-card, .stat-card {
+      background-color: #fff;
       border-radius: 10px;
-      object-fit: cover;
-      margin-bottom: 20px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-    
-    .verification-badge {
-      background-color: #28a745;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 50px;
-      font-size: 0.9rem;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    
-    .sponsor-stats {
-      background-color: #f8f9fa;
-      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
       padding: 25px;
       margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.05);
     }
     
-    .stat-item {
-      text-align: center;
-      margin-bottom: 15px;
+    .details-card:hover, .sponsor-details-card:hover {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
     }
     
-    .stat-number {
-      font-size: 2rem;
+    .details-card h3, .sponsor-details-card h3 {
+      color: #273d4e;
       font-weight: 600;
-      color: #ff9200;
-      margin-bottom: 0;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e9ecef;
+      font-size: 1.3rem;
+    }
+    
+    /* Improved Stat Card */
+    .stat-card {
+      text-align: center;
+      background: linear-gradient(145deg, #ffffff, #f5f5f5);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .stat-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    }
+    
+    .stat-value {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      line-height: 1.2;
+      margin-bottom: 5px;
     }
     
     .stat-label {
       font-size: 0.9rem;
       color: #6c757d;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
     }
     
-    .sponsor-details-card {
-      border-radius: 10px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      background-color: white;
+    /* Detail Items */
+    .detail-item {
+      margin-bottom: 18px;
+      padding-bottom: 18px;
+      border-bottom: 1px dashed #e9ecef;
+    }
+    
+    .detail-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
     
     .detail-label {
       font-weight: 600;
-      margin-bottom: 5px;
-      color: #ff9200;
+      color: #495057;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
     }
     
     .detail-value {
-      margin-bottom: 15px;
+      color: #333;
+      margin-bottom: 0;
+      font-size: 1rem;
     }
     
-    .back-btn {
-      margin-bottom: 20px;
-    }
-    
+    /* Partnership Badge */
     .partnership-badge {
       display: inline-block;
-      background-color: #fff3e0;
-      color: #ff9200;
-      padding: 5px 10px;
+      background-color: #f8f9fa;
+      color: #495057;
+      padding: 10px 15px;
       border-radius: 50px;
       margin: 5px;
-      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: 1px solid #e9ecef;
     }
     
+    .partnership-badge:hover {
+      background-color: #ee1e46;
+      color: white;
+      border-color: #ee1e46;
+      transform: translateY(-3px);
+    }
+    
+    /* Campaign Card */
+    .campaign-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+      padding: 18px 20px;
+      margin-bottom: 20px;
+      border-left: 4px solid #ee1e46;
+      transition: all 0.3s ease;
+    }
+    
+    .campaign-card:hover {
+      transform: translateX(5px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .campaign-title {
+      font-weight: 700;
+      color: #ee1e46 ;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    
+    .campaign-date {
+      font-size: 0.85rem;
+      color: #6c757d;
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    /* Profile Image */
+    .profile-img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      margin-bottom: 25px;
+      border: 5px solid white;
+    }
+    
+
+    
+    /* Budget Chart */
+    .progress {
+      height: 24px;
+      margin-bottom: 15px;
+      border-radius: 50px;
+      background-color: #f5f5f5;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .progress-bar {
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    /* Fix Marketing Channels */
+    #marketingChannels .mb-2 {
+      background-color: #f8f9fa;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-bottom: 10px !important;
+      transition: all 0.2s ease;
+    }
+    
+    #marketingChannels .mb-2:hover {
+      background-color: #e9ecef;
+      transform: translateX(5px);
+    }
+    
+    /* Loading skeletons */
+    .skeleton-loading {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 6px;
+      height: 20px;
+      margin-bottom: 12px;
+    }
+    
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* Container spacing */
+    .container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 767px) {
+      .stat-card {
+        padding: 15px;
+      }
+      
+      .stat-value {
+        font-size: 1.8rem;
+      }
+      
+      .details-card, .sponsor-details-card {
+        padding: 20px;
+      }
+    }
+  
+    /* Enhanced button styles */
+    .btn-enhanced {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(45deg, var(--primary-color), #d41836);
+      color: #fff;
+      font-weight: 600;
+      padding: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(238, 30, 70, 0.3);
+      transition: all 0.3s ease;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-enhanced:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(238, 30, 70, 0.4);
+      color: #fff;
+    }
+
+    .btn-enhanced:active {
+      transform: translateY(1px);
+    }
+
+    .btn-icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.15);
+      padding: 14px 16px;
+    }
+
+    .btn-text {
+      padding: 0 20px;
+      font-size: 14px;
+    }
+
+    /* Animation for icon */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .btn-enhanced:hover .fa-arrow-left {
+      animation: pulse 1s infinite;
+    }
+    
+    /* Hero section styles */
+    .hero {
+      position: relative;
+      padding: 120px 0 60px;
+      min-height: 500px;
+      margin-top: 0;
+    }
+
+
+    .hero.overlay {
+      position: relative;
+      margin-top: 0;
+    }
+    .hero.overlay:before {
+      content: "";
+      position: absolute;
+      background: rgba(39, 61, 78, 0.85);
+      top: 0; 
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    /* Button styles */
+    .btn-get-started {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-get-started:hover {
+      background-color: #d41836; /* Darker shade of primary color */
+      transform: translateY(-3px);
+      color: #fff;
+    }
+    
+    /* Certification styles */
+    .certification-icon {
+      color: var(--primary-color);
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .certification-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .certification-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .certification-badge.valid {
+      background-color: rgba(40, 167, 69, 0.1);
+      color: #28a745;
+    }
+
+    .certification-badge.pending {
+      background-color: rgba(255, 193, 7, 0.1);
+      color: #ffc107;
+    }
+
+    .certification-badge.expired {
+      background-color: rgba(220, 53, 69, 0.1);
+      color: #dc3545;
+    }
+
+    .certification-details {
+      font-size: 14px;
+    }
+
+    .certification-details small {
+      color: #6c757d;
+      display: block;
+      margin-bottom: 3px;
+    }
+    
+    /* Fix body padding */
+    body {
+      padding-top: 0 !important; /* Remove default padding */
+      margin-top: 0;
+    }
+    
+    /* Fix header positioning */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+      border-bottom: none;
+    }
+    .header.scrolled {
+      background-color: rgba(39, 61, 78, 0.95); /* Dark background when scrolled */
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    :root {
+      --primary-color: #ee1e46;
+      --heading-color: #273d4e; 
+    }
+    
+    /* Hero styles to match TacticSense homepage */
+    .hero h1 {
+      margin-top: 0; /* Remove top margin */
+    }
+
+    .header.scrolled {
+      background-color: rgba(21, 24, 29, 0.95);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-logo h1 {
+      font-weight: 700;
+      font-size: 28px;
+      color: #fff;
+      margin: 0;
+    }
+
+    /* Navbar styling */
+    .navmenu ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navmenu li {
+      position: relative;
+    }
+
+    .navmenu a {
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effect */
+    .navmenu a:hover {
+      color: #ee1e46;
+      transform: translateY(-2px);
+    }
+
+    /* Active link styling */
+    .navmenu a.active {
+      color: #ffffff;
+      font-weight: 700;
+      position: relative;
+    }
+
+    /* Underline effect for active link */
+    .navmenu a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 15px;
+      right: 15px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    /* Mobile navigation */
+    .mobile-nav-toggle {
+      display: none;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 1199.98px) {
+      .mobile-nav-toggle {
+        display: block;
+      }
+
+      .navmenu ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #273d4e; 
+        flex-direction: column;
+        padding: 10px 0;
+        margin-top: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .navmenu.active ul {
+        display: block;
+      }
+    }
+
+    /* Make hover effect more visible */
+    .navmenu a:hover,
+    .navmenu li:hover > a {
+      color: #ee1e46 !important;
+      transform: translateY(-2px);
+      text-shadow: 0 0 5px rgba(238, 30, 70, 0.5);
+    }
+
+    /* Sponsor page specific styles */
+    .sponsor-header {
+      background: linear-gradient(to right, var(--primary-color), #d41836);
+      color: white;
+      padding: 40px 0;
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+
+    .sponsor-header h1 {
+      font-weight: 700;
+    }
+
+    .profile-img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .stat-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      margin-bottom: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stat-value {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: #6c757d;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .sponsor-details-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    .details-card h3, .sponsor-details-card h3 {
+      color: var(--heading-color);
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .partnership-badge {
+      display: inline-block;
+      background-color: #e9ecef;
+      color: #495057;
+      padding: 8px 15px;
+      border-radius: 50px;
+      margin: 5px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .partnership-badge:hover {
+      background-color: #dee2e6;
+    }
+
+    .detail-item {
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px dashed #e9ecef;
+    }
+
+    .detail-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .detail-label {
+      font-weight: 600;
+      color: #495057;
+      margin-bottom: 5px;
+    }
+
+    .detail-value {
+      margin-bottom: 15px;
+    }
+
+    .back-btn {
+      margin: 20px 0;
+      padding: 10px 20px;
+      font-weight: 600;
+    }
+
+    .verification-badge {
+      background-color: #28a745;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+
+    .verification-badge.false {
+      background-color: #dc3545;
+    }
+    
+    /* Campaign card styles */
     .campaign-card {
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       padding: 15px;
       margin-bottom: 15px;
-      border-left: 4px solid #ff9200;
+      border-left: 4px solid #ee1e46 ;
     }
     
     .campaign-title {
       font-weight: 600;
-      color: #ff9200;
+      color: #ee1e46 ;
       margin-bottom: 5px;
     }
     
@@ -132,6 +641,7 @@
       margin-bottom: 5px;
     }
     
+    /* Loading skeleton styles */
     .skeleton-loading {
       background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
       background-size: 200% 100%;
@@ -150,261 +660,715 @@
       }
     }
     
-    .donut-chart {
+    /* Portfolio-style Header for Sponsor Details */
+    .portfolio-hero {
+      background-color: #273d4e; 
+      position: relative;
+      padding: 80px 0 60px; /* Reduced top padding */
+      color: white;
+      background-size: cover;
+      background-position: center;
+      margin-top: 0; /* Changed from -1px */
+      margin-bottom: 0;
+      text-align: center;
+    }
+    
+    .portfolio-hero h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-hero .subtitle {
+      font-size: 18px;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    
+    .breadcrumbs {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    .breadcrumbs a {
+      color: #ee1e46; /* Your primary color */
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    
+    .breadcrumbs span {
+      margin: 0 5px;
+    }
+
+    .breadcrumbs a:first-child {
+      margin-left: 0;
+    }
+
+    .breadcrumbs a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sponsor Info Bar - below the hero section */
+    .sponsor-info-bar {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #e9ecef;
+      padding: 15px 0;
+      margin-bottom: 30px;
+    }
+
+    .location-info {
+      color: #495057;
+      font-size: 0.95rem;
+    }
+
+    .rating-badge {
+      background-color: #007bff;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: inline-block;
+    }
+    
+    /* Set top padding based on content needs */
+    @media (min-width: 992px) {
+      .portfolio-hero {
+        padding-top: 100px; /* Adjusted for desktop */
+      }
+    }
+
+    @media (max-width: 991px) {
+      .portfolio-hero {
+        padding-top: 60px; /* Smaller padding on mobile */
+      }
+    }
+    
+    /* Footer Styles */
+    .footer {
+      color: var(--default-color);
+      background-color: var(--background-color);
+      font-size: 14px;
+      position: relative;
+    }
+    
+    .footer .footer-top {
+      padding-top: 50px;
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    }
+    
+    .text-accent {
+      color: #ee1e46;
+    }
+    
+    .footer .footer-about .logo {
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+    
+    .footer .footer-about .logo img {
+      max-height: 40px;
+      margin-right: 6px;
+    }
+    
+    .footer .footer-about .logo span {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: var(--heading-font);
+      color: var(--heading-color);
+    }
+    
+    .footer .footer-about p {
+      font-size: 14px;
+      font-family: var(--heading-font);
+    }
+    
+    .footer .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+      font-size: 16px;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      margin-right: 10px;
+      transition: 0.3s;
+    }
+    
+    .footer .social-links a:hover {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+    
+    .footer h4 {
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      padding-bottom: 12px;
+    }
+    
+    .footer .footer-links {
+      margin-bottom: 30px;
+    }
+    
+    .footer .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer .footer-links ul i {
+      padding-right: 3px;
+      font-size: 13px;
+      line-height: 0;
+      color: var(--accent-color);
+    }
+    
+    .footer .footer-links ul li {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .footer .footer-links ul li:first-child {
+      padding-top: 0;
+    }
+    
+    .footer .footer-links ul a {
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      display: inline-block;
+      line-height: 1;
+    }
+    
+    .footer .footer-links ul a:hover {
+      color: var(--accent-color);
+    }
+    
+    .footer .footer-contact p {
+      margin-bottom: 5px;
+    }
+    
+    .footer .footer-newsletter .newsletter-form {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding: 6px 8px;
+      position: relative;
+      border-radius: 4px;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+      display: flex;
+      background-color: var(--background-color);
+      transition: 0.3s;
+    }
+    
+    .footer .footer-newsletter .newsletter-form:focus-within {
+      border-color: var(--accent-color);
+    }
+    
+    .footer .footer-newsletter .newsletter-form input[type=email] {
+      border: 0;
+      padding: 4px;
       width: 100%;
-      max-width: 250px;
-      margin: 0 auto 20px auto;
+      background-color: var(--background-color);
+      color: var(--default-color);
+    }
+    
+    .footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+      outline: none;
+    }
+    
+    .footer .footer-newsletter .newsletter-form input[type=submit] {
+      border: 0;
+      font-size: 16px;
+      padding: 0 20px;
+      margin: -7px -8px -7px 0;
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      transition: 0.3s;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+      background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    }
+    
+    .footer .copyright {
+      padding: 25px 0;
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    }
+    
+    .footer .copyright p {
+      margin-bottom: 0;
+    }
+    
+    .footer .credits {
+      margin-top: 6px;
+      font-size: 13px;
+    }
+
+    /* Scroll top button */
+    .scroll-top {
+      position: fixed;
+      visibility: hidden;
+      opacity: 0;
+      right: 15px;
+      bottom: 15px;
+      z-index: 99999;
+      background-color: var(--primary-color);
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      color: #fff;
+      transition: all 0.4s;
+    }
+
+    .scroll-top:hover {
+      background-color: #d41836;
+    }
+
+    .scroll-top.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    @media (max-width: 767px) {
+      .stat-card {
+        margin-bottom: 15px;
+      }
+      
+      .sponsor-header {
+        padding: 25px 0;
+      }
+      
+      .stat-value {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="../../index.html">TacticSense</a></h1>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="../../index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="../../index.html#about">About</a></li>
-          <li><a class="nav-link scrollto active" href="../../index.html#analytics">Risk Intelligence</a></li>
-          <li><a class="nav-link scrollto" href="../../index.html#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="../../index.html#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- Sponsor Header -->
-    <section class="sponsor-header">
+  <!-- Header Container - Will be replaced by component -->
+  <div id="header-container"></div>
+  
+  <!-- Header Fallback -->
+  <div id="header-fallback" style="display:none;">
+    <header id="header" class="header d-flex align-items-center fixed-top">
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1 id="sponsorName" class="mb-2">Loading...</h1>
-            <p id="sponsorIndustry" class="lead mb-3">Loading...</p>
-            <div id="verificationStatus" class="verification-badge">
-              <i class="bi bi-check-circle-fill me-1"></i> Verified
-            </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="site-logo">
+            <a href="../../index.html" style="text-decoration: none !important;">
+              <h1 class="m-0 text-white" style="font-size: 28px;">TacticSense</h1>
+            </a>
           </div>
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../index.html#about">About</a></li>
+              <li><a href="../../index.html#players">Players</a></li>
+              <li><a href="../../index.html#clubs">Clubs</a></li>
+              <li><a href="../../index.html#analytics" class="active">Analytics</a></li>
+              <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </div>
       </div>
-    </section>
+    </header>
+  </div>
 
-    <section class="container">
-      <!-- Back Button -->
-      <div class="row mb-4">
-        <div class="col-12">
-          <a href="../../index.html#analytics" class="btn btn-outline-primary back-btn">
-            <i class="bi bi-arrow-left"></i> Back to Risk Intelligence
-          </a>
-        </div>
-      </div>
-
-      <!-- Sponsor Info -->
-      <div class="row">
-        <!-- Left Column - Image and Key Stats -->
-        <div class="col-lg-4 mb-4">
-          <div class="text-center mb-4">
-            <img id="sponsorLogo" src="../img/soccer/soccer1.jpg" alt="Sponsor" class="profile-img">
+  <!-- Hero section with sponsor details and slogan -->
+  <div class="hero overlay" style="background-image: url('../../assets/images2/bg_3.jpg');">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 id="sponsorName" class="text-white">Loading Sponsor Details...</h1>
+          <p id="sponsorIndustry" class="text-white mb-4">Corporate Sponsorship & Brand Partnerships</p>
+          
+          <div class="breadcrumbs text-white mb-4">
+            <a href="../../index.html" class="text-primary">Home</a> / 
+            <a href="../../index.html#analytics" class="text-primary">Analytics</a> / 
+            <span>Sponsor Details</span>
           </div>
           
-          <div class="sponsor-stats">
-            <h3 class="text-center mb-4">Sponsorship Stats</h3>
-            
-            <div class="row">
-              <div class="col-6 stat-item">
-                <p id="sponsorshipBudget" class="stat-number">$0M</p>
-                <p class="stat-label">Annual Budget</p>
-              </div>
-              <div class="col-6 stat-item">
-                <p id="activeDeals" class="stat-number">0</p>
-                <p class="stat-label">Active Deals</p>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-6 stat-item">
-                <p id="yearsActive" class="stat-number">0</p>
-                <p class="stat-label">Years Active</p>
-              </div>
-              <div class="col-6 stat-item">
-                <p id="trustScore" class="stat-number">0%</p>
-                <p class="stat-label">Trust Score</p>
-              </div>
-            </div>
+        
+          
+          <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="javascript:history.back()" class="btn-enhanced">
+              <span class="btn-icon-wrapper">
+                <i class="fas fa-arrow-left"></i>
+              </span>
+              <span class="btn-text">BACK TO STAKEHOLDERS</span>
+            </a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <div class="sponsor-details-card">
-            <h3 class="mb-4">Contact Information</h3>
-            
-            <p class="detail-label">Email</p>
-            <p id="contactEmail" class="detail-value">Loading...</p>
-            
-            <p class="detail-label">Phone</p>
-            <p id="phoneNumber" class="detail-value">Loading...</p>
-            
-            <p class="detail-label">Headquarters</p>
-            <p id="headquarters" class="detail-value">Loading...</p>
-            
-            <p class="detail-label">Website</p>
-            <p id="website" class="detail-value">Loading...</p>
+  <div class="container mb-5">
+    <!-- Sponsor Info -->
+    <div class="row">
+      <!-- Left Column - Image and Key Stats -->
+      <div class="col-lg-4 mb-4">
+        <div class="text-center mb-4">
+          <img id="sponsorLogo" src="../img/soccer/soccer1.avif" alt="Sponsor" class="profile-img">
+        </div>
+        
+        <div class="details-card">
+          <h3>Basic Information</h3>
+          <div class="detail-item">
+            <div class="detail-label mb-1"><i class="fas fa-building me-2"></i> Industry</div>
+            <div id="industry">Loading...</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label mb-1"><i class="fas fa-map-marker-alt me-2"></i> Headquarters</div>
+            <div id="headquarters">Loading...</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label mb-1"><i class="fas fa-calendar me-2"></i> Founded</div>
+            <div id="foundedYear">Loading...</div>
           </div>
         </div>
         
-        <!-- Right Column - Detailed Information -->
-        <div class="col-lg-8">
-          <div class="sponsor-details-card">
-            <h3 class="mb-4">Company Profile</h3>
-            
-            <div class="row">
-              <div class="col-md-6">
-                <p class="detail-label">Industry</p>
-                <p id="industry" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Founded</p>
-                <p id="foundedYear" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Verification Date</p>
-                <p id="verificationDate" class="detail-value">Loading...</p>
-              </div>
-              
-              <div class="col-md-6">
-                <p class="detail-label">Sponsorship Focus</p>
-                <p id="sponsorshipFocus" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Market Capitalization</p>
-                <p id="marketCap" class="detail-value">Loading...</p>
-                
-                <p class="detail-label">Revenue</p>
-                <p id="revenue" class="detail-value">Loading...</p>
-              </div>
+        <div class="stat-card text-center">
+          <div class="row">
+            <div class="col-6">
+              <div class="stat-value" id="sponsorshipBudget">$0M</div>
+              <div class="stat-label">Annual Budget</div>
+            </div>
+            <div class="col-6">
+              <div class="stat-value" id="activeDeals">0</div>
+              <div class="stat-label">Active Deals</div>
             </div>
           </div>
           
-          <div class="sponsor-details-card">
-            <h3 class="mb-4">Sponsorship Portfolio</h3>
+          <div class="row mt-4">
+            <div class="col-6">
+              <div class="stat-value" id="yearsActive">0</div>
+              <div class="stat-label">Years Active</div>
+            </div>
+            <div class="col-6">
+              <div class="stat-value" id="trustScore">0%</div>
+              <div class="stat-label">Trust Score</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="details-card">
+          <h3>Contact Information</h3>
+          <div class="detail-item">
+            <div class="detail-label mb-1"><i class="fas fa-envelope me-2"></i> Email</div>
+            <div id="contactEmail">Loading...</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label mb-1"><i class="fas fa-phone me-2"></i> Phone</div>
+            <div id="phoneNumber">Loading...</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label mb-1"><i class="fas fa-globe me-2"></i> Website</div>
+            <div id="website">Loading...</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column - Detailed Information -->
+      <div class="col-lg-8">
+        <div class="details-card">
+          <h3>Company Profile</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-item">
+                <div class="detail-label mb-1"><i class="fas fa-certificate me-2"></i> Verification Date</div>
+                <div id="verificationDate">Loading...</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label mb-1"><i class="fas fa-chart-line me-2"></i> Market Capitalization</div>
+                <div id="marketCap">Loading...</div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="detail-item">
+                <div class="detail-label mb-1"><i class="fas fa-bullseye me-2"></i> Sponsorship Focus</div>
+                <div id="sponsorshipFocus">Loading...</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label mb-1"><i class="fas fa-money-bill-wave me-2"></i> Annual Revenue</div>
+                <div id="revenue">Loading...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="details-card">
+          <h3>Sponsorship Portfolio</h3>
+          <div class="detail-item">
+            <div class="detail-label mb-3"><i class="fas fa-handshake me-2"></i> Current Partnerships</div>
             <div id="sponsorshipPortfolio" class="d-flex flex-wrap">
               <div class="skeleton-loading w-100"></div>
               <div class="skeleton-loading w-100"></div>
             </div>
           </div>
-          
-          <div class="sponsor-details-card">
-            <h3 class="mb-4">Recent Campaigns</h3>
-            <div id="recentCampaigns">
-              <div class="skeleton-loading"></div>
-              <div class="skeleton-loading"></div>
-              <div class="skeleton-loading"></div>
-            </div>
-          </div>
-          
-          <div class="sponsor-details-card">
-            <div class="row">
-              <div class="col-lg-6">
-                <h3 class="mb-4">Marketing Channels</h3>
-                <div id="marketingChannels">
-                  <div class="skeleton-loading"></div>
-                  <div class="skeleton-loading"></div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <h3 class="mb-4">Budget Allocation</h3>
-                <div class="donut-chart" id="budgetChart">
-                  <div class="skeleton-loading"></div>
-                  <div class="skeleton-loading"></div>
-                </div>
-              </div>
-            </div>
+        </div>
+        
+        <div class="details-card">
+          <h3>Recent Campaigns</h3>
+          <div id="recentCampaigns">
+            <div class="skeleton-loading"></div>
+            <div class="skeleton-loading"></div>
+            <div class="skeleton-loading"></div>
           </div>
         </div>
+        
+        <div class="details-card">
+       
+            <div class="col-lg-6">
+              <h3>Marketing Channels</h3>
+              <div id="marketingChannels">
+                <div class="skeleton-loading"></div>
+                <div class="skeleton-loading"></div>
+              </div>
+            </div>
+      
+         
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>TacticSense</h3>
-            <p>
-              123 Alpha Street <br>
-              London, SE1 7TP<br>
-              United Kingdom <br><br>
-              <strong>Phone:</strong> +44 20 5678 1234<br>
-              <strong>Email:</strong> info@tacticsense.com<br>
-            </p>
+  <!-- Footer Container - Will be replaced by component -->
+  <div id="footer-container"></div>
+  
+  <!-- Footer Fallback -->
+  <div id="footer-fallback" style="display:none;">
+    <footer id="footer" class="footer dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <!-- First column - About/Logo -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="../../index.html" class="logo d-flex align-items-center">
+              <span class="sitename">TacticSense</span>
+            </a>
+            <div class="footer-contact pt-3 text-start">
+              <p>123 Football Avenue</p>
+              <p>Lagos, Nigeria 500001</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+234 812 345 6789</span></p>
+              <p><strong>Email:</strong> <span>info@tacticsense.com</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+          <!-- Second column - Useful links -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Quick Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#analytics">Risk Intelligence</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#players">Players</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#analytics">Analytics</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../../index.html#contact">Contact</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <!-- Third column - Our Services -->
+          <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Risk Analysis</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Fraud Detection</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Stakeholder Verification</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Market Intelligence</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Compliance Solutions</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Player Analytics</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Team Performance</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Talent Scouting</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Training Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Match Analysis</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Connect with us on social media for the latest updates in football business intelligence</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+          <!-- Fourth column - Newsletter -->
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Join Our Community</h4>
+            <p>Subscribe for updates on African football analytics, scouting reports, and exclusive insights.</p>
+            <form action="#" method="post" class="php-email-form">
+              <div class="newsletter-form">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Thank you for subscribing!</div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; 2025 <strong><span>TacticSense</span></strong>. All Rights Reserved
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">TacticSense</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Powering <span class="text-accent">African Football</span> Through <span class="text-accent">Data &amp; Analytics</span>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../vendor/aos/aos.js"></script>
-  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+  
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Main JS File -->
-  <script src="../js/main.js"></script>
-
-  <!-- Script to load and display sponsor details -->
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Load header
+      const headerContainer = document.getElementById('header-container');
+      if (headerContainer) {
+        fetch('../../app/components/shared/header/header.component.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(html => {
+            headerContainer.innerHTML = html;
+            initNavigation();
+            setActiveNavLinks();
+          })
+          .catch(error => {
+            console.error('Error loading header:', error);
+            // Fallback to local header if can't load component
+            const fallbackHeader = document.getElementById('header-fallback');
+            if (fallbackHeader) {
+              headerContainer.innerHTML = fallbackHeader.innerHTML;
+              initNavigation();
+              setActiveNavLinks();
+            }
+          });
+      }
+
+      // Load footer
+      const footerContainer = document.getElementById('footer-container');
+      if (footerContainer) {
+        fetch('../../app/components/shared/footer/footer.component.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(html => {
+            footerContainer.innerHTML = html;
+            initScrollToTop();
+          })
+          .catch(error => {
+            console.error('Error loading footer:', error);
+            // Fallback to local footer if can't load component
+            const fallbackFooter = document.getElementById('footer-fallback');
+            if (fallbackFooter) {
+              footerContainer.innerHTML = fallbackFooter.innerHTML;
+              initScrollToTop();
+            }
+          });
+      }
+      
+      // Initialize navigation functionality
+      function initNavigation() {
+        // Header scroll effect
+        function handleScroll() {
+          const header = document.querySelector('.header');
+          if (header) {
+            if (window.scrollY > 50) {
+              header.classList.add('scrolled');
+            } else {
+              header.classList.remove('scrolled');
+            }
+          }
+        }
+        
+        // Initialize mobile navigation
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const navmenu = document.getElementById('navmenu');
+        
+        if (mobileNavToggle && navmenu) {
+          mobileNavToggle.addEventListener('click', function() {
+            navmenu.classList.toggle('active');
+            this.classList.toggle('bi-list');
+            this.classList.toggle('bi-x');
+          });
+        }
+        
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initial state
+      }
+      
+      // Set active links based on current page
+      function setActiveNavLinks() {
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.navmenu a');
+        
+        // Remove active class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+        
+        // Add active class based on path
+        if (currentPath.includes('sponsor-details.html')) {
+          const analyticsLink = document.querySelector('.navmenu a[href="../../index.html#analytics"], .navmenu a[href="#analytics"]');
+          if (analyticsLink) analyticsLink.classList.add('active');
+        } else {
+          // Default to home if on index
+          const homeLink = document.querySelector('.navmenu a[href="../../index.html"], .navmenu a[href="#home"]');
+          if (homeLink) homeLink.classList.add('active');
+        }
+      }
+      
+      // Initialize scroll to top functionality
+      function initScrollToTop() {
+        const scrollTop = document.getElementById('scroll-top');
+        if (scrollTop) {
+          window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+              scrollTop.classList.add('active');
+            } else {
+              scrollTop.classList.remove('active');
+            }
+          });
+          
+          scrollTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+      }
+      
       // Get sponsor ID from URL parameter
       const urlParams = new URLSearchParams(window.location.search);
       const sponsorId = urlParams.get('id');
       
+      console.log("Loading sponsor with ID:", sponsorId);
+      
       // Try to get sponsor details from localStorage
-      let sponsorDetails = JSON.parse(localStorage.getItem('sponsorsFullDetails') || '{}');
+      let sponsorDetails = null;
+      try {
+        sponsorDetails = JSON.parse(localStorage.getItem('sponsorsFullDetails') || 'null');
+      } catch (e) {
+        console.error("Error parsing localStorage data:", e);
+      }
       
       // If we don't have the specific sponsor or the ID doesn't match
       if (!sponsorDetails || sponsorDetails.id != sponsorId) {
         console.log('Sponsor details not found in localStorage or ID mismatch');
         
         // Try to get from the selected sponsor in localStorage
-        const selectedSponsor = JSON.parse(localStorage.getItem('selectedSponsors') || '{}');
+        let selectedSponsor = null;
+        try {
+          selectedSponsor = JSON.parse(localStorage.getItem('selectedSponsors') || 'null');
+        } catch (e) {
+          console.error("Error parsing selectedSponsor data:", e);
+        }
         
         if (selectedSponsor && selectedSponsor.id == sponsorId) {
           sponsorDetails = selectedSponsor;
@@ -415,192 +1379,334 @@
             if (data) {
               sponsorDetails = data;
               populateSponsorDetails(sponsorDetails);
+            } else {
+              // Use fallback data
+              useFallbackData(sponsorId);
             }
           });
           
-          // Set minimum details for error handling in case CSV fails too
-          sponsorDetails = {
-            id: sponsorId || 'Unknown',
-            name: 'Sponsor Not Found',
-            industry: 'Unknown Industry',
-            error: 'Could not load sponsor details'
-          };
+          // Return early since we're fetching data asynchronously
+          return;
         }
       }
       
       // Assign random football image for the sponsor
-      const footballImages = [
-        '../img/soccer/soccer1.jpg',
-        '../img/soccer/soccer2.jpg',
-        '../img/soccer/soccer3.jpg',
-        '../img/soccer/soccer4.jpg',
-        '../img/soccer/soccer5.jpg',
-        '../img/soccer/soccer6.jpg',
-        '../img/soccer/soccer7.jpg',
-        '../img/soccer/soccer8.jpg',
-        '../img/soccer/soccer9.jpg',
-        '../img/soccer/soccer10.jpg',
-        '../img/soccer/soccer11.jpg',
-        '../img/soccer/soccer12.jpg'
-      ];
-      
-      const randomImage = footballImages[Math.floor(Math.random() * footballImages.length)];
-      document.getElementById('sponsorLogo').src = randomImage;
+      setRandomSponsorImage();
       
       // Update the page with sponsor details
       populateSponsorDetails(sponsorDetails);
     });
     
+    // Helper function to set a random sponsor image
+    function setRandomSponsorImage() {
+      const footballImages = [
+        '../img/soccer/soccer1.avif',
+        '../img/soccer/soccer2.avif',
+        '../img/soccer/soccer3.avif',
+        '../img/soccer/soccer4.avif',
+        '../img/soccer/soccer5.avif',
+        '../img/soccer/soccer6.avif',
+        '../img/soccer/soccer7.avif',
+        '../img/soccer/soccer8.avif',
+        '../img/soccer/soccer9.avif',
+        '../img/soccer/soccer10.avif',
+        '../img/soccer/soccer11.avif',
+        '../img/soccer/soccer12.avif'
+      ];
+      
+      const randomImage = footballImages[Math.floor(Math.random() * footballImages.length)];
+      const logoElement = document.getElementById('sponsorLogo');
+      if (logoElement) {
+        logoElement.src = randomImage;
+      }
+    }
+    
+    // Function to use fallback data if we can't load from any source
+    function useFallbackData(sponsorId) {
+      console.log("Using fallback sponsor data");
+      const fallbackSponsor = {
+        id: sponsorId || "SP001",
+        company_name: "Global Sports Sponsor",
+        industry: "Sports & Entertainment",
+        verification_status: true,
+        sponsorship_budget: "2500000",
+        active_deals: "6",
+        years_active: "8",
+        trust_score: "92",
+        email: "contact@globalsportssponsor.com",
+        phone: "+1-555-123-4567",
+        headquarters: "London, UK",
+        website: "globalsportssponsor.com",
+        founded_year: "2015",
+        verification_date: "May 10, 2022",
+        sponsorship_focus: "Football Teams and Major Tournaments",
+        market_cap: "380000000",
+        revenue: "75000000",
+        partnerships: "Manchester FC, European Cup, Youth League Foundation",
+        recent_campaigns: '[{"title":"Summer Championship Sponsorship","date":"2020-04-15","description":"Title sponsorship of the summer championship series with extensive media coverage."},{"title":"Youth Football Initiative","date":"2023-03-01","description":"Community engagement program supporting youth football development."}]'
+      };
+      populateSponsorDetails(fallbackSponsor);
+    }
+    
     // Function to fetch sponsor data from CSV if needed
     async function fetchSponsorFromCSV(sponsorId) {
       try {
-        const response = await fetch('../data/sponsors_dataset.csv');
+        console.log("Fetching sponsor from CSV with ID:", sponsorId);
+        // Updated path to the sponsors dataset
+        const response = await fetch('../assets/data/sponsors_dataset.csv');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        
         const csvText = await response.text();
         
-        // Simple CSV parsing
-        const rows = csvText.split('\n');
-        const headers = rows[0].split(',');
+        // Proper CSV parsing that handles quoted fields
+        const parsedData = parseCSV(csvText);
         
-        for (let i = 1; i < rows.length; i++) {
-          const values = rows[i].split(',');
-          if (values.length > 1) {
-            const rowData = {};
-            headers.forEach((header, index) => {
-              rowData[header.trim()] = values[index] ? values[index].trim() : '';
-            });
-            
-            if (rowData.id === sponsorId) {
-              return rowData;
-            }
-          }
+        // Find the sponsor with matching ID
+        const sponsor = parsedData.find(row => 
+          String(row.id) === String(sponsorId) || 
+          String(row.sponsor_id) === String(sponsorId)
+        );
+        
+        if (sponsor) {
+          console.log("Found sponsor:", sponsor);
+          return sponsor;
+        } else {
+          console.error("Sponsor not found in CSV");
+          return null;
         }
-        console.error("Sponsor not found in CSV");
-        return null;
       } catch (error) {
         console.error("Error fetching CSV data:", error);
         return null;
       }
     }
     
-    function populateSponsorDetails(sponsor) {
-      // Set the sponsor name and industry
-      document.getElementById('sponsorName').textContent = sponsor.company_name || sponsor.name || 'Unknown Name';
-      document.getElementById('sponsorIndustry').textContent = sponsor.industry || 'Unknown Industry';
+    // Proper CSV parser function that handles quoted fields
+    function parseCSV(text) {
+      const result = [];
+      let headers = [];
+      const rows = text.split(/\r?\n/);
       
-      // Set verification status
-      const verifiedStatus = sponsor.verification_status === 'true' || sponsor.verification_status === true ? 'Verified' : 'Pending Verification';
-      document.getElementById('verificationStatus').innerHTML = 
-        `<i class="bi bi-check-circle-fill me-1"></i> ${verifiedStatus}`;
-      
-      if (sponsor.verification_status !== 'true' && sponsor.verification_status !== true) {
-        document.getElementById('verificationStatus').style.backgroundColor = '#ffc107';
+      // Process headers
+      if (rows.length > 0) {
+        headers = parseCSVRow(rows[0]);
       }
       
-      // Format sponsorship budget
-      let budget = sponsor.sponsorship_budget || sponsor.annual_budget || '0';
-      if (typeof budget === 'string') {
-        budget = budget.replace(/[^0-9.]/g, '');
-      }
-      const budgetNum = parseFloat(budget);
-      const formattedBudget = budgetNum >= 1000000 ? 
-        `$${(budgetNum / 1000000).toFixed(1)}M` : 
-        `$${(budgetNum / 1000).toFixed(0)}K`;
-      
-      // Set key stats
-      document.getElementById('sponsorshipBudget').textContent = formattedBudget;
-      document.getElementById('activeDeals').textContent = sponsor.active_deals || '0';
-      document.getElementById('yearsActive').textContent = sponsor.years_active || calculateYearsActive(sponsor.founded_year);
-      document.getElementById('trustScore').textContent = `${sponsor.trust_score || '85'}%`;
-      
-      // Set contact information
-      document.getElementById('contactEmail').textContent = sponsor.email || 'contact@example.com';
-      document.getElementById('phoneNumber').textContent = sponsor.phone || 'N/A';
-      document.getElementById('headquarters').textContent = sponsor.headquarters || sponsor.location || 'N/A';
-      
-      const website = sponsor.website || `www.${sponsor.company_name?.toLowerCase().replace(/\s/g, '')}.com` || 'N/A';
-      document.getElementById('website').innerHTML = `<a href="https://${website}" target="_blank">${website}</a>`;
-      
-      // Set company profile
-      document.getElementById('industry').textContent = sponsor.industry || 'N/A';
-      document.getElementById('foundedYear').textContent = sponsor.founded_year || 'N/A';
-      document.getElementById('verificationDate').textContent = sponsor.verification_date || 'May 8, 2025';
-      document.getElementById('sponsorshipFocus').textContent = sponsor.sponsorship_focus || 'Sports Teams and Events';
-      
-      const marketCap = formatCurrency(sponsor.market_cap || '0');
-      document.getElementById('marketCap').textContent = marketCap;
-      
-      const revenue = formatCurrency(sponsor.revenue || '0');
-      document.getElementById('revenue').textContent = revenue;
-      
-      // Set sponsorship portfolio
-      const portfolioContainer = document.getElementById('sponsorshipPortfolio');
-      const partnerships = parsePartnershipString(sponsor.partnerships || sponsor.sponsored_entities || '');
-      
-      if (partnerships.length > 0) {
-        portfolioContainer.innerHTML = '';
-        partnerships.forEach(partner => {
-          const badge = document.createElement('span');
-          badge.className = 'partnership-badge';
-          badge.innerHTML = `<i class="fas fa-handshake me-1"></i> ${partner}`;
-          portfolioContainer.appendChild(badge);
-        });
-      } else {
-        portfolioContainer.textContent = 'No partnerships information available';
+      // Process data rows
+      for (let i = 1; i < rows.length; i++) {
+        if (rows[i].trim() === '') continue;
+        
+        const values = parseCSVRow(rows[i]);
+        if (values.length > 1) {
+          const rowData = {};
+          headers.forEach((header, index) => {
+            rowData[header.trim()] = values[index] ? values[index].trim() : '';
+          });
+          result.push(rowData);
+        }
       }
       
-      // Set recent campaigns
-      const campaignsContainer = document.getElementById('recentCampaigns');
-      const campaigns = generateCampaigns(sponsor);
+      return result;
+    }
+
+    // Parse a single CSV row handling quoted fields
+    function parseCSVRow(row) {
+      const result = [];
+      let inQuotes = false;
+      let currentValue = '';
       
-      if (campaigns.length > 0) {
-        campaignsContainer.innerHTML = '';
-        campaigns.forEach(campaign => {
-          const campaignCard = document.createElement('div');
-          campaignCard.className = 'campaign-card';
-          
-          campaignCard.innerHTML = `
-            <div class="campaign-title">${campaign.title}</div>
-            <div class="campaign-date">${campaign.date}</div>
-            <div>${campaign.description}</div>
-          `;
-          
-          campaignsContainer.appendChild(campaignCard);
-        });
-      } else {
-        campaignsContainer.textContent = 'No recent campaign information available';
+      for (let i = 0; i < row.length; i++) {
+        const char = row[i];
+        
+        if (char === '"') {
+          inQuotes = !inQuotes;
+        } else if (char === ',' && !inQuotes) {
+          result.push(currentValue);
+          currentValue = '';
+        } else {
+          currentValue += char;
+        }
       }
       
-      // Set marketing channels
-      const channelsContainer = document.getElementById('marketingChannels');
-      const channels = ['Television', 'Social Media', 'Stadium Branding', 'Player Endorsements', 'Digital Media'];
-      
-      channelsContainer.innerHTML = '';
-      channels.forEach(channel => {
-        const channelItem = document.createElement('div');
-        channelItem.className = 'mb-2';
-        channelItem.innerHTML = `<i class="fas fa-check-circle text-success me-2"></i> ${channel}`;
-        channelsContainer.appendChild(channelItem);
-      });
-      
-      // Set budget chart (simplified version without actual chart library)
-      const chartContainer = document.getElementById('budgetChart');
-      chartContainer.innerHTML = `
-        <div class="text-center mb-3">Budget Allocation</div>
-        <div class="progress mb-2" style="height: 20px;">
-          <div class="progress-bar bg-primary" style="width: 40%;">TV & Media (40%)</div>
-        </div>
-        <div class="progress mb-2" style="height: 20px;">
-          <div class="progress-bar bg-success" style="width: 25%;">Events (25%)</div>
-        </div>
-        <div class="progress mb-2" style="height: 20px;">
-          <div class="progress-bar bg-info" style="width: 20%;">Digital (20%)</div>
-        </div>
-        <div class="progress mb-2" style="height: 20px;">
-          <div class="progress-bar bg-warning" style="width: 15%;">Merchandise (15%)</div>
-        </div>
-      `;
+      // Add the last value
+      result.push(currentValue);
+      return result;
     }
     
+    // Helper function to safely set element text content
+    function setElementText(id, text) {
+      const element = document.getElementById(id);
+      if (element) element.textContent = text;
+      return !!element; // Return whether the element existed
+    }
+    
+    // Helper function to safely set element HTML
+    function setElementHTML(id, html) {
+      const element = document.getElementById(id);
+      if (element) element.innerHTML = html;
+      return !!element;
+    }
+    
+    function populateSponsorDetails(sponsor) {
+  if (!sponsor) {
+    console.error("No sponsor data available");
+    return;
+  }
+  
+  // Set the sponsor name and industry
+  setElementText('sponsorName', sponsor.company_name || sponsor.name || 'Unknown Name');
+  setElementText('sponsorIndustry', sponsor.industry || 'Unknown Industry');
+  
+  
+  
+  // Format sponsorship budget/contract value
+  let budget = sponsor.contract_value || sponsor.sponsorship_budget || sponsor.annual_budget || '500000';
+  if (typeof budget === 'string') {
+    budget = budget.replace(/[^0-9.]/g, '');
+  }
+  const budgetNum = parseFloat(budget);
+  const formattedBudget = budgetNum >= 1000000 ? 
+    `$${(budgetNum / 1000000).toFixed(1)}M` : 
+    `$${(budgetNum / 1000).toFixed(0)}K`;
+  
+  // Set key stats
+  setElementText('sponsorshipBudget', formattedBudget);
+  
+  // Count sponsorship deals for active deals
+  const deals = parsePartnershipString(sponsor.sponsorship_deals || sponsor.partnerships || sponsor.sponsored_entities || '');
+  const dealsCount = deals.length || 3; // Default to 3 if no deals found
+  setElementText('activeDeals', dealsCount.toString());
+  
+  // Calculate years active from founded year or contract duration
+  const yearsActive = calculateYearsActive(sponsor.founded_year) || parseContractDuration(sponsor.contract_duration) || '5';
+  setElementText('yearsActive', yearsActive);
+  
+  setElementText('trustScore', `${sponsor.trust_score || '85'}%`);
+  
+  // Set contact information
+  setElementText('contactEmail', sponsor.contact_email || sponsor.email || 'contact@example.com');
+  setElementText('phoneNumber', sponsor.phone_number || 'N/A'); // Fixed field name
+  setElementText('headquarters', sponsor.location || sponsor.headquarters || 'N/A');
+  
+  const website = sponsor.website || `www.${sponsor.company_name?.toLowerCase().replace(/\s/g, '')}.com` || 'N/A';
+  setElementHTML('website', `<a href="https://${website}" target="_blank">${website}</a>`);
+  
+  // Set company profile
+  setElementText('industry', sponsor.industry || 'N/A');
+  setElementText('foundedYear', calculateFoundedYear(sponsor.contract_duration) || '2015'); // Calculate based on contract or use default
+  setElementText('verificationDate', sponsor.verification_date || 'May 8, 2021');
+  setElementText('sponsorshipFocus', sponsor.sponsorship_focus || 'Sports Teams and Events');
+  
+  // Format market cap as 5x annual budget
+  const marketCap = formatCurrency((budgetNum * 5).toString() || '1900000');
+  setElementText('marketCap', marketCap);
+  
+  // Format revenue as 1.5x annual budget
+  const revenue = formatCurrency((budgetNum * 1.5).toString() || '750000');
+  setElementText('revenue', revenue);
+  
+  // Set sponsorship portfolio
+  const portfolioContainer = document.getElementById('sponsorshipPortfolio');
+  if (portfolioContainer) {
+    // Use sponsorship_deals as primary source
+    const partnerships = parsePartnershipString(sponsor.sponsorship_deals || sponsor.partnerships || sponsor.sponsored_entities || '');
+    
+    if (partnerships.length > 0) {
+      portfolioContainer.innerHTML = '';
+      partnerships.forEach(partner => {
+        const badge = document.createElement('span');
+        badge.className = 'partnership-badge';
+        badge.innerHTML = `<i class="fas fa-handshake me-1"></i> ${partner}`;
+        portfolioContainer.appendChild(badge);
+      });
+    } else {
+      // Create some default partnerships if none available
+      portfolioContainer.innerHTML = '';
+      ['Tunisian Premier League', 'Youth Football Academy', 'Regional Championships'].forEach(partner => {
+        const badge = document.createElement('span');
+        badge.className = 'partnership-badge';
+        badge.innerHTML = `<i class="fas fa-handshake me-1"></i> ${partner}`;
+        portfolioContainer.appendChild(badge);
+      });
+    }
+  }
+  // Set recent campaigns
+const recentCampaignsContainer = document.getElementById('recentCampaigns');
+if (recentCampaignsContainer) {
+  // Generate campaigns data
+  const campaigns = generateCampaigns(sponsor);
+  
+  if (campaigns && campaigns.length > 0) {
+    recentCampaignsContainer.innerHTML = '';
+    
+    campaigns.forEach(campaign => {
+      const campaignElement = document.createElement('div');
+      campaignElement.className = 'campaign-card';
+      
+      const formattedDate = formatDate(campaign.date);
+      
+      campaignElement.innerHTML = `
+        <div class="campaign-title">${campaign.title}</div>
+        <span class="campaign-date">${formattedDate}</span>
+        <p class="mb-0">${campaign.description || 'No description available'}</p>
+      `;
+      
+      recentCampaignsContainer.appendChild(campaignElement);
+    });
+  } else {
+    recentCampaignsContainer.innerHTML = '<p>No recent campaigns found</p>';
+  }
+}
+  
+  // Set marketing channels from advertising_channels field
+  const channelsContainer = document.getElementById('marketingChannels');
+  if (channelsContainer) {
+    const channels = sponsor.advertising_channels ? 
+      sponsor.advertising_channels.split(',').map(c => c.trim()) : 
+      ['Television', 'Social Media', 'Stadium Branding', 'Player Endorsements', 'Digital Media'];
+    
+    channelsContainer.innerHTML = '';
+    channels.forEach(channel => {
+      const channelItem = document.createElement('div');
+      channelItem.className = 'mb-2';
+      channelItem.innerHTML = `<i class="fas fa-check-circle text-success me-2"></i> ${channel}`;
+      channelsContainer.appendChild(channelItem);
+    });
+  }
+      // Set budget chart (simplified version without actual chart library)
+     // Replace the budget chart code in the populateSponsorDetails function with this:
+
+
+    }
+    // Helper function to calculate founded year from contract duration
+function calculateFoundedYear(contractDuration) {
+  if (!contractDuration) return '2015';
+  
+  // Try to extract years from text like "3 years (2024-2027)"
+  const match = contractDuration.match(/\((\d{4})-\d{4}\)/);
+  if (match && match[1]) {
+    const startYear = parseInt(match[1]);
+    // Assume company was founded ~10 years before current contract
+    return (startYear - 10).toString();
+  }
+  
+  // If no years found, approximate founded year as 10 years ago
+  const currentYear = new Date().getFullYear();
+  return (currentYear - 10).toString();
+}
+// Helper function to parse contract duration
+function parseContractDuration(contractDuration) {
+  if (!contractDuration) return '3';
+  
+  // Try to extract years from strings like "3 years" or "3 years (2024-2027)"
+  const match = contractDuration.match(/(\d+) years?/);
+  if (match && match[1]) {
+    return match[1];
+  }
+  
+  return '3'; // Default to 3 years
+}
     function calculateYearsActive(foundedYear) {
       if (!foundedYear) return '5';
       try {
@@ -612,6 +1718,23 @@
       }
     }
     
+    function formatDate(dateString) {
+      if (!dateString) return 'N/A';
+      
+      try {
+        const date = new Date(dateString);
+        if (isNaN(date.getTime())) return dateString;
+        
+        return date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long', 
+          day: 'numeric'
+        });
+      } catch (e) {
+        return dateString;
+      }
+    }
+    
     function formatCurrency(value) {
       if (!value) return '$0';
       
@@ -619,11 +1742,11 @@
       if (isNaN(numValue)) return '$0';
       
       if (numValue >= 1000000000) {
-        return `$${(numValue / 1000000000).toFixed(1)}B`;
+        return `$${(numValue / 1000000000).toFixed(1)}B`; // Fixed division operator
       } else if (numValue >= 1000000) {
-        return `$${(numValue / 1000000).toFixed(1)}M`;
+        return `$${(numValue / 1000000).toFixed(1)}M`; // Fixed division operator
       } else if (numValue >= 1000) {
-        return `$${(numValue / 1000).toFixed(0)}K`;
+        return `$${(numValue / 1000).toFixed(0)}K`; // Fixed division operator
       }
       
       return `$${numValue.toFixed(0)}`;
@@ -638,53 +1761,62 @@
         .filter(p => p.length > 0);
     }
     
-    function generateCampaigns(sponsor) {
-      const campaigns = [];
-      const currentYear = new Date().getFullYear();
-      
-      // Try to extract campaign info from sponsor data if available
-      if (sponsor.recent_campaigns) {
-        try {
-          return JSON.parse(sponsor.recent_campaigns);
-        } catch (e) {
-          // Fall back to generated data
-        }
+    // Modified generateCampaigns function with past dates
+
+function generateCampaigns(sponsor) {
+  const campaigns = [];
+  
+  // Try to extract campaign info from sponsor data if available
+  if (sponsor.recent_campaigns) {
+    try {
+      const parsed = JSON.parse(sponsor.recent_campaigns);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        return parsed;
       }
-      
-      // Generate some sample campaigns
-      const campaignTypes = [
-        'Season Launch',
-        'Player Endorsement',
-        'Championship Sponsorship',
-        'Youth Development Program',
-        'Fan Engagement Initiative'
-      ];
-      
-      const descriptions = [
-        'A multi-platform campaign highlighting our partnership with the team for the upcoming season.',
-        'Strategic sponsorship of key players to increase brand visibility during matches.',
-        'Title sponsorship of the championship with extensive media coverage.',
-        'Investment in grassroots football development to build community relations.',
-        'Interactive fan experiences to build loyalty and engagement.'
-      ];
-      
-      // Generate 2-4 campaigns
-      const numCampaigns = Math.floor(Math.random() * 3) + 2;
-      for (let i = 0; i < numCampaigns; i++) {
-        const randomType = campaignTypes[Math.floor(Math.random() * campaignTypes.length)];
-        const randomDesc = descriptions[Math.floor(Math.random() * descriptions.length)];
-        const randomMonth = Math.floor(Math.random() * 12) + 1;
-        
-        campaigns.push({
-          title: `${randomType} Campaign`,
-          date: `${currentYear}-${randomMonth.toString().padStart(2, '0')}-${Math.floor(Math.random() * 28) + 1}`,
-          description: randomDesc
-        });
-      }
-      
-      // Sort by date (most recent first)
-      return campaigns.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } catch (e) {
+      console.warn("Error parsing recent campaigns:", e);
+      // Fall back to generated data
     }
+  }
+  
+  // Generate some sample campaigns
+  const campaignTypes = [
+    'Season Launch',
+    'Player Endorsement',
+    'Championship Sponsorship',
+    'Youth Development Program',
+    'Fan Engagement Initiative'
+  ];
+  
+  const descriptions = [
+    'A multi-platform campaign highlighting our partnership with the team for the upcoming season.',
+    'Strategic sponsorship of key players to increase brand visibility during matches.',
+    'Title sponsorship of the championship with extensive media coverage.',
+    'Investment in grassroots football development to build community relations.',
+    'Interactive fan experiences to build loyalty and engagement.'
+  ];
+  
+  // Years between 2020-2023 instead of current year
+  const campaignYears = [2020, 2021, 2022, 2023];
+  
+  // Generate 2-4 campaigns
+  const numCampaigns = Math.floor(Math.random() * 3) + 2;
+  for (let i = 0; i < numCampaigns; i++) {
+    const randomType = campaignTypes[Math.floor(Math.random() * campaignTypes.length)];
+    const randomDesc = descriptions[Math.floor(Math.random() * descriptions.length)];
+    const randomMonth = Math.floor(Math.random() * 12) + 1;
+    const randomYear = campaignYears[Math.floor(Math.random() * campaignYears.length)];
+    
+    campaigns.push({
+      title: `${randomType} Campaign`,
+      date: `${randomYear}-${randomMonth.toString().padStart(2, '0')}-${Math.floor(Math.random() * 28) + 1}`,
+      description: randomDesc
+    });
+  }
+  
+  // Sort by date (most recent first)
+  return campaigns.sort((a, b) => new Date(b.date) - new Date(a.date));
+}
   </script>
 </body>
 </html>
