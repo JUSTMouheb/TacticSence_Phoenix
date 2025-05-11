@@ -1,1 +1,200 @@
+<section id="players" class="players-section" data-aos="fade-up">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">
+      <h2>Discover African Talent</h2>
+      <p>Rising Stars of African Football</p>
+    </div>
 
+    <!-- Top African Players - Reduced spacing -->
+    <div class="featured-players mt-2 mb-5"> <!-- Changed mb-5 to mt-2 mb-5 -->
+      <div class="section-header text-center mb-4"> <!-- Changed mb-5 to mb-4 -->
+        <h3 class="featured-title">Top African Players</h3>
+        <p class="featured-subtitle">Top 3 African players of the last 3 years</p>
+      </div>
+  
+  <div class="featured-carousel">
+    <div class="row">
+      <!-- Victor Osimhen -->
+     <div class="col-lg-4 col-md-6 mb-4">
+  <div class="player-card">
+    <div class="player-rank-badge">1</div>
+    <div class="player-image-container">
+      <img src="assets/img/players/Victor Osimhen.jpg" 
+           alt="Victor Osimhen" 
+           class="player-image"
+           (error)="handleImageError($event)">
+    
+    </div>
+    <div class="player-info">
+            <h4 class="player-name">Victor Osimhen</h4>
+            <p class="player-position">Striker | Napoli</p>
+            <p class="player-award">2023 CAF African Player of the Year</p>
+            
+            <div class="player-stats">
+              <div class="stat-item">
+                <span class="stat-value">32</span>
+                <span class="stat-label">Matches</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">26</span>
+                <span class="stat-label">Goals</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">4</span>
+                <span class="stat-label">Assists</span>
+              </div>
+            </div>
+            
+            <a href="https://www.nytimes.com/athletic/5129345/2023/12/11/osimhen-oshoala-2023-caf-awards/" target="_blank" class="player-details-btn">View Source</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mohamed Salah -->
+    <div class="col-lg-4 col-md-6 mb-4">
+  <div class="player-card">
+    <div class="player-rank-badge">2</div>
+    <div class="player-image-container">
+      <img src="assets/img/players/mohamed salah.jpg" 
+           alt="Mohamed Salah" 
+           class="player-image"
+           (error)="handleImageError($event)">
+   
+    </div>
+    <div class="player-info">
+            <h4 class="player-name">Mohamed Salah</h4>
+            <p class="player-position">Right Winger | Liverpool</p>
+            <p class="player-award">Premier League Record Breaker</p>
+            
+            <div class="player-stats">
+              <div class="stat-item">
+                <span class="stat-value">38</span>
+                <span class="stat-label">Matches</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">15</span>
+                <span class="stat-label">Goals</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">11</span>
+                <span class="stat-label">Assists</span>
+              </div>
+            </div>
+            
+            <a href="https://www.transfermarkt.com/moves-clear-of-haaland-amp-henry-mohamed-salah-claims-incredible-premier-league-record/view/news/450558" target="_blank" class="player-details-btn">View Source</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Ademola Lookman -->
+  
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="player-card">
+    <div class="player-rank-badge">3</div>
+    <div class="player-image-container">
+      <img src="assets/img/players/Ademola Lookman.jpg" 
+           alt="Ademola Lookman" 
+           class="player-image"
+           (error)="handleImageError($event)">
+  
+    </div>
+    <div class="player-info">
+            <h4 class="player-name">Ademola Lookman</h4>
+            <p class="player-position">Forward | Atalanta</p>
+            <p class="player-award">2024 CAF African Player of the Year</p>
+            
+            <div class="player-stats">
+              <div class="stat-item">
+                <span class="stat-value">45</span>
+                <span class="stat-label">Matches</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">17</span>
+                <span class="stat-label">Goals</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">10</span>
+                <span class="stat-label">Assists</span>
+              </div>
+            </div>
+            
+            <a href="https://www.bbc.com/sport/football/articles/c2dx022kgn4o#:~:text=Nigeria's%20Ademola%20Lookman%20has%20been,and%20South%20Africa's%20Ronwen%20Williams." target="_blank" class="player-details-btn">View Source</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Player Videos Section -->
+    <div class="player-videos mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h3 class="video-section-title">Highlight Reels</h3>
+          <p class="video-section-desc">Watch our curated highlight reels of the most exciting moments from Africa's best talent.</p>
+          <div class="video-selector">
+            <div *ngFor="let video of playerVideos; let i = index" 
+                class="video-thumbnail" 
+                [ngClass]="{'active': currentVideoIndex === i}"
+                (click)="changeVideo(i)">
+              <img [src]="video.thumbnail" alt="{{video.title}}">
+              <span class="video-title">{{video.title}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-video-container">
+            <iframe [src]="getSafeUrl(playerVideos[currentVideoIndex].videoUrl)" 
+                  frameborder="0" 
+                  allowfullscreen 
+                  class="main-video"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+<hr>
+    <!-- Rising Talents Section -->
+    <div class="rising-talents">
+         <h3 class="featured-title text-center">Next Generation</h3>
+        <p class="featured-subtitle text-center mb-4">Rising African Talents</p>
+   
+      
+      <div class="talent-filters text-center mb-4">
+        <button class="filter-btn active" (click)="filterTalents('all')">All</button>
+        <button class="filter-btn" (click)="filterTalents('attackers')">Attackers</button>
+        <button class="filter-btn" (click)="filterTalents('midfielders')">Midfielders</button>
+        <button class="filter-btn" (click)="filterTalents('defenders')">Defenders</button>
+       
+      </div>
+      
+      <div class="row">
+        <div *ngFor="let talent of filteredTalents" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="talent-card">
+            <div class="talent-image">
+              <img [src]="talent.image" alt="{{talent.name}}">
+            </div>
+            <div class="talent-overlay">
+              <div class="talent-info">
+                <h5 class="talent-name">{{talent.name}}</h5>
+                <p class="talent-details">{{talent.age}} | {{talent.position}}</p>
+                <p class="talent-country">{{talent.country}}</p>
+                <div class="talent-rating">
+                  <div class="rating-label">Potential</div>
+                  <div class="rating-stars">
+                    <i *ngFor="let star of [1,2,3,4,5]" 
+                      class="bi" 
+                      [ngClass]="{'bi-star-fill': star <= talent.potential, 'bi-star': star > talent.potential}"></i>
+                  </div>
+                </div>
+                <!-- Update the Scout Report button in the Rising Talents section -->
+<button class="talent-scout-btn" (click)="downloadScoutReport(talent)">Scout Report</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
