@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "@auth0/auth0-angular": "^2.2.3",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "aos": "^2.3.4",
+    "appwrite": "^17.0.2",
     "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.11.3",
     "chart.js": "^4.4.8",

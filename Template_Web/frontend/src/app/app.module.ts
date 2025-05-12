@@ -12,6 +12,8 @@ import { ClubsComponent } from './components/sections/clubs/clubs.component';
 import { AnalyticsComponent } from './components/sections/analytics/analytics.component';
 import { ContactComponent } from './components/sections/contact/contact.component';
 import { CsvService } from './services/CsvService';
+import { LoginComponent } from './components/shared/login/login.component';
+import { SocialAuthCallbackComponent } from './components/auth/social-auth-callback/social-auth-callback.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { CsvService } from './services/CsvService';
     ClubsComponent,
     AnalyticsComponent,
     ContactComponent,
+    LoginComponent,
+    SocialAuthCallbackComponent,
     
   ],
   imports: [

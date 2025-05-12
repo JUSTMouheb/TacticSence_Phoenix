@@ -26,44 +26,44 @@
     }
 
 
-/* Enhanced button styles */
-.btn-enhanced {
-  display: inline-flex;
-  align-items: center;
-  background: linear-gradient(45deg, var(--primary-color), #d41836);
-  color: #fff;
-  font-weight: 600;
-  padding: 0;
-  border-radius: 6px;
-  overflow: hidden;
-  text-decoration: none;
-  box-shadow: 0 4px 15px rgba(238, 30, 70, 0.3);
-  transition: all 0.3s ease;
-  letter-spacing: 0.5px;
-}
+    /* Enhanced button styles */
+    .btn-enhanced {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(45deg, var(--primary-color), #d41836);
+      color: #fff;
+      font-weight: 600;
+      padding: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(238, 30, 70, 0.3);
+      transition: all 0.3s ease;
+      letter-spacing: 0.5px;
+    }
 
-.btn-enhanced:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(238, 30, 70, 0.4);
-  color: #fff;
-}
+    .btn-enhanced:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(238, 30, 70, 0.4);
+      color: #fff;
+    }
 
 .btn-enhanced:active {
   transform: translateY(1px);
-}
+    }
 
-.btn-icon-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.15);
-  padding: 14px 16px;
-}
+    .btn-icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.15);
+      padding: 14px 16px;
+    }
 
-.btn-text {
-  padding: 0 20px;
-  font-size: 14px;
-}
+    .btn-text {
+      padding: 0 20px;
+      font-size: 14px;
+    }
 
 /* Animation for icon */
 @keyframes pulse {
@@ -76,13 +76,13 @@
   animation: pulse 1s infinite;
 }
     /* Hero section styles */
-/* Hero section styles */
-.hero {
-  position: relative;
-  padding: 120px 0 60px;
-  min-height: 500px;
-  margin-top: 0;
-}
+    /* Hero section styles */
+    .hero {
+      position: relative;
+      padding: 120px 0 60px;
+      min-height: 500px;
+      margin-top: 0;
+    }
 
 
 .hero.overlay {
@@ -950,7 +950,7 @@ body {
   
   <!-- Header Fallback -->
   <div id="header-fallback" style="display:none;">
-   <header id="header" class="header d-flex align-items-center fixed-top">
+    <header id="header" class="header d-flex align-items-center fixed-top">
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <div class="site-logo">
@@ -1070,6 +1070,7 @@ body {
                   </span>
                   <div class="certification-details mt-2">
                     <small>International Media Relations Board</small>
+                    <div id="mediaRelationsId">License #: Loading...</div>
                   </div>
                 </div>
               </div>
@@ -1088,6 +1089,7 @@ body {
                   </span>
                   <div class="certification-details mt-2">
                     <small>Digital Communications Authority</small>
+                    <div id="digitalComId">License #: Loading...</div>
                   </div>
                 </div>
               </div>
@@ -1273,7 +1275,7 @@ body {
     
     if (selectedEntity && selectedEntity.id == entityId) {
       entityDetails = selectedEntity;
-    } else {
+      } else {
       console.log('Entity not found in selected entities either');
       // Try to load from CSV or use fallback
       useFallbackData(entityId);
@@ -1288,61 +1290,32 @@ body {
       populateEntityDetails(entityDetails);
     });
     // Define the function to set a random entity image
-
 function setRandomEntityImage() {
   try {
     const randomIndex = Math.floor(Math.random() * 5) + 1;
     const imgElement = document.getElementById('entityImage');
     
     if (imgElement) {
-      // Create an array of possible image paths to try in order
-      const possiblePaths = [
-        `../img/combox/combox${randomIndex}.avif`,
-        `../../assets/img/combox/combox${randomIndex}.avif`,
-        `../img/combox/combox${randomIndex}.jpg`,
-        `../../assets/img/combox/combox${randomIndex}.jpg`,
-        `../img/soccer/soccer${randomIndex}.avif`,
-        `../img/soccer/soccer${randomIndex}.jpg`
-      ];
+      console.log(`Setting image source: ../img/combox/combox${randomIndex}.avif`);
+      imgElement.src = `../img/combox/combox${randomIndex}.avif`;
       
-      // Try loading each path until one works
-      tryNextImagePath(imgElement, possiblePaths, 0);
+      // Add error handling in case the image fails to load
+      imgElement.onerror = function() {
+        console.log("Image failed to load, trying jpg format");
+        imgElement.src = `../img/combox/combox${randomIndex}.jpg`;
+        
+        // If jpg also fails, try a different path
+        imgElement.onerror = function() {
+          console.log("JPG also failed, trying alternative path");
+          imgElement.src = `../../assets/img/combox/combox${randomIndex}.avif`;
+        };
+      };
     } else {
       console.error("Could not find element with ID 'entityImage'");
     }
   } catch (e) {
     console.error("Error setting random entity image:", e);
   }
-}
-// Helper function to try loading images from different paths
-function tryNextImagePath(imgElement, paths, index) {
-  // If we've tried all paths, use a definite fallback
-  if (index >= paths.length) {
-    console.log("All image paths failed, using default fallback");
-    imgElement.src = "../../assets/images2/bg_3.jpg";
-    return;
-  }
-  
-  // Try current path
-  const currentPath = paths[index];
-  console.log(`Trying image path (${index+1}/${paths.length}): ${currentPath}`);
-  
-  // Create a new image to test loading
-  const testImg = new Image();
-  testImg.onload = function() {
-    // Image loaded successfully, use this path
-    imgElement.src = currentPath;
-    console.log(`✅ Image loaded successfully: ${currentPath}`);
-  };
-  
-  testImg.onerror = function() {
-    // Current path failed, try next one
-    console.log(`❌ Failed to load: ${currentPath}`);
-    tryNextImagePath(imgElement, paths, index + 1);
-  };
-  
-  // Start loading the image
-  testImg.src = currentPath;
 }
     // Initialize navigation functionality
     function initNavigation() {
@@ -1454,54 +1427,42 @@ populateEntityDetails(entityDetails);
     
   
 // Replace the populateEntityDetails function with this updated version
-
 function populateEntityDetails(entity) {
   if (!entity) {
     console.error("No communication box data available");
     return;
   }
   
-  console.log("Entity data received:", entity); // Add this line to debug
-  
   // Set the entity name and type
   setElementText('entityName', entity.company_name || entity.name || 'Unknown Communication Box');
   setElementText('entityType', 'Media Relations & Public Communications');
   setElementText('companyName', entity.company_name || entity.name || 'Unknown Communication Box');
   
-  // Fix for region field
-  setElementText('region', entity.region || 'West Africa');
+  // Set location information
+  setElementText('region', entity.region || 'Not specified');
   
-  // Fix for contact information - ensure phone_number is properly used
+  // Set contact information
   setElementText('contactEmail', entity.contact_email || entity.email || 'contact@example.com');
-  setElementText('phoneNumber', entity.phone_number || '+234-555-123-4567');
+  setElementText('phoneNumber', entity.phone_number || entity.phone || 'N/A');
   
-  // Fix for social media links
-  const socialMediaContainer = document.getElementById('socialMediaLinks');
-  if (socialMediaContainer && entity.social_media_links) {
+  // Set social media links
+  if (entity.social_media_links) {
     let socialLinks = '';
     const links = entity.social_media_links.split(',').map(link => link.trim());
     
-    if (links.length > 0) {
-      links.forEach(link => {
-        let platform = 'globe';
-        if (link.includes('facebook')) platform = 'facebook';
-        if (link.includes('twitter') || link.includes('x.com')) platform = 'twitter';
-        if (link.includes('instagram')) platform = 'instagram';
-        if (link.includes('linkedin')) platform = 'linkedin';
-        
-        socialLinks += `<a href="${link}" target="_blank" class="me-2"><i class="fab fa-${platform}"></i> ${formatSocialLink(link)}</a><br>`;
-      });
+    links.forEach(link => {
+      let platform = 'globe';
+      if (link.includes('facebook')) platform = 'facebook';
+      if (link.includes('twitter') || link.includes('x.com')) platform = 'twitter';
+      if (link.includes('instagram')) platform = 'instagram';
+      if (link.includes('linkedin')) platform = 'linkedin';
       
-      socialMediaContainer.innerHTML = socialLinks;
-    } else {
-      socialMediaContainer.textContent = 'No social media links provided';
-    }
-  } else if (socialMediaContainer) {
-    // Default social media if none provided in data
-    socialMediaContainer.innerHTML = `
-      <a href="https://twitter.com/globalmediacomm" target="_blank" class="me-2"><i class="fab fa-twitter"></i> Twitter</a><br>
-      <a href="https://facebook.com/globalmediacomms" target="_blank" class="me-2"><i class="fab fa-facebook"></i> Facebook</a>
-    `;
+      socialLinks += `<a href="${link}" target="_blank" class="me-2"><i class="fab fa-${platform}"></i> ${formatSocialLink(link)}</a><br>`;
+    });
+    
+    setElementHTML('socialMediaLinks', socialLinks || 'No social media links provided');
+  } else {
+    setElementText('socialMediaLinks', 'No social media links provided');
   }
   
   // Set services offered

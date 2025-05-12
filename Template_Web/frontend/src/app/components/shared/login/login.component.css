@@ -1,0 +1,436 @@
+/* Social Login Buttons */
+.btn-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.btn-google {
+  background-color: white;
+  color: #444;
+  border: 1px solid #ddd;
+}
+
+.btn-linkedin {
+  background-color: #0077b5;
+  color: white;
+}
+
+/* Divider with text */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.password-toggle-icon {
+  cursor: pointer;
+}
+
+/* Make modal animation smoother */
+.modal.fade .modal-dialog {
+  transition: transform 0.2s ease-out;
+}
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #d01a3f 0%, #ee1e46 50%, #ff3a60 100%);
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+.features-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li i {
+  font-size: 1.3rem;
+}
+
+.access-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.access-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.access-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Social login buttons */
+.btn-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.btn-google {
+  background-color: white;
+  color: #444;
+  border: 1px solid #ddd;
+}
+
+.btn-linkedin {
+  background-color: #0077b5;
+  color: white;
+}
+/* Forms Container & Animation */
+.forms-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  backface-visibility: hidden;
+}
+
+.login-panel {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.signup-panel {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.form-panel.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Button animations */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Social Login Buttons */
+.btn-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.btn-google {
+  background-color: white;
+  color: #444;
+  border: 1px solid #ddd;
+}
+
+.btn-linkedin {
+  background-color: #0077b5;
+  color: white;
+}
+
+/* Gradient background */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #d01a3f 0%, #ee1e46 50%, #ff3a60 100%);
+}
+
+/* Features list styling */
+.features-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+.features-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Divider with text */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Password toggle */
+.password-toggle-icon {
+  cursor: pointer;
+}
+
+/* Make sure we have some minimum height on mobile */
+@media (max-width: 767px) {
+  .forms-container {
+    min-height: 600px;
+  }
+}
+/* Base styles */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  overflow: hidden;
+}
+
+.z-index-high {
+  z-index: 1000;
+}
+
+/* Container styles */
+.auth-container {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 550px;
+}
+
+/* Form containers */
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Form styling */
+form {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+
+span {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  background-color: #f8f9fa;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+/* Remove background from close button */
+
+/* Make close button visible but minimal */
+.modal-content .btn-close {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 50%;
+  padding: 8px;
+  opacity: 0.9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.modal-content .btn-close:hover {
+  background-color: white;
+  opacity: 1;
+}
+button {
+  border-radius: 20px;
+  border: 1px solid #ee1e46;
+  background-color: #ee1e46;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+
+/* Social buttons */
+.social-container {
+  margin: 15px 0;
+}
+
+.social-container a {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s;
+}
+
+.social-container a:hover {
+  background-color: #f8f9fa;
+}
+
+/* Overlay container */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+/* Overlay styling */
+.overlay {
+  background: #ee1e46;
+  background: linear-gradient(135deg, #d01a3f 0%, #ee1e46 50%, #ff3a60 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #FFFFFF;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+/* Active state transformations */
+.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+/* Animation */
+@keyframes show {
+  0%, 49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  50%, 100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .auth-container {
+    min-height: 650px;
+  }
+  
+  .sign-in-container, .sign-up-container {
+    width: 100%;
+  }
+  
+  .overlay-container {
+    display: none;
+  }
+}

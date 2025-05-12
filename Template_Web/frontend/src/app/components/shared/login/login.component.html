@@ -1,0 +1,77 @@
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-index-high" data-bs-dismiss="modal" aria-label="Close"></button>
+      
+      <div class="auth-container" [ngClass]="{'right-panel-active': isSignUpMode}">
+        <!-- Sign Up Form Container -->
+      <div class="social-container">
+  <a href="#" class="social" (click)="$event.preventDefault(); signInWithFacebook()">
+    <i class="bi bi-facebook"></i>
+  </a>
+  <a href="#" class="social" (click)="$event.preventDefault(); signInWithGoogle()">
+    <i class="bi bi-google"></i>
+  </a>
+  <a href="#" class="social" (click)="$event.preventDefault(); signInWithLinkedIn()">
+    <i class="bi bi-linkedin"></i>
+  </a>
+</div>
+        
+        <!-- Sign In Form Container -->
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign In</h1>
+           <div class="social-container">
+  <a href="#" class="social" (click)="$event.preventDefault(); signInWithFacebook()">
+    <i class="bi bi-facebook"></i>
+  </a>
+  <a href="#" class="social" (click)="$event.preventDefault(); signInWithGoogle()">
+    <i class="bi bi-google"></i>
+  </a>
+  <a href="#" class="social" (click)="$event.preventDefault(); signInWithLinkedIn()">
+    <i class="bi bi-linkedin"></i>
+  </a>
+</div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" class="form-control">
+            <input [type]="showPassword ? 'text' : 'password'" placeholder="Password" class="form-control">
+            <a href="#">Forgot your password?</a>
+            <button>Sign In</button>
+          </form>
+        </div>
+        
+        <!-- Overlay Container -->
+        <div class="overlay-container">
+          <div class="overlay">
+            <!-- Left Panel (initially hidden) -->
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>To keep connected with us please login with your personal details</p>
+              <button class="ghost" (click)="toggleMode()">Sign In</button>
+            </div>
+            
+            <!-- Right Panel (initially visible) -->
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start your journey with TacticSense</p>
+              <button class="ghost" (click)="toggleMode()">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Add this to your header template where you want to show user info -->
+<ng-container *ngIf="authService.currentUser$ | async as user">
+  <div class="dropdown">
+    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      <img [src]="user.prefs?.avatar || 'assets/images/default-avatar.png'" 
+           class="rounded-circle me-1" width="25" height="25" alt="Avatar">
+      {{ user.name || user.email }}
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+    </ul>
+  </div>
+</ng-container>
