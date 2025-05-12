@@ -16,7 +16,11 @@ export class LoginComponent implements OnInit, AfterViewInit {
   isSignUpMode = false;
   loginEmail: string = '';
   loginPassword: string = '';
-  
+  // Add these properties to your component class
+signupName: string = '';
+signupPassword: string = '';
+confirmPassword: string = '';
+showSignupPassword: boolean = false;
   // Signup and verification properties
   signupStep = 1;
   signupRole = 'Player';
@@ -348,13 +352,38 @@ onRoleDocumentSelected(event: any): void {
       }
     });
   }
+
   
-  // COMPLETION AND SUCCESS
-  completeVerification(): void {
-    if (this.faceVerified) {
-      this.signupStep = 4;
-    }
+// Add these methods to your component class
+toggleSignupPasswordVisibility(): void {
+  this.showSignupPassword = !this.showSignupPassword;
+}
+
+passwordsDoNotMatch(): boolean {
+  return this.signupPassword && this.confirmPassword && 
+         this.signupPassword !== this.confirmPassword;
+}
+  
+// Update your completeVerification method to include the new fields
+completeVerification(): void {
+  // Only proceed if all validations pass
+  if (!this.faceVerified || !this.signupPassword || !this.confirmPassword || this.passwordsDoNotMatch()) {
+    return;
   }
+  
+  // Save user data and proceed
+  const userData = {
+    name: this.signupName,
+    role: this.signupRole,
+    password: this.signupPassword,
+    // Add other fields as needed
+  };
+  
+  console.log('Registration data:', userData);
+  
+  // Proceed to next step
+  this.signupStep = 4;
+}
   
   loginVerified(): void {
     // Here, handle the successful verification
@@ -401,7 +430,14 @@ onRoleDocumentSelected(event: any): void {
     this.roleDocVerified = false;
     this.selfieBase64 = null;
     this.faceVerified = false;
-    
+      this.idVerified = false;
+  this.roleDocVerified = false;
+  this.selfieBase64 = null;
+  this.faceVerified = false;
+  this.signupName = '';
+  this.signupPassword = '';
+  this.confirmPassword = '';
+  
     // Make sure webcam is stopped
     if (this.isWebcamActive) {
       this.stopWebcam();
