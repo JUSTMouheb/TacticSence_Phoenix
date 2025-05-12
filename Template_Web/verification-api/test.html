@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Document Verification Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    .test-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    button:disabled {
+      background-color: #95a5a6;
+      cursor: not-allowed;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      white-space: pre-wrap;
+    }
+    .hidden {
+      display: none;
+    }
+    .success {
+      color: #27ae60;
+      background-color: #e8f8f5;
+      border-left: 4px solid #27ae60;
+      padding-left: 15px;
+    }
+    .error {
+      color: #c0392b;
+      background-color: #fadbd8;
+      border-left: 4px solid #c0392b;
+      padding-left: 15px;
+    }
+    .neutral {
+      color: #2c3e50;
+      background-color: #eaecee;
+      border-left: 4px solid #7f8c8d;
+      padding-left: 15px;
+    }
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin: 3px;
+      background-color: #3498db;
+      color: white;
+    }
+    .details-section {
+      margin-top: 15px;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+    .image-preview {
+      max-width: 300px;
+      max-height: 200px;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>ID Document Verification Test</h1>
+  
+  <div class="test-card">
+    <h2>Test ID Verification API</h2>
+    <div class="input-group">
+      <label for="fileInput">Select an ID document image:</label>
+      <input type="file" id="fileInput" accept="image/*">
+    </div>
+    
+    <div class="input-group" id="imagePreviewContainer" style="display: none;">
+      <strong>Selected Image:</strong>
+      <div>
+        <img id="imagePreview" class="image-preview" src="" alt="Image preview">
+      </div>
+    </div>
+    
+    <button id="submitBtn">Verify Document</button>
+    
+    <div id="resultContainer" class="hidden">
+      <div id="resultStatus" class="neutral">
+        <div id="loading" class="hidden">
+          <span class="loader"></span> Processing document...
+        </div>
+        <div id="resultMessage"></div>
+      </div>
+      
+      <div id="detailsSection" class="details-section hidden">
+        <h3>Verification Details</h3>
+        <div id="detailsContent"></div>
+        
+        <div id="rawTextSection" class="details-section hidden">
+          <h4>Extracted Text</h4>
+          <div id="rawText" style="background-color: #f8f9fa; padding: 10px; border-radius: 4px; font-family: monospace;"></div>
+        </div>
+        
+        <div id="detectedElements" class="details-section hidden">
+          <h4>Detected Elements</h4>
+          <div id="elementsContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add this right before the closing </div> of the test-card element -->
+<div class="manual-override" style="margin-top: 30px; padding-top: 15px; border-top: 1px dashed #ccc;">
+  <h3>Manual Override</h3>
+  <p>If automatic verification fails, but you know this is a valid ID:</p>
+  <button id="overrideBtn" class="hidden" style="background-color: #e67e22;">
+    Override: Mark as Valid ID
+  </button>
+  <div id="overrideResult" class="hidden success" style="margin-top: 15px;"></div>
+</div>
+
+
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const fileInput = document.getElementById('fileInput');
+      const submitBtn = document.getElementById('submitBtn');
+      const resultContainer = document.getElementById('resultContainer');
+      const resultStatus = document.getElementById('resultStatus');
+      const resultMessage = document.getElementById('resultMessage');
+      const loading = document.getElementById('loading');
+      const detailsSection = document.getElementById('detailsSection');
+      const detailsContent = document.getElementById('detailsContent');
+      const rawTextSection = document.getElementById('rawTextSection');
+      const rawText = document.getElementById('rawText');
+      const detectedElements = document.getElementById('detectedElements');
+      const elementsContainer = document.getElementById('elementsContainer');
+      const imagePreview = document.getElementById('imagePreview');
+      const imagePreviewContainer = document.getElementById('imagePreviewContainer');
+      // Add this to your existing script section
+const overrideBtn = document.getElementById('overrideBtn');
+const overrideResult = document.getElementById('overrideResult');
+
+      // Show image preview when a file is selected
+      fileInput.addEventListener('change', function() {
+        const file = fileInput.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            imagePreview.src = e.target.result;
+            imagePreviewContainer.style.display = 'block';
+          };
+          reader.readAsDataURL(file);
+          
+          // Reset the previous results
+          resultContainer.classList.add('hidden');
+        } else {
+          imagePreviewContainer.style.display = 'none';
+        }
+      });
+      
+      submitBtn.addEventListener('click', function() {
+        const file = fileInput.files[0];
+        if (!file) {
+          alert('Please select a file');
+          return;
+        }
+        
+        // Show loading state
+        resultContainer.classList.remove('hidden');
+        resultStatus.className = 'neutral';
+        loading.classList.remove('hidden');
+        resultMessage.textContent = '';
+        detailsSection.classList.add('hidden');
+        rawTextSection.classList.add('hidden');
+        detectedElements.classList.add('hidden');
+        submitBtn.disabled = true;
+        
+        // Create form data
+        const formData = new FormData();
+        formData.append('document', file);
+        
+        // Send request to API
+        fetch('http://localhost:8080/api/verify/id', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => {
+          if (!response.ok) {
+            return response.text().then(text => {
+              try {
+                return JSON.parse(text);
+              } catch (e) {
+                throw new Error(`Server returned ${response.status}: ${text || 'No response body'}`);
+              }
+            });
+          }
+          return response.json();
+        })
+        // Update the data.then handler to show override button when validation fails
+.then(data => {
+  // Hide loading state
+  loading.classList.add('hidden');
+  submitBtn.disabled = false;
+  
+  // Display the result
+  resultStatus.className = data.valid ? 'success' : 'error';
+  resultMessage.innerHTML = data.valid ? 
+    `<strong>✓ Valid Document:</strong> ${data.reason || data.message || 'Document validated successfully'}` : 
+    `<strong>✗ Invalid Document:</strong> ${data.reason || data.message || 'Document validation failed'}`;
+    
+  // Show details section
+  detailsSection.classList.remove('hidden');
+  
+  // Display confidence
+  detailsContent.innerHTML = `
+    <p><strong>Confidence:</strong> ${(data.confidence * 100).toFixed(1)}%</p>
+    <p><strong>Document Type:</strong> ${data.document_type || data.id_type || 'Unknown'}</p>
+  `;
+  
+  // Show raw text if available
+  if (data.raw_text) {
+    rawTextSection.classList.remove('hidden');
+    rawText.textContent = data.raw_text;
+  }
+  
+  // Show detected elements if available
+  if (data.detected_elements && data.detected_elements.length > 0) {
+    detectedElements.classList.remove('hidden');
+    
+    elementsContainer.innerHTML = '';
+    data.detected_elements.forEach(element => {
+      const badge = document.createElement('span');
+      badge.className = 'badge';
+      badge.textContent = element;
+      elementsContainer.appendChild(badge);
+    });
+  }
+  
+  // Show override button if validation failed
+  if (!data.valid) {
+    overrideBtn.classList.remove('hidden');
+    
+    // Add event listener for override button
+    overrideBtn.onclick = function() {
+      overrideResult.innerHTML = `<strong>✓ Manual override:</strong> Document marked as valid ID`;
+      overrideResult.classList.remove('hidden');
+      resultStatus.className = 'success';
+      resultMessage.innerHTML = `<strong>✓ Valid Document (Manual):</strong> Verification overridden by user`;
+      overrideBtn.disabled = true;
+      
+      // You could also send this override to your API if needed
+    };
+  } else {
+    overrideBtn.classList.add('hidden');
+    overrideResult.classList.add('hidden');
+  }
+})
+        .catch(error => {
+          // Hide loading state
+          loading.classList.add('hidden');
+          submitBtn.disabled = false;
+          
+          // Display error
+          resultStatus.className = 'error';
+          resultMessage.innerHTML = `<strong>✗ Error:</strong> ${error.message}`;
+          
+          console.error('Fetch error details:', error);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

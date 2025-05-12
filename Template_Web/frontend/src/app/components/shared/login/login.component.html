@@ -3,41 +3,236 @@
     <div class="modal-content border-0">
       <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-index-high" data-bs-dismiss="modal" aria-label="Close"></button>
       
-      <div class="auth-container" [ngClass]="{'right-panel-active': isSignUpMode}">
-        <!-- Sign Up Form Container -->
-      <div class="social-container">
-  <a href="#" class="social" (click)="$event.preventDefault(); signInWithFacebook()">
-    <i class="bi bi-facebook"></i>
-  </a>
-  <a href="#" class="social" (click)="$event.preventDefault(); signInWithGoogle()">
-    <i class="bi bi-google"></i>
-  </a>
-  <a href="#" class="social" (click)="$event.preventDefault(); signInWithLinkedIn()">
-    <i class="bi bi-linkedin"></i>
-  </a>
-</div>
-        
-        <!-- Sign In Form Container -->
+      <div class="auth-container" [class.right-panel-active]="isSignUpMode">
+        <!-- Sign In Container -->
         <div class="form-container sign-in-container">
-          <form action="#">
+          <form>
             <h1>Sign In</h1>
-           <div class="social-container">
-  <a href="#" class="social" (click)="$event.preventDefault(); signInWithFacebook()">
-    <i class="bi bi-facebook"></i>
-  </a>
-  <a href="#" class="social" (click)="$event.preventDefault(); signInWithGoogle()">
-    <i class="bi bi-google"></i>
-  </a>
-  <a href="#" class="social" (click)="$event.preventDefault(); signInWithLinkedIn()">
-    <i class="bi bi-linkedin"></i>
-  </a>
-</div>
+            <div class="social-container">
+              <a href="#" class="social" (click)="$event.preventDefault(); signInWithFacebook()">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="social" (click)="$event.preventDefault(); signInWithGoogle()">
+                <i class="bi bi-google"></i>
+              </a>
+              <a href="#" class="social" (click)="$event.preventDefault(); signInWithLinkedIn()">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
             <span>or use your account</span>
-            <input type="email" placeholder="Email" class="form-control">
-            <input [type]="showPassword ? 'text' : 'password'" placeholder="Password" class="form-control">
-            <a href="#">Forgot your password?</a>
-            <button>Sign In</button>
+            <input type="email" [(ngModel)]="loginEmail" name="loginEmail" placeholder="Email" class="form-control">
+            <input [type]="showPassword ? 'text' : 'password'" [(ngModel)]="loginPassword" name="loginPassword" placeholder="Password" class="form-control">
+            <a href="#" (click)="$event.preventDefault(); forgotPassword()">Forgot your password?</a>
+            <button type="button" (click)="login()">Sign In</button>
           </form>
+        </div>
+        
+        <!-- Sign Up Container -->
+        <div class="form-container sign-up-container">
+          <div class="verification-flow p-3">
+            <!-- Step 1: Role Selection -->
+        <!-- Replace the problematic section (around lines 257-265) with this corrected code -->
+            <div *ngIf="signupStep === 1">
+              <h2 class="text-center mb-4">Identity Verification</h2>
+              
+              <!-- Social signup options -->
+              <div class="text-center mb-4">
+                <p class="text-muted mb-3">Quick signup with your social account</p>
+                <div class="social-container justify-content-center">
+                  <a href="#" class="social" (click)="$event.preventDefault(); signInWithFacebook()">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" class="social" (click)="$event.preventDefault(); signInWithGoogle()">
+                    <i class="bi bi-google"></i>
+                  </a>
+                  <a href="#" class="social" (click)="$event.preventDefault(); signInWithLinkedIn()">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+                <p class="text-muted my-3"><small>OR</small></p>
+              </div>
+              
+              <!-- Role selection -->
+      <!-- Role selection -->
+              <div class="form-group mb-4">
+                <label for="role" class="form-label fw-bold">Select your role:</label>
+                <select id="role" [(ngModel)]="signupRole" name="role" class="form-select form-select-lg mb-2">
+                  <option *ngFor="let role of availableRoles" [value]="role">{{ role }}</option>
+                </select>
+                <div class="form-text small">
+                  {{ getRoleDocumentDescription() }}
+                </div>
+              </div>
+              
+              <!-- Next button -->
+              <div class="d-grid mt-4">
+                <button type="button" (click)="nextStep()" class="btn btn-primary btn-lg">
+                  Next: Upload Documents
+                </button>
+              </div>
+            </div>
+            
+            <!-- Step 2: Document Verification -->
+            <div *ngIf="signupStep === 2">
+              <h2 class="text-center mb-3">Upload Documents</h2>
+              
+              <!-- CIN Document -->
+           <div class="card mb-4">
+  <div class="card-header bg-light d-flex justify-content-between align-items-center">
+    <strong>National ID Card (CIN)</strong>
+    <small class="badge bg-info">Required</small>
+  </div>
+  <div class="card-body">
+    <p class="card-text small">Upload your government-issued ID card</p>
+    <div class="d-grid mb-2">
+      <input type="file" class="d-none" id="idFile" (change)="onIdDocumentSelected($event)" accept="image/*">
+      <label for="idFile" class="btn btn-outline-primary btn-lg">
+        <i [class.bi-check-circle-fill]="idDocument" [class.bi-upload]="!idDocument" class="bi me-2"></i>
+        {{ idDocument ? 'ID Card Uploaded' : 'Upload ID Card' }}
+      </label>
+    </div>
+    
+    <!-- ID card verification status -->
+    <div *ngIf="idDocument" class="mt-3">
+      <div *ngIf="idVerificationInProgress" class="d-flex align-items-center">
+        <div class="spinner-border spinner-border-sm text-primary me-2" role="status"></div>
+        <span>Verifying ID card...</span>
+      </div>
+      <div *ngIf="!idVerificationInProgress && idVerified" class="alert alert-success py-2">
+        <i class="bi bi-check-circle-fill me-2"></i> Valid ID card
+      </div>
+      <div *ngIf="!idVerificationInProgress && !idVerified" class="alert alert-danger py-2">
+        <i class="bi bi-x-circle-fill me-2"></i> Invalid ID card
+      </div>
+    </div>
+  </div>
+</div>
+              
+              <!-- Role Document -->
+              <!-- Role Document -->
+<div class="card mb-4">
+  <div class="card-header bg-light d-flex justify-content-between align-items-center">
+    <strong>{{ getDocumentLabel() }}</strong>
+    <small class="badge bg-info">Required</small>
+  </div>
+  <div class="card-body">
+    <p class="card-text small">{{ getRoleDocumentDescription() }}</p>
+    <div class="d-grid mb-2">
+      <input type="file" class="d-none" id="roleFile" (change)="onRoleDocumentSelected($event)" accept="image/*">
+      <label for="roleFile" class="btn btn-outline-primary btn-lg">
+        <i [class.bi-check-circle-fill]="roleDocument" [class.bi-upload]="!roleDocument" class="bi me-2"></i>
+        {{ roleDocument ? 'Document Uploaded' : 'Upload Document' }}
+      </label>
+    </div>
+    
+    <!-- Role document verification status -->
+    <div *ngIf="roleDocument" class="mt-3">
+      <div *ngIf="roleDocVerificationInProgress" class="d-flex align-items-center">
+        <div class="spinner-border spinner-border-sm text-primary me-2" role="status"></div>
+        <span>Verifying document...</span>
+      </div>
+      <div *ngIf="!roleDocVerificationInProgress && roleDocVerified" class="alert alert-success py-2">
+        <i class="bi bi-check-circle-fill me-2"></i> Valid document
+      </div>
+      <div *ngIf="!roleDocVerificationInProgress && !roleDocVerified" class="alert alert-danger py-2">
+        <i class="bi bi-x-circle-fill me-2"></i> Invalid document
+      </div>
+    </div>
+  </div>
+</div>
+              
+              <!-- Navigation buttons -->
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-outline-secondary" (click)="prevStep()">
+                  <i class="bi bi-arrow-left me-2"></i> Back
+                </button>
+                <button type="button" class="btn btn-primary" 
+                        [disabled]="!idVerified || !roleDocVerified"
+                        (click)="nextStep()">
+                  Next: Face Verification <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Step 3: Face Verification -->
+            <div *ngIf="signupStep === 3">
+              <h2 class="text-center mb-3">Face Verification</h2>
+              <p class="text-center text-muted mb-4">We need to verify that your face matches the ID card</p>
+              
+              <!-- Face Verification -->
+              <div class="card mb-4">
+                <div class="card-body text-center">
+                  <!-- Webcam container -->
+                  <div class="webcam-container border rounded p-3 mb-3">
+                    <video #webcamVideo *ngIf="isWebcamActive" class="w-100 mb-3 rounded"></video>
+                    
+                    <canvas #canvas class="d-none"></canvas>
+                    
+                    <div *ngIf="!isWebcamActive && !selfieBase64" class="d-grid">
+                      <button type="button" class="btn btn-primary btn-lg" (click)="startWebcam()">
+                        <i class="bi bi-camera-fill me-2"></i> Start Camera
+                      </button>
+                    </div>
+                    
+                    <div *ngIf="isWebcamActive" class="d-flex justify-content-center gap-3 mt-3">
+                      <button type="button" class="btn btn-success" (click)="captureImage()">
+                        <i class="bi bi-camera-fill me-2"></i> Capture
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary" (click)="stopWebcam()">
+                        <i class="bi bi-x-lg me-2"></i> Cancel
+                      </button>
+                    </div>
+                    
+                    <div *ngIf="selfieBase64" class="mt-3">
+                      <img [src]="selfieBase64" alt="Selfie" class="img-fluid mb-3 border rounded" style="max-height: 240px;">
+                      <div class="d-grid">
+                        <button type="button" class="btn btn-outline-primary" (click)="startWebcam()">
+                          <i class="bi bi-arrow-repeat me-2"></i> Retake
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div *ngIf="selfieBase64 && verificationInProgress" class="alert alert-info py-3">
+                    <div class="spinner-border spinner-border-sm me-2" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    Verifying your identity...
+                  </div>
+                  
+                  <div *ngIf="selfieBase64 && !verificationInProgress" class="verification-result mt-3">
+                    <div *ngIf="faceVerified" class="alert alert-success py-3">
+                      <i class="bi bi-check-circle-fill me-2"></i> Face verification successful
+                    </div>
+                    <div *ngIf="!faceVerified && verificationAttempted" class="alert alert-danger py-3">
+                      <i class="bi bi-x-circle-fill me-2"></i> Face verification failed
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Navigation buttons -->
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-outline-secondary" (click)="prevStep()">
+                  <i class="bi bi-arrow-left me-2"></i> Back
+                </button>
+                <button type="button" class="btn btn-success" 
+                        [disabled]="!faceVerified || verificationInProgress"
+                        (click)="completeVerification()">
+                  Complete Verification <i class="bi bi-check-lg ms-2"></i>
+                </button>
+              </div>
+            </div>
+            
+          <!-- Step 4: Success -->
+<app-success-dialog 
+  *ngIf="signupStep === 4"
+  [userRole]="signupRole"
+  (continue)="loginVerified()"
+  (signIn)="toggleMode()"
+  (close)="resetSignupForm(); loginModal.hide()">
+</app-success-dialog>
+          </div>
         </div>
         
         <!-- Overlay Container -->
@@ -46,7 +241,7 @@
             <!-- Left Panel (initially hidden) -->
             <div class="overlay-panel overlay-left">
               <h1>Welcome Back!</h1>
-              <p>To keep connected with us please login with your personal details</p>
+              <p>To keep connected with us please login with your personal info</p>
               <button class="ghost" (click)="toggleMode()">Sign In</button>
             </div>
             
@@ -62,7 +257,8 @@
     </div>
   </div>
 </div>
-<!-- Add this to your header template where you want to show user info -->
+
+<!-- User profile dropdown -->
 <ng-container *ngIf="authService.currentUser$ | async as user">
   <div class="dropdown">
     <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">

@@ -14,6 +14,7 @@ import { ContactComponent } from './components/sections/contact/contact.componen
 import { CsvService } from './services/CsvService';
 import { LoginComponent } from './components/shared/login/login.component';
 import { SocialAuthCallbackComponent } from './components/auth/social-auth-callback/social-auth-callback.component';
+import { SuccessDialogComponent } from './components/shared/success-dialog/success-dialog.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SocialAuthCallbackComponent } from './components/auth/social-auth-callb
     ContactComponent,
     LoginComponent,
     SocialAuthCallbackComponent,
+    SuccessDialogComponent,
     
   ],
   imports: [

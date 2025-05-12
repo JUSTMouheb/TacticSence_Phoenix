@@ -1,0 +1,94 @@
+/* Add to login.component.css */
+.success-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background-color: white;
+}
+
+.success-dialog {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.success-icon {
+  margin-bottom: 30px;
+}
+
+.icon-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #32c16f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon-circle i {
+  color: white;
+  font-size: 60px;
+}
+
+.dialog-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #29303b;
+  margin-bottom: 10px;
+}
+
+.dialog-subtitle {
+  color: #656d78;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.role-badge .badge {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.action-buttons {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 12px 15px;
+  letter-spacing: 1px;
+}
+
+.btn-outline-danger {
+  color: #ee1e46;
+  border-color: #ee1e46;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+a.text-danger {
+  color: #ee1e46;
+  text-decoration: none;
+}
+
+a.text-danger:hover {
+  text-decoration: underline;
+}
+
+/* Fix duplicated Button styles */
+.sign-up-container button.btn-primary,
+.sign-up-container button.btn-success,
+.sign-up-container button.btn-outline-secondary {
+  border-radius: 6px;
+  padding: 8px 16px;
+  text-transform: none;
+  letter-spacing: normal;
+}
