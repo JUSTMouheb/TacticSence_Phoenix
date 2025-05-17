@@ -57,6 +57,13 @@
            class="form-control form-control-lg" 
            placeholder="Enter your full name" required>
   </div>
+  <!-- Add this after the name field in Step 1 -->
+<div class="form-group mb-4 w-100">
+  <label for="email" class="form-label fw-bold mb-2">Email Address:</label>
+  <input type="email" id="email" [(ngModel)]="signupEmail" name="email" 
+         class="form-control form-control-lg" 
+         placeholder="Enter your email address" required>
+</div>
   <!-- Role selection -->
   <div class="form-group mb-4 role-selection">
     <label for="role" class="form-label fw-bold mb-2">Select your role:</label>
@@ -249,11 +256,22 @@
     <button type="button" class="btn btn-outline-secondary" (click)="prevStep()">
       <i class="bi bi-arrow-left me-2"></i> Back
     </button>
-    <button type="button" class="btn btn-success" 
-            [disabled]="!faceVerified || verificationInProgress || !signupPassword || !confirmPassword || passwordsDoNotMatch()"
-            (click)="completeVerification()">
-      Complete Verification <i class="bi bi-check-lg ms-2"></i>
-    </button>
+   <!-- In the section with the "Complete Verification" button -->
+<button type="button" class="btn btn-success" 
+        [disabled]="!faceVerified || verificationInProgress || !signupPassword || !confirmPassword || passwordsDoNotMatch() || registrationInProgress"
+        (click)="completeVerification()">
+  <span *ngIf="!registrationInProgress">Complete Verification <i class="bi bi-check-lg ms-2"></i></span>
+  <span *ngIf="registrationInProgress">
+    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+    Creating Account...
+  </span>
+</button>
+
+<!-- Add this error message below the button -->
+<div *ngIf="registrationError" class="alert alert-danger mt-3">
+  <i class="bi bi-exclamation-circle-fill me-2"></i>
+  {{ registrationError }}
+</div>
   </div>
             </div>
             

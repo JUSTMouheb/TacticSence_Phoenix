@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
 import { LoginService } from 'src/app/services/login.service';
 import { AuthService } from 'src/app/services/auth.service';
 import { VerificationService } from 'src/app/services/verification.service';
+
 declare var bootstrap: any;
 
 @Component({
@@ -21,6 +22,10 @@ signupName: string = '';
 signupPassword: string = '';
 confirmPassword: string = '';
 showSignupPassword: boolean = false;
+// Add at the top of your login.component.ts class
+registrationInProgress = false;
+registrationError = '';
+signupEmail = ''; // If you don't already have this
   // Signup and verification properties
   signupStep = 1;
   signupRole = 'Player';
@@ -33,7 +38,9 @@ showSignupPassword: boolean = false;
   roleDocVerified = false;
   idVerificationInProgress = false;
   roleDocVerificationInProgress = false;
-  
+  // Add these missing properties
+  userName: string = '';
+  userAvatar: string | null = null;
   // Webcam references
   @ViewChild('webcamVideo') webcamVideo: ElementRef;
   @ViewChild('canvas') canvas: ElementRef;
@@ -53,7 +60,11 @@ showSignupPassword: boolean = false;
   ) {}
   
   ngOnInit(): void {
-    // Handle initialization tasks
+    const user = this.authService.getCurrentUserSync();
+    if (user) {
+      this.userName = user.name;
+      this.userAvatar = user.prefs?.avatar || null;
+    }
   }
   
   ngAfterViewInit(): void {
@@ -107,16 +118,10 @@ showSignupPassword: boolean = false;
       }
     });
   }
-  
-  logout(): void {
-    this.authService.logout().subscribe({
-      next: () => {
-        console.log('Logged out successfully');
-      },
-      error: (err) => {
-        console.error('Logout error:', err);
-      }
-    });
+    logout(): void {
+    this.authService.logout();
+    // Use window.location instead of Router
+    window.location.href = '/';
   }
   
    forgotPassword(): void {
@@ -364,64 +369,111 @@ passwordsDoNotMatch(): boolean {
          this.signupPassword !== this.confirmPassword;
 }
   
-// Update your completeVerification method to include the new fields
-completeVerification(): void {
-  // Only proceed if all validations pass
-  if (!this.faceVerified || !this.signupPassword || !this.confirmPassword || this.passwordsDoNotMatch()) {
+// Update completeVerification method
+completeVerification() {
+  // Check that we have all required fields
+  if (!this.signupName || !this.signupEmail || !this.signupPassword || this.passwordsDoNotMatch()) {
+    // Show specific error message
+    if (!this.signupEmail) {
+      this.registrationError = "Email address is required";
+    } else if (!this.signupName) {
+      this.registrationError = "Full name is required";
+    } else if (!this.signupPassword) {
+      this.registrationError = "Password is required";
+    } else if (this.passwordsDoNotMatch()) {
+      this.registrationError = "Passwords do not match";
+    }
     return;
   }
   
-  // Save user data and proceed
+  // Clear any previous errors
+  this.registrationError = '';
+
+  // Create the user data object - SIMPLIFIED without face image
   const userData = {
     name: this.signupName,
-    role: this.signupRole,
+    email: this.signupEmail,
     password: this.signupPassword,
-    // Add other fields as needed
+    role: this.signupRole
   };
   
-  console.log('Registration data:', userData);
+  // Log what we're sending
+  console.log('Sending simplified registration data:', {
+    name: userData.name,
+    email: userData.email,
+    password: '********',
+    role: userData.role
+  });
   
-  // Proceed to next step
-  this.signupStep = 4;
+  // Show loading indicator
+  this.registrationInProgress = true;
+  
+  // Call the register method
+  this.authService.register(userData).subscribe({
+    next: (response) => {
+      console.log('Registration successful:', response);
+      this.registrationInProgress = false;
+      this.nextStep(); // Go to success step
+      
+      // Store user data in localStorage
+      localStorage.setItem('userVerified', 'true');
+      localStorage.setItem('userRole', this.signupRole);
+      localStorage.setItem('userName', this.signupName);
+      localStorage.setItem('userData', JSON.stringify(response.user));
+    },
+    error: (error) => {
+      this.registrationInProgress = false;
+      this.registrationError = error.message || "Registration failed";
+      console.error('Registration error details:', error);
+    }
+  });
 }
+loginVerified(): void {
+  // Here, handle the successful verification
+  console.log('User verified with role:', this.signupRole);
   
-  loginVerified(): void {
-    // Here, handle the successful verification
-    console.log('User verified with role:', this.signupRole);
-    
-    // You could register the user here if needed
-    // this.authService.registerVerifiedUser(this.signupRole).subscribe(...)
-    
-    // Or you could set a flag in localStorage to remember the verification
-    localStorage.setItem('userVerified', 'true');
-    localStorage.setItem('userRole', this.signupRole);
-    
-    // Close the modal
-    if (this.loginModal) {
-      this.loginModal.hide();
-    }
-    
-    // Redirect user to appropriate page based on role
-    // Since you don't want to use Router, you can use window.location
-    switch(this.signupRole) {
-      case 'Player':
-        window.location.href = '/player-dashboard';
-        break;
-      case 'Agent':
-        window.location.href = '/agent-dashboard';
-        break;
-      case 'Club Staff':
-        window.location.href = '/club-dashboard';
-        break;
-      case 'Service Provider':
-        window.location.href = '/service-provider-dashboard';
-        break;
-      default:
-        window.location.href = '/home';
-    }
+  // Store user data in localStorage (this will only be available on port 4200)
+  localStorage.setItem('userVerified', 'true');
+  localStorage.setItem('userRole', this.signupRole);
+  localStorage.setItem('userName', this.signupName);
+  localStorage.setItem('userData', JSON.stringify({ 
+    name: this.signupName, 
+    email: this.signupEmail,
+    role: this.signupRole 
+  }));
+
+  // Close the modal
+  if (this.loginModal) {
+    this.loginModal.hide();
   }
   
-  resetSignupForm(): void {
+  // Create URL with query parameters to pass user data
+  const userData = encodeURIComponent(JSON.stringify({
+    name: this.signupName,
+    email: this.signupEmail,
+    role: this.signupRole
+  }));
+  
+  // Redirect with user data as query parameters
+  switch(this.signupRole) {
+    case 'Player':
+      window.location.href = `http://localhost:5000/dashboard.html?userData=${userData}`;
+      break;
+    case 'Agent':
+      window.location.href = `http://localhost:5000/agent-dashboard.html?userData=${userData}`;
+      break;
+    case 'Club Staff':
+      window.location.href = `http://localhost:5000/club-dashboard.html?userData=${userData}`;
+      break;
+    case 'Service Provider':
+      window.location.href = `http://localhost:5000/service-provider-dashboard.html?userData=${userData}`;
+      break;
+    default:
+      window.location.href = '/';
+  }
+}
+  
+  resetSignupForm() {
     this.signupStep = 1;
     this.signupRole = 'Player';
     this.idDocument = null;

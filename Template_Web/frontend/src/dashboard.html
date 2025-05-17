@@ -1,0 +1,3113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TacticSense | African Football Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- LinkedIn-style Header -->
+  <header class="linkedin-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto d-flex">
+          <img src="assets/img/Logo TacticSense Attempt.png" alt="TacticSense" class="header-logo">
+        <div class="search-box" id="search-box">
+  <i class="bi bi-search"></i>
+  <input type="text" id="search-input" placeholder="Search">
+</div>
+        </div>
+        <div class="col">
+          <nav class="main-nav">
+            <ul>
+              <li class="active"><i class="bi bi-house-door-fill"></i> <span>Home</span></li>
+              <li><i class="bi bi-people-fill"></i> <span>My Network</span></li>
+              <li><i class="bi bi-briefcase-fill"></i> <span>Jobs</span></li>
+    <!-- Find these lines in your header's nav and add the badge spans -->
+<li><i class="bi bi-chat-dots-fill"></i> <span>Messaging</span>
+  <span class="notification-badge" id="message-count" style="display:none;">1</span>
+</li>
+<li><i class="bi bi-bell-fill"></i> <span>Notifications</span>
+  <span class="notification-badge" id="notification-count">5</span>
+</li>
+           <!-- Replace the existing Me nav item with this code -->
+<!-- Replace the existing Me nav item with this code -->
+<li class="nav-item dropdown">
+  <a class="nav-link nav-user dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <img id="nav-user-avatar" src="assets/img/default-avatar.avif" class="mini-avatar">
+    <span>Me <i class="bi bi-caret-down-fill"></i></span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Account Settings</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+  </ul>
+</li>
+            </ul>
+          </nav>
+        </div>
+       
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content - LinkedIn Style -->
+  <main class="linkedin-main">
+    <div class="container">
+      <div class="row">
+        <!-- Left Sidebar - Profile summary -->
+        <div class="col-lg-3 col-md-4 mb-3">
+          <div class="card profile-card mb-3">
+            <div class="profile-background"></div>
+            <div class="profile-info text-center">
+              <img id="sidebar-avatar" src="assets/img/default-avatar.avif" class="profile-avatar">
+              <h5 id="sidebar-name" class="mt-2">Player</h5>
+              <p class="text-muted small mb-0">Professional Footballer</p>
+            </div>
+            <div class="profile-stats">
+              <div class="stat-group">
+                <span>Who's viewed your profile</span>
+                <span class="text-primary">152</span>
+              </div>
+              <div class="stat-group">
+                <span>Connections</span>
+                <span class="text-primary">412</span>
+              </div>
+              <div class="stat-group">
+                <span class="d-flex align-items-center">
+                  <i class="bi bi-person-plus-fill me-1"></i>
+                  <span>Grow your network</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sidebar menu -->
+          <div class="card sticky-card mb-3">
+            <div class="list-group list-group-flush sidebar-menu">
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-people-fill text-primary me-2"></i> My Network
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-chat-dots-fill text-primary me-2"></i> Messages
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-bookmark-fill text-primary me-2"></i> My Items
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Center - Posts Feed -->
+        <div class="col-lg-6 col-md-8 mb-3">
+          <!-- Create Post Box -->
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="d-flex">
+                <img id="post-avatar" src="assets/img/default-avatar.avif" class="post-user-avatar me-2">
+                <div class="create-post-input flex-grow-1">
+                  <div class="post-input-container">
+                    <input type="text" placeholder="Start a post" class="rounded-pill py-2 px-3">
+                  </div>
+                </div>
+              </div>
+              <div class="post-actions d-flex justify-content-between mt-2">
+                <button class="post-action-btn">
+                  <i class="bi bi-image text-primary"></i> <span>Photo</span>
+                </button>
+                <button class="post-action-btn">
+                  <i class="bi bi-play-btn-fill text-success"></i> <span>Video</span>
+                </button>
+                <button class="post-action-btn">
+                  <i class="bi bi-file-text text-warning"></i> <span>Write article</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sort by dropdown -->
+          <div class="d-flex justify-content-end mb-2">
+            <div class="sort-by small text-muted">
+              Sort by: <span class="fw-bold">Top <i class="bi bi-caret-down-fill"></i></span>
+            </div>
+          </div>
+          
+          <!-- Feed Posts -->
+          <div class="feed">
+            <!-- Post 1 -->
+            <div class="card mb-3 feed-post" id="post-1">
+              <div class="card-body p-3 pb-0">
+                <div class="post-header d-flex">
+                  <img src="https://randomuser.me/api/portraits/men/38.jpg" class="post-avatar me-2">
+                  <div class="post-meta flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h6 class="mb-0">Paul Stretford <span class="follow-badge">• Follow</span></h6>
+                      <div class="post-more-menu">
+                        <button class="btn-more">
+                          <i class="bi bi-three-dots"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <p class="text-muted mb-0 small">Triple S Sports & Entertainment (UK) • 25 years experience</p>
+                    <span class="post-time small">2h • <i class="bi bi-globe"></i></span>
+                  </div>
+                </div>
+                
+                <div class="post-content my-2">
+                  <p>Looking for promising forwards and midfielders. I have connections with Premier League clubs looking for African talent. Performance score: 53.5. Get in touch if you're interested!</p>
+                  <div class="post-stats small text-muted">
+                    <p class="mb-0"><i class="bi bi-person-check-fill me-1"></i>Clients: Sadio Mané, Mohamed Salah among 110 professionals</p>
+                  </div>
+                </div>
+                
+                <div class="post-reactions d-flex justify-content-between py-1 px-1">
+                  <div class="reactions-info">
+                    <span class="reaction-icons">
+                      <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+                    </span>
+                    <span class="reaction-count like-count-1">32</span>
+                  </div>
+                  <div class="comments-shares-info">
+                    <span class="comment-count-info me-2"><span class="comment-count-1">8</span> comments</span>
+                    <span class="shares-count-info">3 shares</span>
+                  </div>
+                </div>
+                
+                <hr class="my-1">
+                
+                <div class="post-engagement">
+                  <button class="engagement-btn like-btn" data-post="post-1">
+                    <i class="bi bi-hand-thumbs-up"></i> Like
+                  </button>
+                  <button class="engagement-btn comment-btn" data-post="post-1">
+                    <i class="bi bi-chat-text"></i> Comment
+                  </button>
+                  <button class="engagement-btn">
+                    <i class="bi bi-share"></i> Share
+                  </button>
+                </div>
+                
+                <!-- Comments Section -->
+                <div class="comments-section" id="comments-post-1" style="display:none;">
+                  <div class="comments-list pt-2">
+                    <div class="comment d-flex mb-2">
+                      <img src="https://randomuser.me/api/portraits/men/22.jpg" class="comment-avatar me-2">
+                      <div class="comment-content flex-grow-1">
+                        <div class="comment-bubble">
+                          <h6 class="mb-0 small fw-bold">Thomas Kroth</h6>
+                          <p class="mb-0 small">I have a few promising players you might be interested in.</p>
+                        </div>
+                        <div class="comment-actions small">
+                          <a href="#" class="me-2">Like</a>
+                          <a href="#" class="me-2">Reply</a>
+                          <span class="text-muted">1h</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="add-comment d-flex mt-2 pb-2">
+                    <img id="comment-avatar-1" src="assets/img/default-avatar.avif" class="comment-avatar me-2">
+                    <div class="comment-form flex-grow-1 position-relative">
+                      <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-post-1">
+                      <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="post-1">
+                        <i class="bi bi-send-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Post 2 -->
+            <div class="card mb-3 feed-post" id="post-2">
+              <div class="card-body p-3 pb-0">
+                <div class="post-header d-flex">
+                  <img src="assets/img/clubs/al-ahly.png" class="post-avatar me-2">
+                  <div class="post-meta flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h6 class="mb-0">Al Ahly SC <span class="follow-badge">• Follow</span></h6>
+                      <div class="post-more-menu">
+                        <button class="btn-more">
+                          <i class="bi bi-three-dots"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <p class="text-muted mb-0 small">Cairo, Egypt • Egyptian Premier League</p>
+                    <span class="post-time small">5h • <i class="bi bi-globe"></i></span>
+                  </div>
+                </div>
+                
+                <div class="post-content my-2">
+                  <p>Al Ahly is proud to announce a new youth development program focusing on technical skills and tactical awareness. Talent scouts will be traveling across Africa in the coming months.</p>
+                  <div class="post-image">
+                    <img src="assets/img/clubs/cairo-international.jpeg" class="img-fluid rounded" alt="Cairo International Stadium">
+                  </div>
+                  <div class="post-stats small text-muted mt-2">
+                    <p class="mb-1"><i class="bi bi-trophy-fill me-1 text-warning"></i>49 domestic titles, 10 CAF Champions League titles</p>
+                    <p class="mb-0"><i class="bi bi-geo-alt-fill me-1"></i>Home Stadium: Cairo International Stadium</p>
+                  </div>
+                </div>
+                
+                <div class="post-reactions d-flex justify-content-between py-1 px-1">
+                  <div class="reactions-info">
+                    <span class="reaction-icons">
+                      <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+                    </span>
+                    <span class="reaction-count like-count-2">74</span>
+                  </div>
+                  <div class="comments-shares-info">
+                    <span class="comment-count-info me-2"><span class="comment-count-2">12</span> comments</span>
+                    <span class="shares-count-info">8 shares</span>
+                  </div>
+                </div>
+                
+                <hr class="my-1">
+                
+                <div class="post-engagement">
+                  <button class="engagement-btn like-btn" data-post="post-2">
+                    <i class="bi bi-hand-thumbs-up"></i> Like
+                  </button>
+                  <button class="engagement-btn comment-btn" data-post="post-2">
+                    <i class="bi bi-chat-text"></i> Comment
+                  </button>
+                  <button class="engagement-btn">
+                    <i class="bi bi-share"></i> Share
+                  </button>
+                </div>
+                
+                <!-- Comments Section -->
+                <div class="comments-section" id="comments-post-2" style="display:none;">
+                  <div class="comments-list pt-2">
+                    <div class="comment d-flex mb-2">
+                      <img src="https://randomuser.me/api/portraits/men/78.jpg" class="comment-avatar me-2">
+                      <div class="comment-content flex-grow-1">
+                        <div class="comment-bubble">
+                          <h6 class="mb-0 small fw-bold">Ibrahim Nasser</h6>
+                          <p class="mb-0 small">Great initiative! When will the scouts be visiting Ghana?</p>
+                        </div>
+                        <div class="comment-actions small">
+                          <a href="#" class="me-2">Like</a>
+                          <a href="#" class="me-2">Reply</a>
+                          <span class="text-muted">3h</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="add-comment d-flex mt-2 pb-2">
+                    <img id="comment-avatar-2" src="assets/img/default-avatar.avif" class="comment-avatar me-2">
+                    <div class="comment-form flex-grow-1 position-relative">
+                      <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-post-2">
+                      <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="post-2">
+                        <i class="bi bi-send-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Post 3 -->
+            <div class="card mb-3 feed-post" id="post-3">
+              <div class="card-body p-3 pb-0">
+                <div class="post-header d-flex">
+                  <img src="https://randomuser.me/api/portraits/men/79.jpg" class="post-avatar me-2">
+                  <div class="post-meta flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h6 class="mb-0">Ahmed Moukhtar <span class="follow-badge">• Follow</span></h6>
+                      <div class="post-more-menu">
+                        <button class="btn-more">
+                          <i class="bi bi-three-dots"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <p class="text-muted mb-0 small">Scout at Al Ahly SC • 14 years experience</p>
+                    <span class="post-time small">7h • <i class="bi bi-globe"></i></span>
+                  </div>
+                </div>
+                
+                <div class="post-content my-2">
+                  <p>Looking for strikers and forwards for Al Ahly SC. We have upcoming trials next month in Cairo. Contact me if interested! Performance Score: 34.2</p>
+                  <div class="post-stats small text-muted">
+                    <p class="mb-0"><i class="bi bi-check-circle-fill me-1 text-success"></i>70 successful signings</p>
+                  </div>
+                </div>
+                
+                <div class="post-reactions d-flex justify-content-between py-1 px-1">
+                  <div class="reactions-info">
+                    <span class="reaction-icons">
+                      <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+                    </span>
+                    <span class="reaction-count like-count-3">52</span>
+                  </div>
+                  <div class="comments-shares-info">
+                    <span class="comment-count-info me-2"><span class="comment-count-3">5</span> comments</span>
+                    <span class="shares-count-info">2 shares</span>
+                  </div>
+                </div>
+                
+                <hr class="my-1">
+                
+                <div class="post-engagement">
+                  <button class="engagement-btn like-btn" data-post="post-3">
+                    <i class="bi bi-hand-thumbs-up"></i> Like
+                  </button>
+                  <button class="engagement-btn comment-btn" data-post="post-3">
+                    <i class="bi bi-chat-text"></i> Comment
+                  </button>
+                  <button class="engagement-btn">
+                    <i class="bi bi-share"></i> Share
+                  </button>
+                </div>
+                
+                <!-- Comments Section -->
+                <div class="comments-section" id="comments-post-3" style="display:none;">
+                  <div class="comments-list pt-2">
+                    <!-- Comments will be added dynamically -->
+                  </div>
+                  
+                  <div class="add-comment d-flex mt-2 pb-2">
+                    <img id="comment-avatar-3" src="assets/img/default-avatar.avif" class="comment-avatar me-2">
+                    <div class="comment-form flex-grow-1 position-relative">
+                      <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-post-3">
+                      <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="post-3">
+                        <i class="bi bi-send-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-- Post 4 - CAF -->
+<div class="card mb-3 feed-post" id="post-4">
+  <div class="card-body p-3 pb-0">
+    <div class="post-header d-flex">
+      <img src="assets/img/clubs/caf-logo.jpeg" class="post-avatar me-2">
+      <div class="post-meta flex-grow-1">
+        <div class="d-flex align-items-center justify-content-between">
+          <h6 class="mb-0">Confederation of African Football <span class="follow-badge">• Follow</span></h6>
+          <div class="post-more-menu">
+            <button class="btn-more">
+              <i class="bi bi-three-dots"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-muted mb-0 small">Official • Sports League</p>
+        <span class="post-time small">3h • <i class="bi bi-globe"></i></span>
+      </div>
+    </div>
+    
+    <div class="post-content my-2">
+      <p>🚨 ANNOUNCEMENT: The CAF Champions League final will be held at the Stade Mohammed V in Casablanca on May 29, 2025! 🏆</p>
+      <p>Who do you think will lift the trophy this year? 👇 #CAFChampionsLeague #AfricanFootball</p>
+      <div class="post-image">
+        <img src="assets/img/clubs/caf-champions.jpeg" class="img-fluid rounded" alt="CAF Champions League">
+      </div>
+    </div>
+    
+    <div class="post-reactions d-flex justify-content-between py-1 px-1">
+      <div class="reactions-info">
+        <span class="reaction-icons">
+          <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+        </span>
+        <span class="reaction-count like-count-4">128</span>
+      </div>
+      <div class="comments-shares-info">
+        <span class="comment-count-info me-2"><span class="comment-count-4">24</span> comments</span>
+        <span class="shares-count-info">47 shares</span>
+      </div>
+    </div>
+    
+    <hr class="my-1">
+    
+    <div class="post-engagement">
+      <button class="engagement-btn like-btn" data-post="post-4">
+        <i class="bi bi-hand-thumbs-up"></i> Like
+      </button>
+      <button class="engagement-btn comment-btn" data-post="post-4">
+        <i class="bi bi-chat-text"></i> Comment
+      </button>
+      <button class="engagement-btn">
+        <i class="bi bi-share"></i> Share
+      </button>
+    </div>
+    
+    <!-- Comments Section -->
+    <div class="comments-section" id="comments-post-4" style="display:none;">
+      <div class="comments-list pt-2">
+        <div class="comment d-flex mb-2">
+          <img src="https://randomuser.me/api/portraits/men/51.jpg" class="comment-avatar me-2">
+          <div class="comment-content flex-grow-1">
+            <div class="comment-bubble">
+              <h6 class="mb-0 small fw-bold">Kwame Mensah</h6>
+              <p class="mb-0 small">I predict Al Ahly will take it again this year!</p>
+            </div>
+            <div class="comment-actions small">
+              <a href="#" class="me-2">Like</a>
+              <a href="#" class="me-2">Reply</a>
+              <span class="text-muted">2h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="add-comment d-flex mt-2 pb-2">
+        <img id="comment-avatar-4" src="assets/img/default-avatar.avif" class="comment-avatar me-2">
+        <div class="comment-form flex-grow-1 position-relative">
+          <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-post-4">
+          <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="post-4">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Post 5 - AFCON -->
+<div class="card mb-3 feed-post" id="post-5">
+  <div class="card-body p-3 pb-0">
+    <div class="post-header d-flex">
+      <img src="https://randomuser.me/api/portraits/men/41.jpg" class="post-avatar me-2">
+      <div class="post-meta flex-grow-1">
+        <div class="d-flex align-items-center justify-content-between">
+          <h6 class="mb-0">Samuel Eto'o <span class="follow-badge">• Follow</span></h6>
+          <div class="post-more-menu">
+            <button class="btn-more">
+              <i class="bi bi-three-dots"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-muted mb-0 small">FECAFOOT President • Former Professional Footballer</p>
+        <span class="post-time small">8h • <i class="bi bi-globe"></i></span>
+      </div>
+    </div>
+    
+    <div class="post-content my-2">
+      <p>Excited to announce our new initiative to develop football talent across Cameroon! We're launching training centers in 10 regions with top coaches and modern facilities.</p>
+      <p>Young players will receive professional training, education, and potential pathways to European clubs. #CameroonFootball #NextGeneration</p>
+      <div class="post-image">
+        <img src="assets/img/clubs/cameroon-training.jpeg" class="img-fluid rounded" alt="Cameroon Training Center">
+      </div>
+    </div>
+    
+    <div class="post-reactions d-flex justify-content-between py-1 px-1">
+      <div class="reactions-info">
+        <span class="reaction-icons">
+          <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+        </span>
+        <span class="reaction-count like-count-5">216</span>
+      </div>
+      <div class="comments-shares-info">
+        <span class="comment-count-info me-2"><span class="comment-count-5">42</span> comments</span>
+        <span class="shares-count-info">86 shares</span>
+      </div>
+    </div>
+    
+    <hr class="my-1">
+    
+    <div class="post-engagement">
+      <button class="engagement-btn like-btn" data-post="post-5">
+        <i class="bi bi-hand-thumbs-up"></i> Like
+      </button>
+      <button class="engagement-btn comment-btn" data-post="post-5">
+        <i class="bi bi-chat-text"></i> Comment
+      </button>
+      <button class="engagement-btn">
+        <i class="bi bi-share"></i> Share
+      </button>
+    </div>
+    
+    <!-- Comments Section -->
+    <div class="comments-section" id="comments-post-5" style="display:none;">
+      <div class="comments-list pt-2">
+        <div class="comment d-flex mb-2">
+          <img src="https://randomuser.me/api/portraits/men/35.jpg" class="comment-avatar me-2">
+          <div class="comment-content flex-grow-1">
+            <div class="comment-bubble">
+              <h6 class="mb-0 small fw-bold">Didier Drogba</h6>
+              <p class="mb-0 small">Amazing initiative Samuel! Happy to support this project in any way I can.</p>
+            </div>
+            <div class="comment-actions small">
+              <a href="#" class="me-2">Like</a>
+              <a href="#" class="me-2">Reply</a>
+              <span class="text-muted">5h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="add-comment d-flex mt-2 pb-2">
+        <img id="comment-avatar-5" src="assets/img/default-avatar.avif" class="comment-avatar me-2">
+        <div class="comment-form flex-grow-1 position-relative">
+          <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-post-5">
+          <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="post-5">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Post 6 - Mamelodi Sundowns FC -->
+<div class="card mb-3 feed-post" id="post-6">
+  <div class="card-body p-3 pb-0">
+    <div class="post-header d-flex">
+      <img src="assets/img/clubs/sundowns.png" class="post-avatar me-2">
+      <div class="post-meta flex-grow-1">
+        <div class="d-flex align-items-center justify-content-between">
+          <h6 class="mb-0">Mamelodi Sundowns FC <span class="follow-badge">• Follow</span></h6>
+          <div class="post-more-menu">
+            <button class="btn-more">
+              <i class="bi bi-three-dots"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-muted mb-0 small">Pretoria, South Africa • South African Premier Division</p>
+        <span class="post-time small">1d • <i class="bi bi-globe"></i></span>
+      </div>
+    </div>
+    
+    <div class="post-content my-2">
+      <p>🚨 JOB OPENING: Youth Team Coach 🚨</p>
+      <p>Mamelodi Sundowns is looking for an experienced youth coach to join our development program. The ideal candidate should have:</p>
+      <ul>
+        <li>Minimum 5 years coaching experience</li>
+        <li>UEFA/CAF coaching license</li>
+        <li>Experience working with talented young players</li>
+        <li>Strong communication and leadership skills</li>
+      </ul>
+      <p>Apply through our website by May 30, 2025. #AfricanFootball #CoachingOpportunity</p>
+      <div class="post-image">
+        <img src="assets/img/clubs/mamelodi-stadium.jpeg" class="img-fluid rounded" alt="Mamelodi Sundowns Stadium">
+      </div>
+    </div>
+    
+    <div class="post-reactions d-flex justify-content-between py-1 px-1">
+      <div class="reactions-info">
+        <span class="reaction-icons">
+          <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+        </span>
+        <span class="reaction-count like-count-6">93</span>
+      </div>
+      <div class="comments-shares-info">
+        <span class="comment-count-info me-2"><span class="comment-count-6">14</span> comments</span>
+        <span class="shares-count-info">29 shares</span>
+      </div>
+    </div>
+    
+    <hr class="my-1">
+    
+    <div class="post-engagement">
+      <button class="engagement-btn like-btn" data-post="post-6">
+        <i class="bi bi-hand-thumbs-up"></i> Like
+      </button>
+      <button class="engagement-btn comment-btn" data-post="post-6">
+        <i class="bi bi-chat-text"></i> Comment
+      </button>
+      <button class="engagement-btn">
+        <i class="bi bi-share"></i> Share
+      </button>
+    </div>
+    
+    <!-- Comments Section -->
+    <div class="comments-section" id="comments-post-6" style="display:none;">
+      <div class="comments-list pt-2">
+        <div class="comment d-flex mb-2">
+          <img src="https://randomuser.me/api/portraits/men/88.jpg" class="comment-avatar me-2">
+          <div class="comment-content flex-grow-1">
+            <div class="comment-bubble">
+              <h6 class="mb-0 small fw-bold">Joseph Mwangi</h6>
+              <p class="mb-0 small">I'd like to apply. Will submit my application this week. I have 7 years coaching in Kenya with CAF B license.</p>
+            </div>
+            <div class="comment-actions small">
+              <a href="#" class="me-2">Like</a>
+              <a href="#" class="me-2">Reply</a>
+              <span class="text-muted">16h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="add-comment d-flex mt-2 pb-2">
+        <img id="comment-avatar-6" src="assets/img/default-avatar.avif" class="comment-avatar me-2">
+        <div class="comment-form flex-grow-1 position-relative">
+          <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-post-6">
+          <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="post-6">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Post 7 - Nigeria National Team -->
+<div class="card mb-3 feed-post" id="post-7">
+  <div class="card-body p-3 pb-0">
+    <div class="post-header d-flex">
+      <img src="assets/img/clubs/nigeria-fa.jpeg" class="post-avatar me-2">
+      <div class="post-meta flex-grow-1">
+        <div class="d-flex align-items-center justify-content-between">
+          <h6 class="mb-0">Nigeria Football Federation <span class="follow-badge">• Follow</span></h6>
+          <div class="post-more-menu">
+            <button class="btn-more">
+              <i class="bi bi-three-dots"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-muted mb-0 small">Official • National Football Association</p>
+        <span class="post-time small">4h • <i class="bi bi-globe"></i></span>
+      </div>
+    </div>
+    
+    <div class="post-content my-2">
+      <p>🇳🇬 SUPER EAGLES SQUAD ANNOUNCEMENT 🦅</p>
+      <p>Coach Finidi George has announced a 25-man squad for the upcoming World Cup qualifiers against South Africa and Benin Republic.</p>
+      <p>Notable inclusions: Victor Osimhen, Ademola Lookman, and returning captain William Troost-Ekong!</p>
+      <div class="post-image">
+        <img src="assets/img/clubs/nigeria-squad.jpeg" class="img-fluid rounded" alt="Nigeria Squad">
+      </div>
+    </div>
+    
+    <div class="post-reactions d-flex justify-content-between py-1 px-1">
+      <div class="reactions-info">
+        <span class="reaction-icons">
+          <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+        </span>
+        <span class="reaction-count like-count-7">156</span>
+      </div>
+      <div class="comments-shares-info">
+        <span class="comment-count-info me-2"><span class="comment-count-7">32</span> comments</span>
+        <span class="shares-count-info">58 shares</span>
+      </div>
+    </div>
+    
+    <hr class="my-1">
+    
+    <div class="post-engagement">
+      <button class="engagement-btn like-btn" data-post="post-7">
+        <i class="bi bi-hand-thumbs-up"></i> Like
+      </button>
+      <button class="engagement-btn comment-btn" data-post="post-7">
+        <i class="bi bi-chat-text"></i> Comment
+      </button>
+      <button class="engagement-btn">
+        <i class="bi bi-share"></i> Share
+      </button>
+    </div>
+    
+    <!-- Comments Section -->
+    <div class="comments-section" id="comments-post-7" style="display:none;">
+      <div class="comments-list pt-2">
+        <div class="comment d-flex mb-2">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="comment-avatar me-2">
+          <div class="comment-content flex-grow-1">
+            <div class="comment-bubble">
+              <h6 class="mb-0 small fw-bold">Emmanuel Okocha</h6>
+              <p class="mb-0 small">Great squad selection! Glad to see Osimhen is back in form after his injury.</p>
+            </div>
+            <div class="comment-actions small">
+              <a href="#" class="me-2">Like</a>
+              <a href="#" class="me-2">Reply</a>
+              <span class="text-muted">1h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="add-comment d-flex mt-2 pb-2">
+        <img id="comment-avatar-7" src="assets/img/default-avatar.avif" class="comment-avatar me-2">
+        <div class="comment-form flex-grow-1 position-relative">
+          <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-post-7">
+          <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="post-7">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Post 8 - African Talent Academy -->
+<div class="card mb-3 feed-post" id="post-8">
+  <div class="card-body p-3 pb-0">
+    <div class="post-header d-flex">
+      <img src="assets/img/clubs/academy-logo.jpeg" class="post-avatar me-2">
+      <div class="post-meta flex-grow-1">
+        <div class="d-flex align-items-center justify-content-between">
+          <h6 class="mb-0">African Football Talent Academy <span class="follow-badge">• Follow</span></h6>
+          <div class="post-more-menu">
+            <button class="btn-more">
+              <i class="bi bi-three-dots"></i>
+            </button>
+          </div>
+        </div>
+        <p class="text-muted mb-0 small">Accra, Ghana • Youth Development</p>
+        <span class="post-time small">1d • <i class="bi bi-globe"></i></span>
+      </div>
+    </div>
+    
+    <div class="post-content my-2">
+      <p>🌟 SUCCESS STORY: Proud to announce that five of our academy graduates have signed professional contracts this month!</p>
+      <ul>
+        <li>Ibrahim Koné (18) → AS Monaco</li>
+        <li>Kwame Addo (19) → FC Porto</li>
+        <li>Emmanuel Osei (17) → Ajax Amsterdam</li>
+        <li>Youssef Habib (19) → Olympique Marseille</li>
+        <li>David Mensah (18) → RSC Anderlecht</li>
+      </ul>
+      <p>Our program continues to develop top African talent for European clubs. Next tryout dates: June 10-15, 2025 in Accra, Lagos, and Abidjan.</p>
+      <div class="post-image">
+        <img src="assets/img/clubs/academy-graduates.jpeg" class="img-fluid rounded" alt="Academy Graduates">
+      </div>
+    </div>
+    
+    <div class="post-reactions d-flex justify-content-between py-1 px-1">
+      <div class="reactions-info">
+        <span class="reaction-icons">
+          <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+        </span>
+        <span class="reaction-count like-count-8">243</span>
+      </div>
+      <div class="comments-shares-info">
+        <span class="comment-count-info me-2"><span class="comment-count-8">47</span> comments</span>
+        <span class="shares-count-info">76 shares</span>
+      </div>
+    </div>
+    
+    <hr class="my-1">
+    
+    <div class="post-engagement">
+      <button class="engagement-btn like-btn" data-post="post-8">
+        <i class="bi bi-hand-thumbs-up"></i> Like
+      </button>
+      <button class="engagement-btn comment-btn" data-post="post-8">
+        <i class="bi bi-chat-text"></i> Comment
+      </button>
+      <button class="engagement-btn">
+        <i class="bi bi-share"></i> Share
+      </button>
+    </div>
+    
+    <!-- Comments Section -->
+    <div class="comments-section" id="comments-post-8" style="display:none;">
+      <div class="comments-list pt-2">
+        <div class="comment d-flex mb-2">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" class="comment-avatar me-2">
+          <div class="comment-content flex-grow-1">
+            <div class="comment-bubble">
+              <h6 class="mb-0 small fw-bold">Marcel Desailly</h6>
+              <p class="mb-0 small">Fantastic work! This is exactly the pathway we need for developing African talent. Very impressive results.</p>
+            </div>
+            <div class="comment-actions small">
+              <a href="#" class="me-2">Like</a>
+              <a href="#" class="me-2">Reply</a>
+              <span class="text-muted">18h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="add-comment d-flex mt-2 pb-2">
+        <img id="comment-avatar-8" src="assets/img/default-avatar.avif" class="comment-avatar me-2">
+        <div class="comment-form flex-grow-1 position-relative">
+          <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-post-8">
+          <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="post-8">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+        
+        <!-- Right Sidebar - News & Recommendations -->
+        <div class="col-lg-3 d-none d-lg-block">
+          <!-- Today's Puzzle -->
+          
+          <!-- Add to your feed -->
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="card-title mb-0">Add to your feed</h5>
+                <i class="bi bi-info-circle"></i>
+              </div>
+              
+              <!-- Recommendation 1 -->
+              <div class="recommendation-item d-flex mb-3">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" class="recommendation-img me-2">
+                <div class="recommendation-content flex-grow-1">
+                  <h6 class="mb-0">Ramzi Ayadi</h6>
+                  <p class="text-muted small mb-1">Directeur de vente et marketing</p>
+                  <button class="btn btn-outline-secondary btn-sm rounded-pill">
+                    <i class="bi bi-plus"></i> Follow
+                  </button>
+                </div>
+              </div>
+              
+              <!-- Recommendation 2 -->
+              <div class="recommendation-item d-flex mb-3">
+                <img src="assets/img/clubs/offre-emploi.avif" class="recommendation-img me-2">
+                <div class="recommendation-content flex-grow-1">
+                  <h6 class="mb-0">Offres d'Emploi En Tunisie</h6>
+                  <p class="text-muted small mb-1">Company • Staffing and Recruiting</p>
+                  <button class="btn btn-outline-secondary btn-sm rounded-pill">
+                    <i class="bi bi-plus"></i> Follow
+                  </button>
+                </div>
+              </div>
+              
+              <!-- Recommendation 3 -->
+              <div class="recommendation-item d-flex mb-3">
+                <img src="assets/img/clubs/cognifyz.jpeg" class="recommendation-img me-2">
+                <div class="recommendation-content flex-grow-1">
+                  <h6 class="mb-0">Cognifyz Technologies</h6>
+                  <p class="text-muted small mb-1">Company • IT System Data Services</p>
+                  <button class="btn btn-outline-secondary btn-sm rounded-pill">
+                    <i class="bi bi-plus"></i> Follow
+                  </button>
+                </div>
+              </div>
+              
+              <div class="text-center">
+                <a href="#" class="text-decoration-none d-flex align-items-center justify-content-center">
+                  View all recommendations
+                  <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Ad -->
+          <div class="card mb-3">
+            <div class="card-body p-2 position-relative">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="text-muted small">Ad</span>
+                <button class="btn btn-sm text-muted p-0 border-0">
+                  <i class="bi bi-three-dots"></i>
+                </button>
+              </div>
+              <div class="text-center">
+                <img src="assets/img/ad-placeholder.avif" class="img-fluid rounded">
+                <div class="my-2 text-center">
+                  <h6 class="mb-1">Grow your professional network</h6>
+                  <p class="small mb-1">Connect with scouts and clubs across Africa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search Results Overlay -->
+<div class="search-results-overlay" id="search-results">
+  <div class="search-results-container">
+    <div class="search-header">
+      <h5>Search Results</h5>
+      <button class="close-search"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="search-categories">
+      <button class="search-category active" data-category="all">All</button>
+      <button class="search-category" data-category="people">People</button>
+      <button class="search-category" data-category="clubs">Clubs</button>
+      <button class="search-category" data-category="jobs">Jobs</button>
+    </div>
+    <div class="search-results-content">
+      <!-- People Results -->
+      <div class="search-result-item" data-type="people">
+        <img src="https://randomuser.me/api/portraits/men/41.jpg" class="search-result-img">
+        <div class="search-result-info">
+          <h6>Samuel Eto'o</h6>
+          <p>Former Professional Footballer • FECAFOOT President</p>
+          <span class="result-tag">2nd</span>
+        </div>
+      </div>
+      <div class="search-result-item" data-type="people">
+        <img src="https://randomuser.me/api/portraits/men/33.jpg" class="search-result-img">
+        <div class="search-result-info">
+          <h6>Michael Essien</h6>
+          <p>Former Professional Footballer • Coach</p>
+          <span class="result-tag">3rd</span>
+        </div>
+      </div>
+      
+      <!-- Clubs Results -->
+      <div class="search-result-item" data-type="clubs">
+        <img src="assets/img/clubs/al-ahly.png" class="search-result-img">
+        <div class="search-result-info">
+          <h6>Al Ahly SC</h6>
+          <p>Professional Football Club • Cairo, Egypt</p>
+          <span class="result-tag">Company</span>
+        </div>
+      </div>
+      <div class="search-result-item" data-type="clubs">
+        <img src="assets/img/clubs/sundowns.png" class="search-result-img">
+        <div class="search-result-info">
+          <h6>Mamelodi Sundowns FC</h6>
+          <p>Professional Football Club • Pretoria, South Africa</p>
+          <span class="result-tag">Company</span>
+        </div>
+      </div>
+      
+      <!-- Jobs Results -->
+      <div class="search-result-item" data-type="jobs">
+        <img src="assets/img/clubs/sundowns.png" class="search-result-img">
+        <div class="search-result-info">
+          <h6>Youth Team Coach</h6>
+          <p>Mamelodi Sundowns FC • Pretoria, South Africa</p>
+          <span class="result-tag">Job</span>
+        </div>
+      </div>
+      <div class="search-result-item" data-type="jobs">
+        <img src="assets/img/clubs/al-ahly.png" class="search-result-img">
+        <div class="search-result-info">
+          <h6>Talent Scout</h6>
+          <p>Al Ahly SC • Cairo, Egypt</p>
+          <span class="result-tag">Job</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Messaging Overlay -->
+<div class="messaging-overlay" id="messaging-overlay">
+  <div class="messaging-header">
+    <h5>Messaging</h5>
+    <div>
+      <button class="msg-action-btn"><i class="bi bi-pencil-square"></i></button>
+      <button class="msg-action-btn close-messaging"><i class="bi bi-x-lg"></i></button>
+    </div>
+  </div>
+  <div class="messaging-search">
+    <i class="bi bi-search"></i>
+    <input type="text" placeholder="Search messages">
+  </div>
+  <div class="conversation-list">
+    <div class="conversation unread" data-conversation="1">
+      <img src="https://randomuser.me/api/portraits/men/38.jpg" class="conversation-img">
+      <div class="conversation-info">
+        <div class="conversation-name">
+          Jorge Mendes <span class="conversation-time">10:32 AM</span>
+        </div>
+        <div class="conversation-preview">I have an opportunity for you with a top club in Egypt...</div>
+      </div>
+    </div>
+    <div class="conversation" data-conversation="2">
+      <img src="assets/img/clubs/al-ahly.png" class="conversation-img">
+      <div class="conversation-info">
+        <div class="conversation-name">
+          Al Ahly Recruitment <span class="conversation-time">9:15 AM</span>
+        </div>
+        <div class="conversation-preview">Thank you for your interest in our youth program...</div>
+      </div>
+    </div>
+    <div class="conversation" data-conversation="3">
+      <img src="https://randomuser.me/api/portraits/men/41.jpg" class="conversation-img">
+      <div class="conversation-info">
+        <div class="conversation-name">
+          Samuel Eto'o <span class="conversation-time">Yesterday</span>
+        </div>
+        <div class="conversation-preview">Let's connect next week to discuss opportunities in Cameroon...</div>
+      </div>
+    </div>
+    <div class="conversation" data-conversation="4">
+      <img src="https://randomuser.me/api/portraits/men/35.jpg" class="conversation-img">
+      <div class="conversation-info">
+        <div class="conversation-name">
+          Didier Drogba <span class="conversation-time">Tuesday</span>
+        </div>
+        <div class="conversation-preview">I saw your profile and wanted to connect regarding potential opportunities...</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Conversation Detail View -->
+  <div class="conversation-detail" id="conversation-detail">
+    <div class="conversation-header">
+      <div class="d-flex align-items-center">
+        <button class="back-to-conversations"><i class="bi bi-arrow-left"></i></button>
+        <img id="conversation-detail-img" src="" class="conversation-detail-img">
+        <h6 id="conversation-detail-name" class="mb-0"></h6>
+      </div>
+      <button class="msg-action-btn"><i class="bi bi-three-dots"></i></button>
+    </div>
+    <div class="message-container" id="message-container">
+      <div class="message-date">May 17, 2025</div>
+      <!-- Messages will be loaded dynamically -->
+    </div>
+    <div class="message-input-container">
+      <button class="msg-action-btn"><i class="bi bi-emoji-smile"></i></button>
+      <input type="text" id="message-input" placeholder="Write a message...">
+      <button id="send-message" class="msg-action-btn"><i class="bi bi-send-fill"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- Notifications Overlay -->
+<div class="notifications-overlay" id="notifications-overlay">
+  <div class="notifications-header">
+    <h5>Notifications</h5>
+    <button class="close-notifications"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="notification-filters">
+    <button class="notification-filter active">All</button>
+    <button class="notification-filter">My Posts</button>
+    <button class="notification-filter">Mentions</button>
+  </div>
+  <div class="notifications-list">
+    <div class="notification-item unread">
+      <div class="notification-icon connection">
+        <i class="bi bi-person-plus-fill"></i>
+      </div>
+      <div class="notification-content">
+        <p><strong>Samuel Eto'o</strong> wants to connect with you</p>
+        <span class="notification-time">1h ago</span>
+        <div class="notification-actions">
+          <button class="btn btn-primary btn-sm">Accept</button>
+          <button class="btn btn-outline-secondary btn-sm">Ignore</button>
+        </div>
+      </div>
+    </div>
+    <div class="notification-item unread">
+      <div class="notification-icon like">
+        <i class="bi bi-hand-thumbs-up-fill"></i>
+      </div>
+      <div class="notification-content">
+        <p><strong>Paul Stretford</strong> and <strong>4 others</strong> liked your comment</p>
+        <span class="notification-time">3h ago</span>
+      </div>
+    </div>
+    <div class="notification-item unread">
+      <div class="notification-icon job">
+        <i class="bi bi-briefcase-fill"></i>
+      </div>
+      <div class="notification-content">
+        <p>New job openings at <strong>Al Ahly SC</strong> match your profile</p>
+        <span class="notification-time">5h ago</span>
+      </div>
+    </div>
+    <div class="notification-item">
+      <div class="notification-icon mention">
+        <i class="bi bi-at"></i>
+      </div>
+      <div class="notification-content">
+        <p><strong>Ahmed Moukhtar</strong> mentioned you in a comment: "@Player would be perfect for this position..."</p>
+        <span class="notification-time">Yesterday</span>
+      </div>
+    </div>
+    <div class="notification-item">
+      <div class="notification-icon comment">
+        <i class="bi bi-chat-text-fill"></i>
+      </div>
+      <div class="notification-content">
+        <p><strong>Ibrahim Nasser</strong> commented on a post you follow</p>
+        <span class="notification-time">2d ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Create Post Modal -->
+<div class="modal fade" id="createPostModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Create a post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex mb-3">
+          <img id="modal-user-avatar" src="assets/img/default-avatar.avif" class="post-avatar me-2">
+          <div>
+            <h6 id="modal-user-name" class="mb-0">Player</h6>
+            <button class="btn btn-sm btn-outline-secondary rounded-pill mt-1">
+              <i class="bi bi-globe"></i> Anyone
+            </button>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea id="post-content-input" class="form-control border-0" rows="5" placeholder="What do you want to talk about?"></textarea>
+        </div>
+        <div id="post-preview-container" class="post-preview-container d-none">
+          <div class="position-relative">
+            <img id="post-image-preview" class="img-fluid rounded" alt="Post image preview">
+            <button class="btn btn-sm btn-light position-absolute top-0 end-0 m-2 rounded-circle remove-image-btn">
+              <i class="bi bi-x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-between">
+        <div>
+          <button id="add-image-btn" class="btn btn-sm btn-outline-secondary rounded-circle">
+            <i class="bi bi-image"></i>
+          </button>
+          <input type="file" id="image-upload" hidden accept="image/*">
+        </div>
+        <button id="publish-post-btn" class="btn btn-primary rounded-pill px-3">Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <script>
+// Handle user data from URL params
+document.addEventListener('DOMContentLoaded', function() {
+  // First, check for URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const userDataParam = urlParams.get('userData');
+  
+  let userData = {};
+  let userName = 'Player';
+  
+  // Try to get user data from URL parameters
+  if (userDataParam) {
+    try {
+      userData = JSON.parse(decodeURIComponent(userDataParam));
+      userName = userData.name || 'Player';
+      
+      // Store in localStorage for future use on this domain
+      localStorage.setItem('userName', userName);
+      localStorage.setItem('userData', JSON.stringify(userData));
+      
+      console.log('User data from URL parameters:', userData);
+    } catch (e) {
+      console.error('Error parsing user data from URL:', e);
+    }
+  }
+  // Fallback to localStorage if no URL parameters
+  else {
+    userData = JSON.parse(localStorage.getItem('userData') || '{}');
+    userName = userData.name || localStorage.getItem('userName') || 'Player';
+  }
+  
+  const userAvatar = userData.avatar || localStorage.getItem('userAvatar') || 'assets/img/default-avatar.avif';
+  
+  // Update user info on all relevant places
+  document.querySelectorAll('#sidebar-name, #nav-user-name').forEach(el => {
+    if (el) el.textContent = userName;
+  });
+  
+  document.querySelectorAll('#sidebar-avatar, #nav-user-avatar, #post-avatar, [id^="comment-avatar"]').forEach(el => {
+    if (el) el.src = userAvatar;
+  });
+  
+  // Initialize like functionality
+  initLikeFunctionality();
+  
+  // Initialize comment functionality
+  initCommentFunctionality();
+  
+  // Initialize search functionality
+  initSearchFunctionality();
+  
+  // Initialize messaging functionality
+  initMessagingFunctionality();
+  
+  // Initialize notifications functionality
+  initNotificationsFunctionality();
+  
+  // Initialize post creation functionality
+  initPostCreationFunctionality();
+});
+
+// Initialize like functionality
+function initLikeFunctionality() {
+  const likeBtns = document.querySelectorAll('.like-btn');
+  
+  likeBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const postId = this.getAttribute('data-post');
+      const likeCountClass = `like-count-${postId.split('-')[1]}`;
+      const likeCountEl = document.querySelector(`.${likeCountClass}`);
+      
+      if (this.classList.contains('liked')) {
+        // Unlike
+        this.classList.remove('liked');
+        this.innerHTML = '<i class="bi bi-hand-thumbs-up"></i> Like';
+        likeCountEl.textContent = parseInt(likeCountEl.textContent) - 1;
+      } else {
+        // Like
+        this.classList.add('liked');
+        this.innerHTML = '<i class="bi bi-hand-thumbs-up-fill"></i> Like';
+        likeCountEl.textContent = parseInt(likeCountEl.textContent) + 1;
+      }
+    });
+  });
+}
+
+// Initialize comment functionality
+function initCommentFunctionality() {
+  // Show/hide comment section
+  const commentBtns = document.querySelectorAll('.comment-btn');
+  commentBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const postId = this.getAttribute('data-post');
+      const commentSection = document.getElementById(`comments-${postId}`);
+      
+      if (commentSection.style.display === 'none') {
+        commentSection.style.display = 'block';
+        document.querySelector(`#comment-input-${postId}`).focus();
+      } else {
+        commentSection.style.display = 'none';
+      }
+    });
+  });
+  
+  // Submit comment
+  const commentSubmitBtns = document.querySelectorAll('.comment-submit-btn');
+  commentSubmitBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const postId = this.getAttribute('data-post');
+      const commentInput = document.querySelector(`#comment-input-${postId}`);
+      const commentText = commentInput.value.trim();
+      
+      if (commentText) {
+        addComment(postId, commentText);
+        commentInput.value = '';
+      }
+    });
+  });
+  
+  // Allow Enter key to submit comment
+  document.querySelectorAll('[id^="comment-input-"]').forEach(input => {
+    input.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        const postId = this.id.replace('comment-input-', '');
+        const submitBtn = document.querySelector(`.comment-submit-btn[data-post="${postId}"]`);
+        if (submitBtn) submitBtn.click();
+      }
+    });
+  });
+}
+
+// Add a new comment
+function addComment(postId, text) {
+  const commentsList = document.querySelector(`#comments-${postId} .comments-list`);
+  const userName = localStorage.getItem('userName') || 'Player';
+  const userAvatar = localStorage.getItem('userAvatar') || 'assets/img/default-avatar.avif';
+  
+  // Create new comment element
+  const comment = document.createElement('div');
+  comment.className = 'd-flex mb-2 comment';
+  comment.innerHTML = `
+    <img src="${userAvatar}" class="comment-avatar me-2">
+    <div class="comment-content flex-grow-1">
+      <div class="comment-bubble">
+        <h6 class="mb-0 small fw-bold">${userName}</h6>
+        <p class="mb-0 small">${text}</p>
+      </div>
+      <div class="comment-actions small">
+        <a href="#" class="me-2">Like</a>
+        <a href="#" class="me-2">Reply</a>
+        <span class="text-muted">Just now</span>
+      </div>
+    </div>
+  `;
+  
+  // Add to comments list
+  commentsList.appendChild(comment);
+  
+  // Update comment count
+  const countClass = `comment-count-${postId.split('-')[1]}`;
+  const commentCountEl = document.querySelector(`.${countClass}`);
+  commentCountEl.textContent = parseInt(commentCountEl.textContent) + 1;
+}
+
+function logout() {
+  localStorage.removeItem('token');
+  localStorage.removeItem('userRole');
+  localStorage.removeItem('userName');
+  localStorage.removeItem('userData');
+  localStorage.removeItem('userAvatar');
+  
+  // Redirect to localhost:4200/#home
+  window.location.href = 'http://localhost:4200/#home';
+}
+
+// Global variables for interactive elements
+let selectedImageFile = null;
+
+// Initialize search functionality
+function initSearchFunctionality() {
+  const searchBox = document.querySelector('.search-box');
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const closeSearch = document.querySelector('.close-search');
+  const searchCategories = document.querySelectorAll('.search-category');
+  const searchResultItems = document.querySelectorAll('.search-result-item');
+  
+  if (searchBox && searchResults) {
+    // Show search results overlay when clicking on search box
+    searchBox.addEventListener('click', function(e) {
+      searchResults.classList.add('show');
+      setTimeout(() => {
+        if (searchInput) searchInput.focus();
+      }, 100);
+      e.stopPropagation();
+    });
+    
+    // Close search results when clicking close button
+    if (closeSearch) {
+      closeSearch.addEventListener('click', function() {
+        searchResults.classList.remove('show');
+      });
+    }
+    
+    // Close search results when clicking outside
+    document.addEventListener('click', function(e) {
+      if (searchResults.classList.contains('show') && 
+          !searchResults.contains(e.target) && 
+          !searchBox.contains(e.target)) {
+        searchResults.classList.remove('show');
+      }
+    });
+    
+    // Filter search results by category
+    if (searchCategories) {
+      searchCategories.forEach(category => {
+        category.addEventListener('click', function() {
+          // Update active category
+          searchCategories.forEach(cat => cat.classList.remove('active'));
+          this.classList.add('active');
+          
+          const selectedCategory = this.getAttribute('data-category');
+          
+          // Filter results
+          searchResultItems.forEach(item => {
+            const itemType = item.getAttribute('data-type');
+            if (selectedCategory === 'all' || selectedCategory === itemType) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
+    
+    // Handle search input
+    if (searchInput) {
+      searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        
+        // Simple search filtering
+        searchResultItems.forEach(item => {
+          const itemText = item.textContent.toLowerCase();
+          if (searchTerm === '' || itemText.includes(searchTerm)) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    }
+    
+    // Make search results clickable
+    searchResultItems.forEach(item => {
+      item.addEventListener('click', function() {
+        // Simply close search for now
+        searchResults.classList.remove('show');
+        
+        // Simulate adding a new connection notification
+        if (this.getAttribute('data-type') === 'people') {
+          const name = this.querySelector('h6').textContent;
+          setTimeout(() => {
+            updateNotificationCount(1);
+            createConnectionNotification(name);
+          }, 5000); // After 5 seconds
+        }
+      });
+    });
+  }
+}
+
+// Initialize messaging functionality
+function initMessagingFunctionality() {
+  const messagingIcon = document.querySelector('li:has(.bi-chat-dots-fill)');
+  const messagingOverlay = document.getElementById('messaging-overlay');
+  const closeMessaging = document.querySelector('.close-messaging');
+  const conversations = document.querySelectorAll('.conversation');
+  const conversationDetail = document.getElementById('conversation-detail');
+  const backToConversations = document.querySelector('.back-to-conversations');
+  const conversationDetailName = document.getElementById('conversation-detail-name');
+  const conversationDetailImg = document.getElementById('conversation-detail-img');
+  const messageInput = document.getElementById('message-input');
+  const sendMessage = document.getElementById('send-message');
+  const messageContainer = document.getElementById('message-container');
+  const messagingHeader = document.querySelector('.messaging-header');
+  
+  if (messagingIcon && messagingOverlay) {
+    // Show messaging overlay when clicking on messaging icon
+    messagingIcon.addEventListener('click', function(e) {
+      messagingOverlay.classList.add('show');
+      e.stopPropagation();
+      
+      // Reduce message count when opening messages
+      updateMessageCount(-1);
+    });
+    
+    // Toggle messaging overlay when clicking header
+    if (messagingHeader) {
+      messagingHeader.addEventListener('click', function(e) {
+        if (e.target === this || e.target.closest('h5')) {
+          if (messagingOverlay.classList.contains('show')) {
+            messagingOverlay.classList.remove('show');
+          } else {
+            messagingOverlay.classList.add('show');
+          }
+        }
+      });
+    }
+    
+    // Close messaging overlay when clicking close button
+    if (closeMessaging) {
+      closeMessaging.addEventListener('click', function() {
+        messagingOverlay.classList.remove('show');
+        // Reset to conversation list view
+        if (conversationDetail) {
+          conversationDetail.classList.remove('show');
+        }
+      });
+    }
+    
+    // Show conversation detail when clicking on a conversation
+    if (conversations) {
+      conversations.forEach(conversation => {
+        conversation.addEventListener('click', function() {
+          const conversationId = this.getAttribute('data-conversation');
+          const conversationName = this.querySelector('.conversation-name').textContent.split(' ')[0];
+          const conversationImg = this.querySelector('.conversation-img').src;
+          
+          // Mark as read
+          this.classList.remove('unread');
+          
+          // Update detail view
+          if (conversationDetail) {
+            conversationDetail.classList.add('show');
+            
+            if (conversationDetailName) {
+              conversationDetailName.textContent = conversationName;
+            }
+            
+            if (conversationDetailImg) {
+              conversationDetailImg.src = conversationImg;
+            }
+            
+            // Different message history based on conversation
+            loadConversationHistory(conversationId);
+          }
+        });
+      });
+    }
+    
+    // Back to conversation list
+    if (backToConversations) {
+      backToConversations.addEventListener('click', function() {
+        if (conversationDetail) {
+          conversationDetail.classList.remove('show');
+        }
+      });
+    }
+    
+    // Send message
+    if (sendMessage && messageInput) {
+      sendMessage.addEventListener('click', function() {
+        sendNewMessage();
+      });
+      
+      messageInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          sendNewMessage();
+        }
+      });
+    }
+  }
+  
+  // Send a new message
+  function sendNewMessage() {
+    const messageText = messageInput.value.trim();
+    
+    if (messageText && messageContainer) {
+      // Create new message element
+      const messageEl = document.createElement('div');
+      messageEl.className = 'message sent';
+      messageEl.innerHTML = `
+        <div class="message-content">
+          <p>${messageText}</p>
+        </div>
+        <div class="message-time">${formatTime(new Date())}</div>
+      `;
+      
+      // Add to message container
+      messageContainer.appendChild(messageEl);
+      
+      // Clear input
+      messageInput.value = '';
+      
+      // Scroll to bottom
+      messageContainer.scrollTop = messageContainer.scrollHeight;
+      
+      // Simulate reply after delay
+      setTimeout(() => {
+        simulateMessageReply();
+      }, 10000); // 10 seconds
+    }
+  }
+  
+  // Simulate a reply
+  function simulateMessageReply() {
+    const replies = [
+      "Great to hear from you! Let's connect soon to discuss further.",
+      "Thanks for your message. I'll look into this opportunity and get back to you.",
+      "I appreciate your interest. Would you be available for a call tomorrow?",
+      "Perfect timing! I was just about to reach out to you about this.",
+      "Let me check with the technical team and I'll update you shortly."
+    ];
+    
+    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+    
+    // Create reply message
+    const replyEl = document.createElement('div');
+    replyEl.className = 'message received';
+    replyEl.innerHTML = `
+      <div class="message-content">
+        <p>${randomReply}</p>
+      </div>
+      <div class="message-time">${formatTime(new Date())}</div>
+    `;
+    
+    // Add to message container
+    if (messageContainer) {
+      messageContainer.appendChild(replyEl);
+      
+      // Scroll to bottom
+      messageContainer.scrollTop = messageContainer.scrollHeight;
+      
+      // Increment message count if messaging overlay is not visible
+      if (!messagingOverlay.classList.contains('show')) {
+        updateMessageCount(1);
+      }
+    }
+  }
+  
+  // Load conversation history based on ID
+  function loadConversationHistory(conversationId) {
+    // Clear existing messages
+    if (messageContainer) {
+      messageContainer.innerHTML = '<div class="message-date">May 17, 2025</div>';
+      
+      // Different message history for each conversation
+      let messages = [];
+      
+      switch(conversationId) {
+        case '1': // Jorge Mendes
+          messages = [
+            {type: 'received', text: "Hello! I've been reviewing your profile and performance stats. Very impressive!", time: "10:32 AM"},
+            {type: 'received', text: "I have an opportunity for you with a top club in Egypt. Would you be interested in discussing this further?", time: "10:33 AM"},
+            {type: 'sent', text: "Thank you for reaching out! Yes, I would definitely be interested in learning more about this opportunity.", time: "10:45 AM"}
+          ];
+          break;
+        case '2': // Al Ahly Recruitment
+          messages = [
+            {type: 'received', text: "Thank you for your interest in our youth program. We were impressed by your technical abilities.", time: "9:15 AM"},
+            {type: 'received', text: "We have a trial session next month in Cairo. Would you be able to attend?", time: "9:16 AM"},
+            {type: 'sent', text: "Thank you for considering me. I would be available for the trials next month.", time: "9:30 AM"}
+          ];
+          break;
+        case '3': // Samuel Eto'o
+          messages = [
+            {type: 'received', text: "Hi there! I've been following your progress. Your performance metrics are quite impressive.", time: "Yesterday, 3:22 PM"},
+            {type: 'received', text: "Let's connect next week to discuss opportunities in Cameroon. We're launching a new development program.", time: "Yesterday, 3:25 PM"},
+            {type: 'sent', text: "Thank you Mr. Eto'o! It would be an honor to speak with you about opportunities in Cameroon.", time: "Yesterday, 4:10 PM"}
+          ];
+          break;
+        case '4': // Didier Drogba
+          messages = [
+            {type: 'received', text: "I saw your profile and wanted to connect regarding potential opportunities with my foundation.", time: "Tuesday, 11:45 AM"},
+            {type: 'sent', text: "Hello Mr. Drogba! Thank you for reaching out. I'm a big admirer of your work both on and off the pitch.", time: "Tuesday, 12:30 PM"},
+            {type: 'received', text: "Great to connect. We're organizing a charity match in Abidjan next month. Would you be interested in participating?", time: "Tuesday, 2:15 PM"},
+            {type: 'sent', text: "That sounds like a wonderful opportunity. I would be honored to participate!", time: "Tuesday, 3:00 PM"}
+          ];
+          break;
+      }
+      
+      // Add messages to container
+      messages.forEach(message => {
+        const messageEl = document.createElement('div');
+        messageEl.className = `message ${message.type}`;
+        messageEl.innerHTML = `
+          <div class="message-content">
+            <p>${message.text}</p>
+          </div>
+          <div class="message-time">${message.time}</div>
+        `;
+        messageContainer.appendChild(messageEl);
+      });
+      
+      // Scroll to bottom
+      messageContainer.scrollTop = messageContainer.scrollHeight;
+    }
+  }
+}
+
+// Format time for messages
+function formatTime(date) {
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  
+  hours = hours % 12;
+  hours = hours ? hours : 12; // '0' should be '12'
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  
+  return hours + ':' + minutes + ' ' + ampm;
+}
+
+// Initialize notifications functionality
+function initNotificationsFunctionality() {
+  const notificationsIcon = document.querySelector('li:has(.bi-bell-fill)');
+  const notificationsOverlay = document.getElementById('notifications-overlay');
+  const closeNotifications = document.querySelector('.close-notifications');
+  const notificationFilters = document.querySelectorAll('.notification-filter');
+  const notificationItems = document.querySelectorAll('.notification-item');
+  const notificationActions = document.querySelectorAll('.notification-actions button');
+  
+  if (notificationsIcon && notificationsOverlay) {
+    // Show notifications overlay when clicking on notifications icon
+    notificationsIcon.addEventListener('click', function(e) {
+      notificationsOverlay.classList.add('show');
+      e.stopPropagation();
+      
+      // Mark all as read
+      notificationItems.forEach(item => {
+        item.classList.remove('unread');
+      });
+      
+      // Reset notification count
+      updateNotificationCount(-5); // Reset the count
+    });
+    
+    // Close notifications overlay when clicking close button
+    if (closeNotifications) {
+      closeNotifications.addEventListener('click', function() {
+        notificationsOverlay.classList.remove('show');
+      });
+    }
+    
+    // Filter notifications
+    if (notificationFilters) {
+      notificationFilters.forEach(filter => {
+        filter.addEventListener('click', function() {
+          // Update active filter
+          notificationFilters.forEach(f => f.classList.remove('active'));
+          this.classList.add('active');
+          
+          const filterType = this.textContent.trim().toLowerCase();
+          
+          // Filter notifications (simple implementation)
+          notificationItems.forEach(item => {
+            // For demonstration, just show all notifications for 'All' filter
+            // and hide some randomly for other filters
+            if (filterType === 'all') {
+              item.style.display = 'flex';
+            } else if (filterType === 'my posts' && item.querySelector('.notification-content').textContent.includes('your post')) {
+              item.style.display = 'flex';
+            } else if (filterType === 'mentions' && item.querySelector('.notification-content').textContent.includes('@')) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
+    
+    // Handle notification action buttons (accept/ignore)
+    if (notificationActions) {
+      notificationActions.forEach(button => {
+        button.addEventListener('click', function() {
+          const notificationItem = this.closest('.notification-item');
+          
+          if (notificationItem) {
+            // For accept button, change text to "Request accepted"
+            if (this.textContent.trim() === 'Accept') {
+              const actions = notificationItem.querySelector('.notification-actions');
+              actions.innerHTML = '<span class="text-success">Request accepted</span>';
+              
+              // Create a new notification after acceptance
+              setTimeout(() => {
+                const name = notificationItem.querySelector('strong').textContent;
+                createAcceptedNotification(name);
+              }, 2000);
+            }
+            // For ignore, just remove the notification
+            else if (this.textContent.trim() === 'Ignore') {
+              notificationItem.style.display = 'none';
+            }
+          }
+        });
+      });
+    }
+    
+    // Close notifications when clicking outside
+    document.addEventListener('click', function(e) {
+      if (notificationsOverlay.classList.contains('show') && 
+          !notificationsOverlay.contains(e.target) && 
+          !notificationsIcon.contains(e.target)) {
+        notificationsOverlay.classList.remove('show');
+      }
+    });
+  }
+}
+
+// Update notification count
+function updateNotificationCount(change) {
+  const notificationCount = document.getElementById('notification-count');
+  
+  if (notificationCount && change !== 0) {
+    let count = parseInt(notificationCount.textContent) || 0;
+    count += change;
+    
+    // Don't go below 0
+    count = Math.max(0, count);
+    
+    notificationCount.textContent = count;
+    
+    // Show/hide based on count
+    if (count > 0) {
+      notificationCount.style.display = 'inline-block';
+    } else {
+      notificationCount.style.display = 'none';
+    }
+  }
+}
+
+// Update message count
+function updateMessageCount(change) {
+  const messageCount = document.getElementById('message-count');
+  
+  if (messageCount && change !== 0) {
+    let count = parseInt(messageCount.textContent) || 0;
+    count += change;
+    
+    // Don't go below 0
+    count = Math.max(0, count);
+    
+    messageCount.textContent = count;
+    
+    // Show/hide based on count
+    if (count > 0) {
+      messageCount.style.display = 'inline-block';
+    } else {
+      messageCount.style.display = 'none';
+    }
+  }
+}
+
+// Create a new notification for connection acceptance
+function createAcceptedNotification(name) {
+  updateNotificationCount(1);
+  const notificationsList = document.querySelector('.notifications-list');
+  if (notificationsList) {
+    const notificationElement = document.createElement('div');
+    notificationElement.className = 'notification-item unread';
+    notificationElement.innerHTML = `
+      <div class="notification-icon connection">
+        <i class="bi bi-check-circle-fill"></i>
+      </div>
+      <div class="notification-content">
+        <p>You are now connected with <strong>${name}</strong></p>
+        <span class="notification-time">Just now</span>
+      </div>
+    `;
+    notificationsList.prepend(notificationElement);
+  }
+}
+
+// Create a new notification for connection request
+function createConnectionNotification(name) {
+  updateNotificationCount(1);
+  const notificationsList = document.querySelector('.notifications-list');
+  if (notificationsList) {
+    const notificationElement = document.createElement('div');
+    notificationElement.className = 'notification-item unread';
+    notificationElement.innerHTML = `
+      <div class="notification-icon connection">
+        <i class="bi bi-person-plus-fill"></i>
+      </div>
+      <div class="notification-content">
+        <p><strong>${name}</strong> wants to connect with you</p>
+        <span class="notification-time">Just now</span>
+        <div class="notification-actions">
+          <button class="btn btn-primary btn-sm">Accept</button>
+          <button class="btn btn-outline-secondary btn-sm">Ignore</button>
+        </div>
+      </div>
+    `;
+    
+    // Add event listeners to the buttons
+    notificationElement.querySelectorAll('.notification-actions button').forEach(button => {
+      button.addEventListener('click', function() {
+        if (this.textContent.trim() === 'Accept') {
+          const actions = notificationElement.querySelector('.notification-actions');
+          actions.innerHTML = '<span class="text-success">Request accepted</span>';
+          
+          // Create a new notification after acceptance
+          setTimeout(() => {
+            createAcceptedNotification(name);
+          }, 2000);
+        } else if (this.textContent.trim() === 'Ignore') {
+          // Remove this notification
+          notificationElement.style.display = 'none';
+          // Optionally, remove completely after fade
+          setTimeout(() => {
+            notificationElement.remove();
+          }, 300);
+        }
+      });
+    });
+    
+    // Add the notification to the list (at the top)
+    notificationsList.prepend(notificationElement);
+  }
+}
+
+// Initialize post creation functionality
+function initPostCreationFunctionality() {
+  const createPostInput = document.querySelector('.post-input-container input');
+  const createPostModal = document.getElementById('createPostModal');
+  const addImageBtn = document.getElementById('add-image-btn');
+  const imageUpload = document.getElementById('image-upload');
+  const postPreviewContainer = document.getElementById('post-preview-container');
+  const postImagePreview = document.getElementById('post-image-preview');
+  const removeImageBtn = document.querySelector('.remove-image-btn');
+  const publishPostBtn = document.getElementById('publish-post-btn');
+  const modalUserAvatar = document.getElementById('modal-user-avatar');
+  const modalUserName = document.getElementById('modal-user-name');
+  const postContentInput = document.getElementById('post-content-input');
+  const feed = document.querySelector('.feed');
+  
+  // Get user data for the modal
+  const userName = localStorage.getItem('userName') || 'Player';
+  const userAvatar = localStorage.getItem('userAvatar') || 'assets/img/default-avatar.avif';
+  
+  if (modalUserAvatar) modalUserAvatar.src = userAvatar;
+  if (modalUserName) modalUserName.textContent = userName;
+  
+  // Show create post modal when clicking on post input
+  if (createPostInput && createPostModal) {
+    createPostInput.addEventListener('click', function() {
+      // Using Bootstrap modal
+      const bsModal = new bootstrap.Modal(createPostModal);
+      bsModal.show();
+    });
+  }
+  
+  // Handle image upload
+  if (addImageBtn && imageUpload) {
+    addImageBtn.addEventListener('click', function() {
+      imageUpload.click();
+    });
+    
+    imageUpload.addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+        selectedImageFile = this.files[0];
+        const reader = new FileReader();
+        
+        reader.onload = function(e) {
+          if (postImagePreview) {
+            postImagePreview.src = e.target.result;
+          }
+          if (postPreviewContainer) {
+            postPreviewContainer.classList.remove('d-none');
+          }
+        };
+        
+        reader.readAsDataURL(this.files[0]);
+      }
+    });
+  }
+  
+  // Remove image
+  if (removeImageBtn) {
+    removeImageBtn.addEventListener('click', function() {
+      if (postPreviewContainer) {
+        postPreviewContainer.classList.add('d-none');
+      }
+      if (imageUpload) {
+        imageUpload.value = '';
+      }
+      selectedImageFile = null;
+    });
+  }
+  
+  // Publish post
+  if (publishPostBtn && postContentInput) {
+    publishPostBtn.addEventListener('click', function() {
+      const postContent = postContentInput.value.trim();
+      
+      if (postContent || selectedImageFile) {
+        // Create new post
+        createNewPost(postContent, selectedImageFile ? URL.createObjectURL(selectedImageFile) : null);
+        
+        // Close modal and reset form
+        if (createPostModal) {
+          const bsModal = bootstrap.Modal.getInstance(createPostModal);
+          if (bsModal) bsModal.hide();
+        }
+        
+        // Reset form
+        postContentInput.value = '';
+        if (postPreviewContainer) {
+          postPreviewContainer.classList.add('d-none');
+        }
+        selectedImageFile = null;
+        
+        // Create notification for new post
+        setTimeout(() => {
+          createPostNotification();
+        }, 5000);
+      }
+    });
+  }
+  
+  // Function to create a new post
+  function createNewPost(content, imageUrl) {
+    if (feed) {
+      // Generate a new post ID
+      const postId = `post-${Date.now()}`;
+      const postCount = document.querySelectorAll('.feed-post').length + 1;
+      
+      // Create post element
+      const postElement = document.createElement('div');
+      postElement.className = 'card mb-3 feed-post';
+      postElement.id = postId;
+      
+      // HTML for the post
+      let postHTML = `
+        <div class="card-body p-3 pb-0">
+          <div class="post-header d-flex">
+            <img src="${userAvatar}" class="post-avatar me-2">
+            <div class="post-meta flex-grow-1">
+              <div class="d-flex align-items-center justify-content-between">
+                <h6 class="mb-0">${userName} <span class="text-primary small">• You</span></h6>
+                <div class="post-more-menu">
+                  <button class="btn-more">
+                    <i class="bi bi-three-dots"></i>
+                  </button>
+                </div>
+              </div>
+              <p class="text-muted mb-0 small">Professional Footballer</p>
+              <span class="post-time small">Just now • <i class="bi bi-globe"></i></span>
+            </div>
+          </div>
+          
+          <div class="post-content my-2">
+            <p>${content.replace(/\n/g, '<br>')}</p>`;
+      
+      // Add image if provided
+      if (imageUrl) {
+        postHTML += `
+            <div class="post-image">
+              <img src="${imageUrl}" class="img-fluid rounded" alt="Posted image">
+            </div>`;
+      }
+      
+      // Complete post HTML
+      postHTML += `
+          </div>
+          
+          <div class="post-reactions d-flex justify-content-between py-1 px-1">
+            <div class="reactions-info">
+              <span class="reaction-icons">
+                <i class="bi bi-hand-thumbs-up-fill text-primary"></i>
+              </span>
+              <span class="reaction-count like-count-${postCount}">0</span>
+            </div>
+            <div class="comments-shares-info">
+              <span class="comment-count-info me-2"><span class="comment-count-${postCount}">0</span> comments</span>
+              <span class="shares-count-info">0 shares</span>
+            </div>
+          </div>
+          
+          <hr class="my-1">
+          
+          <div class="post-engagement">
+            <button class="engagement-btn like-btn" data-post="${postId}">
+              <i class="bi bi-hand-thumbs-up"></i> Like
+            </button>
+            <button class="engagement-btn comment-btn" data-post="${postId}">
+              <i class="bi bi-chat-text"></i> Comment
+            </button>
+            <button class="engagement-btn">
+              <i class="bi bi-share"></i> Share
+            </button>
+          </div>
+          
+          <!-- Comments Section -->
+          <div class="comments-section" id="comments-${postId}" style="display:none;">
+            <div class="comments-list pt-2">
+              <!-- Comments will be added dynamically -->
+            </div>
+            
+            <div class="add-comment d-flex mt-2 pb-2">
+              <img src="${userAvatar}" class="comment-avatar me-2">
+              <div class="comment-form flex-grow-1 position-relative">
+                <input type="text" class="form-control rounded-pill" placeholder="Add a comment..." id="comment-input-${postId}">
+                <button class="comment-submit-btn position-absolute end-0 top-50 translate-middle-y me-2" data-post="${postId}">
+                  <i class="bi bi-send-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      // Set the HTML and insert at the top of the feed
+      postElement.innerHTML = postHTML;
+      feed.insertBefore(postElement, feed.firstChild);
+      
+      // Add event listeners to the new post
+      const likeBtn = postElement.querySelector('.like-btn');
+      if (likeBtn) {
+        likeBtn.addEventListener('click', function() {
+          const postId = this.getAttribute('data-post');
+          const likeCountEl = postElement.querySelector(`.reaction-count`);
+          
+          if (this.classList.contains('liked')) {
+            // Unlike
+            this.classList.remove('liked');
+            this.innerHTML = '<i class="bi bi-hand-thumbs-up"></i> Like';
+            likeCountEl.textContent = parseInt(likeCountEl.textContent) - 1;
+          } else {
+            // Like
+            this.classList.add('liked');
+            this.innerHTML = '<i class="bi bi-hand-thumbs-up-fill"></i> Like';
+            likeCountEl.textContent = parseInt(likeCountEl.textContent) + 1;
+          }
+        });
+      }
+      
+      // Comment button
+      const commentBtn = postElement.querySelector('.comment-btn');
+      if (commentBtn) {
+        commentBtn.addEventListener('click', function() {
+          const postId = this.getAttribute('data-post');
+          const commentSection = document.getElementById(`comments-${postId}`);
+          
+          if (commentSection) {
+            if (commentSection.style.display === 'none') {
+              commentSection.style.display = 'block';
+              const commentInput = document.querySelector(`#comment-input-${postId}`);
+              if (commentInput) commentInput.focus();
+            } else {
+              commentSection.style.display = 'none';
+            }
+          }
+        });
+      }
+      
+      // Comment submit
+      const commentSubmitBtn = postElement.querySelector('.comment-submit-btn');
+      if (commentSubmitBtn) {
+        commentSubmitBtn.addEventListener('click', function() {
+          const postId = this.getAttribute('data-post');
+          const commentInput = document.querySelector(`#comment-input-${postId}`);
+          const commentText = commentInput.value.trim();
+          
+          if (commentText) {
+            const commentsList = postElement.querySelector('.comments-list');
+            
+            // Create new comment
+            const comment = document.createElement('div');
+            comment.className = 'd-flex mb-2 comment';
+            comment.innerHTML = `
+              <img src="${userAvatar}" class="comment-avatar me-2">
+              <div class="comment-content flex-grow-1">
+                <div class="comment-bubble">
+                  <h6 class="mb-0 small fw-bold">${userName}</h6>
+                  <p class="mb-0 small">${commentText}</p>
+                </div>
+                <div class="comment-actions small">
+                  <a href="#" class="me-2">Like</a>
+                  <a href="#" class="me-2">Reply</a>
+                  <span class="text-muted">Just now</span>
+                </div>
+              </div>
+            `;
+            
+            // Add to comments list
+            commentsList.appendChild(comment);
+            
+            // Update comment count
+            const commentCountEl = postElement.querySelector(`.comment-count-${postCount}`);
+            if (commentCountEl) {
+              commentCountEl.textContent = parseInt(commentCountEl.textContent) + 1;
+            }
+            
+            // Clear input
+            commentInput.value = '';
+          }
+        });
+      }
+    }
+  }
+  
+  // Create a notification for new post likes
+  function createPostNotification() {
+    updateNotificationCount(1);
+    const notificationsList = document.querySelector('.notifications-list');
+    if (notificationsList) {
+      const notificationElement = document.createElement('div');
+      notificationElement.className = 'notification-item unread';
+      notificationElement.innerHTML = `
+        <div class="notification-icon like">
+          <i class="bi bi-hand-thumbs-up-fill"></i>
+        </div>
+        <div class="notification-content">
+          <p><strong>Didier Drogba</strong> and <strong>3 others</strong> liked your post</p>
+          <span class="notification-time">Just now</span>
+        </div>
+      `;
+      notificationsList.prepend(notificationElement);
+    }
+  }
+}
+function logout() {
+  localStorage.removeItem('token');
+  localStorage.removeItem('userRole');
+  localStorage.removeItem('userName');
+  localStorage.removeItem('userData');
+  localStorage.removeItem('userAvatar');
+  
+  window.location.href = '/';
+}
+  </script>
+  
+  <!-- LinkedIn-style CSS -->
+  <style>
+    body {
+      background-color: #f3f2ef;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding-top: 52px;
+    }
+    
+    /* Header Styling */
+    .linkedin-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      padding: 0;
+      height: 52px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+    }
+    
+    .header-logo {
+      width: 36px;
+      height: 36px;
+      margin-right: 8px;
+    }
+    
+    .search-box {
+      display: flex;
+      align-items: center;
+      background-color: #eef3f8;
+      border-radius: 4px;
+      padding: 0 10px;
+      height: 34px;
+      width: 280px;
+    }
+    
+    .search-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      width: 100%;
+      margin-left: 8px;
+      font-size: 14px;
+    }
+    
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+    
+    .main-nav li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 12px;
+      color: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+      height: 52px;
+      padding: 0 8px;
+      justify-content: center;
+      min-width: 80px;
+      position: relative;
+    }
+    
+    .main-nav li.active {
+      color: black;
+      border-bottom: 2px solid black;
+    }
+    
+    .main-nav li:hover {
+      color: black;
+    }
+    
+    .main-nav li i {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    
+    .main-nav li span {
+      font-size: 12px;
+    }
+    
+    .vertical-divider {
+      height: 32px;
+      border-left: 1px solid rgba(0, 0, 0, 0.15);
+      margin: 0 12px;
+    }
+    
+    .business-nav {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+    
+    /* Main Content */
+    .linkedin-main {
+      padding: 24px 0;
+    }
+    
+    /* Profile Card */
+    .profile-card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+    
+    .profile-background {
+      height: 60px;
+      background-color: #1d2226;
+      background-image: url('assets/img/profile-bg.avif');
+      background-size: cover;
+    }
+    
+    .profile-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-top: -36px;
+      object-fit: cover;
+    }
+    
+    .profile-stats {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 12px;
+    }
+    
+    .stat-group {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .stat-group:last-child {
+      border-bottom: none;
+      color: #ee1e46 ;
+    }
+    
+    .sidebar-menu a {
+      color: rgba(0, 0, 0, 0.6);
+      border: none;
+    }
+    
+    .sidebar-menu a:hover {
+      color: rgba(0, 0, 0, 0.9);
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Post Creation Area */
+    .post-user-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .post-input-container {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 35px;
+      width: 100%;
+    }
+    
+    .post-input-container input {
+      border: none;
+      width: 100%;
+      outline: none;
+    }
+    
+    .post-actions {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding-top: 8px;
+      margin-top: 8px;
+    }
+    
+    .post-action-btn {
+      border: none;
+      background: none;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+    
+    .post-action-btn:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+    
+    .post-action-btn i {
+      margin-right: 4px;
+    }
+    
+    .sort-by {
+      cursor: pointer;
+    }
+    
+    /* Post Styling */
+    .feed-post {
+      margin-bottom: 8px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .post-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .post-meta h6 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    
+    .follow-badge {
+      font-weight: normal;
+      color: #ee1e46 ;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+    .btn-more {
+      background: transparent;
+      border: none;
+      width: 36px;
+      height: 36px;
+      padding: 6px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .btn-more:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+    
+    .post-content {
+      font-size: 14px;
+    }
+    
+    .post-image {
+      margin: 12px 0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .post-reactions {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .reaction-icons i {
+      font-size: 14px;
+    }
+    
+    .post-engagement {
+      display: flex;
+      padding: 4px 0;
+    }
+    
+    .engagement-btn {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .engagement-btn i {
+      margin-right: 4px;
+      font-size: 16px;
+    }
+    
+    .engagement-btn:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+    
+    .engagement-btn.liked {
+      color: #ee1e46 ;
+    }
+    
+    /* Comments */
+    .comment-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .comment-bubble {
+      background-color: #f2f2f2;
+      border-radius: 0 8px 8px 8px;
+      padding: 8px 12px;
+    }
+    
+    .comment-actions a {
+      color: rgba(0, 0, 0, 0.6);
+      text-decoration: none;
+    }
+    
+    .comment-actions a:hover {
+      color: #ee1e46 ;
+      text-decoration: underline;
+    }
+    
+    .comment-submit-btn {
+      background: transparent;
+      border: none;
+      color: #ee1e46 ;
+      padding: 4px;
+    }
+    
+    /* Recommendations */
+    .recommendation-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    /* Mini avatar */
+    .mini-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .nav-user {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .sticky-card {
+      position: sticky;
+      top: 75px;
+    }
+    
+    /* Media Queries */
+    @media (max-width: 991.98px) {
+      .main-nav li span {
+        display: none;
+      }
+      
+      .main-nav li {
+        min-width: auto;
+      }
+    }
+    /* Search functionality */
+.search-results-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  display: none;
+}
+
+.search-results-overlay.show {
+  display: block;
+}
+
+.search-results-container {
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.search-header h5 {
+  margin: 0;
+}
+
+.close-search {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-categories {
+  display: flex;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.search-category {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.search-category.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.search-results-content {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-result-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.search-result-info {
+  flex: 1;
+}
+
+.search-result-info h6 {
+  margin-bottom: 4px;
+}
+
+.search-result-info p {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.result-tag {
+  display: inline-block;
+  background-color: #f3f2ef;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Messaging functionality */
+.messaging-overlay {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  width: 360px;
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1500;
+  transform: translateY(calc(100% - 52px));
+  transition: transform 0.3s ease;
+}
+
+.messaging-overlay.show {
+  transform: translateY(0);
+}
+
+.messaging-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+}
+
+.messaging-header h5 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.msg-action-btn {
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg-action-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.messaging-search {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f3f2ef;
+}
+
+.messaging-search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.conversation-list {
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.conversation {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.conversation.unread {
+  background-color: #f5faff;
+}
+
+.conversation:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.conversation-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.conversation-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.conversation-name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.conversation-time {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: normal;
+  font-size: 12px;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.conversation-preview {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conversation.unread .conversation-preview {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+}
+
+/* Conversation Detail */
+.conversation-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.conversation-detail.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.conversation-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.conversation-header h6 {
+  margin: 0;
+}
+
+.back-to-conversations {
+  background: none;
+  border: none;
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.back-to-conversations:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.conversation-detail-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.message-container {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-date {
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.message {
+  max-width: 75%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message.sent {
+  align-self: flex-end;
+}
+
+.message.received {
+  align-self: flex-start;
+}
+
+.message-content {
+  padding: 10px 12px;
+  border-radius: 18px;
+  word-break: break-word;
+}
+
+.message.sent .message-content {
+  background-color: #ee1e46 ;
+  color: white;
+  border-radius: 18px 18px 4px 18px;
+}
+
+.message.received .message-content {
+  background-color: #f3f2ef;
+  color: black;
+  border-radius: 18px 18px 18px 4px;
+}
+
+.message-time {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 4px;
+  align-self: flex-end;
+}
+
+.message.sent .message-time {
+  align-self: flex-end;
+}
+
+.message.received .message-time {
+  align-self: flex-start;
+}
+
+.message-input-container {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.message-input-container input {
+  flex: 1;
+  border: none;
+  background-color: #f3f2ef;
+  padding: 10px 12px;
+  border-radius: 20px;
+  margin: 0 8px;
+  outline: none;
+}
+
+/* Notification functionality */
+.notification-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #e7392b;
+  color: white;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifications-icon, .messaging-icon {
+  position: relative;
+}
+
+.notifications-overlay {
+  position: fixed;
+  right: 20px;
+  top: 52px;
+  width: 360px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1500;
+  display: none;
+}
+
+.notifications-overlay.show {
+  display: block;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.notifications-header h5 {
+  margin: 0;
+}
+
+.close-notifications {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.notification-filters {
+  display: flex;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.notification-filter {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.notification-filter.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.notifications-list {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.notification-item {
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.notification-item.unread {
+  background-color: #f5faff;
+}
+
+.notification-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.notification-icon.connection {
+  background-color: #ee1e46 ;
+}
+
+.notification-icon.like {
+  background-color: #ee1e46 ;
+}
+
+.notification-icon.comment {
+  background-color: #7fc15e;
+}
+
+.notification-icon.job {
+  background-color: #a872e8;
+}
+
+.notification-icon.mention {
+  background-color: #e7a33e;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-content p {
+  margin-bottom: 4px;
+}
+
+.notification-time {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+}
+
+.notification-actions {
+  margin-top: 8px;
+}
+
+.notification-actions button {
+  margin-right: 8px;
+}
+
+/* Create post modal */
+.create-post-input {
+  cursor: pointer;
+}
+
+#createPostModal .modal-body {
+  padding-bottom: 0;
+}
+
+.post-preview-container {
+  margin-top: 16px;
+}
+
+.remove-image-btn {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

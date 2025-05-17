@@ -15,6 +15,10 @@ import { CsvService } from './services/CsvService';
 import { LoginComponent } from './components/shared/login/login.component';
 import { SocialAuthCallbackComponent } from './components/auth/social-auth-callback/social-auth-callback.component';
 import { SuccessDialogComponent } from './components/shared/success-dialog/success-dialog.component';
+import { PlayerDashboardComponent } from './dashboards/player-dashboard/player-dashboard.component';
+import { AgentDashboardComponent } from './dashboards/agent-dashboard/agent-dashboard.component';
+import { ClubStaffDashboardComponent } from './dashboards/club-staff-dashboard/club-staff-dashboard.component';
+import { ServiceProviderDashboardComponent } from './dashboards/service-provider-dashboard/service-provider-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +34,17 @@ import { SuccessDialogComponent } from './components/shared/success-dialog/succe
     LoginComponent,
     SocialAuthCallbackComponent,
     SuccessDialogComponent,
+  
+    PlayerDashboardComponent,
+    AgentDashboardComponent,
+    ClubStaffDashboardComponent,
+    ServiceProviderDashboardComponent,
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    
     HttpClientModule // Add this module to your imports array
    
   ],

@@ -14,6 +14,7 @@ declare var PureCounter: any;
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'TacticSense';
+  currentView: string = 'home';
 
   constructor() { }
 

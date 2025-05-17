@@ -1,0 +1,120 @@
+<!-- filepath: c:\Projects\TacticSense\frontend\src\app\dashboards\player-dashboard\player-dashboard.component.html -->
+<div class="dashboard-container">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="TacticSense Logo">
+        <h3>TacticSense</h3>
+      </div>
+    </div>
+    
+    <div class="sidebar-menu">
+      <div class="menu-item active">
+        <i class="bi bi-house-fill"></i> Dashboard
+      </div>
+      <div class="menu-item">
+        <i class="bi bi-people-fill"></i> Network
+      </div>
+      <div class="menu-item">
+        <i class="bi bi-chat-fill"></i> Messages
+      </div>
+      <div class="menu-item">
+        <i class="bi bi-file-earmark-fill"></i> Profile
+      </div>
+      <div class="menu-item">
+        <i class="bi bi-gear-fill"></i> Settings
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <header>
+      <div class="header-title">
+        <h1>Welcome, {{userName}}</h1>
+        <p class="text-muted">Here's what's happening in your football network</p>
+      </div>
+      
+      <div class="header-actions">
+        <button class="btn btn-outline-primary me-2">
+          <i class="bi bi-bell-fill"></i>
+        </button>
+        <div class="user-menu">
+          <img [src]="userAvatar || 'assets/images/default-avatar.png'" class="avatar">
+          <span>{{userName}}</span>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" (click)="logout()">Logout</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="dashboard-content">
+      <div class="row">
+        <div class="col-md-8">
+   
+        </div>
+        
+        <div class="col-md-4">
+          <!-- Stats Summary Card -->
+          <div class="card mb-4">
+            <div class="card-header">
+              <h5>Your Stats</h5>
+            </div>
+            <div class="card-body">
+              <div class="stat-item">
+                <span class="stat-label">Profile Views</span>
+                <span class="stat-value">152</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">New Connections</span>
+                <span class="stat-value">7</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Unread Messages</span>
+                <span class="stat-value">3</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Recent Activities Card -->
+          <div class="card">
+            <div class="card-header">
+              <h5>Recent Activities</h5>
+            </div>
+            <div class="card-body p-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="activity-item">
+                    <i class="bi bi-person-plus-fill"></i>
+                    <div class="activity-content">
+                      <p>John Smith accepted your connection request</p>
+                      <small class="text-muted">2 hours ago</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="activity-item">
+                    <i class="bi bi-eye-fill"></i>
+                    <div class="activity-content">
+                      <p>Barcelona FC viewed your profile</p>
+                      <small class="text-muted">Yesterday</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="activity-item">
+                    <i class="bi bi-chat-fill"></i>
+                    <div class="activity-content">
+                      <p>New message from Agent Sarah</p>
+                      <small class="text-muted">2 days ago</small>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,18 +1,19 @@
 {
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "server": "nodemon dist/main.js --watch dist"
+  },
   "dependencies": {
-    "@auth0/auth0-angular": "^2.2.3",
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "aos": "^2.3.4",
-    "appwrite": "^17.0.2",
-    "bootstrap": "^4.6.0",
-    "bootstrap-icons": "^1.11.3",
-    "chart.js": "^4.4.8",
-    "glightbox": "^3.3.1",
-    "jquery": "^3.5.1",
+    "config": "^4.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "jspdf": "^3.0.1",
-    "jspdf-autotable": "^5.0.2",
-    "mongodb": "^6.16.0",
-    "popper.js": "^1.16.1",
-    "swiper": "^11.2.6"
+    "mongoose": "^8.15.0"
+  },
+  "devDependencies": {
+    "@types/jspdf": "^2.0.0",
+    "nodemon": "^3.1.10"
   }
 }

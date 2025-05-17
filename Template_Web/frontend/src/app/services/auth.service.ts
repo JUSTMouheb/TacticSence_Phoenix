@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable, from, of, throwError } from 'rxjs';
-import { map, tap, catchError, delay } from 'rxjs/operators';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { BehaviorSubject, from, Observable, of, throwError } from 'rxjs';
+import { catchError, delay, tap } from 'rxjs/operators';
 import { account } from '../config/appwrite.config';
 import { OAuthProvider } from 'appwrite';
 
@@ -9,28 +9,36 @@ import { OAuthProvider } from 'appwrite';
   providedIn: 'root'
 })
 export class AuthService {
+  private apiUrl = 'http://localhost:5000/api';
+  private tokenKey = 'auth_token';
+  private userKey = 'current_user';
+  
   private currentUserSubject = new BehaviorSubject<any>(null);
-  currentUser$ = this.currentUserSubject.asObservable();
-  private apiUrl = 'http://localhost:8000/api'; // Your API URL
+  public currentUser$ = this.currentUserSubject.asObservable();
   
   constructor(private http: HttpClient) {
-    // Check for existing session on load
-    this.checkSession();
+    this.loadStoredUser();
   }
   
-  private checkSession() {
-    from(account.get()).pipe(
-      tap(user => {
+private loadStoredUser(): void {
+    try {
+      // Check if we have a stored token and user
+      const token = localStorage.getItem(this.tokenKey);
+      const userJson = localStorage.getItem(this.userKey);
+      
+      if (token && userJson) {
+        const user = JSON.parse(userJson);
         this.currentUserSubject.next(user);
-      })
-    ).subscribe({
-      error: () => {
-        // User is not logged in, do nothing
-        console.log('No active session found');
       }
-    });
+    } catch (err) {
+      console.error('Failed to load stored user', err);
+      this.logout(); // Clear potentially corrupt data
+    }
   }
-  
+ // Get current user synchronously
+  getCurrentUserSync(): any {
+    return this.currentUserSubject.value;
+  }
   signInWithGoogle(): void {
     account.createOAuth2Session(
       'google' as OAuthProvider, 
@@ -61,6 +69,9 @@ signInWithLinkedIn(): void {
       tap(user => this.currentUserSubject.next(user))
     );
   }
+
+
+
   processAuthToken(provider: string, code: string): Observable<any> {
   // For Appwrite, we don't need to process the token manually
   // as Appwrite handles the OAuth flow automatically
@@ -76,14 +87,40 @@ signInWithLinkedIn(): void {
   );
 }
   
-  // Logout
-  logout(): Observable<any> {
-    return from(account.deleteSession('current')).pipe(
-      tap(() => this.currentUserSubject.next(null))
+  
+// Update the register method
+register(userData: any): Observable<any> {
+  console.log('Sending registration request to:', `${this.apiUrl}/auth/register`);
+  
+  return this.http.post<any>(`${this.apiUrl}/auth/register`, userData)
+    .pipe(
+      tap(response => {
+        console.log('Registration successful, response:', response);
+        if (response && response.token) {
+          localStorage.setItem(this.tokenKey, response.token);
+          localStorage.setItem(this.userKey, JSON.stringify(response.user));
+          this.currentUserSubject.next(response.user);
+        }
+      }),
+      catchError(error => {
+        console.error('Registration failed, error details:', error);
+        
+        // Extract a meaningful error message
+        let errorMessage = 'Registration failed';
+        
+        if (error.error) {
+          if (typeof error.error === 'string') {
+            errorMessage = error.error;
+          } else if (error.error.msg) {
+            errorMessage = error.error.msg;
+          }
+        }
+        
+        return throwError(() => new Error(errorMessage));
+      })
     );
-  }
- // Add this method to your AuthService if not already present
-
+}
+  
 registerUser(userData: any): Observable<any> {
   // Use either your API or Appwrite
   return from(account.create(
@@ -128,19 +165,24 @@ loginVerified(userData: any): void {
     return this.currentUserSubject.value !== null;
   }
   
-login(email: string, password: string): Observable<any> {
-  // Implementation depends on your backend API
-  return this.http.post<any>(`${this.apiUrl}/auth/login`, { email, password }).pipe(
-    tap(user => {
-      this.currentUserSubject.next(user);
-      localStorage.setItem('currentUser', JSON.stringify(user));
-    }),
-    catchError(error => {
-      console.error('Login error', error);
-      return throwError(() => error);
-    })
-  );
-}
+ // Login with email and password
+  login(email: string, password: string): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/auth/login`, { email, password })
+      .pipe(
+        tap(response => {
+          // Store token and user in localStorage
+          localStorage.setItem(this.tokenKey, response.token);
+          localStorage.setItem(this.userKey, JSON.stringify(response.user));
+          
+          // Update current user subject
+          this.currentUserSubject.next(response.user);
+        }),
+        catchError(error => {
+          console.error('Login failed', error);
+          return throwError(() => new Error(error.error?.msg || 'Invalid email or password'));
+        })
+      );
+  }
 socialLogin(provider: string): Observable<any> {
   // This would typically initiate OAuth flow
   // For demo purposes, return a mock success
@@ -170,6 +212,35 @@ resetPassword(email: string): Observable<any> {
       })
     );
 }
+
+ // Logout user
+  logout(): void {
+    // Remove token and user from localStorage
+    localStorage.removeItem(this.tokenKey);
+    localStorage.removeItem(this.userKey);
+    
+    // Clear current user subject
+    this.currentUserSubject.next(null);
+  }
+  
+  // Check if user is logged in
+  isLoggedIn(): boolean {
+    return !!this.getToken();
+  }
+  
+  // Get stored token
+  getToken(): string | null {
+    return localStorage.getItem(this.tokenKey);
+  }
+  
+  // Get HTTP headers with auth token
+  getAuthHeaders(): HttpHeaders {
+    const token = this.getToken();
+    return new HttpHeaders({
+      'Content-Type': 'application/json',
+      'x-auth-token': token || ''
+    });
+  }
 requestPasswordReset(email: string): Observable<any> {
   // Implementation depends on your backend API
   return this.http.post<any>(`${this.apiUrl}/auth/reset-password`, { email });
