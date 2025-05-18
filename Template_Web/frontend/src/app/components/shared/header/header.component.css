@@ -424,3 +424,44 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 15px;
   }
 }
+/* QR Code Modal Styles */
+.qr-container {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.modal-title .badge {
+  font-size: 12px;
+  vertical-align: middle;
+  padding: 5px 8px;
+}
+
+/* Progress bar styling for recovery exercises */
+.progress {
+  height: 5px;
+  margin-top: 5px;
+}
+
+/* Download button hover effect */
+#download-qr-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+/* Make sure footer text is visible */
+.modal-body .mt-3 {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Random player button used for development */
+#random-player-btn {
+  opacity: 0.6;
+  z-index: 999;
+}
+
+#random-player-btn:hover {
+  opacity: 1;
+}

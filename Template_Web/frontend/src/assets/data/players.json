@@ -1,0 +1,42 @@
+[
+  {
+    "player_id": 5,
+    "full_name": "Ali Youssef",
+    "position": "CM",
+    "age": 18,
+    "nationality": "Morocco",
+    "club": "Mohammed VI Football Academy",
+    "medical_history": "No recent injuries",
+    "fitness_level": 95.13
+  },
+  {
+    "player_id": 11,
+    "full_name": "Lameck Siame",
+    "position": "GK",
+    "age": 20,
+    "nationality": "Zambia",
+    "club": "ZESCO United",
+    "medical_history": "Minor injury: Expected recovery in 1-2 weeks",
+    "fitness_level": 82.35
+  },
+  {
+    "player_id": 24,
+    "full_name": "Vladyslav Vanat",
+    "position": "FW",
+    "age": 22,
+    "nationality": "Ukraine",
+    "club": "Dynamo Kyiv",
+    "medical_history": "No recent injuries",
+    "fitness_level": 96.77
+  },
+  {
+    "player_id": 63,
+    "full_name": "Victor Osimhen",
+    "position": "FW",
+    "age": 18,
+    "nationality": "Nigeria",
+    "club": "Mavlon FC",
+    "medical_history": "No recent injuries",
+    "fitness_level": 75.9
+  }
+]

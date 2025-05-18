@@ -312,11 +312,7 @@
 <!-- User profile dropdown -->
 <ng-container *ngIf="authService.currentUser$ | async as user">
   <div class="dropdown">
-    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
-      <img [src]="user.prefs?.avatar || 'assets/images/default-avatar.png'" 
-           class="rounded-circle me-1" width="25" height="25" alt="Avatar">
-      {{ user.name || user.email }}
-    </button>
+   
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
     </ul>
