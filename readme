@@ -28,9 +28,9 @@ Contact information
 
 
 File Structure
-csv_files_AfricanFootball/
-├── Football_Players_Data.csv
-└── Football_Scouts_Data.csv
+datasets+notebooks_by_fatma/
+├── soccer_players_processed.csv
+└── scouts_dataFinal.csv
 
 Data Generation & Collection Methods
 
@@ -40,4 +40,4 @@ Scouts data: Compiled from scouting networks and professional football databases
 Usage
 These datasets are part of the TacticSence Phoenix project, aimed at advancing African football analytics through player and scout insights.
 Author
-[Your Name or Organization]
+Fatma Ghorbel
