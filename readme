@@ -1,1 +1,43 @@
-readme file
+Football Players and Scouts Data Collection
+This repository contains datasets related to African football, focusing on players and scouts.
+Datasets Overview
+1. Football Players Dataset
+
+Source: Scraped from TransferMarket, Sofascore, and FootballAPI
+File: Football_Players_Data.csv
+Description: Contains information about African football players, including:
+Player profiles
+Positions
+Performance metrics (e.g., goals, assists)
+Market value
+Club affiliations
+
+
+
+2. Football Scouts Dataset
+
+Source: Custom data collection from scouting networks
+File: Football_Scouts_Data.csv
+Description: Contains information about football scouts operating in African football, including:
+Scout profiles
+Scouting regions
+Expertise areas (e.g., youth talent, positional specialties)
+Years of experience
+Contact information
+
+
+
+File Structure
+csv_files_AfricanFootball/
+├── Football_Players_Data.csv
+└── Football_Scouts_Data.csv
+
+Data Generation & Collection Methods
+
+Players data: Scraped from TransferMarket, Sofascore, and FootballAPI to compile comprehensive player information.
+Scouts data: Compiled from scouting networks and professional football databases.
+
+Usage
+These datasets are part of the TacticSence Phoenix project, aimed at advancing African football analytics through player and scout insights.
+Author
+[Your Name or Organization]
